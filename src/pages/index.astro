@@ -98,11 +98,10 @@ const structuredData = [
 					const spine = dateSpine(e.date);
 					const isMultiDay = !!e.endDate && e.endDate !== e.date;
 					const endSpine = isMultiDay ? dateSpine(e.endDate) : null;
-					const prev = events[i - 1];
-					// Multi-day events always show their own date range — never suppressed,
-					// even if they share a start date with the row above. Only single-day
-					// events sharing an identical date with the previous row get compressed.
-					const showDate = isMultiDay || i === 0 || prev.date !== e.date;
+					// Every row always shows its own date — no compression/suppression.
+					// Two previous attempts at "repeat only when the date changes" kept
+					// producing blank date columns users read as a bug, not a feature.
+					const showDate = true;
 					const eNew = isNew(e.firstSeen);
 					const free = isFree(e.cost);
 					return (
