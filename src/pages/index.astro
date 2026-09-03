@@ -99,7 +99,11 @@ const structuredData = [
 			{
 				events.map((e, i) => {
 					const spine = dateSpine(e.date);
-					const showDate = i === 0 || events[i - 1].date !== e.date;
+					const isMultiDay = !!e.endDate && e.endDate !== e.date;
+					const endSpine = isMultiDay ? dateSpine(e.endDate) : null;
+					const prev = events[i - 1];
+					const showDate =
+						i === 0 || prev.date !== e.date || (prev.endDate ?? prev.date) !== (e.endDate ?? e.date);
 					const eNew = isNew(e.firstSeen);
 					const free = isFree(e.cost);
 					return (
@@ -119,6 +123,11 @@ const structuredData = [
 											<span class="weekday">{spine.weekday}</span>
 											<span class="day">{spine.day}</span>
 											<span class="month">{spine.month}</span>
+											{isMultiDay && endSpine && (
+												<span class="through">
+													→ {endSpine.day} {endSpine.month}
+												</span>
+											)}
 										</>
 									)}
 								</div>
@@ -442,7 +451,7 @@ const structuredData = [
 		}
 		.row-link {
 			display: grid;
-			grid-template-columns: 64px 1fr;
+			grid-template-columns: 76px 1fr;
 			gap: 16px;
 			padding: 14px 16px;
 			text-decoration: none;
@@ -470,6 +479,14 @@ const structuredData = [
 			color: var(--muted);
 			text-transform: uppercase;
 			letter-spacing: 0.04em;
+		}
+		.spine .through {
+			font-size: 0.62rem;
+			color: var(--muted);
+			text-transform: uppercase;
+			letter-spacing: 0.03em;
+			margin-top: 3px;
+			white-space: nowrap;
 		}
 		.title {
 			margin: 0 0 5px;
