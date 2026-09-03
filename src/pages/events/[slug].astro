@@ -212,5 +212,31 @@ const structuredData: Record<string, unknown>[] = [
 			color: var(--muted);
 			max-width: 60ch;
 		}
+		@media (max-width: 640px) {
+			.topbar {
+				padding: 16px 16px 0;
+			}
+			.detail {
+				padding: 16px 16px 24px;
+			}
+			.detail-head {
+				grid-template-columns: 1fr;
+				gap: 0;
+			}
+			.spine {
+				flex-direction: row;
+				align-items: baseline;
+				gap: 6px;
+				border-right: none;
+				border-bottom: 1px solid var(--border);
+				padding-right: 0;
+				padding-bottom: 8px;
+				margin-bottom: 10px;
+			}
+			.spine .day {
+				font-size: 1rem;
+				order: -1;
+			}
+		}
 	</style>
 </Base>

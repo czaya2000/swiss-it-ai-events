@@ -113,7 +113,7 @@ const structuredData = [
 							data-search={[e.title, e.organiser, e.city, e.venue, ...e.topics].join(' ').toLowerCase()}
 						>
 							<a class="row-link" href={`/events/${e.id}/`}>
-								<div class="spine">
+								<div class={`spine ${showDate ? '' : 'spine-empty'}`}>
 									{showDate && (
 										<>
 											<span class="weekday">{spine.weekday}</span>
@@ -508,13 +508,65 @@ const structuredData = [
 			text-align: center;
 			padding: 40px 0;
 		}
-		@media (max-width: 600px) {
-			.row-link {
-				grid-template-columns: 46px 1fr;
+		.when-tabs {
+			overflow-x: auto;
+			-webkit-overflow-scrolling: touch;
+			scrollbar-width: none;
+		}
+		.when-tabs::-webkit-scrollbar {
+			display: none;
+		}
+		.when-tab {
+			flex: none;
+			white-space: nowrap;
+		}
+
+		@media (max-width: 640px) {
+			.wrap {
+				padding: 0 16px;
+			}
+			.topbar {
+				padding: 16px 16px 0;
+			}
+			.hero {
+				padding: 28px 0 24px;
+			}
+			main {
+				padding: 20px 16px 48px;
+			}
+			.filters {
 				gap: 10px;
 			}
+			.result-count {
+				margin-left: 0;
+				flex-basis: 100%;
+			}
+			.row-link {
+				grid-template-columns: 1fr;
+				gap: 0;
+				padding: 12px 14px;
+			}
+			.spine {
+				flex-direction: row;
+				align-items: baseline;
+				gap: 6px;
+				border-right: none;
+				padding-right: 0;
+			}
+			.spine:not(.spine-empty) {
+				border-bottom: 1px solid var(--border);
+				padding-bottom: 8px;
+				margin-bottom: 8px;
+			}
+			.spine.spine-empty {
+				display: none;
+			}
 			.spine .day {
-				font-size: 1.2rem;
+				font-size: 1rem;
+				order: -1;
+			}
+			.title {
+				font-size: 1.02rem;
 			}
 		}
 	</style>
