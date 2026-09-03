@@ -11,13 +11,23 @@ adding a source here means "check this for leads," not "trust it blindly."
 
 - usergroups.databricks.com — Databricks user groups (Suisse Romande, Zurich, etc.)
 - community.fabric.microsoft.com — Fabric User Group Switzerland
+- mdw-group.com/events — organiser behind Fabric/Power BI User Group Lausanne
 - ai-community.ch — Digital & AI Community (Zug/Lucerne/Chur/Rotkreuz events)
 - switzerland-ai.com — Switzerland AI Community (Geneva meetups)
 - sairop.swiss — ETH AI Center / Swiss AI Initiative events
+- geneva.aitinkerers.org — AI Tinkerers Geneva chapter
 
-## Listing platforms
+## Listing platforms — named groups to check directly (as of Sept 2026, none of these currently
+## have a next date announced — check anyway, they post irregularly)
 
-- meetup.com — search by city × keyword, per group
+- meetup.com/databricks-user-group-suisse-romande
+- meetup.com/microsoft-fabric-user-group-switzerland
+- meetup.com/power-bi-user-group-switzerland
+- meetup.com/pydata-zurich
+- meetup.com/zurich-machine-learning
+- meetup.com/daizurich — Swiss Data and AI Meetup
+- meetup.com/zurich-data-sciece-odsc — ODSC AI Zurich
+- meetup.com/mindstone-geneva-ai-meetup
 - luma.com
 - eventbrite.com (and country variants, e.g. eventbrite.ie)
 - linkedin.com/events
