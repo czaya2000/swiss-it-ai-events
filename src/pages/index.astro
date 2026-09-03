@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 
 const entries = await getCollection('events');
 const today = new Date().toISOString().slice(0, 10);
-const NEW_WINDOW_DAYS = 7;
+const NEW_WINDOW_DAYS = 5;
 
 function isNew(firstSeen: string) {
 	const ageMs = Date.parse(today) - Date.parse(firstSeen);
