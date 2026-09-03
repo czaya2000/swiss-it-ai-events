@@ -102,8 +102,10 @@ const structuredData = [
 					const isMultiDay = !!e.endDate && e.endDate !== e.date;
 					const endSpine = isMultiDay ? dateSpine(e.endDate) : null;
 					const prev = events[i - 1];
-					const showDate =
-						i === 0 || prev.date !== e.date || (prev.endDate ?? prev.date) !== (e.endDate ?? e.date);
+					// Multi-day events always show their own date range — never suppressed,
+					// even if they share a start date with the row above. Only single-day
+					// events sharing an identical date with the previous row get compressed.
+					const showDate = isMultiDay || i === 0 || prev.date !== e.date;
 					const eNew = isNew(e.firstSeen);
 					const free = isFree(e.cost);
 					return (
