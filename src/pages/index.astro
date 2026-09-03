@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import SiteNav from '../components/SiteNav.astro';
 import {
 	getUpcomingEvents,
 	isNew,
@@ -42,15 +43,11 @@ const structuredData = [
 ---
 
 <Base title={title} description={description} path="/" structuredData={structuredData}>
-	<header class="topbar wrap">
-		<a class="brand" href="/">{SITE_NAME}</a>
-		<div class="topbar-controls">
-			<button id="density-toggle" class="btn ghost" type="button" data-density="comfortable">
-				Compact
-			</button>
-			<button id="theme-toggle" class="btn ghost" type="button" aria-label="Toggle dark mode">◐</button>
-		</div>
-	</header>
+	<SiteNav>
+		<button id="density-toggle" class="btn ghost" type="button" data-density="comfortable">
+			Compact
+		</button>
+	</SiteNav>
 
 	<header class="hero">
 		<div class="wrap">
@@ -178,7 +175,6 @@ const structuredData = [
 			var newCheckbox = document.getElementById('filter-new');
 			var whenTabs = Array.prototype.slice.call(document.querySelectorAll('.when-tab'));
 			var densityBtn = document.getElementById('density-toggle');
-			var themeBtn = document.getElementById('theme-toggle');
 			var rows = Array.prototype.slice.call(document.querySelectorAll('.row'));
 			var resultCount = document.getElementById('result-count');
 			var emptyState = document.getElementById('empty-state');
@@ -321,39 +317,10 @@ const structuredData = [
 					localStorage.setItem('density', next);
 				} catch (e) {}
 			});
-
-			// Theme toggle
-			themeBtn.addEventListener('click', function () {
-				var root = document.documentElement;
-				var current =
-					root.getAttribute('data-theme') ||
-					(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-				var next = current === 'dark' ? 'light' : 'dark';
-				root.setAttribute('data-theme', next);
-				try {
-					localStorage.setItem('theme', next);
-				} catch (e) {}
-			});
 		})();
 	</script>
 
 	<style>
-		.topbar {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			padding: 20px 24px 0;
-		}
-		.brand {
-			font-weight: 700;
-			text-decoration: none;
-			color: var(--ink);
-			font-size: 0.95rem;
-		}
-		.topbar-controls {
-			display: flex;
-			gap: 8px;
-		}
 		.hero {
 			background: var(--hero-bg);
 			color: var(--hero-ink);
@@ -543,9 +510,6 @@ const structuredData = [
 		@media (max-width: 640px) {
 			.wrap {
 				padding: 0 16px;
-			}
-			.topbar {
-				padding: 16px 16px 0;
 			}
 			.hero {
 				padding: 28px 0 24px;

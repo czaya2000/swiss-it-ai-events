@@ -1,0 +1,103 @@
+---
+import Base from '../../layouts/Base.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import { SITE_NAME } from '../../lib/events';
+
+const title = `Contact — ${SITE_NAME}`;
+const description = 'Suggest an event, flag a wrong detail, or just say hi.';
+---
+
+<Base title={title} description={description} path="/contact/">
+	<SiteNav />
+
+	<main class="wrap contact">
+		<h1>Contact</h1>
+		<p class="intro">
+			Spotted a wrong date, know an event that should be listed, or just want to say hi? Send a
+			note — it goes straight to my inbox.
+		</p>
+
+		<form action="https://formsubmit.co/czajkowski81@gmail.com" method="POST">
+			<input type="hidden" name="_subject" value="New message from Swiss Data Events" />
+			<input type="hidden" name="_next" value="https://swissdataevents.ch/contact/thanks/" />
+			<input type="hidden" name="_template" value="table" />
+			<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+			<label>
+				Name
+				<input type="text" name="name" required />
+			</label>
+			<label>
+				Email
+				<input type="email" name="email" required />
+			</label>
+			<label>
+				Message
+				<textarea name="message" rows="6" required></textarea>
+			</label>
+
+			<button class="btn accent" type="submit">Send message</button>
+		</form>
+
+		<p class="alt">
+			Prefer LinkedIn? <a
+				href="https://www.linkedin.com/in/marcin-czajkowski-data/"
+				target="_blank"
+				rel="noopener noreferrer">Connect with me there</a
+			> instead.
+		</p>
+	</main>
+
+	<footer class="site-footer wrap">
+		<p>{SITE_NAME}. <a href="/">Back to all events</a>.</p>
+	</footer>
+
+	<style>
+		.contact {
+			padding: 24px 24px 64px;
+			max-width: 560px;
+		}
+		h1 {
+			font-size: clamp(1.6rem, 3vw, 2rem);
+			margin: 16px 0 8px;
+			letter-spacing: -0.01em;
+		}
+		.intro {
+			color: var(--muted);
+			margin: 0 0 28px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+		}
+		label {
+			display: flex;
+			flex-direction: column;
+			gap: 6px;
+			font-size: 0.85rem;
+			font-weight: 600;
+			color: var(--muted);
+		}
+		input,
+		textarea {
+			font: inherit;
+			font-size: 0.95rem;
+			padding: 10px 12px;
+			border-radius: 8px;
+			border: 1px solid var(--border);
+			background: var(--surface);
+			color: var(--ink);
+			resize: vertical;
+		}
+		button {
+			align-self: flex-start;
+			margin-top: 6px;
+		}
+		.alt {
+			margin-top: 32px;
+			font-size: 0.88rem;
+			color: var(--muted);
+		}
+	</style>
+</Base>

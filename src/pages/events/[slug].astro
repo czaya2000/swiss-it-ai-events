@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import SiteNav from '../../components/SiteNav.astro';
 import { getCollection } from 'astro:content';
 import { dateSpine, formatDateRange, isFree, eventUrl, SITE_URL, SITE_NAME } from '../../lib/events';
 
@@ -52,11 +53,7 @@ const structuredData: Record<string, unknown>[] = [
 ---
 
 <Base title={title} description={description} path={`/events/${entry.id}/`} structuredData={structuredData}>
-	<header class="topbar wrap">
-		<a class="brand" href="/">{SITE_NAME}</a>
-		<button id="theme-toggle" class="btn ghost" type="button" aria-label="Toggle dark mode">◐</button>
-	</header>
-
+	<SiteNav />
 	<main class="wrap detail">
 		<a class="back" href="/">← All events</a>
 
@@ -102,37 +99,7 @@ const structuredData: Record<string, unknown>[] = [
 		<p>{SITE_NAME} — Switzerland only, data/AI/IT-leadership focus for now. <a href="/">Back to all events</a>.</p>
 	</footer>
 
-	<script is:inline>
-		(function () {
-			var btn = document.getElementById('theme-toggle');
-			if (!btn) return;
-			btn.addEventListener('click', function () {
-				var root = document.documentElement;
-				var current =
-					root.getAttribute('data-theme') ||
-					(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-				var next = current === 'dark' ? 'light' : 'dark';
-				root.setAttribute('data-theme', next);
-				try {
-					localStorage.setItem('theme', next);
-				} catch (e) {}
-			});
-		})();
-	</script>
-
 	<style>
-		.topbar {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			padding: 20px 24px 0;
-		}
-		.brand {
-			font-weight: 700;
-			text-decoration: none;
-			color: var(--ink);
-			font-size: 0.95rem;
-		}
 		.detail {
 			padding: 24px 24px 24px;
 		}
@@ -213,9 +180,6 @@ const structuredData: Record<string, unknown>[] = [
 			max-width: 60ch;
 		}
 		@media (max-width: 640px) {
-			.topbar {
-				padding: 16px 16px 0;
-			}
 			.detail {
 				padding: 16px 16px 24px;
 			}
