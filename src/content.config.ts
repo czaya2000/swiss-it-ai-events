@@ -17,6 +17,7 @@ const events = defineCollection({
 		url: z.string().url(),
 		source: z.string(),
 		blurb: z.string(),
+		firstSeen: z.string(),
 	}),
 });
 
