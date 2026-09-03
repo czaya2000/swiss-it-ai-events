@@ -1,0 +1,333 @@
+---
+import { getCollection } from 'astro:content';
+
+const entries = await getCollection('events');
+const today = new Date().toISOString().slice(0, 10);
+
+const events = entries
+	.map((e) => e.data)
+	.filter((e) => (e.endDate ?? e.date) >= today)
+	.sort((a, b) => a.date.localeCompare(b.date));
+
+const cities = [...new Set(events.map((e) => e.city))].sort();
+const formats = [...new Set(events.map((e) => e.format))].sort();
+
+function formatDateRange(date: string, endDate?: string) {
+	const opts: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'short', year: 'numeric' };
+	const start = new Date(date).toLocaleDateString('en-GB', opts);
+	if (!endDate || endDate === date) return start;
+	const end = new Date(endDate).toLocaleDateString('en-GB', opts);
+	return `${start} – ${end}`;
+}
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<meta
+			name="description"
+			content="A curated list of upcoming IT and AI events across Switzerland — meetups, conferences, and workshops."
+		/>
+		<title>CH IT & AI Events — Switzerland's tech events, curated</title>
+	</head>
+	<body>
+		<header class="hero">
+			<div class="wrap">
+				<p class="eyebrow">Proof of concept</p>
+				<h1>IT &amp; AI events in Switzerland</h1>
+				<p class="tagline">
+					A curated, hand-verified list of upcoming data, AI, and IT events across
+					Switzerland. No noise, no expired listings — just what's worth your time.
+				</p>
+			</div>
+		</header>
+
+		<main class="wrap">
+			<div class="filters">
+				<label>
+					City
+					<select id="filter-city">
+						<option value="">All cities</option>
+						{cities.map((c) => <option value={c}>{c}</option>)}
+					</select>
+				</label>
+				<label>
+					Format
+					<select id="filter-format">
+						<option value="">All formats</option>
+						{formats.map((f) => <option value={f}>{f}</option>)}
+					</select>
+				</label>
+				<span id="result-count" class="result-count"></span>
+			</div>
+
+			<ul class="events" id="event-list">
+				{
+					events.map((e) => (
+						<li class="card" data-city={e.city} data-format={e.format}>
+							<div class="card-date">{formatDateRange(e.date, e.endDate)}</div>
+							<div class="card-body">
+								<h2>
+									<a href={e.url} target="_blank" rel="noopener noreferrer">
+										{e.title}
+									</a>
+								</h2>
+								<p class="meta">
+									<span class="tag format">{e.format}</span>
+									<span class="place">{e.city}{e.venue ? ` · ${e.venue}` : ''}</span>
+									{e.time ? <span class="time">{e.time}</span> : null}
+								</p>
+								<p class="blurb">{e.blurb}</p>
+								<p class="topics">
+									{e.topics.map((t) => (
+										<span class="tag topic">{t}</span>
+									))}
+								</p>
+							</div>
+							<div class="card-side">
+								<div class="cost">{e.cost}</div>
+								<a class="register" href={e.url} target="_blank" rel="noopener noreferrer">
+									Details ↗
+								</a>
+								<div class="organiser">by {e.organiser}</div>
+							</div>
+						</li>
+					))
+				}
+			</ul>
+
+			<p id="empty-state" class="empty-state" hidden>No events match those filters.</p>
+		</main>
+
+		<footer class="wrap">
+			<p>
+				Proof of concept — Switzerland only, data/AI/IT-leadership focus for now. Events are
+				verified against their original page before listing. Built and curated by hand;
+				automated refresh coming next.
+			</p>
+		</footer>
+
+		<script>
+			const citySelect = document.getElementById('filter-city') as HTMLSelectElement;
+			const formatSelect = document.getElementById('filter-format') as HTMLSelectElement;
+			const cards = Array.from(document.querySelectorAll<HTMLLIElement>('.card'));
+			const resultCount = document.getElementById('result-count')!;
+			const emptyState = document.getElementById('empty-state')!;
+
+			function applyFilters() {
+				const city = citySelect.value;
+				const format = formatSelect.value;
+				let visible = 0;
+				for (const card of cards) {
+					const matches =
+						(!city || card.dataset.city === city) &&
+						(!format || card.dataset.format === format);
+					card.hidden = !matches;
+					if (matches) visible++;
+				}
+				resultCount.textContent = `${visible} event${visible === 1 ? '' : 's'}`;
+				emptyState.hidden = visible !== 0;
+			}
+
+			citySelect.addEventListener('change', applyFilters);
+			formatSelect.addEventListener('change', applyFilters);
+			applyFilters();
+		</script>
+
+		<style>
+			:root {
+				color-scheme: light;
+				--ink: #16181d;
+				--muted: #5b6270;
+				--bg: #f7f7f5;
+				--card: #ffffff;
+				--accent: #b5432c;
+				--border: #e4e2dd;
+			}
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				margin: 0;
+				background: var(--bg);
+				color: var(--ink);
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif;
+				line-height: 1.5;
+			}
+			.wrap {
+				max-width: 880px;
+				margin: 0 auto;
+				padding: 0 24px;
+			}
+			.hero {
+				background: var(--ink);
+				color: #f2f1ee;
+				padding: 56px 0 40px;
+			}
+			.eyebrow {
+				text-transform: uppercase;
+				letter-spacing: 0.08em;
+				font-size: 0.75rem;
+				color: var(--accent);
+				font-weight: 700;
+				margin: 0 0 12px;
+			}
+			.hero h1 {
+				font-size: clamp(1.8rem, 4vw, 2.6rem);
+				margin: 0 0 12px;
+				letter-spacing: -0.02em;
+			}
+			.tagline {
+				color: #c7c9d1;
+				max-width: 56ch;
+				margin: 0;
+			}
+			main {
+				padding: 32px 24px 64px;
+			}
+			.filters {
+				display: flex;
+				gap: 16px;
+				align-items: center;
+				flex-wrap: wrap;
+				margin-bottom: 24px;
+			}
+			.filters label {
+				display: flex;
+				flex-direction: column;
+				gap: 4px;
+				font-size: 0.8rem;
+				color: var(--muted);
+				font-weight: 600;
+			}
+			select {
+				font: inherit;
+				padding: 8px 10px;
+				border-radius: 8px;
+				border: 1px solid var(--border);
+				background: var(--card);
+				color: var(--ink);
+			}
+			.result-count {
+				margin-left: auto;
+				color: var(--muted);
+				font-size: 0.9rem;
+			}
+			.events {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+			}
+			.card {
+				display: grid;
+				grid-template-columns: 100px 1fr 160px;
+				gap: 20px;
+				background: var(--card);
+				border: 1px solid var(--border);
+				border-radius: 12px;
+				padding: 18px 20px;
+			}
+			.card-date {
+				font-weight: 700;
+				font-size: 0.9rem;
+				color: var(--accent);
+			}
+			.card-body h2 {
+				margin: 0 0 6px;
+				font-size: 1.05rem;
+			}
+			.card-body h2 a {
+				color: var(--ink);
+				text-decoration: none;
+			}
+			.card-body h2 a:hover {
+				text-decoration: underline;
+			}
+			.meta {
+				margin: 0 0 8px;
+				color: var(--muted);
+				font-size: 0.85rem;
+				display: flex;
+				gap: 8px;
+				flex-wrap: wrap;
+				align-items: center;
+			}
+			.blurb {
+				margin: 0 0 10px;
+				font-size: 0.92rem;
+			}
+			.topics {
+				margin: 0;
+				display: flex;
+				gap: 6px;
+				flex-wrap: wrap;
+			}
+			.tag {
+				display: inline-block;
+				padding: 2px 8px;
+				border-radius: 999px;
+				font-size: 0.72rem;
+				font-weight: 600;
+			}
+			.tag.format {
+				background: #efe4de;
+				color: var(--accent);
+			}
+			.tag.topic {
+				background: #eef0f4;
+				color: var(--muted);
+			}
+			.card-side {
+				text-align: right;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				gap: 6px;
+			}
+			.cost {
+				font-size: 0.82rem;
+				color: var(--muted);
+			}
+			.register {
+				background: var(--ink);
+				color: #fff;
+				text-decoration: none;
+				padding: 6px 14px;
+				border-radius: 8px;
+				font-size: 0.85rem;
+				font-weight: 600;
+			}
+			.organiser {
+				font-size: 0.75rem;
+				color: var(--muted);
+			}
+			.empty-state {
+				color: var(--muted);
+				text-align: center;
+				padding: 40px 0;
+			}
+			footer {
+				color: var(--muted);
+				font-size: 0.82rem;
+				padding-bottom: 48px;
+			}
+			@media (max-width: 640px) {
+				.card {
+					grid-template-columns: 1fr;
+				}
+				.card-side {
+					align-items: flex-start;
+					text-align: left;
+					flex-direction: row;
+					flex-wrap: wrap;
+				}
+			}
+		</style>
+	</body>
+</html>
