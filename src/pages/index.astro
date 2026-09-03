@@ -1,391 +1,521 @@
 ---
-import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import {
+	getUpcomingEvents,
+	isNew,
+	dateSpine,
+	isFree,
+	eventUrl,
+	SITE_URL,
+	SITE_NAME,
+	SITE_TAGLINE,
+} from '../lib/events';
 
-const entries = await getCollection('events');
-const today = new Date().toISOString().slice(0, 10);
-const NEW_WINDOW_DAYS = 5;
-
-function isNew(firstSeen: string) {
-	const ageMs = Date.parse(today) - Date.parse(firstSeen);
-	return ageMs >= 0 && ageMs <= NEW_WINDOW_DAYS * 24 * 60 * 60 * 1000;
-}
-
-const events = entries
-	.map((e) => e.data)
-	.filter((e) => (e.endDate ?? e.date) >= today)
-	.sort((a, b) => a.date.localeCompare(b.date));
+const entries = await getUpcomingEvents();
+const events = entries.map((e) => ({ id: e.id, ...e.data }));
 
 const cities = [...new Set(events.map((e) => e.city))].sort();
 const formats = [...new Set(events.map((e) => e.format))].sort();
 
-function formatDateRange(date: string, endDate?: string) {
-	const opts: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'short', year: 'numeric' };
-	const start = new Date(date).toLocaleDateString('en-GB', opts);
-	if (!endDate || endDate === date) return start;
-	const end = new Date(endDate).toLocaleDateString('en-GB', opts);
-	return `${start} – ${end}`;
-}
+const title = `${SITE_NAME} — Switzerland's IT & AI events, curated`;
+const description = SITE_TAGLINE;
+
+const structuredData = [
+	{
+		'@context': 'https://schema.org',
+		'@type': 'WebSite',
+		name: SITE_NAME,
+		url: SITE_URL,
+		description: SITE_TAGLINE,
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'ItemList',
+		itemListElement: events.map((e, i) => ({
+			'@type': 'ListItem',
+			position: i + 1,
+			url: eventUrl(e.id),
+			name: e.title,
+		})),
+	},
+];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/favicon.svg`} />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="generator" content={Astro.generator} />
-		<meta
-			name="description"
-			content="A curated list of upcoming IT and AI events across Switzerland — meetups, conferences, and workshops."
-		/>
-		<title>CH IT & AI Events — Switzerland's tech events, curated</title>
-	</head>
-	<body>
-		<header class="hero">
-			<div class="wrap">
-				<p class="eyebrow">Proof of concept</p>
-				<h1>IT &amp; AI events in Switzerland</h1>
-				<p class="tagline">
-					A curated, hand-verified list of upcoming data, AI, and IT events across
-					Switzerland. No noise, no expired listings — just what's worth your time.
-				</p>
-			</div>
-		</header>
+<Base title={title} description={description} path="/" structuredData={structuredData}>
+	<header class="topbar wrap">
+		<a class="brand" href="/">{SITE_NAME}</a>
+		<div class="topbar-controls">
+			<button id="density-toggle" class="btn ghost" type="button" data-density="comfortable">
+				Compact
+			</button>
+			<button id="theme-toggle" class="btn ghost" type="button" aria-label="Toggle dark mode">◐</button>
+		</div>
+	</header>
 
-		<main class="wrap">
-			<div class="filters">
-				<label class="search-label">
-					Search
-					<input type="search" id="filter-search" placeholder="Search title, organiser, topic…" />
-				</label>
-				<label>
-					City
-					<select id="filter-city">
-						<option value="">All cities</option>
-						{cities.map((c) => <option value={c}>{c}</option>)}
-					</select>
-				</label>
-				<label>
-					Format
-					<select id="filter-format">
-						<option value="">All formats</option>
-						{formats.map((f) => <option value={f}>{f}</option>)}
-					</select>
-				</label>
-				<label class="checkbox-label">
-					<input type="checkbox" id="filter-new" />
-					New only
-				</label>
-				<span id="result-count" class="result-count"></span>
-			</div>
+	<header class="hero">
+		<div class="wrap">
+			<p class="eyebrow">Proof of concept</p>
+			<h1>IT &amp; AI events in Switzerland</h1>
+			<p class="tagline">{SITE_TAGLINE}</p>
+		</div>
+	</header>
 
-			<ul class="events" id="event-list">
-				{
-					events.map((e) => (
+	<main class="wrap">
+		<div class="when-tabs" role="tablist" aria-label="Time range">
+			<button class="when-tab" data-when="all" type="button">All</button>
+			<button class="when-tab" data-when="today" type="button">Today</button>
+			<button class="when-tab" data-when="week" type="button">This week</button>
+			<button class="when-tab" data-when="month" type="button">This month</button>
+			<button class="when-tab" data-when="weekend" type="button">Weekend</button>
+		</div>
+
+		<div class="filters">
+			<label class="search-label">
+				<span class="sr-only">Search</span>
+				<input type="search" id="filter-search" placeholder="Search title, organiser, topic…" />
+			</label>
+			<label>
+				<span class="sr-only">City</span>
+				<select id="filter-city">
+					<option value="">All cities</option>
+					{cities.map((c) => <option value={c}>{c}</option>)}
+				</select>
+			</label>
+			<label>
+				<span class="sr-only">Format</span>
+				<select id="filter-format">
+					<option value="">All formats</option>
+					{formats.map((f) => <option value={f}>{f}</option>)}
+				</select>
+			</label>
+			<label class="checkbox-label">
+				<input type="checkbox" id="filter-new" />
+				New only
+			</label>
+			<span id="result-count" class="result-count"></span>
+		</div>
+
+		<ul class="events" id="event-list">
+			{
+				events.map((e, i) => {
+					const spine = dateSpine(e.date);
+					const showDate = i === 0 || events[i - 1].date !== e.date;
+					const eNew = isNew(e.firstSeen);
+					const free = isFree(e.cost);
+					return (
 						<li
-							class="card"
+							class="row"
 							data-city={e.city}
 							data-format={e.format}
-							data-new={isNew(e.firstSeen)}
+							data-new={eNew}
+							data-date={e.date}
+							data-end-date={e.endDate ?? e.date}
 							data-search={[e.title, e.organiser, e.city, e.venue, ...e.topics].join(' ').toLowerCase()}
 						>
-							<div class="card-date">
-								{formatDateRange(e.date, e.endDate)}
-								{isNew(e.firstSeen) ? <span class="tag new">New</span> : null}
-							</div>
-							<div class="card-body">
-								<h2>
-									<a href={e.url} target="_blank" rel="noopener noreferrer">
+							<a class="row-link" href={`/events/${e.id}/`}>
+								<div class="spine">
+									{showDate && (
+										<>
+											<span class="weekday">{spine.weekday}</span>
+											<span class="day">{spine.day}</span>
+											<span class="month">{spine.month}</span>
+										</>
+									)}
+								</div>
+								<div class="content">
+									<h2 class="title">
+										{eNew && <span class="new-dot" aria-hidden="true" />}
 										{e.title}
-									</a>
-								</h2>
-								<p class="meta">
-									<span class="tag format">{e.format}</span>
-									<span class="place">{e.city}{e.venue ? ` · ${e.venue}` : ''}</span>
-									{e.time ? <span class="time">{e.time}</span> : null}
-								</p>
-								<p class="blurb">{e.blurb}</p>
-								<p class="topics">
-									{e.topics.map((t) => (
-										<span class="tag topic">{t}</span>
-									))}
-								</p>
-							</div>
-							<div class="card-side">
-								<div class="cost">{e.cost}</div>
-								<a class="register" href={e.url} target="_blank" rel="noopener noreferrer">
-									Details ↗
-								</a>
-								<div class="organiser">by {e.organiser}</div>
-							</div>
+										{eNew && <span class="sr-only">(new)</span>}
+									</h2>
+									<p class="meta mono">
+										{e.time ? `${e.time} · ` : ''}
+										{e.city}
+										{e.venue ? ` — ${e.venue}` : ''}
+									</p>
+									<p class="chips">
+										<span class="tag format">{e.format}</span>
+										{e.topics.map((t) => (
+											<span class="tag topic">{t}</span>
+										))}
+										<span class={`tag cost ${free ? 'free' : ''}`}>{e.cost}</span>
+									</p>
+									<p class="blurb">{e.blurb}</p>
+								</div>
+							</a>
 						</li>
-					))
+					);
+				})
+			}
+		</ul>
+
+		<p id="empty-state" class="empty-state" hidden>No events match those filters.</p>
+	</main>
+
+	<footer class="site-footer wrap">
+		<p>
+			Proof of concept — Switzerland only, data/AI/IT-leadership focus for now. Every event is
+			verified against its original page before listing. Refreshed automatically each morning.
+		</p>
+	</footer>
+
+	<script is:inline>
+		(function () {
+			var searchInput = document.getElementById('filter-search');
+			var citySelect = document.getElementById('filter-city');
+			var formatSelect = document.getElementById('filter-format');
+			var newCheckbox = document.getElementById('filter-new');
+			var whenTabs = Array.prototype.slice.call(document.querySelectorAll('.when-tab'));
+			var densityBtn = document.getElementById('density-toggle');
+			var themeBtn = document.getElementById('theme-toggle');
+			var rows = Array.prototype.slice.call(document.querySelectorAll('.row'));
+			var resultCount = document.getElementById('result-count');
+			var emptyState = document.getElementById('empty-state');
+
+			var params = new URLSearchParams(location.search);
+			var state = {
+				q: params.get('q') || '',
+				city: params.get('city') || '',
+				format: params.get('format') || '',
+				when: params.get('when') || 'all',
+				isNew: params.get('new') === '1',
+			};
+
+			searchInput.value = state.q;
+			citySelect.value = state.city;
+			formatSelect.value = state.format;
+			newCheckbox.checked = state.isNew;
+
+			function pad(n) {
+				return String(n).padStart(2, '0');
+			}
+			function toISO(d) {
+				return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+			}
+
+			function whenBounds(when) {
+				var now = new Date();
+				now.setHours(0, 0, 0, 0);
+				var todayStr = toISO(now);
+				if (when === 'today') return { start: todayStr, end: todayStr };
+				if (when === 'week') {
+					var weekEnd = new Date(now);
+					weekEnd.setDate(weekEnd.getDate() + 6);
+					return { start: todayStr, end: toISO(weekEnd) };
 				}
-			</ul>
+				if (when === 'month') {
+					var monthEnd = new Date(now.getFullYear(), now.getMonth() + 1, 0);
+					return { start: todayStr, end: toISO(monthEnd) };
+				}
+				if (when === 'weekend') {
+					var day = now.getDay();
+					var toSat = (6 - day + 7) % 7;
+					var sat = new Date(now);
+					sat.setDate(sat.getDate() + toSat);
+					var sun = new Date(sat);
+					sun.setDate(sun.getDate() + 1);
+					return { start: toISO(sat), end: toISO(sun) };
+				}
+				return null;
+			}
 
-			<p id="empty-state" class="empty-state" hidden>No events match those filters.</p>
-		</main>
-
-		<footer class="wrap">
-			<p>
-				Proof of concept — Switzerland only, data/AI/IT-leadership focus for now. Events are
-				verified against their original page before listing. Built and curated by hand;
-				automated refresh coming next.
-			</p>
-		</footer>
-
-		<script>
-			const searchInput = document.getElementById('filter-search') as HTMLInputElement;
-			const citySelect = document.getElementById('filter-city') as HTMLSelectElement;
-			const formatSelect = document.getElementById('filter-format') as HTMLSelectElement;
-			const newCheckbox = document.getElementById('filter-new') as HTMLInputElement;
-			const cards = Array.from(document.querySelectorAll<HTMLLIElement>('.card'));
-			const resultCount = document.getElementById('result-count')!;
-			const emptyState = document.getElementById('empty-state')!;
+			function updateUrl() {
+				var p = new URLSearchParams();
+				if (state.q) p.set('q', state.q);
+				if (state.city) p.set('city', state.city);
+				if (state.format) p.set('format', state.format);
+				if (state.when && state.when !== 'all') p.set('when', state.when);
+				if (state.isNew) p.set('new', '1');
+				var qs = p.toString();
+				history.replaceState(null, '', qs ? '?' + qs : location.pathname);
+			}
 
 			function applyFilters() {
-				const query = searchInput.value.trim().toLowerCase();
-				const city = citySelect.value;
-				const format = formatSelect.value;
-				const newOnly = newCheckbox.checked;
-				let visible = 0;
-				for (const card of cards) {
-					const matches =
-						(!query || (card.dataset.search ?? '').includes(query)) &&
-						(!city || card.dataset.city === city) &&
-						(!format || card.dataset.format === format) &&
-						(!newOnly || card.dataset.new === 'true');
-					card.hidden = !matches;
+				var query = state.q.trim().toLowerCase();
+				var bounds = whenBounds(state.when);
+				var visible = 0;
+				for (var i = 0; i < rows.length; i++) {
+					var row = rows[i];
+					var d = row.dataset;
+					var matches =
+						(!query || (d.search || '').indexOf(query) !== -1) &&
+						(!state.city || d.city === state.city) &&
+						(!state.format || d.format === state.format) &&
+						(!state.isNew || d.new === 'true') &&
+						(!bounds || (d.date <= bounds.end && d.endDate >= bounds.start));
+					row.hidden = !matches;
 					if (matches) visible++;
 				}
-				resultCount.textContent = `${visible} event${visible === 1 ? '' : 's'}`;
+				resultCount.textContent = visible + ' event' + (visible === 1 ? '' : 's');
 				emptyState.hidden = visible !== 0;
 			}
 
-			searchInput.addEventListener('input', applyFilters);
-			citySelect.addEventListener('change', applyFilters);
-			formatSelect.addEventListener('change', applyFilters);
-			newCheckbox.addEventListener('change', applyFilters);
-			applyFilters();
-		</script>
+			function setWhenTab(when) {
+				state.when = when;
+				whenTabs.forEach(function (btn) {
+					var active = btn.dataset.when === when;
+					btn.classList.toggle('active', active);
+					btn.setAttribute('aria-selected', String(active));
+				});
+			}
 
-		<style>
-			:root {
-				color-scheme: light;
-				--ink: #16181d;
-				--muted: #5b6270;
-				--bg: #f7f7f5;
-				--card: #ffffff;
-				--accent: #b5432c;
-				--border: #e4e2dd;
+			searchInput.addEventListener('input', function () {
+				state.q = searchInput.value;
+				updateUrl();
+				applyFilters();
+			});
+			citySelect.addEventListener('change', function () {
+				state.city = citySelect.value;
+				updateUrl();
+				applyFilters();
+			});
+			formatSelect.addEventListener('change', function () {
+				state.format = formatSelect.value;
+				updateUrl();
+				applyFilters();
+			});
+			newCheckbox.addEventListener('change', function () {
+				state.isNew = newCheckbox.checked;
+				updateUrl();
+				applyFilters();
+			});
+			whenTabs.forEach(function (btn) {
+				btn.addEventListener('click', function () {
+					setWhenTab(btn.dataset.when);
+					updateUrl();
+					applyFilters();
+				});
+			});
+
+			setWhenTab(state.when);
+			applyFilters();
+
+			// Density toggle (compact / comfortable), persisted locally — a display
+			// preference, not shareable filter state, so it stays out of the URL.
+			var eventList = document.getElementById('event-list');
+			function setDensity(density) {
+				eventList.classList.toggle('compact', density === 'compact');
+				densityBtn.textContent = density === 'compact' ? 'Comfortable' : 'Compact';
+				densityBtn.dataset.density = density;
 			}
-			* {
-				box-sizing: border-box;
+			var savedDensity = 'comfortable';
+			try {
+				savedDensity = localStorage.getItem('density') || 'comfortable';
+			} catch (e) {}
+			setDensity(savedDensity);
+			densityBtn.addEventListener('click', function () {
+				var next = densityBtn.dataset.density === 'compact' ? 'comfortable' : 'compact';
+				setDensity(next);
+				try {
+					localStorage.setItem('density', next);
+				} catch (e) {}
+			});
+
+			// Theme toggle
+			themeBtn.addEventListener('click', function () {
+				var root = document.documentElement;
+				var current =
+					root.getAttribute('data-theme') ||
+					(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+				var next = current === 'dark' ? 'light' : 'dark';
+				root.setAttribute('data-theme', next);
+				try {
+					localStorage.setItem('theme', next);
+				} catch (e) {}
+			});
+		})();
+	</script>
+
+	<style>
+		.topbar {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px 24px 0;
+		}
+		.brand {
+			font-weight: 700;
+			text-decoration: none;
+			color: var(--ink);
+			font-size: 0.95rem;
+		}
+		.topbar-controls {
+			display: flex;
+			gap: 8px;
+		}
+		.hero {
+			background: var(--hero-bg);
+			color: var(--hero-ink);
+			padding: 40px 0 36px;
+			margin-top: 16px;
+		}
+		.eyebrow {
+			text-transform: uppercase;
+			letter-spacing: 0.08em;
+			font-size: 0.75rem;
+			color: var(--accent);
+			font-weight: 700;
+			margin: 0 0 12px;
+		}
+		.hero h1 {
+			font-size: clamp(1.8rem, 4vw, 2.6rem);
+			margin: 0 0 12px;
+			letter-spacing: -0.02em;
+		}
+		.tagline {
+			color: var(--hero-muted);
+			max-width: 56ch;
+			margin: 0;
+		}
+		main {
+			padding: 24px 24px 64px;
+		}
+		.when-tabs {
+			display: flex;
+			gap: 4px;
+			margin-bottom: 16px;
+			border-bottom: 1px solid var(--border);
+		}
+		.when-tab {
+			font: inherit;
+			font-size: 0.85rem;
+			font-weight: 600;
+			background: none;
+			border: none;
+			border-bottom: 2px solid transparent;
+			padding: 8px 10px;
+			color: var(--muted);
+			cursor: pointer;
+			margin-bottom: -1px;
+		}
+		.when-tab.active {
+			color: var(--ink);
+			border-bottom-color: var(--accent);
+		}
+		.filters {
+			display: flex;
+			gap: 12px;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-bottom: 20px;
+		}
+		select,
+		input[type='search'] {
+			font: inherit;
+			font-size: 0.85rem;
+			padding: 7px 10px;
+			border-radius: 7px;
+			border: 1px solid var(--border);
+			background: var(--surface);
+			color: var(--ink);
+		}
+		.search-label {
+			flex: 1 1 200px;
+		}
+		.search-label input {
+			width: 100%;
+		}
+		.checkbox-label {
+			display: flex;
+			align-items: center;
+			gap: 6px;
+			font-size: 0.85rem;
+			color: var(--muted);
+		}
+		.result-count {
+			margin-left: auto;
+			color: var(--muted);
+			font-size: 0.85rem;
+		}
+		.events {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+		.row {
+			background: var(--surface);
+			border: 1px solid var(--border);
+			border-radius: 10px;
+		}
+		.row-link {
+			display: grid;
+			grid-template-columns: 64px 1fr;
+			gap: 16px;
+			padding: 14px 16px;
+			text-decoration: none;
+			color: inherit;
+		}
+		.spine {
+			border-right: 1px solid var(--border);
+			padding-right: 12px;
+			display: flex;
+			flex-direction: column;
+			line-height: 1.15;
+		}
+		.spine .weekday {
+			font-size: 0.65rem;
+			color: var(--muted);
+			text-transform: uppercase;
+			letter-spacing: 0.06em;
+		}
+		.spine .day {
+			font-size: 1.5rem;
+			font-weight: 700;
+		}
+		.spine .month {
+			font-size: 0.7rem;
+			color: var(--muted);
+			text-transform: uppercase;
+			letter-spacing: 0.04em;
+		}
+		.title {
+			margin: 0 0 5px;
+			font-size: 1.12rem;
+			font-weight: 700;
+			letter-spacing: -0.01em;
+			display: flex;
+			align-items: center;
+			gap: 7px;
+		}
+		.row-link:hover .title {
+			text-decoration: underline;
+		}
+		.meta {
+			margin: 0 0 8px;
+			color: var(--muted);
+			font-size: 0.8rem;
+		}
+		.chips {
+			margin: 0;
+			display: flex;
+			gap: 6px;
+			flex-wrap: wrap;
+		}
+		.blurb {
+			margin: 10px 0 0;
+			font-size: 0.9rem;
+			color: var(--ink);
+			max-width: 68ch;
+		}
+		.events.compact .blurb {
+			display: none;
+		}
+		.empty-state {
+			color: var(--muted);
+			text-align: center;
+			padding: 40px 0;
+		}
+		@media (max-width: 600px) {
+			.row-link {
+				grid-template-columns: 46px 1fr;
+				gap: 10px;
 			}
-			body {
-				margin: 0;
-				background: var(--bg);
-				color: var(--ink);
-				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif;
-				line-height: 1.5;
+			.spine .day {
+				font-size: 1.2rem;
 			}
-			.wrap {
-				max-width: 880px;
-				margin: 0 auto;
-				padding: 0 24px;
-			}
-			.hero {
-				background: var(--ink);
-				color: #f2f1ee;
-				padding: 56px 0 40px;
-			}
-			.eyebrow {
-				text-transform: uppercase;
-				letter-spacing: 0.08em;
-				font-size: 0.75rem;
-				color: var(--accent);
-				font-weight: 700;
-				margin: 0 0 12px;
-			}
-			.hero h1 {
-				font-size: clamp(1.8rem, 4vw, 2.6rem);
-				margin: 0 0 12px;
-				letter-spacing: -0.02em;
-			}
-			.tagline {
-				color: #c7c9d1;
-				max-width: 56ch;
-				margin: 0;
-			}
-			main {
-				padding: 32px 24px 64px;
-			}
-			.filters {
-				display: flex;
-				gap: 16px;
-				align-items: center;
-				flex-wrap: wrap;
-				margin-bottom: 24px;
-			}
-			.filters label {
-				display: flex;
-				flex-direction: column;
-				gap: 4px;
-				font-size: 0.8rem;
-				color: var(--muted);
-				font-weight: 600;
-			}
-			.checkbox-label {
-				flex-direction: row !important;
-				align-items: center;
-				gap: 6px !important;
-			}
-			.checkbox-label input {
-				width: 15px;
-				height: 15px;
-			}
-			select,
-			input[type='search'] {
-				font: inherit;
-				padding: 8px 10px;
-				border-radius: 8px;
-				border: 1px solid var(--border);
-				background: var(--card);
-				color: var(--ink);
-			}
-			.search-label {
-				flex: 1 1 220px;
-			}
-			.search-label input {
-				width: 100%;
-			}
-			.result-count {
-				margin-left: auto;
-				color: var(--muted);
-				font-size: 0.9rem;
-			}
-			.events {
-				list-style: none;
-				margin: 0;
-				padding: 0;
-				display: flex;
-				flex-direction: column;
-				gap: 12px;
-			}
-			.card {
-				display: grid;
-				grid-template-columns: 100px 1fr 160px;
-				gap: 20px;
-				background: var(--card);
-				border: 1px solid var(--border);
-				border-radius: 12px;
-				padding: 18px 20px;
-			}
-			.card[hidden] {
-				display: none;
-			}
-			.card-date {
-				font-weight: 700;
-				font-size: 0.9rem;
-				color: var(--accent);
-				display: flex;
-				flex-direction: column;
-				align-items: flex-start;
-				gap: 6px;
-			}
-			.tag.new {
-				background: #1a7a4c;
-				color: #fff;
-			}
-			.card-body h2 {
-				margin: 0 0 6px;
-				font-size: 1.05rem;
-			}
-			.card-body h2 a {
-				color: var(--ink);
-				text-decoration: none;
-			}
-			.card-body h2 a:hover {
-				text-decoration: underline;
-			}
-			.meta {
-				margin: 0 0 8px;
-				color: var(--muted);
-				font-size: 0.85rem;
-				display: flex;
-				gap: 8px;
-				flex-wrap: wrap;
-				align-items: center;
-			}
-			.blurb {
-				margin: 0 0 10px;
-				font-size: 0.92rem;
-			}
-			.topics {
-				margin: 0;
-				display: flex;
-				gap: 6px;
-				flex-wrap: wrap;
-			}
-			.tag {
-				display: inline-block;
-				padding: 2px 8px;
-				border-radius: 999px;
-				font-size: 0.72rem;
-				font-weight: 600;
-			}
-			.tag.format {
-				background: #efe4de;
-				color: var(--accent);
-			}
-			.tag.topic {
-				background: #eef0f4;
-				color: var(--muted);
-			}
-			.card-side {
-				text-align: right;
-				display: flex;
-				flex-direction: column;
-				align-items: flex-end;
-				gap: 6px;
-			}
-			.cost {
-				font-size: 0.82rem;
-				color: var(--muted);
-			}
-			.register {
-				background: var(--ink);
-				color: #fff;
-				text-decoration: none;
-				padding: 6px 14px;
-				border-radius: 8px;
-				font-size: 0.85rem;
-				font-weight: 600;
-			}
-			.organiser {
-				font-size: 0.75rem;
-				color: var(--muted);
-			}
-			.empty-state {
-				color: var(--muted);
-				text-align: center;
-				padding: 40px 0;
-			}
-			footer {
-				color: var(--muted);
-				font-size: 0.82rem;
-				padding-bottom: 48px;
-			}
-			@media (max-width: 640px) {
-				.card {
-					grid-template-columns: 1fr;
-				}
-				.card-side {
-					align-items: flex-start;
-					text-align: left;
-					flex-direction: row;
-					flex-wrap: wrap;
-				}
-			}
-		</style>
-	</body>
-</html>
+		}
+	</style>
+</Base>

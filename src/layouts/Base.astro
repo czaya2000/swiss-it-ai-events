@@ -1,0 +1,63 @@
+---
+import '../styles/theme.css';
+import { SITE_NAME, SITE_URL } from '../lib/events';
+
+interface Props {
+	title: string;
+	description: string;
+	path: string;
+	structuredData?: Record<string, unknown>[];
+}
+
+const { title, description, path, structuredData = [] } = Astro.props;
+const canonical = new URL(path, SITE_URL).toString();
+const ogImage = new URL('/og-image.png', SITE_URL).toString();
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<link rel="canonical" href={canonical} />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content={SITE_NAME} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonical} />
+		<meta property="og:image" content={ogImage} />
+		<meta property="og:image:width" content="1469" />
+		<meta property="og:image:height" content="772" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImage} />
+
+		<meta name="theme-color" content="#16181d" />
+
+		{
+			structuredData.map((data) => (
+				<script type="application/ld+json" set:html={JSON.stringify(data)} />
+			))
+		}
+
+		<script is:inline>
+			(function () {
+				try {
+					var saved = localStorage.getItem('theme');
+					if (saved === 'light' || saved === 'dark') {
+						document.documentElement.setAttribute('data-theme', saved);
+					}
+				} catch (e) {}
+			})();
+		</script>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
