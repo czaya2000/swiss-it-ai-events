@@ -1,50 +1,52 @@
+/* Swiss Data Events — International Typographic Style.
+   One family (Archivo), black on warm off-white, a single accent spent
+   sparingly: the masthead rule and the current week. Zero radius. */
+
 :root {
 	color-scheme: light;
-	--bg: #f2f3f7;
+	--bg: #fbfbf9;
 	--surface: #ffffff;
-	--ink: #14161c;
-	--muted: #676e7d;
-	--border: #e3e5ea;
-	--accent: #4f46e5;
+	--ink: #000000;
+	--ink-2: #3f3f45;
+	--muted: #6b6b70;
+	--border: #dededa;
+	--rule: #000000;
+	--accent: #e30613;
 	--accent-ink: #ffffff;
-	--chip-topic-bg: #eef0f4;
-	--chip-topic-ink: #5b6270;
-	--hero-bg: #14161c;
-	--hero-ink: #f2f1ee;
-	--hero-muted: #a9adb8;
+	--chip-bg: #f1f1ed;
+	--chip-ink: #4a4a50;
+	--content: 1080px;
 }
 
 :root[data-theme='dark'] {
 	color-scheme: dark;
-	--bg: #101116;
-	--surface: #1a1c23;
-	--ink: #eef0f3;
-	--muted: #9199a8;
-	--border: #2a2d36;
-	--accent: #818cf8;
-	--accent-ink: #101116;
-	--chip-topic-bg: #24262f;
-	--chip-topic-ink: #b7bcc6;
-	--hero-bg: #0a0b0e;
-	--hero-ink: #f2f1ee;
-	--hero-muted: #9199a8;
+	--bg: #131312;
+	--surface: #1a1a18;
+	--ink: #f4f3ef;
+	--ink-2: #c3c2bc;
+	--muted: #8e8d87;
+	--border: #2e2e2b;
+	--rule: #f4f3ef;
+	--accent: #ff4438;
+	--accent-ink: #131312;
+	--chip-bg: #232320;
+	--chip-ink: #b8b7b1;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root:not([data-theme='light']) {
 		color-scheme: dark;
-		--bg: #101116;
-		--surface: #1a1c23;
-		--ink: #eef0f3;
-		--muted: #9199a8;
-		--border: #2a2d36;
-		--accent: #818cf8;
-		--accent-ink: #101116;
-		--chip-topic-bg: #24262f;
-		--chip-topic-ink: #b7bcc6;
-		--hero-bg: #0a0b0e;
-		--hero-ink: #f2f1ee;
-		--hero-muted: #9199a8;
+		--bg: #131312;
+		--surface: #1a1a18;
+		--ink: #f4f3ef;
+		--ink-2: #c3c2bc;
+		--muted: #8e8d87;
+		--border: #2e2e2b;
+		--rule: #f4f3ef;
+		--accent: #ff4438;
+		--accent-ink: #131312;
+		--chip-bg: #232320;
+		--chip-ink: #b8b7b1;
 	}
 }
 
@@ -60,91 +62,31 @@ body {
 	margin: 0;
 	background: var(--bg);
 	color: var(--ink);
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif;
+	font-family: Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
 }
 
 .wrap {
-	max-width: 920px;
+	max-width: var(--content);
 	margin: 0 auto;
-	padding: 0 24px;
+	padding: 0 32px;
 }
 
-.mono {
-	font-family: 'SFMono-Regular', ui-monospace, Menlo, Consolas, monospace;
+/* Tabular figures everywhere a date, time or count is shown, so columns
+   of numbers line up instead of shimmering. */
+.num {
 	font-variant-numeric: tabular-nums;
 }
 
-.tag {
-	display: inline-block;
-	padding: 3px 9px;
-	border-radius: 5px;
-	font-size: 0.68rem;
-	font-weight: 700;
-	line-height: 1.5;
-	text-transform: uppercase;
-	letter-spacing: 0.04em;
-}
-
-.tag.format {
-	background: transparent;
-	border: 1px solid var(--border);
-	color: var(--muted);
-}
-
-.tag.topic {
-	background: var(--chip-topic-bg);
-	color: var(--chip-topic-ink);
-}
-
-.tag.cost {
-	background: var(--chip-topic-bg);
-	color: var(--chip-topic-ink);
-}
-
-.tag.cost.free {
-	background: var(--accent);
-	color: var(--accent-ink);
-}
-
-.new-dot {
-	display: inline-block;
-	width: 7px;
-	height: 7px;
-	border-radius: 50%;
-	background: var(--accent);
-	flex: none;
-}
-
-.btn {
-	display: inline-flex;
-	align-items: center;
-	gap: 6px;
-	background: var(--ink);
-	color: var(--bg);
-	text-decoration: none;
-	padding: 9px 16px;
-	border-radius: 8px;
-	font-size: 0.88rem;
-	font-weight: 600;
-	border: none;
-	cursor: pointer;
-	font-family: inherit;
-}
-
-.btn.ghost {
-	background: transparent;
-	color: var(--ink);
-	border: 1px solid var(--border);
-}
-
-.btn.accent {
-	background: var(--accent);
-	color: var(--accent-ink);
+/* Retained for any legacy markup; the redesign no longer sets small data
+   labels in a monospace face. */
+.mono {
+	font-variant-numeric: tabular-nums;
 }
 
 a {
-	color: inherit;
+	color: var(--ink);
 }
 
 .sr-only {
@@ -159,15 +101,108 @@ a {
 	border: 0;
 }
 
-footer.site-footer {
-	color: var(--muted);
-	font-size: 0.82rem;
-	padding: 32px 0 48px;
-	border-top: 1px solid var(--border);
-	margin-top: 32px;
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	font: inherit;
+	font-size: 0.875rem;
+	font-weight: 500;
+	padding: 9px 16px;
+	border: 1px solid var(--border);
+	border-radius: 0;
+	background: var(--surface);
+	color: var(--ink);
+	text-decoration: none;
+	cursor: pointer;
 }
 
-footer.site-footer a {
+.btn:hover {
+	border-color: var(--ink);
+}
+
+.btn.ghost {
+	background: transparent;
+	border-color: transparent;
 	color: var(--muted);
-	text-decoration: underline;
+	padding: 9px 10px;
+}
+
+.btn.ghost:hover {
+	color: var(--ink);
+	border-color: transparent;
+}
+
+.btn.accent {
+	background: var(--ink);
+	color: var(--bg);
+	border-color: var(--ink);
+	font-weight: 500;
+}
+
+.btn.accent:hover {
+	background: var(--accent);
+	border-color: var(--accent);
+	color: var(--accent-ink);
+}
+
+/* Topics and other secondary labels. Sentence case — never all caps, which
+   competes with the event title for attention. */
+.tag {
+	display: inline-block;
+	padding: 3px 9px;
+	border-radius: 0;
+	font-size: 0.78rem;
+	line-height: 1.45;
+	background: var(--chip-bg);
+	color: var(--chip-ink);
+}
+
+.tag.format {
+	background: transparent;
+	border: 1px solid var(--border);
+	color: var(--ink-2);
+}
+
+.tag.cost.free {
+	background: transparent;
+	color: var(--ink);
+	font-weight: 600;
+	padding-left: 0;
+}
+
+.new-dot {
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: var(--accent);
+	flex: none;
+}
+
+.site-footer {
+	padding: 40px 32px 56px;
+	color: var(--muted);
+	font-size: 0.82rem;
+	border-top: 1px solid var(--border);
+	margin-top: 56px;
+}
+
+.site-footer p {
+	max-width: 70ch;
+	margin: 0;
+}
+
+.site-footer a {
+	color: var(--muted);
+}
+
+@media (max-width: 640px) {
+	.wrap {
+		padding: 0 18px;
+	}
+	.site-footer {
+		padding: 32px 18px 44px;
+	}
 }
