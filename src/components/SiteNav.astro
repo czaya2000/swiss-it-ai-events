@@ -4,37 +4,28 @@ import { SITE_NAME } from '../lib/events';
 const LINKEDIN_URL = 'https://www.linkedin.com/in/marcin-czajkowski-data/';
 ---
 
-<header class="topbar">
-	<div class="topbar-inner wrap">
-		<a class="brand" href="/">{SITE_NAME}</a>
-		<div class="topbar-controls">
-			<slot />
-			<a
-				class="icon-btn"
-				href={LINKEDIN_URL}
-				target="_blank"
-				rel="noopener noreferrer"
-				aria-label="Connect with Marcin on LinkedIn"
-				title="Connect on LinkedIn"
-			>
-				<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
-					<path
-						d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"
-					></path>
-				</svg>
-			</a>
-			<a class="btn ghost" href="/contact/">Contact</a>
-			<button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
-				<svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true">
-					<circle cx="10" cy="10" r="7.5" fill="none" stroke="currentColor" stroke-width="1.6"
-					></circle>
-					<path d="M10 2.5a7.5 7.5 0 0 0 0 15z" fill="currentColor"></path>
-				</svg>
-			</button>
-		</div>
+<header class="topbar wrap">
+	<a class="brand" href="/">{SITE_NAME}</a>
+	<div class="topbar-controls">
+		<slot />
+		<a
+			class="icon-btn"
+			href={LINKEDIN_URL}
+			target="_blank"
+			rel="noopener noreferrer"
+			aria-label="Connect with Marcin on LinkedIn"
+			title="Connect on LinkedIn"
+		>
+			<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+				<path
+					d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"
+				></path>
+			</svg>
+		</a>
+		<a class="btn ghost" href="/contact/">Contact</a>
+		<button id="theme-toggle" class="btn ghost" type="button" aria-label="Toggle dark mode">◐</button>
 	</div>
 </header>
-<div class="masthead-rule" aria-hidden="true"></div>
 
 <script is:inline>
 	(function () {
@@ -55,58 +46,43 @@ const LINKEDIN_URL = 'https://www.linkedin.com/in/marcin-czajkowski-data/';
 </script>
 
 <style>
-	.topbar-inner {
+	.topbar {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding-top: 22px;
-		padding-bottom: 18px;
+		padding: 20px 24px 0;
 		flex-wrap: wrap;
 		gap: 10px;
 	}
 	.brand {
 		font-weight: 700;
-		font-size: 1.18rem;
-		letter-spacing: -0.015em;
 		text-decoration: none;
 		color: var(--ink);
+		font-size: 0.95rem;
 	}
 	.topbar-controls {
 		display: flex;
 		align-items: center;
-		gap: 4px;
+		gap: 8px;
 	}
 	.icon-btn {
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
-		width: 32px;
-		height: 32px;
+		width: 34px;
+		height: 34px;
+		border-radius: 8px;
+		border: 1px solid var(--border);
 		color: var(--muted);
 		text-decoration: none;
 	}
 	.icon-btn:hover {
 		color: var(--accent);
-	}
-	button.icon-btn {
-		background: none;
-		border: none;
-		padding: 0;
-		cursor: pointer;
-	}
-	/* The one bold moment on every page: a single accent rule under the
-	   masthead. The only other place the accent appears is the current week. */
-	.masthead-rule {
-		height: 3px;
-		background: var(--accent);
+		border-color: var(--accent);
 	}
 	@media (max-width: 640px) {
-		.topbar-inner {
-			padding-top: 16px;
-			padding-bottom: 14px;
-		}
-		.brand {
-			font-size: 1.05rem;
+		.topbar {
+			padding: 16px 16px 0;
 		}
 	}
 </style>

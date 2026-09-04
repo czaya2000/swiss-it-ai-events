@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import SiteNav from '../../components/SiteNav.astro';
 import { getCollection } from 'astro:content';
-import { formatDateRange, isFree, eventUrl, SITE_URL, SITE_NAME } from '../../lib/events';
+import { dateSpine, formatDateRange, isFree, eventUrl, SITE_URL, SITE_NAME } from '../../lib/events';
 
 export async function getStaticPaths() {
 	const entries = await getCollection('events');
@@ -11,6 +11,7 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const e = entry.data;
+const spine = dateSpine(e.date);
 const dateLabel = formatDateRange(e.date, e.endDate);
 const title = `${e.title} — ${dateLabel}, ${e.city} | ${SITE_NAME}`;
 const description = e.blurb;
@@ -51,204 +52,154 @@ const structuredData: Record<string, unknown>[] = [
 ];
 ---
 
-<Base
-	title={title}
-	description={description}
-	path={`/events/${entry.id}/`}
-	structuredData={structuredData}
->
+<Base title={title} description={description} path={`/events/${entry.id}/`} structuredData={structuredData}>
 	<SiteNav />
 	<main class="wrap detail">
 		<a class="back" href="/">← All events</a>
 
-		<div class="detail-grid">
-			<div class="detail-main">
-				<p class="dateline num">{dateLabel}{e.time ? `, ${e.time}` : ''}</p>
-				<h1>{e.title}</h1>
-				<p class="blurb">{e.blurb}</p>
-
-				<dl class="facts">
-					<dt>Dates</dt>
-					<dd class="num">{dateLabel}</dd>
-
-					{
-						e.time && (
-							<>
-								<dt>Time</dt>
-								<dd class="num">{e.time}</dd>
-							</>
-						)
-					}
-
-					<dt>City</dt>
-					<dd>{e.city}</dd>
-
-					{
-						e.venue && (
-							<>
-								<dt>Venue</dt>
-								<dd>{e.venue}</dd>
-							</>
-						)
-					}
-
-					<dt>Organiser</dt>
-					<dd>{e.organiser}</dd>
-
-					<dt>Format</dt>
-					<dd>{e.format}</dd>
-
-					<dt>Cost</dt>
-					<dd class={free ? 'free' : ''}>{e.cost}</dd>
-
-					<dt>Topics</dt>
-					<dd>{e.topics.join(', ')}</dd>
-
-					<dt>Verified via</dt>
-					<dd>{e.source}</dd>
-				</dl>
+		<div class="detail-head">
+			<div class="spine">
+				<span class="weekday">{spine.weekday}</span>
+				<span class="day">{spine.day}</span>
+				<span class="month">{spine.month}</span>
 			</div>
-
-			<aside class="register">
-				<div class="register-card">
-					<p class="register-title">Register with the organiser</p>
-					<p class="register-note">
-						Registration is handled on {e.source}. We do not sell tickets or take a commission.
-					</p>
-					<a class="btn accent register-btn" href={e.url} target="_blank" rel="noopener noreferrer">
-						Go to {e.source} ↗
-					</a>
-				</div>
-				<p class="disclosure">
-					Every listing on {SITE_NAME} is checked against its original source page before
-					publishing. Details can change on the organiser's side — always confirm on the link
-					above before you go.
+			<div>
+				<h1>{e.title}</h1>
+				<p class="meta mono">
+					{dateLabel}{e.time ? ` · ${e.time}` : ''} · {e.city}{e.venue ? ` — ${e.venue}` : ''}
 				</p>
-			</aside>
+				<p class="chips">
+					<span class="tag format">{e.format}</span>
+					{e.topics.map((t) => <span class="tag topic">{t}</span>)}
+					<span class={`tag cost ${free ? 'free' : ''}`}>{e.cost}</span>
+				</p>
+			</div>
 		</div>
+
+		<p class="blurb">{e.blurb}</p>
+
+		<a class="btn accent" href={e.url} target="_blank" rel="noopener noreferrer">
+			Register / details on {e.source} ↗
+		</a>
+
+		<dl class="facts">
+			<dt>Organiser</dt>
+			<dd>{e.organiser}</dd>
+			<dt>Verified via</dt>
+			<dd>{e.source}</dd>
+		</dl>
+
+		<p class="disclosure">
+			Every listing on {SITE_NAME} is checked against its original source page before publishing.
+			Details can change on the organiser's side — always confirm on the link above before you go.
+		</p>
 	</main>
 
 	<footer class="site-footer wrap">
-		<p>
-			{SITE_NAME} — Switzerland only, data/AI/IT-leadership focus for now. <a href="/"
-				>Back to all events</a
-			>.
-		</p>
+		<p>{SITE_NAME} — Switzerland only, data/AI/IT-leadership focus for now. <a href="/">Back to all events</a>.</p>
 	</footer>
 
 	<style>
 		.detail {
-			padding-top: 28px;
+			padding: 24px 24px 24px;
 		}
 		.back {
 			color: var(--muted);
 			text-decoration: none;
-			font-size: 0.875rem;
+			font-size: 0.88rem;
 		}
 		.back:hover {
-			color: var(--ink);
+			text-decoration: underline;
 		}
-		.detail-grid {
+		.detail-head {
 			display: grid;
-			grid-template-columns: 1fr 340px;
-			gap: 72px;
-			align-items: start;
-			margin-top: 36px;
+			grid-template-columns: 72px 1fr;
+			gap: 20px;
+			margin: 24px 0 20px;
 		}
-		.dateline {
+		.spine {
+			border-right: 1px solid var(--border);
+			padding-right: 14px;
+			display: flex;
+			flex-direction: column;
+			line-height: 1.15;
+		}
+		.spine .weekday {
+			font-size: 0.7rem;
 			color: var(--muted);
-			font-size: 0.875rem;
-			margin: 0 0 14px;
+			text-transform: uppercase;
+			letter-spacing: 0.06em;
+		}
+		.spine .day {
+			font-size: 1.9rem;
+			font-weight: 700;
+		}
+		.spine .month {
+			font-size: 0.78rem;
+			color: var(--muted);
+			text-transform: uppercase;
+			letter-spacing: 0.04em;
 		}
 		h1 {
-			font-size: clamp(1.9rem, 4vw, 2.8rem);
-			font-weight: 600;
-			line-height: 1.08;
-			letter-spacing: -0.03em;
+			font-size: clamp(1.4rem, 3vw, 1.9rem);
+			margin: 0 0 8px;
+			letter-spacing: -0.01em;
+		}
+		.meta {
+			color: var(--muted);
+			font-size: 0.85rem;
+			margin: 0 0 12px;
+		}
+		.chips {
+			display: flex;
+			gap: 6px;
+			flex-wrap: wrap;
 			margin: 0;
-			max-width: 20ch;
-			text-wrap: pretty;
 		}
 		.blurb {
-			font-size: 1.1rem;
-			line-height: 1.55;
-			color: var(--ink-2);
+			font-size: 1.05rem;
 			max-width: 60ch;
-			margin: 24px 0 0;
+			margin: 24px 0;
 		}
 		.facts {
 			display: grid;
-			grid-template-columns: 150px 1fr;
-			gap: 0 40px;
-			margin: 40px 0 0;
-			font-size: 0.95rem;
-			border-top: 1px solid var(--border);
+			grid-template-columns: max-content 1fr;
+			gap: 4px 16px;
+			margin: 28px 0;
+			font-size: 0.88rem;
 		}
 		.facts dt {
 			color: var(--muted);
-			padding: 15px 0;
-			border-bottom: 1px solid var(--border);
 		}
 		.facts dd {
 			margin: 0;
-			padding: 15px 0;
-			border-bottom: 1px solid var(--border);
-		}
-		.facts dd.free {
-			font-weight: 600;
-		}
-		.register {
-			padding-top: 44px;
-		}
-		.register-card {
-			border: 1px solid var(--ink);
-			padding: 26px;
-		}
-		.register-title {
-			font-size: 0.95rem;
-			font-weight: 600;
-			margin: 0;
-		}
-		.register-note {
-			font-size: 0.82rem;
-			color: var(--muted);
-			line-height: 1.55;
-			margin: 8px 0 0;
-		}
-		.register-btn {
-			width: 100%;
-			margin-top: 20px;
-			padding: 13px 16px;
 		}
 		.disclosure {
 			font-size: 0.82rem;
 			color: var(--muted);
-			line-height: 1.65;
-			margin: 22px 0 0;
-		}
-
-		@media (max-width: 900px) {
-			.detail-grid {
-				grid-template-columns: 1fr;
-				gap: 36px;
-			}
-			.register {
-				padding-top: 0;
-			}
-			h1 {
-				max-width: none;
-			}
+			max-width: 60ch;
 		}
 		@media (max-width: 640px) {
 			.detail {
-				padding-top: 20px;
+				padding: 16px 16px 24px;
 			}
-			.detail-grid {
-				margin-top: 24px;
+			.detail-head {
+				grid-template-columns: 1fr;
+				gap: 0;
 			}
-			.facts {
-				grid-template-columns: 110px 1fr;
-				gap: 0 20px;
+			.spine {
+				flex-direction: row;
+				align-items: baseline;
+				gap: 6px;
+				border-right: none;
+				border-bottom: 1px solid var(--border);
+				padding-right: 0;
+				padding-bottom: 8px;
+				margin-bottom: 10px;
+			}
+			.spine .day {
+				font-size: 1rem;
+				order: -1;
 			}
 		}
 	</style>
