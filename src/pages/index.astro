@@ -7,11 +7,14 @@ import {
 	dateSpine,
 	isFree,
 	eventUrl,
+	formatLastScan,
 	SITE_URL,
 	SITE_NAME,
 	SITE_TAGLINE,
 } from '../lib/events';
+import meta from '../data/meta.json';
 
+const lastScan = formatLastScan(meta.lastScan);
 const entries = await getUpcomingEvents();
 const events = entries.map((e) => ({ id: e.id, ...e.data }));
 
@@ -54,6 +57,7 @@ const structuredData = [
 			<p class="eyebrow">Proof of concept</p>
 			<h1>IT &amp; AI events in Switzerland</h1>
 			<p class="tagline">{SITE_TAGLINE}</p>
+			<p class="last-scan mono">Last scanned: {lastScan}</p>
 		</div>
 	</header>
 
@@ -162,7 +166,8 @@ const structuredData = [
 	<footer class="site-footer wrap">
 		<p>
 			Proof of concept — Switzerland only, data/AI/IT-leadership focus for now. Every event is
-			verified against its original page before listing. Refreshed automatically each morning.
+			verified against its original page before listing. Refreshed automatically each morning —
+			last scanned {lastScan}.
 		</p>
 	</footer>
 
@@ -343,6 +348,12 @@ const structuredData = [
 			color: var(--hero-muted);
 			max-width: 56ch;
 			margin: 0;
+		}
+		.last-scan {
+			color: var(--hero-muted);
+			font-size: 0.78rem;
+			margin: 12px 0 0;
+			opacity: 0.8;
 		}
 		main {
 			padding: 24px 24px 64px;

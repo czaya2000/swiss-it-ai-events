@@ -52,3 +52,13 @@ export function isFree(cost: string): boolean {
 export function eventUrl(slug: string): string {
 	return `${SITE_URL}/events/${slug}/`;
 }
+
+const LAST_SCAN_FMT = new Intl.DateTimeFormat('en-GB', {
+	dateStyle: 'medium',
+	timeStyle: 'short',
+	timeZone: 'Europe/Zurich',
+});
+
+export function formatLastScan(iso: string): string {
+	return `${LAST_SCAN_FMT.format(new Date(iso))} Europe/Zurich`;
+}

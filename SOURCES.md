@@ -16,6 +16,8 @@ adding a source here means "check this for leads," not "trust it blindly."
 - switzerland-ai.com — Switzerland AI Community (Geneva meetups)
 - sairop.swiss — ETH AI Center / Swiss AI Initiative events
 - geneva.aitinkerers.org — AI Tinkerers Geneva chapter
+- damaswiss.org — DAMA Switzerland, Zurich chapter (webinars + Leading Data Conference)
+- damageneva.org/dama-future-events — DAMA Switzerland, Geneva chapter
 
 ## Listing platforms — named groups to check directly (as of Sept 2026, none of these currently
 ## have a next date announced — check anyway, they post irregularly)
@@ -28,6 +30,12 @@ adding a source here means "check this for leads," not "trust it blindly."
 - meetup.com/daizurich — Swiss Data and AI Meetup
 - meetup.com/zurich-data-sciece-odsc — ODSC AI Zurich
 - meetup.com/mindstone-geneva-ai-meetup
+- meetup.com/find keyword search — run for both Zürich and Genève on each of: "AI", "Power BI",
+  "Fabric", "Snowflake", "data governance" (e.g. meetup.com/find/?keywords=AI&location=ch--Zürich).
+  Named groups above cover the regulars; this catches new/one-off events and groups not yet named
+  here. Watch for the same listing repeated verbatim across many cities worldwide (syndicated
+  franchise content, e.g. generic "AI Developers Group"/"Computer Vision Meetup" webinars) — those
+  aren't genuinely Swiss and should be skipped.
 - luma.com
 - eventbrite.com (and country variants, e.g. eventbrite.ie)
 - linkedin.com/events

@@ -844,5 +844,167 @@
     "source": "greaterzuricharea.com",
     "blurb": "International humanoid robotics championship and showcase in Zurich.",
     "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "ai-agent-in-a-day-workshop-zurich-2026",
+    "title": "AI Agent in a Day Workshop @ Microsoft Zurich",
+    "date": "2026-09-11",
+    "endDate": "2026-09-11",
+    "time": "08:30–17:30",
+    "city": "Zurich",
+    "venue": "Microsoft MTC, The Circle 02",
+    "format": "Workshop",
+    "topics": [
+      "Agentic AI",
+      "Microsoft ecosystem",
+      "Enterprise AI"
+    ],
+    "organiser": "AI, Copilot & Business Apps Community by INKUBIT",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/ai-copilot-business-apps-community-by-inkubit/events/315583262/",
+    "source": "Meetup",
+    "blurb": "Hands-on, single-day workshop building and refining AI agents for real business use cases — project management, lead qualification, account intelligence — hosted at Microsoft's Zurich campus.",
+    "firstSeen": "2026-09-04"
+  },
+  {
+    "id": "ai-square-conference-winterthur-2026",
+    "title": "AI-SQUARE Conference",
+    "date": "2026-09-24",
+    "endDate": "2026-09-24",
+    "time": "16:30–20:00",
+    "city": "Winterthur",
+    "format": "Conference",
+    "topics": [
+      "Applied AI",
+      "Enterprise AI"
+    ],
+    "organiser": "Tech Talks Basel / AI-SQUARE",
+    "cost": "Free",
+    "url": "https://www.meetup.com/tech-talks-basel/events/316350566/",
+    "source": "Meetup",
+    "blurb": "Keynotes and real-world case studies on AI-SQUARE, a Swiss-built platform for AI-powered software staging management, with the academics and industry leaders who built it.",
+    "firstSeen": "2026-09-04"
+  },
+  {
+    "id": "ai-productivity-conference-zurich-2026",
+    "title": "AI Productivity User Group Conference @ Microsoft Switzerland",
+    "date": "2026-10-23",
+    "endDate": "2026-10-23",
+    "city": "Zurich",
+    "venue": "Microsoft Switzerland, The Circle 02, Kloten",
+    "format": "Conference",
+    "topics": [
+      "Microsoft ecosystem",
+      "Enterprise AI",
+      "AI tools"
+    ],
+    "organiser": "AI Productivity User Group",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/ai-productivity-usergroup/events/315511153/",
+    "source": "Meetup",
+    "blurb": "In-person conference on AI productivity tooling — Copilot Cowork, Azure AI integration, and AI-driven meeting workflows — with MVP speakers at Microsoft's Zurich Airport campus.",
+    "firstSeen": "2026-09-04"
+  },
+  {
+    "id": "chalet-azure-romandie-power-platform-2026",
+    "title": "IA & Power Platform 2026: MCP, Copilot et innovations Microsoft",
+    "date": "2026-09-24",
+    "endDate": "2026-09-24",
+    "time": "18:00–21:00",
+    "city": "Versoix",
+    "venue": "Regus Versoix, Station Lakeside",
+    "format": "Meetup",
+    "topics": [
+      "Microsoft ecosystem",
+      "Agentic AI",
+      "AI tools"
+    ],
+    "organiser": "Chalet Azure Romandie",
+    "cost": "Free",
+    "url": "https://www.meetup.com/chaletazure/events/313463700/",
+    "source": "Meetup",
+    "blurb": "Two French-language technical sessions on MCP for AI experiences in Dynamics 365/Power Platform and what's new in Power Platform for 2026, for architects and developers in Romandie.",
+    "firstSeen": "2026-09-04"
+  },
+  {
+    "id": "mindstone-geneva-ai-meetup-sept-2026",
+    "title": "Mindstone Geneva September AI Meetup",
+    "date": "2026-09-17",
+    "endDate": "2026-09-17",
+    "time": "18:00",
+    "city": "Geneva",
+    "venue": "Voisins Saint-Gervais, Rue Necker 3",
+    "format": "Meetup",
+    "topics": [
+      "GenAI",
+      "AI tools",
+      "Applied AI"
+    ],
+    "organiser": "Mindstone Geneva AI Meetup",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/mindstone-geneva-ai-meetup/events/316326015/",
+    "source": "Meetup",
+    "blurb": "Monthly Geneva AI meetup with three talks on building with LLMs and AI productivity, followed by networking over pizza and drinks.",
+    "firstSeen": "2026-09-04"
+  },
+  {
+    "id": "fabric-azure-hybrid-analytics-webinar-2026",
+    "title": "Hybrid Analytics — Fabric + Azure Services",
+    "date": "2026-09-08",
+    "endDate": "2026-09-08",
+    "time": "18:30",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Data platform",
+      "Microsoft ecosystem",
+      "Databricks"
+    ],
+    "organiser": "Data and AI for Intelligent Cloud (Azure Basel User Group)",
+    "cost": "Free",
+    "url": "https://www.meetup.com/azure-basel-user-group/events/312635971/",
+    "source": "Meetup",
+    "blurb": "Swiss Azure user-group session on integrating Microsoft Fabric with existing Azure investments — OneLake, Data Factory, Databricks, and Cosmos DB hybrid patterns.",
+    "firstSeen": "2026-09-04"
+  },
+  {
+    "id": "dama-swissquote-data-governance-webinar-2026",
+    "title": "Metadata-Powered Analytics: How Swissquote Uses Data Governance as a Catalyst",
+    "date": "2026-09-16",
+    "endDate": "2026-09-16",
+    "time": "13:00–14:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Data governance",
+      "Data leadership"
+    ],
+    "organiser": "DAMA Switzerland — Zurich Chapter",
+    "cost": "Free",
+    "url": "https://www.damaswiss.org/events/next-webinar",
+    "source": "DAMA Switzerland",
+    "blurb": "Swissquote's data governance professionals explain how metadata powers analytics and acts as a governance catalyst, hosted by DAMA Switzerland's Zurich chapter.",
+    "firstSeen": "2026-09-04"
+  },
+  {
+    "id": "leading-data-conference-switzerland-2026",
+    "title": "Leading Data Conference Switzerland 2026",
+    "date": "2026-10-27",
+    "endDate": "2026-10-27",
+    "time": "13:30–20:00",
+    "city": "Lausanne",
+    "venue": "IMD",
+    "format": "Conference",
+    "topics": [
+      "Data leadership",
+      "Data governance",
+      "Data strategy"
+    ],
+    "organiser": "DAMA Switzerland — Zurich Chapter",
+    "cost": "200 CHF (170 early bird) / 140 CHF members (110 early bird)",
+    "url": "https://infomaniak.events/en-ch/conferences/leading-data-switzerland-2026-dama-switzerland-zurich-annual-conference/7ec26bfa-13fe-4bbb-8180-37ef5af344f5/events/389858",
+    "source": "DAMA Switzerland",
+    "blurb": "DAMA Switzerland's annual data leadership conference at IMD Lausanne, covering data modelling, data-as-an-asset workshops, and CDMP certification.",
+    "firstSeen": "2026-09-04"
   }
 ]
