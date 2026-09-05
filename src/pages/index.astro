@@ -116,7 +116,6 @@ const structuredData = [
 
 			<div class="when-tabs" role="tablist" aria-label="Time range">
 				<button class="when-tab" data-when="all" type="button">All</button>
-				<button class="when-tab" data-when="today" type="button">Today</button>
 				<button class="when-tab" data-when="week" type="button">This week</button>
 				<button class="when-tab" data-when="month" type="button">This month</button>
 			</div>
@@ -235,7 +234,6 @@ const structuredData = [
 				var now = new Date();
 				now.setHours(0, 0, 0, 0);
 				var todayStr = toISO(now);
-				if (when === 'today') return { start: todayStr, end: todayStr };
 				if (when === 'week') {
 					var weekEnd = new Date(now);
 					weekEnd.setDate(weekEnd.getDate() + 6);
