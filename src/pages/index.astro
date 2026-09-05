@@ -68,9 +68,14 @@ const structuredData = [
 		<h1>{SITE_HEADLINE}</h1>
 	</header>
 
-	<div class="wrap subscribe-slot">
-		<Subscribe placement="home" />
-	</div>
+	{
+		// Subscribe block hidden for now — flip this back on when ready.
+		false && (
+			<div class="wrap subscribe-slot">
+				<Subscribe placement="home" />
+			</div>
+		)
+	}
 
 	<main class="wrap">
 		<div class="controls">
@@ -85,20 +90,16 @@ const structuredData = [
 				<label>
 					<span class="sr-only">City</span>
 					<select id="filter-city">
-						<option value="">All cities</option>
+						<option value="">City</option>
 						{cities.map((c) => <option value={c}>{c}</option>)}
 					</select>
 				</label>
 				<label>
 					<span class="sr-only">Format</span>
 					<select id="filter-format">
-						<option value="">All formats</option>
+						<option value="">Format</option>
 						{formats.map((f) => <option value={f}>{f}</option>)}
 					</select>
-				</label>
-				<label class="checkbox-label">
-					<input type="checkbox" id="filter-new" />
-					New only
 				</label>
 			</div>
 
@@ -135,7 +136,6 @@ const structuredData = [
 									data-band={g.band.key}
 									data-city={e.city}
 									data-format={e.format}
-									data-new={eNew}
 									data-date={e.date}
 									data-end-date={e.endDate ?? e.date}
 									data-search={[e.title, e.organiser, e.city, e.venue, ...e.topics]
@@ -186,7 +186,6 @@ const structuredData = [
 			var searchInput = document.getElementById('filter-search');
 			var citySelect = document.getElementById('filter-city');
 			var formatSelect = document.getElementById('filter-format');
-			var newCheckbox = document.getElementById('filter-new');
 			var whenTabs = Array.prototype.slice.call(document.querySelectorAll('.when-tab'));
 			var rows = Array.prototype.slice.call(document.querySelectorAll('.row'));
 			var bands = Array.prototype.slice.call(document.querySelectorAll('.band'));
@@ -199,13 +198,11 @@ const structuredData = [
 				city: params.get('city') || '',
 				format: params.get('format') || '',
 				when: params.get('when') || 'all',
-				isNew: params.get('new') === '1',
 			};
 
 			searchInput.value = state.q;
 			citySelect.value = state.city;
 			formatSelect.value = state.format;
-			newCheckbox.checked = state.isNew;
 
 			function pad(n) {
 				return String(n).padStart(2, '0');
@@ -237,7 +234,6 @@ const structuredData = [
 				if (state.city) p.set('city', state.city);
 				if (state.format) p.set('format', state.format);
 				if (state.when && state.when !== 'all') p.set('when', state.when);
-				if (state.isNew) p.set('new', '1');
 				var qs = p.toString();
 				history.replaceState(null, '', qs ? '?' + qs : location.pathname);
 			}
@@ -254,7 +250,6 @@ const structuredData = [
 						(!query || (d.search || '').indexOf(query) !== -1) &&
 						(!state.city || d.city === state.city) &&
 						(!state.format || d.format === state.format) &&
-						(!state.isNew || d.new === 'true') &&
 						(!bounds || (d.date <= bounds.end && d.endDate >= bounds.start));
 					row.hidden = !matches;
 					if (matches) {
@@ -292,11 +287,6 @@ const structuredData = [
 			});
 			formatSelect.addEventListener('change', function () {
 				state.format = formatSelect.value;
-				updateUrl();
-				applyFilters();
-			});
-			newCheckbox.addEventListener('change', function () {
-				state.isNew = newCheckbox.checked;
 				updateUrl();
 				applyFilters();
 			});
@@ -395,15 +385,6 @@ const structuredData = [
 			width: 100%;
 			max-width: 360px;
 		}
-		.checkbox-label {
-			display: flex;
-			align-items: center;
-			gap: 6px;
-			font-size: 0.875rem;
-			color: var(--muted);
-			padding-bottom: 5px;
-		}
-
 		.events {
 			list-style: none;
 			margin: 0;
