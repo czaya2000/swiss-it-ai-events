@@ -8,9 +8,12 @@ import {
 	isFree,
 	eventUrl,
 	formatLastScan,
+	weekStart,
+	weekBand,
 	SITE_URL,
 	SITE_NAME,
 	SITE_TAGLINE,
+	SITE_HEADLINE,
 } from '../lib/events';
 import meta from '../data/meta.json';
 
@@ -20,6 +23,17 @@ const events = entries.map((e) => ({ id: e.id, ...e.data }));
 
 const cities = [...new Set(events.map((e) => e.city))].sort();
 const formats = [...new Set(events.map((e) => e.format))].sort();
+
+// Events arrive sorted by date, so grouping is a single pass. Each group is
+// the week the event STARTS in; a multi-day event sits in its start week.
+type Row = (typeof events)[number];
+const groups: { band: ReturnType<typeof weekBand>; rows: Row[] }[] = [];
+for (const e of events) {
+	const key = weekStart(e.date);
+	const last = groups[groups.length - 1];
+	if (last && last.band.key === key) last.rows.push(e);
+	else groups.push({ band: weekBand(key), rows: [e] });
+}
 
 const title = `${SITE_NAME} — Switzerland's IT & AI events, curated`;
 const description = SITE_TAGLINE;
@@ -52,111 +66,112 @@ const structuredData = [
 		</button>
 	</SiteNav>
 
-	<header class="hero">
-		<div class="wrap">
-			<p class="eyebrow">Proof of concept</p>
-			<h1>IT &amp; AI events in Switzerland</h1>
-			<p class="tagline">{SITE_TAGLINE}</p>
-			<p class="last-scan mono">Last scanned: {lastScan}</p>
-		</div>
+	<header class="statement wrap">
+		<h1>{SITE_HEADLINE}</h1>
 	</header>
 
 	<main class="wrap">
-		<div class="when-tabs" role="tablist" aria-label="Time range">
-			<button class="when-tab" data-when="all" type="button">All</button>
-			<button class="when-tab" data-when="today" type="button">Today</button>
-			<button class="when-tab" data-when="week" type="button">This week</button>
-			<button class="when-tab" data-when="month" type="button">This month</button>
-			<button class="when-tab" data-when="weekend" type="button">Weekend</button>
-		</div>
+		<div class="controls">
+			<div class="filters">
+				<label class="search-label">
+					<span class="sr-only">Search</span>
+					<input type="search" id="filter-search" placeholder="Search title, organiser, topic…" />
+				</label>
+				<label>
+					<span class="sr-only">City</span>
+					<select id="filter-city">
+						<option value="">All cities</option>
+						{cities.map((c) => <option value={c}>{c}</option>)}
+					</select>
+				</label>
+				<label>
+					<span class="sr-only">Format</span>
+					<select id="filter-format">
+						<option value="">All formats</option>
+						{formats.map((f) => <option value={f}>{f}</option>)}
+					</select>
+				</label>
+				<label class="checkbox-label">
+					<input type="checkbox" id="filter-new" />
+					New only
+				</label>
+			</div>
 
-		<div class="filters">
-			<label class="search-label">
-				<span class="sr-only">Search</span>
-				<input type="search" id="filter-search" placeholder="Search title, organiser, topic…" />
-			</label>
-			<label>
-				<span class="sr-only">City</span>
-				<select id="filter-city">
-					<option value="">All cities</option>
-					{cities.map((c) => <option value={c}>{c}</option>)}
-				</select>
-			</label>
-			<label>
-				<span class="sr-only">Format</span>
-				<select id="filter-format">
-					<option value="">All formats</option>
-					{formats.map((f) => <option value={f}>{f}</option>)}
-				</select>
-			</label>
-			<label class="checkbox-label">
-				<input type="checkbox" id="filter-new" />
-				New only
-			</label>
-			<span id="result-count" class="result-count"></span>
+			<div class="when-row">
+				<div class="when-tabs" role="tablist" aria-label="Time range">
+					<button class="when-tab" data-when="all" type="button">All</button>
+					<button class="when-tab" data-when="today" type="button">Today</button>
+					<button class="when-tab" data-when="week" type="button">This week</button>
+					<button class="when-tab" data-when="month" type="button">This month</button>
+					<button class="when-tab" data-when="weekend" type="button">Weekend</button>
+				</div>
+				<span id="result-count" class="result-count num"></span>
+			</div>
 		</div>
 
 		<ul class="events" id="event-list">
 			{
-				events.map((e, i) => {
-					const spine = dateSpine(e.date);
-					const isMultiDay = !!e.endDate && e.endDate !== e.date;
-					const endSpine = isMultiDay ? dateSpine(e.endDate) : null;
-					// Every row always shows its own date — no compression/suppression.
-					// Two previous attempts at "repeat only when the date changes" kept
-					// producing blank date columns users read as a bug, not a feature.
-					const showDate = true;
-					const eNew = isNew(e.firstSeen);
-					const free = isFree(e.cost);
-					return (
-						<li
-							class="row"
-							data-city={e.city}
-							data-format={e.format}
-							data-new={eNew}
-							data-date={e.date}
-							data-end-date={e.endDate ?? e.date}
-							data-search={[e.title, e.organiser, e.city, e.venue, ...e.topics].join(' ').toLowerCase()}
-						>
-							<a class="row-link" href={`/events/${e.id}/`}>
-								<div class={`spine ${showDate ? '' : 'spine-empty'}`}>
-									{showDate && (
-										<>
-											<span class="weekday">{spine.weekday}</span>
-											<span class="day">{spine.day}</span>
-											<span class="month">{spine.month}</span>
+				groups.map((g) => (
+					<>
+						<li class={`band ${g.band.current ? 'current' : ''}`} data-band={g.band.key}>
+							<div class="band-label">
+								<span class="band-primary num">{g.band.primary}</span>
+								{g.band.secondary && <span class="band-secondary num">{g.band.secondary}</span>}
+							</div>
+						</li>
+						{g.rows.map((e) => {
+							const spine = dateSpine(e.date);
+							const isMultiDay = !!e.endDate && e.endDate !== e.date;
+							const endSpine = isMultiDay ? dateSpine(e.endDate) : null;
+							const eNew = isNew(e.firstSeen);
+							const free = isFree(e.cost);
+							// Built as one string: separate JSX expressions would each be
+							// wrapped in whitespace, producing "Zurich , ETH UNO building".
+							const metaLine = [e.city, e.venue, e.time].filter(Boolean).join(', ');
+							return (
+								<li
+									class="row"
+									data-band={g.band.key}
+									data-city={e.city}
+									data-format={e.format}
+									data-new={eNew}
+									data-date={e.date}
+									data-end-date={e.endDate ?? e.date}
+									data-search={[e.title, e.organiser, e.city, e.venue, ...e.topics]
+										.join(' ')
+										.toLowerCase()}
+								>
+									<a class="row-link" href={`/events/${e.id}/`}>
+										<div class="spine">
+											<span class="day num">{spine.day}</span>
+											<span class="dm">
+												{spine.weekday}, {spine.month}
+											</span>
 											{isMultiDay && endSpine && (
-												<span class="through">
-													→ {endSpine.day} {endSpine.month}
+												<span class="through num">
+													to {endSpine.day} {endSpine.month}
 												</span>
 											)}
-										</>
-									)}
-								</div>
-								<div class="content">
-									<h2 class="title">
-										{eNew && <span class="new-dot" aria-hidden="true" />}
-										{e.title}
-										{eNew && <span class="sr-only">(new)</span>}
-									</h2>
-									<p class="meta mono">
-										{e.time ? `${e.time} · ` : ''}
-										{e.city}
-										{e.venue ? ` — ${e.venue}` : ''}
-									</p>
-									<p class="chips">
-										<span class="tag format">{e.format}</span>
-										{e.topics.map((t) => (
-											<span class="tag topic">{t}</span>
-										))}
-										<span class={`tag cost ${free ? 'free' : ''}`}>{e.cost}</span>
-									</p>
-									<p class="blurb">{e.blurb}</p>
-								</div>
-							</a>
-						</li>
-					);
-				})
+										</div>
+										<div class="content">
+											<h2 class="title">
+												{eNew && <span class="new-dot" aria-hidden="true" />}
+												{e.title}
+												{eNew && <span class="sr-only">(new)</span>}
+											</h2>
+											<p class="meta">{metaLine}</p>
+											<p class="blurb">{e.blurb}</p>
+										</div>
+										<div class="aside">
+											<span class="format">{e.format}</span>
+											<span class={`cost ${free ? 'free' : ''}`}>{e.cost}</span>
+										</div>
+									</a>
+								</li>
+							);
+						})}
+					</>
+				))
 			}
 		</ul>
 
@@ -165,9 +180,8 @@ const structuredData = [
 
 	<footer class="site-footer wrap">
 		<p>
-			Proof of concept — Switzerland only, data/AI/IT-leadership focus for now. Every event is
-			verified against its original page before listing. Refreshed automatically each morning —
-			last scanned {lastScan}.
+			Switzerland only, data/AI/IT-leadership focus for now. Every event is verified against its
+			original page before listing. Refreshed automatically each morning — last scanned {lastScan}.
 		</p>
 	</footer>
 
@@ -180,6 +194,7 @@ const structuredData = [
 			var whenTabs = Array.prototype.slice.call(document.querySelectorAll('.when-tab'));
 			var densityBtn = document.getElementById('density-toggle');
 			var rows = Array.prototype.slice.call(document.querySelectorAll('.row'));
+			var bands = Array.prototype.slice.call(document.querySelectorAll('.band'));
 			var resultCount = document.getElementById('result-count');
 			var emptyState = document.getElementById('empty-state');
 
@@ -245,6 +260,7 @@ const structuredData = [
 				var query = state.q.trim().toLowerCase();
 				var bounds = whenBounds(state.when);
 				var visible = 0;
+				var perBand = {};
 				for (var i = 0; i < rows.length; i++) {
 					var row = rows[i];
 					var d = row.dataset;
@@ -255,7 +271,15 @@ const structuredData = [
 						(!state.isNew || d.new === 'true') &&
 						(!bounds || (d.date <= bounds.end && d.endDate >= bounds.start));
 					row.hidden = !matches;
-					if (matches) visible++;
+					if (matches) {
+						visible++;
+						perBand[d.band] = true;
+					}
+				}
+				// A week heading with every row filtered out is a heading for
+				// nothing — hide it with its rows.
+				for (var b = 0; b < bands.length; b++) {
+					bands[b].hidden = !perBand[bands[b].dataset.band];
 				}
 				resultCount.textContent = visible + ' event' + (visible === 1 ? '' : 's');
 				emptyState.hidden = visible !== 0;
@@ -325,186 +349,39 @@ const structuredData = [
 	</script>
 
 	<style>
-		.hero {
-			background: var(--hero-bg);
-			color: var(--hero-ink);
-			padding: 40px 0 36px;
-			margin-top: 16px;
+		.statement {
+			padding-top: 56px;
 		}
-		.eyebrow {
-			text-transform: uppercase;
-			letter-spacing: 0.08em;
-			font-size: 0.75rem;
-			color: var(--accent);
-			font-weight: 700;
-			margin: 0 0 12px;
-		}
-		.hero h1 {
-			font-size: clamp(1.8rem, 4vw, 2.6rem);
-			margin: 0 0 12px;
+		.statement h1 {
+			font-size: clamp(1.6rem, 3.2vw, 2.15rem);
+			font-weight: 500;
+			line-height: 1.18;
 			letter-spacing: -0.02em;
-		}
-		.tagline {
-			color: var(--hero-muted);
-			max-width: 56ch;
 			margin: 0;
+			max-width: 32ch;
+			text-wrap: pretty;
 		}
-		.last-scan {
-			color: var(--hero-muted);
-			font-size: 0.78rem;
-			margin: 12px 0 0;
-			opacity: 0.8;
-		}
+
 		main {
-			padding: 24px 24px 64px;
+			padding-bottom: 8px;
 		}
-		.when-tabs {
+		.controls {
 			display: flex;
-			gap: 4px;
-			margin-bottom: 16px;
+			flex-direction: column;
+			gap: 16px;
+			padding-top: 44px;
+			padding-bottom: 14px;
 			border-bottom: 1px solid var(--border);
 		}
-		.when-tab {
-			font: inherit;
-			font-size: 0.85rem;
-			font-weight: 600;
-			background: none;
-			border: none;
-			border-bottom: 2px solid transparent;
-			padding: 8px 10px;
-			color: var(--muted);
-			cursor: pointer;
-			margin-bottom: -1px;
-		}
-		.when-tab.active {
-			color: var(--ink);
-			border-bottom-color: var(--accent);
-		}
-		.filters {
+		.when-row {
 			display: flex;
-			gap: 12px;
-			align-items: center;
-			flex-wrap: wrap;
-			margin-bottom: 20px;
-		}
-		select,
-		input[type='search'] {
-			font: inherit;
-			font-size: 0.85rem;
-			padding: 7px 10px;
-			border-radius: 7px;
-			border: 1px solid var(--border);
-			background: var(--surface);
-			color: var(--ink);
-		}
-		.search-label {
-			flex: 1 1 200px;
-		}
-		.search-label input {
-			width: 100%;
-		}
-		.checkbox-label {
-			display: flex;
-			align-items: center;
-			gap: 6px;
-			font-size: 0.85rem;
-			color: var(--muted);
-		}
-		.result-count {
-			margin-left: auto;
-			color: var(--muted);
-			font-size: 0.85rem;
-		}
-		.events {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			display: flex;
-			flex-direction: column;
-			gap: 10px;
-		}
-		.row {
-			background: var(--surface);
-			border: 1px solid var(--border);
-			border-radius: 10px;
-		}
-		.row-link {
-			display: grid;
-			grid-template-columns: 76px 1fr;
-			gap: 16px;
-			padding: 14px 16px;
-			text-decoration: none;
-			color: inherit;
-		}
-		.spine {
-			border-right: 1px solid var(--border);
-			padding-right: 12px;
-			display: flex;
-			flex-direction: column;
-			line-height: 1.15;
-		}
-		.spine .weekday {
-			font-size: 0.65rem;
-			color: var(--muted);
-			text-transform: uppercase;
-			letter-spacing: 0.06em;
-		}
-		.spine .day {
-			font-size: 1.5rem;
-			font-weight: 700;
-		}
-		.spine .month {
-			font-size: 0.7rem;
-			color: var(--muted);
-			text-transform: uppercase;
-			letter-spacing: 0.04em;
-		}
-		.spine .through {
-			font-size: 0.62rem;
-			color: var(--muted);
-			text-transform: uppercase;
-			letter-spacing: 0.03em;
-			margin-top: 3px;
-			white-space: nowrap;
-		}
-		.title {
-			margin: 0 0 5px;
-			font-size: 1.12rem;
-			font-weight: 700;
-			letter-spacing: -0.01em;
-			display: flex;
-			align-items: center;
-			gap: 7px;
-		}
-		.row-link:hover .title {
-			text-decoration: underline;
-		}
-		.meta {
-			margin: 0 0 8px;
-			color: var(--muted);
-			font-size: 0.8rem;
-		}
-		.chips {
-			margin: 0;
-			display: flex;
-			gap: 6px;
-			flex-wrap: wrap;
-		}
-		.blurb {
-			margin: 10px 0 0;
-			font-size: 0.9rem;
-			color: var(--ink);
-			max-width: 68ch;
-		}
-		.events.compact .blurb {
-			display: none;
-		}
-		.empty-state {
-			color: var(--muted);
-			text-align: center;
-			padding: 40px 0;
+			align-items: flex-end;
+			justify-content: space-between;
+			gap: 32px;
 		}
 		.when-tabs {
+			display: flex;
+			gap: 22px;
 			overflow-x: auto;
 			-webkit-overflow-scrolling: touch;
 			scrollbar-width: none;
@@ -515,51 +392,219 @@ const structuredData = [
 		.when-tab {
 			flex: none;
 			white-space: nowrap;
+			font: inherit;
+			font-size: 0.875rem;
+			background: none;
+			border: none;
+			border-bottom: 2px solid transparent;
+			padding: 0 0 5px;
+			color: var(--muted);
+			cursor: pointer;
+			margin-bottom: -1px;
+		}
+		.when-tab.active {
+			color: var(--ink);
+			font-weight: 600;
+			border-bottom-color: var(--ink);
+		}
+		.filters {
+			display: flex;
+			gap: 18px;
+			align-items: flex-end;
+			flex-wrap: wrap;
+		}
+		select,
+		input[type='search'] {
+			font: inherit;
+			font-size: 0.875rem;
+			padding: 0 0 5px;
+			border: none;
+			border-bottom: 1px solid var(--border);
+			border-radius: 0;
+			background: transparent;
+			color: var(--ink);
+		}
+		select:focus,
+		input[type='search']:focus {
+			outline: none;
+			border-bottom-color: var(--ink);
+		}
+		.search-label input {
+			width: 190px;
+		}
+		.checkbox-label {
+			display: flex;
+			align-items: center;
+			gap: 6px;
+			font-size: 0.875rem;
+			color: var(--muted);
+			padding-bottom: 5px;
+		}
+		.result-count {
+			color: var(--muted);
+			font-size: 0.875rem;
+			padding-bottom: 5px;
+		}
+
+		.events {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		/* Week band. The date range is the label; week numbers are never shown. */
+		.band {
+			display: grid;
+			padding: 38px 0 12px;
+		}
+		.band[hidden] {
+			display: none;
+		}
+		.band-label {
+			display: flex;
+			gap: 14px;
+			align-items: baseline;
+			white-space: nowrap;
+		}
+		.band-primary {
+			font-size: 0.95rem;
+			font-weight: 600;
+		}
+		.band-secondary {
+			font-size: 0.82rem;
+			color: var(--muted);
+		}
+		/* The accent's second and last appearance: the week we are in. */
+		.band.current .band-primary,
+		.band.current .band-secondary {
+			color: var(--accent);
+		}
+
+		.row {
+			border-bottom: 1px solid var(--border);
+		}
+		.row-link {
+			display: grid;
+			grid-template-columns: 92px 1fr 176px;
+			gap: 36px;
+			padding: 18px 0;
+			text-decoration: none;
+			color: inherit;
+		}
+		.spine {
+			display: flex;
+			flex-direction: column;
+		}
+		.spine .day {
+			font-size: 1.85rem;
+			font-weight: 600;
+			line-height: 1;
+		}
+		.spine .dm {
+			font-size: 0.75rem;
+			color: var(--muted);
+			margin-top: 5px;
+		}
+		.spine .through {
+			font-size: 0.75rem;
+			color: var(--muted);
+			white-space: nowrap;
+		}
+		.title {
+			margin: 0;
+			font-size: 1.18rem;
+			font-weight: 500;
+			letter-spacing: -0.01em;
+			line-height: 1.28;
+			display: flex;
+			align-items: baseline;
+			gap: 8px;
+			text-wrap: pretty;
+		}
+		.row-link:hover .title {
+			text-decoration: underline;
+			text-underline-offset: 3px;
+		}
+		.meta {
+			margin: 6px 0 0;
+			color: var(--ink-2);
+			font-size: 0.875rem;
+		}
+		.blurb {
+			margin: 3px 0 0;
+			font-size: 0.82rem;
+			color: var(--muted);
+			max-width: 72ch;
+		}
+		.events.compact .blurb {
+			display: none;
+		}
+		.aside {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			text-align: right;
+			gap: 4px;
+		}
+		.aside .format {
+			font-size: 0.875rem;
+		}
+		.aside .cost {
+			font-size: 0.82rem;
+			color: var(--muted);
+		}
+		.aside .cost.free {
+			color: var(--ink);
+			font-weight: 600;
+		}
+		.empty-state {
+			color: var(--muted);
+			padding: 48px 0;
 		}
 
 		@media (max-width: 640px) {
-			.wrap {
-				padding: 0 16px;
+			.statement {
+				padding-top: 32px;
 			}
-			.hero {
-				padding: 28px 0 24px;
+			.statement h1 {
+				max-width: none;
 			}
-			main {
-				padding: 20px 16px 48px;
+			.controls {
+				padding-top: 28px;
 			}
-			.filters {
-				gap: 10px;
+			.search-label input {
+				width: 150px;
 			}
-			.result-count {
-				margin-left: 0;
-				flex-basis: 100%;
+			.band {
+				gap: 8px;
+				padding: 28px 0 10px;
 			}
 			.row-link {
 				grid-template-columns: 1fr;
-				gap: 0;
-				padding: 12px 14px;
+				gap: 8px;
+				padding: 16px 0;
 			}
 			.spine {
 				flex-direction: row;
 				align-items: baseline;
-				gap: 6px;
-				border-right: none;
-				padding-right: 0;
-			}
-			.spine:not(.spine-empty) {
-				border-bottom: 1px solid var(--border);
-				padding-bottom: 8px;
-				margin-bottom: 8px;
-			}
-			.spine.spine-empty {
-				display: none;
+				gap: 8px;
 			}
 			.spine .day {
-				font-size: 1rem;
-				order: -1;
+				font-size: 1.3rem;
+			}
+			.spine .dm,
+			.spine .through {
+				margin-top: 0;
 			}
 			.title {
-				font-size: 1.02rem;
+				font-size: 1.05rem;
+			}
+			.aside {
+				flex-direction: row;
+				align-items: baseline;
+				justify-content: flex-start;
+				text-align: left;
+				gap: 14px;
 			}
 		}
 	</style>

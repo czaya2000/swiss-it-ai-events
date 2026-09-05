@@ -62,3 +62,60 @@ const LAST_SCAN_FMT = new Intl.DateTimeFormat('en-GB', {
 export function formatLastScan(iso: string): string {
 	return `${LAST_SCAN_FMT.format(new Date(iso))} Europe/Zurich`;
 }
+
+/* ---- Week grouping -------------------------------------------------- */
+
+/* The listing groups events under the week they start in. Week numbers are
+   deliberately NOT shown — outside logistics nobody reads "week 37" — so a
+   band is labelled by its date range, or by "This week" / "Next week" when
+   that is the more useful thing to say. */
+
+export const SITE_HEADLINE = 'Every IT and AI event in Switzerland, checked by hand.';
+
+const BAND_DAY = new Intl.DateTimeFormat('en-GB', { day: 'numeric' });
+const BAND_DAY_MONTH = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long' });
+
+/** Monday of the ISO week containing `date`, as YYYY-MM-DD. */
+export function weekStart(date: string): string {
+	const d = new Date(`${date}T00:00:00`);
+	const shift = (d.getDay() + 6) % 7; // Monday = 0
+	d.setDate(d.getDate() - shift);
+	return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+function addDays(date: string, n: number): Date {
+	const d = new Date(`${date}T00:00:00`);
+	d.setDate(d.getDate() + n);
+	return d;
+}
+
+/** "7 – 13 September", or "28 September – 4 October" across a month boundary. */
+export function weekRangeLabel(mondayISO: string): string {
+	const start = new Date(`${mondayISO}T00:00:00`);
+	const end = addDays(mondayISO, 6);
+	const sameMonth = start.getMonth() === end.getMonth();
+	const left = sameMonth ? BAND_DAY.format(start) : BAND_DAY_MONTH.format(start);
+	return `${left} – ${BAND_DAY_MONTH.format(end)}`;
+}
+
+export interface WeekBand {
+	key: string;
+	primary: string;
+	secondary: string;
+	current: boolean;
+}
+
+export function weekBand(mondayISO: string, ref = today()): WeekBand {
+	const thisWeek = weekStart(ref);
+	const nextWeek = weekStart(
+		`${addDays(thisWeek, 7).getFullYear()}-${String(addDays(thisWeek, 7).getMonth() + 1).padStart(2, '0')}-${String(addDays(thisWeek, 7).getDate()).padStart(2, '0')}`
+	);
+	const range = weekRangeLabel(mondayISO);
+	if (mondayISO === thisWeek) {
+		return { key: mondayISO, primary: 'This week', secondary: range, current: true };
+	}
+	if (mondayISO === nextWeek) {
+		return { key: mondayISO, primary: range, secondary: 'Next week', current: false };
+	}
+	return { key: mondayISO, primary: range, secondary: '', current: false };
+}
