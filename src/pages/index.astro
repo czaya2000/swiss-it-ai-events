@@ -79,14 +79,24 @@ const structuredData = [
 
 	<main class="wrap">
 		<div class="controls">
-			<div class="search-row">
-				<label class="search-label">
-					<span class="sr-only">Search</span>
-					<input type="search" id="filter-search" placeholder="Search title, organiser, topic…" />
-				</label>
-			</div>
-
 			<div class="filter-row">
+				<div class="search-wrap">
+					<button type="button" id="search-toggle" class="search-toggle" aria-expanded="false">
+						<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+							<path
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								d="M15.5 15.5 21 21M17 10.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z"
+							></path>
+						</svg>
+						<span class="sr-only">Search</span>
+					</button>
+					<label class="search-label">
+						<span class="sr-only">Search</span>
+						<input type="search" id="filter-search" placeholder="Search title, organiser, topic…" />
+					</label>
+				</div>
 				<label>
 					<span class="sr-only">City</span>
 					<select id="filter-city">
@@ -184,6 +194,8 @@ const structuredData = [
 	<script is:inline>
 		(function () {
 			var searchInput = document.getElementById('filter-search');
+			var searchWrap = document.querySelector('.search-wrap');
+			var searchToggle = document.getElementById('search-toggle');
 			var citySelect = document.getElementById('filter-city');
 			var formatSelect = document.getElementById('filter-format');
 			var whenTabs = Array.prototype.slice.call(document.querySelectorAll('.when-tab'));
@@ -203,6 +215,14 @@ const structuredData = [
 			searchInput.value = state.q;
 			citySelect.value = state.city;
 			formatSelect.value = state.format;
+
+			function setSearchOpen(open, focus) {
+				searchWrap.classList.toggle('open', open);
+				searchToggle.setAttribute('aria-expanded', String(open));
+				searchInput.tabIndex = open ? 0 : -1;
+				if (open && focus) searchInput.focus();
+			}
+			setSearchOpen(!!state.q, false);
 
 			function pad(n) {
 				return String(n).padStart(2, '0');
@@ -275,10 +295,16 @@ const structuredData = [
 				});
 			}
 
+			searchToggle.addEventListener('click', function () {
+				setSearchOpen(!searchWrap.classList.contains('open'), true);
+			});
 			searchInput.addEventListener('input', function () {
 				state.q = searchInput.value;
 				updateUrl();
 				applyFilters();
+			});
+			searchInput.addEventListener('blur', function () {
+				if (!searchInput.value) setSearchOpen(false, false);
 			});
 			citySelect.addEventListener('change', function () {
 				state.city = citySelect.value;
@@ -381,9 +407,40 @@ const structuredData = [
 			outline: none;
 			border-bottom-color: var(--ink);
 		}
+		.search-wrap {
+			display: flex;
+			align-items: center;
+		}
+		.search-toggle {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 28px;
+			height: 28px;
+			margin-bottom: 5px;
+			padding: 0;
+			background: none;
+			border: none;
+			color: var(--muted);
+			cursor: pointer;
+			flex: none;
+		}
+		.search-toggle:hover {
+			color: var(--ink);
+		}
+		.search-wrap.open .search-toggle {
+			color: var(--ink);
+		}
+		.search-label {
+			width: 0;
+			overflow: hidden;
+			transition: width 0.18s ease;
+		}
+		.search-wrap.open .search-label {
+			width: 220px;
+		}
 		.search-label input {
 			width: 100%;
-			max-width: 360px;
 		}
 		.events {
 			list-style: none;
