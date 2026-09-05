@@ -18,6 +18,7 @@ adding a source here means "check this for leads," not "trust it blindly."
 - geneva.aitinkerers.org — AI Tinkerers Geneva chapter
 - damaswiss.org — DAMA Switzerland, Zurich chapter (webinars + Leading Data Conference)
 - damageneva.org/dama-future-events — DAMA Switzerland, Geneva chapter
+- datafterwork.com/en/event — DatAfterwork Suisse, data-focused networking events (Geneva/Lausanne)
 
 ## Listing platforms — named groups to check directly (as of Sept 2026, none of these currently
 ## have a next date announced — check anyway, they post irregularly)

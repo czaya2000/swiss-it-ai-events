@@ -1006,5 +1006,47 @@
     "source": "DAMA Switzerland",
     "blurb": "DAMA Switzerland's annual data leadership conference at IMD Lausanne, covering data modelling, data-as-an-asset workshops, and CDMP certification.",
     "firstSeen": "2026-09-04"
+  },
+  {
+    "id": "great-data-heist-geneva-2026",
+    "title": "The Great Data Heist: Trust, Power & Cyber Warfare",
+    "date": "2026-10-29",
+    "endDate": "2026-10-29",
+    "time": "17:30–23:30",
+    "city": "Geneva",
+    "venue": "Uptown Geneva, Rue de la Servette 2",
+    "format": "Networking",
+    "topics": [
+      "Cybersecurity",
+      "Data protection",
+      "Networking"
+    ],
+    "organiser": "DatAfterwork Suisse",
+    "cost": "150 CHF",
+    "url": "https://www.datafterwork.com/en/event/the-great-data-heist-trust-power-cyber-warfare-19/register",
+    "source": "DatAfterwork",
+    "blurb": "Cybersecurity experts and hackers unpack how data breaches actually happen, with live hacking demos and an immersive escape game.",
+    "firstSeen": "2026-09-05"
+  },
+  {
+    "id": "night-of-data-talents-lausanne-2026",
+    "title": "The Night of Data Talents: Swiss Edition",
+    "date": "2026-12-17",
+    "endDate": "2026-12-17",
+    "time": "17:30–23:30",
+    "city": "Lausanne",
+    "venue": "Cercle des Bains",
+    "format": "Networking",
+    "topics": [
+      "Data startups",
+      "Innovation",
+      "Networking"
+    ],
+    "organiser": "DatAfterwork Suisse",
+    "cost": "150 CHF",
+    "url": "https://www.datafterwork.com/en/event/the-night-of-data-talents-swiss-edition-20/register",
+    "source": "DatAfterwork",
+    "blurb": "Swiss data startups pitch to an investor panel with community voting, capping the year for the Suisse Romande data scene.",
+    "firstSeen": "2026-09-05"
   }
 ]
