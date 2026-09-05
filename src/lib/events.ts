@@ -95,8 +95,8 @@ export function formatLastScan(iso: string): string {
 
 /* The listing groups events under the week they start in. Week numbers are
    deliberately NOT shown — outside logistics nobody reads "week 37" — so a
-   band is labelled by its date range, or by "This week" / "Next week" when
-   that is the more useful thing to say. */
+   band is always labelled by its date range; the current week is picked out
+   with the accent color instead of a "This week" text label. */
 
 export const SITE_HEADLINE = 'Every IT and AI event in Switzerland, checked by hand.';
 
@@ -129,21 +129,14 @@ export function weekRangeLabel(mondayISO: string): string {
 export interface WeekBand {
 	key: string;
 	primary: string;
-	secondary: string;
 	current: boolean;
 }
 
 export function weekBand(mondayISO: string, ref = today()): WeekBand {
 	const thisWeek = weekStart(ref);
-	const nextWeek = weekStart(
-		`${addDays(thisWeek, 7).getFullYear()}-${String(addDays(thisWeek, 7).getMonth() + 1).padStart(2, '0')}-${String(addDays(thisWeek, 7).getDate()).padStart(2, '0')}`
-	);
-	const range = weekRangeLabel(mondayISO);
-	if (mondayISO === thisWeek) {
-		return { key: mondayISO, primary: 'This week', secondary: range, current: true };
-	}
-	if (mondayISO === nextWeek) {
-		return { key: mondayISO, primary: range, secondary: 'Next week', current: false };
-	}
-	return { key: mondayISO, primary: range, secondary: '', current: false };
+	return {
+		key: mondayISO,
+		primary: weekRangeLabel(mondayISO),
+		current: mondayISO === thisWeek,
+	};
 }

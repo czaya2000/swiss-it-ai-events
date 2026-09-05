@@ -128,7 +128,6 @@ const structuredData = [
 						<li class={`band ${g.band.current ? 'current' : ''}`} data-band={g.band.key}>
 							<div class="band-label">
 								<span class="band-primary num">{g.band.primary}</span>
-								{g.band.secondary && <span class="band-secondary num">{g.band.secondary}</span>}
 							</div>
 						</li>
 						{g.rows.map((e) => {
@@ -466,13 +465,8 @@ const structuredData = [
 			font-size: 0.95rem;
 			font-weight: 600;
 		}
-		.band-secondary {
-			font-size: 0.82rem;
-			color: var(--muted);
-		}
 		/* The accent's second and last appearance: the week we are in. */
-		.band.current .band-primary,
-		.band.current .band-secondary {
+		.band.current .band-primary {
 			color: var(--accent);
 		}
 

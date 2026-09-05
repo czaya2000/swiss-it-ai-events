@@ -4,17 +4,24 @@ import { SITE_NAME } from '../lib/events';
 /* One footer for every page. The page-specific line (last-scanned, scope
    note) comes through the slot; the link row is the same everywhere so
    organisers and sponsors can always find their way in. */
+
+// Link row suppressed for now — flip back on when ready.
+const SHOW_LINKS = false;
 ---
 
 <footer class="site-footer wrap">
 	<p><slot>{SITE_NAME}. <a href="/">Back to all events</a>.</slot></p>
-	<nav class="footer-links" aria-label="Site">
-		<a href="/submit/">Submit an event</a>
-		<a href="/#subscribe">Weekly digest</a>
-		<a href="/contact/?topic=sponsor">Reach Swiss data leaders? Get in touch</a>
-		<a href="/impressum/">Impressum</a>
-		<a href="/privacy/">Privacy</a>
-	</nav>
+	{
+		SHOW_LINKS && (
+			<nav class="footer-links" aria-label="Site">
+				<a href="/submit/">Submit an event</a>
+				<a href="/#subscribe">Weekly digest</a>
+				<a href="/contact/?topic=sponsor">Reach Swiss data leaders? Get in touch</a>
+				<a href="/impressum/">Impressum</a>
+				<a href="/privacy/">Privacy</a>
+			</nav>
+		)
+	}
 </footer>
 
 <style>
