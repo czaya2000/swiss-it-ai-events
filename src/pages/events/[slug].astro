@@ -1,8 +1,17 @@
 ---
 import Base from '../../layouts/Base.astro';
 import SiteNav from '../../components/SiteNav.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import Subscribe from '../../components/Subscribe.astro';
 import { getCollection } from 'astro:content';
-import { formatDateRange, isFree, eventUrl, SITE_URL, SITE_NAME } from '../../lib/events';
+import {
+	formatDateRange,
+	isFree,
+	eventUrl,
+	outboundUrl,
+	SITE_URL,
+	SITE_NAME,
+} from '../../lib/events';
 
 export async function getStaticPaths() {
 	const entries = await getCollection('events');
@@ -16,6 +25,7 @@ const title = `${e.title} — ${dateLabel}, ${e.city} | ${SITE_NAME}`;
 const description = e.blurb;
 const isOnline = /online/i.test(e.city);
 const free = isFree(e.cost);
+const registerUrl = outboundUrl(e.url);
 
 const structuredData: Record<string, unknown>[] = [
 	{
@@ -115,7 +125,13 @@ const structuredData: Record<string, unknown>[] = [
 					<p class="register-note">
 						Registration is handled on {e.source}. We do not sell tickets or take a commission.
 					</p>
-					<a class="btn accent register-btn" href={e.url} target="_blank" rel="noopener noreferrer">
+					<a
+						class="btn accent register-btn"
+						href={registerUrl}
+						target="_blank"
+						rel="noopener"
+						data-outbound={e.source}
+					>
 						Go to {e.source} ↗
 					</a>
 				</div>
@@ -124,17 +140,16 @@ const structuredData: Record<string, unknown>[] = [
 					publishing. Details can change on the organiser's side — always confirm on the link
 					above before you go.
 				</p>
+				<Subscribe placement="event" compact />
 			</aside>
 		</div>
 	</main>
 
-	<footer class="site-footer wrap">
-		<p>
-			{SITE_NAME} — Switzerland only, data/AI/IT-leadership focus for now. <a href="/"
-				>Back to all events</a
-			>.
-		</p>
-	</footer>
+	<SiteFooter>
+		{SITE_NAME} — Switzerland only, data/AI/IT-leadership focus for now. <a href="/"
+			>Back to all events</a
+		>.
+	</SiteFooter>
 
 	<style>
 		.detail {
@@ -224,7 +239,7 @@ const structuredData: Record<string, unknown>[] = [
 			font-size: 0.82rem;
 			color: var(--muted);
 			line-height: 1.65;
-			margin: 22px 0 0;
+			margin: 22px 0 28px;
 		}
 
 		@media (max-width: 900px) {

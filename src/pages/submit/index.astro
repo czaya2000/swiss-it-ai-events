@@ -1,0 +1,217 @@
+---
+import Base from '../../layouts/Base.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import { SITE_NAME, SITE_URL, FORM_ENDPOINT } from '../../lib/events';
+
+const title = `Submit an event — ${SITE_NAME}`;
+const description =
+	'Organising a data, AI or IT event in Switzerland? Send it in — every listing is checked by hand before it goes live.';
+---
+
+<Base title={title} description={description} path="/submit/">
+	<SiteNav />
+
+	<main class="wrap submit">
+		<h1>Submit an event</h1>
+		<p class="intro">
+			Organising a data, AI or IT event in Switzerland? Send it in. Listing is free. Every event is
+			checked against its original page before it goes live, so please link to the page where
+			people actually register.
+		</p>
+		<p class="scope">
+			What fits: conferences, meetups, workshops, webinars and networking events for data, AI and IT
+			professionals, held in Switzerland or run by a Swiss organiser. What doesn't: generic
+			business networking, syndicated global webinars, vendor sales pitches without a real agenda.
+		</p>
+
+		<form action={FORM_ENDPOINT} method="POST">
+			<input type="hidden" name="_subject" value="Event submission — Swiss Data Events" />
+			<input type="hidden" name="_next" value={`${SITE_URL}/submit/thanks/`} />
+			<input type="hidden" name="_template" value="table" />
+			<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+			<fieldset>
+				<legend>The event</legend>
+				<label>
+					Event title
+					<input type="text" name="event_title" required />
+				</label>
+				<div class="two">
+					<label>
+						Start date
+						<input type="date" name="start_date" required />
+					</label>
+					<label>
+						<span class="lbl">End date <span class="opt">(if multi-day)</span></span>
+						<input type="date" name="end_date" />
+					</label>
+				</div>
+				<div class="two">
+					<label>
+						City
+						<input type="text" name="city" placeholder="Zurich, Geneva, Online…" required />
+					</label>
+					<label>
+						<span class="lbl">Venue <span class="opt">(optional)</span></span>
+						<input type="text" name="venue" />
+					</label>
+				</div>
+				<div class="two">
+					<label>
+						Format
+						<select name="format" required>
+							<option value="">Choose…</option>
+							<option>Conference</option>
+							<option>Meetup</option>
+							<option>Workshop</option>
+							<option>Webinar</option>
+							<option>Networking</option>
+						</select>
+					</label>
+					<label>
+						Cost
+						<input type="text" name="cost" placeholder="Free, CHF 150, …" required />
+					</label>
+				</div>
+				<label>
+					Registration page URL
+					<input type="url" name="event_url" placeholder="https://…" required />
+				</label>
+				<label>
+					<span class="lbl">One-paragraph description <span class="opt">(what it is, who it's for)</span></span>
+					<textarea name="blurb" rows="4" required></textarea>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>You</legend>
+				<label>
+					Organiser
+					<input type="text" name="organiser" required />
+				</label>
+				<div class="two">
+					<label>
+						Your name
+						<input type="text" name="name" required />
+					</label>
+					<label>
+						Email
+						<input type="email" name="email" required />
+					</label>
+				</div>
+				<label class="check">
+					<input type="checkbox" name="featured_interest" value="yes" />
+					I'd be interested in a featured placement or the weekly digest for this event — tell me
+					more.
+				</label>
+			</fieldset>
+
+			<button class="btn accent" type="submit">Send for review</button>
+		</form>
+	</main>
+
+	<SiteFooter />
+
+	<style>
+		.submit {
+			padding: 24px 32px 64px;
+			max-width: 640px;
+		}
+		h1 {
+			font-size: clamp(1.6rem, 3vw, 2rem);
+			margin: 16px 0 8px;
+			letter-spacing: -0.01em;
+		}
+		.intro {
+			color: var(--ink-2);
+			margin: 0 0 12px;
+		}
+		.scope {
+			color: var(--muted);
+			font-size: 0.88rem;
+			line-height: 1.6;
+			margin: 0 0 32px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 28px;
+		}
+		fieldset {
+			border: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+		}
+		legend {
+			font-size: 0.8rem;
+			font-weight: 600;
+			text-transform: none;
+			color: var(--muted);
+			padding: 0;
+			margin-bottom: 4px;
+			border-bottom: 1px solid var(--border);
+			width: 100%;
+			padding-bottom: 6px;
+		}
+		.two {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 16px;
+		}
+		label {
+			display: flex;
+			flex-direction: column;
+			gap: 6px;
+			font-size: 0.85rem;
+			font-weight: 600;
+			color: var(--muted);
+		}
+		.opt {
+			font-weight: 400;
+		}
+		label.check {
+			flex-direction: row;
+			align-items: flex-start;
+			gap: 10px;
+			font-weight: 400;
+			color: var(--ink-2);
+			line-height: 1.5;
+		}
+		label.check input {
+			margin-top: 4px;
+		}
+		input,
+		select,
+		textarea {
+			font: inherit;
+			font-size: 0.95rem;
+			padding: 10px 12px;
+			border-radius: 0;
+			border: 1px solid var(--border);
+			background: var(--surface);
+			color: var(--ink);
+			resize: vertical;
+		}
+		input:focus,
+		select:focus,
+		textarea:focus {
+			outline: none;
+			border-color: var(--ink);
+		}
+		button {
+			align-self: flex-start;
+		}
+		@media (max-width: 640px) {
+			.submit {
+				padding: 16px 18px 48px;
+			}
+			.two {
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
+</Base>

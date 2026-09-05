@@ -1,7 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
 import SiteNav from '../../components/SiteNav.astro';
-import { SITE_NAME } from '../../lib/events';
+import SiteFooter from '../../components/SiteFooter.astro';
+import { SITE_NAME, FORM_ENDPOINT } from '../../lib/events';
 
 const title = `Contact — ${SITE_NAME}`;
 const description = 'Suggest an event, flag a wrong detail, or just say hi.';
@@ -12,13 +13,19 @@ const description = 'Suggest an event, flag a wrong detail, or just say hi.';
 
 	<main class="wrap contact">
 		<h1>Contact</h1>
-		<p class="intro">
+		<p class="intro" id="intro-default">
 			Spotted a wrong date, know an event that should be listed, or just want to say hi? Send a
-			note — it goes straight to my inbox.
+			note — it goes straight to my inbox. Organisers: there's a <a href="/submit/">dedicated form</a
+			> for new events.
+		</p>
+		<p class="intro" id="intro-sponsor" hidden>
+			Want to put your company, product or conference in front of Switzerland's data and AI
+			leaders? Tell me a little about what you're after and I'll come back with what's possible —
+			featured listings, a slot in the weekly digest, or something we haven't thought of yet.
 		</p>
 
-		<form action="https://formsubmit.co/czajkowski81@gmail.com" method="POST">
-			<input type="hidden" name="_subject" value="New message from Swiss Data Events" />
+		<form action={FORM_ENDPOINT} method="POST" id="contact-form">
+			<input type="hidden" name="_subject" value="New message from Swiss Data Events" id="contact-subject" />
 			<input type="hidden" name="_next" value="https://swissdataevents.ch/contact/thanks/" />
 			<input type="hidden" name="_template" value="table" />
 			<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
@@ -48,9 +55,25 @@ const description = 'Suggest an event, flag a wrong detail, or just say hi.';
 		</p>
 	</main>
 
-	<footer class="site-footer wrap">
-		<p>{SITE_NAME}. <a href="/">Back to all events</a>.</p>
-	</footer>
+	<SiteFooter />
+
+	<script is:inline>
+		// ?topic=sponsor (linked from every footer) swaps the intro copy and
+		// tags the email subject so sponsor enquiries are easy to spot.
+		(function () {
+			var topic = new URLSearchParams(location.search).get('topic');
+			if (topic !== 'sponsor') return;
+			document.getElementById('intro-default').hidden = true;
+			document.getElementById('intro-sponsor').hidden = false;
+			document.getElementById('contact-subject').value = 'Sponsor enquiry — Swiss Data Events';
+			var form = document.getElementById('contact-form');
+			var t = document.createElement('input');
+			t.type = 'hidden';
+			t.name = 'topic';
+			t.value = 'sponsor';
+			form.appendChild(t);
+		})();
+	</script>
 
 	<style>
 		.contact {

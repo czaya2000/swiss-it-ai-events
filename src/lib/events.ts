@@ -6,7 +6,35 @@ export const SITE_NAME = 'Swiss Data Events';
 export const SITE_TAGLINE =
 	"A curated, hand-verified list of upcoming data, AI, and IT events across Switzerland. No noise, no expired listings — just what's worth your time.";
 
+/* Contact, digest-signup and event-submission forms all post to FormSubmit
+   (no backend), which forwards to this inbox. The `_subject` field on each
+   form says which one it came from. */
+export const FORM_ENDPOINT = 'https://formsubmit.co/czajkowski81@gmail.com';
+
+/* Google Search Console "HTML tag" verification. Paste the `content="…"`
+   value from Search Console here; an empty string renders no tag. */
+export const GOOGLE_SITE_VERIFICATION = '';
+
 export type EventEntry = CollectionEntry<'events'>;
+
+/** Registration links carry UTM tags so organisers can see in their own
+    analytics how many registrations this site sent them — the number a
+    featured listing is eventually sold on. Existing params and fragments
+    are preserved; anything that is not an http(s) URL is returned as-is. */
+export function outboundUrl(url: string): string {
+	try {
+		const u = new URL(url);
+		if (u.protocol !== 'http:' && u.protocol !== 'https:') return url;
+		if (!u.searchParams.has('utm_source')) {
+			u.searchParams.set('utm_source', 'swissdataevents.ch');
+			u.searchParams.set('utm_medium', 'referral');
+			u.searchParams.set('utm_campaign', 'listing');
+		}
+		return u.toString();
+	} catch {
+		return url;
+	}
+}
 
 export function today(): string {
 	return new Date().toISOString().slice(0, 10);

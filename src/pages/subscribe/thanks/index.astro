@@ -4,16 +4,19 @@ import SiteNav from '../../../components/SiteNav.astro';
 import SiteFooter from '../../../components/SiteFooter.astro';
 import { SITE_NAME } from '../../../lib/events';
 
-const title = `Message sent — ${SITE_NAME}`;
-const description = 'Thanks for reaching out.';
+const title = `You're on the list — ${SITE_NAME}`;
+const description = 'Thanks for subscribing to the weekly digest.';
 ---
 
-<Base title={title} description={description} path="/contact/thanks/">
+<Base title={title} description={description} path="/subscribe/thanks/">
 	<SiteNav />
 
 	<main class="wrap thanks">
-		<h1>Thanks — message sent.</h1>
-		<p>I'll get back to you as soon as I can.</p>
+		<h1>You're on the list.</h1>
+		<p>
+			The digest goes out on Monday mornings. If a week has nothing worth your time, you won't get
+			an email — that's the point.
+		</p>
 		<a class="btn accent" href="/">← Back to all events</a>
 	</main>
 
@@ -21,7 +24,7 @@ const description = 'Thanks for reaching out.';
 
 	<style>
 		.thanks {
-			padding: 60px 24px;
+			padding: 60px 32px;
 			text-align: center;
 		}
 		h1 {
@@ -30,7 +33,8 @@ const description = 'Thanks for reaching out.';
 		}
 		p {
 			color: var(--muted);
-			margin: 0 0 28px;
+			margin: 0 auto 28px;
+			max-width: 48ch;
 		}
 	</style>
 </Base>

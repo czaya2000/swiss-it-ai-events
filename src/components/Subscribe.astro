@@ -1,0 +1,103 @@
+---
+import { SITE_URL, FORM_ENDPOINT } from '../lib/events';
+
+interface Props {
+	/** Where the form was shown — lands in the email subject so signups can be
+	    attributed to a placement (home vs. event page). */
+	placement: 'home' | 'event';
+	compact?: boolean;
+}
+
+const { placement, compact = false } = Astro.props;
+---
+
+<section class={`subscribe ${compact ? 'compact' : ''}`} id="subscribe">
+	<div class="subscribe-copy">
+		<p class="subscribe-title">The weekly digest</p>
+		<p class="subscribe-note">
+			Every new Swiss data and AI event, one short email on Monday morning. No noise, unsubscribe
+			with one click.
+		</p>
+	</div>
+	<form action={FORM_ENDPOINT} method="POST" class="subscribe-form">
+		<input type="hidden" name="_subject" value={`Digest signup (${placement})`} />
+		<input type="hidden" name="_next" value={`${SITE_URL}/subscribe/thanks/`} />
+		<input type="hidden" name="_template" value="table" />
+		<input type="hidden" name="_captcha" value="false" />
+		<input type="hidden" name="placement" value={placement} />
+		<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+		<label>
+			<span class="sr-only">Email address</span>
+			<input type="email" name="email" placeholder="you@company.ch" required autocomplete="email" />
+		</label>
+		<button class="btn accent" type="submit">Subscribe</button>
+	</form>
+</section>
+
+<style>
+	.subscribe {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 32px;
+		align-items: center;
+		padding: 26px 0;
+		border-top: 1px solid var(--ink);
+		border-bottom: 1px solid var(--border);
+	}
+	.subscribe.compact {
+		grid-template-columns: 1fr;
+		gap: 14px;
+		border-top: 1px solid var(--border);
+	}
+	.subscribe-title {
+		margin: 0;
+		font-size: 0.95rem;
+		font-weight: 600;
+	}
+	.subscribe-note {
+		margin: 6px 0 0;
+		font-size: 0.85rem;
+		color: var(--muted);
+		line-height: 1.55;
+		max-width: 44ch;
+	}
+	.subscribe-form {
+		display: flex;
+		gap: 10px;
+		align-items: stretch;
+	}
+	.subscribe-form label {
+		flex: 1;
+		display: flex;
+	}
+	.subscribe-form input[type='email'] {
+		flex: 1;
+		min-width: 0;
+		font: inherit;
+		font-size: 0.95rem;
+		padding: 10px 12px;
+		border: 1px solid var(--border);
+		border-radius: 0;
+		background: var(--surface);
+		color: var(--ink);
+	}
+	.subscribe-form input[type='email']:focus {
+		outline: none;
+		border-color: var(--ink);
+	}
+	.subscribe-form .btn {
+		flex: none;
+	}
+	@media (max-width: 720px) {
+		.subscribe {
+			grid-template-columns: 1fr;
+			gap: 14px;
+			padding: 22px 0;
+		}
+	}
+	@media (max-width: 420px) {
+		.subscribe-form {
+			flex-direction: column;
+		}
+	}
+</style>

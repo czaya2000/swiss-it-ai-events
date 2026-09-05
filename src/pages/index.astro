@@ -1,6 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
 import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import Subscribe from '../components/Subscribe.astro';
 import {
 	getUpcomingEvents,
 	isNew,
@@ -60,23 +62,26 @@ const structuredData = [
 ---
 
 <Base title={title} description={description} path="/" structuredData={structuredData}>
-	<SiteNav>
-		<button id="density-toggle" class="btn ghost" type="button" data-density="comfortable">
-			Compact
-		</button>
-	</SiteNav>
+	<SiteNav />
 
 	<header class="statement wrap">
 		<h1>{SITE_HEADLINE}</h1>
 	</header>
 
+	<div class="wrap subscribe-slot">
+		<Subscribe placement="home" />
+	</div>
+
 	<main class="wrap">
 		<div class="controls">
-			<div class="filters">
+			<div class="search-row">
 				<label class="search-label">
 					<span class="sr-only">Search</span>
 					<input type="search" id="filter-search" placeholder="Search title, organiser, topic…" />
 				</label>
+			</div>
+
+			<div class="filter-row">
 				<label>
 					<span class="sr-only">City</span>
 					<select id="filter-city">
@@ -97,15 +102,11 @@ const structuredData = [
 				</label>
 			</div>
 
-			<div class="when-row">
-				<div class="when-tabs" role="tablist" aria-label="Time range">
-					<button class="when-tab" data-when="all" type="button">All</button>
-					<button class="when-tab" data-when="today" type="button">Today</button>
-					<button class="when-tab" data-when="week" type="button">This week</button>
-					<button class="when-tab" data-when="month" type="button">This month</button>
-					<button class="when-tab" data-when="weekend" type="button">Weekend</button>
-				</div>
-				<span id="result-count" class="result-count num"></span>
+			<div class="when-tabs" role="tablist" aria-label="Time range">
+				<button class="when-tab" data-when="all" type="button">All</button>
+				<button class="when-tab" data-when="today" type="button">Today</button>
+				<button class="when-tab" data-when="week" type="button">This week</button>
+				<button class="when-tab" data-when="month" type="button">This month</button>
 			</div>
 		</div>
 
@@ -178,9 +179,7 @@ const structuredData = [
 		<p id="empty-state" class="empty-state" hidden>No events match those filters.</p>
 	</main>
 
-	<footer class="site-footer wrap">
-		<p>Last scanned {lastScan}.</p>
-	</footer>
+	<SiteFooter><span id="result-count" class="num"></span> shown. Last scanned {lastScan}.</SiteFooter>
 
 	<script is:inline>
 		(function () {
@@ -189,7 +188,6 @@ const structuredData = [
 			var formatSelect = document.getElementById('filter-format');
 			var newCheckbox = document.getElementById('filter-new');
 			var whenTabs = Array.prototype.slice.call(document.querySelectorAll('.when-tab'));
-			var densityBtn = document.getElementById('density-toggle');
 			var rows = Array.prototype.slice.call(document.querySelectorAll('.row'));
 			var bands = Array.prototype.slice.call(document.querySelectorAll('.band'));
 			var resultCount = document.getElementById('result-count');
@@ -229,15 +227,6 @@ const structuredData = [
 				if (when === 'month') {
 					var monthEnd = new Date(now.getFullYear(), now.getMonth() + 1, 0);
 					return { start: todayStr, end: toISO(monthEnd) };
-				}
-				if (when === 'weekend') {
-					var day = now.getDay();
-					var toSat = (6 - day + 7) % 7;
-					var sat = new Date(now);
-					sat.setDate(sat.getDate() + toSat);
-					var sun = new Date(sat);
-					sun.setDate(sun.getDate() + 1);
-					return { start: toISO(sat), end: toISO(sun) };
 				}
 				return null;
 			}
@@ -321,27 +310,6 @@ const structuredData = [
 
 			setWhenTab(state.when);
 			applyFilters();
-
-			// Density toggle (compact / comfortable), persisted locally — a display
-			// preference, not shareable filter state, so it stays out of the URL.
-			var eventList = document.getElementById('event-list');
-			function setDensity(density) {
-				eventList.classList.toggle('compact', density === 'compact');
-				densityBtn.textContent = density === 'compact' ? 'Comfortable' : 'Compact';
-				densityBtn.dataset.density = density;
-			}
-			var savedDensity = 'comfortable';
-			try {
-				savedDensity = localStorage.getItem('density') || 'comfortable';
-			} catch (e) {}
-			setDensity(savedDensity);
-			densityBtn.addEventListener('click', function () {
-				var next = densityBtn.dataset.density === 'compact' ? 'comfortable' : 'compact';
-				setDensity(next);
-				try {
-					localStorage.setItem('density', next);
-				} catch (e) {}
-			});
 		})();
 	</script>
 
@@ -362,19 +330,16 @@ const structuredData = [
 		main {
 			padding-bottom: 8px;
 		}
+		.subscribe-slot {
+			margin-top: 36px;
+		}
 		.controls {
 			display: flex;
 			flex-direction: column;
 			gap: 16px;
-			padding-top: 44px;
+			padding-top: 32px;
 			padding-bottom: 14px;
 			border-bottom: 1px solid var(--border);
-		}
-		.when-row {
-			display: flex;
-			align-items: flex-end;
-			justify-content: space-between;
-			gap: 32px;
 		}
 		.when-tabs {
 			display: flex;
@@ -404,7 +369,7 @@ const structuredData = [
 			font-weight: 600;
 			border-bottom-color: var(--ink);
 		}
-		.filters {
+		.filter-row {
 			display: flex;
 			gap: 18px;
 			align-items: flex-end;
@@ -427,7 +392,8 @@ const structuredData = [
 			border-bottom-color: var(--ink);
 		}
 		.search-label input {
-			width: 190px;
+			width: 100%;
+			max-width: 360px;
 		}
 		.checkbox-label {
 			display: flex;
@@ -435,11 +401,6 @@ const structuredData = [
 			gap: 6px;
 			font-size: 0.875rem;
 			color: var(--muted);
-			padding-bottom: 5px;
-		}
-		.result-count {
-			color: var(--muted);
-			font-size: 0.875rem;
 			padding-bottom: 5px;
 		}
 
@@ -533,9 +494,6 @@ const structuredData = [
 			color: var(--muted);
 			max-width: 72ch;
 		}
-		.events.compact .blurb {
-			display: none;
-		}
 		.aside {
 			display: flex;
 			flex-direction: column;
@@ -566,11 +524,11 @@ const structuredData = [
 			.statement h1 {
 				max-width: none;
 			}
-			.controls {
-				padding-top: 28px;
+			.subscribe-slot {
+				margin-top: 24px;
 			}
-			.search-label input {
-				width: 150px;
+			.controls {
+				padding-top: 24px;
 			}
 			.band {
 				gap: 8px;

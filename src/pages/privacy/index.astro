@@ -1,0 +1,112 @@
+---
+import Base from '../../layouts/Base.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import { SITE_NAME } from '../../lib/events';
+
+const title = `Privacy — ${SITE_NAME}`;
+const description = `What ${SITE_NAME} collects, what it doesn't, and why.`;
+---
+
+<Base title={title} description={description} path="/privacy/">
+	<SiteNav />
+
+	<main class="wrap legal">
+		<h1>Privacy</h1>
+		<p class="intro">
+			Short version: no cookies, no tracking across sites, no selling of anything. Here is the
+			whole picture, as required by the Swiss Federal Act on Data Protection (FADP).
+		</p>
+
+		<h2>Who is responsible</h2>
+		<p>
+			Marcin Czajkowski, Geneva, Switzerland — <a href="mailto:czajkowski81@gmail.com"
+				>czajkowski81@gmail.com</a
+			>. See the <a href="/impressum/">Impressum</a>.
+		</p>
+
+		<h2>Just browsing</h2>
+		<p>
+			The site is static and sets no cookies. Visits are counted with Cloudflare Web Analytics,
+			which is cookie-free and does not build a profile of you: it records aggregate page views,
+			referrers, country and browser type, without storing your IP address. The site's typeface
+			is loaded from Google Fonts, so your browser requests the font files from Google's servers;
+			Google may record the request under its own privacy policy. Hosting is on GitHub Pages
+			(GitHub, Inc., USA), which keeps standard server logs.
+		</p>
+
+		<h2>Links to organisers</h2>
+		<p>
+			Registration buttons link to the organiser's own page and carry a tag
+			(<code>utm_source=swissdataevents.ch</code>) so organisers can see that a visitor came from
+			here. Nothing about you is sent — only that this site was the referrer. What the organiser's
+			page does with your data is governed by their privacy policy, not this one.
+		</p>
+
+		<h2>The weekly digest</h2>
+		<p>
+			If you subscribe, your email address is used for one thing: sending you the weekly digest of
+			new Swiss data and AI events. It is never sold, shared or added to anything else. Unsubscribe
+			at any time via the link in every email or by writing to the address above, and it is
+			deleted.
+		</p>
+
+		<h2>Contact and event-submission forms</h2>
+		<p>
+			Forms are relayed by FormSubmit (formsubmit.co), which forwards what you typed to the inbox
+			above and keeps nothing beyond what it needs to deliver the message. Your details are used
+			only to reply to you or to list the event you submitted. Organiser names on event listings
+			are public information taken from the organiser's own page.
+		</p>
+
+		<h2>Your rights</h2>
+		<p>
+			You can ask what is held about you, have it corrected or deleted, at any time — one email is
+			enough. If sponsorships or paid listings are ever introduced, this page will be updated first.
+		</p>
+
+		<p class="updated">Last updated 5 September 2026.</p>
+	</main>
+
+	<SiteFooter />
+
+	<style>
+		.legal {
+			padding: 24px 32px 64px;
+			max-width: 640px;
+		}
+		h1 {
+			font-size: clamp(1.6rem, 3vw, 2rem);
+			margin: 16px 0 8px;
+			letter-spacing: -0.01em;
+		}
+		h2 {
+			font-size: 0.95rem;
+			font-weight: 600;
+			margin: 28px 0 6px;
+		}
+		p {
+			margin: 0;
+			line-height: 1.65;
+			color: var(--ink-2);
+		}
+		.intro {
+			color: var(--muted);
+		}
+		code {
+			font-size: 0.85em;
+			background: var(--chip-bg);
+			padding: 1px 5px;
+		}
+		.updated {
+			margin-top: 36px;
+			font-size: 0.82rem;
+			color: var(--muted);
+		}
+		@media (max-width: 640px) {
+			.legal {
+				padding: 16px 18px 48px;
+			}
+		}
+	</style>
+</Base>

@@ -1,0 +1,89 @@
+---
+import Base from '../../layouts/Base.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import { SITE_NAME } from '../../lib/events';
+
+const title = `Impressum — ${SITE_NAME}`;
+const description = `Who runs ${SITE_NAME} and how to reach them.`;
+---
+
+<Base title={title} description={description} path="/impressum/">
+	<SiteNav />
+
+	<main class="wrap legal">
+		<h1>Impressum</h1>
+
+		<dl>
+			<dt>Responsible for this site</dt>
+			<dd>Marcin Czajkowski<br />Geneva, Switzerland</dd>
+
+			<dt>Contact</dt>
+			<dd>
+				<a href="mailto:czajkowski81@gmail.com">czajkowski81@gmail.com</a><br />
+				<a href="/contact/">Contact form</a> ·
+				<a
+					href="https://www.linkedin.com/in/marcin-czajkowski-data/"
+					target="_blank"
+					rel="noopener noreferrer">LinkedIn</a
+				>
+			</dd>
+
+			<dt>What this site is</dt>
+			<dd>
+				A privately run, non-commercial directory of data, AI and IT events in Switzerland. Event
+				details are collected from organisers' public pages and checked by hand, but they can change
+				on the organiser's side at any time — always confirm on the organiser's own page before you
+				travel or pay. {SITE_NAME} sells no tickets and takes no commission.
+			</dd>
+
+			<dt>Liability for external links</dt>
+			<dd>
+				Every listing links to a third-party page. Those pages are the responsibility of their
+				operators; {SITE_NAME} has no influence over their content and accepts no liability for
+				it.
+			</dd>
+
+			<dt>Copyright</dt>
+			<dd>
+				Event names and descriptions belong to their organisers. The selection, curation and
+				presentation on this site are © Marcin Czajkowski. Linking to any page here is welcome.
+			</dd>
+		</dl>
+	</main>
+
+	<SiteFooter />
+
+	<style>
+		.legal {
+			padding: 24px 32px 64px;
+			max-width: 640px;
+		}
+		h1 {
+			font-size: clamp(1.6rem, 3vw, 2rem);
+			margin: 16px 0 24px;
+			letter-spacing: -0.01em;
+		}
+		dl {
+			margin: 0;
+			border-top: 1px solid var(--border);
+		}
+		dt {
+			font-size: 0.8rem;
+			font-weight: 600;
+			color: var(--muted);
+			padding: 18px 0 6px;
+		}
+		dd {
+			margin: 0;
+			padding: 0 0 18px;
+			line-height: 1.6;
+			border-bottom: 1px solid var(--border);
+		}
+		@media (max-width: 640px) {
+			.legal {
+				padding: 16px 18px 48px;
+			}
+		}
+	</style>
+</Base>

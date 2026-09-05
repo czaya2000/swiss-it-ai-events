@@ -1,6 +1,6 @@
 ---
 import '../styles/theme.css';
-import { SITE_NAME, SITE_URL } from '../lib/events';
+import { SITE_NAME, SITE_URL, GOOGLE_SITE_VERIFICATION } from '../lib/events';
 
 interface Props {
 	title: string;
@@ -47,6 +47,9 @@ const ogImage = new URL('/og-image.png', SITE_URL).toString();
 		<meta name="twitter:image" content={ogImage} />
 
 		<meta name="theme-color" content="#fbfbf9" />
+		{GOOGLE_SITE_VERIFICATION && (
+			<meta name="google-site-verification" content={GOOGLE_SITE_VERIFICATION} />
+		)}
 
 		{
 			structuredData.map((data) => (
