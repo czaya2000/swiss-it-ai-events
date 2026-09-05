@@ -98,6 +98,11 @@ const structuredData = [
 	<main class="wrap">
 		<div class="controls">
 			<div class="filter-row">
+				<div class="when-tabs" role="tablist" aria-label="Time range">
+					<button class="when-tab" data-when="all" type="button">All</button>
+					<button class="when-tab" data-when="week" type="button">This week</button>
+					<button class="when-tab" data-when="month" type="button">This month</button>
+				</div>
 				<label>
 					<span class="sr-only">City</span>
 					<select id="filter-city">
@@ -112,12 +117,6 @@ const structuredData = [
 						{formats.map((f) => <option value={f}>{f}</option>)}
 					</select>
 				</label>
-			</div>
-
-			<div class="when-tabs" role="tablist" aria-label="Time range">
-				<button class="when-tab" data-when="all" type="button">All</button>
-				<button class="when-tab" data-when="week" type="button">This week</button>
-				<button class="when-tab" data-when="month" type="button">This month</button>
 			</div>
 		</div>
 
