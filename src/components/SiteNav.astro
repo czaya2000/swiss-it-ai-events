@@ -6,7 +6,14 @@ const LINKEDIN_URL = 'https://www.linkedin.com/in/marcin-czajkowski-data/';
 
 <header class="topbar">
 	<div class="topbar-inner wrap">
-		<a class="brand" href="/">{SITE_NAME}</a>
+		<a class="brand" href="/">
+			<svg class="mark" viewBox="0 0 24 24" width="21" height="21" aria-hidden="true">
+				<rect x="3" y="4" width="18" height="17" fill="none" stroke="currentColor" stroke-width="2"
+				></rect>
+				<rect x="3" y="4" width="18" height="4.5" class="mark-rule"></rect>
+			</svg>
+			<span>{SITE_NAME}</span>
+		</a>
 		<div class="topbar-controls">
 			<slot />
 			<a
@@ -40,11 +47,23 @@ const LINKEDIN_URL = 'https://www.linkedin.com/in/marcin-czajkowski-data/';
 		gap: 10px;
 	}
 	.brand {
+		display: flex;
+		align-items: center;
+		gap: 11px;
 		font-weight: 700;
 		font-size: 1.18rem;
 		letter-spacing: -0.015em;
 		text-decoration: none;
 		color: var(--ink);
+	}
+	/* The mark is the masthead device in miniature: the accent rule over a
+	   field. The frame follows the ink so it inverts with the theme. */
+	.mark {
+		flex: none;
+		display: block;
+	}
+	.mark-rule {
+		fill: var(--accent);
 	}
 	.topbar-controls {
 		display: flex;
@@ -80,6 +99,7 @@ const LINKEDIN_URL = 'https://www.linkedin.com/in/marcin-czajkowski-data/';
 		}
 		.brand {
 			font-size: 1.05rem;
+			gap: 9px;
 		}
 	}
 </style>
