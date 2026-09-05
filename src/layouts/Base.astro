@@ -56,5 +56,13 @@ const ogImage = new URL('/og-image.png', SITE_URL).toString();
 	</head>
 	<body>
 		<slot />
+
+		<!-- Cloudflare Web Analytics -->
+		<script
+			type="module"
+			src="https://static.cloudflareinsights.com/beacon.min.js"
+			data-cf-beacon={JSON.stringify({ token: '06cedd898ffb4d4db89b0702657893ed' })}
+		></script>
+		<!-- End Cloudflare Web Analytics -->
 	</body>
 </html>
