@@ -18,6 +18,22 @@ Astro pinned to `^6.4.8` — Astro 7.3.0 fails to build on this machine (Vite/ro
 `_internal/logger` export error). Don't upgrade past 6.x without confirming the
 build actually works first.
 
+## Social pipeline (do not break these two contracts)
+
+`src/pages/social-feed.json.ts` -> `/social-feed.json` and
+`src/pages/card/[format]/[slug].astro` -> `/card/{wide,square,story}/<slug>/`
+exist for the n8n workflow in `Cowork_OS\\Apps\\n8n` (runbook:
+`Apps\\n8n\\SOCIAL_MACHINE.md`). n8n polls the feed, screenshots the card
+pages with headless Chromium, and posts to X / LinkedIn / Instagram / TikTok.
+
+- `postKey` in the feed is the dedupe key (`id::date::city`). Changing how it
+  is built re-announces every event once.
+- Card pages are a fixed pixel canvas per format. Test a design change at
+  `/card/wide/<slug>/` before deploying - what you see is what gets posted.
+- Both are `noindex` and excluded from the sitemap; keep them that way.
+- Generated PNGs are committed by n8n to `public/social/`. Leave them alone;
+  `git pull` before editing `events.json` so the refresh task does not diverge.
+
 ## Development
 
 When starting the dev server, use background mode:

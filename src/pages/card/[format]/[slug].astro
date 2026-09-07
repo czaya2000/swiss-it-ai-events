@@ -1,0 +1,353 @@
+---
+/* Social cards, rendered as real pages.
+
+   The n8n "social machine" does not build HTML: it points headless Chromium
+   at these URLs and screenshots them. That keeps the card design in git,
+   reviewable in a normal browser (open /card/wide/<slug>/ and look at it),
+   and impossible to drift from the site's typography.
+
+   Three formats, one layout:
+     wide   1600x900   X / LinkedIn
+     square 1080x1350  Instagram feed (4:5 - the tallest the feed allows)
+     story  1080x1920  TikTok photo post / Instagram story
+
+   noindex + excluded from the sitemap: these are machine assets, not pages. */
+import { getCollection } from 'astro:content';
+import { dateSpine, formatDateRange, isFree } from '../../../lib/events';
+
+/* Note: no `as const` here - the pinned Astro 6 / esbuild combination on
+   this machine chokes on it in an exported frontmatter binding. */
+export const FORMATS = {
+	wide: { w: 1600, h: 900 },
+	square: { w: 1080, h: 1350 },
+	story: { w: 1080, h: 1920 },
+};
+
+export async function getStaticPaths() {
+	const events = await getCollection('events');
+	return events.flatMap((event) =>
+		Object.keys(FORMATS).map((format) => ({
+			params: { format, slug: event.id },
+			props: { event },
+		})),
+	);
+}
+
+const { format } = Astro.params;
+const { event } = Astro.props;
+const d = event.data;
+const size = FORMATS[format] ?? FORMATS.wide;
+
+const spine = dateSpine(d.date);
+const multiDay = Boolean(d.endDate && d.endDate !== d.date);
+const endSpine = multiDay ? dateSpine(d.endDate) : null;
+const free = isFree(d.cost);
+
+/* Titles run from four words to twenty. Rather than shrink-to-fit in JS
+   (which the screenshotter would race), pick a step from the character
+   count - the layout is a fixed pixel canvas, so this is deterministic. */
+const len = d.title.length;
+const titleStep = len <= 34 ? 'xl' : len <= 58 ? 'l' : len <= 86 ? 'm' : 's';
+
+const metaLine = [d.venue, d.time].filter(Boolean).join('  ·  ');
+const topics = d.topics.slice(0, 3);
+---
+
+<html lang="en" data-format={format}>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="robots" content="noindex, nofollow" />
+		<title>{d.title} — {format} card</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=block"
+		/>
+		<style define:vars={{ cardW: `${size.w}px`, cardH: `${size.h}px` }}>
+			:root {
+				--bg: #fbfbf9;
+				--ink: #000000;
+				--ink-2: #3f3f45;
+				--muted: #6b6b70;
+				--border: #dededa;
+				--accent: #e30613;
+				--chip-bg: #f1f1ed;
+			}
+
+			* { box-sizing: border-box; margin: 0; padding: 0; }
+
+			html, body {
+				width: var(--cardW);
+				height: var(--cardH);
+				background: var(--bg);
+				overflow: hidden;
+			}
+
+			body {
+				font-family: Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				color: var(--ink);
+				-webkit-font-smoothing: antialiased;
+			}
+
+			.card {
+				width: var(--cardW);
+				height: var(--cardH);
+				padding: var(--pad) var(--pad) 0;
+				display: flex;
+				flex-direction: column;
+			}
+
+			/* --- masthead ------------------------------------------------ */
+			.masthead {
+				display: flex;
+				align-items: baseline;
+				justify-content: space-between;
+				gap: 24px;
+			}
+			.wordmark {
+				font-size: var(--fsMast);
+				font-weight: 700;
+				letter-spacing: 0.22em;
+				text-transform: uppercase;
+			}
+			.domain {
+				font-size: calc(var(--fsMast) * 0.86);
+				font-weight: 500;
+				letter-spacing: 0.06em;
+				color: var(--muted);
+			}
+			.rule {
+				height: var(--ruleH);
+				background: var(--ink);
+				margin-top: calc(var(--pad) * 0.28);
+			}
+
+			/* --- body ---------------------------------------------------- */
+			.body {
+				flex: 1;
+				display: grid;
+				gap: var(--gap);
+				align-content: center;
+				padding: var(--gap) 0;
+				min-height: 0;
+			}
+
+			/* --- date spine ---------------------------------------------- */
+			.spine { display: grid; }
+			.wd {
+				font-size: var(--fsWd);
+				font-weight: 600;
+				letter-spacing: 0.2em;
+				text-transform: uppercase;
+				color: var(--muted);
+			}
+			.day {
+				font-size: var(--fsDay);
+				font-weight: 700;
+				line-height: 0.82;
+				letter-spacing: -0.04em;
+				font-variant-numeric: tabular-nums;
+			}
+			.mo {
+				font-size: var(--fsMo);
+				font-weight: 600;
+				letter-spacing: 0.06em;
+				text-transform: uppercase;
+			}
+			.thru {
+				font-size: var(--fsThru);
+				font-weight: 500;
+				letter-spacing: 0.04em;
+				text-transform: uppercase;
+				color: var(--accent);
+			}
+
+			/* --- content ------------------------------------------------- */
+			.eyebrow {
+				font-size: var(--fsEyebrow);
+				font-weight: 700;
+				letter-spacing: 0.2em;
+				text-transform: uppercase;
+				color: var(--accent);
+				margin-bottom: calc(var(--gap) * 0.5);
+			}
+			.title {
+				font-weight: 700;
+				line-height: 1.02;
+				letter-spacing: -0.025em;
+				text-wrap: balance;
+			}
+			.title.xl { font-size: var(--fsTitleXl); }
+			.title.l  { font-size: var(--fsTitleL); }
+			.title.m  { font-size: var(--fsTitleM); }
+			.title.s  { font-size: var(--fsTitleS); }
+
+			.meta {
+				margin-top: calc(var(--gap) * 0.55);
+				font-size: var(--fsMeta);
+				font-weight: 500;
+				color: var(--ink-2);
+				line-height: 1.35;
+			}
+
+			.topics {
+				list-style: none;
+				display: flex;
+				flex-wrap: wrap;
+				gap: calc(var(--gap) * 0.3);
+				margin-top: calc(var(--gap) * 0.7);
+			}
+			.topics li {
+				font-size: var(--fsChip);
+				font-weight: 500;
+				color: #4a4a50;
+				background: var(--chip-bg);
+				padding: calc(var(--fsChip) * 0.32) calc(var(--fsChip) * 0.62);
+			}
+
+			/* --- footer -------------------------------------------------- */
+			.foot {
+				display: flex;
+				align-items: baseline;
+				justify-content: space-between;
+				gap: 24px;
+				border-top: 1px solid var(--border);
+				padding: calc(var(--pad) * 0.32) 0 calc(var(--pad) * 0.36);
+				font-size: var(--fsFoot);
+			}
+			.cost { font-weight: 700; letter-spacing: 0.02em; }
+			.cost.free { color: var(--accent); text-transform: uppercase; letter-spacing: 0.12em; }
+			.org {
+				font-weight: 500;
+				color: var(--muted);
+				text-align: right;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				max-width: 62%;
+			}
+
+			/* The one deliberate flourish: a Swiss-red bar closing the card. */
+			.accent {
+				height: var(--accentH);
+				background: var(--accent);
+				margin: 0 calc(var(--pad) * -1);
+			}
+
+			/* --- 1600x900, X and LinkedIn -------------------------------- */
+			[data-format='wide'] {
+				--pad: 84px;
+				--gap: 30px;
+				--ruleH: 7px;
+				--accentH: 16px;
+				--fsMast: 25px;
+				--fsWd: 25px;
+				--fsDay: 196px;
+				--fsMo: 46px;
+				--fsThru: 25px;
+				--fsEyebrow: 24px;
+				--fsTitleXl: 100px;
+				--fsTitleL: 80px;
+				--fsTitleM: 63px;
+				--fsTitleS: 51px;
+				--fsMeta: 30px;
+				--fsChip: 23px;
+				--fsFoot: 27px;
+			}
+			[data-format='wide'] .body {
+				grid-template-columns: 330px 1fr;
+				align-items: center;
+			}
+			[data-format='wide'] .spine { align-content: center; }
+
+			/* --- 1080x1350, Instagram feed ------------------------------- */
+			[data-format='square'] {
+				--pad: 74px;
+				--gap: 28px;
+				--ruleH: 6px;
+				--accentH: 14px;
+				--fsMast: 23px;
+				--fsWd: 23px;
+				--fsDay: 148px;
+				--fsMo: 40px;
+				--fsThru: 23px;
+				--fsEyebrow: 22px;
+				--fsTitleXl: 86px;
+				--fsTitleL: 71px;
+				--fsTitleM: 57px;
+				--fsTitleS: 47px;
+				--fsMeta: 28px;
+				--fsChip: 22px;
+				--fsFoot: 25px;
+			}
+
+			/* --- 1080x1920, TikTok photo / IG story ---------------------- */
+			[data-format='story'] {
+				--pad: 84px;
+				--gap: 40px;
+				--ruleH: 7px;
+				--accentH: 18px;
+				--fsMast: 26px;
+				--fsWd: 26px;
+				--fsDay: 190px;
+				--fsMo: 50px;
+				--fsThru: 26px;
+				--fsEyebrow: 25px;
+				--fsTitleXl: 100px;
+				--fsTitleL: 84px;
+				--fsTitleM: 68px;
+				--fsTitleS: 55px;
+				--fsMeta: 32px;
+				--fsChip: 25px;
+				--fsFoot: 28px;
+			}
+			/* A story is a tall, mostly empty canvas. Centring the block and
+			   opening the gap between the date and the title keeps it from
+			   clumping at the top with a dead lower half. */
+			[data-format='story'] .body {
+				align-content: center;
+				gap: calc(var(--gap) * 2.2);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="card">
+			<header class="masthead">
+				<span class="wordmark">Swiss Data Events</span>
+				<span class="domain">swissdataevents.ch</span>
+			</header>
+			<div class="rule"></div>
+
+			<main class="body">
+				<div class="spine">
+					<span class="wd">{spine.weekday}</span>
+					<span class="day">{spine.day}</span>
+					<span class="mo">{spine.month}</span>
+					{multiDay && endSpine && (
+						<span class="thru">thru {endSpine.day} {endSpine.month}</span>
+					)}
+				</div>
+
+				<div class="content">
+					<p class="eyebrow">{d.format} — {d.city}</p>
+					<h1 class:list={['title', titleStep]}>{d.title}</h1>
+					{metaLine && <p class="meta">{metaLine}</p>}
+					{topics.length > 0 && (
+						<ul class="topics">
+							{topics.map((t) => (
+								<li>{t}</li>
+							))}
+						</ul>
+					)}
+				</div>
+			</main>
+
+			<footer class="foot">
+				<span class:list={['cost', { free }]}>{free ? 'Free' : d.cost}</span>
+				<span class="org">{formatDateRange(d.date, d.endDate)} · {d.organiser}</span>
+			</footer>
+			<div class="accent"></div>
+		</div>
+	</body>
+</html>
