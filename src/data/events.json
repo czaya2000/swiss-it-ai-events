@@ -1,5 +1,140 @@
 [
   {
+    "id": "swiss-ai-weeks-2026-umbrella",
+    "title": "Swiss {ai} Weeks 2026",
+    "date": "2026-09-01",
+    "endDate": "2026-10-04",
+    "city": "Nationwide",
+    "venue": "Multiple + online",
+    "format": "Conference",
+    "topics": [
+      "Hackathons",
+      "Executive dinners"
+    ],
+    "organiser": "Swiss {ai} Weeks",
+    "cost": "Varies",
+    "url": "https://ai-weeks.ch/events",
+    "source": "ai-weeks.ch",
+    "blurb": "Nationwide umbrella series of AI hackathons and executive dinners running through early October.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "neuchatel-cybersecurity-forum-2026",
+    "title": "Neuchâtel Cybersecurity Forum",
+    "date": "2026-09-14",
+    "endDate": "2026-09-14",
+    "city": "La Chaux-de-Fonds",
+    "venue": "TBC",
+    "format": "Conference",
+    "topics": [
+      "Cybersecurity"
+    ],
+    "organiser": "via Alp ICT",
+    "cost": "Not specified",
+    "url": "https://alpict.ch/en/evenements/forum-neuchatelois-sur-la-cybersecurite/",
+    "source": "alpict.ch",
+    "blurb": "Regional cybersecurity forum in Neuchâtel canton.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "leaders-dialog-data-ai-zurich-2026",
+    "title": "Leaders Dialog Data & AI Zürich 2026",
+    "date": "2026-09-15",
+    "endDate": "2026-09-16",
+    "city": "Zurich",
+    "venue": "Sheraton Zurich",
+    "format": "Conference",
+    "topics": [
+      "Data strategy",
+      "Data leadership",
+      "Enterprise AI"
+    ],
+    "organiser": "CINTONA",
+    "cost": "Complimentary for qualifying senior executives",
+    "url": "https://leadersdialog.com/",
+    "source": "leadersdialog.com",
+    "blurb": "Two-day executive forum on data strategy and enterprise AI, complimentary for qualifying senior leaders.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "zuger-innovationstag-2026",
+    "title": "Zuger Innovationstag 2026",
+    "date": "2026-09-15",
+    "endDate": "2026-09-15",
+    "time": "16:30–20:00",
+    "city": "Zug",
+    "venue": "Siemens Inspiration & Convention Center",
+    "format": "Networking",
+    "topics": [
+      "Digitalisation",
+      "AI"
+    ],
+    "organiser": "Digital & AI Community",
+    "cost": "Not listed",
+    "url": "https://www.ai-community.ch/de/events/557",
+    "source": "ai-community.ch",
+    "blurb": "Networking evening on digitalisation and AI in the Zug innovation corridor.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "digitalswitzerland-forum-2026",
+    "title": "digitalswitzerland forum 2026 – On the road to Geneva: trustworthy AI",
+    "date": "2026-09-15",
+    "endDate": "2026-09-15",
+    "time": "13:00",
+    "city": "Bern",
+    "venue": "Bernexpo",
+    "format": "Conference",
+    "topics": [
+      "AI governance",
+      "Swiss AI policy"
+    ],
+    "organiser": "digitalswitzerland",
+    "cost": "Invitation only",
+    "url": "https://digitalswitzerland.com/events/digitalswitzerland-forum-2026",
+    "source": "digitalswitzerland.com",
+    "blurb": "Invitation-only national forum on trustworthy AI and Swiss AI policy.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "dama-swissquote-data-governance-webinar-2026",
+    "title": "Metadata-Powered Analytics: How Swissquote Uses Data Governance as a Catalyst",
+    "date": "2026-09-16",
+    "endDate": "2026-09-16",
+    "time": "13:00–14:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Data governance",
+      "Data leadership"
+    ],
+    "organiser": "DAMA Switzerland — Zurich Chapter",
+    "cost": "Free",
+    "url": "https://www.damaswiss.org/events/next-webinar",
+    "source": "DAMA Switzerland",
+    "blurb": "Swissquote's data governance professionals explain how metadata powers analytics and acts as a governance catalyst, hosted by DAMA Switzerland's Zurich chapter.",
+    "firstSeen": "2026-09-04"
+  },
+  {
+    "id": "techmeeting-souverainete-numerique-fribourg-2026",
+    "title": "TechMeeting: Souveraineté numérique – passer à l'action",
+    "date": "2026-09-16",
+    "endDate": "2026-09-16",
+    "city": "Fribourg",
+    "venue": "CCIF",
+    "format": "Networking",
+    "topics": [
+      "Digital sovereignty",
+      "Data control"
+    ],
+    "organiser": "IT Valley",
+    "cost": "Not specified",
+    "url": "https://www.portail-digital.ch/fr/evenements/techmeeting-souverainete-numerique-passer-laction",
+    "source": "alpict.ch",
+    "blurb": "SME-focused networking event on digital sovereignty and data control in Fribourg.",
+    "firstSeen": "2026-09-03"
+  },
+  {
     "id": "databricks-ug-suisse-romande-4",
     "title": "4ème Meetup – Databricks User Group Suisse Romande",
     "date": "2026-09-17",
@@ -21,45 +156,119 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "cdoiq-european-symposium-2026",
-    "title": "CDOIQ European Symposium – Sustaining Momentum in Data and AI Transformation",
-    "date": "2026-09-10",
-    "endDate": "2026-09-10",
-    "time": "Full day",
-    "city": "Lausanne",
-    "venue": "Olympic Museum",
-    "format": "Conference",
+    "id": "mindstone-geneva-ai-meetup-sept-2026",
+    "title": "Mindstone Geneva September AI Meetup",
+    "date": "2026-09-17",
+    "endDate": "2026-09-17",
+    "time": "18:00",
+    "city": "Geneva",
+    "venue": "Voisins Saint-Gervais, Rue Necker 3",
+    "format": "Meetup",
     "topics": [
-      "Data leadership",
-      "AI strategy",
-      "Governance"
+      "GenAI",
+      "AI tools",
+      "Applied AI"
     ],
-    "organiser": "CDOIQ European Symposium",
-    "cost": "Free, application-based",
-    "url": "https://cdoiq-europe.org/",
-    "source": "cdoiq-europe.org",
-    "blurb": "Free, application-based gathering of data and AI leaders (~200 attendees, 40+ speakers) at the Olympic Museum.",
+    "organiser": "Mindstone Geneva AI Meetup",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/mindstone-geneva-ai-meetup/events/316326015/",
+    "source": "Meetup",
+    "blurb": "Monthly Geneva AI meetup with three talks on building with LLMs and AI productivity, followed by networking over pizza and drinks.",
+    "firstSeen": "2026-09-04"
+  },
+  {
+    "id": "ai-breakfast-luzern-54",
+    "title": "AI Breakfast #54 Luzern",
+    "date": "2026-09-18",
+    "endDate": "2026-09-18",
+    "city": "Lucerne",
+    "venue": "Universität Luzern",
+    "format": "Networking",
+    "topics": [
+      "AI in business"
+    ],
+    "organiser": "Digital & AI Community",
+    "cost": "Not listed",
+    "url": "https://www.ai-community.ch/de/events/629",
+    "source": "ai-community.ch",
+    "blurb": "Recurring breakfast networking series on AI in business, held in Lucerne.",
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "swiss-it-forums-2026",
-    "title": "Swiss IT Forum(s) 2026 incl. Swiss IA Forum",
-    "date": "2026-09-30",
-    "endDate": "2026-10-01",
-    "time": "Wed 11:00–21:00 / Thu 09:00–17:00",
-    "city": "Geneva",
-    "venue": "Palexpo, Hall 4",
+    "id": "data-tgif-fabric-governance-2026",
+    "title": "Governing the Flow: An Overview of Microsoft Fabric Governance",
+    "date": "2026-09-18",
+    "endDate": "2026-09-18",
+    "time": "17:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Microsoft Fabric",
+      "Data governance",
+      "Microsoft ecosystem"
+    ],
+    "organiser": "Data TGIF",
+    "cost": "Free",
+    "url": "https://www.meetup.com/data-tgif/events/316546486/",
+    "source": "Meetup",
+    "blurb": "Monthly Friday webinar from the Zurich-based Microsoft Data Platform group: a fast tour of the pillars of Microsoft Fabric governance for teams scaling past a first project.",
+    "firstSeen": "2026-09-15"
+  },
+  {
+    "id": "ki-barcamp-chur-2026",
+    "title": "KI-Barcamp 2026 Chur",
+    "date": "2026-09-18",
+    "endDate": "2026-09-18",
+    "city": "Chur",
+    "venue": "FactorAI",
+    "format": "Workshop",
+    "topics": [
+      "Applied AI",
+      "Barcamp"
+    ],
+    "organiser": "Digital & AI Community",
+    "cost": "Not listed",
+    "url": "https://www.ai-community.ch/de/events/554",
+    "source": "ai-community.ch",
+    "blurb": "Open-format barcamp on applied AI in Chur.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "humanoid-robot-championship-2026",
+    "title": "Humanoid Robot Championship 2026",
+    "date": "2026-09-21",
+    "endDate": "2026-09-25",
+    "city": "Zurich",
+    "venue": "Zurich",
     "format": "Conference",
     "topics": [
-      "Enterprise AI",
-      "GenAI",
-      "Cloud"
+      "Robotics",
+      "Embodied AI"
     ],
-    "organiser": "BY Connect",
-    "cost": "Trade-show registration (likely free)",
-    "url": "https://www.swiss-it-forums.tech/fr/",
-    "source": "swiss-it-forums.tech",
-    "blurb": "Geneva's largest IT trade show: 160+ exhibitors, an AI-focused track, and a dedicated IT jobs area.",
+    "organiser": "Greater Zurich Area",
+    "cost": "Not listed",
+    "url": "https://www.greaterzuricharea.com/en/events/humanoid-robot-championship-2026",
+    "source": "greaterzuricharea.com",
+    "blurb": "International humanoid robotics championship and showcase in Zurich.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "ai-trust-systems-2026",
+    "title": "AI & Trust Systems 2026 (TechTour)",
+    "date": "2026-09-23",
+    "endDate": "2026-09-24",
+    "city": "Lausanne",
+    "venue": "Co-located with Trust Valley Days",
+    "format": "Conference",
+    "topics": [
+      "AI & data protection",
+      "Investor matchmaking"
+    ],
+    "organiser": "TechTour",
+    "cost": "€990 excl. VAT",
+    "url": "https://techtour.com/ai-trust-systems26/",
+    "source": "techtour.com",
+    "blurb": "Investor-facing conference on AI and data protection, co-located with Trust Valley Days.",
     "firstSeen": "2026-09-03"
   },
   {
@@ -83,22 +292,41 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "ai-trust-systems-2026",
-    "title": "AI & Trust Systems 2026 (TechTour)",
-    "date": "2026-09-23",
+    "id": "ai-square-conference-winterthur-2026",
+    "title": "AI-SQUARE Conference",
+    "date": "2026-09-24",
     "endDate": "2026-09-24",
-    "city": "Lausanne",
-    "venue": "Co-located with Trust Valley Days",
+    "time": "16:30–20:00",
+    "city": "Winterthur",
     "format": "Conference",
     "topics": [
-      "AI & data protection",
-      "Investor matchmaking"
+      "Applied AI",
+      "Enterprise AI"
     ],
-    "organiser": "TechTour",
-    "cost": "€990 excl. VAT",
-    "url": "https://techtour.com/ai-trust-systems26/",
-    "source": "techtour.com",
-    "blurb": "Investor-facing conference on AI and data protection, co-located with Trust Valley Days.",
+    "organiser": "Tech Talks Basel / AI-SQUARE",
+    "cost": "Free",
+    "url": "https://www.meetup.com/tech-talks-basel/events/316350566/",
+    "source": "Meetup",
+    "blurb": "Keynotes and real-world case studies on AI-SQUARE, a Swiss-built platform for AI-powered software staging management, with the academics and industry leaders who built it.",
+    "firstSeen": "2026-09-04"
+  },
+  {
+    "id": "eth-ai-center-researchers-meetup-2026",
+    "title": "ETH AI Center Researchers Community Meetup",
+    "date": "2026-09-24",
+    "endDate": "2026-11-25",
+    "time": "17:30–19:00",
+    "city": "Zurich",
+    "venue": "ETH AI Center, Oerlikon",
+    "format": "Meetup",
+    "topics": [
+      "AI research"
+    ],
+    "organiser": "ETH AI Center",
+    "cost": "Free",
+    "url": "https://www.sairop.swiss/events/researchers-community-meetup",
+    "source": "sairop.swiss",
+    "blurb": "Recurring meetup series for the AI research community at ETH Zurich.",
     "firstSeen": "2026-09-03"
   },
   {
@@ -122,6 +350,48 @@
     "firstSeen": "2026-09-03"
   },
   {
+    "id": "chalet-azure-romandie-power-platform-2026",
+    "title": "IA & Power Platform 2026: MCP, Copilot et innovations Microsoft",
+    "date": "2026-09-24",
+    "endDate": "2026-09-24",
+    "time": "18:00–21:00",
+    "city": "Versoix",
+    "venue": "Regus Versoix, Station Lakeside",
+    "format": "Meetup",
+    "topics": [
+      "Microsoft ecosystem",
+      "Agentic AI",
+      "AI tools"
+    ],
+    "organiser": "Chalet Azure Romandie",
+    "cost": "Free",
+    "url": "https://www.meetup.com/chaletazure/events/313463700/",
+    "source": "Meetup",
+    "blurb": "Two French-language technical sessions on MCP for AI experiences in Dynamics 365/Power Platform and what's new in Power Platform for 2026, for architects and developers in Romandie.",
+    "firstSeen": "2026-09-04"
+  },
+  {
+    "id": "saic-039-sovereign-ai-for-all-2026",
+    "title": "SAIC #039: Sovereign AI for All — Getting Back Control Over Your Data",
+    "date": "2026-09-24",
+    "endDate": "2026-09-24",
+    "time": "18:30–22:00",
+    "city": "Geneva",
+    "venue": "Tesla Store Genève, Rue de la Confédération 8",
+    "format": "Meetup",
+    "topics": [
+      "Digital sovereignty",
+      "Data control",
+      "Applied AI"
+    ],
+    "organiser": "Switzerland AI Community",
+    "cost": "Not listed",
+    "url": "https://luma.com/nv5h12r7",
+    "source": "switzerland-ai.com",
+    "blurb": "Geneva AI community evening on data sovereignty, with a talk by WeData organiser Vestin Hategekimana followed by small-group networking.",
+    "firstSeen": "2026-09-15"
+  },
+  {
     "id": "swiss-ai-weeks-geneva-hackathon-2026",
     "title": "Swiss {ai} Weeks – Geneva Hackathon",
     "date": "2026-09-25",
@@ -142,218 +412,23 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "panoramai-summit-lausanne-2026",
-    "title": "Panoramai Summit Lausanne 2026 – Enterprises & People / Reasoning & Creative AI",
-    "date": "2026-10-01",
-    "endDate": "2026-10-02",
-    "city": "Lausanne",
-    "venue": "hyperAktiv",
+    "id": "applied-ai-center-conference-hslu-2026",
+    "title": "Applied AI Center Conference 2026 – 'Technology is scalable. Responsibility is not.'",
+    "date": "2026-09-28",
+    "endDate": "2026-09-28",
+    "time": "16:30–19:30 + reception",
+    "city": "Rotkreuz (Zug)",
+    "venue": "HSLU Informatik, Suurstoffi 1",
     "format": "Conference",
     "topics": [
-      "GenAI strategy",
-      "Agentic AI"
+      "Applied AI",
+      "Responsible AI"
     ],
-    "organiser": "Panoramai Association",
-    "cost": "Paid (TBC)",
-    "url": "https://www.panoramai.ch/2026-reasoning-program",
-    "source": "panoramai.ch",
-    "blurb": "Conference on enterprise GenAI strategy and agentic AI.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "panoramai-summit-geneva-2026",
-    "title": "Panoramai Summit Geneva 2026 – IA et nous, responsables",
-    "date": "2026-10-06",
-    "endDate": "2026-10-06",
-    "time": "08:30–17:00",
-    "city": "Geneva",
-    "venue": "Tour en Communs",
-    "format": "Conference",
-    "topics": [
-      "Responsible AI",
-      "Governance",
-      "EU AI Act"
-    ],
-    "organiser": "Panoramai Association",
-    "cost": "Free morning, ticketed afternoon",
-    "url": "https://www.panoramai.ch/2026-responsible-program",
-    "source": "panoramai.ch",
-    "blurb": "Full-day summit on responsible AI and governance, free in the morning.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "forum-epfl-2026",
-    "title": "Forum EPFL 2026",
-    "date": "2026-10-05",
-    "endDate": "2026-10-09",
-    "city": "Lausanne",
-    "venue": "SwissTech Convention Center",
-    "format": "Networking",
-    "topics": [
-      "Tech careers",
-      "Recruitment"
-    ],
-    "organiser": "Forum EPFL",
+    "organiser": "Applied AI Center HSLU",
     "cost": "Free",
-    "url": "https://forum-epfl.ch/2026/en/",
-    "source": "forum-epfl.ch",
-    "blurb": "Switzerland's largest tech recruitment fair, with 188+ companies exhibiting at EPFL.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "techmeeting-souverainete-numerique-fribourg-2026",
-    "title": "TechMeeting: Souveraineté numérique – passer à l'action",
-    "date": "2026-09-16",
-    "endDate": "2026-09-16",
-    "city": "Fribourg",
-    "venue": "CCIF",
-    "format": "Networking",
-    "topics": [
-      "Digital sovereignty",
-      "Data control"
-    ],
-    "organiser": "IT Valley",
-    "cost": "Not specified",
-    "url": "https://www.portail-digital.ch/fr/evenements/techmeeting-souverainete-numerique-passer-laction",
-    "source": "alpict.ch",
-    "blurb": "SME-focused networking event on digital sovereignty and data control in Fribourg.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "silicon-valais-2026",
-    "title": "Silicon Valais 2026",
-    "date": "2026-09-11",
-    "endDate": "2026-09-11",
-    "city": "Sierre",
-    "venue": "Bellevue Campus, HES-SO Valais",
-    "format": "Networking",
-    "topics": [
-      "IT",
-      "AI",
-      "Cybersecurity"
-    ],
-    "organiser": "HES-SO Valais-Wallis",
-    "cost": "Not specified",
-    "url": "https://www.hevs.ch/fr/hautes-ecoles/haute-ecole-de-gestion/informatique-de-gestion/silicon-valais-200558",
-    "source": "alpict.ch",
-    "blurb": "Regional academic networking event on IT, AI, and cybersecurity in Valais.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "neuchatel-cybersecurity-forum-2026",
-    "title": "Neuchâtel Cybersecurity Forum",
-    "date": "2026-09-14",
-    "endDate": "2026-09-14",
-    "city": "La Chaux-de-Fonds",
-    "venue": "TBC",
-    "format": "Conference",
-    "topics": [
-      "Cybersecurity"
-    ],
-    "organiser": "via Alp ICT",
-    "cost": "Not specified",
-    "url": "https://alpict.ch/en/evenements/forum-neuchatelois-sur-la-cybersecurite/",
-    "source": "alpict.ch",
-    "blurb": "Regional cybersecurity forum in Neuchâtel canton.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "datenschutz-bei-ki-webinar-2026",
-    "title": "Datenschutz bei KI – Verantwortungsvoll in die Zukunft",
-    "date": "2026-09-03",
-    "endDate": "2026-09-03",
-    "time": "12:00–13:00",
-    "city": "Online (CH)",
-    "venue": "Online",
-    "format": "Webinar",
-    "topics": [
-      "Data protection",
-      "AI governance"
-    ],
-    "organiser": "IFJ Institut für Jungunternehmen",
-    "cost": "Not specified",
-    "url": "https://www.ifj.ch/index.cfm?page=129080&event_id=12416",
-    "source": "startupticker.ch",
-    "blurb": "German-language webinar on data protection and AI governance responsibilities.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "salon-rh-2026",
-    "title": "Salon RH 2026",
-    "date": "2026-10-07",
-    "endDate": "2026-10-08",
-    "city": "Lausanne",
-    "venue": "Beaulieu",
-    "format": "Conference",
-    "topics": [
-      "AI in recruitment",
-      "HR tech"
-    ],
-    "organiser": "HRM Institute",
-    "cost": "From CHF 39",
-    "url": "https://salonrh.com/",
-    "source": "salonrh.com",
-    "blurb": "HR and recruitment trade fair with a growing AI-in-hiring track.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "unige-recherche-documentaire-ia-2026",
-    "title": "UNIGE – Recherche documentaire et IA",
-    "date": "2026-11-09",
-    "endDate": "2026-11-09",
-    "time": "10:15–11:45",
-    "city": "Geneva",
-    "venue": "Uni Mail 2220",
-    "format": "Workshop",
-    "topics": [
-      "AI tools",
-      "Academic research"
-    ],
-    "organiser": "Université de Genève",
-    "cost": "Not specified",
-    "url": "https://agenda.unige.ch/events/view/45097",
-    "source": "agenda.unige.ch",
-    "blurb": "University of Geneva workshop on using AI tools for academic research.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "geneva-ai-conference-2026",
-    "title": "The Geneva AI Conference 2026",
-    "date": "2026-11-25",
-    "endDate": "2026-11-25",
-    "time": "18:00–21:00",
-    "city": "Geneva",
-    "venue": "FER Genève, Rue de Saint-Jean 98",
-    "format": "Networking",
-    "topics": [
-      "Enterprise AI",
-      "AI strategy"
-    ],
-    "organiser": "Startup Network Europe",
-    "cost": "Ticketed (Eventbrite)",
-    "url": "https://www.eventbrite.ie/e/the-geneva-ai-conference-2026-tickets-1983950142282",
-    "source": "eventbrite.ie",
-    "blurb": "Evening conference on enterprise AI strategy and ROI with an IBM/SAP panel.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "databricks-data-ai-world-tour-zurich-2026",
-    "title": "Databricks Data + AI World Tour Zurich 2026",
-    "date": "2026-12-01",
-    "endDate": "2026-12-01",
-    "city": "Zurich",
-    "venue": "TBA",
-    "format": "Conference",
-    "topics": [
-      "Databricks",
-      "Lakehouse",
-      "Unity Catalog"
-    ],
-    "organiser": "Databricks",
-    "cost": "Free (apply to attend)",
-    "url": "https://www.databricks.com/dataaisummit/worldtour",
-    "source": "databricks.com",
-    "blurb": "Databricks' flagship Swiss event on the Lakehouse platform and Unity Catalog.",
+    "url": "https://www.hslu.ch/de-ch/informatik/agenda/veranstaltungen/2026/09/28/ai-industry-event-hslu-autumn-2026/",
+    "source": "hslu.ch",
+    "blurb": "Evening conference and reception on applied and responsible AI in the Zug corridor.",
     "firstSeen": "2026-09-03"
   },
   {
@@ -374,26 +449,6 @@
     "url": "https://www.zurichaifestival.ch/program",
     "source": "zurichaifestival.ch",
     "blurb": "Week-long umbrella festival — 40+ AI events across enterprise, science, and policy.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "ai-x-summit-2026",
-    "title": "AI+X Summit 2026",
-    "date": "2026-10-01",
-    "endDate": "2026-10-01",
-    "time": "08:30–18:30",
-    "city": "Zurich",
-    "venue": "StageOne Oerlikon",
-    "format": "Conference",
-    "topics": [
-      "Applied AI",
-      "Academia–industry"
-    ],
-    "organiser": "ETH AI Center",
-    "cost": "Paid (TBC)",
-    "url": "https://www.plusx.ai/",
-    "source": "plusx.ai",
-    "blurb": "Large Zurich applied-AI conference bridging academia and industry.",
     "firstSeen": "2026-09-03"
   },
   {
@@ -437,6 +492,27 @@
     "firstSeen": "2026-09-03"
   },
   {
+    "id": "devops-geneve-ai-governance-2026",
+    "title": "AI Enters the Pipeline: Rethinking Governance Beyond DevSecOps",
+    "date": "2026-09-30",
+    "endDate": "2026-09-30",
+    "time": "10:00–12:00",
+    "city": "Geneva",
+    "venue": "Palexpo, Route François-Peyrot 30, Le Grand-Saconnex",
+    "format": "Meetup",
+    "topics": [
+      "AI governance",
+      "DevSecOps",
+      "Enterprise AI"
+    ],
+    "organiser": "DevOps Genève",
+    "cost": "Free with a Swiss IT Forum(s) ticket",
+    "url": "https://www.meetup.com/devops-geneve/events/316213159/",
+    "source": "Meetup",
+    "blurb": "A conversation with Jean-Jacques Bernard on how AI fits into governance models built for a pre-AI world — COBIT, ITIL, ISO 27001 and DevSecOps. Held at Palexpo during Swiss IT Forum(s), closing with a networking cocktail.",
+    "firstSeen": "2026-09-15"
+  },
+  {
     "id": "ai-environment-summit-2026",
     "title": "AI Environment Summit 2026",
     "date": "2026-09-30",
@@ -456,82 +532,164 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "applied-ai-center-conference-hslu-2026",
-    "title": "Applied AI Center Conference 2026 – 'Technology is scalable. Responsibility is not.'",
-    "date": "2026-09-28",
-    "endDate": "2026-09-28",
-    "time": "16:30–19:30 + reception",
-    "city": "Rotkreuz (Zug)",
-    "venue": "HSLU Informatik, Suurstoffi 1",
+    "id": "genai-in-finance-forum-2026",
+    "title": "GenAI in Finance Forum",
+    "date": "2026-09-30",
+    "endDate": "2026-09-30",
+    "time": "18:30–22:30",
+    "city": "Gland",
+    "venue": "Swissquote Bank SA, Ch. de la Crétaux 33",
+    "format": "Meetup",
+    "topics": [
+      "GenAI",
+      "Enterprise AI",
+      "Financial services"
+    ],
+    "organiser": "Switzerland AI Community",
+    "cost": "Not listed",
+    "url": "https://luma.com/zp0lnyji",
+    "source": "switzerland-ai.com",
+    "blurb": "Expert talks and a moderated panel at Swissquote's headquarters on how generative AI is reshaping research, trading, compliance and customer workflows in Swiss finance. Capacity initially limited to 40.",
+    "firstSeen": "2026-09-15"
+  },
+  {
+    "id": "mindstone-zurich-ai-meetup-sept-2026",
+    "title": "Mindstone Zurich September AI Meetup",
+    "date": "2026-09-30",
+    "endDate": "2026-09-30",
+    "time": "18:00–21:00",
+    "city": "Zurich",
+    "venue": "Headsquarter, Uraniastrasse 31",
+    "format": "Meetup",
+    "topics": [
+      "GenAI",
+      "AI tools",
+      "Applied AI"
+    ],
+    "organiser": "Mindstone Zürich AI Meetup",
+    "cost": "Free",
+    "url": "https://www.meetup.com/mindstone-zurich-ai-meetup/events/316240373/",
+    "source": "Meetup",
+    "blurb": "Monthly Zurich AI meetup with three talks — building with LLMs, getting more done with AI, and where AI is heading — followed by pizza and networking.",
+    "firstSeen": "2026-09-15"
+  },
+  {
+    "id": "swiss-it-forums-2026",
+    "title": "Swiss IT Forum(s) 2026 incl. Swiss IA Forum",
+    "date": "2026-09-30",
+    "endDate": "2026-10-01",
+    "time": "Wed 11:00–21:00 / Thu 09:00–17:00",
+    "city": "Geneva",
+    "venue": "Palexpo, Hall 4",
+    "format": "Conference",
+    "topics": [
+      "Enterprise AI",
+      "GenAI",
+      "Cloud"
+    ],
+    "organiser": "BY Connect",
+    "cost": "Trade-show registration (likely free)",
+    "url": "https://www.swiss-it-forums.tech/fr/",
+    "source": "swiss-it-forums.tech",
+    "blurb": "Geneva's largest IT trade show: 160+ exhibitors, an AI-focused track, and a dedicated IT jobs area.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "ai-x-summit-2026",
+    "title": "AI+X Summit 2026",
+    "date": "2026-10-01",
+    "endDate": "2026-10-01",
+    "time": "08:30–18:30",
+    "city": "Zurich",
+    "venue": "StageOne Oerlikon",
     "format": "Conference",
     "topics": [
       "Applied AI",
-      "Responsible AI"
+      "Academia–industry"
     ],
-    "organiser": "Applied AI Center HSLU",
-    "cost": "Free",
-    "url": "https://www.hslu.ch/de-ch/informatik/agenda/veranstaltungen/2026/09/28/ai-industry-event-hslu-autumn-2026/",
-    "source": "hslu.ch",
-    "blurb": "Evening conference and reception on applied and responsible AI in the Zug corridor.",
+    "organiser": "ETH AI Center",
+    "cost": "Paid (TBC)",
+    "url": "https://www.plusx.ai/",
+    "source": "plusx.ai",
+    "blurb": "Large Zurich applied-AI conference bridging academia and industry.",
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "leaders-dialog-data-ai-zurich-2026",
-    "title": "Leaders Dialog Data & AI Zürich 2026",
-    "date": "2026-09-15",
-    "endDate": "2026-09-16",
-    "city": "Zurich",
-    "venue": "Sheraton Zurich",
-    "format": "Conference",
+    "id": "hack-apertus-2026",
+    "title": "Hack Apertus",
+    "date": "2026-10-01",
+    "endDate": "2026-10-16",
+    "city": "Online (CH)",
+    "venue": "Online",
+    "format": "Workshop",
     "topics": [
-      "Data strategy",
-      "Data leadership",
-      "Enterprise AI"
+      "Open-source LLMs",
+      "Hackathon"
     ],
-    "organiser": "CINTONA",
-    "cost": "Complimentary for qualifying senior executives",
-    "url": "https://leadersdialog.com/",
-    "source": "leadersdialog.com",
-    "blurb": "Two-day executive forum on data strategy and enterprise AI, complimentary for qualifying senior leaders.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "digitalswitzerland-forum-2026",
-    "title": "digitalswitzerland forum 2026 – On the road to Geneva: trustworthy AI",
-    "date": "2026-09-15",
-    "endDate": "2026-09-15",
-    "time": "13:00",
-    "city": "Bern",
-    "venue": "Bernexpo",
-    "format": "Conference",
-    "topics": [
-      "AI governance",
-      "Swiss AI policy"
-    ],
-    "organiser": "digitalswitzerland",
-    "cost": "Invitation only",
-    "url": "https://digitalswitzerland.com/events/digitalswitzerland-forum-2026",
-    "source": "digitalswitzerland.com",
-    "blurb": "Invitation-only national forum on trustworthy AI and Swiss AI policy.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "ai-governance-forum-2026",
-    "title": "AI Governance Forum 2026",
-    "date": "2026-09-07",
-    "endDate": "2026-09-08",
-    "city": "Zurich",
-    "venue": "ETH UNO building",
-    "format": "Conference",
-    "topics": [
-      "AI governance",
-      "Policy"
-    ],
-    "organiser": "ETH Einstein School / Council of Europe",
+    "organiser": "ETH AI Center",
     "cost": "Not listed",
-    "url": "https://einstein-school.ethz.ch/en/dialog/ai-governance-forum.html",
-    "source": "ethz.ch",
-    "blurb": "Two-day forum on AI governance and policy, with an invite-only second day.",
+    "url": "https://www.sairop.swiss/events/hack-apertus",
+    "source": "sairop.swiss",
+    "blurb": "Two-week online hackathon building on Switzerland's open Apertus LLM.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "panoramai-summit-lausanne-2026",
+    "title": "Panoramai Summit Lausanne 2026 – Enterprises & People / Reasoning & Creative AI",
+    "date": "2026-10-01",
+    "endDate": "2026-10-02",
+    "city": "Lausanne",
+    "venue": "hyperAktiv",
+    "format": "Conference",
+    "topics": [
+      "GenAI strategy",
+      "Agentic AI"
+    ],
+    "organiser": "Panoramai Association",
+    "cost": "Paid (TBC)",
+    "url": "https://www.panoramai.ch/2026-reasoning-program",
+    "source": "panoramai.ch",
+    "blurb": "Conference on enterprise GenAI strategy and agentic AI.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "azure-zurich-ai-agents-night-2026",
+    "title": "Azure Zurich AI Agents Night",
+    "date": "2026-10-05",
+    "endDate": "2026-10-05",
+    "time": "18:00–21:00",
+    "city": "Zurich",
+    "venue": "Digicomp Academy, Limmatstrasse 50 (5th floor)",
+    "format": "Meetup",
+    "topics": [
+      "Agentic AI",
+      "Azure",
+      "AI governance"
+    ],
+    "organiser": "Microsoft Azure Zürich User Group",
+    "cost": "Free",
+    "url": "https://www.meetup.com/microsoft-azure-zurich-user-group/events/316453741/",
+    "source": "Meetup",
+    "blurb": "In-person Azure user-group evening on running AI agents securely: agent identity in Microsoft Entra ID, RBAC and policies across Copilot Studio and Azure AI Foundry, plus enterprise agent governance.",
+    "firstSeen": "2026-09-15"
+  },
+  {
+    "id": "forum-epfl-2026",
+    "title": "Forum EPFL 2026",
+    "date": "2026-10-05",
+    "endDate": "2026-10-09",
+    "city": "Lausanne",
+    "venue": "SwissTech Convention Center",
+    "format": "Networking",
+    "topics": [
+      "Tech careers",
+      "Recruitment"
+    ],
+    "organiser": "Forum EPFL",
+    "cost": "Free",
+    "url": "https://forum-epfl.ch/2026/en/",
+    "source": "forum-epfl.ch",
+    "blurb": "Switzerland's largest tech recruitment fair, with 188+ companies exhibiting at EPFL.",
     "firstSeen": "2026-09-03"
   },
   {
@@ -556,6 +714,87 @@
     "firstSeen": "2026-09-03"
   },
   {
+    "id": "panoramai-summit-geneva-2026",
+    "title": "Panoramai Summit Geneva 2026 – IA et nous, responsables",
+    "date": "2026-10-06",
+    "endDate": "2026-10-06",
+    "time": "08:30–17:00",
+    "city": "Geneva",
+    "venue": "Tour en Communs",
+    "format": "Conference",
+    "topics": [
+      "Responsible AI",
+      "Governance",
+      "EU AI Act"
+    ],
+    "organiser": "Panoramai Association",
+    "cost": "Free morning, ticketed afternoon",
+    "url": "https://www.panoramai.ch/2026-responsible-program",
+    "source": "panoramai.ch",
+    "blurb": "Full-day summit on responsible AI and governance, free in the morning.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "salon-rh-2026",
+    "title": "Salon RH 2026",
+    "date": "2026-10-07",
+    "endDate": "2026-10-08",
+    "city": "Lausanne",
+    "venue": "Beaulieu",
+    "format": "Conference",
+    "topics": [
+      "AI in recruitment",
+      "HR tech"
+    ],
+    "organiser": "HRM Institute",
+    "cost": "From CHF 39",
+    "url": "https://salonrh.com/",
+    "source": "salonrh.com",
+    "blurb": "HR and recruitment trade fair with a growing AI-in-hiring track.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "sdsc-advanced-llm-agentic-systems-epfl-2026",
+    "title": "Advanced LLM Applications and Agentic Systems — Training at EPFL",
+    "date": "2026-10-09",
+    "endDate": "2026-10-09",
+    "time": "09:00–17:00",
+    "city": "Lausanne",
+    "venue": "EPFL",
+    "format": "Workshop",
+    "topics": [
+      "Agentic AI",
+      "LLMs",
+      "Applied AI"
+    ],
+    "organiser": "Swiss Data Science Center",
+    "cost": "CHF 1,000 (10% off for EPFL alumni and SDSC partners)",
+    "url": "https://www.datascience.ch/event/advanced-llm-applications-and-agentic-systems---training-at-epfl",
+    "source": "datascience.ch",
+    "blurb": "One-day hands-on SDSC training on structured outputs, retrieval-augmented generation, tool calling and agentic workflows — and the evaluation and cost control needed to run them in production.",
+    "firstSeen": "2026-09-15"
+  },
+  {
+    "id": "fabric-governance-domains-workspaces-lineage-2026",
+    "title": "Fabric Governance — Domains, Workspaces & Lineage",
+    "date": "2026-10-13",
+    "endDate": "2026-10-13",
+    "time": "18:30–20:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Microsoft Fabric",
+      "Data governance",
+      "Microsoft ecosystem"
+    ],
+    "organiser": "Data and AI for Intelligent Cloud",
+    "cost": "Free",
+    "url": "https://www.meetup.com/ai-and-intelligent-cloud/events/312635984/",
+    "source": "Meetup",
+    "blurb": "Zurich Microsoft data-platform group on governance patterns that scale rather than block: workspace design, domains and decentralised ownership, capacity planning, and lineage for compliance.",
+    "firstSeen": "2026-09-15"
+  },
+  {
     "id": "smart-services-summit-2026",
     "title": "Smart Services Summit 2026",
     "date": "2026-10-16",
@@ -572,85 +811,6 @@
     "url": "https://hub.data-innovation.org/smart-services-summit-2026",
     "source": "data-innovation.org",
     "blurb": "Summit on AI-enabled services and data-driven value, hosted by the Swiss data innovation community.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "swiss-data-space-forum-2026",
-    "title": "Swiss Data Space Forum 2026: Unlocking Data for AI",
-    "date": "2026-10-28",
-    "endDate": "2026-10-28",
-    "time": "09:00–17:00",
-    "city": "Prilly (Lausanne)",
-    "venue": "unlimitrust campus",
-    "format": "Conference",
-    "topics": [
-      "Data governance",
-      "Data spaces"
-    ],
-    "organiser": "Swiss Data Alliance / digitalswitzerland",
-    "cost": "Not listed",
-    "url": "https://forum.swissdataalliance.ch/",
-    "source": "swissdataalliance.ch",
-    "blurb": "National forum on data governance and data spaces for AI, hosted at unlimitrust.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "snowflake-forum-zurich-2026",
-    "title": "Snowflake Forum Zurich 2026",
-    "date": "2026-11-05",
-    "endDate": "2026-11-05",
-    "time": "09:00–19:00",
-    "city": "Zurich-Flughafen",
-    "venue": "The Circle Convention Center",
-    "format": "Conference",
-    "topics": [
-      "Data platform",
-      "Governance"
-    ],
-    "organiser": "Snowflake",
-    "cost": "Free",
-    "url": "https://www.snowflake.com/events/snowflake-forum-zurich-2026/",
-    "source": "snowflake.com",
-    "blurb": "Free data-platform conference bringing together Swiss data teams and partners.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "swiss-ai-summit-2026",
-    "title": "Swiss AI Summit 2026",
-    "date": "2026-11-16",
-    "endDate": "2026-11-16",
-    "time": "07:00–20:00",
-    "city": "Zurich",
-    "venue": "Kunsthaus Zürich",
-    "format": "Conference",
-    "topics": [
-      "Enterprise AI strategy"
-    ],
-    "organiser": "Swiss AI Summit",
-    "cost": "Ticketed (TBC)",
-    "url": "https://www.swissaisummit.com/",
-    "source": "swissaisummit.com",
-    "blurb": "Full-day summit on enterprise AI strategy with executive roundtables.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "swiss-ai-safety-days-2026",
-    "title": "Swiss AI Safety Days 2026",
-    "date": "2026-11-07",
-    "endDate": "2026-11-08",
-    "city": "Zurich",
-    "venue": "ETH main building",
-    "format": "Conference",
-    "topics": [
-      "AI safety",
-      "Governance",
-      "Careers"
-    ],
-    "organiser": "aisafety.ch",
-    "cost": "Free–CHF 320 (trust-based)",
-    "url": "https://swissaisafetydays.ch/",
-    "source": "swissaisafetydays.ch",
-    "blurb": "Weekend conference on AI safety research, governance, and careers.",
     "firstSeen": "2026-09-03"
   },
   {
@@ -674,218 +834,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "zuger-innovationstag-2026",
-    "title": "Zuger Innovationstag 2026",
-    "date": "2026-09-15",
-    "endDate": "2026-09-15",
-    "time": "16:30–20:00",
-    "city": "Zug",
-    "venue": "Siemens Inspiration & Convention Center",
-    "format": "Networking",
-    "topics": [
-      "Digitalisation",
-      "AI"
-    ],
-    "organiser": "Digital & AI Community",
-    "cost": "Not listed",
-    "url": "https://www.ai-community.ch/de/events/557",
-    "source": "ai-community.ch",
-    "blurb": "Networking evening on digitalisation and AI in the Zug innovation corridor.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "td-synnex-destination-ai-2026",
-    "title": "TD SYNNEX: Destination AI",
-    "date": "2026-11-03",
-    "endDate": "2026-11-03",
-    "time": "09:30–20:00",
-    "city": "Dietlikon",
-    "venue": "Pathé Dietlikon",
-    "format": "Conference",
-    "topics": [
-      "Enterprise AI",
-      "Microsoft ecosystem"
-    ],
-    "organiser": "TD SYNNEX",
-    "cost": "Not listed",
-    "url": "https://www.ai-community.ch/de/events/550",
-    "source": "ai-community.ch",
-    "blurb": "Enterprise AI conference for the Microsoft partner and reseller ecosystem.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "ai-breakfast-luzern-54",
-    "title": "AI Breakfast #54 Luzern",
-    "date": "2026-09-18",
-    "endDate": "2026-09-18",
-    "city": "Lucerne",
-    "venue": "Universität Luzern",
-    "format": "Networking",
-    "topics": [
-      "AI in business"
-    ],
-    "organiser": "Digital & AI Community",
-    "cost": "Not listed",
-    "url": "https://www.ai-community.ch/de/events/629",
-    "source": "ai-community.ch",
-    "blurb": "Recurring breakfast networking series on AI in business, held in Lucerne.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "ki-barcamp-chur-2026",
-    "title": "KI-Barcamp 2026 Chur",
-    "date": "2026-09-18",
-    "endDate": "2026-09-18",
-    "city": "Chur",
-    "venue": "FactorAI",
-    "format": "Workshop",
-    "topics": [
-      "Applied AI",
-      "Barcamp"
-    ],
-    "organiser": "Digital & AI Community",
-    "cost": "Not listed",
-    "url": "https://www.ai-community.ch/de/events/554",
-    "source": "ai-community.ch",
-    "blurb": "Open-format barcamp on applied AI in Chur.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "zentral-hack-2026",
-    "title": "Zentral Hack 2026",
-    "date": "2026-10-23",
-    "endDate": "2026-10-23",
-    "time": "17:00–22:00",
-    "city": "Rotkreuz",
-    "venue": "HSLU Informatik",
-    "format": "Workshop",
-    "topics": [
-      "Hackathon"
-    ],
-    "organiser": "Digital & AI Community",
-    "cost": "Not listed",
-    "url": "https://zentralhack.ch",
-    "source": "ai-community.ch",
-    "blurb": "Regional hackathon hosted by the Digital & AI Community in central Switzerland.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "swiss-ai-weeks-2026-umbrella",
-    "title": "Swiss {ai} Weeks 2026",
-    "date": "2026-09-01",
-    "endDate": "2026-10-04",
-    "city": "Nationwide",
-    "venue": "Multiple + online",
-    "format": "Conference",
-    "topics": [
-      "Hackathons",
-      "Executive dinners"
-    ],
-    "organiser": "Swiss {ai} Weeks",
-    "cost": "Varies",
-    "url": "https://ai-weeks.ch/events",
-    "source": "ai-weeks.ch",
-    "blurb": "Nationwide umbrella series of AI hackathons and executive dinners running through early October.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "hack-apertus-2026",
-    "title": "Hack Apertus",
-    "date": "2026-10-01",
-    "endDate": "2026-10-16",
-    "city": "Online (CH)",
-    "venue": "Online",
-    "format": "Workshop",
-    "topics": [
-      "Open-source LLMs",
-      "Hackathon"
-    ],
-    "organiser": "ETH AI Center",
-    "cost": "Not listed",
-    "url": "https://www.sairop.swiss/events/hack-apertus",
-    "source": "sairop.swiss",
-    "blurb": "Two-week online hackathon building on Switzerland's open Apertus LLM.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "eth-ai-center-researchers-meetup-2026",
-    "title": "ETH AI Center Researchers Community Meetup",
-    "date": "2026-09-24",
-    "endDate": "2026-11-25",
-    "time": "17:30–19:00",
-    "city": "Zurich",
-    "venue": "ETH AI Center, Oerlikon",
-    "format": "Meetup",
-    "topics": [
-      "AI research"
-    ],
-    "organiser": "ETH AI Center",
-    "cost": "Free",
-    "url": "https://www.sairop.swiss/events/researchers-community-meetup",
-    "source": "sairop.swiss",
-    "blurb": "Recurring meetup series for the AI research community at ETH Zurich.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "humanoid-robot-championship-2026",
-    "title": "Humanoid Robot Championship 2026",
-    "date": "2026-09-21",
-    "endDate": "2026-09-25",
-    "city": "Zurich",
-    "venue": "Zurich",
-    "format": "Conference",
-    "topics": [
-      "Robotics",
-      "Embodied AI"
-    ],
-    "organiser": "Greater Zurich Area",
-    "cost": "Not listed",
-    "url": "https://www.greaterzuricharea.com/en/events/humanoid-robot-championship-2026",
-    "source": "greaterzuricharea.com",
-    "blurb": "International humanoid robotics championship and showcase in Zurich.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "ai-agent-in-a-day-workshop-zurich-2026",
-    "title": "AI Agent in a Day Workshop @ Microsoft Zurich",
-    "date": "2026-09-11",
-    "endDate": "2026-09-11",
-    "time": "08:30–17:30",
-    "city": "Zurich",
-    "venue": "Microsoft MTC, The Circle 02",
-    "format": "Workshop",
-    "topics": [
-      "Agentic AI",
-      "Microsoft ecosystem",
-      "Enterprise AI"
-    ],
-    "organiser": "AI, Copilot & Business Apps Community by INKUBIT",
-    "cost": "Not listed",
-    "url": "https://www.meetup.com/ai-copilot-business-apps-community-by-inkubit/events/315583262/",
-    "source": "Meetup",
-    "blurb": "Hands-on, single-day workshop building and refining AI agents for real business use cases — project management, lead qualification, account intelligence — hosted at Microsoft's Zurich campus.",
-    "firstSeen": "2026-09-04"
-  },
-  {
-    "id": "ai-square-conference-winterthur-2026",
-    "title": "AI-SQUARE Conference",
-    "date": "2026-09-24",
-    "endDate": "2026-09-24",
-    "time": "16:30–20:00",
-    "city": "Winterthur",
-    "format": "Conference",
-    "topics": [
-      "Applied AI",
-      "Enterprise AI"
-    ],
-    "organiser": "Tech Talks Basel / AI-SQUARE",
-    "cost": "Free",
-    "url": "https://www.meetup.com/tech-talks-basel/events/316350566/",
-    "source": "Meetup",
-    "blurb": "Keynotes and real-world case studies on AI-SQUARE, a Swiss-built platform for AI-powered software staging management, with the academics and industry leaders who built it.",
-    "firstSeen": "2026-09-04"
-  },
-  {
     "id": "ai-productivity-conference-zurich-2026",
     "title": "AI Productivity User Group Conference @ Microsoft Switzerland",
     "date": "2026-10-23",
@@ -906,85 +854,23 @@
     "firstSeen": "2026-09-04"
   },
   {
-    "id": "chalet-azure-romandie-power-platform-2026",
-    "title": "IA & Power Platform 2026: MCP, Copilot et innovations Microsoft",
-    "date": "2026-09-24",
-    "endDate": "2026-09-24",
-    "time": "18:00–21:00",
-    "city": "Versoix",
-    "venue": "Regus Versoix, Station Lakeside",
-    "format": "Meetup",
+    "id": "zentral-hack-2026",
+    "title": "Zentral Hack 2026",
+    "date": "2026-10-23",
+    "endDate": "2026-10-23",
+    "time": "17:00–22:00",
+    "city": "Rotkreuz",
+    "venue": "HSLU Informatik",
+    "format": "Workshop",
     "topics": [
-      "Microsoft ecosystem",
-      "Agentic AI",
-      "AI tools"
+      "Hackathon"
     ],
-    "organiser": "Chalet Azure Romandie",
-    "cost": "Free",
-    "url": "https://www.meetup.com/chaletazure/events/313463700/",
-    "source": "Meetup",
-    "blurb": "Two French-language technical sessions on MCP for AI experiences in Dynamics 365/Power Platform and what's new in Power Platform for 2026, for architects and developers in Romandie.",
-    "firstSeen": "2026-09-04"
-  },
-  {
-    "id": "mindstone-geneva-ai-meetup-sept-2026",
-    "title": "Mindstone Geneva September AI Meetup",
-    "date": "2026-09-17",
-    "endDate": "2026-09-17",
-    "time": "18:00",
-    "city": "Geneva",
-    "venue": "Voisins Saint-Gervais, Rue Necker 3",
-    "format": "Meetup",
-    "topics": [
-      "GenAI",
-      "AI tools",
-      "Applied AI"
-    ],
-    "organiser": "Mindstone Geneva AI Meetup",
+    "organiser": "Digital & AI Community",
     "cost": "Not listed",
-    "url": "https://www.meetup.com/mindstone-geneva-ai-meetup/events/316326015/",
-    "source": "Meetup",
-    "blurb": "Monthly Geneva AI meetup with three talks on building with LLMs and AI productivity, followed by networking over pizza and drinks.",
-    "firstSeen": "2026-09-04"
-  },
-  {
-    "id": "fabric-azure-hybrid-analytics-webinar-2026",
-    "title": "Hybrid Analytics — Fabric + Azure Services",
-    "date": "2026-09-08",
-    "endDate": "2026-09-08",
-    "time": "18:30",
-    "city": "Online (CH)",
-    "format": "Webinar",
-    "topics": [
-      "Data platform",
-      "Microsoft ecosystem",
-      "Databricks"
-    ],
-    "organiser": "Data and AI for Intelligent Cloud (Azure Basel User Group)",
-    "cost": "Free",
-    "url": "https://www.meetup.com/azure-basel-user-group/events/312635971/",
-    "source": "Meetup",
-    "blurb": "Swiss Azure user-group session on integrating Microsoft Fabric with existing Azure investments — OneLake, Data Factory, Databricks, and Cosmos DB hybrid patterns.",
-    "firstSeen": "2026-09-04"
-  },
-  {
-    "id": "dama-swissquote-data-governance-webinar-2026",
-    "title": "Metadata-Powered Analytics: How Swissquote Uses Data Governance as a Catalyst",
-    "date": "2026-09-16",
-    "endDate": "2026-09-16",
-    "time": "13:00–14:00",
-    "city": "Online (CH)",
-    "format": "Webinar",
-    "topics": [
-      "Data governance",
-      "Data leadership"
-    ],
-    "organiser": "DAMA Switzerland — Zurich Chapter",
-    "cost": "Free",
-    "url": "https://www.damaswiss.org/events/next-webinar",
-    "source": "DAMA Switzerland",
-    "blurb": "Swissquote's data governance professionals explain how metadata powers analytics and acts as a governance catalyst, hosted by DAMA Switzerland's Zurich chapter.",
-    "firstSeen": "2026-09-04"
+    "url": "https://zentralhack.ch",
+    "source": "ai-community.ch",
+    "blurb": "Regional hackathon hosted by the Digital & AI Community in central Switzerland.",
+    "firstSeen": "2026-09-03"
   },
   {
     "id": "leading-data-conference-switzerland-2026",
@@ -1008,6 +894,47 @@
     "firstSeen": "2026-09-04"
   },
   {
+    "id": "swiss-data-space-forum-2026",
+    "title": "Swiss Data Space Forum 2026: Unlocking Data for AI",
+    "date": "2026-10-28",
+    "endDate": "2026-10-28",
+    "time": "09:00–17:00",
+    "city": "Prilly (Lausanne)",
+    "venue": "unlimitrust campus",
+    "format": "Conference",
+    "topics": [
+      "Data governance",
+      "Data spaces"
+    ],
+    "organiser": "Swiss Data Alliance / digitalswitzerland",
+    "cost": "Not listed",
+    "url": "https://forum.swissdataalliance.ch/",
+    "source": "swissdataalliance.ch",
+    "blurb": "National forum on data governance and data spaces for AI, hosted at unlimitrust.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "fabric-power-bi-user-group-geneva-2026",
+    "title": "Fabric & Power BI User Group Geneva 2026",
+    "date": "2026-10-29",
+    "endDate": "2026-10-29",
+    "time": "18:30–21:30",
+    "city": "Geneva",
+    "venue": "Impact Hub Geneva, Rue Fendt 1",
+    "format": "Meetup",
+    "topics": [
+      "Microsoft Fabric",
+      "Power BI",
+      "Microsoft ecosystem"
+    ],
+    "organiser": "MDW (My Data Works)",
+    "cost": "Free",
+    "url": "https://mdw-group.com/events/fabric-power-bi-user-group-geneva-2026/",
+    "source": "mdw-group.com",
+    "blurb": "Geneva user-group evening on Power BI and Microsoft Fabric — speaker sessions, customer use cases and product news, followed by an apéro.",
+    "firstSeen": "2026-09-15"
+  },
+  {
     "id": "great-data-heist-geneva-2026",
     "title": "The Great Data Heist: Trust, Power & Cyber Warfare",
     "date": "2026-10-29",
@@ -1027,6 +954,227 @@
     "source": "DatAfterwork",
     "blurb": "Cybersecurity experts and hackers unpack how data breaches actually happen, with live hacking demos and an immersive escape game.",
     "firstSeen": "2026-09-05"
+  },
+  {
+    "id": "td-synnex-destination-ai-2026",
+    "title": "TD SYNNEX: Destination AI",
+    "date": "2026-11-03",
+    "endDate": "2026-11-03",
+    "time": "09:30–20:00",
+    "city": "Dietlikon",
+    "venue": "Pathé Dietlikon",
+    "format": "Conference",
+    "topics": [
+      "Enterprise AI",
+      "Microsoft ecosystem"
+    ],
+    "organiser": "TD SYNNEX",
+    "cost": "Not listed",
+    "url": "https://www.ai-community.ch/de/events/550",
+    "source": "ai-community.ch",
+    "blurb": "Enterprise AI conference for the Microsoft partner and reseller ecosystem.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "snowflake-forum-zurich-2026",
+    "title": "Snowflake Forum Zurich 2026",
+    "date": "2026-11-05",
+    "endDate": "2026-11-05",
+    "time": "09:00–19:00",
+    "city": "Zurich-Flughafen",
+    "venue": "The Circle Convention Center",
+    "format": "Conference",
+    "topics": [
+      "Data platform",
+      "Governance"
+    ],
+    "organiser": "Snowflake",
+    "cost": "Free",
+    "url": "https://www.snowflake.com/events/snowflake-forum-zurich-2026/",
+    "source": "snowflake.com",
+    "blurb": "Free data-platform conference bringing together Swiss data teams and partners.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "swiss-ai-safety-days-2026",
+    "title": "Swiss AI Safety Days 2026",
+    "date": "2026-11-07",
+    "endDate": "2026-11-08",
+    "city": "Zurich",
+    "venue": "ETH main building",
+    "format": "Conference",
+    "topics": [
+      "AI safety",
+      "Governance",
+      "Careers"
+    ],
+    "organiser": "aisafety.ch",
+    "cost": "Free–CHF 320 (trust-based)",
+    "url": "https://swissaisafetydays.ch/",
+    "source": "swissaisafetydays.ch",
+    "blurb": "Weekend conference on AI safety research, governance, and careers.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "unige-recherche-documentaire-ia-2026",
+    "title": "UNIGE – Recherche documentaire et IA",
+    "date": "2026-11-09",
+    "endDate": "2026-11-09",
+    "time": "10:15–11:45",
+    "city": "Geneva",
+    "venue": "Uni Mail 2220",
+    "format": "Workshop",
+    "topics": [
+      "AI tools",
+      "Academic research"
+    ],
+    "organiser": "Université de Genève",
+    "cost": "Not specified",
+    "url": "https://agenda.unige.ch/events/view/45097",
+    "source": "agenda.unige.ch",
+    "blurb": "University of Geneva workshop on using AI tools for academic research.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "devops-for-fabric-git-deployment-pipelines-2026",
+    "title": "DevOps for Fabric — Git & Deployment Pipelines",
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "time": "18:30–20:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Microsoft Fabric",
+      "Data platform",
+      "Microsoft ecosystem"
+    ],
+    "organiser": "Data and AI for Intelligent Cloud",
+    "cost": "Free",
+    "url": "https://www.meetup.com/ai-and-intelligent-cloud/events/312635993/",
+    "source": "Meetup",
+    "blurb": "Bringing proper CI/CD to Microsoft Fabric: Git integration, deployment pipelines, variable libraries and sensitivity labels for enterprise-ready BI.",
+    "firstSeen": "2026-09-15"
+  },
+  {
+    "id": "swiss-ai-summit-2026",
+    "title": "Swiss AI Summit 2026",
+    "date": "2026-11-16",
+    "endDate": "2026-11-16",
+    "time": "07:00–20:00",
+    "city": "Zurich",
+    "venue": "Kunsthaus Zürich",
+    "format": "Conference",
+    "topics": [
+      "Enterprise AI strategy"
+    ],
+    "organiser": "Swiss AI Summit",
+    "cost": "Ticketed (TBC)",
+    "url": "https://www.swissaisummit.com/",
+    "source": "swissaisummit.com",
+    "blurb": "Full-day summit on enterprise AI strategy with executive roundtables.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "sdsc-mlops-introduction-epfl-2026",
+    "title": "AI in Production: Introduction to MLOps — Training at EPFL",
+    "date": "2026-11-17",
+    "endDate": "2026-11-17",
+    "time": "09:00–17:00",
+    "city": "Lausanne",
+    "venue": "EPFL",
+    "format": "Workshop",
+    "topics": [
+      "MLOps",
+      "Data platform",
+      "Applied AI"
+    ],
+    "organiser": "Swiss Data Science Center",
+    "cost": "CHF 1,000 (10% off for EPFL alumni and SDSC partners)",
+    "url": "https://www.datascience.ch/event/ai-in-production-introduction-to-mlops---training-at-epfl",
+    "source": "datascience.ch",
+    "blurb": "One-day SDSC training on designing, deploying and operating ML systems at scale — version control, CI/CD, experiment tracking, monitoring, drift detection and automated retraining. Registration closes 24 September.",
+    "firstSeen": "2026-09-15"
+  },
+  {
+    "id": "geneva-ai-conference-2026",
+    "title": "The Geneva AI Conference 2026",
+    "date": "2026-11-25",
+    "endDate": "2026-11-25",
+    "time": "18:00–21:00",
+    "city": "Geneva",
+    "venue": "FER Genève, Rue de Saint-Jean 98",
+    "format": "Networking",
+    "topics": [
+      "Enterprise AI",
+      "AI strategy"
+    ],
+    "organiser": "Startup Network Europe",
+    "cost": "Ticketed (Eventbrite)",
+    "url": "https://www.eventbrite.ie/e/the-geneva-ai-conference-2026-tickets-1983950142282",
+    "source": "eventbrite.ie",
+    "blurb": "Evening conference on enterprise AI strategy and ROI with an IBM/SAP panel.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "sdsc-ai-insights-chief-executives-2026",
+    "title": "AI Insights for Chief Executives",
+    "date": "2026-11-27",
+    "endDate": "2026-11-27",
+    "time": "10:00–17:00",
+    "city": "Zurich",
+    "venue": "Swiss AI Tower, ETH Zürich, Andreasstrasse 5",
+    "format": "Workshop",
+    "topics": [
+      "AI strategy",
+      "Data leadership",
+      "Enterprise AI"
+    ],
+    "organiser": "Swiss Data Science Center / FBXperts",
+    "cost": "50 CHF",
+    "url": "https://www.datascience.ch/event/ai-insights-for-chief-executives",
+    "source": "datascience.ch",
+    "blurb": "Executive workshop for CEOs, CFOs, CDOs and CTOs on turning data and AI into measurable business value, with case studies from EKZ, Merck and Richemont. Limited seats.",
+    "firstSeen": "2026-09-15"
+  },
+  {
+    "id": "databricks-data-ai-world-tour-zurich-2026",
+    "title": "Databricks Data + AI World Tour Zurich 2026",
+    "date": "2026-12-01",
+    "endDate": "2026-12-01",
+    "city": "Zurich",
+    "venue": "TBA",
+    "format": "Conference",
+    "topics": [
+      "Databricks",
+      "Lakehouse",
+      "Unity Catalog"
+    ],
+    "organiser": "Databricks",
+    "cost": "Free (apply to attend)",
+    "url": "https://www.databricks.com/dataaisummit/worldtour",
+    "source": "databricks.com",
+    "blurb": "Databricks' flagship Swiss event on the Lakehouse platform and Unity Catalog.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "fabric-year-in-review-2026",
+    "title": "Fabric Year in Review 2026 — Highlights & Outlook",
+    "date": "2026-12-08",
+    "endDate": "2026-12-08",
+    "time": "18:30–20:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Microsoft Fabric",
+      "Data platform",
+      "Microsoft ecosystem"
+    ],
+    "organiser": "Data and AI for Intelligent Cloud",
+    "cost": "Free",
+    "url": "https://www.meetup.com/ai-and-intelligent-cloud/events/312636001/",
+    "source": "Meetup",
+    "blurb": "Year-end session from the Zurich Microsoft data-platform group on what actually shipped in Fabric during 2026 and what is worth planning for next.",
+    "firstSeen": "2026-09-15"
   },
   {
     "id": "night-of-data-talents-lausanne-2026",
