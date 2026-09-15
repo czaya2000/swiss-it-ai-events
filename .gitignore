@@ -14,5 +14,8 @@ npm-debug.log*
 .env
 .env.production
 
+# daily-refresh routine's push credential (never commit)
+.github-token
+
 # macOS-specific files
 .DS_Store
