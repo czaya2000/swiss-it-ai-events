@@ -25,7 +25,6 @@ adding a source here means "check this for leads," not "trust it blindly."
 
 - meetup.com/databricks-user-group-suisse-romande
 - meetup.com/microsoft-fabric-user-group-switzerland
-- meetup.com/power-bi-user-group-switzerland
 - meetup.com/pydata-zurich
 - meetup.com/zurich-machine-learning
 - meetup.com/daizurich — Swiss Data and AI Meetup
