@@ -57,7 +57,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           claude_args: >-
             --model claude-sonnet-5
-            --max-turns 60
+            --max-turns 150
             --allowedTools "Bash,Read,Edit,Write,Glob,Grep,WebSearch,WebFetch"
           prompt: |
             You are the daily content-refresh agent for the public website 'Swiss IT & AI
