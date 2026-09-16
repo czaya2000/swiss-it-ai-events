@@ -64,9 +64,8 @@ jobs:
             Events', live at https://swissdataevents.ch. You are running in GitHub Actions,
             in a checkout of the site's repository. Today's date is available from `date -u`.
 
-            Your job is to update TWO files and nothing else:
+            Your job is to update ONE file and nothing else:
               - src/data/events.json  (the event list)
-              - src/data/meta.json    (a single `lastScan` ISO-8601 UTC timestamp)
 
             Do NOT run git, do NOT commit, do NOT build, do NOT deploy. The workflow does
             all of that after you finish. Never modify anything under public/social/ (those
@@ -83,8 +82,8 @@ jobs:
 
             HORIZON: today -> +120 days.
 
-            STEP 1 — Read src/data/events.json (current live data), src/content.config.ts
-            (the schema) and src/data/meta.json.
+            STEP 1 — Read src/data/events.json (current live data) and src/content.config.ts
+            (the schema).
 
             STEP 2 — Read SOURCES.md fresh. Marcin edits it himself, so treat it as
             authoritative and do not rely on any source list baked into this prompt. Check
