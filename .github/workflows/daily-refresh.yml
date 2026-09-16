@@ -51,6 +51,10 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # Passed explicitly so the action doesn't fall back to authenticating as the
+          # Claude GitHub App, which would make this depend on that app being installed.
+          # Claude only edits files here; every git operation belongs to the workflow.
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           claude_args: >-
             --model claude-sonnet-5
             --max-turns 60
