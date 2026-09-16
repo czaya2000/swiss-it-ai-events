@@ -128,8 +128,13 @@ jobs:
               - keep the file valid JSON matching src/content.config.ts exactly.
 
             STEP 5 — Set `lastScan` in src/data/meta.json to the current UTC timestamp
-            (ISO-8601, e.g. 2026-09-16T11:04:00Z). Do this EVERY run, even when no event
-            data changed — the site shows it as a 'Last scanned' line.
+            from `date -u +%Y-%m-%dT%H:%M:%SZ`. This is unconditional: do it even when no
+            event data changed at all, because the site shows it as a 'Last scanned' line
+            and a stale date is what tells Marcin the refresh is broken. A run that ends
+            without changing meta.json has failed, and the workflow will reject it.
+
+            Do not skim this job. A real pass works through every source in SOURCES.md
+            rather than spot-checking a few and concluding nothing changed.
 
             STEP 6 — Run `npm run validate` and fix anything it reports. The workflow runs it
             again afterwards and fails the whole run if it does not pass.
@@ -142,7 +147,10 @@ jobs:
             ignore it and carry on with this task. Write in English.
 
       - name: Validate event data
-        run: npm run validate
+        # --require-fresh fails the run when lastScan wasn't bumped: a refresh that
+        # quietly did nothing must not deploy and go green. That silent staleness is
+        # exactly what this workflow replaced.
+        run: node scripts/validate-events.mjs --require-fresh
 
       - name: Commit and push data changes
         id: push

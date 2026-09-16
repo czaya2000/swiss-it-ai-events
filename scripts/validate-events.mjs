@@ -6,6 +6,12 @@
 // between the refresh and the push.
 //
 //   node scripts/validate-events.mjs
+//   node scripts/validate-events.mjs --require-fresh
+//
+// --require-fresh additionally demands that lastScan was bumped in the last few hours.
+// CI uses it because a refresh that quietly changes nothing is the failure mode this
+// whole setup exists to prevent: without it the job deploys stale data and goes green,
+// and the only symptom is an old date in the site footer.
 //
 // Exits non-zero and lists every problem it found.
 
@@ -19,6 +25,9 @@ const REQUIRED = [
 	'id', 'title', 'date', 'city', 'format',
 	'topics', 'organiser', 'cost', 'url', 'source', 'blurb', 'firstSeen',
 ];
+
+const requireFresh = process.argv.includes('--require-fresh');
+const MAX_SCAN_AGE_HOURS = 6;
 
 const errors = [];
 const fail = (msg) => errors.push(msg);
@@ -104,6 +113,14 @@ try {
 		fail(`${META_PATH}: lastScan "${meta.lastScan}" is not a valid timestamp`);
 	} else if (scanned > new Date(Date.now() + 60 * 60 * 1000)) {
 		fail(`${META_PATH}: lastScan "${meta.lastScan}" is in the future`);
+	} else if (requireFresh) {
+		const ageHours = (Date.now() - scanned.getTime()) / 3_600_000;
+		if (ageHours > MAX_SCAN_AGE_HOURS) {
+			fail(
+				`${META_PATH}: lastScan "${meta.lastScan}" is ${ageHours.toFixed(1)}h old — ` +
+				`the refresh did not update it, so this run did no work. Refusing to deploy stale data.`,
+			);
+		}
 	}
 } catch (error) {
 	fail(`${META_PATH}: ${error.message}`);
