@@ -12,8 +12,13 @@ name: Daily refresh
 
 on:
   schedule:
-    # GitHub cron is UTC with no DST handling: 13:00 Zurich in summer, 12:00 in winter.
-    - cron: "0 11 * * *"
+    # Mondays, Wednesdays and Fridays only — each run costs real money, and Swiss event
+    # listings don't change fast enough to need daily passes.
+    #
+    # GitHub cron is UTC with no DST handling: 07:00 Zurich in summer, 06:00 in winter.
+    # Deliberately ahead of the n8n social workflow's 08:00 run, so its morning post
+    # draws on a feed refreshed the same morning rather than the previous run's.
+    - cron: "0 5 * * 1,3,5"
   workflow_dispatch:
 
 permissions:
