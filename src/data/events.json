@@ -156,6 +156,26 @@
     "firstSeen": "2026-09-03"
   },
   {
+    "id": "genai-engineers-zurich-0001",
+    "title": "GenAI Engineers #0001 — Zürich",
+    "date": "2026-09-17",
+    "endDate": "2026-09-17",
+    "time": "18:00–21:00",
+    "city": "Zurich",
+    "format": "Meetup",
+    "topics": [
+      "GenAI",
+      "AI agents",
+      "Applied AI"
+    ],
+    "organiser": "GenAI Engineers Zürich",
+    "cost": "Free (application required)",
+    "url": "https://www.meetup.com/genai-engineers-zurich/events/316551826/",
+    "source": "Meetup",
+    "blurb": "First edition of a practitioner-only evening for people shipping generative AI: one technical talk, then a build session — bring a laptop and a live project, whether an agent, an eval harness or a production problem.",
+    "firstSeen": "2026-09-16"
+  },
+  {
     "id": "mindstone-geneva-ai-meetup-sept-2026",
     "title": "Mindstone Geneva September AI Meetup",
     "date": "2026-09-17",
@@ -235,6 +255,27 @@
     "firstSeen": "2026-09-03"
   },
   {
+    "id": "zug-tech-circle-agentic-security-2026",
+    "title": "Zug Tech Circle — Agentic Security & IAM Readiness",
+    "date": "2026-09-18",
+    "endDate": "2026-09-18",
+    "time": "08:00–10:30",
+    "city": "Zug",
+    "venue": "Siemens Inspiration & Convention Center, Theilerstrasse 1a",
+    "format": "Meetup",
+    "topics": [
+      "Agentic AI",
+      "AI governance",
+      "Identity & access"
+    ],
+    "organiser": "Zug Tech Circle",
+    "cost": "From CHF 35",
+    "url": "https://luma.com/4kh18ayq",
+    "source": "ai-weeks.ch",
+    "blurb": "Morning session with KPMG Switzerland on the AI agents already running inside companies without proper identity or access governance, including a live self-score on agent-identity maturity and a 90-day checklist.",
+    "firstSeen": "2026-09-16"
+  },
+  {
     "id": "humanoid-robot-championship-2026",
     "title": "Humanoid Robot Championship 2026",
     "date": "2026-09-21",
@@ -271,6 +312,27 @@
     "source": "techtour.com",
     "blurb": "Investor-facing conference on AI and data protection, co-located with Trust Valley Days.",
     "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "responsible-ai-sensitive-data-zurich-2026",
+    "title": "Panel: Responsible AI for Sensitive Data Processing",
+    "date": "2026-09-23",
+    "endDate": "2026-09-23",
+    "time": "16:30–17:30",
+    "city": "Zurich",
+    "venue": "Novu Campus, The Circle 60",
+    "format": "Networking",
+    "topics": [
+      "AI governance",
+      "Data governance",
+      "Privacy"
+    ],
+    "organiser": "LEXR / Swiss {ai} Weeks",
+    "cost": "Free",
+    "url": "https://luma.com/n0zxlx0b",
+    "source": "ai-weeks.ch",
+    "blurb": "Four practitioners who work with regulated data — medtech privacy governance, recruitment assessment, legal AI platforms and health-data compliance — on compliance-by-design and the legal risks teams underestimate, followed by an apéro.",
+    "firstSeen": "2026-09-16"
   },
   {
     "id": "trust-valley-days-2026",
@@ -433,6 +495,25 @@
     "firstSeen": "2026-09-03"
   },
   {
+    "id": "coffee-and-prompt-004-geneva-2026",
+    "title": "Coffee & Prompt #004",
+    "date": "2026-09-26",
+    "endDate": "2026-09-26",
+    "city": "Geneva",
+    "venue": "Boréal Coffee, Rue du Stand 60",
+    "format": "Networking",
+    "topics": [
+      "Applied AI",
+      "Building with AI"
+    ],
+    "organiser": "Switzerland AI Community",
+    "cost": "Free",
+    "url": "https://luma.com/gs6h67k0",
+    "source": "switzerland-ai.com",
+    "blurb": "Small Saturday coworking session in Geneva for people building AI side projects — quick intros, focused work time, optional demos and feedback. Capped at ten people.",
+    "firstSeen": "2026-09-16"
+  },
+  {
     "id": "applied-ai-center-conference-hslu-2026",
     "title": "Applied AI Center Conference 2026 – 'Technology is scalable. Responsibility is not.'",
     "date": "2026-09-28",
@@ -493,6 +574,27 @@
     "firstSeen": "2026-09-03"
   },
   {
+    "id": "physical-ai-hackathon-dare-campus-2026",
+    "title": "Physical AI Hackathon — DARE Campus Zurich",
+    "date": "2026-09-29",
+    "endDate": "2026-09-29",
+    "time": "09:00–21:00",
+    "city": "Schlieren (Zurich)",
+    "venue": "DARE Campus, Zürcherstrasse 39d",
+    "format": "Workshop",
+    "topics": [
+      "Robotics",
+      "Embodied AI",
+      "Hackathon"
+    ],
+    "organiser": "BuilderBase / Swiss {ai} Weeks",
+    "cost": "Free",
+    "url": "https://luma.com/builde-xkyq",
+    "source": "ai-weeks.ch",
+    "blurb": "One-day hackathon on the full perception–decision–action pipeline with real robotics hardware on site, and a live demo required by the end of the day.",
+    "firstSeen": "2026-09-16"
+  },
+  {
     "id": "zurich-ai-meetup-secure-orchestration-2026",
     "title": "Zürich AI Meetup — Secure Orchestration",
     "date": "2026-09-29",
@@ -531,6 +633,47 @@
     "source": "zurichaifestival.ch",
     "blurb": "Conference on applying AI to sustainability and environmental challenges.",
     "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "dare-campus-robot-showcase-2026",
+    "title": "DARE Campus Robot Showcase & Community Night",
+    "date": "2026-09-30",
+    "endDate": "2026-09-30",
+    "time": "17:30–20:30",
+    "city": "Schlieren (Zurich)",
+    "venue": "DARE Campus at The JED, Zürcherstrasse 39d",
+    "format": "Networking",
+    "topics": [
+      "Robotics",
+      "Embodied AI",
+      "Applied AI"
+    ],
+    "organiser": "Zurich AI Festival / DARE Campus",
+    "cost": "Free",
+    "url": "https://luma.com/DAREcampusRobotShowcase",
+    "source": "ai-weeks.ch",
+    "blurb": "Open evening of live robot demos and short founder talks on how intelligent systems get from prototype to real-world deployment, with time to talk to the researchers and companies behind them.",
+    "firstSeen": "2026-09-16"
+  },
+  {
+    "id": "datavis-zurich-radical-creativity-2026",
+    "title": "Radical Creativity in Data Visualization",
+    "date": "2026-09-30",
+    "endDate": "2026-09-30",
+    "time": "17:00–18:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Data visualisation",
+      "Analytics",
+      "Design"
+    ],
+    "organiser": "Data Visualization Zurich",
+    "cost": "Free",
+    "url": "https://www.meetup.com/datavis-zurich/events/312918097/",
+    "source": "Meetup",
+    "blurb": "Jan Willem Tulp presents Frameshift Design, a structured method for getting genuinely new ideas out of a data visualisation brief rather than defaulting to the obvious chart, followed by Q&A.",
+    "firstSeen": "2026-09-16"
   },
   {
     "id": "devops-geneve-ai-governance-2026",
@@ -616,6 +759,27 @@
     "firstSeen": "2026-09-03"
   },
   {
+    "id": "suse-exchange-zurich-2026",
+    "title": "SUSE Exchange Zürich",
+    "date": "2026-09-30",
+    "endDate": "2026-09-30",
+    "time": "13:30–19:00",
+    "city": "Zurich",
+    "venue": "Westhive Zürich, Hardturmstrasse 161",
+    "format": "Conference",
+    "topics": [
+      "Sovereign AI",
+      "Enterprise AI",
+      "Cloud native"
+    ],
+    "organiser": "SUSE",
+    "cost": "Free",
+    "url": "https://more.suse.com/SUSE_Exchange_Zurich_Sep.html",
+    "source": "ai-weeks.ch",
+    "blurb": "German-language afternoon for IT leaders and architects on turning digital sovereignty into something concrete: Kubernetes platforms, future-proof virtualisation, and running enterprise AI on protected company data.",
+    "firstSeen": "2026-09-16"
+  },
+  {
     "id": "swiss-it-forums-2026",
     "title": "Swiss IT Forum(s) 2026 incl. Swiss IA Forum",
     "date": "2026-09-30",
@@ -657,6 +821,27 @@
     "firstSeen": "2026-09-03"
   },
   {
+    "id": "digitale-souveraenitaet-und-ki-seminar-2026",
+    "title": "Seminar: Digitale Souveränität und KI",
+    "date": "2026-10-01",
+    "endDate": "2026-10-01",
+    "time": "09:00–13:00",
+    "city": "Fahrweid (Zurich)",
+    "venue": "Cudos AG, Querstrasse 17",
+    "format": "Workshop",
+    "topics": [
+      "Digital sovereignty",
+      "LLM infrastructure",
+      "Enterprise AI"
+    ],
+    "organiser": "Cudos AG",
+    "cost": "Not listed",
+    "url": "https://www.sairop.swiss/events/seminar-digitale-souveraenitaet-und-ki",
+    "source": "sairop.swiss",
+    "blurb": "Half-day German-language seminar on running large language models on local infrastructure, aimed at Swiss companies looking to cut their dependency on US and Chinese AI providers.",
+    "firstSeen": "2026-09-16"
+  },
+  {
     "id": "hack-apertus-2026",
     "title": "Hack Apertus",
     "date": "2026-10-01",
@@ -693,6 +878,47 @@
     "source": "panoramai.ch",
     "blurb": "Conference on enterprise GenAI strategy and agentic AI.",
     "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "public-night-ai-x-summit-2026",
+    "title": "Public Night @ AI+X Summit",
+    "date": "2026-10-01",
+    "endDate": "2026-10-01",
+    "time": "17:30–20:30",
+    "city": "Zurich",
+    "venue": "StageOne, Elias-Canetti-Strasse 146",
+    "format": "Networking",
+    "topics": [
+      "Applied AI",
+      "Robotics",
+      "AI community"
+    ],
+    "organiser": "ETH AI Center",
+    "cost": "Not listed",
+    "url": "https://www.sairop.swiss/events/public-night-ai-x-summit",
+    "source": "sairop.swiss",
+    "blurb": "The AI+X Summit opens its doors to the public for an evening of demos across robotics, language models and medtech, a stage programme, and the AI Challenge 2026 award ceremony, closing with an apéro.",
+    "firstSeen": "2026-09-16"
+  },
+  {
+    "id": "women-in-ai-breakfast-zurich-2026",
+    "title": "Women in AI Breakfast",
+    "date": "2026-10-01",
+    "endDate": "2026-10-01",
+    "time": "07:30–09:00",
+    "city": "Zurich",
+    "venue": "ETH AI Center, OAT X 11, Oerlikon",
+    "format": "Networking",
+    "topics": [
+      "AI community",
+      "Applied AI"
+    ],
+    "organiser": "ETH AI Center",
+    "cost": "Not listed",
+    "url": "https://www.sairop.swiss/events/women-in-ai-breakfast",
+    "source": "sairop.swiss",
+    "blurb": "Breakfast meetup for women working in AI, held at the ETH AI Center as part of the Zurich AI Festival.",
+    "firstSeen": "2026-09-16"
   },
   {
     "id": "azure-zurich-ai-agents-night-2026",
@@ -754,6 +980,27 @@
     "source": "sairop.swiss",
     "blurb": "Standards-focused networking event on aligned AI governance and the EU AI Act.",
     "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "dell-technologies-forum-zurich-2026",
+    "title": "Dell Technologies Forum Zürich 2026",
+    "date": "2026-10-06",
+    "endDate": "2026-10-06",
+    "time": "09:00–19:00",
+    "city": "Zurich",
+    "venue": "Halle 550, Birchstrasse 150, Oerlikon",
+    "format": "Conference",
+    "topics": [
+      "Enterprise AI",
+      "Infrastructure",
+      "Data platform"
+    ],
+    "organiser": "Dell Technologies",
+    "cost": "Free",
+    "url": "https://events.dell.com/event/forum-ch-2026/summary",
+    "source": "ai-weeks.ch",
+    "blurb": "Full-day German-language conference for Swiss IT leaders on future-ready AI and infrastructure, drawing 700+ attendees across intelligent endpoints, modern infrastructure and AI skills.",
+    "firstSeen": "2026-09-16"
   },
   {
     "id": "panoramai-summit-geneva-2026",
@@ -837,6 +1084,27 @@
     "firstSeen": "2026-09-15"
   },
   {
+    "id": "ibm-bob-coding-watch-party-zurich-2026",
+    "title": "IBM Bob Coding Watch Party Zürich",
+    "date": "2026-10-15",
+    "endDate": "2026-10-15",
+    "time": "16:00–20:00",
+    "city": "Zurich",
+    "venue": "IBM Switzerland AG, Vulkanstrasse 106",
+    "format": "Meetup",
+    "topics": [
+      "AI-assisted development",
+      "Enterprise AI",
+      "Applied AI"
+    ],
+    "organiser": "IBM Switzerland",
+    "cost": "Free",
+    "url": "https://www.meetup.com/big-data-developers-switzerland/events/316254684/",
+    "source": "Meetup",
+    "blurb": "Hands-on hybrid session at IBM’s Zurich office on IBM Bob, an AI development assistant for building and modernising code, with beginner, intermediate and expert tracks.",
+    "firstSeen": "2026-09-16"
+  },
+  {
     "id": "smart-services-summit-2026",
     "title": "Smart Services Summit 2026",
     "date": "2026-10-16",
@@ -899,19 +1167,18 @@
     "id": "zentral-hack-2026",
     "title": "Zentral Hack 2026",
     "date": "2026-10-23",
-    "endDate": "2026-10-23",
-    "time": "17:00–22:00",
+    "endDate": "2026-10-24",
     "city": "Rotkreuz",
     "venue": "HSLU Informatik",
     "format": "Workshop",
     "topics": [
       "Hackathon"
     ],
-    "organiser": "Digital & AI Community",
+    "organiser": "Zentral Hack (STAIR)",
     "cost": "Not listed",
     "url": "https://zentralhack.ch",
     "source": "ai-community.ch",
-    "blurb": "Regional hackathon hosted by the Digital & AI Community in central Switzerland.",
+    "blurb": "24-hour hackathon for central Switzerland, bringing together students, business and the regional ICT community at HSLU Rotkreuz.",
     "firstSeen": "2026-09-03"
   },
   {
@@ -1017,6 +1284,26 @@
     "firstSeen": "2026-09-15"
   },
   {
+    "id": "baselhack-2026",
+    "title": "BaselHack 2026",
+    "date": "2026-10-30",
+    "endDate": "2026-11-01",
+    "time": "Fri 17:00 – Sun 17:00",
+    "city": "Basel",
+    "venue": "Memox Basel SBB, Peter Merian-Strasse 80",
+    "format": "Workshop",
+    "topics": [
+      "Hackathon",
+      "Applied AI"
+    ],
+    "organiser": "Verein BaselHack",
+    "cost": "Free",
+    "url": "https://www.baselhack.ch/",
+    "source": "ai-weeks.ch",
+    "blurb": "Free 48-hour hackathon for the Basel region with open and sponsored challenges, for developers, designers and anyone wanting to turn an idea into a working prototype.",
+    "firstSeen": "2026-09-16"
+  },
+  {
     "id": "ticino-data-conference-2026",
     "title": "Ticino Data Conference 2026",
     "date": "2026-10-30",
@@ -1115,6 +1402,27 @@
     "source": "agenda.unige.ch",
     "blurb": "University of Geneva workshop on using AI tools for academic research.",
     "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "agentic-trio-zurich-2026",
+    "title": "Agentic Trio",
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "time": "17:30–19:30",
+    "city": "Zurich",
+    "venue": "Hardturmstrasse 253",
+    "format": "Meetup",
+    "topics": [
+      "Agentic AI",
+      "Software delivery",
+      "Applied AI"
+    ],
+    "organiser": "Zürich Agentic Coding and Architectures",
+    "cost": "Free",
+    "url": "https://www.meetup.com/zurich-agentic-coding-and-architectures-meetup-group/events/316414193/",
+    "source": "Meetup",
+    "blurb": "INNOQ’s Fabian Walther reframes Teresa Torres’ Product Trio as an \"Agentic Trio\", arguing that AI should change how software teams split responsibility — not just how fast they ship.",
+    "firstSeen": "2026-09-16"
   },
   {
     "id": "devops-for-fabric-git-deployment-pipelines-2026",
