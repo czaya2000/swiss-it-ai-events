@@ -55,7 +55,6 @@ jobs:
           # Claude GitHub App, which would make this depend on that app being installed.
           # Claude only edits files here; every git operation belongs to the workflow.
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          show_full_output: true
           claude_args: >-
             --model claude-sonnet-5
             --max-turns 60
