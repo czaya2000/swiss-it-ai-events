@@ -7,10 +7,34 @@ topics. Never mix in Marcin's personal job-search scoring/fields (score, OCE not
 exam clashes) from `Cowork_OS\00_Resources\Event_Scan_Rubric.md` — that pipeline
 feeds his private Job Search HQ workbook and is a separate, unrelated system.
 
-Deploys to GitHub Pages automatically on push to `main` (see
-`.github/workflows/deploy.yml`). `astro.config.mjs` sets `base`/`site` for the
-`czaya2000.github.io/swiss-it-ai-events` path — update both if the repo is renamed
-or a custom domain is added.
+`astro.config.mjs` sets `site: 'https://swissdataevents.ch'` and no `base` — update it
+if the repo is renamed or the custom domain changes.
+
+## Daily refresh (`.github/workflows/daily-refresh.yml`)
+
+One scheduled GitHub Actions job does everything: researches new/changed events,
+updates `src/data/events.json` and `src/data/meta.json`, validates, pushes to `main`,
+builds, and force-pushes `dist/` to the `gh-pages` branch. It runs at 11:00 UTC
+(13:00 Zurich in summer, 12:00 in winter — GitHub cron has no DST) and can be run on
+demand via **workflow_dispatch**. Nothing about it depends on a personal machine.
+
+- Research, build and deploy are deliberately **one job**. GitHub does not trigger
+  workflows from commits made with the default `GITHUB_TOKEN`, so a split
+  refresh-then-deploy pair would never fire the second half.
+- Pages serves from the **`gh-pages` branch** (legacy branch source), not from Actions.
+  `public/CNAME` and `public/.nojekyll` are copied into `dist/` by the build.
+- Node is pinned to **22** (`engines: >=22.12.0`). The previous workflow was deleted in
+  `e8109ba` because it defaulted to Node 20 and failed on every push.
+- `scripts/validate-events.mjs` (`npm run validate`) gates the push — it catches what
+  the Astro schema can't, notably malformed dates, which otherwise break sorting
+  silently on the live site.
+- `scripts/scrape-meetup.mjs` (`npm run scrape:meetup`) renders meetup.com listing
+  pages with Playwright, because they are client-rendered and return nothing to a
+  plain fetch. It handles both named groups and `/find/` keyword searches.
+- The push step rebases and retries: n8n writes card PNGs to `main` on its own
+  cadence, so a plain push loses the race often enough to matter.
+- Sources live in `SOURCES.md` and are re-read on every run — edit that file to change
+  what gets checked; the workflow prompt does not hardcode a source list.
 
 Running project log (status, decisions, next steps): `Cowork_OS\Obsidian_Vault\05_Projects\Event Aggregator\Event Aggregator.md`. Keep it updated as work happens.
 

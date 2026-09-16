@@ -6,7 +6,7 @@ Project tracking lives in Obsidian: `Cowork_OS\Obsidian_Vault\05_Projects\Event 
 
 ## Stack
 
-Astro (static site), data-driven via an Astro content collection. Deployed free to GitHub Pages on push to `main` via `.github/workflows/deploy.yml`.
+Astro (static site), data-driven via an Astro content collection. Refreshed, built and deployed daily to GitHub Pages by `.github/workflows/daily-refresh.yml`, which publishes `dist/` to the `gh-pages` branch.
 
 ## Commands
 

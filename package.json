@@ -9,7 +9,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "validate": "node scripts/validate-events.mjs",
+    "scrape:meetup": "node scripts/scrape-meetup.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
@@ -17,5 +19,8 @@
   },
   "allowScripts": {
     "esbuild": true
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
   }
 }
