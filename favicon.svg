@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <!-- Swiss Data Events: the masthead device — an accent rule over a
+         field — enclosed in a square. Square corners, no binder rings:
+         a block, not a calendar app glyph. -->
+    <rect x="3" y="4" width="18" height="17" fill="none" stroke-width="2" class="frame" />
+    <rect x="3" y="4" width="18" height="4.5" class="rule" />
+    <style>
+        .frame { stroke: #000000; }
+        .rule  { fill:   #E30613; }
+        @media (prefers-color-scheme: dark) {
+            .frame { stroke: #F4F3EF; }
+            .rule  { fill:   #FF4438; }
+        }
+    </style>
+</svg>
