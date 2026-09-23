@@ -19,85 +19,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "ai-breakfast-luzern-54",
-    "title": "AI Breakfast #54 Luzern",
-    "date": "2026-09-18",
-    "endDate": "2026-09-18",
-    "time": "07:30–09:00",
-    "city": "Lucerne",
-    "venue": "Universität Luzern",
-    "format": "Networking",
-    "topics": [
-      "AI in business"
-    ],
-    "organiser": "Digital & AI Community",
-    "cost": "Not listed",
-    "url": "https://www.ai-community.ch/de/events/629",
-    "source": "ai-community.ch",
-    "blurb": "Recurring breakfast networking series on AI in business, held in Lucerne.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "data-tgif-fabric-governance-2026",
-    "title": "Governing the Flow: An Overview of Microsoft Fabric Governance",
-    "date": "2026-09-18",
-    "endDate": "2026-09-18",
-    "time": "17:00",
-    "city": "Online (CH)",
-    "format": "Webinar",
-    "topics": [
-      "Microsoft Fabric",
-      "Data governance",
-      "Microsoft ecosystem"
-    ],
-    "organiser": "Data TGIF",
-    "cost": "Free",
-    "url": "https://www.meetup.com/data-tgif/events/316546486/",
-    "source": "Meetup",
-    "blurb": "Monthly Friday webinar from the Zurich-based Microsoft Data Platform group: a fast tour of the pillars of Microsoft Fabric governance for teams scaling past a first project.",
-    "firstSeen": "2026-09-15"
-  },
-  {
-    "id": "ki-barcamp-chur-2026",
-    "title": "KI-Barcamp 2026 Chur",
-    "date": "2026-09-18",
-    "endDate": "2026-09-18",
-    "city": "Chur",
-    "venue": "FactorAI",
-    "format": "Workshop",
-    "topics": [
-      "Applied AI",
-      "Barcamp"
-    ],
-    "organiser": "Digital & AI Community",
-    "cost": "Not listed",
-    "url": "https://www.ai-community.ch/de/events/554",
-    "source": "ai-community.ch",
-    "blurb": "Open-format barcamp on applied AI in Chur.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "zug-tech-circle-agentic-security-2026",
-    "title": "Zug Tech Circle — Agentic Security & IAM Readiness",
-    "date": "2026-09-18",
-    "endDate": "2026-09-18",
-    "time": "08:00–10:30",
-    "city": "Zug",
-    "venue": "Siemens Inspiration & Convention Center, Theilerstrasse 1a",
-    "format": "Meetup",
-    "topics": [
-      "Agentic AI",
-      "AI governance",
-      "Identity & access"
-    ],
-    "organiser": "Zug Tech Circle",
-    "cost": "From CHF 35",
-    "url": "https://luma.com/4kh18ayq",
-    "source": "ai-weeks.ch",
-    "blurb": "Morning session with KPMG Switzerland on the AI agents already running inside companies without proper identity or access governance, including a live self-score on agent-identity maturity and a 90-day checklist.",
-    "firstSeen": "2026-09-16"
-  },
-  {
     "id": "humanoid-robot-championship-2026",
     "title": "Humanoid Robot Championship 2026",
     "date": "2026-09-21",
@@ -276,6 +197,27 @@
     "firstSeen": "2026-09-04"
   },
   {
+    "id": "inspire-where-is-physical-ai-zurich-2026",
+    "title": "INSPIRE — Where is Physical AI? with Stefan Leutenegger",
+    "date": "2026-09-24",
+    "endDate": "2026-09-24",
+    "time": "18:30–20:00",
+    "city": "Zurich",
+    "venue": "ETH Zürich, HG D1.2, Rämistrasse 101",
+    "format": "Meetup",
+    "topics": [
+      "Embodied AI",
+      "Robotics",
+      "AI research"
+    ],
+    "organiser": "ETH Robotics Club",
+    "cost": "Free (host approval required)",
+    "url": "https://luma.com/ozkkhuos",
+    "source": "luma.com",
+    "blurb": "ETH mobile-robotics professor Stefan Leutenegger on spatial AI, navigation and robot learning across drones and humanoids — and the limitations still standing between today’s systems and genuine physical AI.",
+    "firstSeen": "2026-09-23"
+  },
+  {
     "id": "saic-039-sovereign-ai-for-all-2026",
     "title": "SAIC #039: Keep Your AI's Data Safe — Local vs Global Models",
     "date": "2026-09-24",
@@ -316,6 +258,27 @@
     "source": "Meetup",
     "blurb": "How Swiss relief organisation HEKS/EPER rebuilt its measurement with server-side tracking as cookies, ad blockers and privacy rules eroded the old approach — with the implementation trade-offs and a view from tooling vendor JENTIS.",
     "firstSeen": "2026-09-18"
+  },
+  {
+    "id": "zurich-ai-safety-fall-kickoff-2026",
+    "title": "Zurich AI Safety: Fall Kickoff '26",
+    "date": "2026-09-24",
+    "endDate": "2026-09-24",
+    "time": "18:00–20:00",
+    "city": "Zurich",
+    "venue": "ETH Zürich, Rämistrasse 101",
+    "format": "Meetup",
+    "topics": [
+      "AI safety",
+      "AI governance",
+      "AI community"
+    ],
+    "organiser": "Zurich AI Safety (ZAIS)",
+    "cost": "Free",
+    "url": "https://luma.com/sibtkh15",
+    "source": "luma.com",
+    "blurb": "An introduction to where the risks from advanced AI actually sit and what it takes to get this right, plus the autumn programme of talks, courses and meetups from the Zurich AI safety community.",
+    "firstSeen": "2026-09-23"
   },
   {
     "id": "zurich-hackathon-swiss-ai-weeks-2026",
@@ -376,6 +339,27 @@
     "source": "switzerland-ai.com",
     "blurb": "Small Saturday coworking session in Geneva for people building AI side projects — quick intros, focused work time, optional demos and feedback. Capped at ten people.",
     "firstSeen": "2026-09-16"
+  },
+  {
+    "id": "ai-builders-zurich-5-2026",
+    "title": "AI Builders Zurich #5",
+    "date": "2026-09-28",
+    "endDate": "2026-09-28",
+    "time": "18:30–21:00",
+    "city": "Zurich",
+    "venue": "Google Zürich, Europaallee (address on registration)",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI community",
+      "AI startups"
+    ],
+    "organiser": "Zurich Tech Collective",
+    "cost": "Free (curated registration)",
+    "url": "https://luma.com/ai-builders-5",
+    "source": "luma.com",
+    "blurb": "Quarterly gathering of around 250 people actually building AI in Zurich — newly funded local startups present, followed by a fireside chat with Odyssey CTO Jeff Hawke and open networking.",
+    "firstSeen": "2026-09-23"
   },
   {
     "id": "ai-governance-in-action-zurich-2026",
@@ -482,6 +466,48 @@
     "firstSeen": "2026-09-18"
   },
   {
+    "id": "switzerland-europes-playground-ai-2026",
+    "title": "Switzerland as Europe's Playground for AI Innovation",
+    "date": "2026-09-28",
+    "endDate": "2026-09-28",
+    "time": "15:00–18:30",
+    "city": "Zurich",
+    "venue": "Technopark Zürich, Technoparkstrasse 1",
+    "format": "Networking",
+    "topics": [
+      "AI strategy",
+      "Regulation",
+      "AI governance"
+    ],
+    "organiser": "AI Startup Center / Zurich AI Festival",
+    "cost": "Free (host approval required)",
+    "url": "https://luma.com/EuropesPlaygroundforAIInnovation",
+    "source": "zurichaifestival.ch",
+    "blurb": "Talks from ETH Zurich and a panel on making Switzerland the place European startups come to build, scale and validate AI — arguing that governance innovation lets regulation and invention move together rather than against each other.",
+    "firstSeen": "2026-09-23"
+  },
+  {
+    "id": "trust-circle-ai-privacy-zurich-2026",
+    "title": "Trust Circle — AI & Privacy",
+    "date": "2026-09-28",
+    "endDate": "2026-09-28",
+    "time": "15:00–20:00",
+    "city": "Zurich",
+    "venue": "Mandarin Oriental Savoy, Poststrasse 12",
+    "format": "Conference",
+    "topics": [
+      "AI governance",
+      "Privacy",
+      "Digital sovereignty"
+    ],
+    "organiser": "Trust Square / Inacta Ventures",
+    "cost": "Ticketed",
+    "url": "https://luma.com/Trust_Circle_AI_Privacy",
+    "source": "luma.com",
+    "blurb": "An afternoon of keynotes, panels and fireside chats for around 120 leaders and policymakers on privacy-preserving technology, digital sovereignty and what responsible AI innovation looks like in finance.",
+    "firstSeen": "2026-09-23"
+  },
+  {
     "id": "zurich-ai-festival-2026",
     "title": "Zurich AI Festival 2026",
     "date": "2026-09-28",
@@ -540,6 +566,27 @@
     "source": "alpict.ch",
     "blurb": "A French-language roundtable on what has to be in place before AI adoption becomes real — data infrastructure, process design, skills, governance and change management — compared across industry, engineering, corporates and SMEs.",
     "firstSeen": "2026-09-18"
+  },
+  {
+    "id": "gdg-cloud-zurich-build-with-ai-2026",
+    "title": "GDG Cloud Zürich: Build with AI",
+    "date": "2026-09-29",
+    "endDate": "2026-09-29",
+    "time": "16:30–21:00",
+    "city": "Zurich",
+    "venue": "Zurich (address on registration)",
+    "format": "Workshop",
+    "topics": [
+      "Applied AI",
+      "AI agents",
+      "Cloud"
+    ],
+    "organiser": "GDG Cloud Zürich / Zurich AI Festival",
+    "cost": "Free (at capacity)",
+    "url": "https://luma.com/GDGCloudZurichBuildwithAI",
+    "source": "zurichaifestival.ch",
+    "blurb": "A hands-on workshop taking you from first click to a deployed application with Google’s AI tooling, followed by evening talks on agentic systems, running Gemma models at the edge, and safety frameworks for physical AI.",
+    "firstSeen": "2026-09-23"
   },
   {
     "id": "mind-the-gap-agentic-ai-governance-2026",
@@ -626,6 +673,27 @@
     "firstSeen": "2026-09-15"
   },
   {
+    "id": "gruezi-google-ai-techtalks-2026",
+    "title": "#GrüeziGoogle TechTalks: AI Innovation",
+    "date": "2026-09-30",
+    "endDate": "2026-09-30",
+    "time": "16:00–20:00",
+    "city": "Zurich",
+    "venue": "Google Zürich, Hürlimann Campus (address on registration)",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI research",
+      "Enterprise AI"
+    ],
+    "organiser": "Google Switzerland / Zurich AI Festival",
+    "cost": "Free (waitlist)",
+    "url": "https://luma.com/GrueziGoogle",
+    "source": "zurichaifestival.ch",
+    "blurb": "Google Switzerland country director Christine Antlanger-Winter and ETH’s Thomas Hofmann open an afternoon of AI lightning talks and live demos, closing with digitalswitzerland CEO Franziska Barmettler and networking.",
+    "firstSeen": "2026-09-23"
+  },
+  {
     "id": "open-source-llm-builders-summit-2026",
     "title": "3rd International Open-Source LLM Builders Summit",
     "date": "2026-09-30",
@@ -671,7 +739,7 @@
     "title": "AI Environment Summit 2026",
     "date": "2026-09-30",
     "endDate": "2026-09-30",
-    "time": "09:30–17:00",
+    "time": "08:30–17:00",
     "city": "Dübendorf",
     "venue": "Innovation Park",
     "format": "Conference",
@@ -679,7 +747,7 @@
       "AI for sustainability"
     ],
     "organiser": "ETH AI Center",
-    "cost": "CHF 50 (CHF 10 students)",
+    "cost": "CHF 50 (student tickets sold out)",
     "url": "https://ai-environment-summit.com/#registration",
     "source": "zurichaifestival.ch",
     "blurb": "Conference on applying AI to sustainability and environmental challenges.",
@@ -747,6 +815,27 @@
     "source": "Meetup",
     "blurb": "French-language session at Swiss IT Forum(s) on turning PowerShell scripts into self-service business services for HR, finance and operations, with AI in the loop and live demos.",
     "firstSeen": "2026-09-18"
+  },
+  {
+    "id": "deepl-enterprise-language-ai-masterclass-2026",
+    "title": "Masterclass: Building Your Enterprise Language AI Pilot Framework",
+    "date": "2026-09-30",
+    "endDate": "2026-09-30",
+    "time": "14:00–17:30",
+    "city": "Zurich",
+    "venue": "Au Premier, Bahnhofplatz 15",
+    "format": "Workshop",
+    "topics": [
+      "Enterprise AI",
+      "AI governance",
+      "Language AI"
+    ],
+    "organiser": "DeepL / Zurich AI Festival",
+    "cost": "Free (waitlist)",
+    "url": "https://luma.com/deeplmasterclass",
+    "source": "zurichaifestival.ch",
+    "blurb": "A working session on getting language AI past the generic-tool stage: evaluating speech translation, testing security guardrails, and co-designing a governed enterprise pilot framework you can take back to your own organisation.",
+    "firstSeen": "2026-09-23"
   },
   {
     "id": "mindstone-zurich-ai-meetup-sept-2026",
@@ -890,6 +979,47 @@
     "firstSeen": "2026-09-03"
   },
   {
+    "id": "ki-in-oeffentlichen-institutionen-zurich-2026",
+    "title": "KI in öffentlichen Institutionen",
+    "date": "2026-10-01",
+    "endDate": "2026-10-01",
+    "time": "18:00–19:30",
+    "city": "Zurich",
+    "venue": "Zentralbibliothek Zürich, Zähringerplatz 6",
+    "format": "Networking",
+    "topics": [
+      "AI governance",
+      "Public sector",
+      "AI adoption"
+    ],
+    "organiser": "Zentralbibliothek Zürich / Zurich AI Festival",
+    "cost": "Free (host approval required)",
+    "url": "https://luma.com/KLinoffentlichenInsitutionen",
+    "source": "zurichaifestival.ch",
+    "blurb": "A German-language panel on what AI actually changes for public institutions — concrete use cases, the structural obstacles in the way, and the tension between efficiency, regulatory duty and public mandate.",
+    "firstSeen": "2026-09-23"
+  },
+  {
+    "id": "operating-a-live-ai-agent-fleet-2026",
+    "title": "Operating a Live AI Agent Fleet",
+    "date": "2026-10-01",
+    "endDate": "2026-10-01",
+    "time": "18:00–19:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "AI agents",
+      "Enterprise AI",
+      "Applied AI"
+    ],
+    "organiser": "Swiss {ai} Weeks",
+    "cost": "Free",
+    "url": "https://ai-weeks.ch/events/operating-a-live-ai-agent-fleet-2026-10-01",
+    "source": "ai-weeks.ch",
+    "blurb": "A look inside a fleet of 48 AI agents running daily operations across a venture portfolio — live agent walkthrough plus the four things that decide whether it works: harness, context engineering, eval loops and failure modes.",
+    "firstSeen": "2026-09-23"
+  },
+  {
     "id": "panoramai-summit-lausanne-2026",
     "title": "Panoramai Summit Lausanne 2026 – Enterprises & People / Reasoning & Creative AI",
     "date": "2026-10-01",
@@ -924,7 +1054,7 @@
       "AI community"
     ],
     "organiser": "ETH AI Center",
-    "cost": "Not listed",
+    "cost": "Ticketed (from CHF 15, reduced rates available)",
     "url": "https://www.sairop.swiss/events/public-night-ai-x-summit",
     "source": "sairop.swiss",
     "blurb": "The AI+X Summit opens its doors to the public for an evening of demos across robotics, language models and medtech, a stage programme, and the AI Challenge 2026 award ceremony, closing with an apéro.",
@@ -991,6 +1121,27 @@
     "source": "sairop.swiss",
     "blurb": "Breakfast meetup for women working in AI, held at the ETH AI Center as part of the Zurich AI Festival.",
     "firstSeen": "2026-09-16"
+  },
+  {
+    "id": "ai-in-cybersecurity-zurich-2026",
+    "title": "AI in Cybersecurity, Cybersecurity in AI",
+    "date": "2026-10-02",
+    "endDate": "2026-10-02",
+    "time": "11:45–13:45",
+    "city": "Zurich",
+    "venue": "Signature by Regus, Bahnhofquai 11",
+    "format": "Networking",
+    "topics": [
+      "AI security",
+      "Cybersecurity",
+      "Enterprise AI"
+    ],
+    "organiser": "Zurich AI Festival",
+    "cost": "Free (host approval required)",
+    "url": "https://luma.com/AIinCybersecurity",
+    "source": "zurichaifestival.ch",
+    "blurb": "A lunchtime seminar with Finnish cybersecurity companies on building AI into security products, and on what startups and enterprises in critical sectors should weigh up before adopting AI-driven practices.",
+    "firstSeen": "2026-09-23"
   },
   {
     "id": "confidential-ai-for-banking-zurich-2026",
@@ -1197,6 +1348,26 @@
     "source": "salonrh.com",
     "blurb": "HR and recruitment trade fair with a growing AI-in-hiring track.",
     "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "fabric-user-group-switzerland-87th-2026",
+    "title": "Zürich — 87th Fabric User Group",
+    "date": "2026-10-08",
+    "endDate": "2026-10-08",
+    "time": "17:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Microsoft Fabric",
+      "Power BI",
+      "Microsoft ecosystem"
+    ],
+    "organiser": "Microsoft Fabric User Group Switzerland",
+    "cost": "Free",
+    "url": "https://www.meetup.com/microsoft-fabric-user-group-switzerland/events/316650788/",
+    "source": "Meetup",
+    "blurb": "The Swiss Fabric user group’s monthly online session: Kristian’s \"What’s New\" round-up of the platform, then Zebra BI as guest on their Zebra AI solution. Recorded and published afterwards.",
+    "firstSeen": "2026-09-23"
   },
   {
     "id": "sdsc-advanced-llm-agentic-systems-epfl-2026",
