@@ -1493,6 +1493,27 @@
     "firstSeen": "2026-09-21"
   },
   {
+    "id": "google-ai-live-labs-zurich-2026",
+    "title": "Google AI Live + Labs — Zurich",
+    "date": "2026-10-20",
+    "endDate": "2026-10-20",
+    "time": "10:00–17:00",
+    "city": "Zurich",
+    "venue": "Zurich (venue announced on registration)",
+    "format": "Workshop",
+    "topics": [
+      "Agentic AI",
+      "Applied AI",
+      "Data platform"
+    ],
+    "organiser": "Google Cloud / AICamp",
+    "cost": "Free (registration required via AICamp)",
+    "url": "https://www.meetup.com/zurich-ai-developers-group/events/316681193/",
+    "source": "Meetup",
+    "blurb": "A day of Google Cloud keynotes and hands-on labs on putting AI agents into production, with four tracks to choose from: automating business processes, the technical foundations for scaling agents, a developer lab and a lab on grounding agents in your own data.",
+    "firstSeen": "2026-09-25"
+  },
+  {
     "id": "our-minds-under-siege-zurich-2026",
     "title": "Our Minds Under Siege — An Evening with Bruno Giussani",
     "date": "2026-10-21",
@@ -1653,6 +1674,27 @@
     "source": "DatAfterwork",
     "blurb": "Cybersecurity experts and hackers unpack how data breaches actually happen, with live hacking demos and an immersive escape game.",
     "firstSeen": "2026-09-05"
+  },
+  {
+    "id": "spec-driven-development-mit-ki-rapperswil-2026",
+    "title": "Spec-driven Development mit KI",
+    "date": "2026-10-29",
+    "endDate": "2026-10-29",
+    "time": "18:00–21:00",
+    "city": "Rapperswil-Jona",
+    "venue": "OST – Ostschweizer Fachhochschule, Campus Rapperswil, Oberseestrasse 10",
+    "format": "Meetup",
+    "topics": [
+      "AI-assisted development",
+      "Applied AI",
+      "Software engineering"
+    ],
+    "organiser": "OST – Ostschweizer Fachhochschule (MAS Software Engineering)",
+    "cost": "Free (registration via OST)",
+    "url": "https://www.meetup.com/rapperswil-frontend-best-practices-meetup-group/events/316639970/",
+    "source": "Meetup",
+    "blurb": "Two German-language talks on the OST Rapperswil campus: Java Champion Simon Martinelli on driving development from specifications with AI, and Michael Inden on why algorithms and data structures matter more, not less, once everyone can generate code — followed by networking.",
+    "firstSeen": "2026-09-25"
   },
   {
     "id": "ai-breakfast-luzern-55",
@@ -2035,6 +2077,27 @@
     "source": "databricks.com",
     "blurb": "Databricks' flagship Swiss event on the Lakehouse platform and Unity Catalog.",
     "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "ibm-bob-coding-watch-party-zurich-december-2026",
+    "title": "IBM Bob Coding Watch Party Zürich — Final Edition",
+    "date": "2026-12-01",
+    "endDate": "2026-12-01",
+    "time": "16:00–20:00",
+    "city": "Zurich",
+    "venue": "IBM Switzerland AG, Vulkanstrasse 106 (+ online)",
+    "format": "Meetup",
+    "topics": [
+      "AI-assisted development",
+      "Enterprise AI",
+      "Applied AI"
+    ],
+    "organiser": "IBM Switzerland",
+    "cost": "Free (limited on-site places)",
+    "url": "https://www.meetup.com/big-data-developers-switzerland/events/316255515/",
+    "source": "Meetup",
+    "blurb": "The closing session of IBM's 2026 hybrid series on IBM Bob, its AI development assistant — coding live alongside other European cities, with beginner, intermediate and expert tracks covering everything from first idea to modernising legacy applications.",
+    "firstSeen": "2026-09-25"
   },
   {
     "id": "fabric-year-in-review-2026",
