@@ -19,25 +19,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "humanoid-robot-championship-2026",
-    "title": "Humanoid Robot Championship 2026",
-    "date": "2026-09-21",
-    "endDate": "2026-09-25",
-    "city": "Zurich",
-    "venue": "Zurich",
-    "format": "Conference",
-    "topics": [
-      "Robotics",
-      "Embodied AI"
-    ],
-    "organiser": "Greater Zurich Area",
-    "cost": "Not listed",
-    "url": "https://www.greaterzuricharea.com/en/events/humanoid-robot-championship-2026",
-    "source": "greaterzuricharea.com",
-    "blurb": "International humanoid robotics championship and showcase in Zurich.",
-    "firstSeen": "2026-09-03"
-  },
-  {
     "id": "eth-ai-center-researchers-meetup-2026",
     "title": "ETH AI Center Researchers Community Meetup",
     "date": "2026-09-24",
@@ -55,27 +36,6 @@
     "source": "sairop.swiss",
     "blurb": "Recurring meetup series for the AI research community at ETH Zurich.",
     "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "zurich-hackathon-swiss-ai-weeks-2026",
-    "title": "Zurich Hackathon – Swiss {ai} Weeks",
-    "date": "2026-09-24",
-    "endDate": "2026-09-25",
-    "time": "08:00–21:00",
-    "city": "Zurich",
-    "venue": "Kraftwerk, Selnaustrasse 25",
-    "format": "Workshop",
-    "topics": [
-      "Applied AI",
-      "Hackathon",
-      "Responsible AI"
-    ],
-    "organiser": "Swiss {ai} Weeks",
-    "cost": "Free",
-    "url": "https://ai-weeks.ch/events/zurich-hackathon",
-    "source": "ai-weeks.ch",
-    "blurb": "A 36-hour in-person hackathon on ten-plus real challenges set by partner organisations, with an explicit brief to build trustworthy, ethical and open AI — open to students, developers, startups and anyone who wants to ship something.",
-    "firstSeen": "2026-09-21"
   },
   {
     "id": "swiss-ai-weeks-geneva-hackathon-2026",
@@ -96,25 +56,6 @@
     "source": "luma.com",
     "blurb": "Weekend hackathon on applied AI, including energy and finance challenge tracks.",
     "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "coffee-and-prompt-004-geneva-2026",
-    "title": "Coffee & Prompt #004",
-    "date": "2026-09-26",
-    "endDate": "2026-09-26",
-    "city": "Geneva",
-    "venue": "Boréal Coffee, Rue du Stand 60",
-    "format": "Networking",
-    "topics": [
-      "Applied AI",
-      "Building with AI"
-    ],
-    "organiser": "Switzerland AI Community",
-    "cost": "Free",
-    "url": "https://luma.com/gs6h67k0",
-    "source": "switzerland-ai.com",
-    "blurb": "Small Saturday coworking session in Geneva for people building AI side projects — quick intros, focused work time, optional demos and feedback. Capped at ten people.",
-    "firstSeen": "2026-09-16"
   },
   {
     "id": "ai-builders-zurich-5-2026",
@@ -1066,6 +1007,25 @@
     "firstSeen": "2026-09-21"
   },
   {
+    "id": "coffee-and-prompt-005-geneva-2026",
+    "title": "Coffee & Prompt #005",
+    "date": "2026-10-03",
+    "endDate": "2026-10-03",
+    "city": "Geneva",
+    "venue": "Boréal Coffee, Rue du Stand 60",
+    "format": "Networking",
+    "topics": [
+      "Applied AI",
+      "Building with AI"
+    ],
+    "organiser": "Switzerland AI Community",
+    "cost": "Free",
+    "url": "https://luma.com/c9ofizgl",
+    "source": "switzerland-ai.com",
+    "blurb": "Casual Saturday morning coworking session in Geneva for people building AI projects — work on your own thing, share what you are making and get feedback from the others in the room. Twelve places.",
+    "firstSeen": "2026-09-30"
+  },
+  {
     "id": "azure-zurich-ai-agents-night-2026",
     "title": "Azure Zurich AI Agents Governance Night",
     "date": "2026-10-05",
@@ -1354,6 +1314,26 @@
     "firstSeen": "2026-09-16"
   },
   {
+    "id": "aws-user-group-geneva-cloud-sovereignty-2026",
+    "title": "AWS Swiss User Group Geneva #29 — Digital Sovereignty in the Cloud",
+    "date": "2026-10-15",
+    "endDate": "2026-10-15",
+    "time": "17:30",
+    "city": "Geneva",
+    "format": "Meetup",
+    "topics": [
+      "Digital sovereignty",
+      "Cloud",
+      "Data platform"
+    ],
+    "organiser": "AWS Swiss User Group – Geneva",
+    "cost": "Free",
+    "url": "https://www.meetup.com/aws-swiss-user-group-geneva/events/316709912/",
+    "source": "Meetup",
+    "blurb": "Autumn meetup of the Geneva AWS user group, taking on digital sovereignty in the cloud — what it means for where data sits and who controls it.",
+    "firstSeen": "2026-09-30"
+  },
+  {
     "id": "smart-services-summit-2026",
     "title": "Smart Services Summit 2026",
     "date": "2026-10-16",
@@ -1476,6 +1456,27 @@
     "firstSeen": "2026-09-03"
   },
   {
+    "id": "zurich-robotics-roundtable-5-2026",
+    "title": "Zurich Robotics Roundtable #5",
+    "date": "2026-10-22",
+    "endDate": "2026-10-22",
+    "time": "18:30–21:00",
+    "city": "Zurich",
+    "venue": "Zurich (address on registration)",
+    "format": "Networking",
+    "topics": [
+      "Robotics",
+      "Embodied AI",
+      "AI community"
+    ],
+    "organiser": "Founderful / Roboto",
+    "cost": "Free (waitlist)",
+    "url": "https://luma.com/robotics-roundtable-5",
+    "source": "luma.com",
+    "blurb": "Zurich’s quarterly gathering for people building in robotics and physical AI — newly funded robotics startups present, then a panel and open networking for around 250 founders, engineers and researchers.",
+    "firstSeen": "2026-09-30"
+  },
+  {
     "id": "ai-productivity-conference-zurich-2026",
     "title": "AI Productivity User Group Conference @ Microsoft Switzerland",
     "date": "2026-10-23",
@@ -1512,6 +1513,25 @@
     "source": "ai-community.ch",
     "blurb": "24-hour hackathon for central Switzerland, bringing together students, business and the regional ICT community at HSLU Rotkreuz.",
     "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "arttech-hack-zurich-2026",
+    "title": "ArtTech Hack 2026",
+    "date": "2026-10-23",
+    "endDate": "2026-10-25",
+    "city": "Zurich",
+    "format": "Workshop",
+    "topics": [
+      "Hackathon",
+      "Robotics",
+      "Data"
+    ],
+    "organiser": "ArtTech Hack Association",
+    "cost": "Not listed",
+    "url": "https://arttechhack.ch/",
+    "source": "swiss-robotics.org",
+    "blurb": "A three-day hackathon in Zurich for students and recent graduates from art, design and technology, with briefs in data, simulation and robotics — challenges revealed Friday, building Saturday, jury presentations Sunday.",
+    "firstSeen": "2026-09-30"
   },
   {
     "id": "leading-data-conference-switzerland-2026",
@@ -1880,6 +1900,47 @@
     "source": "ai-startup-center.com",
     "blurb": "Breakfast session with lawyers from Wenger Vieli on when a Transfer Impact Assessment is actually required for cross-border data transfers, and how to keep them manageable as an AI company.",
     "firstSeen": "2026-09-21"
+  },
+  {
+    "id": "databricks-kickstart-ai-workflows-zurich-2026",
+    "title": "Kickstart AI Workflows with Databricks",
+    "date": "2026-11-11",
+    "endDate": "2026-11-11",
+    "time": "18:00–21:00",
+    "city": "Zurich",
+    "format": "Meetup",
+    "topics": [
+      "Databricks",
+      "AI workflows",
+      "Data platform"
+    ],
+    "organiser": "Swiss Data & AI Group (Databricks User Group)",
+    "cost": "Not listed",
+    "url": "https://usergroups.databricks.com/events/details/databricks-user-groups-swiss-data-ai-group-presents-kickstart-ai-workflows-with-databricks/",
+    "source": "usergroups.databricks.com",
+    "blurb": "Hybrid Databricks user-group evening in Zurich on automating data work with AI-enabled workflows, including a session on Databricks Apps and Lakebase applied to clinical cancer research cohorts.",
+    "firstSeen": "2026-09-30"
+  },
+  {
+    "id": "ai-startup-center-community-meetup-november-2026",
+    "title": "AI Startup Center Community Meetup — November Edition",
+    "date": "2026-11-12",
+    "endDate": "2026-11-12",
+    "time": "09:00–10:30",
+    "city": "Zurich",
+    "venue": "AI Startup Center, Technopark Zürich",
+    "format": "Networking",
+    "topics": [
+      "AI community",
+      "AI startups",
+      "Applied AI"
+    ],
+    "organiser": "AI Startup Center",
+    "cost": "Not listed",
+    "url": "https://ai-startup-center.com/ai-startup-center-community-meetup-november-edition/",
+    "source": "ai-startup-center.com",
+    "blurb": "A deliberately informal morning meetup over coffee for the centre’s AI startups and corporate partners — no agenda and no presentations, just conversations about partnerships, where AI is heading and what is actually hard right now.",
+    "firstSeen": "2026-09-30"
   },
   {
     "id": "swiss-robotics-day-2026",
