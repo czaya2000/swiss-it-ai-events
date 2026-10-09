@@ -1,24 +1,5 @@
 [
   {
-    "id": "swiss-ai-weeks-2026-umbrella",
-    "title": "Swiss {ai} Weeks 2026",
-    "date": "2026-09-01",
-    "endDate": "2026-10-04",
-    "city": "Nationwide",
-    "venue": "Multiple + online",
-    "format": "Conference",
-    "topics": [
-      "Hackathons",
-      "Executive dinners"
-    ],
-    "organiser": "Swiss {ai} Weeks",
-    "cost": "Varies",
-    "url": "https://ai-weeks.ch/events",
-    "source": "ai-weeks.ch",
-    "blurb": "Nationwide umbrella series of AI hackathons and executive dinners running through early October.",
-    "firstSeen": "2026-09-03"
-  },
-  {
     "id": "eth-ai-center-researchers-meetup-2026",
     "title": "ETH AI Center Researchers Community Meetup",
     "date": "2026-09-24",
@@ -36,25 +17,6 @@
     "source": "sairop.swiss",
     "blurb": "Recurring meetup series for the AI research community at ETH Zurich.",
     "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "hack-am-rhein-2026",
-    "title": "Hack am Rhein 2026",
-    "date": "2026-10-01",
-    "endDate": "2026-10-04",
-    "city": "Basel",
-    "venue": "FHNW Campus Dreispitz, Dornacherstrasse 394",
-    "format": "Workshop",
-    "topics": [
-      "Hackathon",
-      "Applied AI"
-    ],
-    "organiser": "Hack am Rhein / Basel Tech",
-    "cost": "Free",
-    "url": "https://www.hackamrhein.dev/",
-    "source": "ai-weeks.ch",
-    "blurb": "Four-day interdisciplinary hackathon for the Basel region with challenges from pharma, high-tech manufacturing, architecture and social impact, closing with Sunday demos on the FHNW campus.",
-    "firstSeen": "2026-09-18"
   },
   {
     "id": "hack-apertus-2026",
@@ -76,27 +38,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "azure-zurich-ai-agents-night-2026",
-    "title": "Azure Zurich AI Agents Governance Night",
-    "date": "2026-10-05",
-    "endDate": "2026-10-05",
-    "time": "18:00–21:00",
-    "city": "Zurich",
-    "venue": "Digicomp Academy, Limmatstrasse 50 (5th floor)",
-    "format": "Meetup",
-    "topics": [
-      "Agentic AI",
-      "Azure",
-      "AI governance"
-    ],
-    "organiser": "Microsoft Azure Zürich User Group",
-    "cost": "Free",
-    "url": "https://www.meetup.com/microsoft-azure-zurich-user-group/events/316453741/",
-    "source": "Meetup",
-    "blurb": "In-person Azure user-group evening on running AI agents securely: agent identity in Microsoft Entra ID, RBAC and policies across Copilot Studio and Azure AI Foundry, plus enterprise agent governance.",
-    "firstSeen": "2026-09-15"
-  },
-  {
     "id": "forum-epfl-2026",
     "title": "Forum EPFL 2026",
     "date": "2026-10-05",
@@ -113,27 +54,6 @@
     "url": "https://forum-epfl.ch/2026/en/",
     "source": "forum-epfl.ch",
     "blurb": "Switzerland's largest tech recruitment fair, with 188+ companies exhibiting at EPFL.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "trust-by-design-networking-2026",
-    "title": "Networking: Trust by Design – Standards for Aligned AI Governance",
-    "date": "2026-10-05",
-    "endDate": "2026-10-05",
-    "time": "15:00–20:00",
-    "city": "Winterthur",
-    "venue": "Mülisaal, Hegifeldstrasse 4",
-    "format": "Networking",
-    "topics": [
-      "AI governance",
-      "EU AI Act",
-      "Standards"
-    ],
-    "organiser": "SNV & SATW",
-    "cost": "Free for SNV members / CHF 85",
-    "url": "https://www.sairop.swiss/events/networking-event-trust-by-design-standards-for-aligned-ai-governance",
-    "source": "sairop.swiss",
-    "blurb": "Standards-focused networking event on aligned AI governance and the EU AI Act.",
     "firstSeen": "2026-09-03"
   },
   {
@@ -488,12 +408,12 @@
   },
   {
     "id": "ibm-bob-coding-watch-party-zurich-2026",
-    "title": "IBM Bob Coding Watch Party Zürich",
+    "title": "IBM Bob Coding Watch Party Zürich — Online Only",
     "date": "2026-10-15",
     "endDate": "2026-10-15",
     "time": "16:00–20:00",
-    "city": "Zurich",
-    "venue": "IBM Switzerland AG, Vulkanstrasse 106",
+    "city": "Online (CH)",
+    "venue": "Online livestream",
     "format": "Meetup",
     "topics": [
       "AI-assisted development",
@@ -504,7 +424,7 @@
     "cost": "Free",
     "url": "https://www.meetup.com/big-data-developers-switzerland/events/316254684/",
     "source": "Meetup",
-    "blurb": "Hands-on hybrid session at IBM’s Zurich office on IBM Bob, an AI development assistant for building and modernising code, with beginner, intermediate and expert tracks.",
+    "blurb": "Hands-on session on IBM Bob, an AI development assistant for building and modernising code, with beginner, intermediate and expert tracks — the Zurich leg now runs online only, as IBM has dropped the on-site room this time.",
     "firstSeen": "2026-09-16"
   },
   {
@@ -588,6 +508,27 @@
     "source": "Meetup",
     "blurb": "Build an agent that scans your industry and city for events worth your time and tells you why to go and who to meet, instead of trawling listings by hand.",
     "firstSeen": "2026-10-02"
+  },
+  {
+    "id": "hack-apertus-liebefeld-2026",
+    "title": "«Hack Apertus» Hackathon Liebefeld",
+    "date": "2026-10-18",
+    "endDate": "2026-10-19",
+    "time": "08:00–21:30",
+    "city": "Liebefeld (Bern)",
+    "venue": "WORKSPACE & MORE, Waldeggstrasse 34, Köniz",
+    "format": "Workshop",
+    "topics": [
+      "Open-source LLMs",
+      "Hackathon",
+      "Applied AI"
+    ],
+    "organiser": "aiLights Association / Silicon Lovefield",
+    "cost": "Free",
+    "url": "https://hackapertus.ch/",
+    "source": "hackapertus.ch",
+    "blurb": "The first in-person leg of the national Apertus hackathon: teams of up to five build prototypes on the open Apertus 8B and 70B models, with the top six pitching at the Liebefeld finals on day two for a place at the 2027 Grand Finals.",
+    "firstSeen": "2026-10-09"
   },
   {
     "id": "people-analytics-switzerland-october-2026",
@@ -876,6 +817,27 @@
     "firstSeen": "2026-10-02"
   },
   {
+    "id": "zurich-language-ai-meetup-22-2026",
+    "title": "Zurich Language AI Meetup #22",
+    "date": "2026-10-26",
+    "endDate": "2026-10-26",
+    "time": "19:00–21:00",
+    "city": "Zurich",
+    "venue": "Riffraff Kino/Bar, Neugasse 57",
+    "format": "Meetup",
+    "topics": [
+      "LLMs",
+      "Privacy",
+      "Applied AI"
+    ],
+    "organiser": "Language AI Meetup / Supertext",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/language-ai-meetup/events/316883179/",
+    "source": "Meetup",
+    "blurb": "Three talks on language AI in Zurich — masking personal data without breaking a language pipeline, benchmarking LLM translations against thousands of native speakers, and a session from Supertext’s CTO — followed by drinks.",
+    "firstSeen": "2026-10-09"
+  },
+  {
     "id": "ai-in-azienda-dal-prompt-al-processo-lugano-2026",
     "title": "AI in azienda: Dal prompt al processo",
     "date": "2026-10-27",
@@ -918,6 +880,48 @@
     "firstSeen": "2026-09-04"
   },
   {
+    "id": "data-stewards-master-class-prilly-2026",
+    "title": "The Data Stewards Master Class with Stefaan Verhulst",
+    "date": "2026-10-27",
+    "endDate": "2026-10-27",
+    "time": "15:00–18:00",
+    "city": "Prilly (Lausanne)",
+    "venue": "unlimitrust campus",
+    "format": "Workshop",
+    "topics": [
+      "Data governance",
+      "Data stewardship",
+      "Data spaces"
+    ],
+    "organiser": "Swiss Data Alliance / digitalswitzerland",
+    "cost": "Ticketed (combo ticket with the Forum)",
+    "url": "https://forum.swissdataalliance.ch/",
+    "source": "swissdataalliance.ch",
+    "blurb": "A limited-places afternoon master class on data stewardship — who holds responsibility for data being shared, and how to organise that in practice — held the day before the Swiss Data Space Forum and closing with a networking apéro.",
+    "firstSeen": "2026-10-09"
+  },
+  {
+    "id": "coffee-ai-agents-sandbox-zurich-2026",
+    "title": "AI Agent Sandbox: Could an Agent Help With This?",
+    "date": "2026-10-27",
+    "endDate": "2026-10-27",
+    "time": "18:00–19:30",
+    "city": "Zurich",
+    "venue": "Kraftwerk, Selnaustrasse 25",
+    "format": "Meetup",
+    "topics": [
+      "AI agents",
+      "Applied AI",
+      "AI community"
+    ],
+    "organiser": "Coffee & AI Agents",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/zurich-ai-agents-meetup-group/events/316882426/",
+    "source": "Meetup",
+    "blurb": "Bring a repetitive or awkward task from your own work and the room takes it apart together to see whether an agent would actually help — discussion and experimentation rather than a lecture, with no prior agent experience needed.",
+    "firstSeen": "2026-10-09"
+  },
+  {
     "id": "swiss-data-space-forum-2026",
     "title": "Swiss Data Space Forum 2026: Unlocking Data for AI",
     "date": "2026-10-28",
@@ -936,6 +940,27 @@
     "source": "swissdataalliance.ch",
     "blurb": "National forum on data governance and data spaces for AI, hosted at unlimitrust.",
     "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "ms-cloud-it-pro-zentralschweiz-podium-2026",
+    "title": "MS Cloud for IT Pro Zentralschweiz — Podium Special",
+    "date": "2026-10-28",
+    "endDate": "2026-10-28",
+    "time": "18:20–21:20",
+    "city": "Lucerne",
+    "venue": "Seminarraum Luzern, Baselstrasse 61b",
+    "format": "Meetup",
+    "topics": [
+      "Microsoft ecosystem",
+      "Data governance",
+      "Digital sovereignty"
+    ],
+    "organiser": "MS Cloud for IT Pro Zentralschweiz",
+    "cost": "Free",
+    "url": "https://www.meetup.com/ms-cloud-for-it-pro-zentralschweiz/events/316309316/",
+    "source": "Meetup",
+    "blurb": "An open-mic German-language panel in Lucerne on how much control a company really keeps in the cloud — data location, the US CLOUD Act, foreign authority access, compliance and exit strategies — with Microsoft Switzerland’s CTO, a CIO, a lawyer and an MVP.",
+    "firstSeen": "2026-10-09"
   },
   {
     "id": "chalet-azure-romandie-car16-geneva-2026",
@@ -1100,6 +1125,27 @@
     "source": "tconf.ch",
     "blurb": "Free one-day community summit in Ticino with three tracks on Power BI, Microsoft Fabric, AI-assisted tooling and data governance, in English and Italian.",
     "firstSeen": "2026-09-15"
+  },
+  {
+    "id": "kustocon-2026-zurich",
+    "title": "KustoCon 2026",
+    "date": "2026-10-30",
+    "endDate": "2026-10-30",
+    "time": "08:15–19:25",
+    "city": "Zurich-Flughafen",
+    "venue": "Microsoft Switzerland, The Circle 02",
+    "format": "Conference",
+    "topics": [
+      "KQL",
+      "Azure data platform",
+      "Security analytics"
+    ],
+    "organiser": "KQL Café community",
+    "cost": "EUR 85 in person (workshop, lunch and drinks included) / free online",
+    "url": "https://kustocon.com/",
+    "source": "kustocon.com",
+    "blurb": "A full day on Kusto Query Language at Microsoft’s Zurich Airport campus: a hands-on morning workshop dissecting a real investigation, then an afternoon of practitioner talks on detection engineering and threat hunting, also livestreamed.",
+    "firstSeen": "2026-10-09"
   },
   {
     "id": "build-your-own-assistant-recaps-geneva-2026",
@@ -1554,6 +1600,27 @@
     "firstSeen": "2026-09-15"
   },
   {
+    "id": "stem4health-hackathon-zurich-2026",
+    "title": "STEM4Health Hackathon",
+    "date": "2026-11-21",
+    "endDate": "2026-11-22",
+    "time": "Sat 08:30–22:00, Sun 08:30–17:00",
+    "city": "Zurich",
+    "venue": "ETH Zürich Campus Hönggerberg, HPH building",
+    "format": "Workshop",
+    "topics": [
+      "Hackathon",
+      "Applied AI",
+      "Machine learning"
+    ],
+    "organiser": "Johnson & Johnson Switzerland / Swiss Data Science Center",
+    "cost": "Free",
+    "url": "https://www.datascience.ch/event/stem4health-hackathon",
+    "source": "datascience.ch",
+    "blurb": "A hundred students and early-career researchers spend a weekend on real pharmaceutical manufacturing problems, combining manufacturing data, mechanistic modelling and machine learning with industry and academic mentors before pitching to a jury.",
+    "firstSeen": "2026-10-09"
+  },
+  {
     "id": "geneva-ai-conference-2026",
     "title": "The Geneva AI Conference 2026",
     "date": "2026-11-25",
@@ -1656,6 +1723,25 @@
     "firstSeen": "2026-09-25"
   },
   {
+    "id": "hack-apertus-onsite-basel-2026",
+    "title": "Hack Apertus — Onsite Hackathon Basel",
+    "date": "2026-12-04",
+    "endDate": "2026-12-05",
+    "city": "Basel",
+    "format": "Workshop",
+    "topics": [
+      "Open-source LLMs",
+      "Hackathon",
+      "Applied AI"
+    ],
+    "organiser": "aiLights Association",
+    "cost": "Not listed",
+    "url": "https://hackapertus.ch/",
+    "source": "hackapertus.ch",
+    "blurb": "The Basel leg of the national Apertus hackathon series, building applications and multilingual improvements on Switzerland’s open Apertus model, with everything produced released for reuse. Venue still to be announced.",
+    "firstSeen": "2026-10-09"
+  },
+  {
     "id": "fabric-year-in-review-2026",
     "title": "Fabric Year in Review 2026 — Highlights & Outlook",
     "date": "2026-12-08",
@@ -1695,6 +1781,27 @@
     "source": "DatAfterwork",
     "blurb": "Swiss data startups pitch to an investor panel with community voting, capping the year for the Suisse Romande data scene.",
     "firstSeen": "2026-09-05"
+  },
+  {
+    "id": "sdsc-ai-for-decision-makers-eth-2027",
+    "title": "AI for Decision Makers — Executive Course at ETH Zurich",
+    "date": "2027-01-22",
+    "endDate": "2027-02-05",
+    "time": "09:00–17:00 on 22, 28 and 29 January and 4 and 5 February",
+    "city": "Zurich",
+    "venue": "Swiss AI Tower (Andreasturm), Andreasstrasse 5, Oerlikon",
+    "format": "Workshop",
+    "topics": [
+      "Data leadership",
+      "AI strategy",
+      "AI governance"
+    ],
+    "organiser": "Swiss Data Science Center / ETH Zürich School for Continuing Education",
+    "cost": "CHF 4,000 (10% off for ETH staff and alumni and SDSC partners)",
+    "url": "https://www.datascience.ch/event/ai-for-decision-makers-executive-course-at-eth-zurich",
+    "source": "datascience.ch",
+    "blurb": "A five-day English-language executive course for leaders who need to challenge assumptions on AI projects without becoming data scientists — data science foundations, MLOps, AI governance and ethics, generative AI and a first agent, with an ETH Zurich certificate. Registration closes 15 January 2027.",
+    "firstSeen": "2026-10-09"
   },
   {
     "id": "ost-generative-ai-agentic-systems-rapperswil-2027",
