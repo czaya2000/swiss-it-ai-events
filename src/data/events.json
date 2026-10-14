@@ -38,67 +38,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "forum-epfl-2026",
-    "title": "Forum EPFL 2026",
-    "date": "2026-10-05",
-    "endDate": "2026-10-09",
-    "city": "Lausanne",
-    "venue": "SwissTech Convention Center",
-    "format": "Networking",
-    "topics": [
-      "Tech careers",
-      "Recruitment"
-    ],
-    "organiser": "Forum EPFL",
-    "cost": "Free",
-    "url": "https://forum-epfl.ch/2026/en/",
-    "source": "forum-epfl.ch",
-    "blurb": "Switzerland's largest tech recruitment fair, with 188+ companies exhibiting at EPFL.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "sdsc-advanced-llm-agentic-systems-epfl-2026",
-    "title": "Advanced LLM Applications and Agentic Systems — Training at EPFL",
-    "date": "2026-10-09",
-    "endDate": "2026-10-09",
-    "time": "09:00–17:00",
-    "city": "Lausanne",
-    "venue": "EPFL",
-    "format": "Workshop",
-    "topics": [
-      "Agentic AI",
-      "LLMs",
-      "Applied AI"
-    ],
-    "organiser": "Swiss Data Science Center",
-    "cost": "CHF 1,000 (10% off for EPFL alumni and SDSC partners)",
-    "url": "https://www.datascience.ch/event/advanced-llm-applications-and-agentic-systems---training-at-epfl",
-    "source": "datascience.ch",
-    "blurb": "One-day hands-on SDSC training on structured outputs, retrieval-augmented generation, tool calling and agentic workflows — and the evaluation and cost control needed to run them in production.",
-    "firstSeen": "2026-09-15"
-  },
-  {
-    "id": "tech-europe-agentic-ai-hack-zurich-2026",
-    "title": "{Tech: Europe} Agentic AI Hack Zurich",
-    "date": "2026-10-10",
-    "endDate": "2026-10-10",
-    "time": "09:30–20:45",
-    "city": "Zurich",
-    "venue": "Zurich (address on registration)",
-    "format": "Workshop",
-    "topics": [
-      "AI agents",
-      "Applied AI",
-      "Hackathon"
-    ],
-    "organiser": "{Tech: Europe} / Google DeepMind",
-    "cost": "Free (application required)",
-    "url": "https://luma.com/zrh-hack",
-    "source": "luma.com",
-    "blurb": "A one-day agentic AI hackathon capped at 70 builders — teams form in the morning, mentors and free compute credits on hand through the day, live demos at 20:00 and awards at 20:45.",
-    "firstSeen": "2026-10-02"
-  },
-  {
     "id": "build-your-own-assistant-inbox-geneva-2026",
     "title": "Build Your Own Assistant: Stop Drowning In Your Inbox",
     "date": "2026-10-11",
@@ -510,6 +449,27 @@
     "firstSeen": "2026-10-07"
   },
   {
+    "id": "ki-fuer-start-ups-luzern-2026",
+    "title": "KI für Start-ups: Vom Hype zum echten Mehrwert",
+    "date": "2026-10-20",
+    "endDate": "2026-10-20",
+    "time": "17:30–20:30",
+    "city": "Lucerne",
+    "venue": "Hochschule Luzern – Wirtschaft, Mensa Oase (5th floor), Zentralstrasse 9",
+    "format": "Networking",
+    "topics": [
+      "Applied AI",
+      "Sovereign AI",
+      "AI adoption"
+    ],
+    "organiser": "Smart-up, Hochschule Luzern",
+    "cost": "Free",
+    "url": "https://entrepreneurship-training.ch/module1/lucerne/",
+    "source": "startupticker.ch",
+    "blurb": "A German-language evening on where AI actually pays off for a young company: Sophie Hundertmark on using generative and conversational AI responsibly, and LLMify founder Axel Pohl on building sovereign AI on open models and Swiss infrastructure, followed by a panel moderated by SRF's Sonja Hasler and an apéro.",
+    "firstSeen": "2026-10-14"
+  },
+  {
     "id": "our-minds-under-siege-zurich-2026",
     "title": "Our Minds Under Siege — An Evening with Bruno Giussani",
     "date": "2026-10-21",
@@ -529,6 +489,26 @@
     "source": "sairop.swiss",
     "blurb": "An evening on AI, information and trust: how machine-generated content is changing our ability to tell truth from manipulation, and what it takes to keep human judgement intact in a world shaped by algorithms.",
     "firstSeen": "2026-09-18"
+  },
+  {
+    "id": "ai-swiss-ia-formation-entreprise-neuchatel-2026",
+    "title": "Brain2Brain: IA & formation en entreprise",
+    "date": "2026-10-21",
+    "endDate": "2026-10-21",
+    "city": "Neuchâtel",
+    "venue": "Microcity",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI adoption",
+      "Skills"
+    ],
+    "organiser": "AI Swiss",
+    "cost": "Not listed",
+    "url": "https://a-i.swiss/post/IAetFormation",
+    "source": "alpict.ch",
+    "blurb": "A French-language evening from AI Swiss on how AI changes the skills a company needs and the way people learn them — talks from Julien Schiess on rebuilding team capability and Dr Vincent Nassar on his Sustainable AI Leadership approach, then a round table.",
+    "firstSeen": "2026-10-14"
   },
   {
     "id": "fair-unconference-bern-2026",
@@ -596,7 +576,7 @@
     "title": "AI Productivity User Group Conference @ Microsoft Switzerland",
     "date": "2026-10-23",
     "endDate": "2026-10-23",
-    "time": "from 11:30",
+    "time": "11:30–17:30",
     "city": "Zurich",
     "venue": "Microsoft Switzerland, The Circle 02, Kloten",
     "format": "Conference",
@@ -917,7 +897,7 @@
     "cost": "Free",
     "url": "https://mdw-group.com/events/fabric-power-bi-user-group-geneva-2026/",
     "source": "mdw-group.com",
-    "blurb": "Geneva user-group evening on Power BI and Microsoft Fabric — speaker sessions, customer use cases and product news, followed by an apéro.",
+    "blurb": "Fifth Romandie gathering of the Swiss Fabric & Power BI user group: MVP Alexandru Badiu on what the new Fabric Apps are good for and what they cost, then the latest news out of FabCon Europe, followed by an apéro.",
     "firstSeen": "2026-09-15"
   },
   {
@@ -1061,7 +1041,8 @@
     "url": "https://tconf.ch/en/",
     "source": "tconf.ch",
     "blurb": "Free one-day community summit in Ticino with three tracks on Power BI, Microsoft Fabric, AI-assisted tooling and data governance, in English and Italian.",
-    "firstSeen": "2026-09-15"
+    "firstSeen": "2026-09-15",
+    "time": "09:30–17:45"
   },
   {
     "id": "build-your-own-assistant-recaps-geneva-2026",
@@ -1221,11 +1202,11 @@
       "Governance",
       "Careers"
     ],
-    "organiser": "aisafety.ch",
+    "organiser": "Zurich AI Safety",
     "cost": "Free–CHF 320 (trust-based)",
     "url": "https://swissaisafetydays.ch/",
     "source": "swissaisafetydays.ch",
-    "blurb": "Weekend conference on AI safety research, governance, and careers.",
+    "blurb": "Two days at ETH Zurich on AI safety research, governance and careers, with trust-based pricing from free upwards. Attendance is by application; the deadline is 17 October.",
     "firstSeen": "2026-09-03"
   },
   {
@@ -1393,6 +1374,27 @@
     "source": "ai-startup-center.com",
     "blurb": "A deliberately informal morning meetup over coffee for the centre’s AI startups and corporate partners — no agenda and no presentations, just conversations about partnerships, where AI is heading and what is actually hard right now.",
     "firstSeen": "2026-09-30"
+  },
+  {
+    "id": "generative-ai-geneve-5-2026",
+    "title": "IA : meetup « Generative AI Genève » #5",
+    "date": "2026-11-12",
+    "endDate": "2026-11-12",
+    "time": "18:30–20:30",
+    "city": "Geneva",
+    "venue": "Foound, Rue Jean-Dassier 7",
+    "format": "Meetup",
+    "topics": [
+      "LLMs",
+      "Digital sovereignty",
+      "Enterprise AI"
+    ],
+    "organiser": "Generative AI Genève",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/generative-ai-geneve/events/316948137/",
+    "source": "Meetup",
+    "blurb": "Your data, your models, your infrastructure: ELCA and EPFL spin-off Anyway Systems on running LLMs locally or in a private cloud, and on the trade-offs between performance, sovereignty and cost when a company wants generative AI without handing over its data.",
+    "firstSeen": "2026-10-14"
   },
   {
     "id": "swiss-robotics-day-2026",
@@ -1762,6 +1764,26 @@
     "firstSeen": "2026-09-05"
   },
   {
+    "id": "digitalswitzerland-davos-2027",
+    "title": "digitalswitzerland @ Davos",
+    "date": "2027-01-19",
+    "endDate": "2027-01-19",
+    "time": "09:00–18:00",
+    "city": "Davos",
+    "format": "Networking",
+    "topics": [
+      "AI strategy",
+      "Data leadership",
+      "Technology policy"
+    ],
+    "organiser": "digitalswitzerland",
+    "cost": "Not listed",
+    "url": "https://digitalswitzerland.com/events/digitalswitzerland-at-davos/",
+    "source": "digitalswitzerland.com",
+    "blurb": "A full day in Davos on Switzerland's digital future, with speakers from business, government and research building on the national AI Action Plan and looking ahead to the Geneva AI Summit 2027. Programme details still to be published.",
+    "firstSeen": "2026-10-14"
+  },
+  {
     "id": "sdsc-ai-for-decision-makers-eth-2027",
     "title": "AI for Decision Makers — Executive Course at ETH Zurich",
     "date": "2027-01-22",
@@ -1823,6 +1845,27 @@
     "source": "ai-weeks.ch",
     "blurb": "The 15th edition of the long-running international conference on semantics in healthcare and life sciences — ontologies, knowledge graphs and AI — with keynotes, tutorials and a dedicated biohackathon day in Basel.",
     "firstSeen": "2026-10-07"
+  },
+  {
+    "id": "sdsc-connect-environmental-sciences-bern-2027",
+    "title": "SDSC-Connect: Connecting Data for Environmental Sciences",
+    "date": "2027-02-03",
+    "endDate": "2027-02-03",
+    "time": "09:00–16:30",
+    "city": "Bern",
+    "venue": "Central Bern venue to be announced",
+    "format": "Conference",
+    "topics": [
+      "Data governance",
+      "Research data",
+      "Data platform"
+    ],
+    "organiser": "Swiss Data Science Center",
+    "cost": "CHF 50 (meals included)",
+    "url": "https://www.datascience.ch/event/sdsc-connect-connecting-data-for-environmental-sciences",
+    "source": "datascience.ch",
+    "blurb": "A day on making environmental data usable across disciplines and institutions — which critical datasets are still hard to reach, how to reuse data across domains, and what infrastructure interoperability actually needs, with keynotes, break-outs and a poster fair. Seats are limited.",
+    "firstSeen": "2026-10-14"
   },
   {
     "id": "databricks-kickstart-ai-workflows-zurich-2026",
