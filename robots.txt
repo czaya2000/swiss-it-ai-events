@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /card/
+
+Sitemap: https://swissdataevents.ch/sitemap-index.xml
