@@ -38,129 +38,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "fabric-governance-domains-workspaces-lineage-2026",
-    "title": "Fabric Governance — Domains, Workspaces & Lineage",
-    "date": "2026-10-13",
-    "endDate": "2026-10-13",
-    "time": "18:30–20:00",
-    "city": "Online (CH)",
-    "format": "Webinar",
-    "topics": [
-      "Microsoft Fabric",
-      "Data governance",
-      "Microsoft ecosystem"
-    ],
-    "organiser": "Data and AI for Intelligent Cloud",
-    "cost": "Free",
-    "url": "https://www.meetup.com/ai-and-intelligent-cloud/events/312635984/",
-    "source": "Meetup",
-    "blurb": "Zurich Microsoft data-platform group on governance patterns that scale rather than block: workspace design, domains and decentralised ownership, capacity planning, and lineage for compliance.",
-    "firstSeen": "2026-09-15"
-  },
-  {
-    "id": "owasp-switzerland-25th-anniversary-2026",
-    "title": "OWASP Switzerland — 25th Anniversary Edition",
-    "date": "2026-10-14",
-    "endDate": "2026-10-14",
-    "time": "15:30–20:15",
-    "city": "Zurich",
-    "venue": "ETH Zurich, Zurich Information Security and Privacy Center, FoodLab, Universitätstrasse 6",
-    "format": "Meetup",
-    "topics": [
-      "AI security",
-      "Application security",
-      "AI agents"
-    ],
-    "organiser": "OWASP Switzerland Chapter",
-    "cost": "Not listed",
-    "url": "https://www.meetup.com/owasp-switzerland-chapter/events/314556680/",
-    "source": "Meetup",
-    "blurb": "Anniversary edition with three talks — making AI a strategic partner in security (SIX), where well-meant phishing advice backfires (ETH Zurich), and using OWASP as one prioritisation lens from APIs through to agents (Microsoft) — then an apéro riche.",
-    "firstSeen": "2026-09-18"
-  },
-  {
-    "id": "aws-user-group-geneva-cloud-sovereignty-2026",
-    "title": "AWS Swiss User Group Geneva #29 — Digital Sovereignty in the Cloud",
-    "date": "2026-10-15",
-    "endDate": "2026-10-15",
-    "time": "17:30",
-    "city": "Geneva",
-    "venue": "AWS Geneva Office, Place de Hollande 2",
-    "format": "Meetup",
-    "topics": [
-      "Digital sovereignty",
-      "Cloud",
-      "Data platform"
-    ],
-    "organiser": "AWS Swiss User Group – Geneva",
-    "cost": "Free",
-    "url": "https://www.meetup.com/aws-swiss-user-group-geneva/events/316709912/",
-    "source": "Meetup",
-    "blurb": "Autumn meetup of the Geneva AWS user group, taking on digital sovereignty in the cloud — what it means for where data sits and who controls it.",
-    "firstSeen": "2026-09-30"
-  },
-  {
-    "id": "client-zero-agentic-ai-geneva-2026",
-    "title": "Client Zero — Agentic AI in Action",
-    "date": "2026-10-15",
-    "endDate": "2026-10-15",
-    "time": "18:30–21:30",
-    "city": "Lancy (Geneva)",
-    "venue": "IBM, Salle Centerstage, Esplanade de Pont-Rouge 9A",
-    "format": "Meetup",
-    "topics": [
-      "Agentic AI",
-      "Enterprise AI",
-      "Applied AI"
-    ],
-    "organiser": "Romandy CTO / IBM",
-    "cost": "Free (registration required)",
-    "url": "https://www.romandycto.org/en/events/client-zero-october-2026",
-    "source": "ai-weeks.ch",
-    "blurb": "IBM applies its own \"client zero\" rule — run it on yourself first: two talks on a real HR and IT transformation where agents handle transfers and password resets, and on the architecture underneath it, followed by Q&A and networking.",
-    "firstSeen": "2026-10-07"
-  },
-  {
-    "id": "dama-geneva-metadata-driven-ml-inference-2026",
-    "title": "Building a Metadata-Driven ML Inference Pipeline",
-    "date": "2026-10-15",
-    "endDate": "2026-10-15",
-    "city": "Online (CH)",
-    "format": "Webinar",
-    "topics": [
-      "Data governance",
-      "Metadata",
-      "MLOps"
-    ],
-    "organiser": "DAMA Switzerland — Geneva Chapter",
-    "cost": "Not listed",
-    "url": "https://www.damageneva.org/webinar-registration",
-    "source": "damageneva.org",
-    "blurb": "Nikolay Tsetkov walks the Geneva chapter through an inference pipeline driven by metadata rather than hard-coded wiring — where the model, its features and its deployment are described as data the pipeline reads.",
-    "firstSeen": "2026-10-12"
-  },
-  {
-    "id": "ibm-bob-coding-watch-party-zurich-2026",
-    "title": "IBM Bob Coding Watch Party Zürich — Online Only",
-    "date": "2026-10-15",
-    "endDate": "2026-10-15",
-    "time": "16:00–20:00",
-    "city": "Online (CH)",
-    "venue": "Online livestream",
-    "format": "Meetup",
-    "topics": [
-      "AI-assisted development",
-      "Enterprise AI",
-      "Applied AI"
-    ],
-    "organiser": "IBM Switzerland",
-    "cost": "Free",
-    "url": "https://www.meetup.com/big-data-developers-switzerland/events/316254684/",
-    "source": "Meetup",
-    "blurb": "Hands-on session on IBM Bob, an AI development assistant for building and modernising code, with beginner, intermediate and expert tracks — the Zurich leg now runs online only, as IBM has dropped the on-site room this time.",
-    "firstSeen": "2026-09-16"
-  },
-  {
     "id": "erh-physical-ai-hackathon-schlieren-2026",
     "title": "ERH Physical AI Hackathon",
     "date": "2026-10-16",
@@ -574,6 +451,27 @@
     "firstSeen": "2026-09-30"
   },
   {
+    "id": "bern-hack-night-spec-driven-development-2026",
+    "title": "Vibe Coding war gestern. Spec-Driven Development für Enterprise-Software",
+    "date": "2026-10-22",
+    "endDate": "2026-10-22",
+    "time": "17:00–20:00",
+    "city": "Bern",
+    "venue": "Helvetiastrasse 17",
+    "format": "Meetup",
+    "topics": [
+      "AI-assisted development",
+      "Software engineering",
+      "Applied AI"
+    ],
+    "organiser": "Bern Hack Night",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/bern-hack-night/events/316597707/",
+    "source": "Meetup",
+    "blurb": "Java Champion Simon Martinelli shows how a specification rather than a prompt can drive an AI-assisted build on a real Java project, then ti&m engineers run hands-on stations on customising Claude Code and GitHub Copilot and on capturing requirements with OpenSpec. Bring a laptop with a working licence.",
+    "firstSeen": "2026-10-19"
+  },
+  {
     "id": "ai-productivity-conference-zurich-2026",
     "title": "AI Productivity User Group Conference @ Microsoft Switzerland",
     "date": "2026-10-23",
@@ -650,6 +548,27 @@
     "source": "switzerland-ai.com",
     "blurb": "The weekly Geneva builders’ coworking morning: work on your own AI project alongside other makers, share a lesson learned if you want to, and talk through what is not working yet.",
     "firstSeen": "2026-10-12"
+  },
+  {
+    "id": "vibe-code-fest-basel-2026",
+    "title": "Vibe Code Fest Basel 2026",
+    "date": "2026-10-24",
+    "endDate": "2026-10-24",
+    "time": "10:00–21:30",
+    "city": "Basel",
+    "venue": "FHNW Campus Dreispitz",
+    "format": "Conference",
+    "topics": [
+      "AI-assisted development",
+      "Applied AI",
+      "Hackathon"
+    ],
+    "organiser": "Vibe Code Fest",
+    "cost": "CHF 99 (CHF 75 early bird)",
+    "url": "https://vibecodefest.ch/",
+    "source": "startupticker.ch",
+    "blurb": "A one-day unconference on building software with AI: morning keynotes and community talks on vibe coding with design systems, AI in lab software and vibe marketing, a panel on where the money goes once software is cheap, then a five-hour build sprint ending in community voting, pitches and an awards ceremony.",
+    "firstSeen": "2026-10-19"
   },
   {
     "id": "build-your-own-assistant-meetings-geneva-2026",
@@ -987,6 +906,69 @@
     "firstSeen": "2026-10-16"
   },
   {
+    "id": "cloud-native-geospatial-zurich-2026",
+    "title": "Cloud-Native Geospatial Zürich",
+    "date": "2026-10-29",
+    "endDate": "2026-10-29",
+    "time": "14:00–18:00 (reception from 18:30)",
+    "city": "Zurich",
+    "venue": "Zurich (address shared after registration)",
+    "format": "Meetup",
+    "topics": [
+      "Data platform",
+      "Cloud",
+      "Geospatial data"
+    ],
+    "organiser": "Cloud-Native Geospatial Forum",
+    "cost": "Not listed (registration required)",
+    "url": "https://luma.com/iap4y8sl",
+    "source": "luma.com",
+    "blurb": "The closing stop of the Cloud-Native Geospatial Forum's 2026 series, hosted by Meta in Zurich — an afternoon of talks, demos and community for practitioners working on cloud-native formats and pipelines for geospatial data, followed by a reception.",
+    "firstSeen": "2026-10-19"
+  },
+  {
+    "id": "constructor-nexademy-anomaly-zurich-2026",
+    "title": "Workshop: The Anomaly in Plain Sight",
+    "date": "2026-10-29",
+    "endDate": "2026-10-29",
+    "time": "17:45–20:00",
+    "city": "Zurich",
+    "venue": "Nexademy, Förrlibuckstrasse 150",
+    "format": "Workshop",
+    "topics": [
+      "Machine learning",
+      "Data science",
+      "Applied AI"
+    ],
+    "organiser": "Constructor Nexademy Switzerland",
+    "cost": "Free (registration required)",
+    "url": "https://www.meetup.com/constructor-nexademy-switzerland/events/316976131/",
+    "source": "Meetup",
+    "blurb": "A hands-on evening on anomalies nobody flagged: how people approach unfamiliar data, feature engineering and machine learning to surface hidden patterns with a look at Polars, why a flagged transaction is not yet fraud, and using generative AI to explain detection results in plain language.",
+    "firstSeen": "2026-10-19"
+  },
+  {
+    "id": "claude-code-workshop-beginners-geneva-2026",
+    "title": "Claude Code Workshop for Beginners",
+    "date": "2026-10-29",
+    "endDate": "2026-10-29",
+    "time": "19:00–21:00",
+    "city": "Online (CH)",
+    "venue": "Online",
+    "format": "Workshop",
+    "topics": [
+      "AI-assisted development",
+      "AI tools",
+      "Applied AI"
+    ],
+    "organiser": "Switzerland AI Community",
+    "cost": "CHF 30",
+    "url": "https://luma.com/tylxm7ao",
+    "source": "switzerland-ai.com",
+    "blurb": "A two-hour online beginners' session from the Geneva-based Switzerland AI Community on getting started with Claude Code, working through a small project with instructors on hand for the exercises.",
+    "firstSeen": "2026-10-19"
+  },
+  {
     "id": "ai-breakfast-luzern-55",
     "title": "AI Breakfast #55 Luzern",
     "date": "2026-10-30",
@@ -1191,6 +1173,48 @@
     "source": "startupticker.ch",
     "blurb": "A working day rather than a talking one: a morning of practitioner talks from SSF, ZHAW, Correntics and Resilens on what AI can actually do for sustainable finance, then small groups spend the afternoon on real challenges submitted by GFN startups and demo what they built. Thirty places.",
     "firstSeen": "2026-10-16"
+  },
+  {
+    "id": "containers-aws-trust-sovereignty-zurich-2026",
+    "title": "Architecting for Trust: Resilience & Sovereignty on AWS",
+    "date": "2026-11-03",
+    "endDate": "2026-11-03",
+    "time": "15:45–20:30",
+    "city": "Zurich",
+    "venue": "Bluelion, Josefstrasse 219",
+    "format": "Meetup",
+    "topics": [
+      "Cloud",
+      "Digital sovereignty",
+      "AI-assisted development"
+    ],
+    "organiser": "Containers and AWS Meetup Group / copebit",
+    "cost": "Free",
+    "url": "https://www.meetup.com/containers-and-aws-meetup-group/events/313663968/",
+    "source": "Meetup",
+    "blurb": "An afternoon hands-on lab on AWS resilience with the Karpenter autoscaler, then an evening of talks from AWS and copebit on designing resilient workloads, running enterprise Claude Code on AWS, and digital sovereignty — closing with pizza and beer.",
+    "firstSeen": "2026-10-19"
+  },
+  {
+    "id": "mindstone-zurich-ai-meetup-november-2026",
+    "title": "Mindstone Zurich November AI Meetup",
+    "date": "2026-11-04",
+    "endDate": "2026-11-04",
+    "time": "18:00–21:00",
+    "city": "Zurich",
+    "venue": "Unit8, Beethovenstrasse 49 (entrance on Gartenstrasse)",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "LLMs",
+      "AI tools"
+    ],
+    "organiser": "Mindstone Zürich AI Meetup",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/mindstone-zurich-ai-meetup/events/317044916/",
+    "source": "Meetup",
+    "blurb": "The Zurich edition of the Mindstone AI evenings, hosted at Unit8: a technical demo of what one team learned building a product with LLMs, a practical session on closing the AI skills gap for non-technical students, and a talk on where AI takes work and society next, then pizza and networking.",
+    "firstSeen": "2026-10-19"
   },
   {
     "id": "gdg-cloud-zurich-tech-talks-38-2026",
@@ -1441,6 +1465,27 @@
     "firstSeen": "2026-10-16"
   },
   {
+    "id": "swiss-data-ai-group-ai-enabled-workflows-2026",
+    "title": "Swiss Data & AI — AI Enabled Workflows",
+    "date": "2026-11-11",
+    "endDate": "2026-11-11",
+    "time": "18:00–21:00",
+    "city": "Zurich",
+    "venue": "Zurich (venue to be announced)",
+    "format": "Meetup",
+    "topics": [
+      "Databricks",
+      "AI workflows",
+      "Data platform"
+    ],
+    "organiser": "Swiss Data and AI Group (Databricks User Group)",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/swiss-databricks-group/events/316646772/",
+    "source": "Meetup",
+    "blurb": "The first Zurich gathering of the Swiss Data & AI group, on automating data work with AI-enabled workflows. Topics, speakers and the venue are still to be announced, and the group is open to offers to speak.",
+    "firstSeen": "2026-10-19"
+  },
+  {
     "id": "ai-startup-center-community-meetup-november-2026",
     "title": "AI Startup Center Community Meetup — November Edition",
     "date": "2026-11-12",
@@ -1519,7 +1564,7 @@
     "cost": "Ticketed (TBC)",
     "url": "https://www.swissaisummit.com/",
     "source": "swissaisummit.com",
-    "blurb": "Full-day summit on enterprise AI strategy with executive roundtables.",
+    "blurb": "Full-day summit at the Kunsthaus for senior business, technology and government leaders, spanning finance and insurance, government and defence, manufacturing, cybersecurity, quantum and healthcare — with speakers from Microsoft Switzerland, IBM, Nestlé, ABB, HSBC and the Canton of Zurich, plus workshops, demos and a one-to-one meeting platform.",
     "firstSeen": "2026-09-03"
   },
   {
@@ -1688,6 +1733,27 @@
     "firstSeen": "2026-10-16"
   },
   {
+    "id": "schwyz-next-ki-agenten-work-immensee-2026",
+    "title": "KI-Agenten & -Work: Skills und Anbindungen für konkrete Entlastung im Alltag",
+    "date": "2026-11-24",
+    "endDate": "2026-11-24",
+    "time": "09:00–16:00",
+    "city": "Immensee",
+    "venue": "Hohle Gasse AG, Coworking «Connect», Artherstrasse 60",
+    "format": "Workshop",
+    "topics": [
+      "AI agents",
+      "AI automation",
+      "Applied AI"
+    ],
+    "organiser": "Schwyz Next",
+    "cost": "CHF 400 members / CHF 500 non-members",
+    "url": "https://schwyz-next.ch/events/workshop-ki-agenten-work-skills-und-anbindungen-fuer-konkrete-entlastung-im-alltag/",
+    "source": "ai-community.ch",
+    "blurb": "A full German-language day with Michael Kyburz on getting AI to take over recurring work: three base skills, how to build your own, and wiring assistants into calendar, mail and project tools so multi-step workflows run with clear checkpoints for human review. Fifteen places, and a paid ChatGPT or Claude subscription is required.",
+    "firstSeen": "2026-10-19"
+  },
+  {
     "id": "geneva-ai-conference-2026",
     "title": "The Geneva AI Conference 2026",
     "date": "2026-11-25",
@@ -1704,7 +1770,7 @@
     "cost": "Ticketed (Eventbrite)",
     "url": "https://www.eventbrite.ie/e/the-geneva-ai-conference-2026-tickets-1983950142282",
     "source": "eventbrite.ie",
-    "blurb": "Evening conference on enterprise AI strategy and ROI with an IBM/SAP panel.",
+    "blurb": "An evening on enterprise AI strategy and returns, opened by Geneva city executive councillor Joëlle Bertossa and built around a panel with IBM, SAP, Hostelworld and Executive AI. The venue is still to be confirmed.",
     "firstSeen": "2026-09-03"
   },
   {
@@ -1788,6 +1854,27 @@
     "source": "Meetup",
     "blurb": "The closing session of IBM's 2026 hybrid series on IBM Bob, its AI development assistant — coding live alongside other European cities, with beginner, intermediate and expert tracks covering everything from first idea to modernising legacy applications.",
     "firstSeen": "2026-09-25"
+  },
+  {
+    "id": "schwyz-next-ki-strategie-governance-immensee-2026",
+    "title": "KI-Strategie und -Governance für KMUs",
+    "date": "2026-12-01",
+    "endDate": "2026-12-01",
+    "time": "17:00–18:30",
+    "city": "Immensee",
+    "venue": "Hohle Gasse AG, Coworking «Connect», Artherstrasse 60",
+    "format": "Workshop",
+    "topics": [
+      "AI governance",
+      "AI strategy",
+      "Regulation"
+    ],
+    "organiser": "Schwyz Next",
+    "cost": "CHF 150 members / CHF 200 non-members",
+    "url": "https://schwyz-next.ch/events/workshop-ki-strategie-und-governance-fuer-kmus-2/",
+    "source": "ai-community.ch",
+    "blurb": "A 90-minute German-language session for SME decision-makers on steering generative AI use rather than letting it spread: setting a strategic frame, drafting an internal AI policy, weighing data-protection, liability and wrong-output risks, and planning a safe rollout under Swiss data protection law and the EU AI Act. Fifteen places.",
+    "firstSeen": "2026-10-19"
   },
   {
     "id": "swiss-it-minds-2026-zurich",
@@ -1912,6 +1999,27 @@
     "firstSeen": "2026-10-14"
   },
   {
+    "id": "digital-lounge-davos-2027",
+    "title": "Digital Lounge @ Davos — Enterprise Data, AI & Robotics",
+    "date": "2027-01-21",
+    "endDate": "2027-01-21",
+    "time": "09:15–late",
+    "city": "Davos",
+    "venue": "Davos (venue shared with invitees)",
+    "format": "Conference",
+    "topics": [
+      "Data leadership",
+      "Enterprise AI",
+      "Robotics"
+    ],
+    "organiser": "JiVS / Data Migration International",
+    "cost": "Not listed (invitation only, limited seating)",
+    "url": "https://2027.digitalloungedavos.com/",
+    "source": "digitalloungedavos.com",
+    "blurb": "An invitation-only forum during Davos week for CxOs and transformation leaders on enterprise data, AI and robotics — morning and afternoon keynotes and panels, a live technology showcase, entrepreneur talks and parallel workshops, closing with an awards ceremony and dinner.",
+    "firstSeen": "2026-10-19"
+  },
+  {
     "id": "sdsc-ai-for-decision-makers-eth-2027",
     "title": "AI for Decision Makers — Executive Course at ETH Zurich",
     "date": "2027-01-22",
@@ -1976,7 +2084,7 @@
   },
   {
     "id": "sdsc-connect-environmental-sciences-bern-2027",
-    "title": "SDSC-Connect: Connecting Data for Environmental Sciences",
+    "title": "SDSC-Connect: Connecting Digital Environmental Sciences",
     "date": "2027-02-03",
     "endDate": "2027-02-03",
     "time": "09:00–16:30",
@@ -1990,9 +2098,9 @@
     ],
     "organiser": "Swiss Data Science Center",
     "cost": "CHF 50 (meals included)",
-    "url": "https://www.datascience.ch/event/sdsc-connect-connecting-data-for-environmental-sciences",
+    "url": "https://www.datascience.ch/event/sdsc-connect-connecting-digital-environmental-sciences",
     "source": "datascience.ch",
-    "blurb": "A day on making environmental data usable across disciplines and institutions — which critical datasets are still hard to reach, how to reuse data across domains, and what infrastructure interoperability actually needs, with keynotes, break-outs and a poster fair. Seats are limited.",
+    "blurb": "A day in Bern on making environmental data usable across disciplines and institutions — data access and sharing, data infrastructure, and the role of machine learning and AI across climate, ecology, hydrology, the cryosphere, natural hazards and agriculture, with keynotes, invited talks, break-outs and a poster fair. Seats are limited and the venue is still to be announced.",
     "firstSeen": "2026-10-14"
   },
   {
