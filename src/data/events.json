@@ -19,132 +19,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "erh-physical-ai-hackathon-schlieren-2026",
-    "title": "ERH Physical AI Hackathon",
-    "date": "2026-10-16",
-    "endDate": "2026-10-18",
-    "time": "Fri evening kickoff, then 36 hours",
-    "city": "Schlieren (Zurich)",
-    "venue": "DARE Campus (address on registration)",
-    "format": "Workshop",
-    "topics": [
-      "Robotics",
-      "Embodied AI",
-      "Hackathon"
-    ],
-    "organiser": "coprod Inc. / EuroTech Federation",
-    "cost": "Not listed (application required)",
-    "url": "https://luma.com/psoyy4k5",
-    "source": "luma.com",
-    "blurb": "Around 50 European engineers get 36 hours with robot arms, mobile platforms, sensors and compute on the DARE Campus, with on-site mentors and a closing pitch to founders, researchers and investors.",
-    "firstSeen": "2026-10-02"
-  },
-  {
-    "id": "neural-wave-hackathon-lugano-2026",
-    "title": "Neural Wave 2026",
-    "date": "2026-10-16",
-    "endDate": "2026-10-18",
-    "time": "Fri 17:00 – Sun 16:00",
-    "city": "Lugano",
-    "venue": "Università della Svizzera italiana, Aula Magna, Via Giuseppe Buffi 11",
-    "format": "Workshop",
-    "topics": [
-      "Hackathon",
-      "Applied AI",
-      "Machine learning"
-    ],
-    "organiser": "Neural Wave / Università della Svizzera italiana",
-    "cost": "CHF 10",
-    "url": "https://neuralwave.ch/",
-    "source": "ai-weeks.ch",
-    "blurb": "Second edition of the student-run 48-hour AI hackathon at USI Lugano, where teams from Switzerland and abroad take on real problems submitted by partner companies using machine learning and data science.",
-    "firstSeen": "2026-10-07"
-  },
-  {
-    "id": "build-your-own-assistant-reach-geneva-2026",
-    "title": "Build Your Own Assistant: Widen Your Reach",
-    "date": "2026-10-18",
-    "endDate": "2026-10-18",
-    "time": "09:30",
-    "city": "Geneva",
-    "venue": "Voisins de Saint-Gervais, Bd James-Fazy 8",
-    "format": "Workshop",
-    "topics": [
-      "AI agents",
-      "Applied AI",
-      "AI automation"
-    ],
-    "organiser": "AI Ready Professionals",
-    "cost": "Free",
-    "url": "https://www.meetup.com/ai-ready-professionals/events/316608093/",
-    "source": "Meetup",
-    "blurb": "Build an agent that scans your industry and city for events worth your time and tells you why to go and who to meet, instead of trawling listings by hand.",
-    "firstSeen": "2026-10-02"
-  },
-  {
-    "id": "hack-apertus-liebefeld-2026",
-    "title": "«Hack Apertus» Hackathon Liebefeld",
-    "date": "2026-10-18",
-    "endDate": "2026-10-19",
-    "time": "08:00–21:30",
-    "city": "Liebefeld (Bern)",
-    "venue": "WORKSPACE & MORE, Waldeggstrasse 34, Köniz",
-    "format": "Workshop",
-    "topics": [
-      "Open-source LLMs",
-      "Hackathon",
-      "Applied AI"
-    ],
-    "organiser": "aiLights Association / Silicon Lovefield",
-    "cost": "Free",
-    "url": "https://hackapertus.ch/",
-    "source": "hackapertus.ch",
-    "blurb": "The first in-person leg of the national Apertus hackathon: teams of up to five build prototypes on the open Apertus 8B and 70B models, with the top six pitching at the Liebefeld finals on day two for a place at the 2027 Grand Finals.",
-    "firstSeen": "2026-10-09"
-  },
-  {
-    "id": "mariadb-vshn-swiss-cloud-roadshow-zurich-2026",
-    "title": "AI, Databases & Swiss Cloud: MariaDB/VSHN Roadshow",
-    "date": "2026-10-19",
-    "endDate": "2026-10-19",
-    "time": "13:30–17:00",
-    "city": "Zurich",
-    "venue": "VSHN Tower, Neugasse 6",
-    "format": "Meetup",
-    "topics": [
-      "Data platform",
-      "Digital sovereignty",
-      "Applied AI"
-    ],
-    "organiser": "MariaDB / VSHN",
-    "cost": "Free (separate registration required)",
-    "url": "https://www.meetup.com/navigate-ai/events/316981938/",
-    "source": "Meetup",
-    "blurb": "MariaDB founder Michael “Monty” Widenius and the VSHN team on running an open-source database estate on Swiss infrastructure — migrations and roadmap, live MaxScale failover demos, and where AI agents now fit around the database, closing with an apéro.",
-    "firstSeen": "2026-10-16"
-  },
-  {
-    "id": "people-analytics-switzerland-october-2026",
-    "title": "People Analytics Switzerland Meetup | October 2026",
-    "date": "2026-10-19",
-    "endDate": "2026-10-19",
-    "time": "16:00",
-    "city": "Zurich",
-    "venue": "Zurich Altstetten (address shared with registrants)",
-    "format": "Meetup",
-    "topics": [
-      "People analytics",
-      "Applied AI",
-      "Analytics"
-    ],
-    "organiser": "People Analytics Switzerland",
-    "cost": "Free",
-    "url": "https://www.meetup.com/people-analytics-switzerland/events/316748285/",
-    "source": "Meetup",
-    "blurb": "Autumn session of the Swiss people-analytics community, sharing practice and fresh thinking on AI and analytics initiatives inside Swiss organisations. Places are tightly limited.",
-    "firstSeen": "2026-10-02"
-  },
-  {
     "id": "agentic-legacy-modernization-zurich-2026",
     "title": "Same, But Better. No Mistakes. An Introduction to Agentic Legacy Modernization",
     "date": "2026-10-20",
@@ -539,7 +413,7 @@
     "title": "Build Your Own Assistant: Never Walk Into A Meeting Blind",
     "date": "2026-10-25",
     "endDate": "2026-10-25",
-    "time": "09:30",
+    "time": "09:30–12:30",
     "city": "Geneva",
     "venue": "Voisins de Saint-Gervais, Bd James-Fazy 8",
     "format": "Workshop",
@@ -549,7 +423,7 @@
       "AI automation"
     ],
     "organiser": "AI Ready Professionals",
-    "cost": "Free",
+    "cost": "CHF 85",
     "url": "https://www.meetup.com/ai-ready-professionals/events/316608104/",
     "source": "Meetup",
     "blurb": "Build an agent that briefs you on the person, the company and the purpose before every meeting, then drafts the follow-up the moment it ends.",
@@ -1080,7 +954,7 @@
     "title": "Build Your Own Assistant: What Did I Even Get Done This Week?",
     "date": "2026-11-01",
     "endDate": "2026-11-01",
-    "time": "09:30",
+    "time": "09:30–12:30",
     "city": "Geneva",
     "venue": "Voisins de Saint-Gervais, Bd James-Fazy 8",
     "format": "Workshop",
@@ -1090,7 +964,7 @@
       "AI automation"
     ],
     "organiser": "AI Ready Professionals",
-    "cost": "Free",
+    "cost": "CHF 85",
     "url": "https://www.meetup.com/ai-ready-professionals/events/316608120/",
     "source": "Meetup",
     "blurb": "Build an agent that produces daily and weekly recaps of your own or your team's work, alongside the industry and regulatory news that actually affects you.",
@@ -1222,6 +1096,48 @@
     "firstSeen": "2026-10-19"
   },
   {
+    "id": "eqs-connect-zurich-2026",
+    "title": "EQS Connect Zurich 2026 — From Compliance Activity to Compliance Impact",
+    "date": "2026-11-05",
+    "endDate": "2026-11-05",
+    "time": "13:30–18:00 (networking dinner from 18:00)",
+    "city": "Zurich",
+    "venue": "Rooftopevents, Talacker 50",
+    "format": "Conference",
+    "topics": [
+      "AI governance",
+      "Data governance",
+      "Responsible AI"
+    ],
+    "organiser": "EQS Group",
+    "cost": "Not listed (register interest; places strictly limited)",
+    "url": "https://www.eqs.com/compliance-events/connect-zrh-2026/",
+    "source": "eqs.com",
+    "blurb": "An English-language afternoon for compliance, legal and data leaders built entirely around AI: an opening keynote on what AI is doing to judgement, a keynote on Swiss exposure to international AI governance expectations, panels on shadow AI and defensible decisions, and a workshop on where the human–AI boundary should sit.",
+    "firstSeen": "2026-10-23"
+  },
+  {
+    "id": "fabric-user-group-switzerland-88th-online-2026",
+    "title": "Zürich — 88th Fabric User Group (online)",
+    "date": "2026-11-05",
+    "endDate": "2026-11-05",
+    "time": "17:00",
+    "city": "Online (CH)",
+    "venue": "Online",
+    "format": "Webinar",
+    "topics": [
+      "Microsoft Fabric",
+      "Power BI",
+      "Data platform"
+    ],
+    "organiser": "Microsoft Fabric User Group Switzerland",
+    "cost": "Free",
+    "url": "https://www.meetup.com/microsoft-fabric-user-group-switzerland/events/317100946/",
+    "source": "Meetup",
+    "blurb": "The Swiss Fabric user group’s monthly online session: the latest Fabric news, then Franco on automating semantic model health checks with a Fabric notebook, the Best Practice Analyzer, Memory Analyzer and DAX INFO views, writing results to a Lakehouse to track model quality and memory over time.",
+    "firstSeen": "2026-10-23"
+  },
+  {
     "id": "gdg-cloud-zurich-tech-talks-38-2026",
     "title": "GDG Cloud Zürich: Tech Talks #38",
     "date": "2026-11-05",
@@ -1261,6 +1177,27 @@
     "source": "snowflake.com",
     "blurb": "Free data-platform conference bringing together Swiss data teams and partners.",
     "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "ai-in-biomedicine-forum-lugano-2026",
+    "title": "Artificial Intelligence in Biomedicine Forum 2026",
+    "date": "2026-11-06",
+    "endDate": "2026-11-06",
+    "time": "09:00–19:30",
+    "city": "Lugano",
+    "venue": "Aula Polivalente, Campus Est USI-SUPSI",
+    "format": "Conference",
+    "topics": [
+      "Applied AI",
+      "Machine learning",
+      "AI governance"
+    ],
+    "organiser": "IBSA Foundation / IDSIA USI-SUPSI",
+    "cost": "Free (registration requested)",
+    "url": "https://www.ibsafoundation.org/en/artificial-intelligence-in-biomedicine-2026",
+    "source": "swissaijob.ch",
+    "blurb": "A free day in Lugano on AI from basic research through to the clinic: one session on digital twins and personalised medicine, one on protein and compound design, plus abstract talks, posters and a closing conversation on global AI governance ahead of the Geneva AI Summit 2027.",
+    "firstSeen": "2026-10-23"
   },
   {
     "id": "herimpact-who-decides-zurich-2026",
@@ -1308,7 +1245,7 @@
     "title": "Build Your Own Assistant: Time to Stop AI Slop",
     "date": "2026-11-08",
     "endDate": "2026-11-08",
-    "time": "09:30",
+    "time": "09:30–12:30",
     "city": "Geneva",
     "venue": "Voisins de Saint-Gervais, Bd James-Fazy 8",
     "format": "Workshop",
@@ -1318,7 +1255,7 @@
       "AI tools"
     ],
     "organiser": "AI Ready Professionals",
-    "cost": "Free",
+    "cost": "CHF 85",
     "url": "https://www.meetup.com/ai-ready-professionals/events/316608133/",
     "source": "Meetup",
     "blurb": "A session on getting an assistant to write in your own voice rather than generic model output, then turning the week's news into a post and a newsletter worth reading.",
@@ -1491,6 +1428,27 @@
     "firstSeen": "2026-10-21"
   },
   {
+    "id": "analytics-roundtable-zurich-eth-data-stack-2026",
+    "title": "Inside ETH Zurich’s Data Stack: Analytics for Universities",
+    "date": "2026-11-11",
+    "endDate": "2026-11-11",
+    "time": "17:30–19:30",
+    "city": "Zurich",
+    "venue": "Advance Metrics, Heinrichstrasse 267A",
+    "format": "Meetup",
+    "topics": [
+      "Data platform",
+      "Analytics",
+      "Data strategy"
+    ],
+    "organiser": "Analytics Roundtable Zurich",
+    "cost": "Free",
+    "url": "https://www.meetup.com/analytics-roundtable-zurich/events/317086697/",
+    "source": "Meetup",
+    "blurb": "A walk through a real analytics stack built with ETH Zurich — the original setup and why, what got bolted on later, how individual departments were brought up to speed with the data, and where it goes next — then open discussion over drinks.",
+    "firstSeen": "2026-10-23"
+  },
+  {
     "id": "swiss-data-ai-group-ai-enabled-workflows-2026",
     "title": "Swiss Data & AI — AI Enabled Workflows",
     "date": "2026-11-11",
@@ -1596,6 +1554,27 @@
     "firstSeen": "2026-09-21"
   },
   {
+    "id": "product-academy-hype-vs-shipped-zurich-2026",
+    "title": "Hype vs. Shipped: What AI Really Changes in Product Work",
+    "date": "2026-11-16",
+    "endDate": "2026-11-16",
+    "time": "18:00–21:00",
+    "city": "Zurich",
+    "venue": "SMG Swiss Marketplace Group, Thurgauerstrasse 36",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI adoption",
+      "Product management"
+    ],
+    "organiser": "Product Academy Switzerland",
+    "cost": "Free",
+    "url": "https://www.meetup.com/product-academy-switzerland/events/317035080/",
+    "source": "Meetup",
+    "blurb": "Two talks on what AI has actually changed in building products: Coople on a year spent replacing squads, sprints and story points with AI-first workflows and smaller teams, including the experiments that failed, and Brack.Alltron on where AI earned its place and why plain analytics sometimes still beats machine learning.",
+    "firstSeen": "2026-10-23"
+  },
+  {
     "id": "swiss-ai-summit-2026",
     "title": "Swiss AI Summit 2026",
     "date": "2026-11-16",
@@ -1608,7 +1587,7 @@
       "Enterprise AI strategy"
     ],
     "organiser": "Swiss AI Summit",
-    "cost": "Ticketed (TBC)",
+    "cost": "CHF 790 Executive Pass / CHF 950 standard (excl. VAT)",
     "url": "https://www.swissaisummit.com/",
     "source": "swissaisummit.com",
     "blurb": "Full-day summit at the Kunsthaus for senior business, technology and government leaders, spanning finance and insurance, government and defence, manufacturing, cybersecurity, quantum and healthcare — with speakers from Microsoft Switzerland, IBM, Nestlé, ABB, HSBC and the Canton of Zurich, plus workshops, demos and a one-to-one meeting platform.",
@@ -2069,7 +2048,7 @@
   },
   {
     "id": "night-of-data-talents-lausanne-2026",
-    "title": "The Night of Data Talents: Swiss Edition",
+    "title": "The Night of Data Talents: Startup Edition",
     "date": "2026-12-17",
     "endDate": "2026-12-17",
     "time": "17:30–23:30",
