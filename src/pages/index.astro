@@ -8,6 +8,7 @@ import {
 	isNew,
 	dateSpine,
 	isFree,
+	cityGroup,
 	eventUrl,
 	formatLastScan,
 	weekStart,
@@ -23,7 +24,7 @@ const lastScan = formatLastScan(meta.lastScan);
 const entries = await getUpcomingEvents();
 const events = entries.map((e) => ({ id: e.id, ...e.data }));
 
-const cities = [...new Set(events.map((e) => e.city))].sort();
+const cities = [...new Set(events.map((e) => cityGroup(e.city)))].sort();
 const formats = [...new Set(events.map((e) => e.format))].sort();
 
 // Events arrive sorted by date, so grouping is a single pass. Each group is
@@ -98,13 +99,33 @@ const structuredData = [
 
 		<div class="controls wrap">
 			<div class="filter-row">
-				<label>
-					<span class="sr-only">City</span>
-					<select id="filter-city">
-						<option value="">City</option>
-						{cities.map((c) => <option value={c}>{c}</option>)}
-					</select>
-				</label>
+				<div class="multi" id="city-filter">
+					<button
+						type="button"
+						class="multi-toggle"
+						id="city-toggle"
+						aria-expanded="false"
+						aria-controls="city-panel"
+					>
+						<span id="city-label">City</span>
+						<svg viewBox="0 0 10 6" width="10" height="6" aria-hidden="true">
+							<path fill="none" stroke="currentColor" stroke-width="1.5" d="M1 1l4 4 4-4"></path>
+						</svg>
+					</button>
+					<div class="multi-panel" id="city-panel" role="group" aria-label="Cities" hidden>
+						<div class="multi-options">
+							{
+								cities.map((c) => (
+									<label class="multi-option">
+										<input type="checkbox" name="city" value={c} />
+										<span>{c}</span>
+									</label>
+								))
+							}
+						</div>
+						<button type="button" class="multi-clear" id="city-clear">Clear</button>
+					</div>
+				</div>
 				<label>
 					<span class="sr-only">Format</span>
 					<select id="filter-format">
@@ -145,7 +166,7 @@ const structuredData = [
 								<li
 									class="row"
 									data-band={g.band.key}
-									data-city={e.city}
+									data-city={cityGroup(e.city)}
 									data-format={e.format}
 									data-date={e.date}
 									data-end-date={e.endDate ?? e.date}
@@ -197,7 +218,12 @@ const structuredData = [
 			var searchInput = document.getElementById('filter-search');
 			var searchWrap = document.querySelector('.search-wrap');
 			var searchToggle = document.getElementById('search-toggle');
-			var citySelect = document.getElementById('filter-city');
+			var cityFilter = document.getElementById('city-filter');
+			var cityToggle = document.getElementById('city-toggle');
+			var cityLabel = document.getElementById('city-label');
+			var cityPanel = document.getElementById('city-panel');
+			var cityClear = document.getElementById('city-clear');
+			var cityBoxes = Array.prototype.slice.call(cityPanel.querySelectorAll('input[type="checkbox"]'));
 			var formatSelect = document.getElementById('filter-format');
 			var whenTabs = Array.prototype.slice.call(document.querySelectorAll('.when-tab'));
 			var rows = Array.prototype.slice.call(document.querySelectorAll('.row'));
@@ -208,20 +234,44 @@ const structuredData = [
 			var params = new URLSearchParams(location.search);
 			var state = {
 				q: params.get('q') || '',
-				city: params.get('city') || '',
+				// Repeated params (?city=Zurich&city=Geneva), so old single-city
+				// links keep working unchanged.
+				cities: params.getAll('city').filter(Boolean),
 				format: params.get('format') || '',
 				when: params.get('when') || 'all',
 			};
 
 			searchInput.value = state.q;
-			citySelect.value = state.city;
 			formatSelect.value = state.format;
+			cityBoxes.forEach(function (box) {
+				box.checked = state.cities.indexOf(box.value) !== -1;
+			});
+			// Drop cities from the URL that no longer have any events.
+			state.cities = cityBoxes
+				.filter(function (box) {
+					return box.checked;
+				})
+				.map(function (box) {
+					return box.value;
+				});
 
 			function markHasValue(select) {
 				select.classList.toggle('has-value', !!select.value);
 			}
-			markHasValue(citySelect);
 			markHasValue(formatSelect);
+
+			function renderCityLabel() {
+				var n = state.cities.length;
+				cityLabel.textContent = n === 0 ? 'City' : n === 1 ? state.cities[0] : state.cities[0] + ' +' + (n - 1);
+				cityToggle.classList.toggle('has-value', n > 0);
+				cityClear.hidden = n === 0;
+			}
+			renderCityLabel();
+
+			function setCityOpen(open) {
+				cityPanel.hidden = !open;
+				cityToggle.setAttribute('aria-expanded', String(open));
+			}
 
 			function setSearchOpen(open, focus) {
 				searchWrap.classList.toggle('open', open);
@@ -257,7 +307,9 @@ const structuredData = [
 			function updateUrl() {
 				var p = new URLSearchParams();
 				if (state.q) p.set('q', state.q);
-				if (state.city) p.set('city', state.city);
+				state.cities.forEach(function (c) {
+					p.append('city', c);
+				});
 				if (state.format) p.set('format', state.format);
 				if (state.when && state.when !== 'all') p.set('when', state.when);
 				var qs = p.toString();
@@ -274,7 +326,7 @@ const structuredData = [
 					var d = row.dataset;
 					var matches =
 						(!query || (d.search || '').indexOf(query) !== -1) &&
-						(!state.city || d.city === state.city) &&
+						(state.cities.length === 0 || state.cities.indexOf(d.city) !== -1) &&
 						(!state.format || d.format === state.format) &&
 						(!bounds || (d.date <= bounds.end && d.endDate >= bounds.start));
 					row.hidden = !matches;
@@ -312,11 +364,42 @@ const structuredData = [
 			searchInput.addEventListener('blur', function () {
 				if (!searchInput.value) setSearchOpen(false, false);
 			});
-			citySelect.addEventListener('change', function () {
-				state.city = citySelect.value;
-				markHasValue(citySelect);
+			cityToggle.addEventListener('click', function () {
+				setCityOpen(cityPanel.hidden);
+			});
+			cityBoxes.forEach(function (box) {
+				box.addEventListener('change', function () {
+					// Keep the alphabetical order of the list, not the click order.
+					state.cities = cityBoxes
+						.filter(function (b) {
+							return b.checked;
+						})
+						.map(function (b) {
+							return b.value;
+						});
+					renderCityLabel();
+					updateUrl();
+					applyFilters();
+				});
+			});
+			cityClear.addEventListener('click', function () {
+				cityBoxes.forEach(function (b) {
+					b.checked = false;
+				});
+				state.cities = [];
+				renderCityLabel();
 				updateUrl();
 				applyFilters();
+				cityToggle.focus();
+			});
+			document.addEventListener('click', function (ev) {
+				if (!cityPanel.hidden && !cityFilter.contains(ev.target)) setCityOpen(false);
+			});
+			document.addEventListener('keydown', function (ev) {
+				if (ev.key === 'Escape' && !cityPanel.hidden) {
+					setCityOpen(false);
+					cityToggle.focus();
+				}
 			});
 			formatSelect.addEventListener('change', function () {
 				state.format = formatSelect.value;
@@ -427,6 +510,97 @@ const structuredData = [
 		select.has-value {
 			color: var(--ink);
 			font-weight: 600;
+		}
+		/* City multi-select: a button styled exactly like the Format select,
+		   opening a panel of tick boxes. */
+		.multi {
+			position: relative;
+		}
+		.multi-toggle {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			font: inherit;
+			font-size: 0.875rem;
+			padding: 0 0 5px;
+			background: none;
+			border: none;
+			border-bottom: 1px solid var(--border);
+			border-radius: 0;
+			color: var(--muted);
+			cursor: pointer;
+			white-space: nowrap;
+		}
+		.multi-toggle:focus-visible,
+		.multi-toggle[aria-expanded='true'] {
+			outline: none;
+			border-bottom-color: var(--ink);
+		}
+		.multi-toggle.has-value {
+			color: var(--ink);
+			font-weight: 600;
+		}
+		.multi-toggle svg {
+			transition: transform 0.15s ease;
+		}
+		.multi-toggle[aria-expanded='true'] svg {
+			transform: rotate(180deg);
+		}
+		.multi-panel {
+			position: absolute;
+			top: calc(100% + 8px);
+			left: 0;
+			z-index: 20;
+			width: 260px;
+			max-width: calc(100vw - 32px);
+			background: var(--surface);
+			border: 1px solid var(--ink);
+			box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+		}
+		.multi-panel[hidden] {
+			display: none;
+		}
+		.multi-options {
+			max-height: 320px;
+			overflow-y: auto;
+			padding: 6px 0;
+		}
+		.multi-option {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			padding: 6px 14px;
+			font-size: 0.875rem;
+			cursor: pointer;
+		}
+		.multi-option:hover {
+			background: var(--chip-bg);
+		}
+		.multi-option input {
+			margin: 0;
+			width: 15px;
+			height: 15px;
+			accent-color: var(--ink);
+			flex: none;
+		}
+		.multi-clear {
+			display: block;
+			width: 100%;
+			font: inherit;
+			font-size: 0.82rem;
+			text-align: left;
+			padding: 9px 14px;
+			background: none;
+			border: none;
+			border-top: 1px solid var(--border);
+			color: var(--muted);
+			cursor: pointer;
+		}
+		.multi-clear[hidden] {
+			display: none;
+		}
+		.multi-clear:hover {
+			color: var(--ink);
 		}
 		.search-wrap {
 			display: flex;

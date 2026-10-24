@@ -53,6 +53,34 @@ export async function getUpcomingEvents(): Promise<EventEntry[]> {
 		.sort((a, b) => a.data.date.localeCompare(b.data.date));
 }
 
+// Suburbs and nearby towns that the homepage City filter folds into a main
+// city. Only the filter uses this; event pages, cards and the social feed
+// keep the exact place.
+const CITY_GROUPS: Record<string, string> = {
+	'Zurich-Flughafen': 'Zurich',
+	Schlieren: 'Zurich',
+	Dietlikon: 'Zurich',
+	Dübendorf: 'Zurich',
+	Fahrweid: 'Zurich',
+	Oerlikon: 'Zurich',
+	Rotkreuz: 'Zug',
+	Versoix: 'Geneva',
+	Thônex: 'Geneva',
+	Prilly: 'Lausanne',
+	'Saint-Sulpice': 'Lausanne',
+	Bioggio: 'Lugano',
+};
+
+/** Main city for the City filter, e.g. "Prilly (Lausanne)" → "Lausanne". */
+export function cityGroup(city: string): string {
+	// "Online (CH)" is its own option, not a city called "CH".
+	if (/^online\b/i.test(city)) return city;
+	// The refresh writes nearby places as "Place (City)"; trust the bracket.
+	const bracket = city.match(/\(([^)]+)\)\s*$/);
+	if (bracket) return CITY_GROUPS[bracket[1].trim()] ?? bracket[1].trim();
+	return CITY_GROUPS[city.trim()] ?? city.trim();
+}
+
 const WEEKDAY = new Intl.DateTimeFormat('en-US', { weekday: 'short' });
 const MONTH = new Intl.DateTimeFormat('en-US', { month: 'short' });
 const DATE_RANGE_OPTS: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'short', year: 'numeric' };
