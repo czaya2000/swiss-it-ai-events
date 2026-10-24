@@ -1,0 +1,303 @@
+---
+/* "Save to my calendar" modal. Any element with [data-cal-open] opens it.
+   The feed list is inlined at build time, so the live count needs no fetch.
+   No tracking, no cookies, no third-party scripts. */
+import { getUpcomingEvents } from '../lib/events';
+import { feedHttpsUrl, feedOptions, listFeeds } from '../lib/calendar-feeds';
+
+const upcoming = await getUpcomingEvents();
+const { cities, formats } = feedOptions(upcoming);
+const feeds = Object.fromEntries(
+	listFeeds(upcoming).map((f) => [f.slug, { name: f.name, count: f.events.length, url: feedHttpsUrl(f.slug) }]),
+);
+---
+
+<dialog id="cal-dialog" class="cal-dialog" aria-labelledby="cal-title">
+	<div class="cal-head">
+		<h2 id="cal-title">Save to my calendar</h2>
+		<button type="button" class="cal-close" id="cal-close" aria-label="Close">
+			<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+				<path fill="none" stroke="currentColor" stroke-width="2" d="M6 6l12 12M18 6 6 18"></path>
+			</svg>
+		</button>
+	</div>
+	<p class="cal-intro">Subscribe once and new events matching your choice appear in your calendar.</p>
+
+	<div class="cal-filters">
+		<label>
+			<span>City</span>
+			<select id="cal-city">
+				<option value="">All cities</option>
+				{cities.map((c) => <option value={c.slug}>{c.label}</option>)}
+			</select>
+		</label>
+		<label>
+			<span>Format</span>
+			<select id="cal-format">
+				<option value="">All formats</option>
+				{formats.map((f) => <option value={f.slug}>{f.label}</option>)}
+			</select>
+		</label>
+	</div>
+
+	<p class="cal-count num" id="cal-count" aria-live="polite"></p>
+
+	<div class="cal-actions" id="cal-actions">
+		<a class="cal-btn" id="cal-google" target="_blank" rel="noopener">Google Calendar</a>
+		<a class="cal-btn" id="cal-apple">Apple / other apps</a>
+		<a class="cal-btn" id="cal-outlook" target="_blank" rel="noopener">Outlook.com</a>
+		<a class="cal-btn" id="cal-office" target="_blank" rel="noopener">Microsoft 365</a>
+	</div>
+
+	<div class="cal-copy">
+		<label class="sr-only" for="cal-url">Calendar link</label>
+		<input id="cal-url" type="text" readonly />
+		<button type="button" class="cal-btn" id="cal-copy">Copy link</button>
+	</div>
+
+	<p class="cal-note">Your calendar updates automatically. Google may take up to 24 h to show changes.</p>
+</dialog>
+
+<script type="application/json" id="cal-feeds" set:html={JSON.stringify(feeds)} />
+
+<script>
+	type FeedInfo = { name: string; count: number; url: string };
+
+	const dialog = document.getElementById('cal-dialog') as HTMLDialogElement;
+	const feeds: Record<string, FeedInfo> = JSON.parse(document.getElementById('cal-feeds')!.textContent || '{}');
+	const city = document.getElementById('cal-city') as HTMLSelectElement;
+	const format = document.getElementById('cal-format') as HTMLSelectElement;
+	const count = document.getElementById('cal-count')!;
+	const actions = document.getElementById('cal-actions')!;
+	const urlInput = document.getElementById('cal-url') as HTMLInputElement;
+	const copyBtn = document.getElementById('cal-copy') as HTMLButtonElement;
+	const links = {
+		google: document.getElementById('cal-google') as HTMLAnchorElement,
+		apple: document.getElementById('cal-apple') as HTMLAnchorElement,
+		outlook: document.getElementById('cal-outlook') as HTMLAnchorElement,
+		office: document.getElementById('cal-office') as HTMLAnchorElement,
+	};
+	let opener: HTMLElement | null = null;
+
+	function slugify(s: string) {
+		return s
+			.normalize('NFD')
+			.replace(/[̀-ͯ]/g, '')
+			.toLowerCase()
+			.replace(/[^a-z0-9]+/g, '-')
+			.replace(/^-+|-+$/g, '');
+	}
+
+	function render() {
+		const slug = [city.value, format.value].filter(Boolean).join('__') || 'all';
+		const feed = feeds[slug];
+		const n = feed ? feed.count : 0;
+		count.textContent =
+			n === 0
+				? 'No upcoming events match. Try "All" for one of the filters.'
+				: n === 1
+					? '1 upcoming event matches'
+					: `${n} upcoming events match`;
+		actions.classList.toggle('disabled', !feed || n === 0);
+		copyBtn.disabled = !feed || n === 0;
+
+		if (!feed || n === 0) {
+			Object.values(links).forEach((a) => {
+				a.removeAttribute('href');
+				a.setAttribute('aria-disabled', 'true');
+			});
+			urlInput.value = '';
+			return;
+		}
+		const https = feed.url;
+		const webcal = https.replace(/^https:/, 'webcal:');
+		const q = `url=${encodeURIComponent(https)}&name=${encodeURIComponent(feed.name)}`;
+		links.google.href = `https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}`;
+		links.apple.href = webcal;
+		links.outlook.href = `https://outlook.live.com/calendar/0/addfromweb?${q}`;
+		links.office.href = `https://outlook.office.com/calendar/0/addfromweb?${q}`;
+		Object.values(links).forEach((a) => a.removeAttribute('aria-disabled'));
+		urlInput.value = https;
+		copyBtn.textContent = 'Copy link';
+	}
+
+	function setIfPresent(select: HTMLSelectElement, value: string) {
+		select.value = Array.from(select.options).some((o) => o.value === value) ? value : '';
+	}
+
+	// Pre-fill from the homepage filters in the URL: one ticked city, one format.
+	function prefill() {
+		const params = new URLSearchParams(location.search);
+		const cities = params.getAll('city').filter(Boolean);
+		setIfPresent(city, cities.length === 1 ? slugify(cities[0]) : '');
+		setIfPresent(format, slugify(params.get('format') || ''));
+	}
+
+	document.querySelectorAll<HTMLElement>('[data-cal-open]').forEach((btn) => {
+		btn.addEventListener('click', () => {
+			opener = btn;
+			prefill();
+			render();
+			dialog.showModal();
+		});
+	});
+
+	dialog.addEventListener('close', () => opener?.focus());
+	document.getElementById('cal-close')!.addEventListener('click', () => dialog.close());
+	// A click on the backdrop lands on the <dialog> element itself.
+	dialog.addEventListener('click', (ev) => {
+		if (ev.target === dialog) dialog.close();
+	});
+	city.addEventListener('change', render);
+	format.addEventListener('change', render);
+
+	copyBtn.addEventListener('click', async () => {
+		try {
+			await navigator.clipboard.writeText(urlInput.value);
+			copyBtn.textContent = 'Copied';
+		} catch {
+			urlInput.focus();
+			urlInput.select();
+			copyBtn.textContent = 'Press Ctrl+C';
+		}
+	});
+</script>
+
+<style>
+	.cal-dialog {
+		width: min(480px, calc(100vw - 32px));
+		max-height: calc(100dvh - 32px);
+		padding: 24px;
+		border: 1px solid var(--ink);
+		border-radius: 0;
+		background: var(--surface);
+		color: var(--ink);
+		box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+	}
+	.cal-dialog::backdrop {
+		background: rgba(0, 0, 0, 0.35);
+	}
+	.cal-head {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 12px;
+	}
+	.cal-head h2 {
+		margin: 0;
+		font-size: 1.25rem;
+		font-weight: 600;
+		letter-spacing: -0.01em;
+	}
+	.cal-close {
+		display: inline-flex;
+		width: 32px;
+		height: 32px;
+		margin: -6px -6px 0 0;
+		align-items: center;
+		justify-content: center;
+		background: none;
+		border: none;
+		color: var(--muted);
+		cursor: pointer;
+	}
+	.cal-close:hover {
+		color: var(--ink);
+	}
+	.cal-intro {
+		margin: 6px 0 20px;
+		font-size: 0.875rem;
+		color: var(--ink-2);
+	}
+	.cal-filters {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 16px;
+	}
+	.cal-filters label {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+		font-size: 0.75rem;
+		color: var(--muted);
+	}
+	.cal-filters select {
+		font: inherit;
+		font-size: 0.9rem;
+		padding: 6px 0;
+		border: none;
+		border-bottom: 1px solid var(--ink);
+		border-radius: 0;
+		background: transparent;
+		color: var(--ink);
+	}
+	.cal-count {
+		margin: 18px 0 14px;
+		font-size: 0.9rem;
+		font-weight: 600;
+	}
+	.cal-actions {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 8px;
+	}
+	.cal-btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 40px;
+		padding: 8px 12px;
+		font: inherit;
+		font-size: 0.875rem;
+		font-weight: 600;
+		text-align: center;
+		text-decoration: none;
+		color: var(--ink);
+		background: var(--surface);
+		border: 1px solid var(--ink);
+		border-radius: 0;
+		cursor: pointer;
+	}
+	.cal-btn:hover {
+		background: var(--ink);
+		color: var(--surface);
+	}
+	.cal-actions.disabled .cal-btn,
+	.cal-btn:disabled {
+		opacity: 0.35;
+		pointer-events: none;
+	}
+	.cal-copy {
+		display: flex;
+		gap: 8px;
+		margin-top: 8px;
+	}
+	.cal-copy input {
+		flex: 1;
+		min-width: 0;
+		font: inherit;
+		font-size: 0.8rem;
+		padding: 0 10px;
+		border: 1px solid var(--border);
+		border-radius: 0;
+		background: var(--bg);
+		color: var(--ink-2);
+	}
+	.cal-copy .cal-btn {
+		flex: none;
+	}
+	.cal-note {
+		margin: 16px 0 0;
+		font-size: 0.78rem;
+		color: var(--muted);
+	}
+	@media (max-width: 480px) {
+		.cal-dialog {
+			padding: 20px 16px;
+		}
+		.cal-filters,
+		.cal-actions {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

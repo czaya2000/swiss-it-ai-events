@@ -13,6 +13,7 @@ export default defineConfig({
 			filter: (page) =>
 				!page.includes('/thanks/') &&
 				!page.includes('/card/') &&
+				!page.includes('/calendar/') &&
 				!page.endsWith('social-feed.json'),
 		}),
 	],

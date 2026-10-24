@@ -133,6 +133,13 @@ const structuredData = [
 						{formats.map((f) => <option value={f}>{f}</option>)}
 					</select>
 				</label>
+				<button type="button" class="cal-cta" data-cal-open>
+					<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+						<rect x="3" y="5" width="18" height="16"></rect>
+						<path d="M3 10h18M8 3v4M16 3v4"></path>
+					</svg>
+					Save to my calendar
+				</button>
 			</div>
 
 			<div class="when-tabs" role="tablist" aria-label="Time range">
@@ -601,6 +608,25 @@ const structuredData = [
 		}
 		.multi-clear:hover {
 			color: var(--ink);
+		}
+		.cal-cta {
+			display: inline-flex;
+			align-items: center;
+			gap: 7px;
+			margin-left: auto;
+			font: inherit;
+			font-size: 0.875rem;
+			padding: 0 0 5px;
+			background: none;
+			border: none;
+			border-bottom: 1px solid transparent;
+			color: var(--muted);
+			cursor: pointer;
+			white-space: nowrap;
+		}
+		.cal-cta:hover {
+			color: var(--ink);
+			border-bottom-color: var(--ink);
 		}
 		.search-wrap {
 			display: flex;

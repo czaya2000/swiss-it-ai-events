@@ -44,6 +44,12 @@ run on demand via **workflow_dispatch**. Nothing about it depends on a personal 
   plain fetch. It handles both named groups and `/find/` keyword searches.
 - The push step rebases and retries: n8n writes card PNGs to `main` on its own
   cadence, so a plain push loses the race often enough to matter.
+- Calendar subscription feeds (`/calendar/*.ics`, one per city × format
+  combination) are generated inside `astro build` by
+  `src/pages/calendar/[feed].ics.ts`, so every refresh updates them with no
+  workflow change. UIDs are `<event id>@swissdataevents.ch` — never change the
+  event id or the UID format, or subscribers get duplicates. Check with
+  `npm run test:ics` after a build (needs Node ≥ 22.18; not run in CI).
 - Sources live in `SOURCES.md` and are re-read on every run — edit that file to change
   what gets checked; the workflow prompt does not hardcode a source list.
 

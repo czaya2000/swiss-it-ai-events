@@ -11,6 +11,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "validate": "node scripts/validate-events.mjs",
+    "test:ics": "node scripts/test-ics.mjs",
     "scrape:meetup": "node scripts/scrape-meetup.mjs"
   },
   "dependencies": {
@@ -21,6 +22,7 @@
     "esbuild": true
   },
   "devDependencies": {
+    "ical.js": "^2.2.1",
     "playwright": "^1.63.0"
   }
 }
