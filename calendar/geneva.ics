@@ -1,0 +1,268 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Geneva
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:coffee-and-prompt-008-geneva-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261024T093000
+DTEND;TZID=Europe/Zurich:20261024T113000
+SUMMARY:Coffee & Prompt #008
+LOCATION:Boréal Coffee\, Rue du Stand 60\, Geneva
+DESCRIPTION:The weekly Geneva builders’ coworking morning: work on your o
+ wn AI project alongside other makers\, share a lesson learned if you want 
+ to\, and talk through what is not working yet.\n\nOrganiser: Switzerland A
+ I Community\n\nDetails and registration: https://swissdataevents.ch/events
+ /coffee-and-prompt-008-geneva-2026/
+URL:https://swissdataevents.ch/events/coffee-and-prompt-008-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:build-your-own-assistant-meetings-geneva-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261025T093000
+DTEND;TZID=Europe/Zurich:20261025T123000
+SUMMARY:Build Your Own Assistant: Never Walk Into A Meeting Blind
+LOCATION:Voisins de Saint-Gervais\, Bd James-Fazy 8\, Geneva
+DESCRIPTION:Build an agent that briefs you on the person\, the company and 
+ the purpose before every meeting\, then drafts the follow-up the moment it
+  ends.\n\nOrganiser: AI Ready Professionals\n\nDetails and registration: h
+ ttps://swissdataevents.ch/events/build-your-own-assistant-meetings-geneva-
+ 2026/
+URL:https://swissdataevents.ch/events/build-your-own-assistant-meetings-gen
+ eva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:chalet-azure-romandie-car16-geneva-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261029T180000
+DTEND;TZID=Europe/Zurich:20261029T200000
+SUMMARY:CAR16 : IA en entreprise avec AI Foundry et sécurité des MCP
+LOCATION:Tesla Store Genève\, Rue de la Confédération 8\, Geneva
+DESCRIPTION:French-language Azure community evening in Geneva on enterprise
+  AI with Azure AI Foundry\, securing Model Context Protocol servers\, and 
+ modern cloud architecture and automation with GitHub Copilot.\n\nOrganiser
+ : Chalet Azure Romandie\n\nDetails and registration: https://swissdataeven
+ ts.ch/events/chalet-azure-romandie-car16-geneva-2026/
+URL:https://swissdataevents.ch/events/chalet-azure-romandie-car16-geneva-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:devops-geneve-giussani-tech-sovereignty-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261029T180000
+DTEND;TZID=Europe/Zurich:20261029T200000
+SUMMARY:Conversation avec Bruno Giussani sur l'emprise et la souveraineté 
+ technologique
+LOCATION:HEG Bâtiment C Nexus Agora\, Rue de la Tambourine 17\, Geneva
+DESCRIPTION:A French-language discussion with Swiss author and podcaster Br
+ uno Giussani on resisting technological capture and European dependence on
+  American digital infrastructure\, drawing on his Manuel de résistance à
+  l'emprise technologique.\n\nOrganiser: DevOps Genève\n\nDetails and regi
+ stration: https://swissdataevents.ch/events/devops-geneve-giussani-tech-so
+ vereignty-2026/
+URL:https://swissdataevents.ch/events/devops-geneve-giussani-tech-sovereign
+ ty-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fabric-power-bi-user-group-geneva-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261029T183000
+DTEND;TZID=Europe/Zurich:20261029T213000
+SUMMARY:Fabric & Power BI User Group Geneva 2026
+LOCATION:Impact Hub Geneva\, Rue Fendt 1
+DESCRIPTION:Fifth Romandie gathering of the Swiss Fabric & Power BI user gr
+ oup: MVP Alexandru Badiu on what the new Fabric Apps are good for and what
+  they cost\, then the latest news out of FabCon Europe\, followed by an ap
+ éro.\n\nOrganiser: MDW (My Data Works)\n\nDetails and registration: https
+ ://swissdataevents.ch/events/fabric-power-bi-user-group-geneva-2026/
+URL:https://swissdataevents.ch/events/fabric-power-bi-user-group-geneva-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:great-data-heist-geneva-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261029T173000
+DTEND;TZID=Europe/Zurich:20261029T233000
+SUMMARY:The Great Data Heist: Trust\, Power & Cyber Warfare
+LOCATION:Uptown Geneva\, Rue de la Servette 2
+DESCRIPTION:Cybersecurity experts and hackers unpack how data breaches actu
+ ally happen\, with live hacking demos and an immersive escape game.\n\nOrg
+ aniser: DatAfterwork Suisse\n\nDetails and registration: https://swissdata
+ events.ch/events/great-data-heist-geneva-2026/
+URL:https://swissdataevents.ch/events/great-data-heist-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:from-lab-to-market-geneva-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261030T180000
+DTEND;TZID=Europe/Zurich:20261030T210000
+SUMMARY:From Lab to Market: How Can Switzerland Turn World-Class AI Researc
+ h into World-Class Companies?
+LOCATION:Société de Lecture\, Grand-Rue 11\, Geneva
+DESCRIPTION:A panel with the presidents and vice-presidents of EPFL and ETH
+  Zurich\, GESDA and Proton on the three things Switzerland needs to turn i
+ ts AI research into companies — compute\, capital and data governance 
+ — and why the economic value has so far gone elsewhere.\n\nOrganiser: Ge
+ neva Center for Neutrality\n\nDetails and registration: https://swissdatae
+ vents.ch/events/from-lab-to-market-geneva-2026/
+URL:https://swissdataevents.ch/events/from-lab-to-market-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:coffee-and-prompt-009-geneva-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261031T093000
+DTEND;TZID=Europe/Zurich:20261031T113000
+SUMMARY:Coffee & Prompt #009 (Halloween edition)
+LOCATION:Central Geneva (venue to be confirmed)
+DESCRIPTION:A Halloween edition of the weekly Geneva builders’ coworking 
+ morning: bring your own AI project or side hustle\, optionally show a feat
+ ure or a lesson learned\, and get feedback from the room.\n\nOrganiser: Sw
+ itzerland AI Community\n\nDetails and registration: https://swissdataevent
+ s.ch/events/coffee-and-prompt-009-geneva-2026/
+URL:https://swissdataevents.ch/events/coffee-and-prompt-009-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:build-your-own-assistant-recaps-geneva-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261101T093000
+DTEND;TZID=Europe/Zurich:20261101T123000
+SUMMARY:Build Your Own Assistant: What Did I Even Get Done This Week?
+LOCATION:Voisins de Saint-Gervais\, Bd James-Fazy 8\, Geneva
+DESCRIPTION:Build an agent that produces daily and weekly recaps of your ow
+ n or your team's work\, alongside the industry and regulatory news that ac
+ tually affects you.\n\nOrganiser: AI Ready Professionals\n\nDetails and re
+ gistration: https://swissdataevents.ch/events/build-your-own-assistant-rec
+ aps-geneva-2026/
+URL:https://swissdataevents.ch/events/build-your-own-assistant-recaps-genev
+ a-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:build-your-own-assistant-writing-geneva-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261108T093000
+DTEND;TZID=Europe/Zurich:20261108T123000
+SUMMARY:Build Your Own Assistant: Time to Stop AI Slop
+LOCATION:Voisins de Saint-Gervais\, Bd James-Fazy 8\, Geneva
+DESCRIPTION:A session on getting an assistant to write in your own voice ra
+ ther than generic model output\, then turning the week's news into a post 
+ and a newsletter worth reading.\n\nOrganiser: AI Ready Professionals\n\nDe
+ tails and registration: https://swissdataevents.ch/events/build-your-own-a
+ ssistant-writing-geneva-2026/
+URL:https://swissdataevents.ch/events/build-your-own-assistant-writing-gene
+ va-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:unige-recherche-documentaire-ia-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261109T101500
+DTEND;TZID=Europe/Zurich:20261109T114500
+SUMMARY:UNIGE – Recherche documentaire et IA
+LOCATION:Uni Mail 2220\, Geneva
+DESCRIPTION:University of Geneva workshop on using AI tools for academic re
+ search.\n\nOrganiser: Université de Genève\n\nDetails and registration: 
+ https://swissdataevents.ch/events/unige-recherche-documentaire-ia-2026/
+URL:https://swissdataevents.ch/events/unige-recherche-documentaire-ia-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:business-leaders-evening-your-ai-your-data-geneva-2026@swissdataevents.
+ ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261112T173000
+DTEND;TZID=Europe/Zurich:20261112T210000
+SUMMARY:Business Leaders' Evening: Your AI\, your data\, under your roof
+LOCATION:LeBooster Genève\, Route de Jussy 35 (2nd floor)\, Thônex (Genev
+ a)
+DESCRIPTION:A French-language evening for SME leaders on getting value from
+  AI without giving up control of the data: three levels of sovereign AI\, 
+ a live demo of a fully offline model answering on a sample company’s doc
+ uments with per-employee permissions\, what the revised Swiss data protect
+ ion act expects of management\, and a networking apéro.\n\nOrganiser: ABA
+ XINFO / AXION / Keeping Life Simple\, hosted by CCI France Suisse\n\nDetai
+ ls and registration: https://swissdataevents.ch/events/business-leaders-ev
+ ening-your-ai-your-data-geneva-2026/
+URL:https://swissdataevents.ch/events/business-leaders-evening-your-ai-your
+ -data-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:generative-ai-geneve-5-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261112T183000
+DTEND;TZID=Europe/Zurich:20261112T203000
+SUMMARY:IA : meetup « Generative AI Genève » #5
+LOCATION:Foound\, Rue Jean-Dassier 7\, Geneva
+DESCRIPTION:Your data\, your models\, your infrastructure: ELCA and EPFL sp
+ in-off Anyway Systems on running LLMs locally or in a private cloud\, and 
+ on the trade-offs between performance\, sovereignty and cost when a compan
+ y wants generative AI without handing over its data.\n\nOrganiser: Generat
+ ive AI Genève\n\nDetails and registration: https://swissdataevents.ch/eve
+ nts/generative-ai-geneve-5-2026/
+URL:https://swissdataevents.ch/events/generative-ai-geneve-5-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:geneva-ai-conference-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261125T180000
+DTEND;TZID=Europe/Zurich:20261125T210000
+SUMMARY:The Geneva AI Conference 2026
+LOCATION:Venue to be confirmed\, Geneva
+DESCRIPTION:An evening on enterprise AI strategy and returns\, opened by Ge
+ neva city executive councillor Joëlle Bertossa and built around a panel w
+ ith IBM\, SAP\, Hostelworld and Executive AI. The venue is still to be con
+ firmed.\n\nOrganiser: Startup Network Europe\n\nDetails and registration: 
+ https://swissdataevents.ch/events/geneva-ai-conference-2026/
+URL:https://swissdataevents.ch/events/geneva-ai-conference-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

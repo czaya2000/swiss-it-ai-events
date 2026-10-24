@@ -1,0 +1,128 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Lausanne
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:data-stewards-master-class-prilly-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261027T150000
+DTEND;TZID=Europe/Zurich:20261027T180000
+SUMMARY:The Data Stewards Master Class with Stefaan Verhulst
+LOCATION:unlimitrust campus\, Prilly (Lausanne)
+DESCRIPTION:A limited-places afternoon master class on data stewardship —
+  who holds responsibility for data being shared\, and how to organise that
+  in practice — held the day before the Swiss Data Space Forum and closin
+ g with a networking apéro.\n\nOrganiser: Swiss Data Alliance / digitalswi
+ tzerland\n\nDetails and registration: https://swissdataevents.ch/events/da
+ ta-stewards-master-class-prilly-2026/
+URL:https://swissdataevents.ch/events/data-stewards-master-class-prilly-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:leading-data-conference-switzerland-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261027T133000
+DTEND;TZID=Europe/Zurich:20261027T200000
+SUMMARY:Leading Data Conference Switzerland 2026
+LOCATION:IMD\, Lausanne
+DESCRIPTION:DAMA Switzerland's annual data leadership conference at IMD Lau
+ sanne\, covering data modelling\, data-as-an-asset workshops\, and CDMP ce
+ rtification.\n\nOrganiser: DAMA Switzerland — Zurich Chapter\n\nDetails 
+ and registration: https://swissdataevents.ch/events/leading-data-conferenc
+ e-switzerland-2026/
+URL:https://swissdataevents.ch/events/leading-data-conference-switzerland-2
+ 026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-data-space-forum-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261028T090000
+DTEND;TZID=Europe/Zurich:20261028T170000
+SUMMARY:Swiss Data Space Forum 2026: Unlocking Data for AI
+LOCATION:unlimitrust campus\, Prilly (Lausanne)
+DESCRIPTION:National forum on data governance and data spaces for AI\, host
+ ed at unlimitrust.\n\nOrganiser: Swiss Data Alliance / digitalswitzerland\
+ n\nDetails and registration: https://swissdataevents.ch/events/swiss-data-
+ space-forum-2026/
+URL:https://swissdataevents.ch/events/swiss-data-space-forum-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c4dt-ai-sovereignty-conference-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261110T093000
+DTEND;TZID=Europe/Zurich:20261110T180000
+SUMMARY:C4DT Conference on AI Sovereignty: Charting Switzerland’s Path
+LOCATION:Starling Hotel\, 1025 Saint-Sulpice\, Saint-Sulpice (Lausanne)
+DESCRIPTION:A full day on how Switzerland builds strategic independence in 
+ AI between US and Chinese dominance — lessons from other middle powers\,
+  Swiss research including the Apertus foundation model\, industry deployme
+ nt realities\, and concrete recommendations for national strategy.\n\nOrga
+ niser: Center for Digital Trust (C4DT)\, EPFL\n\nDetails and registration:
+  https://swissdataevents.ch/events/c4dt-ai-sovereignty-conference-2026/
+URL:https://swissdataevents.ch/events/c4dt-ai-sovereignty-conference-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sdsc-mlops-introduction-epfl-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261117T090000
+DTEND;TZID=Europe/Zurich:20261117T170000
+SUMMARY:AI in Production: Introduction to MLOps — Training at EPFL
+LOCATION:EPFL\, Lausanne
+DESCRIPTION:One-day SDSC training on designing\, deploying and operating ML
+  systems at scale — version control\, CI/CD\, experiment tracking\, moni
+ toring\, drift detection and automated retraining. Registration closes 24 
+ September.\n\nOrganiser: Swiss Data Science Center\n\nDetails and registra
+ tion: https://swissdataevents.ch/events/sdsc-mlops-introduction-epfl-2026/
+URL:https://swissdataevents.ch/events/sdsc-mlops-introduction-epfl-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:night-of-data-talents-lausanne-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261217T173000
+DTEND;TZID=Europe/Zurich:20261217T233000
+SUMMARY:The Night of Data Talents: Startup Edition
+LOCATION:Cercle des Bains\, Lausanne
+DESCRIPTION:Swiss data startups pitch to an investor panel with community v
+ oting\, capping the year for the Suisse Romande data scene.\n\nOrganiser: 
+ DatAfterwork Suisse\n\nDetails and registration: https://swissdataevents.c
+ h/events/night-of-data-talents-lausanne-2026/
+URL:https://swissdataevents.ch/events/night-of-data-talents-lausanne-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

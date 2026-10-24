@@ -1,0 +1,100 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Zurich – Networking
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:herimpact-who-decides-zurich-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261106T180000
+DTEND;TZID=Europe/Zurich:20261106T200000
+SUMMARY:HerImpact 2026: Who Decides — You or AI?
+LOCATION:Im Viadukt\, Zurich
+DESCRIPTION:Talks and a panel on who stays accountable when AI shapes an or
+ ganisational decision — who can question it\, correct it or stop it — 
+ drawing on current Swiss and Japanese research and real cases\, closing wi
+ th questions the group puts forward for the 2027 Geneva summit.\n\nOrganis
+ er: SOTRAI (Source of Trust in AI)\n\nDetails and registration: https://sw
+ issdataevents.ch/events/herimpact-who-decides-zurich-2026/
+URL:https://swissdataevents.ch/events/herimpact-who-decides-zurich-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:data-protection-tia-ai-startups-zurich-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261110T090000
+DTEND;TZID=Europe/Zurich:20261110T110000
+SUMMARY:Navigating Data Protection and Transfer Impact Assessments for AI S
+ tartups
+LOCATION:AI Startup Center\, Technopark Zürich\, Zurich
+DESCRIPTION:Breakfast session with lawyers from Wenger Vieli on when a Tran
+ sfer Impact Assessment is actually required for cross-border data transfer
+ s\, and how to keep them manageable as an AI company.\n\nOrganiser: AI Sta
+ rtup Center / Wenger Vieli\n\nDetails and registration: https://swissdatae
+ vents.ch/events/data-protection-tia-ai-startups-zurich-2026/
+URL:https://swissdataevents.ch/events/data-protection-tia-ai-startups-zuric
+ h-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-startup-center-community-meetup-november-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261112T090000
+DTEND;TZID=Europe/Zurich:20261112T103000
+SUMMARY:AI Startup Center Community Meetup — November Edition
+LOCATION:AI Startup Center\, Technopark Zürich\, Zurich
+DESCRIPTION:A deliberately informal morning meetup over coffee for the cent
+ re’s AI startups and corporate partners — no agenda and no presentatio
+ ns\, just conversations about partnerships\, where AI is heading and what 
+ is actually hard right now.\n\nOrganiser: AI Startup Center\n\nDetails and
+  registration: https://swissdataevents.ch/events/ai-startup-center-communi
+ ty-meetup-november-2026/
+URL:https://swissdataevents.ch/events/ai-startup-center-community-meetup-no
+ vember-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-ai-summit-satellite-asset-management-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261117T140000
+DTEND;TZID=Europe/Zurich:20261117T160000
+SUMMARY:Satellite Event: From Data to Decisions — AI in Asset Management
+LOCATION:Beethovenstrasse 48\, Zurich
+DESCRIPTION:A Swiss AI Summit satellite session on how asset managers turn 
+ increasingly complex data into usable investment insight\, and where AI ma
+ kes a genuine difference rather than noise.\n\nOrganiser: Swiss AI Summit\
+ n\nDetails and registration: https://swissdataevents.ch/events/swiss-ai-su
+ mmit-satellite-asset-management-2026/
+URL:https://swissdataevents.ch/events/swiss-ai-summit-satellite-asset-manag
+ ement-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

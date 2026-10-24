@@ -1,0 +1,71 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Immensee – Workshop
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:schwyz-next-ki-agenten-work-immensee-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261124T090000
+DTEND;TZID=Europe/Zurich:20261124T160000
+SUMMARY:KI-Agenten & -Work: Skills und Anbindungen für konkrete Entlastung
+  im Alltag
+LOCATION:Hohle Gasse AG\, Coworking «Connect»\, Artherstrasse 60\, Immens
+ ee
+DESCRIPTION:A full German-language day with Michael Kyburz on getting AI to
+  take over recurring work: three base skills\, how to build your own\, and
+  wiring assistants into calendar\, mail and project tools so multi-step wo
+ rkflows run with clear checkpoints for human review. Fifteen places\, and 
+ a paid ChatGPT or Claude subscription is required.\n\nOrganiser: Schwyz Ne
+ xt\n\nDetails and registration: https://swissdataevents.ch/events/schwyz-n
+ ext-ki-agenten-work-immensee-2026/
+URL:https://swissdataevents.ch/events/schwyz-next-ki-agenten-work-immensee-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:schwyz-next-ki-strategie-governance-immensee-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261201T170000
+DTEND;TZID=Europe/Zurich:20261201T183000
+SUMMARY:KI-Strategie und -Governance für KMUs
+LOCATION:Hohle Gasse AG\, Coworking «Connect»\, Artherstrasse 60\, Immens
+ ee
+DESCRIPTION:A 90-minute German-language session for SME decision-makers on 
+ steering generative AI use rather than letting it spread: setting a strate
+ gic frame\, drafting an internal AI policy\, weighing data-protection\, li
+ ability and wrong-output risks\, and planning a safe rollout under Swiss d
+ ata protection law and the EU AI Act. Fifteen places.\n\nOrganiser: Schwyz
+  Next\n\nDetails and registration: https://swissdataevents.ch/events/schwy
+ z-next-ki-strategie-governance-immensee-2026/
+URL:https://swissdataevents.ch/events/schwyz-next-ki-strategie-governance-i
+ mmensee-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

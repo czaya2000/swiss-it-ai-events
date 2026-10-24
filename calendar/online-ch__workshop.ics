@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Online (CH) – Workshop
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:claude-code-workshop-beginners-geneva-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261029T190000
+DTEND;TZID=Europe/Zurich:20261029T210000
+SUMMARY:Claude Code Workshop for Beginners
+LOCATION:Online
+DESCRIPTION:A two-hour online beginners' session from the Geneva-based Swit
+ zerland AI Community on getting started with Claude Code\, working through
+  a small project with instructors on hand for the exercises.\n\nOrganiser:
+  Switzerland AI Community\n\nDetails and registration: https://swissdataev
+ ents.ch/events/claude-code-workshop-beginners-geneva-2026/
+URL:https://swissdataevents.ch/events/claude-code-workshop-beginners-geneva
+ -2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

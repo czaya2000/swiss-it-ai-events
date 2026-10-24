@@ -1,0 +1,95 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Geneva – Workshop
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:build-your-own-assistant-meetings-geneva-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261025T093000
+DTEND;TZID=Europe/Zurich:20261025T123000
+SUMMARY:Build Your Own Assistant: Never Walk Into A Meeting Blind
+LOCATION:Voisins de Saint-Gervais\, Bd James-Fazy 8\, Geneva
+DESCRIPTION:Build an agent that briefs you on the person\, the company and 
+ the purpose before every meeting\, then drafts the follow-up the moment it
+  ends.\n\nOrganiser: AI Ready Professionals\n\nDetails and registration: h
+ ttps://swissdataevents.ch/events/build-your-own-assistant-meetings-geneva-
+ 2026/
+URL:https://swissdataevents.ch/events/build-your-own-assistant-meetings-gen
+ eva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:build-your-own-assistant-recaps-geneva-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261101T093000
+DTEND;TZID=Europe/Zurich:20261101T123000
+SUMMARY:Build Your Own Assistant: What Did I Even Get Done This Week?
+LOCATION:Voisins de Saint-Gervais\, Bd James-Fazy 8\, Geneva
+DESCRIPTION:Build an agent that produces daily and weekly recaps of your ow
+ n or your team's work\, alongside the industry and regulatory news that ac
+ tually affects you.\n\nOrganiser: AI Ready Professionals\n\nDetails and re
+ gistration: https://swissdataevents.ch/events/build-your-own-assistant-rec
+ aps-geneva-2026/
+URL:https://swissdataevents.ch/events/build-your-own-assistant-recaps-genev
+ a-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:build-your-own-assistant-writing-geneva-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261108T093000
+DTEND;TZID=Europe/Zurich:20261108T123000
+SUMMARY:Build Your Own Assistant: Time to Stop AI Slop
+LOCATION:Voisins de Saint-Gervais\, Bd James-Fazy 8\, Geneva
+DESCRIPTION:A session on getting an assistant to write in your own voice ra
+ ther than generic model output\, then turning the week's news into a post 
+ and a newsletter worth reading.\n\nOrganiser: AI Ready Professionals\n\nDe
+ tails and registration: https://swissdataevents.ch/events/build-your-own-a
+ ssistant-writing-geneva-2026/
+URL:https://swissdataevents.ch/events/build-your-own-assistant-writing-gene
+ va-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:unige-recherche-documentaire-ia-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261109T101500
+DTEND;TZID=Europe/Zurich:20261109T114500
+SUMMARY:UNIGE – Recherche documentaire et IA
+LOCATION:Uni Mail 2220\, Geneva
+DESCRIPTION:University of Geneva workshop on using AI tools for academic re
+ search.\n\nOrganiser: Université de Genève\n\nDetails and registration: 
+ https://swissdataevents.ch/events/unige-recherche-documentaire-ia-2026/
+URL:https://swissdataevents.ch/events/unige-recherche-documentaire-ia-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

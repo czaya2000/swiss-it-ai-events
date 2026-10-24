@@ -1,0 +1,63 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Basel – Conference
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:vibe-code-fest-basel-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261024T100000
+DTEND;TZID=Europe/Zurich:20261024T213000
+SUMMARY:Vibe Code Fest Basel 2026
+LOCATION:FHNW Campus Dreispitz\, Basel
+DESCRIPTION:A one-day unconference on building software with AI: morning ke
+ ynotes and community talks on vibe coding with design systems\, AI in lab 
+ software and vibe marketing\, a panel on where the money goes once softwar
+ e is cheap\, then a five-hour build sprint ending in community voting\, pi
+ tches and an awards ceremony.\n\nOrganiser: Vibe Code Fest\n\nDetails and 
+ registration: https://swissdataevents.ch/events/vibe-code-fest-basel-2026/
+URL:https://swissdataevents.ch/events/vibe-code-fest-basel-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swat4hcls-basel-2027@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270205
+SUMMARY:SWAT4HCLS 2027
+LOCATION:University of Basel\, Petersplatz 1
+DESCRIPTION:The 15th edition of the long-running international conference o
+ n semantics in healthcare and life sciences — ontologies\, knowledge gra
+ phs and AI — with keynotes\, tutorials and a dedicated biohackathon day 
+ in Basel.\n\nOrganiser: SWAT4HCLS / University of Basel\n\nDetails and reg
+ istration: https://swissdataevents.ch/events/swat4hcls-basel-2027/
+URL:https://swissdataevents.ch/events/swat4hcls-basel-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

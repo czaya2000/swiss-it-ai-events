@@ -1,0 +1,100 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Geneva – Meetup
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:chalet-azure-romandie-car16-geneva-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261029T180000
+DTEND;TZID=Europe/Zurich:20261029T200000
+SUMMARY:CAR16 : IA en entreprise avec AI Foundry et sécurité des MCP
+LOCATION:Tesla Store Genève\, Rue de la Confédération 8\, Geneva
+DESCRIPTION:French-language Azure community evening in Geneva on enterprise
+  AI with Azure AI Foundry\, securing Model Context Protocol servers\, and 
+ modern cloud architecture and automation with GitHub Copilot.\n\nOrganiser
+ : Chalet Azure Romandie\n\nDetails and registration: https://swissdataeven
+ ts.ch/events/chalet-azure-romandie-car16-geneva-2026/
+URL:https://swissdataevents.ch/events/chalet-azure-romandie-car16-geneva-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:devops-geneve-giussani-tech-sovereignty-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261029T180000
+DTEND;TZID=Europe/Zurich:20261029T200000
+SUMMARY:Conversation avec Bruno Giussani sur l'emprise et la souveraineté 
+ technologique
+LOCATION:HEG Bâtiment C Nexus Agora\, Rue de la Tambourine 17\, Geneva
+DESCRIPTION:A French-language discussion with Swiss author and podcaster Br
+ uno Giussani on resisting technological capture and European dependence on
+  American digital infrastructure\, drawing on his Manuel de résistance à
+  l'emprise technologique.\n\nOrganiser: DevOps Genève\n\nDetails and regi
+ stration: https://swissdataevents.ch/events/devops-geneve-giussani-tech-so
+ vereignty-2026/
+URL:https://swissdataevents.ch/events/devops-geneve-giussani-tech-sovereign
+ ty-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fabric-power-bi-user-group-geneva-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261029T183000
+DTEND;TZID=Europe/Zurich:20261029T213000
+SUMMARY:Fabric & Power BI User Group Geneva 2026
+LOCATION:Impact Hub Geneva\, Rue Fendt 1
+DESCRIPTION:Fifth Romandie gathering of the Swiss Fabric & Power BI user gr
+ oup: MVP Alexandru Badiu on what the new Fabric Apps are good for and what
+  they cost\, then the latest news out of FabCon Europe\, followed by an ap
+ éro.\n\nOrganiser: MDW (My Data Works)\n\nDetails and registration: https
+ ://swissdataevents.ch/events/fabric-power-bi-user-group-geneva-2026/
+URL:https://swissdataevents.ch/events/fabric-power-bi-user-group-geneva-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:generative-ai-geneve-5-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261112T183000
+DTEND;TZID=Europe/Zurich:20261112T203000
+SUMMARY:IA : meetup « Generative AI Genève » #5
+LOCATION:Foound\, Rue Jean-Dassier 7\, Geneva
+DESCRIPTION:Your data\, your models\, your infrastructure: ELCA and EPFL sp
+ in-off Anyway Systems on running LLMs locally or in a private cloud\, and 
+ on the trade-offs between performance\, sovereignty and cost when a compan
+ y wants generative AI without handing over its data.\n\nOrganiser: Generat
+ ive AI Genève\n\nDetails and registration: https://swissdataevents.ch/eve
+ nts/generative-ai-geneve-5-2026/
+URL:https://swissdataevents.ch/events/generative-ai-geneve-5-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

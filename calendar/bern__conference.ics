@@ -1,0 +1,84 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Bern – Conference
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ai-responsible-business-conduct-bern-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261102T100500
+DTEND;TZID=Europe/Zurich:20261102T120500
+SUMMARY:AI and Responsible Business Conduct
+LOCATION:Kursaal Bern\, Kornhausstrasse 3
+DESCRIPTION:A plenary session at the Swiss Forum on Business and Human Righ
+ ts on applying the UN Guiding Principles and OECD Guidelines to AI systems
+  in practice\, with UN representatives\, technology companies and civil so
+ ciety. Interpretation in German\, French and English.\n\nOrganiser: SECO /
+  Federal Department of Foreign Affairs\n\nDetails and registration: https:
+ //swissdataevents.ch/events/ai-responsible-business-conduct-bern-2026/
+URL:https://swissdataevents.ch/events/ai-responsible-business-conduct-bern-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dinacon-2026-bern@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261118T090000
+DTEND;TZID=Europe/Zurich:20261118T170000
+SUMMARY:DINAcon 2026
+LOCATION:Kongresszentrum Bern\, Zeughausgasse 41
+DESCRIPTION:Switzerland’s conference on digital sustainability — 36 ses
+ sions on open source\, open data\, digital sovereignty\, data protection a
+ nd copyright\, with 250+ attendees and a closing Hacknight.\n\nOrganiser: 
+ Verein CH Open\n\nDetails and registration: https://swissdataevents.ch/eve
+ nts/dinacon-2026-bern/
+URL:https://swissdataevents.ch/events/dinacon-2026-bern/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sdsc-connect-environmental-sciences-bern-2027@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20270203T090000
+DTEND;TZID=Europe/Zurich:20270203T163000
+SUMMARY:SDSC-Connect: Connecting Digital Environmental Sciences
+LOCATION:Central Bern venue to be announced
+DESCRIPTION:A day in Bern on making environmental data usable across discip
+ lines and institutions — data access and sharing\, data infrastructure\,
+  and the role of machine learning and AI across climate\, ecology\, hydrol
+ ogy\, the cryosphere\, natural hazards and agriculture\, with keynotes\, i
+ nvited talks\, break-outs and a poster fair. Seats are limited and the ven
+ ue is still to be announced.\n\nOrganiser: Swiss Data Science Center\n\nDe
+ tails and registration: https://swissdataevents.ch/events/sdsc-connect-env
+ ironmental-sciences-bern-2027/
+URL:https://swissdataevents.ch/events/sdsc-connect-environmental-sciences-b
+ ern-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

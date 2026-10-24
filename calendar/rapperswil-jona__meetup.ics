@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Rapperswil-Jona – Meetup
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:spec-driven-development-mit-ki-rapperswil-2026@swissdataevents.ch
+DTSTAMP:20261024T134407Z
+DTSTART;TZID=Europe/Zurich:20261029T180000
+DTEND;TZID=Europe/Zurich:20261029T210000
+SUMMARY:Spec-driven Development mit KI
+LOCATION:OST – Ostschweizer Fachhochschule\, Campus Rapperswil\, Obersees
+ trasse 10\, Rapperswil-Jona
+DESCRIPTION:Two German-language talks on the OST Rapperswil campus: Java Ch
+ ampion Simon Martinelli on driving development from specifications with AI
+ \, and Michael Inden on why algorithms and data structures matter more\, n
+ ot less\, once everyone can generate code — followed by networking.\n\nO
+ rganiser: OST – Ostschweizer Fachhochschule (MAS Software Engineering)\n
+ \nDetails and registration: https://swissdataevents.ch/events/spec-driven-
+ development-mit-ki-rapperswil-2026/
+URL:https://swissdataevents.ch/events/spec-driven-development-mit-ki-rapper
+ swil-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
