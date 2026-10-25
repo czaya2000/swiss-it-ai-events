@@ -1,0 +1,158 @@
+---
+import Base from '../../layouts/Base.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import { SITE_NAME, getUpcomingEvents } from '../../lib/events';
+import { feedHttpsUrl, listFeeds } from '../../lib/calendar-feeds';
+import { ENDPOINTS } from '../../lib/public-data';
+
+const upcoming = await getUpcomingEvents();
+// Single-dimension feeds only (all, each city, each format); the pairs are in the calendar modal.
+const feeds = listFeeds(upcoming).filter((f) => !(f.city && f.format));
+
+const title = `Data & feeds — ${SITE_NAME}`;
+const description = `The ${SITE_NAME} event list as JSON, RSS, iCalendar and llms.txt, for apps, feed readers and AI agents.`;
+
+const fields: [string, string][] = [
+	['id', 'Stable identifier. Never changes, even if the title or date is corrected.'],
+	['title', 'Event name as the organiser publishes it.'],
+	['start, end', 'ISO 8601. A date-time with the Zurich offset (e.g. 2026-10-29T17:30:00+01:00) when the time is known, otherwise a date.'],
+	['allDay', 'True when start and end are plain dates.'],
+	['dateLabel, time', 'Human-readable date range and the original time text.'],
+	['city, region', 'The exact place, and the main city it belongs to (e.g. Schlieren → Zurich).'],
+	['online', 'True for online-only events.'],
+	['venue', 'Venue name, or null.'],
+	['format', 'One of Meetup, Conference, Workshop, Networking, Webinar.'],
+	['topics', 'Short topic tags.'],
+	['cost, free', 'Price as published, and whether it is free.'],
+	['organiser', 'Who runs the event.'],
+	['description', 'One-sentence summary written by us.'],
+	['url', 'The event page on this site.'],
+	['registrationUrl', "The organiser's page, where people register."],
+	['verifiedVia', 'Where the details were checked.'],
+	['firstSeen', 'Date the event was first listed here.'],
+	['calendarFeed', 'iCalendar feed for the event\'s city.'],
+];
+---
+
+<Base title={title} description={description} path="/data/">
+	<SiteNav />
+
+	<main class="wrap legal">
+		<h1>Data &amp; feeds</h1>
+		<p class="intro">
+			The event list is free to use in apps, newsletters, calendars and AI assistants. Everything
+			below is rebuilt every Monday, Wednesday and Friday morning with the site. Only upcoming
+			events are included. Please link to the event's page on {SITE_NAME} when you reuse a listing.
+		</p>
+
+		<h2>Endpoints</h2>
+		<ul>
+			<li><a href={ENDPOINTS.json}><code>/events.json</code></a>: every upcoming event as JSON.</li>
+			<li><a href={ENDPOINTS.rss}><code>/rss.xml</code></a>: RSS feed, newest listings first.</li>
+			<li><a href={ENDPOINTS.llms}><code>/llms.txt</code></a>: a markdown summary for AI agents, with every upcoming event.</li>
+			<li><a href={ENDPOINTS.ics}><code>/calendar/all.ics</code></a>: iCalendar feed to subscribe to.</li>
+		</ul>
+
+		<h2>Calendar feeds</h2>
+		<p>Subscribe by URL in Google Calendar, Outlook or Apple Calendar. Times are Europe/Zurich.</p>
+		<ul class="feeds">
+			{feeds.map((f) => (
+				<li>
+					<a href={feedHttpsUrl(f.slug)}><code>{`/calendar/${f.slug}.ics`}</code></a>
+					<span>{f.name.replace(`${SITE_NAME} – `, '').replace(SITE_NAME, 'All events')} ({f.events.length})</span>
+				</li>
+			))}
+		</ul>
+
+		<h2>Fields in <code>/events.json</code></h2>
+		<dl class="fields">
+			{fields.map(([k, v]) => (
+				<>
+					<dt><code>{k}</code></dt>
+					<dd>{v}</dd>
+				</>
+			))}
+		</dl>
+
+		<h2>Notes</h2>
+		<p>
+			Every listing is checked against the organiser's own page, but details can change on their
+			side, so point people to the organiser's page before they go. Fields may be added over time;
+			existing ones are not renamed or removed without changing <code>version</code>.
+		</p>
+	</main>
+
+	<SiteFooter />
+
+	<style>
+		.legal {
+			padding: 24px 32px 64px;
+			max-width: 720px;
+		}
+		h1 {
+			font-size: clamp(1.6rem, 3vw, 2rem);
+			margin: 16px 0 8px;
+			letter-spacing: -0.01em;
+		}
+		h2 {
+			font-size: 0.95rem;
+			font-weight: 600;
+			margin: 28px 0 6px;
+		}
+		p,
+		li,
+		dd {
+			line-height: 1.65;
+			color: var(--ink-2);
+		}
+		p {
+			margin: 0;
+		}
+		.intro {
+			color: var(--muted);
+		}
+		ul {
+			margin: 6px 0 0;
+			padding-left: 18px;
+		}
+		.feeds {
+			list-style: none;
+			padding: 0;
+		}
+		.feeds li {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 4px 12px;
+		}
+		.feeds span {
+			color: var(--muted);
+		}
+		.fields {
+			display: grid;
+			grid-template-columns: max-content 1fr;
+			gap: 6px 20px;
+			margin: 8px 0 0;
+		}
+		.fields dd {
+			margin: 0;
+		}
+		code {
+			font-size: 0.85em;
+			background: var(--chip-bg);
+			padding: 1px 5px;
+		}
+		@media (max-width: 640px) {
+			.legal {
+				padding: 16px 18px 48px;
+			}
+			.fields {
+				grid-template-columns: 1fr;
+				gap: 0;
+			}
+			.fields dd {
+				margin-bottom: 10px;
+			}
+		}
+	</style>
+</Base>

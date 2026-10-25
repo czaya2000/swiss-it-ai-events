@@ -50,6 +50,15 @@ run on demand via **workflow_dispatch**. Nothing about it depends on a personal 
   workflow change. UIDs are `<event id>@swissdataevents.ch` — never change the
   event id or the UID format, or subscribers get duplicates. Check with
   `npm run test:ics` after a build (needs Node ≥ 22.18; not run in CI).
+- Ended events are **archived, not deleted**: the workflow's `npm run archive` step
+  (`scripts/archive-past.mjs`) moves events that ended more than 3 days ago to
+  `src/data/archive.json`. Their pages stay up with an "ended" banner and `noindex`,
+  and are left out of the sitemap, homepage, feeds and llms.txt. The refresh agent
+  must not delete past events or edit the archive.
+- Public data for apps and AI agents: `/events.json` (documented at `/data/`; never
+  rename or remove a field without bumping `DATA_VERSION` in `src/lib/public-data.ts`),
+  `/rss.xml`, `/llms.txt`. All built from upcoming events only. `robots.txt` welcomes
+  AI crawlers explicitly.
 - Sources live in `SOURCES.md` and are re-read on every run — edit that file to change
   what gets checked; the workflow prompt does not hardcode a source list.
 

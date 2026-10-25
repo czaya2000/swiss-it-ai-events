@@ -3,18 +3,22 @@ import Base from '../../layouts/Base.astro';
 import SiteNav from '../../components/SiteNav.astro';
 import SiteFooter from '../../components/SiteFooter.astro';
 import Subscribe from '../../components/Subscribe.astro';
-import { getCollection } from 'astro:content';
 import {
 	formatDateRange,
 	isFree,
+	isEnded,
 	eventUrl,
 	outboundUrl,
+	cityGroup,
+	getAllEvents,
+	getUpcomingEvents,
 	SITE_URL,
 	SITE_NAME,
 } from '../../lib/events';
+import { eventDateTimes } from '../../lib/ics';
 
 export async function getStaticPaths() {
-	const entries = await getCollection('events');
+	const entries = await getAllEvents();
 	return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
 }
 
@@ -26,14 +30,24 @@ const description = e.blurb;
 const isOnline = /online/i.test(e.city);
 const free = isFree(e.cost);
 const registerUrl = outboundUrl(e.url);
+const ended = isEnded(e);
+const when = eventDateTimes(e);
 
-const structuredData: Record<string, unknown>[] = [
+// An ended event's page stays up for old links but points people onward:
+// the next events in the same city, topped up with the next ones anywhere.
+const upcoming = ended ? await getUpcomingEvents() : [];
+const sameCity = upcoming.filter((u) => cityGroup(u.data.city) === cityGroup(e.city));
+const onward = [...sameCity, ...upcoming.filter((u) => !sameCity.includes(u))].slice(0, 3);
+const onwardLabel = sameCity.length >= 3 ? `Upcoming in ${cityGroup(e.city)}` : 'Upcoming events';
+
+const structuredData: Record<string, unknown>[] = ended ? [] : [
 	{
 		'@context': 'https://schema.org',
 		'@type': 'Event',
 		name: e.title,
-		startDate: e.date,
-		endDate: e.endDate ?? e.date,
+		startDate: when.start,
+		endDate: when.end,
+		image: [`${SITE_URL}/og-image.png`],
 		eventAttendanceMode: isOnline
 			? 'https://schema.org/OnlineEventAttendanceMode'
 			: 'https://schema.org/OfflineEventAttendanceMode',
@@ -48,7 +62,12 @@ const structuredData: Record<string, unknown>[] = [
 		description: e.blurb,
 		organizer: { '@type': 'Organization', name: e.organiser },
 		url: eventUrl(entry.id),
-		...(free ? { offers: { '@type': 'Offer', price: '0', priceCurrency: 'CHF', url: e.url } } : {}),
+		offers: {
+			'@type': 'Offer',
+			url: e.url,
+			availability: 'https://schema.org/InStock',
+			...(free ? { price: '0', priceCurrency: 'CHF' } : {}),
+		},
 	},
 	{
 		'@context': 'https://schema.org',
@@ -66,20 +85,39 @@ const structuredData: Record<string, unknown>[] = [
 	description={description}
 	path={`/events/${entry.id}/`}
 	structuredData={structuredData}
+	noindex={ended}
 >
 	<SiteNav />
 	<main class="wrap detail">
 		<a class="back" href="/">← All events</a>
 
-		<div class="detail-grid">
+		{
+			ended && (
+				<div class="ended" role="status">
+					<p class="ended-title">This event has ended.</p>
+					<p class="ended-note">
+						It took place on {dateLabel}. The details below are kept for reference.
+					</p>
+				</div>
+			)
+		}
+
+		<article class="detail-grid">
 			<div class="detail-main">
-				<p class="dateline num">{dateLabel}{e.time ? `, ${e.time}` : ''}</p>
+				<p class="dateline num">
+					<time datetime={when.start}>{dateLabel}</time>{e.time ? `, ${e.time}` : ''}
+				</p>
 				<h1>{e.title}</h1>
 				<p class="blurb">{e.blurb}</p>
 
 				<dl class="facts">
 					<dt>Dates</dt>
-					<dd class="num">{dateLabel}</dd>
+					<dd class="num">
+						<time datetime={e.date}>{formatDateRange(e.date)}</time>
+						{e.endDate && e.endDate !== e.date && (
+							<> – <time datetime={e.endDate}>{formatDateRange(e.endDate)}</time></>
+						)}
+					</dd>
 
 					{
 						e.time && (
@@ -120,29 +158,50 @@ const structuredData: Record<string, unknown>[] = [
 			</div>
 
 			<aside class="register">
-				<div class="register-card">
-					<p class="register-title">Register with the organiser</p>
-					<p class="register-note">
-						Registration is handled on {e.source}. We do not sell tickets or take a commission.
-					</p>
-					<a
-						class="btn accent register-btn"
-						href={registerUrl}
-						target="_blank"
-						rel="noopener"
-						data-outbound={e.source}
-					>
-						Go to {e.source} ↗
-					</a>
-				</div>
-				<p class="disclosure">
-					Every listing on {SITE_NAME} is checked against its original source page before
-					publishing. Details can change on the organiser's side — always confirm on the link
-					above before you go.
-				</p>
+				{
+					ended ? (
+						<div class="register-card">
+							<p class="register-title">{onwardLabel}</p>
+							<ul class="onward">
+								{onward.map((u) => (
+									<li>
+										<a href={`/events/${u.id}/`}>{u.data.title}</a>
+										<span class="num"><time datetime={u.data.date}>{formatDateRange(u.data.date, u.data.endDate)}</time>{`, ${u.data.city}`}</span>
+									</li>
+								))}
+							</ul>
+							<a class="btn accent register-btn" href="/">
+								See all upcoming events
+							</a>
+						</div>
+					) : (
+						<>
+							<div class="register-card">
+								<p class="register-title">Register with the organiser</p>
+								<p class="register-note">
+									Registration is handled on {e.source}. We do not sell tickets or take a commission.
+								</p>
+								<a
+									class="btn accent register-btn"
+									href={registerUrl}
+									target="_blank"
+									rel="noopener"
+									data-outbound={e.source}
+								>
+									Go to {e.source} ↗
+								</a>
+							</div>
+							<p class="disclosure">
+								Every listing on {SITE_NAME} is checked against its original source page before
+								publishing. Details can change on the organiser's side — always confirm on the link
+								above before you go.
+							</p>
+						</>
+					)
+				}
 				<Subscribe placement="event" compact />
 			</aside>
-		</div>
+		</article>
 	</main>
 
 	<SiteFooter>
@@ -234,6 +293,44 @@ const structuredData: Record<string, unknown>[] = [
 			width: 100%;
 			margin-top: 20px;
 			padding: 13px 16px;
+		}
+		.ended {
+			margin-top: 28px;
+			padding: 16px 20px;
+			border-left: 4px solid var(--accent);
+			background: var(--surface);
+		}
+		.ended-title {
+			margin: 0;
+			font-weight: 600;
+		}
+		.ended-note {
+			margin: 4px 0 0;
+			font-size: 0.9rem;
+			color: var(--muted);
+		}
+		.onward {
+			list-style: none;
+			padding: 0;
+			margin: 14px 0 0;
+		}
+		.onward li {
+			padding: 10px 0;
+			border-bottom: 1px solid var(--border);
+			font-size: 0.9rem;
+		}
+		.onward a {
+			display: block;
+			color: var(--ink);
+			font-weight: 600;
+			text-decoration: none;
+		}
+		.onward a:hover {
+			text-decoration: underline;
+		}
+		.onward span {
+			color: var(--muted);
+			font-size: 0.82rem;
 		}
 		.disclosure {
 			font-size: 0.82rem;

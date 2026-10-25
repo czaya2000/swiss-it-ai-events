@@ -12,7 +12,8 @@
     "astro": "astro",
     "validate": "node scripts/validate-events.mjs",
     "test:ics": "node scripts/test-ics.mjs",
-    "scrape:meetup": "node scripts/scrape-meetup.mjs"
+    "scrape:meetup": "node scripts/scrape-meetup.mjs",
+    "archive": "node scripts/archive-past.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

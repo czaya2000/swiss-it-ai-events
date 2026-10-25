@@ -7,9 +7,11 @@ interface Props {
 	description: string;
 	path: string;
 	structuredData?: Record<string, unknown>[];
+	/** Keep the page reachable but out of search results (e.g. ended events). */
+	noindex?: boolean;
 }
 
-const { title, description, path, structuredData = [] } = Astro.props;
+const { title, description, path, structuredData = [], noindex = false } = Astro.props;
 const canonical = new URL(path, SITE_URL).toString();
 const ogImage = new URL('/og-image.png', SITE_URL).toString();
 ---
@@ -17,7 +19,9 @@ const ogImage = new URL('/og-image.png', SITE_URL).toString();
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" sizes="32x32" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="generator" content={Astro.generator} />
 
@@ -31,8 +35,15 @@ const ogImage = new URL('/og-image.png', SITE_URL).toString();
 		<title>{title}</title>
 		<meta name="description" content={description} />
 		<link rel="canonical" href={canonical} />
+		{noindex && <meta name="robots" content="noindex, follow" />}
+
+		<!-- Machine-readable versions of the event list, for feed readers and AI agents -->
+		<link rel="alternate" type="application/rss+xml" title={`${SITE_NAME} — upcoming events`} href="/rss.xml" />
+		<link rel="alternate" type="application/json" title={`${SITE_NAME} — events (JSON)`} href="/events.json" />
+		<link rel="alternate" type="text/markdown" title={`${SITE_NAME} — llms.txt`} href="/llms.txt" />
 
 		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_CH" />
 		<meta property="og:site_name" content={SITE_NAME} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />

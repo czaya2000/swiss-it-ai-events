@@ -17,6 +17,7 @@ import {
 	SITE_NAME,
 	SITE_TAGLINE,
 	SITE_HEADLINE,
+	INSTAGRAM_URL,
 } from '../lib/events';
 import meta from '../data/meta.json';
 
@@ -48,6 +49,19 @@ const structuredData = [
 		name: SITE_NAME,
 		url: SITE_URL,
 		description: SITE_TAGLINE,
+		inLanguage: 'en',
+		publisher: { '@id': `${SITE_URL}/#organization` },
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'Organization',
+		'@id': `${SITE_URL}/#organization`,
+		name: SITE_NAME,
+		url: SITE_URL,
+		logo: `${SITE_URL}/apple-touch-icon.png`,
+		description: SITE_TAGLINE,
+		areaServed: { '@type': 'Country', name: 'Switzerland' },
+		sameAs: [INSTAGRAM_URL],
 	},
 	{
 		'@context': 'https://schema.org',
@@ -182,7 +196,7 @@ const structuredData = [
 										.toLowerCase()}
 								>
 									<a class="row-link" href={`/events/${e.id}/`}>
-										<div class="spine">
+										<time class="spine" datetime={e.date}>
 											<span class="day num">{spine.day}</span>
 											<span class="dm">
 												{spine.weekday}, {spine.month}
@@ -192,7 +206,7 @@ const structuredData = [
 													to {endSpine.day} {endSpine.month}
 												</span>
 											)}
-										</div>
+										</time>
 										<div class="content">
 											<h2 class="title">
 												{eNew && <span class="new-dot" aria-hidden="true" />}

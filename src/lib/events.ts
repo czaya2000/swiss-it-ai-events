@@ -3,6 +3,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 export const NEW_WINDOW_DAYS = 5;
 export const SITE_URL = 'https://swissdataevents.ch';
 export const SITE_NAME = 'Swiss Data Events';
+export const INSTAGRAM_URL = 'https://www.instagram.com/swissdataevents/';
 export const SITE_TAGLINE =
 	"A curated, hand-verified list of upcoming data, AI, and IT events across Switzerland. No noise, no expired listings — just what's worth your time.";
 
@@ -51,6 +52,20 @@ export async function getUpcomingEvents(): Promise<EventEntry[]> {
 	return entries
 		.filter((e) => (e.data.endDate ?? e.data.date) >= t)
 		.sort((a, b) => a.data.date.localeCompare(b.data.date));
+}
+
+/** True once the event's last day is before today. */
+export function isEnded(data: { date: string; endDate?: string }, ref = today()): boolean {
+	return (data.endDate ?? data.date) < ref;
+}
+
+/** Live events plus archived ones, for building every event page. A live
+    entry wins if an id is in both files. */
+export async function getAllEvents(): Promise<EventEntry[]> {
+	const live = await getCollection('events');
+	const ids = new Set(live.map((e) => e.id));
+	const archived = (await getCollection('archive')).filter((e) => !ids.has(e.id));
+	return [...live, ...(archived as unknown as EventEntry[])];
 }
 
 // Suburbs and nearby towns that the homepage City filter folds into a main

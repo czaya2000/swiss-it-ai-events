@@ -19,6 +19,7 @@ import { readFileSync } from 'node:fs';
 
 const EVENTS_PATH = 'src/data/events.json';
 const META_PATH = 'src/data/meta.json';
+const ARCHIVE_PATH = 'src/data/archive.json';
 
 const FORMATS = ['Meetup', 'Conference', 'Workshop', 'Networking', 'Webinar'];
 const REQUIRED = [
@@ -103,6 +104,18 @@ events.forEach((event, i) => {
 		}
 	}
 });
+
+// archive.json holds ended events (scripts/archive-past.mjs). It only needs to
+// be a valid array with ids; the Astro schema checks the fields at build time.
+try {
+	const archive = JSON.parse(readFileSync(ARCHIVE_PATH, 'utf8'));
+	if (!Array.isArray(archive)) fail(`${ARCHIVE_PATH}: expected a top-level array`);
+	else archive.forEach((e, i) => {
+		if (!e?.id) fail(`${ARCHIVE_PATH}[${i}]: missing id`);
+	});
+} catch (error) {
+	fail(`${ARCHIVE_PATH}: ${error.message}`);
+}
 
 // meta.json drives the site's "Last scanned" line and must be refreshed every run,
 // so a stale or malformed timestamp is a real failure, not a cosmetic one.

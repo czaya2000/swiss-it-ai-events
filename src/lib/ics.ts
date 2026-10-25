@@ -131,7 +131,45 @@ export function parseTime(text?: string): { start: number; end?: number } | null
 	return start < 1440 ? { start } : null;
 }
 
-const SHORT_DATE = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' });
+/** YYYY-MM-DD of the last Sunday of a month (month is 1-based). */
+function lastSunday(year: number, month: number): string {
+	const d = new Date(Date.UTC(year, month, 0)); // last day of `month`
+	d.setUTCDate(d.getUTCDate() - d.getUTCDay());
+	return d.toISOString().slice(0, 10);
+}
+
+/** Europe/Zurich UTC offset on a given local date: CEST from the last Sunday
+    of March, CET from the last Sunday of October (same rule as VTIMEZONE). */
+export function zurichOffset(iso: string): '+01:00' | '+02:00' {
+	const year = Number(iso.slice(0, 4));
+	return iso >= lastSunday(year, 3) && iso < lastSunday(year, 10) ? '+02:00' : '+01:00';
+}
+
+/** ISO 8601 local date-time with the Zurich offset, e.g. 2026-10-29T17:30:00+01:00. */
+export function isoDateTime(iso: string, minutes: number): string {
+	const day = addDays(iso, Math.floor(minutes / 1440));
+	const m = ((minutes % 1440) + 1440) % 1440;
+	const hh = String(Math.floor(m / 60)).padStart(2, '0');
+	const mm = String(m % 60).padStart(2, '0');
+	return `${day}T${hh}:${mm}:00${zurichOffset(day)}`;
+}
+
+/** Start and end as schema.org-style values: date-times when the time can be
+    parsed (single-day events only), plain dates otherwise. */
+export function eventDateTimes(e: { date: string; endDate?: string; time?: string }): {
+	start: string;
+	end: string;
+} {
+	const multiDay = !!e.endDate && e.endDate !== e.date;
+	const time = multiDay ? null : parseTime(e.time);
+	if (!time) return { start: e.date, end: e.endDate ?? e.date };
+	return {
+		start: isoDateTime(e.date, time.start),
+		end: isoDateTime(e.date, time.end ?? time.start + DEFAULT_MINUTES),
+	};
+}
+
+const SHORT_DATE =new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' });
 
 function eventLines(e: IcsEvent, dtstamp: string): string[] {
 	const end = e.endDate && e.endDate !== e.date ? e.endDate : undefined;

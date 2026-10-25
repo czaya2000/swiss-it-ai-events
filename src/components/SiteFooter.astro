@@ -11,6 +11,7 @@ const SHOW_LINKS = false;
 
 <footer class="site-footer wrap">
 	<p><slot>{SITE_NAME}. <a href="/">Back to all events</a>.</slot></p>
+	<p class="footer-data"><a href="/data/">Data &amp; feeds</a> for apps and AI agents</p>
 	{
 		SHOW_LINKS && (
 			<nav class="footer-links" aria-label="Site">
@@ -25,6 +26,14 @@ const SHOW_LINKS = false;
 </footer>
 
 <style>
+	.footer-data {
+		margin-top: 8px;
+		font-size: 0.82rem;
+		color: var(--muted);
+	}
+	.footer-data a {
+		color: inherit;
+	}
 	.footer-links {
 		display: flex;
 		flex-wrap: wrap;
