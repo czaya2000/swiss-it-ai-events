@@ -13,6 +13,7 @@ import {
 	formatLastScan,
 	weekStart,
 	weekBand,
+	today,
 	SITE_URL,
 	SITE_NAME,
 	SITE_TAGLINE,
@@ -29,11 +30,14 @@ const cities = [...new Set(events.map((e) => cityGroup(e.city)))].sort();
 const formats = [...new Set(events.map((e) => e.format))].sort();
 
 // Events arrive sorted by date, so grouping is a single pass. Each group is
-// the week the event STARTS in; a multi-day event sits in its start week.
+// the week the event STARTS in; a multi-day event sits in its start week,
+// except one that is already running (e.g. a two-month series), which sits
+// in the current week rather than under a week that is long gone.
+const todayIso = today();
 type Row = (typeof events)[number];
 const groups: { band: ReturnType<typeof weekBand>; rows: Row[] }[] = [];
 for (const e of events) {
-	const key = weekStart(e.date);
+	const key = weekStart(e.date < todayIso ? todayIso : e.date);
 	const last = groups[groups.length - 1];
 	if (last && last.band.key === key) last.rows.push(e);
 	else groups.push({ band: weekBand(key), rows: [e] });
