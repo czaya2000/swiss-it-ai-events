@@ -2469,5 +2469,67 @@
     "source": "sairop.swiss",
     "blurb": "An evening on AI, information and trust: how machine-generated content is changing our ability to tell truth from manipulation, and what it takes to keep human judgement intact in a world shaped by algorithms.",
     "firstSeen": "2026-09-18"
+  },
+  {
+    "id": "bern-hack-night-spec-driven-development-2026",
+    "title": "Vibe Coding war gestern. Spec-Driven Development für Enterprise-Software",
+    "date": "2026-10-22",
+    "endDate": "2026-10-22",
+    "time": "17:00–20:00",
+    "city": "Bern",
+    "venue": "Helvetiastrasse 17",
+    "format": "Meetup",
+    "topics": [
+      "AI-assisted development",
+      "Software engineering",
+      "Applied AI"
+    ],
+    "organiser": "Bern Hack Night",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/bern-hack-night/events/316597707/",
+    "source": "Meetup",
+    "blurb": "Java Champion Simon Martinelli shows how a specification rather than a prompt can drive an AI-assisted build on a real Java project, then ti&m engineers run hands-on stations on customising Claude Code and GitHub Copilot and on capturing requirements with OpenSpec. Bring a laptop with a working licence.",
+    "firstSeen": "2026-10-19"
+  },
+  {
+    "id": "zurich-ai-summit-digital-trust-2026",
+    "title": "The Zurich AI Summit 2026 – Digital Trust",
+    "date": "2026-10-22",
+    "endDate": "2026-10-22",
+    "time": "18:00–21:00",
+    "city": "Schlieren",
+    "venue": "startup space by IFJ, Wiesenstrasse 10A",
+    "format": "Networking",
+    "topics": [
+      "Enterprise AI strategy",
+      "Digital trust"
+    ],
+    "organiser": "Startup Network Europe",
+    "cost": "Ticketed (Eventbrite)",
+    "url": "https://www.eventbrite.ie/e/the-zurich-ai-summit-2026-tickets-1990882731844",
+    "source": "eventbrite.ie",
+    "blurb": "An evening for around 250 Swiss AI and business leaders, built around a panel on digital trust with speakers from Novartis, ABB, Nemetschek Group and Swiss Re, followed by networking.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "zurich-robotics-roundtable-5-2026",
+    "title": "Zurich Robotics Roundtable #5",
+    "date": "2026-10-22",
+    "endDate": "2026-10-22",
+    "time": "18:30–21:00",
+    "city": "Zurich",
+    "venue": "Zurich (address on registration)",
+    "format": "Networking",
+    "topics": [
+      "Robotics",
+      "Embodied AI",
+      "AI community"
+    ],
+    "organiser": "Founderful / Roboto",
+    "cost": "Free (waitlist)",
+    "url": "https://luma.com/robotics-roundtable-5",
+    "source": "luma.com",
+    "blurb": "Zurich’s quarterly gathering for people building in robotics and physical AI — newly funded robotics startups present, then a panel and open networking for around 250 founders, engineers and researchers.",
+    "firstSeen": "2026-09-30"
   }
 ]
