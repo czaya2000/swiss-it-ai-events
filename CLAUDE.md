@@ -59,6 +59,11 @@ run on demand via **workflow_dispatch**. Nothing about it depends on a personal 
   rename or remove a field without bumping `DATA_VERSION` in `src/lib/public-data.ts`),
   `/rss.xml`, `/llms.txt`. All built from upcoming events only. `robots.txt` welcomes
   AI crawlers explicitly.
+- Analytics: Umami Cloud (EU, cookieless) plus Cloudflare Web Analytics, both in
+  `src/layouts/Base.astro`. Card pages don't use Base, so the n8n screenshots aren't
+  counted; keep it that way. Click events use `data-umami-event` attributes. Opening a
+  page with `?notrack` excludes that browser (`?track` undoes it). If a tracker is
+  added or removed, update `/privacy/`.
 - Sources live in `SOURCES.md` and are re-read on every run — edit that file to change
   what gets checked; the workflow prompt does not hardcode a source list.
 
