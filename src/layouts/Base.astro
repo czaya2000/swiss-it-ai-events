@@ -71,6 +71,44 @@ const ogImage = new URL('/og-image.png', SITE_URL).toString();
 	<body>
 		<slot />
 
+		<!-- Umami analytics: cookieless, EU-hosted. Opening any page with ?notrack
+		     stops counting this browser (Umami honours localStorage "umami.disabled");
+		     ?track turns it back on. Marcin uses this to keep his own visits out. -->
+		<script is:inline>
+			(function () {
+				try {
+					var p = new URLSearchParams(location.search);
+					var msg = '';
+					if (p.has('notrack')) {
+						localStorage.setItem('umami.disabled', '1');
+						msg = 'Analytics off: this browser is no longer counted.';
+					} else if (p.has('track')) {
+						localStorage.removeItem('umami.disabled');
+						msg = 'Analytics on: this browser is counted again.';
+					}
+					if (!msg) return;
+					p.delete('notrack');
+					p.delete('track');
+					var q = p.toString();
+					history.replaceState(null, '', location.pathname + (q ? '?' + q : '') + location.hash);
+					document.addEventListener('DOMContentLoaded', function () {
+						var t = document.createElement('div');
+						t.textContent = msg;
+						t.setAttribute('role', 'status');
+						t.style.cssText = 'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:9999;background:#000;color:#fff;padding:10px 16px;font:600 14px/1.4 system-ui,sans-serif;max-width:calc(100vw - 32px)';
+						document.body.appendChild(t);
+						setTimeout(function () { t.remove(); }, 5000);
+					});
+				} catch (e) {}
+			})();
+		</script>
+		<script
+			is:inline
+			defer
+			src="https://cloud.umami.is/script.js"
+			data-website-id="2374cc49-fb48-482e-ad1c-c99fd9e44043"
+			data-domains="swissdataevents.ch"></script>
+
 		<!-- Cloudflare Web Analytics -->
 		<script
 			type="module"

@@ -187,6 +187,9 @@ const structuredData: Record<string, unknown>[] = ended ? [] : [
 									target="_blank"
 									rel="noopener"
 									data-outbound={e.source}
+									data-umami-event="Register click"
+									data-umami-event-event={entry.id}
+									data-umami-event-source={e.source}
 								>
 									Go to {e.source} ↗
 								</a>

@@ -30,7 +30,7 @@ const { placement, compact = false } = Astro.props;
 			<span class="sr-only">Email address</span>
 			<input type="email" name="email" placeholder="you@company.ch" required autocomplete="email" />
 		</label>
-		<button class="btn accent" type="submit">Subscribe</button>
+		<button class="btn accent" type="submit" data-umami-event="Digest signup" data-umami-event-placement={placement}>Subscribe</button>
 	</form>
 </section>
 
