@@ -9,6 +9,7 @@ import {
 	isEnded,
 	eventUrl,
 	outboundUrl,
+	organiserUrl,
 	cityGroup,
 	getAllEvents,
 	getUpcomingEvents,
@@ -60,7 +61,11 @@ const structuredData: Record<string, unknown>[] = ended ? [] : [
 					address: { '@type': 'PostalAddress', addressLocality: e.city, addressCountry: 'CH' },
 				},
 		description: e.blurb,
-		organizer: { '@type': 'Organization', name: e.organiser },
+		organizer: {
+			'@type': 'Organization',
+			name: e.organiser,
+			...(organiserUrl(e.url) ? { url: organiserUrl(e.url) } : {}),
+		},
 		url: eventUrl(entry.id),
 		offers: {
 			'@type': 'Offer',

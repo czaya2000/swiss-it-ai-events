@@ -37,6 +37,32 @@ export function outboundUrl(url: string): string {
 	}
 }
 
+/** Best guess at the organiser's own web page, for the Event `organizer.url`
+    that Google asks for. Usually the registration site's home page; for a
+    Meetup event, the group page. Ticketing platforms are not the organiser,
+    so for those it returns undefined and the field is left out. */
+const TICKETING_HOSTS = /(^|\.)(luma\.com|lu\.ma|eventbrite\.[a-z.]+|bookwhen\.com)$/;
+export function organiserUrl(url: string): string | undefined {
+	try {
+		const u = new URL(url);
+		const host = u.hostname.replace(/^www\./, '');
+		if (host === 'meetup.com') {
+			const group = u.pathname.split('/').filter(Boolean)[0];
+			return group ? `https://www.meetup.com/${group}/` : undefined;
+		}
+		if (TICKETING_HOSTS.test(host)) return undefined;
+		return `${u.protocol}//${u.host}/`;
+	} catch {
+		return undefined;
+	}
+}
+
+/** The event's own listing page, tagged so Umami can tell which social
+    network a visit came from (app in-browsers usually send no referrer). */
+export function socialListingUrl(id: string, network: string): string {
+	return `${eventUrl(id)}?utm_source=${network}&utm_medium=social&utm_campaign=autopost`;
+}
+
 export function today(): string {
 	return new Date().toISOString().slice(0, 10);
 }

@@ -1,7 +1,7 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import meta from '../data/meta.json';
-import { SITE_URL, eventUrl, isFree, outboundUrl, today } from '../lib/events';
+import { SITE_URL, eventUrl, isFree, outboundUrl, socialListingUrl, today } from '../lib/events';
 
 /* Machine-readable feed consumed by the n8n "social machine" running on
    Marcin's PC. It polls this file, diffs it against the ids it has already
@@ -47,6 +47,12 @@ export const GET: APIRoute = async () => {
 				firstSeen: d.firstSeen,
 				daysUntil,
 				listingUrl: eventUrl(e.id),
+				// Same page, UTM-tagged per network so Umami can attribute visits.
+				// Added alongside listingUrl, which stays untouched.
+				listingUrls: {
+					x: socialListingUrl(e.id, 'x'),
+					linkedin: socialListingUrl(e.id, 'linkedin'),
+				},
 				registrationUrl: outboundUrl(d.url),
 				source: d.source,
 			};
