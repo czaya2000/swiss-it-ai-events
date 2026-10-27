@@ -83,6 +83,9 @@ pages with headless Chromium, and posts to X / LinkedIn / Instagram / TikTok.
 
 - `postKey` in the feed is the dedupe key (`id::date::city`). Changing how it
   is built re-announces every event once.
+- `listingUrls.{x,linkedin}` are the UTM-tagged links n8n puts in posts (for
+  Umami attribution); the n8n prompt falls back to `listingUrl` if they are
+  missing. Don't rename either field.
 - Card pages are a fixed pixel canvas per format. Test a design change at
   `/card/wide/<slug>/` before deploying - what you see is what gets posted.
 - Both are `noindex` and excluded from the sitemap; keep them that way.
