@@ -2492,6 +2492,47 @@
     "firstSeen": "2026-10-19"
   },
   {
+    "id": "fair-unconference-bern-2026",
+    "title": "F{AI}R Unconference 2026",
+    "date": "2026-10-22",
+    "endDate": "2026-10-23",
+    "city": "Bern",
+    "venue": "WORKSPACE & MORE, Liebefeld",
+    "format": "Conference",
+    "topics": [
+      "Applied AI",
+      "AI community",
+      "AI tools"
+    ],
+    "organiser": "eidias Workspace AG (siliconlovefield)",
+    "cost": "Not listed",
+    "url": "https://fair.siliconlovefield.ch",
+    "source": "genevaaisummit.swiss",
+    "blurb": "Two days of AI talks, workshops and demos in Bern run as an unconference, with the programme built from sessions submitted by the people who turn up.",
+    "firstSeen": "2026-09-28"
+  },
+  {
+    "id": "swiss-python-summit-2026",
+    "title": "Swiss Python Summit 2026",
+    "date": "2026-10-22",
+    "endDate": "2026-10-23",
+    "time": "09:00–19:00 both days",
+    "city": "Rapperswil-Jona",
+    "venue": "OST – Ostschweizer Fachhochschule, Oberseestrasse 10",
+    "format": "Conference",
+    "topics": [
+      "Data science",
+      "Machine learning",
+      "Data engineering"
+    ],
+    "organiser": "Swiss Python Summit Association",
+    "cost": "CHF 50–130 (online sales closed; limited on-site tickets with a CHF 10 surcharge)",
+    "url": "https://www.python-summit.ch/",
+    "source": "dev.events",
+    "blurb": "Two days on the OST Rapperswil campus: a general Python day followed by a full Data Science day on machine learning, data processing and analytics, data engineering, visualisation, AI and LLMs.",
+    "firstSeen": "2026-10-21"
+  },
+  {
     "id": "zurich-ai-summit-digital-trust-2026",
     "title": "The Zurich AI Summit 2026 – Digital Trust",
     "date": "2026-10-22",
@@ -2531,5 +2572,86 @@
     "source": "luma.com",
     "blurb": "Zurich’s quarterly gathering for people building in robotics and physical AI — newly funded robotics startups present, then a panel and open networking for around 250 founders, engineers and researchers.",
     "firstSeen": "2026-09-30"
+  },
+  {
+    "id": "ai-productivity-conference-zurich-2026",
+    "title": "AI Productivity User Group Conference @ Microsoft Switzerland",
+    "date": "2026-10-23",
+    "endDate": "2026-10-23",
+    "time": "11:30–17:30",
+    "city": "Zurich",
+    "venue": "Microsoft Switzerland, The Circle 02, Kloten",
+    "format": "Conference",
+    "topics": [
+      "Microsoft ecosystem",
+      "Enterprise AI",
+      "AI tools"
+    ],
+    "organiser": "AI Productivity User Group",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/ai-productivity-usergroup/events/315511153/",
+    "source": "Meetup",
+    "blurb": "In-person conference on AI productivity tooling — Copilot Cowork, Azure AI integration, and AI-driven meeting workflows — with MVP speakers at Microsoft's Zurich Airport campus.",
+    "firstSeen": "2026-09-04"
+  },
+  {
+    "id": "zentral-hack-2026",
+    "title": "Zentral Hack 2026",
+    "date": "2026-10-23",
+    "endDate": "2026-10-24",
+    "city": "Rotkreuz",
+    "venue": "Hochschule Luzern – Informatik, Rotkreuz",
+    "format": "Workshop",
+    "topics": [
+      "Hackathon"
+    ],
+    "organiser": "Zentral Hack (STAIR)",
+    "cost": "Not listed",
+    "url": "https://zentralhack.ch",
+    "source": "ai-community.ch",
+    "blurb": "24-hour hackathon for central Switzerland, bringing together students, business and the regional ICT community at HSLU Rotkreuz.",
+    "firstSeen": "2026-09-03",
+    "time": "Fri from 17:00"
+  },
+  {
+    "id": "coffee-and-prompt-008-geneva-2026",
+    "title": "Coffee & Prompt #008",
+    "date": "2026-10-24",
+    "endDate": "2026-10-24",
+    "time": "09:30",
+    "city": "Geneva",
+    "venue": "Boréal Coffee, Rue du Stand 60",
+    "format": "Networking",
+    "topics": [
+      "Applied AI",
+      "Building with AI"
+    ],
+    "organiser": "Switzerland AI Community",
+    "cost": "Free",
+    "url": "https://luma.com/8t5ol5cb",
+    "source": "switzerland-ai.com",
+    "blurb": "The weekly Geneva builders’ coworking morning: work on your own AI project alongside other makers, share a lesson learned if you want to, and talk through what is not working yet.",
+    "firstSeen": "2026-10-12"
+  },
+  {
+    "id": "vibe-code-fest-basel-2026",
+    "title": "Vibe Code Fest Basel 2026",
+    "date": "2026-10-24",
+    "endDate": "2026-10-24",
+    "time": "10:00–21:30",
+    "city": "Basel",
+    "venue": "FHNW Campus Dreispitz",
+    "format": "Conference",
+    "topics": [
+      "AI-assisted development",
+      "Applied AI",
+      "Hackathon"
+    ],
+    "organiser": "Vibe Code Fest",
+    "cost": "CHF 99 (CHF 75 early bird)",
+    "url": "https://vibecodefest.ch/",
+    "source": "startupticker.ch",
+    "blurb": "A one-day unconference on building software with AI: morning keynotes and community talks on vibe coding with design systems, AI in lab software and vibe marketing, a panel on where the money goes once software is cheap, then a five-hour build sprint ending in community voting, pitches and an awards ceremony.",
+    "firstSeen": "2026-10-19"
   }
 ]
