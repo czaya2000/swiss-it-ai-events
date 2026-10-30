@@ -2595,6 +2595,25 @@
     "firstSeen": "2026-09-04"
   },
   {
+    "id": "arttech-hack-zurich-2026",
+    "title": "ArtTech Hack 2026",
+    "date": "2026-10-23",
+    "endDate": "2026-10-25",
+    "city": "Zurich",
+    "format": "Workshop",
+    "topics": [
+      "Hackathon",
+      "Robotics",
+      "Data"
+    ],
+    "organiser": "ArtTech Hack Association",
+    "cost": "Not listed",
+    "url": "https://arttechhack.ch/",
+    "source": "swiss-robotics.org",
+    "blurb": "A three-day hackathon in Zurich for students and recent graduates from art, design and technology, with briefs in data, simulation and robotics — challenges revealed Friday, building Saturday, jury presentations Sunday.",
+    "firstSeen": "2026-09-30"
+  },
+  {
     "id": "zentral-hack-2026",
     "title": "Zentral Hack 2026",
     "date": "2026-10-23",
@@ -2653,5 +2672,47 @@
     "source": "startupticker.ch",
     "blurb": "A one-day unconference on building software with AI: morning keynotes and community talks on vibe coding with design systems, AI in lab software and vibe marketing, a panel on where the money goes once software is cheap, then a five-hour build sprint ending in community voting, pitches and an awards ceremony.",
     "firstSeen": "2026-10-19"
+  },
+  {
+    "id": "build-your-own-assistant-meetings-geneva-2026",
+    "title": "Build Your Own Assistant: Never Walk Into A Meeting Blind",
+    "date": "2026-10-25",
+    "endDate": "2026-10-25",
+    "time": "09:30–12:30",
+    "city": "Geneva",
+    "venue": "Voisins de Saint-Gervais, Bd James-Fazy 8",
+    "format": "Workshop",
+    "topics": [
+      "AI agents",
+      "Applied AI",
+      "AI automation"
+    ],
+    "organiser": "AI Ready Professionals",
+    "cost": "CHF 85",
+    "url": "https://www.meetup.com/ai-ready-professionals/events/316608104/",
+    "source": "Meetup",
+    "blurb": "Build an agent that briefs you on the person, the company and the purpose before every meeting, then drafts the follow-up the moment it ends.",
+    "firstSeen": "2026-10-02"
+  },
+  {
+    "id": "zurich-language-ai-meetup-22-2026",
+    "title": "Zurich Language AI Meetup #22",
+    "date": "2026-10-26",
+    "endDate": "2026-10-26",
+    "time": "19:00–21:00",
+    "city": "Zurich",
+    "venue": "Riffraff Kino/Bar, Neugasse 57",
+    "format": "Meetup",
+    "topics": [
+      "LLMs",
+      "Privacy",
+      "Applied AI"
+    ],
+    "organiser": "Language AI Meetup / Supertext",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/language-ai-meetup/events/316883179/",
+    "source": "Meetup",
+    "blurb": "Three talks on language AI in Zurich — masking personal data without breaking a language pipeline, benchmarking LLM translations against thousands of native speakers, and a session from Supertext’s CTO — followed by drinks.",
+    "firstSeen": "2026-10-09"
   }
 ]
