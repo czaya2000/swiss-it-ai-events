@@ -1,0 +1,41 @@
+/* Buttondown web CSS (Settings → Web → Custom CSS). Source of truth: paste this
+   whole file there after editing. Matches src/styles/theme.css. */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
+body, body *:not(code):not(pre) { font-family: Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
+body { background: #fbfbf9; color: #000; }
+h1 { letter-spacing: -0.02em; font-weight: 600; }
+button, input, textarea, select, .portal-btn, .button { border-radius: 0 !important; }
+.portal-btn--primary, .button { background: #000 !important; border-color: #000 !important; color: #fbfbf9 !important; }
+.portal-btn--primary:hover, .button:hover { background: #e30613 !important; border-color: #e30613 !important; }
+.archive__button { border-radius: 0 !important; text-transform: none !important; letter-spacing: 0 !important; font-weight: 500 !important; background: #000 !important; border-color: #000 !important; color: #fbfbf9 !important; }
+.archive__button:hover { background: #e30613 !important; border-color: #e30613 !important; }
+.card { border-radius: 0 !important; }
+.header-navigation { border-bottom: 3px solid #e30613; }
+.header-brand-name { text-transform: none !important; font-weight: 700; letter-spacing: -0.015em; }
+
+/* Preferences: tag checkboxes show the public description, not the tag name. */
+.field-group:has(.tag-field) { display: flex; align-items: center; gap: 8px; margin: 0; }
+.checkbox-label:has(.tag-field) .input-label { display: none; }
+.field-group:has(.tag-field) .helper-text { margin: 0; font-size: 15px; color: #000; }
+
+/* Two columns, Cities and Event types, in a fixed order. Buttondown lists tags
+   ticked-first, so each tag is placed by its id. A new tag needs a line here. */
+.preferences-fields { display: grid; grid-template-columns: 1fr 1fr; column-gap: 32px; row-gap: 10px; align-items: center; }
+.preferences-fields .field-group { margin: 0 !important; padding: 0 !important; }
+.preferences-fields::before, .preferences-fields::after { grid-row: 1; font-weight: 600; font-size: 13px; color: #6b6b70; padding-bottom: 4px; border-bottom: 1px solid #dededa; margin-bottom: 4px; }
+.preferences-fields::before { content: 'Cities · none ticked = all'; grid-column: 1; }
+.preferences-fields::after { content: 'Event types · none ticked = all'; grid-column: 2; }
+.field-group:has([data-tag-id="96415057-4dbc-48e5-8b39-338c4b2e203c"]) { grid-column: 1; grid-row: 2; } /* zurich */
+.field-group:has([data-tag-id="adf4d7a9-426c-49a1-af92-a11bceaf016b"]) { grid-column: 1; grid-row: 3; } /* geneva */
+.field-group:has([data-tag-id="5f9675a8-ba91-482b-b6a1-d350404783df"]) { grid-column: 1; grid-row: 4; } /* lausanne */
+.field-group:has([data-tag-id="c0cc1fea-4da9-491c-b788-3b116181d9ad"]) { grid-column: 1; grid-row: 5; } /* basel */
+.field-group:has([data-tag-id="17c7dcde-ee8b-4058-952c-42475de7a776"]) { grid-column: 1; grid-row: 6; } /* bern */
+.field-group:has([data-tag-id="663370d2-541b-47e6-8887-b355f84d35f5"]) { grid-column: 1; grid-row: 7; } /* lucerne */
+.field-group:has([data-tag-id="10e60d7a-1c65-4fec-8a56-ba6465d7e49a"]) { grid-column: 1; grid-row: 8; } /* lugano */
+.field-group:has([data-tag-id="c005ed4c-9074-4ba4-a8c6-731566e9536d"]) { grid-column: 1; grid-row: 9; } /* neuchatel */
+.field-group:has([data-tag-id="f2107bfe-aa8e-45cb-ac4f-98e1f847daa5"]) { grid-column: 1; grid-row: 10; } /* online */
+.field-group:has([data-tag-id="26f4e89e-e223-4502-b329-304547d568ec"]) { grid-column: 2; grid-row: 2; } /* conference */
+.field-group:has([data-tag-id="778a683d-e6c6-4f5d-a897-f03e29d8ab56"]) { grid-column: 2; grid-row: 3; } /* meetup */
+.field-group:has([data-tag-id="31d947df-0b09-4fb0-8567-5d30256e79fb"]) { grid-column: 2; grid-row: 4; } /* networking */
+.field-group:has([data-tag-id="67236ec6-b335-4fb1-9125-f87b64f5fd21"]) { grid-column: 2; grid-row: 5; } /* webinar */
+.field-group:has([data-tag-id="4be8f0dc-db69-494d-9a56-1fae2dce789f"]) { grid-column: 2; grid-row: 6; } /* workshop */

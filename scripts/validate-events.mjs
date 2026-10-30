@@ -16,6 +16,7 @@
 // Exits non-zero and lists every problem it found.
 
 import { readFileSync } from 'node:fs';
+import { newsletterCity, isNationwide } from '../src/lib/newsletter.mjs';
 
 const EVENTS_PATH = 'src/data/events.json';
 const META_PATH = 'src/data/meta.json';
@@ -143,6 +144,16 @@ if (errors.length > 0) {
 	console.error(`${errors.length} problem(s) found:\n`);
 	for (const error of errors) console.error(`  - ${error}`);
 	process.exit(1);
+}
+
+// Warning only (never blocks a deploy): the weekly digest maps every place to
+// one of a fixed list of cities (src/lib/newsletter.mjs). A place missing from
+// that mapping still reaches every subscriber, but should be added there.
+const unmapped = [...new Set(
+	events.map((e) => e.city).filter((c) => typeof c === 'string' && !isNationwide(c) && newsletterCity(c) === null),
+)];
+for (const city of unmapped) {
+	console.warn(`Warning: city "${city}" has no newsletter city in src/lib/newsletter.mjs — the digest sends it to everyone.`);
 }
 
 console.log(`OK — ${events.length} events valid.`);

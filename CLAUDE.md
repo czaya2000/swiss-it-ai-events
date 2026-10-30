@@ -73,6 +73,37 @@ Astro pinned to `^6.4.8` — Astro 7.3.0 fails to build on this machine (Vite/ro
 `_internal/logger` export error). Don't upgrade past 6.x without confirming the
 build actually works first.
 
+## Weekly digest (Buttondown, newsletter `swissdataevents`)
+
+- `src/components/Subscribe.astro` posts straight to Buttondown's embed endpoint
+  (no backend). Each ticked box sends a `tag`: `city-<slug>` / `format-<slug>`.
+  Buttondown does the double opt-in, unsubscribes and bounces.
+- `src/lib/newsletter.mjs` holds the fixed city list (Zurich, Geneva, Lausanne,
+  Basel, Bern, Lucerne, Lugano, Neuchâtel, Online) and maps every smaller place to
+  the nearest one. Never rename a tag: subscribers already hold it. There is no
+  "Other" city by design. `npm run validate` warns about unmapped places; add them
+  to `PLACE_TO_CITY`. This grouping is newsletter-only — the homepage filter and
+  calendar feeds keep `cityGroup()`.
+- Matching: city AND format; no city chosen = all cities, no format = all formats.
+  "Nationwide" and unmapped places go to everyone.
+- `scripts/build-digest.mjs` (`npm run digest -- --dry-run`) builds ONE email for
+  everyone with two sections: **Next two weeks** (events on in the next 14 days,
+  new ones marked with the red dot) and **New this week** (first seen in the last
+  7 days, happening later). No event appears twice. Each event is wrapped in Django
+  `{% if %}` checks on `subscriber.tags`, and the email is saved as a Buttondown
+  **draft** with the archive disabled and the `classic` template. It refuses to
+  create a second email with the same week subject (`--replace` overwrites a
+  draft). The workflow runs it on Mondays after the deploy, with the
+  `BUTTONDOWN_API_KEY` secret (skips if the secret is missing).
+- The email is raw HTML with inline styles copied from `src/styles/theme.css`;
+  keep the `buttondown-editor-mode: plaintext` marker, or Buttondown's visual
+  editor strips the styling. Buttondown's email accent colour must stay black:
+  it is forced onto every link.
+- `buttondown/web.css` is the Custom CSS for Buttondown's web pages (Settings →
+  Web): site fonts and colours, and the Cities / Event types columns on the
+  Manage subscription page. Those columns place each tag by its Buttondown id, so
+  a new tag needs a line there. Paste the whole file back after editing.
+
 ## Social pipeline (do not break these two contracts)
 
 `src/pages/social-feed.json.ts` -> `/social-feed.json` and

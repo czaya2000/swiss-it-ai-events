@@ -213,3 +213,19 @@ jobs:
           git --work-tree=dist add --all
           git --work-tree=dist commit -m "Deploy: daily refresh $(date -u +%Y-%m-%d)"
           git push origin HEAD:gh-pages --force
+
+      - name: Create the weekly digest draft (Mondays)
+        # Runs after the deploy so every event link in the email already works.
+        # Saves a DRAFT in Buttondown (newsletter "swissdataevents") from events first
+        # seen in the last 7 days; Marcin reviews and sends it from the dashboard.
+        # Skips on Wednesdays/Fridays, and when the secret is not set yet.
+        # The deploy step left the refreshed files in the working tree, so the
+        # script reads this run's src/data/events.json.
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+        run: |
+          if [ "$(date -u +%u)" != "1" ]; then
+            echo "Not Monday, so no digest."
+            exit 0
+          fi
+          node scripts/build-digest.mjs

@@ -13,7 +13,8 @@
     "validate": "node scripts/validate-events.mjs",
     "test:ics": "node scripts/test-ics.mjs",
     "scrape:meetup": "node scripts/scrape-meetup.mjs",
-    "archive": "node scripts/archive-past.mjs"
+    "archive": "node scripts/archive-past.mjs",
+    "digest": "node scripts/build-digest.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

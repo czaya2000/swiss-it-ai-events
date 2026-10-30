@@ -1,36 +1,78 @@
 ---
-import { SITE_URL, FORM_ENDPOINT } from '../lib/events';
+import {
+	SUBSCRIBE_ACTION,
+	NEWSLETTER_CITIES,
+	NEWSLETTER_FORMATS,
+	cityTag,
+	formatTag,
+} from '../lib/newsletter.mjs';
 
 interface Props {
-	/** Where the form was shown — lands in the email subject so signups can be
+	/** Where the form was shown. Stored as Buttondown metadata so signups can be
 	    attributed to a placement (home vs. event page). */
 	placement: 'home' | 'event';
 	compact?: boolean;
 }
 
 const { placement, compact = false } = Astro.props;
+const id = (s: string) => `sub-${placement}-${s}`;
 ---
 
 <section class={`subscribe ${compact ? 'compact' : ''}`} id="subscribe">
 	<div class="subscribe-copy">
 		<p class="subscribe-title">The weekly digest</p>
 		<p class="subscribe-note">
-			Every new Swiss data and AI event, one short email on Monday morning. No noise, unsubscribe
-			with one click.
+			New Swiss data and AI events, one short email on Monday morning. Pick the cities and event
+			types you care about, or leave them blank to get everything. Unsubscribe with one click.
 		</p>
 	</div>
-	<form action={FORM_ENDPOINT} method="POST" class="subscribe-form">
-		<input type="hidden" name="_subject" value={`Digest signup (${placement})`} />
-		<input type="hidden" name="_next" value={`${SITE_URL}/subscribe/thanks/`} />
-		<input type="hidden" name="_template" value="table" />
-		<input type="hidden" name="_captcha" value="false" />
-		<input type="hidden" name="placement" value={placement} />
-		<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
-		<label>
-			<span class="sr-only">Email address</span>
-			<input type="email" name="email" placeholder="you@company.ch" required autocomplete="email" />
-		</label>
-		<button class="btn accent" type="submit" data-umami-event="Digest signup" data-umami-event-placement={placement}>Subscribe</button>
+	<!-- Posts straight to Buttondown (no backend). Buttondown sends the double
+	     opt-in email and creates any tag it doesn't know yet. Each ticked box
+	     submits one `tag` value. Do not switch this to fetch(): Buttondown may
+	     need the visitor to complete a CAPTCHA on its own page. -->
+	<form action={SUBSCRIBE_ACTION} method="post" class="subscribe-form">
+		<input type="hidden" name="embed" value="1" />
+		<input type="hidden" name="metadata__placement" value={placement} />
+		<div class="subscribe-row">
+			<label for={id('email')}>
+				<span class="sr-only">Email address</span>
+				<input
+					type="email"
+					name="email"
+					id={id('email')}
+					placeholder="you@company.ch"
+					required
+					autocomplete="email"
+				/>
+			</label>
+			<button class="btn accent" type="submit" data-umami-event="Digest signup" data-umami-event-placement={placement}>Subscribe</button>
+		</div>
+		<details class="subscribe-choices" open={!compact}>
+			<summary>Choose cities and event types (optional)</summary>
+			<fieldset>
+				<legend>Cities</legend>
+				<div class="choices">
+					{NEWSLETTER_CITIES.map((c) => (
+						<label class="choice" for={id(cityTag(c.slug))}>
+							<input type="checkbox" name="tag" value={cityTag(c.slug)} id={id(cityTag(c.slug))} />
+							{c.label}
+						</label>
+					))}
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Event types</legend>
+				<div class="choices">
+					{NEWSLETTER_FORMATS.map((f) => (
+						<label class="choice" for={id(formatTag(f.label))}>
+							<input type="checkbox" name="tag" value={formatTag(f.label)} id={id(formatTag(f.label))} />
+							{f.label}
+						</label>
+					))}
+				</div>
+			</fieldset>
+			<p class="choices-note">Smaller places count as the nearest city, e.g. Winterthur as Zurich.</p>
+		</details>
 	</form>
 </section>
 
@@ -39,7 +81,7 @@ const { placement, compact = false } = Astro.props;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 32px;
-		align-items: center;
+		align-items: start;
 		padding: 26px 0;
 		border-top: 1px solid var(--ink);
 		border-bottom: 1px solid var(--border);
@@ -63,10 +105,16 @@ const { placement, compact = false } = Astro.props;
 	}
 	.subscribe-form {
 		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		min-width: 0;
+	}
+	.subscribe-row {
+		display: flex;
 		gap: 10px;
 		align-items: stretch;
 	}
-	.subscribe-form label {
+	.subscribe-row label {
 		flex: 1;
 		display: flex;
 	}
@@ -85,8 +133,60 @@ const { placement, compact = false } = Astro.props;
 		outline: none;
 		border-color: var(--ink);
 	}
-	.subscribe-form .btn {
+	.subscribe-row .btn {
 		flex: none;
+	}
+	.subscribe-choices summary {
+		cursor: pointer;
+		font-size: 0.85rem;
+		color: var(--ink-2);
+	}
+	.subscribe-choices fieldset {
+		border: 0;
+		margin: 12px 0 0;
+		padding: 0;
+		min-width: 0;
+	}
+	.subscribe-choices legend {
+		font-size: 0.72rem;
+		font-weight: 600;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: var(--muted);
+		margin-bottom: 6px;
+		padding: 0;
+	}
+	.choices {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
+	}
+	.choice {
+		display: inline-flex;
+		align-items: center;
+		gap: 6px;
+		font-size: 0.85rem;
+		padding: 5px 10px;
+		background: var(--chip-bg);
+		color: var(--chip-ink);
+		cursor: pointer;
+	}
+	.choice:has(input:checked) {
+		background: var(--ink);
+		color: var(--bg);
+	}
+	.choice input {
+		margin: 0;
+		accent-color: var(--accent);
+	}
+	.choice:has(input:focus-visible) {
+		outline: 2px solid var(--accent);
+		outline-offset: 2px;
+	}
+	.choices-note {
+		margin: 10px 0 0;
+		font-size: 0.78rem;
+		color: var(--muted);
 	}
 	@media (max-width: 720px) {
 		.subscribe {
@@ -96,7 +196,7 @@ const { placement, compact = false } = Astro.props;
 		}
 	}
 	@media (max-width: 420px) {
-		.subscribe-form {
+		.subscribe-row {
 			flex-direction: column;
 		}
 	}

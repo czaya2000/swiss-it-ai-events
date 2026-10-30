@@ -4,18 +4,18 @@ import SiteNav from '../../../components/SiteNav.astro';
 import SiteFooter from '../../../components/SiteFooter.astro';
 import { SITE_NAME } from '../../../lib/events';
 
-const title = `You're on the list — ${SITE_NAME}`;
-const description = 'Thanks for subscribing to the weekly digest.';
+const title = `Check your inbox — ${SITE_NAME}`;
+const description = 'Confirm your subscription to the weekly digest.';
 ---
 
 <Base title={title} description={description} path="/subscribe/thanks/">
 	<SiteNav />
 
 	<main class="wrap thanks">
-		<h1>You're on the list.</h1>
+		<h1>Check your inbox.</h1>
 		<p>
-			The digest goes out on Monday mornings. If a week has nothing worth your time, you won't get
-			an email — that's the point.
+			We've sent you a confirmation email. Click the link in it and you're on the list. The digest
+			goes out on Monday mornings, and every email has a link to change your cities and event types.
 		</p>
 		<a class="btn accent" href="/">← Back to all events</a>
 	</main>
