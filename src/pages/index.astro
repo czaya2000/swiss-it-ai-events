@@ -106,14 +106,9 @@ const structuredData = [
 			<h1>{SITE_HEADLINE}</h1>
 		</header>
 
-		{
-			// Subscribe block hidden for now — flip this back on when ready.
-			false && (
-				<div class="wrap subscribe-slot">
-					<Subscribe placement="home" />
-				</div>
-			)
-		}
+		<div class="wrap subscribe-slot">
+			<Subscribe placement="home" />
+		</div>
 
 		<div class="controls wrap">
 			<div class="filter-row">
