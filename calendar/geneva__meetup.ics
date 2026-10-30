@@ -1,0 +1,82 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Geneva – Meetup
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:saic-040-ai-agent-ready-geneva-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261105T183000
+DTEND;TZID=Europe/Zurich:20261105T220000
+SUMMARY:SAIC #040: From Prototype to Production — Knowing When Your AI Ag
+ ent Is Ready
+LOCATION:Tesla\, Centre Confédération\, Geneva
+DESCRIPTION:How to tell whether an AI agent is ready for real users: evalua
+ tion with golden datasets\, comparing models and prompts\, end-to-end prod
+ uction tracing and tying agent performance to business metrics\, worked th
+ rough a multilingual support agent built with LangGraph\, MCP tools and RA
+ G.\n\nOrganiser: Switzerland AI Community\n\nDetails and registration: htt
+ ps://swissdataevents.ch/events/saic-040-ai-agent-ready-geneva-2026/
+URL:https://swissdataevents.ch/events/saic-040-ai-agent-ready-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:generative-ai-geneve-5-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261112T183000
+DTEND;TZID=Europe/Zurich:20261112T203000
+SUMMARY:IA : meetup « Generative AI Genève » #5
+LOCATION:Foound\, Rue Jean-Dassier 7\, Geneva
+DESCRIPTION:Your data\, your models\, your infrastructure: ELCA and EPFL sp
+ in-off Anyway Systems on running LLMs locally or in a private cloud\, and 
+ on the trade-offs between performance\, sovereignty and cost when a compan
+ y wants generative AI without handing over its data.\n\nOrganiser: Generat
+ ive AI Genève\n\nDetails and registration: https://swissdataevents.ch/eve
+ nts/generative-ai-geneve-5-2026/
+URL:https://swissdataevents.ch/events/generative-ai-geneve-5-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mindstone-geneva-ai-meetup-november-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261125T180000
+DTEND;TZID=Europe/Zurich:20261125T210000
+SUMMARY:Mindstone Geneva November AI Meetup
+LOCATION:L’Annexe by Rentes Genevoises\, Rue du Port 3\, Geneva
+DESCRIPTION:Monthly Geneva AI evening with three practical talks — buildi
+ ng with LLMs\, working faster with AI and where it is all heading — then
+  pizza and networking. Forty places.\n\nOrganiser: Mindstone Geneva AI Mee
+ tup\n\nDetails and registration: https://swissdataevents.ch/events/mindsto
+ ne-geneva-ai-meetup-november-2026/
+URL:https://swissdataevents.ch/events/mindstone-geneva-ai-meetup-november-2
+ 026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

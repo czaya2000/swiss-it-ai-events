@@ -1,0 +1,168 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Zurich – Workshop
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:gfn-ai-day-zurich-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261103T083000
+DTEND;TZID=Europe/Zurich:20261103T183000
+SUMMARY:GFN AI Day
+LOCATION:GFN Hub\, ORBIZ Josef\, Josefstrasse 214a\, Zurich
+DESCRIPTION:A working day rather than a talking one: a morning of practitio
+ ner talks from SSF\, ZHAW\, Correntics and Resilens on what AI can actuall
+ y do for sustainable finance\, then small groups spend the afternoon on re
+ al challenges submitted by GFN startups and demo what they built. Thirty p
+ laces.\n\nOrganiser: Green FinTech Network\n\nDetails and registration: ht
+ tps://swissdataevents.ch/events/gfn-ai-day-zurich-2026/
+URL:https://swissdataevents.ch/events/gfn-ai-day-zurich-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-ai-summit-satellite-better-work-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261117T160000
+DTEND;TZID=Europe/Zurich:20261117T180000
+SUMMARY:Satellite Event: From Smart AI to Better Work
+LOCATION:Beethovenstrasse 48\, Zurich
+DESCRIPTION:An interactive executive lab run with Zeix on redesigning work 
+ around AI: deciding what the machine should actually do\, and marking out 
+ where human judgement\, responsibility and control have to stay.\n\nOrgani
+ ser: Swiss AI Summit / Zeix\n\nDetails and registration: https://swissdata
+ events.ch/events/swiss-ai-summit-satellite-better-work-2026/
+URL:https://swissdataevents.ch/events/swiss-ai-summit-satellite-better-work
+ -2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:stem4health-hackathon-zurich-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261123
+SUMMARY:STEM4Health Hackathon
+LOCATION:ETH Zürich Campus Hönggerberg\, HPH building\, Zurich
+DESCRIPTION:A hundred students and early-career researchers spend a weekend
+  on real pharmaceutical manufacturing problems\, combining manufacturing d
+ ata\, mechanistic modelling and machine learning with industry and academi
+ c mentors before pitching to a jury.\n\nOrganiser: Johnson & Johnson Switz
+ erland / Swiss Data Science Center\n\nDetails and registration: https://sw
+ issdataevents.ch/events/stem4health-hackathon-zurich-2026/
+URL:https://swissdataevents.ch/events/stem4health-hackathon-zurich-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hack-apertus-onsite-zurich-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261129
+SUMMARY:Hack Apertus — Onsite Hackathon Zurich
+LOCATION:AI Startup Center\, Technopark Zürich\, Zurich
+DESCRIPTION:The on-site leg of the national Apertus hackathon: build on the
+  open Apertus 8B model\, strengthen its multilingual abilities and ship ap
+ plications for private- and public-sector problems\, with everything relea
+ sed as Open Commons.\n\nOrganiser: AI Startup Center\n\nDetails and regist
+ ration: https://swissdataevents.ch/events/hack-apertus-onsite-zurich-2026/
+URL:https://swissdataevents.ch/events/hack-apertus-onsite-zurich-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sdsc-ai-insights-chief-executives-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261127T100000
+DTEND;TZID=Europe/Zurich:20261127T170000
+SUMMARY:AI Insights for Chief Executives
+LOCATION:Swiss AI Tower\, ETH Zürich\, Andreasstrasse 5\, Zurich
+DESCRIPTION:Executive workshop for CEOs\, CFOs\, CDOs and CTOs on turning d
+ ata and AI into measurable business value\, with case studies from EKZ\, M
+ erck and Richemont. Limited seats.\n\nOrganiser: Swiss Data Science Center
+  / FBXperts\n\nDetails and registration: https://swissdataevents.ch/events
+ /sdsc-ai-insights-chief-executives-2026/
+URL:https://swissdataevents.ch/events/sdsc-ai-insights-chief-executives-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:databricks-christmas-hackathon-zurich-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261207T173000
+DTEND;TZID=Europe/Zurich:20261207T200000
+SUMMARY:Christmas Special Hackathon — Operation Silent Night
+LOCATION:Headsquarter – The Artistic\, Stockerstrasse 33\, Zurich
+DESCRIPTION:Festive team hackathon where the Zurich Databricks User Group t
+ urns a sabotage mystery into hands-on practice with Genie\, Lakebase and D
+ atabricks Apps.\n\nOrganiser: Zurich Databricks User Group\n\nDetails and 
+ registration: https://swissdataevents.ch/events/databricks-christmas-hacka
+ thon-zurich-2026/
+URL:https://swissdataevents.ch/events/databricks-christmas-hackathon-zurich
+ -2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sdsc-ai-for-decision-makers-eth-2027@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20270122T090000
+DTEND;TZID=Europe/Zurich:20270122T170000
+SUMMARY:AI for Decision Makers — Executive Course at ETH Zurich
+LOCATION:Swiss AI Tower (Andreasturm)\, Andreasstrasse 5\, Oerlikon\, Zuric
+ h
+DESCRIPTION:A five-day English-language executive course for leaders who ne
+ ed to challenge assumptions on AI projects without becoming data scientist
+ s — data science foundations\, MLOps\, AI governance and ethics\, genera
+ tive AI and a first agent\, with an ETH Zurich certificate. Registration c
+ loses 15 January 2027.\n\nRuns until 5 Feb — see the event page for sess
+ ion dates.\n\nOrganiser: Swiss Data Science Center / ETH Zürich School fo
+ r Continuing Education\n\nDetails and registration: https://swissdataevent
+ s.ch/events/sdsc-ai-for-decision-makers-eth-2027/
+URL:https://swissdataevents.ch/events/sdsc-ai-for-decision-makers-eth-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-ai-summit-ai-quantum-course-zurich-2027@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20270205T130000
+DTEND;TZID=Europe/Zurich:20270205T180000
+SUMMARY:AI & Quantum Course: From Foundations to Scalable Intelligence
+LOCATION:Headsquarter – The Artistic\, Stockerstrasse 33\, Zurich
+DESCRIPTION:An afternoon course run with Quantum Basel\, led by its CTO Jan
+  Mikolon\, bridging current AI practice and quantum technologies — from 
+ the foundations through to what it takes to scale.\n\nOrganiser: Swiss AI 
+ Summit / Quantum Basel\n\nDetails and registration: https://swissdataevent
+ s.ch/events/swiss-ai-summit-ai-quantum-course-zurich-2027/
+URL:https://swissdataevents.ch/events/swiss-ai-summit-ai-quantum-course-zur
+ ich-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

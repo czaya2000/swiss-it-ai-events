@@ -1,0 +1,325 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Networking
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ai-breakfast-luzern-55@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261030T073000
+DTEND;TZID=Europe/Zurich:20261030T090000
+SUMMARY:AI Breakfast #55 Luzern
+LOCATION:Universität Luzern\, Frohburgstrasse 3\, Lucerne
+DESCRIPTION:Louis Hermann\, co-founder of DocPier\, on how accurate documen
+ t processing actually has to be before it can run in production\, why a ge
+ neric model on its own is not enough\, and what trustees\, insurers and ba
+ nks can take from that for their own AI projects.\n\nOrganiser: Digital & 
+ AI Community\n\nDetails and registration: https://swissdataevents.ch/event
+ s/ai-breakfast-luzern-55/
+URL:https://swissdataevents.ch/events/ai-breakfast-luzern-55/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:from-lab-to-market-geneva-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261030T180000
+DTEND;TZID=Europe/Zurich:20261030T210000
+SUMMARY:From Lab to Market: How Can Switzerland Turn World-Class AI Researc
+ h into World-Class Companies?
+LOCATION:Société de Lecture\, Grand-Rue 11\, Geneva
+DESCRIPTION:A panel with the presidents and vice-presidents of EPFL and ETH
+  Zurich\, GESDA and Proton on the three things Switzerland needs to turn i
+ ts AI research into companies — compute\, capital and data governance 
+ — and why the economic value has so far gone elsewhere.\n\nOrganiser: Ge
+ neva Center for Neutrality\n\nDetails and registration: https://swissdatae
+ vents.ch/events/from-lab-to-market-geneva-2026/
+URL:https://swissdataevents.ch/events/from-lab-to-market-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:coffee-and-prompt-009-geneva-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261031T093000
+DTEND;TZID=Europe/Zurich:20261031T113000
+SUMMARY:Coffee & Prompt #009 (Halloween edition)
+LOCATION:Central Geneva (venue to be confirmed)
+DESCRIPTION:A Halloween edition of the weekly Geneva builders’ coworking 
+ morning: bring your own AI project or side hustle\, optionally show a feat
+ ure or a lesson learned\, and get feedback from the room.\n\nOrganiser: Sw
+ itzerland AI Community\n\nDetails and registration: https://swissdataevent
+ s.ch/events/coffee-and-prompt-009-geneva-2026/
+URL:https://swissdataevents.ch/events/coffee-and-prompt-009-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:zwischen-prompt-und-urteilskraft-lucerne-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261103T181500
+DTEND;TZID=Europe/Zurich:20261103T194500
+SUMMARY:Zwischen Prompt und Urteilskraft
+LOCATION:Hochschule Luzern – Wirtschaft\, Walter-von-Moos-Promenade 1\, L
+ ucerne
+DESCRIPTION:Impulse talks and a panel at HSLU Lucerne on what communication
+  work is still worth when AI writes the first draft\, and which skills mat
+ ter next — apéro afterwards.\n\nOrganiser: HSLU Institut für Kommunika
+ tion und Marketing (IKM) / ZSPR\n\nDetails and registration: https://swiss
+ dataevents.ch/events/zwischen-prompt-und-urteilskraft-lucerne-2026/
+URL:https://swissdataevents.ch/events/zwischen-prompt-und-urteilskraft-luce
+ rne-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:herimpact-who-decides-zurich-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261106T180000
+DTEND;TZID=Europe/Zurich:20261106T200000
+SUMMARY:HerImpact 2026: Who Decides — You or AI?
+LOCATION:Im Viadukt\, Zurich
+DESCRIPTION:Talks and a panel on who stays accountable when AI shapes an or
+ ganisational decision — who can question it\, correct it or stop it — 
+ drawing on current Swiss and Japanese research and real cases\, closing wi
+ th questions the group puts forward for the 2027 Geneva summit.\n\nOrganis
+ er: SOTRAI (Source of Trust in AI)\n\nDetails and registration: https://sw
+ issdataevents.ch/events/herimpact-who-decides-zurich-2026/
+URL:https://swissdataevents.ch/events/herimpact-who-decides-zurich-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:data-protection-tia-ai-startups-zurich-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261110T090000
+DTEND;TZID=Europe/Zurich:20261110T110000
+SUMMARY:Navigating Data Protection and Transfer Impact Assessments for AI S
+ tartups
+LOCATION:AI Startup Center\, Technopark Zürich\, Zurich
+DESCRIPTION:Breakfast session with lawyers from Wenger Vieli on when a Tran
+ sfer Impact Assessment is actually required for cross-border data transfer
+ s\, and how to keep them manageable as an AI company.\n\nOrganiser: AI Sta
+ rtup Center / Wenger Vieli\n\nDetails and registration: https://swissdatae
+ vents.ch/events/data-protection-tia-ai-startups-zurich-2026/
+URL:https://swissdataevents.ch/events/data-protection-tia-ai-startups-zuric
+ h-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-ai-industry-connect-bern-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261111T084500
+DTEND;TZID=Europe/Zurich:20261111T131500
+SUMMARY:Swiss AI Industry Connect
+LOCATION:Swisscom Office\, Genfergasse 14\, Bern
+DESCRIPTION:Half-day morning session at Swisscom’s Bern office bringing E
+ PFL and ETH Zurich AI researchers together with industry partners.\n\nOrga
+ niser: EPFL & ETH Zurich\, hosted by Swisscom\n\nDetails and registration:
+  https://swissdataevents.ch/events/swiss-ai-industry-connect-bern-2026/
+URL:https://swissdataevents.ch/events/swiss-ai-industry-connect-bern-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-startup-center-community-meetup-november-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261112T090000
+DTEND;TZID=Europe/Zurich:20261112T103000
+SUMMARY:AI Startup Center Community Meetup — November Edition
+LOCATION:AI Startup Center\, Technopark Zürich\, Zurich
+DESCRIPTION:A deliberately informal morning meetup over coffee for the cent
+ re’s AI startups and corporate partners — no agenda and no presentatio
+ ns\, just conversations about partnerships\, where AI is heading and what 
+ is actually hard right now.\n\nOrganiser: AI Startup Center\n\nDetails and
+  registration: https://swissdataevents.ch/events/ai-startup-center-communi
+ ty-meetup-november-2026/
+URL:https://swissdataevents.ch/events/ai-startup-center-community-meetup-no
+ vember-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:business-leaders-evening-your-ai-your-data-geneva-2026@swissdataevents.
+ ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261112T173000
+DTEND;TZID=Europe/Zurich:20261112T210000
+SUMMARY:Business Leaders' Evening: Your AI\, your data\, under your roof
+LOCATION:LeBooster Genève\, Route de Jussy 35 (2nd floor)\, Thônex (Genev
+ a)
+DESCRIPTION:A French-language evening for SME leaders on getting value from
+  AI without giving up control of the data: three levels of sovereign AI\, 
+ a live demo of a fully offline model answering on a sample company’s doc
+ uments with per-employee permissions\, what the revised Swiss data protect
+ ion act expects of management\, and a networking apéro.\n\nOrganiser: ABA
+ XINFO / AXION / Keeping Life Simple\, hosted by CCI France Suisse\n\nDetai
+ ls and registration: https://swissdataevents.ch/events/business-leaders-ev
+ ening-your-ai-your-data-geneva-2026/
+URL:https://swissdataevents.ch/events/business-leaders-evening-your-ai-your
+ -data-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-ai-summit-satellite-asset-management-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261117T140000
+DTEND;TZID=Europe/Zurich:20261117T160000
+SUMMARY:Satellite Event: From Data to Decisions — AI in Asset Management
+LOCATION:Beethovenstrasse 48\, Zurich
+DESCRIPTION:A Swiss AI Summit satellite session on how asset managers turn 
+ increasingly complex data into usable investment insight\, and where AI ma
+ kes a genuine difference rather than noise.\n\nOrganiser: Swiss AI Summit\
+ n\nDetails and registration: https://swissdataevents.ch/events/swiss-ai-su
+ mmit-satellite-asset-management-2026/
+URL:https://swissdataevents.ch/events/swiss-ai-summit-satellite-asset-manag
+ ement-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-breakfast-luzern-56@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261120T073000
+DTEND;TZID=Europe/Zurich:20261120T090000
+SUMMARY:AI Breakfast #56 Luzern
+LOCATION:Universität Luzern\, Frohburgstrasse 3\, Lucerne
+DESCRIPTION:Merun Gugelmann of Aeberli Treuhand on how an 80-year-old trust
+  company got from Microsoft Teams to building its own Azure applications 
+ — the steps of that digitisation journey\, concrete examples\, and the s
+ etup on Azure App Services.\n\nOrganiser: Digital & AI Community\n\nDetail
+ s and registration: https://swissdataevents.ch/events/ai-breakfast-luzern-
+ 56/
+URL:https://swissdataevents.ch/events/ai-breakfast-luzern-56/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:geneva-ai-conference-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261125T180000
+DTEND;TZID=Europe/Zurich:20261125T210000
+SUMMARY:The Geneva AI Conference 2026
+LOCATION:Venue to be confirmed\, Geneva
+DESCRIPTION:An evening on enterprise AI strategy and returns\, opened by Ge
+ neva city executive councillor Joëlle Bertossa and built around a panel w
+ ith IBM\, SAP\, Hostelworld and Executive AI. The venue is still to be con
+ firmed.\n\nOrganiser: Startup Network Europe\n\nDetails and registration: 
+ https://swissdataevents.ch/events/geneva-ai-conference-2026/
+URL:https://swissdataevents.ch/events/geneva-ai-conference-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:airistoteles-4-hslu-lucerne-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261201T190000
+DTEND;TZID=Europe/Zurich:20261201T203000
+SUMMARY:AIristoteles 4.0 — Bis dass der Strom uns scheidet
+LOCATION:Hochschule Luzern – Wirtschaft\, Walter-von-Moos-Promenade 1\, L
+ ucerne
+DESCRIPTION:Fourth edition of HSLU’s AIristoteles series: an EPFL evoluti
+ onary psychologist and a psychotherapist discuss what it means when people
+  enter long-term relationships with AI bots\, moderated by Stephan Klappro
+ th and followed by an apéro.\n\nOrganiser: HSLU Institut für Kommunikati
+ on und Marketing (IKM)\n\nDetails and registration: https://swissdataevent
+ s.ch/events/airistoteles-4-hslu-lucerne-2026/
+URL:https://swissdataevents.ch/events/airistoteles-4-hslu-lucerne-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fuehrung-ist-kein-prompt-lucerne-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261203T170000
+DTEND;TZID=Europe/Zurich:20261203T210000
+SUMMARY:Business mit KI. Heute\, nicht 2030. Vol. 02 — Führung ist kein 
+ Prompt
+LOCATION:Schlössli Pop-Up\, Sternmattstrasse 3\, Lucerne
+DESCRIPTION:Second volume of the Lucerne series for entrepreneurs and C-lev
+ el leaders on how AI reshapes teams\, leadership and the job market: two s
+ hort talks\, a moderated panel and an apéro\, capped at 50 guests and hel
+ d in German.\n\nOrganiser: Pixels / Digital & AI Community\n\nDetails and 
+ registration: https://swissdataevents.ch/events/fuehrung-ist-kein-prompt-l
+ ucerne-2026/
+URL:https://swissdataevents.ch/events/fuehrung-ist-kein-prompt-lucerne-2026
+ /
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:azure-zurich-user-group-xmas-special-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261208T180000
+DTEND;TZID=Europe/Zurich:20261208T220000
+SUMMARY:Azure Zurich User Group X-Mas Special 2026
+LOCATION:Frau Gerolds Garten\, Geroldstrasse 23\, Zurich
+DESCRIPTION:The Azure Zürich User Group closes the year with its Christmas
+  get-together at Frau Gerolds Wintergarten — no agenda\, just food\, gl
+ ühwein and the Swiss Azure community. Places are limited.\n\nOrganiser: M
+ icrosoft Azure Zürich User Group\n\nDetails and registration: https://swi
+ ssdataevents.ch/events/azure-zurich-user-group-xmas-special-2026/
+URL:https://swissdataevents.ch/events/azure-zurich-user-group-xmas-special-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:night-of-data-talents-lausanne-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261217T173000
+DTEND;TZID=Europe/Zurich:20261217T233000
+SUMMARY:The Night of Data Talents: Startup Edition
+LOCATION:Cercle des Bains\, Lausanne
+DESCRIPTION:Swiss data startups pitch to an investor panel with community v
+ oting\, capping the year for the Suisse Romande data scene.\n\nOrganiser: 
+ DatAfterwork Suisse\n\nDetails and registration: https://swissdataevents.c
+ h/events/night-of-data-talents-lausanne-2026/
+URL:https://swissdataevents.ch/events/night-of-data-talents-lausanne-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:digitalswitzerland-davos-2027@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20270119T090000
+DTEND;TZID=Europe/Zurich:20270119T180000
+SUMMARY:digitalswitzerland @ Davos
+LOCATION:Davos
+DESCRIPTION:A full day in Davos on Switzerland's digital future\, with spea
+ kers from business\, government and research building on the national AI A
+ ction Plan and looking ahead to the Geneva AI Summit 2027. Programme detai
+ ls still to be published.\n\nOrganiser: digitalswitzerland\n\nDetails and 
+ registration: https://swissdataevents.ch/events/digitalswitzerland-davos-2
+ 027/
+URL:https://swissdataevents.ch/events/digitalswitzerland-davos-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

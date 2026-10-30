@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Rapperswil-Jona – Workshop
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ost-generative-ai-agentic-systems-rapperswil-2027@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270130
+SUMMARY:Generative AI & Agentische Systeme
+LOCATION:OST – Ostschweizer Fachhochschule\, Campus Rapperswil\, Rappersw
+ il-Jona
+DESCRIPTION:Two-day German-language course for developers\, architects\, da
+ ta scientists and ML engineers on building agentic LLM systems that surviv
+ e production: function calling\, hybrid-search RAG\, LangGraph topologies\
+ , security hardening and systematic evaluation. Places are limited.\n\nOrg
+ aniser: OST – Ostschweizer Fachhochschule (Institut für Computational E
+ ngineering)\n\nDetails and registration: https://swissdataevents.ch/events
+ /ost-generative-ai-agentic-systems-rapperswil-2027/
+URL:https://swissdataevents.ch/events/ost-generative-ai-agentic-systems-rap
+ perswil-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,489 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Meetup
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:eth-ai-center-researchers-meetup-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20260924T173000
+DTEND;TZID=Europe/Zurich:20260924T190000
+SUMMARY:ETH AI Center Researchers Community Meetup
+LOCATION:ETH AI Center\, OAT X 11\, Oerlikon\, Zurich
+DESCRIPTION:Recurring meetup series for the AI research community at ETH Zu
+ rich.\n\nRuns until 25 Nov — see the event page for session dates.\n\nOr
+ ganiser: ETH AI Center\n\nDetails and registration: https://swissdataevent
+ s.ch/events/eth-ai-center-researchers-meetup-2026/
+URL:https://swissdataevents.ch/events/eth-ai-center-researchers-meetup-2026
+ /
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:containers-aws-trust-sovereignty-zurich-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261103T154500
+DTEND;TZID=Europe/Zurich:20261103T203000
+SUMMARY:Architecting for Trust: Resilience & Sovereignty on AWS
+LOCATION:Bluelion\, Josefstrasse 219\, Zurich
+DESCRIPTION:An afternoon hands-on lab on AWS resilience with the Karpenter 
+ autoscaler\, then an evening of talks from AWS and copebit on designing re
+ silient workloads\, running enterprise Claude Code on AWS\, and digital so
+ vereignty — closing with pizza and beer.\n\nOrganiser: Containers and AW
+ S Meetup Group / copebit\n\nDetails and registration: https://swissdataeve
+ nts.ch/events/containers-aws-trust-sovereignty-zurich-2026/
+URL:https://swissdataevents.ch/events/containers-aws-trust-sovereignty-zuri
+ ch-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:tufa-talks-5-dream-machines-zurich-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261103T174500
+DTEND;TZID=Europe/Zurich:20261103T200000
+SUMMARY:Tufa Talks #5 — Dominique Paul (Dream Machines)
+LOCATION:Tufa Labs\, Zurich
+DESCRIPTION:Dream Machines founder Dominique Paul on teaching robots by dem
+ onstration so that non-roboticists can automate variable\, repetitive manu
+ facturing work in small and medium-sized businesses\, followed by Q&A and 
+ pizza.\n\nOrganiser: Tufa Labs\n\nDetails and registration: https://swissd
+ ataevents.ch/events/tufa-talks-5-dream-machines-zurich-2026/
+URL:https://swissdataevents.ch/events/tufa-talks-5-dream-machines-zurich-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mindstone-zurich-ai-meetup-november-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261104T180000
+DTEND;TZID=Europe/Zurich:20261104T210000
+SUMMARY:Mindstone Zurich November AI Meetup
+LOCATION:Unit8\, Beethovenstrasse 49 (entrance on Gartenstrasse)\, Zurich
+DESCRIPTION:The Zurich edition of the Mindstone AI evenings\, hosted at Uni
+ t8: a technical demo of what one team learned building a product with LLMs
+ \, a practical session on closing the AI skills gap for non-technical stud
+ ents\, and a talk on where AI takes work and society next\, then pizza and
+  networking.\n\nOrganiser: Mindstone Zürich AI Meetup\n\nDetails and regi
+ stration: https://swissdataevents.ch/events/mindstone-zurich-ai-meetup-nov
+ ember-2026/
+URL:https://swissdataevents.ch/events/mindstone-zurich-ai-meetup-november-2
+ 026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gdg-cloud-zurich-tech-talks-38-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261105T172500
+DTEND;TZID=Europe/Zurich:20261105T210000
+SUMMARY:GDG Cloud Zürich: Tech Talks #38
+LOCATION:Google Switzerland\, Zurich (address on registration)
+DESCRIPTION:Two evening talks on Google Cloud and Google DeepMind at Google
+ ’s Zurich office\, followed by a sponsored apéro — note that doors cl
+ ose at 17:55 and late entry is not possible.\n\nOrganiser: GDG Cloud Züri
+ ch\n\nDetails and registration: https://swissdataevents.ch/events/gdg-clou
+ d-zurich-tech-talks-38-2026/
+URL:https://swissdataevents.ch/events/gdg-cloud-zurich-tech-talks-38-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:physical-ai-meetup-zurich-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261105T180000
+DTEND;TZID=Europe/Zurich:20261105T210000
+SUMMARY:Physical AI Meetup — Zurich Edition
+LOCATION:J floor\, Josefstrasse 206\, Zurich
+DESCRIPTION:An evening of 15-minute lightning talks and live demos on what 
+ it takes to move robots out of demo videos and into factories and warehous
+ es\, with speakers from rerun\, Cerrion\, Sereact and Modal.\n\nOrganiser:
+  {Tech: Europe} with Modal\n\nDetails and registration: https://swissdatae
+ vents.ch/events/physical-ai-meetup-zurich-2026/
+URL:https://swissdataevents.ch/events/physical-ai-meetup-zurich-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:saic-040-ai-agent-ready-geneva-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261105T183000
+DTEND;TZID=Europe/Zurich:20261105T220000
+SUMMARY:SAIC #040: From Prototype to Production — Knowing When Your AI Ag
+ ent Is Ready
+LOCATION:Tesla\, Centre Confédération\, Geneva
+DESCRIPTION:How to tell whether an AI agent is ready for real users: evalua
+ tion with golden datasets\, comparing models and prompts\, end-to-end prod
+ uction tracing and tying agent performance to business metrics\, worked th
+ rough a multilingual support agent built with LangGraph\, MCP tools and RA
+ G.\n\nOrganiser: Switzerland AI Community\n\nDetails and registration: htt
+ ps://swissdataevents.ch/events/saic-040-ai-agent-ready-geneva-2026/
+URL:https://swissdataevents.ch/events/saic-040-ai-agent-ready-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:agentic-trio-zurich-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261110T173000
+DTEND;TZID=Europe/Zurich:20261110T193000
+SUMMARY:Agentic Trio
+LOCATION:Hardturmstrasse 253\, Zurich
+DESCRIPTION:INNOQ’s Fabian Walther reframes Teresa Torres’ Product Trio
+  as an "Agentic Trio"\, arguing that AI should change how software teams s
+ plit responsibility — not just how fast they ship.\n\nOrganiser: Zürich
+  Agentic Coding and Architectures\n\nDetails and registration: https://swi
+ ssdataevents.ch/events/agentic-trio-zurich-2026/
+URL:https://swissdataevents.ch/events/agentic-trio-zurich-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-swiss-groupe-mutuel-base-sion-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:AI Swiss x Groupe Mutuel : d’une discussion d’équipe à une IA
+  façonnée pour elle\, avec BASE
+LOCATION:Groupe Mutuel Assurances\, Sion
+DESCRIPTION:Second stop of AI Swiss’s roadshow on BASE\, its free open st
+ andard for responsible AI adoption\, with a live demonstration turning a t
+ ranscribed team interview into an agreed usage framework\, plus a Q&A on l
+ imits and oversight.\n\nOrganiser: AI Swiss / Groupe Mutuel\n\nDetails and
+  registration: https://swissdataevents.ch/events/ai-swiss-groupe-mutuel-ba
+ se-sion-2026/
+URL:https://swissdataevents.ch/events/ai-swiss-groupe-mutuel-base-sion-2026
+ /
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mongodb-user-group-zurich-hallucinations-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261110T180000
+DTEND;TZID=Europe/Zurich:20261110T210000
+SUMMARY:MUG Zürich — How to Truly Stop AI Hallucinations
+LOCATION:Zurich (venue to be announced)
+DESCRIPTION:Two talks from Helvetia Insurance engineers: why factual errors
+  in generative AI apps usually come from weak retrieval design rather than
+  the model — covering semantic chunking\, metadata filtering\, hybrid se
+ arch\, reranking and output guardrails — and a second session on the ben
+ efits and risks of AI-assisted development.\n\nOrganiser: Zürich MongoDB 
+ User Group\n\nDetails and registration: https://swissdataevents.ch/events/
+ mongodb-user-group-zurich-hallucinations-2026/
+URL:https://swissdataevents.ch/events/mongodb-user-group-zurich-hallucinati
+ ons-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:software-architecture-residuality-ai-zurich-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261110T180000
+DTEND;TZID=Europe/Zurich:20261110T200000
+SUMMARY:Rethinking Architecture Through Residuality and AI
+LOCATION:ERNI Schweiz AG\, Löwenstrasse 11\, Zurich
+DESCRIPTION:Barry O’Reilly’s Residuality Theory applied to the age of A
+ I-generated code: what architects should still decide themselves when mach
+ ines write the implementation. Live stream plus a few on-site seats at ERN
+ I.\n\nOrganiser: Software Architecture and Project Design Zurich\n\nDetail
+ s and registration: https://swissdataevents.ch/events/software-architectur
+ e-residuality-ai-zurich-2026/
+URL:https://swissdataevents.ch/events/software-architecture-residuality-ai-
+ zurich-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:analytics-roundtable-zurich-eth-data-stack-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261111T173000
+DTEND;TZID=Europe/Zurich:20261111T193000
+SUMMARY:Inside ETH Zurich’s Data Stack: Analytics for Universities
+LOCATION:Advance Metrics\, Heinrichstrasse 267A\, Zurich
+DESCRIPTION:A walk through a real analytics stack built with ETH Zurich —
+  the original setup and why\, what got bolted on later\, how individual de
+ partments were brought up to speed with the data\, and where it goes next 
+ — then open discussion over drinks.\n\nOrganiser: Analytics Roundtable Z
+ urich\n\nDetails and registration: https://swissdataevents.ch/events/analy
+ tics-roundtable-zurich-eth-data-stack-2026/
+URL:https://swissdataevents.ch/events/analytics-roundtable-zurich-eth-data-
+ stack-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-data-ai-group-ai-enabled-workflows-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261111T180000
+DTEND;TZID=Europe/Zurich:20261111T210000
+SUMMARY:Swiss Data & AI — AI Enabled Workflows
+LOCATION:Zurich (venue to be announced)
+DESCRIPTION:The first Zurich gathering of the Swiss Data & AI group\, on au
+ tomating data work with AI-enabled workflows. Topics\, speakers and the ve
+ nue are still to be announced\, and the group is open to offers to speak.\
+ n\nOrganiser: Swiss Data and AI Group (Databricks User Group)\n\nDetails a
+ nd registration: https://swissdataevents.ch/events/swiss-data-ai-group-ai-
+ enabled-workflows-2026/
+URL:https://swissdataevents.ch/events/swiss-data-ai-group-ai-enabled-workfl
+ ows-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:generative-ai-geneve-5-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261112T183000
+DTEND;TZID=Europe/Zurich:20261112T203000
+SUMMARY:IA : meetup « Generative AI Genève » #5
+LOCATION:Foound\, Rue Jean-Dassier 7\, Geneva
+DESCRIPTION:Your data\, your models\, your infrastructure: ELCA and EPFL sp
+ in-off Anyway Systems on running LLMs locally or in a private cloud\, and 
+ on the trade-offs between performance\, sovereignty and cost when a compan
+ y wants generative AI without handing over its data.\n\nOrganiser: Generat
+ ive AI Genève\n\nDetails and registration: https://swissdataevents.ch/eve
+ nts/generative-ai-geneve-5-2026/
+URL:https://swissdataevents.ch/events/generative-ai-geneve-5-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:silicon-chalet-sc71-database-postgresql-gland-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261112T174500
+DTEND;TZID=Europe/Zurich:20261112T210000
+SUMMARY:SC71: Meetup Database / PostgreSQL
+LOCATION:Swissquote Bank SA\, Chemin de la Crétaux 33\, Gland
+DESCRIPTION:Two database talks hosted by Swissquote in Gland — PostgreSQL
+  on Kubernetes with Laurent Parodi and multi-version concurrency control w
+ ith Louis Tochon — followed by a quiz and apéro.\n\nOrganiser: Silicon 
+ Chalet\n\nDetails and registration: https://swissdataevents.ch/events/sili
+ con-chalet-sc71-database-postgresql-gland-2026/
+URL:https://swissdataevents.ch/events/silicon-chalet-sc71-database-postgres
+ ql-gland-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:zurich-ai-safety-ai-futures-post-agi-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261112T183000
+DTEND;TZID=Europe/Zurich:20261112T200000
+SUMMARY:AI Futures: Trajectories for a Post-AGI Civilization
+LOCATION:ETH Zurich Main Building\, Rämistrasse 101\, Room F 26.5
+DESCRIPTION:Part of a discussion series on where AI development leads: expe
+ rt forecasts for transformative AI\, the economic effects of AGI\, possibl
+ e civilisational paths and what to do about them\, mixing short explainers
+  with group discussion.\n\nOrganiser: Zurich AI Safety\n\nDetails and regi
+ stration: https://swissdataevents.ch/events/zurich-ai-safety-ai-futures-po
+ st-agi-2026/
+URL:https://swissdataevents.ch/events/zurich-ai-safety-ai-futures-post-agi-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:product-academy-hype-vs-shipped-zurich-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261116T180000
+DTEND;TZID=Europe/Zurich:20261116T210000
+SUMMARY:Hype vs. Shipped: What AI Really Changes in Product Work
+LOCATION:SMG Swiss Marketplace Group\, Thurgauerstrasse 36\, Zurich
+DESCRIPTION:Two talks on what AI has actually changed in building products:
+  Coople on a year spent replacing squads\, sprints and story points with A
+ I-first workflows and smaller teams\, including the experiments that faile
+ d\, and Brack.Alltron on where AI earned its place and why plain analytics
+  sometimes still beats machine learning.\n\nOrganiser: Product Academy Swi
+ tzerland\n\nDetails and registration: https://swissdataevents.ch/events/pr
+ oduct-academy-hype-vs-shipped-zurich-2026/
+URL:https://swissdataevents.ch/events/product-academy-hype-vs-shipped-zuric
+ h-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-safety-trustworthy-ai-zurich-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261124T173000
+DTEND;TZID=Europe/Zurich:20261124T210000
+SUMMARY:AI Safety: Building Trustworthy AI in the Real World
+LOCATION:Zalando\, Prime Tower\, Hardstrasse 201\, Zurich
+DESCRIPTION:Four speakers from Google\, AWS\, Unique and Systematic-X on ke
+ eping AI systems trustworthy once they act on their own — how to evaluat
+ e and monitor before and after deployment\, where guardrails\, human overs
+ ight and red-teaming fit\, and how to ship fast without losing accountabil
+ ity.\n\nOrganiser: Elevate Tech: Women and Minorities in AI\, Tech\, and S
+ cience\n\nDetails and registration: https://swissdataevents.ch/events/ai-s
+ afety-trustworthy-ai-zurich-2026/
+URL:https://swissdataevents.ch/events/ai-safety-trustworthy-ai-zurich-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mindstone-geneva-ai-meetup-november-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261125T180000
+DTEND;TZID=Europe/Zurich:20261125T210000
+SUMMARY:Mindstone Geneva November AI Meetup
+LOCATION:L’Annexe by Rentes Genevoises\, Rue du Port 3\, Geneva
+DESCRIPTION:Monthly Geneva AI evening with three practical talks — buildi
+ ng with LLMs\, working faster with AI and where it is all heading — then
+  pizza and networking. Forty places.\n\nOrganiser: Mindstone Geneva AI Mee
+ tup\n\nDetails and registration: https://swissdataevents.ch/events/mindsto
+ ne-geneva-ai-meetup-november-2026/
+URL:https://swissdataevents.ch/events/mindstone-geneva-ai-meetup-november-2
+ 026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:after-microsoft-ignite-special-zurich-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261127T130000
+DTEND;TZID=Europe/Zurich:20261127T190000
+SUMMARY:After Microsoft Ignite Special 2026
+LOCATION:Microsoft Switzerland\, The Circle\, Zurich-Flughafen
+DESCRIPTION:Swiss MVPs recap the announcements from Microsoft Ignite 2026 i
+ n short sessions on Cloud & AI\, the agent platform\, Copilot and Microsof
+ t IQ\, security\, data security and compliance\, and agentic business appl
+ ications\, with an apéro after.\n\nOrganiser: Swiss Microsoft Community (
+ Microsoft Cloud Security & Modern Work)\n\nDetails and registration: https
+ ://swissdataevents.ch/events/after-microsoft-ignite-special-zurich-2026/
+URL:https://swissdataevents.ch/events/after-microsoft-ignite-special-zurich
+ -2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ibm-bob-coding-watch-party-zurich-december-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261201T160000
+DTEND;TZID=Europe/Zurich:20261201T200000
+SUMMARY:IBM Bob Coding Watch Party Zürich — Final Edition
+LOCATION:IBM Switzerland AG\, Vulkanstrasse 106 (+ online)\, Zurich
+DESCRIPTION:The closing session of IBM's 2026 hybrid series on IBM Bob\, it
+ s AI development assistant — coding live alongside other European cities
+ \, with beginner\, intermediate and expert tracks covering everything from
+  first idea to modernising legacy applications.\n\nOrganiser: IBM Switzerl
+ and\n\nDetails and registration: https://swissdataevents.ch/events/ibm-bob
+ -coding-watch-party-zurich-december-2026/
+URL:https://swissdataevents.ch/events/ibm-bob-coding-watch-party-zurich-dec
+ ember-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:agile-breakfast-zurich-viele-agenten-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261202T081500
+DTEND;TZID=Europe/Zurich:20261202T101500
+SUMMARY:Ein Team\, ein Plan und viele Agenten
+LOCATION:Freiraum\, Zürcher Kantonalbank\, Bahnhofstrasse 9\, Zurich
+DESCRIPTION:A German-language breakfast session with Quatico CEO Jan Wloka 
+ on why adding more AI agents tends to produce more review work than finish
+ ed work\, and the three changes that fixed it for his team: a written deci
+ sion before any agent starts coding\, work split into packages that run in
+  parallel\, and one daily overview of what needs a human. Aimed at product
+  owners and delivery leads\, with a real work package run live.\n\nOrganis
+ er: Agile Breakfast Zürich (swissICT)\n\nDetails and registration: https:
+ //swissdataevents.ch/events/agile-breakfast-zurich-viele-agenten-2026/
+URL:https://swissdataevents.ch/events/agile-breakfast-zurich-viele-agenten-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ki-update-swissai-meetup-gebenstorf-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261202T180000
+DTEND;TZID=Europe/Zurich:20261202T210000
+SUMMARY:KI-Update x swissAI Meetup — Die Auswirkungen der KI auf Kinder
+LOCATION:Geelig Zentrum\, 3rd floor\, Wambisterstrasse 1a\, Gebenstorf
+DESCRIPTION:Free German-language evening in Gebenstorf: a current AI update
+  from Michael Kyburz\, then Alexander Repenning on what AI means for child
+ ren\, closing with an apéro with the swissAI community.\n\nOrganiser: BEY
+ ONDER & swissAI\n\nDetails and registration: https://swissdataevents.ch/ev
+ ents/ki-update-swissai-meetup-gebenstorf-2026/
+URL:https://swissdataevents.ch/events/ki-update-swissai-meetup-gebenstorf-2
+ 026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dbt-meetup-zurich-december-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261203T180000
+DTEND;TZID=Europe/Zurich:20261203T193000
+SUMMARY:dbt Meetup Zurich
+LOCATION:EF Education AG\, Selnaustrasse 30\, Zurich
+DESCRIPTION:Evening for the Zürich dbt community aimed at analytics engine
+ ers\, data engineers and data leaders\, opening with Massimo Turola of Ban
+ k Vontobel on using dbt to manage Snowflake Cortex AI applications in an A
+ I data catalog\, then an apéro.\n\nOrganiser: Switzerland dbt Meetup\n\nD
+ etails and registration: https://swissdataevents.ch/events/dbt-meetup-zuri
+ ch-december-2026/
+URL:https://swissdataevents.ch/events/dbt-meetup-zurich-december-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:devops-zurich-kubevirt-ai-in-qa-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261208T173000
+DTEND;TZID=Europe/Zurich:20261208T203000
+SUMMARY:KubeVirt in Practice & AI in QA: What Works\, What Doesn't
+LOCATION:Digicomp Academy AG\, Limmatstrasse 50\, Zurich
+DESCRIPTION:Two talks in Zurich: Red Hat's Simon Krenger on running virtual
+  machines next to containers with KubeVirt\, including live demos and when
+  it is the wrong tool\, and Basia Karaagac on where AI genuinely helps in 
+ QA and where exploratory testing and human risk judgement still win.\n\nOr
+ ganiser: DevOps Meetup Zürich\n\nDetails and registration: https://swissd
+ ataevents.ch/events/devops-zurich-kubevirt-ai-in-qa-2026/
+URL:https://swissdataevents.ch/events/devops-zurich-kubevirt-ai-in-qa-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:databricks-kickstart-ai-workflows-zurich-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20270210T180000
+DTEND;TZID=Europe/Zurich:20270210T210000
+SUMMARY:Kickstart AI Workflows with Databricks
+LOCATION:Zurich (address on registration)
+DESCRIPTION:Hybrid Databricks user-group evening in Zurich on automating da
+ ta work with AI-enabled workflows\, including a session on Databricks Apps
+  and Lakebase applied to clinical cancer research cohorts. Rescheduled fro
+ m November 2026 to February 2027.\n\nOrganiser: Swiss Data & AI Group (Dat
+ abricks User Group)\n\nDetails and registration: https://swissdataevents.c
+ h/events/databricks-kickstart-ai-workflows-zurich-2026/
+URL:https://swissdataevents.ch/events/databricks-kickstart-ai-workflows-zur
+ ich-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

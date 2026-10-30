@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Sion – Meetup
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ai-swiss-groupe-mutuel-base-sion-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:AI Swiss x Groupe Mutuel : d’une discussion d’équipe à une IA
+  façonnée pour elle\, avec BASE
+LOCATION:Groupe Mutuel Assurances\, Sion
+DESCRIPTION:Second stop of AI Swiss’s roadshow on BASE\, its free open st
+ andard for responsible AI adoption\, with a live demonstration turning a t
+ ranscribed team interview into an agreed usage framework\, plus a Q&A on l
+ imits and oversight.\n\nOrganiser: AI Swiss / Groupe Mutuel\n\nDetails and
+  registration: https://swissdataevents.ch/events/ai-swiss-groupe-mutuel-ba
+ se-sion-2026/
+URL:https://swissdataevents.ch/events/ai-swiss-groupe-mutuel-base-sion-2026
+ /
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

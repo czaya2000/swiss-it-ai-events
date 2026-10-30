@@ -1,0 +1,81 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Davos
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:davos-catalyst-ai-summit-2027@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270116
+SUMMARY:Davos Catalyst: AI Summit 2027
+LOCATION:Davos Event Lounge\, Rätia Center\, Promenade 40
+DESCRIPTION:Invitation-only summit running alongside Davos week for around 
+ 200 founders\, investors\, corporate leaders and researchers\, with roundt
+ ables and closed-door sessions on AI infrastructure\, investment\, enterpr
+ ise deployment and governance.\n\nOrganiser: Davos Catalyst\n\nDetails and
+  registration: https://swissdataevents.ch/events/davos-catalyst-ai-summit-
+ 2027/
+URL:https://swissdataevents.ch/events/davos-catalyst-ai-summit-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:digitalswitzerland-davos-2027@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20270119T090000
+DTEND;TZID=Europe/Zurich:20270119T180000
+SUMMARY:digitalswitzerland @ Davos
+LOCATION:Davos
+DESCRIPTION:A full day in Davos on Switzerland's digital future\, with spea
+ kers from business\, government and research building on the national AI A
+ ction Plan and looking ahead to the Geneva AI Summit 2027. Programme detai
+ ls still to be published.\n\nOrganiser: digitalswitzerland\n\nDetails and 
+ registration: https://swissdataevents.ch/events/digitalswitzerland-davos-2
+ 027/
+URL:https://swissdataevents.ch/events/digitalswitzerland-davos-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:digital-lounge-davos-2027@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20270121T091500
+DTEND;TZID=Europe/Zurich:20270121T111500
+SUMMARY:Digital Lounge @ Davos — Enterprise Data\, AI & Robotics
+LOCATION:Davos (venue shared with invitees)
+DESCRIPTION:An invitation-only forum during Davos week for CxOs and transfo
+ rmation leaders on enterprise data\, AI and robotics — morning and after
+ noon keynotes and panels\, a live technology showcase\, entrepreneur talks
+  and parallel workshops\, closing with an awards ceremony and dinner.\n\nO
+ rganiser: JiVS / Data Migration International\n\nDetails and registration:
+  https://swissdataevents.ch/events/digital-lounge-davos-2027/
+URL:https://swissdataevents.ch/events/digital-lounge-davos-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

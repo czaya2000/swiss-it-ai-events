@@ -1,0 +1,148 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Online (CH) – Webinar
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:isa-lunch-learn-ai-tools-at-work-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261103T120000
+DTEND;TZID=Europe/Zurich:20261103T130000
+SUMMARY:ISA Lunch & Learn: AI Tools at Work
+LOCATION:Online
+DESCRIPTION:A 45-minute English-language lunch session on where AI tools ge
+ nuinely lift productivity at work\, built around real use cases and what h
+ as changed recently\, closing with open Q&A.\n\nOrganiser: Innovationsverb
+ and Schweizer Arbeitsmarkt (ISA)\n\nDetails and registration: https://swis
+ sdataevents.ch/events/isa-lunch-learn-ai-tools-at-work-2026/
+URL:https://swissdataevents.ch/events/isa-lunch-learn-ai-tools-at-work-2026
+ /
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:netnode-agentic-ai-prozesse-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261104T110000
+DTEND;TZID=Europe/Zurich:20261104T114500
+SUMMARY:Agentic AI: Wie agentische KI Prozesse übernimmt
+LOCATION:Online
+DESCRIPTION:Free German-language webinar with live demos on production syst
+ ems showing what AI agents can really do today\, where they fail\, and how
+  to run a safe pilot.\n\nOrganiser: NETNODE AG\n\nDetails and registration
+ : https://swissdataevents.ch/events/netnode-agentic-ai-prozesse-2026/
+URL:https://swissdataevents.ch/events/netnode-agentic-ai-prozesse-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:netnode-ai-im-unternehmen-wo-anfangen-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261104T100000
+DTEND;TZID=Europe/Zurich:20261104T104500
+SUMMARY:AI im Unternehmen: Wo anfangen?
+LOCATION:Online
+DESCRIPTION:Free 45-minute German-language webinar in which NETNODE founder
+  Lukas Fischer shows how to find and score AI use cases by value\, effort 
+ and risk\, with three Swiss examples and Q&A.\n\nOrganiser: NETNODE AG\n\n
+ Details and registration: https://swissdataevents.ch/events/netnode-ai-im-
+ unternehmen-wo-anfangen-2026/
+URL:https://swissdataevents.ch/events/netnode-ai-im-unternehmen-wo-anfangen
+ -2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fabric-user-group-switzerland-88th-online-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261105T170000
+DTEND;TZID=Europe/Zurich:20261105T190000
+SUMMARY:Zürich — 88th Fabric User Group (online)
+LOCATION:Online
+DESCRIPTION:The Swiss Fabric user group’s monthly online session: the lat
+ est Fabric news\, then Franco on automating semantic model health checks w
+ ith a Fabric notebook\, the Best Practice Analyzer\, Memory Analyzer and D
+ AX INFO views\, writing results to a Lakehouse to track model quality and 
+ memory over time.\n\nOrganiser: Microsoft Fabric User Group Switzerland\n\
+ nDetails and registration: https://swissdataevents.ch/events/fabric-user-g
+ roup-switzerland-88th-online-2026/
+URL:https://swissdataevents.ch/events/fabric-user-group-switzerland-88th-on
+ line-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:devops-for-fabric-git-deployment-pipelines-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261110T183000
+DTEND;TZID=Europe/Zurich:20261110T200000
+SUMMARY:DevOps for Fabric — Git & Deployment Pipelines
+LOCATION:Online
+DESCRIPTION:Bringing proper CI/CD to Microsoft Fabric: Git integration\, de
+ ployment pipelines\, variable libraries and sensitivity labels for enterpr
+ ise-ready BI.\n\nOrganiser: Data and AI for Intelligent Cloud\n\nDetails a
+ nd registration: https://swissdataevents.ch/events/devops-for-fabric-git-d
+ eployment-pipelines-2026/
+URL:https://swissdataevents.ch/events/devops-for-fabric-git-deployment-pipe
+ lines-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ikm-impuls-vom-trigger-zum-agenten-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261111T123000
+DTEND;TZID=Europe/Zurich:20261111T133000
+SUMMARY:IKM Impuls: Vom Trigger zum Agenten
+LOCATION:Online
+DESCRIPTION:Lunchtime session from HSLU on what changes when marketing auto
+ mation stops following rules and starts deciding\, and what companies need
+  in data\, technology and organisation to run AI agents in customer dialog
+ ue.\n\nOrganiser: HSLU Institut für Kommunikation und Marketing (IKM)\n\n
+ Details and registration: https://swissdataevents.ch/events/ikm-impuls-vom
+ -trigger-zum-agenten-2026/
+URL:https://swissdataevents.ch/events/ikm-impuls-vom-trigger-zum-agenten-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fabric-year-in-review-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261208T183000
+DTEND;TZID=Europe/Zurich:20261208T200000
+SUMMARY:Fabric Year in Review 2026 — Highlights & Outlook
+LOCATION:Online
+DESCRIPTION:Year-end session from the Zurich Microsoft data-platform group 
+ on what actually shipped in Fabric during 2026 and what is worth planning 
+ for next.\n\nOrganiser: Data and AI for Intelligent Cloud\n\nDetails and r
+ egistration: https://swissdataevents.ch/events/fabric-year-in-review-2026/
+URL:https://swissdataevents.ch/events/fabric-year-in-review-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

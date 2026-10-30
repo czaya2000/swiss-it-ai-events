@@ -1,0 +1,119 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Lucerne
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ai-breakfast-luzern-55@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261030T073000
+DTEND;TZID=Europe/Zurich:20261030T090000
+SUMMARY:AI Breakfast #55 Luzern
+LOCATION:Universität Luzern\, Frohburgstrasse 3\, Lucerne
+DESCRIPTION:Louis Hermann\, co-founder of DocPier\, on how accurate documen
+ t processing actually has to be before it can run in production\, why a ge
+ neric model on its own is not enough\, and what trustees\, insurers and ba
+ nks can take from that for their own AI projects.\n\nOrganiser: Digital & 
+ AI Community\n\nDetails and registration: https://swissdataevents.ch/event
+ s/ai-breakfast-luzern-55/
+URL:https://swissdataevents.ch/events/ai-breakfast-luzern-55/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:zwischen-prompt-und-urteilskraft-lucerne-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261103T181500
+DTEND;TZID=Europe/Zurich:20261103T194500
+SUMMARY:Zwischen Prompt und Urteilskraft
+LOCATION:Hochschule Luzern – Wirtschaft\, Walter-von-Moos-Promenade 1\, L
+ ucerne
+DESCRIPTION:Impulse talks and a panel at HSLU Lucerne on what communication
+  work is still worth when AI writes the first draft\, and which skills mat
+ ter next — apéro afterwards.\n\nOrganiser: HSLU Institut für Kommunika
+ tion und Marketing (IKM) / ZSPR\n\nDetails and registration: https://swiss
+ dataevents.ch/events/zwischen-prompt-und-urteilskraft-lucerne-2026/
+URL:https://swissdataevents.ch/events/zwischen-prompt-und-urteilskraft-luce
+ rne-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-breakfast-luzern-56@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261120T073000
+DTEND;TZID=Europe/Zurich:20261120T090000
+SUMMARY:AI Breakfast #56 Luzern
+LOCATION:Universität Luzern\, Frohburgstrasse 3\, Lucerne
+DESCRIPTION:Merun Gugelmann of Aeberli Treuhand on how an 80-year-old trust
+  company got from Microsoft Teams to building its own Azure applications 
+ — the steps of that digitisation journey\, concrete examples\, and the s
+ etup on Azure App Services.\n\nOrganiser: Digital & AI Community\n\nDetail
+ s and registration: https://swissdataevents.ch/events/ai-breakfast-luzern-
+ 56/
+URL:https://swissdataevents.ch/events/ai-breakfast-luzern-56/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:airistoteles-4-hslu-lucerne-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261201T190000
+DTEND;TZID=Europe/Zurich:20261201T203000
+SUMMARY:AIristoteles 4.0 — Bis dass der Strom uns scheidet
+LOCATION:Hochschule Luzern – Wirtschaft\, Walter-von-Moos-Promenade 1\, L
+ ucerne
+DESCRIPTION:Fourth edition of HSLU’s AIristoteles series: an EPFL evoluti
+ onary psychologist and a psychotherapist discuss what it means when people
+  enter long-term relationships with AI bots\, moderated by Stephan Klappro
+ th and followed by an apéro.\n\nOrganiser: HSLU Institut für Kommunikati
+ on und Marketing (IKM)\n\nDetails and registration: https://swissdataevent
+ s.ch/events/airistoteles-4-hslu-lucerne-2026/
+URL:https://swissdataevents.ch/events/airistoteles-4-hslu-lucerne-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fuehrung-ist-kein-prompt-lucerne-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261203T170000
+DTEND;TZID=Europe/Zurich:20261203T210000
+SUMMARY:Business mit KI. Heute\, nicht 2030. Vol. 02 — Führung ist kein 
+ Prompt
+LOCATION:Schlössli Pop-Up\, Sternmattstrasse 3\, Lucerne
+DESCRIPTION:Second volume of the Lucerne series for entrepreneurs and C-lev
+ el leaders on how AI reshapes teams\, leadership and the job market: two s
+ hort talks\, a moderated panel and an apéro\, capped at 50 guests and hel
+ d in German.\n\nOrganiser: Pixels / Digital & AI Community\n\nDetails and 
+ registration: https://swissdataevents.ch/events/fuehrung-ist-kein-prompt-l
+ ucerne-2026/
+URL:https://swissdataevents.ch/events/fuehrung-ist-kein-prompt-lucerne-2026
+ /
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

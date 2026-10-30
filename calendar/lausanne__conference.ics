@@ -1,0 +1,65 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Lausanne – Conference
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c4dt-ai-sovereignty-conference-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261110T093000
+DTEND;TZID=Europe/Zurich:20261110T180000
+SUMMARY:C4DT Conference on AI Sovereignty: Charting Switzerland’s Path
+LOCATION:Starling Hotel\, 1025 Saint-Sulpice\, Saint-Sulpice (Lausanne)
+DESCRIPTION:A full day on how Switzerland builds strategic independence in 
+ AI between US and Chinese dominance — lessons from other middle powers\,
+  Swiss research including the Apertus foundation model\, industry deployme
+ nt realities\, and concrete recommendations for national strategy.\n\nOrga
+ niser: Center for Digital Trust (C4DT)\, EPFL\n\nDetails and registration:
+  https://swissdataevents.ch/events/c4dt-ai-sovereignty-conference-2026/
+URL:https://swissdataevents.ch/events/c4dt-ai-sovereignty-conference-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:opentech-connect-inspire-lausanne-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261111T090000
+DTEND;TZID=Europe/Zurich:20261111T173000
+SUMMARY:OpenTech Connect 2026 — Day 1: INSPIRE
+LOCATION:EPFL Innovation Park I\, Lausanne
+DESCRIPTION:First day of a two-day open-technology gathering at EPFL Innova
+ tion Park\, with talks\, demos\, lightning sessions and panel discussions 
+ on data\, AI and open technology for researchers\, students\, developers a
+ nd industry.\n\nOrganiser: Data\, Cloud and AI in Switzerland (with Big Da
+ ta University and IBM Research)\n\nDetails and registration: https://swiss
+ dataevents.ch/events/opentech-connect-inspire-lausanne-2026/
+URL:https://swissdataevents.ch/events/opentech-connect-inspire-lausanne-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

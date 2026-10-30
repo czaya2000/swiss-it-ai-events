@@ -1,0 +1,80 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Geneva – Conference
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:heg-geneve-de-lia-aux-resultats-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261109T180000
+DTEND;TZID=Europe/Zurich:20261109T193000
+SUMMARY:Les Rendez-vous de la HEG-Genève : De l’IA aux résultats
+LOCATION:HEG-Genève\, Campus Battelle\, Rue de la Tambourine 17\, Carouge 
+ (Geneva)
+DESCRIPTION:Round table in which four organisations present AI initiatives 
+ that moved past the pilot stage to measurable business impact — the orga
+ nisers promise fewer speeches and more lived experience — followed by a 
+ cocktail.\n\nOrganiser: HEG-Genève / Observatoire Data & IA (with Oracle 
+ and Colombus Consulting)\n\nDetails and registration: https://swissdataeve
+ nts.ch/events/heg-geneve-de-lia-aux-resultats-2026/
+URL:https://swissdataevents.ch/events/heg-geneve-de-lia-aux-resultats-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:scs-ai-risks-in-cybersecurity-geneva-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261119T163000
+DTEND;TZID=Europe/Zurich:20261119T193000
+SUMMARY:AI Risks in CyberSecurity
+LOCATION:Novotel Genève Centre\, Rue de Zurich 19\, Geneva
+DESCRIPTION:Afternoon session in Geneva on how organisations can keep using
+  AI internally without taking on unmanaged risk\, with presentations follo
+ wed by a networking reception\; CPE credits available via ISC2 and ISACA.\
+ n\nOrganiser: Swiss CyberSecurity (SCS)\n\nDetails and registration: https
+ ://swissdataevents.ch/events/scs-ai-risks-in-cybersecurity-geneva-2026/
+URL:https://swissdataevents.ch/events/scs-ai-risks-in-cybersecurity-geneva-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-days-2027-geneva@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;VALUE=DATE:20270217
+DTEND;VALUE=DATE:20270218
+SUMMARY:AI Days 2027 — Geneva
+LOCATION:Geneva
+DESCRIPTION:Geneva leg of the fifth AI Days\, the Swiss AI Center’s appli
+ ed-AI conference for SMEs\, with workshops\, talks\, research and demos. R
+ egistration not yet open.\n\nOrganiser: HES-SO / Swiss AI Center\n\nDetail
+ s and registration: https://swissdataevents.ch/events/ai-days-2027-geneva/
+URL:https://swissdataevents.ch/events/ai-days-2027-geneva/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

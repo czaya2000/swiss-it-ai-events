@@ -1,0 +1,64 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Lugano – Conference
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ticino-data-conference-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261030T093000
+DTEND;TZID=Europe/Zurich:20261030T174500
+SUMMARY:Ticino Data Conference 2026
+LOCATION:Acer EMEA Regional Headquarters\, Via della Posta 28\, Bioggio (Lu
+ gano)
+DESCRIPTION:Free one-day community summit in Ticino with three tracks on Po
+ wer BI\, Microsoft Fabric\, AI-assisted tooling and data governance\, in E
+ nglish and Italian.\n\nOrganiser: Power BI User Group Italy\n\nDetails and
+  registration: https://swissdataevents.ch/events/ticino-data-conference-20
+ 26/
+URL:https://swissdataevents.ch/events/ticino-data-conference-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-in-biomedicine-forum-lugano-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261106T090000
+DTEND;TZID=Europe/Zurich:20261106T193000
+SUMMARY:Artificial Intelligence in Biomedicine Forum 2026
+LOCATION:Aula Polivalente\, Campus Est USI-SUPSI\, Lugano
+DESCRIPTION:A free day in Lugano on AI from basic research through to the c
+ linic: one session on digital twins and personalised medicine\, one on pro
+ tein and compound design\, plus abstract talks\, posters and a closing con
+ versation on global AI governance ahead of the Geneva AI Summit 2027.\n\nO
+ rganiser: IBSA Foundation / IDSIA USI-SUPSI\n\nDetails and registration: h
+ ttps://swissdataevents.ch/events/ai-in-biomedicine-forum-lugano-2026/
+URL:https://swissdataevents.ch/events/ai-in-biomedicine-forum-lugano-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Swiss Data Events: upcoming IT, data and AI events in Switzerland</title>
+    <link>https://swissdataevents.ch/</link>
+    <atom:link href="https://swissdataevents.ch/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Swiss Data Events (swissdataevents.ch) is a hand-curated list of upcoming IT, data and AI events in Switzerland: meetups, conferences, workshops, networking evenings and webinars about Databricks, Microsoft Fabric, Power BI, the Azure data platform, AI strategy and governance, data governance, data leadership and applied AI. Every listing is checked against the organiser's own page before it is published, and the list is refreshed on Mondays, Wednesdays and Fridays. Registration always happens on the organiser's site.</description>
+    <language>en</language>
+    <lastBuildDate>Fri, 30 Oct 2026 16:46:01 GMT</lastBuildDate>
+    <ttl>720</ttl>
+    <item>
+      <title>Physical AI Meetup — Zurich Edition (5 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/physical-ai-meetup-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/physical-ai-meetup-zurich-2026/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:00:00 GMT</pubDate>
+      <description>5 Nov 2026, 18:00–21:00 · J floor, Josefstrasse 206, Zurich · Meetup · Free (host approval required). An evening of 15-minute lightning talks and live demos on what it takes to move robots out of demo videos and into factories and warehouses, with speakers from rerun, Cerrion, Sereact and Modal. Organiser: {Tech: Europe} with Modal.</description>
+      <category>Meetup</category>
+      <category>Embodied AI</category>
+      <category>Robotics</category>
+      <category>Applied AI</category>
+    </item>
+    <item>
+      <title>SAIC #040: From Prototype to Production — Knowing When Your AI Agent Is Ready (5 Nov 2026, Geneva)</title>
+      <link>https://swissdataevents.ch/events/saic-040-ai-agent-ready-geneva-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/saic-040-ai-agent-ready-geneva-2026/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:00:00 GMT</pubDate>
+      <description>5 Nov 2026, 18:30–22:00 · Tesla, Centre Confédération, Geneva · Meetup · Free (registration required). How to tell whether an AI agent is ready for real users: evaluation with golden datasets, comparing models and prompts, end-to-end production tracing and tying agent performance to business metrics, worked through a multilingual support agent built with LangGraph, MCP tools and RAG. Organiser: Switzerland AI Community.</description>
+      <category>Meetup</category>
+      <category>AI agents</category>
+      <category>Applied AI</category>
+      <category>LLMs</category>
+    </item>
+    <item>
+      <title>Les Rendez-vous de la HEG-Genève : De l’IA aux résultats (9 Nov 2026, Carouge (Geneva))</title>
+      <link>https://swissdataevents.ch/events/heg-geneve-de-lia-aux-resultats-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/heg-geneve-de-lia-aux-resultats-2026/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:00:00 GMT</pubDate>
+      <description>9 Nov 2026, 18:00–19:30 · HEG-Genève, Campus Battelle, Rue de la Tambourine 17, Carouge (Geneva) · Conference · Free (registration required). Round table in which four organisations present AI initiatives that moved past the pilot stage to measurable business impact — the organisers promise fewer speeches and more lived experience — followed by a cocktail. Organiser: HEG-Genève / Observatoire Data &amp; IA (with Oracle and Colombus Consulting).</description>
+      <category>Conference</category>
+      <category>Applied AI</category>
+      <category>AI adoption</category>
+      <category>Data and organisation</category>
+    </item>
+    <item>
+      <title>AI Swiss x Groupe Mutuel : d’une discussion d’équipe à une IA façonnée pour elle, avec BASE (10 Nov 2026, Sion)</title>
+      <link>https://swissdataevents.ch/events/ai-swiss-groupe-mutuel-base-sion-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/ai-swiss-groupe-mutuel-base-sion-2026/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:00:00 GMT</pubDate>
+      <description>10 Nov 2026 · Groupe Mutuel Assurances, Sion · Meetup · Not listed (registration required). Second stop of AI Swiss’s roadshow on BASE, its free open standard for responsible AI adoption, with a live demonstration turning a transcribed team interview into an agreed usage framework, plus a Q&amp;A on limits and oversight. Organiser: AI Swiss / Groupe Mutuel.</description>
+      <category>Meetup</category>
+      <category>Applied AI</category>
+      <category>AI governance</category>
+      <category>AI for SMEs</category>
+    </item>
+    <item>
+      <title>SPRINT Robotics Europe Summit 2026 (11 Nov 2026 – 12 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/sprint-robotics-europe-summit-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/sprint-robotics-europe-summit-zurich-2026/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:00:00 GMT</pubDate>
+      <description>11 Nov 2026 – 12 Nov 2026, 08:00–18:00 · ETH Zürich, Rämistrasse 101, Zurich · Conference · EUR 400 community / EUR 900 non-members / EUR 150 students. Two-day European summit on robotics, AI and autonomous technology for industrial inspection, maintenance and operations, hosted at ETH Zürich, with company visits on the second day. Organiser: SPRINT Robotics.</description>
+      <category>Conference</category>
+      <category>Robotics</category>
+      <category>Applied AI</category>
+      <category>Analytics</category>
+    </item>
+    <item>
+      <title>Swiss AI Industry Connect (11 Nov 2026, Bern)</title>
+      <link>https://swissdataevents.ch/events/swiss-ai-industry-connect-bern-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/swiss-ai-industry-connect-bern-2026/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:00:00 GMT</pubDate>
+      <description>11 Nov 2026, 08:45–13:15 · Swisscom Office, Genfergasse 14, Bern · Networking · Not listed. Half-day morning session at Swisscom’s Bern office bringing EPFL and ETH Zurich AI researchers together with industry partners. Organiser: EPFL &amp; ETH Zurich, hosted by Swisscom.</description>
+      <category>Networking</category>
+      <category>AI research</category>
+      <category>Academia–industry</category>
+      <category>Applied AI</category>
+    </item>
+    <item>
+      <title>OpenTech Connect 2026 — Day 1: INSPIRE (11 Nov 2026, Lausanne)</title>
+      <link>https://swissdataevents.ch/events/opentech-connect-inspire-lausanne-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/opentech-connect-inspire-lausanne-2026/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:00:00 GMT</pubDate>
+      <description>11 Nov 2026, 09:00–17:30 (apéro until 20:00) · EPFL Innovation Park I, Lausanne · Conference · Free (host approval required). First day of a two-day open-technology gathering at EPFL Innovation Park, with talks, demos, lightning sessions and panel discussions on data, AI and open technology for researchers, students, developers and industry. Organiser: Data, Cloud and AI in Switzerland (with Big Data University and IBM Research).</description>
+      <category>Conference</category>
+      <category>Applied AI</category>
+      <category>Data platform</category>
+      <category>Open-source LLMs</category>
+    </item>
+    <item>
+      <title>east#KI 2026 (11 Nov 2026, St. Gallen)</title>
+      <link>https://swissdataevents.ch/events/east-ki-st-gallen-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/east-ki-st-gallen-2026/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:00:00 GMT</pubDate>
+      <description>11 Nov 2026, 16:30–22:00 · Pfalzkeller, Klosterhof, St. Gallen · Conference · CHF 25. Second edition of Eastern Switzerland’s AI evening: a panel on how safe AI really is, five-minute pitches from regional companies, an AI table fair and a networking apéro. Organiser: IT rockt! (ICT Cluster Ostschweiz) with swissAI.</description>
+      <category>Conference</category>
+      <category>Applied AI</category>
+      <category>AI community</category>
+      <category>AI for SMEs</category>
+    </item>
+    <item>
+      <title>OpenTech Connect 2026 — Day 2: BUILD (12 Nov 2026, Lausanne)</title>
+      <link>https://swissdataevents.ch/events/opentech-connect-build-lausanne-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/opentech-connect-build-lausanne-2026/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:00:00 GMT</pubDate>
+      <description>12 Nov 2026 · EPFL Innovation Park I, Lausanne · Workshop · Free (host approval required). Hands-on second day of OpenTech Connect: workshops, technical deep dives and practical labs with speakers from LlamaIndex, Skilder, Synergix and IBM Research. Registration is separate from day one. Organiser: Data, Cloud and AI in Switzerland (with Big Data University and IBM Research).</description>
+      <category>Workshop</category>
+      <category>Applied AI</category>
+      <category>AI agents</category>
+      <category>Workshops</category>
+    </item>
+    <item>
+      <title>Boosting Life Sciences Innovation with AI (17 Nov 2026, Geneva)</title>
+      <link>https://swissdataevents.ch/events/fongit-boosting-life-sciences-ai-geneva-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/fongit-boosting-life-sciences-ai-geneva-2026/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:00:00 GMT</pubDate>
+      <description>17 Nov 2026, 12:00–14:30 · Campus Biotech, Chemin des Mines 9, Geneva · Workshop · Not listed (registration required). Lunchtime session with the Wyss Center AI Hub, SOPHiA GENETICS, the Swiss Data Science Center and BrainQuant on the data, infrastructure, validation and regulatory groundwork behind AI in research partnerships, precision medicine and digital biomarkers. Organiser: FONGIT / Swiss Data Science Center.</description>
+      <category>Workshop</category>
+      <category>Applied AI</category>
+      <category>Data platform</category>
+      <category>Machine learning</category>
+    </item>
+    <item>
+      <title>Kongress «KI im Energiesektor» (25 Nov 2026, Bern)</title>
+      <link>https://swissdataevents.ch/events/kongress-ki-im-energiesektor-bern-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/kongress-ki-im-energiesektor-bern-2026/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:00:00 GMT</pubDate>
+      <description>25 Nov 2026, 09:00–17:30 · Kursaal Bern, Bern · Conference · CHF 440 members / CHF 550 non-members. Day-long congress bringing around 150 specialists from energy, technology and policy together on where AI and data create real value in grids, buildings and districts, with a keynote by Gerard Reid of Alexa Capital. Organiser: energie-cluster.ch.</description>
+      <category>Conference</category>
+      <category>Applied AI</category>
+      <category>Energy</category>
+      <category>Enterprise AI</category>
+    </item>
+    <item>
+      <title>AIristoteles 4.0 — Bis dass der Strom uns scheidet (1 Dec 2026, Lucerne)</title>
+      <link>https://swissdataevents.ch/events/airistoteles-4-hslu-lucerne-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/airistoteles-4-hslu-lucerne-2026/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:00:00 GMT</pubDate>
+      <description>1 Dec 2026, 19:00–20:30 · Hochschule Luzern – Wirtschaft, Walter-von-Moos-Promenade 1, Lucerne · Networking · CHF 15. Fourth edition of HSLU’s AIristoteles series: an EPFL evolutionary psychologist and a psychotherapist discuss what it means when people enter long-term relationships with AI bots, moderated by Stephan Klapproth and followed by an apéro. Organiser: HSLU Institut für Kommunikation und Marketing (IKM).</description>
+      <category>Networking</category>
+      <category>AI &amp; society</category>
+      <category>Applied AI</category>
+    </item>
+    <item>
+      <title>KI-Update x swissAI Meetup — Die Auswirkungen der KI auf Kinder (2 Dec 2026, Gebenstorf)</title>
+      <link>https://swissdataevents.ch/events/ki-update-swissai-meetup-gebenstorf-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/ki-update-swissai-meetup-gebenstorf-2026/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:00:00 GMT</pubDate>
+      <description>2 Dec 2026, 18:00–21:00 · Geelig Zentrum, 3rd floor, Wambisterstrasse 1a, Gebenstorf · Meetup · Free. Free German-language evening in Gebenstorf: a current AI update from Michael Kyburz, then Alexander Repenning on what AI means for children, closing with an apéro with the swissAI community. Organiser: BEYONDER &amp; swissAI.</description>
+      <category>Meetup</category>
+      <category>AI &amp; society</category>
+      <category>Applied AI</category>
+    </item>
+    <item>
+      <title>Business mit KI. Heute, nicht 2030. Vol. 02 — Führung ist kein Prompt (3 Dec 2026, Lucerne)</title>
+      <link>https://swissdataevents.ch/events/fuehrung-ist-kein-prompt-lucerne-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/fuehrung-ist-kein-prompt-lucerne-2026/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:00:00 GMT</pubDate>
+      <description>3 Dec 2026, 17:00–21:00 · Schlössli Pop-Up, Sternmattstrasse 3, Lucerne · Networking · Free for members / CHF 25 guests. Second volume of the Lucerne series for entrepreneurs and C-level leaders on how AI reshapes teams, leadership and the job market: two short talks, a moderated panel and an apéro, capped at 50 guests and held in German. Organiser: Pixels / Digital &amp; AI Community.</description>
+      <category>Networking</category>
+      <category>AI strategy</category>
+      <category>AI adoption</category>
+      <category>Data leadership</category>
+    </item>
+    <item>
+      <title>Davos Catalyst: AI Summit 2027 (12 Jan 2027 – 15 Jan 2027, Davos)</title>
+      <link>https://swissdataevents.ch/events/davos-catalyst-ai-summit-2027/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/davos-catalyst-ai-summit-2027/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:00:00 GMT</pubDate>
+      <description>12 Jan 2027 – 15 Jan 2027 · Davos Event Lounge, Rätia Center, Promenade 40, Davos · Conference · CHF 7,900 delegate pass (CHF 5,900 until 31 October, excl. VAT). Invitation-only summit running alongside Davos week for around 200 founders, investors, corporate leaders and researchers, with roundtables and closed-door sessions on AI infrastructure, investment, enterprise deployment and governance. Organiser: Davos Catalyst.</description>
+      <category>Conference</category>
+      <category>AI strategy</category>
+      <category>AI governance</category>
+      <category>Compute infrastructure</category>
+    </item>
+    <item>
+      <title>Tufa Talks #5 — Dominique Paul (Dream Machines) (3 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/tufa-talks-5-dream-machines-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/tufa-talks-5-dream-machines-zurich-2026/</guid>
+      <pubDate>Wed, 28 Oct 2026 06:00:00 GMT</pubDate>
+      <description>3 Nov 2026, 17:45–20:00 · Tufa Labs, Zurich · Meetup · Free. Dream Machines founder Dominique Paul on teaching robots by demonstration so that non-roboticists can automate variable, repetitive manufacturing work in small and medium-sized businesses, followed by Q&amp;A and pizza. Organiser: Tufa Labs.</description>
+      <category>Meetup</category>
+      <category>Robotics</category>
+      <category>Embodied AI</category>
+      <category>Machine learning</category>
+    </item>
+    <item>
+      <title>Apertus for NGOs: Running and Deploying Switzerland’s Open-source LLM (10 Nov 2026, Lausanne)</title>
+      <link>https://swissdataevents.ch/events/apertus-for-ngos-workshop-lausanne-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/apertus-for-ngos-workshop-lausanne-2026/</guid>
+      <pubDate>Wed, 28 Oct 2026 06:00:00 GMT</pubDate>
+      <description>10 Nov 2026, 09:30–12:30 · EPFL AI Center Lounge, Lausanne · Workshop · Free. Hands-on morning for non-profit staff and researchers on deploying Apertus, Switzerland’s fully open large language model, on their own infrastructure or via a provider — with a Swiss non-profit case study and group exercises. Organiser: Swiss AI Initiative (ETH Zurich, EPFL &amp; CSCS).</description>
+      <category>Workshop</category>
+      <category>Open-source LLMs</category>
+      <category>Sovereign AI</category>
+      <category>Applied AI</category>
+    </item>
+    <item>
+      <title>AI Futures: Trajectories for a Post-AGI Civilization (12 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/zurich-ai-safety-ai-futures-post-agi-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/zurich-ai-safety-ai-futures-post-agi-2026/</guid>
+      <pubDate>Wed, 28 Oct 2026 06:00:00 GMT</pubDate>
+      <description>12 Nov 2026, 18:30–20:00 · ETH Zurich Main Building, Rämistrasse 101, Room F 26.5, Zurich · Meetup · Free. Part of a discussion series on where AI development leads: expert forecasts for transformative AI, the economic effects of AGI, possible civilisational paths and what to do about them, mixing short explainers with group discussion. Organiser: Zurich AI Safety.</description>
+      <category>Meetup</category>
+      <category>AI safety</category>
+      <category>AI strategy</category>
+      <category>AI &amp; society</category>
+    </item>
+    <item>
+      <title>After Microsoft Ignite Special 2026 (27 Nov 2026, Zurich-Flughafen)</title>
+      <link>https://swissdataevents.ch/events/after-microsoft-ignite-special-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/after-microsoft-ignite-special-zurich-2026/</guid>
+      <pubDate>Wed, 28 Oct 2026 06:00:00 GMT</pubDate>
+      <description>27 Nov 2026, 13:00–19:00 · Microsoft Switzerland, The Circle, Zurich-Flughafen · Meetup · Free. Swiss MVPs recap the announcements from Microsoft Ignite 2026 in short sessions on Cloud &amp; AI, the agent platform, Copilot and Microsoft IQ, security, data security and compliance, and agentic business applications, with an apéro after. Organiser: Swiss Microsoft Community (Microsoft Cloud Security &amp; Modern Work).</description>
+      <category>Meetup</category>
+      <category>Microsoft ecosystem</category>
+      <category>AI agents</category>
+      <category>Data governance</category>
+    </item>
+    <item>
+      <title>dbt Meetup Zurich (3 Dec 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/dbt-meetup-zurich-december-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/dbt-meetup-zurich-december-2026/</guid>
+      <pubDate>Wed, 28 Oct 2026 06:00:00 GMT</pubDate>
+      <description>3 Dec 2026, 18:00–19:30 · EF Education AG, Selnaustrasse 30, Zurich · Meetup · Free. Evening for the Zürich dbt community aimed at analytics engineers, data engineers and data leaders, opening with Massimo Turola of Bank Vontobel on using dbt to manage Snowflake Cortex AI applications in an AI data catalog, then an apéro. Organiser: Switzerland dbt Meetup.</description>
+      <category>Meetup</category>
+      <category>Data engineering</category>
+      <category>Data platform</category>
+      <category>Applied AI</category>
+    </item>
+    <item>
+      <title>Azure Zurich User Group X-Mas Special 2026 (8 Dec 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/azure-zurich-user-group-xmas-special-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/azure-zurich-user-group-xmas-special-2026/</guid>
+      <pubDate>Wed, 28 Oct 2026 06:00:00 GMT</pubDate>
+      <description>8 Dec 2026, 18:00–22:00 · Frau Gerolds Garten, Geroldstrasse 23, Zurich · Networking · Free. The Azure Zürich User Group closes the year with its Christmas get-together at Frau Gerolds Wintergarten — no agenda, just food, glühwein and the Swiss Azure community. Places are limited. Organiser: Microsoft Azure Zürich User Group.</description>
+      <category>Networking</category>
+      <category>Azure</category>
+      <category>Microsoft ecosystem</category>
+      <category>AI community</category>
+    </item>
+    <item>
+      <title>Zwischen Prompt und Urteilskraft (3 Nov 2026, Lucerne)</title>
+      <link>https://swissdataevents.ch/events/zwischen-prompt-und-urteilskraft-lucerne-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/zwischen-prompt-und-urteilskraft-lucerne-2026/</guid>
+      <pubDate>Mon, 26 Oct 2026 06:00:00 GMT</pubDate>
+      <description>3 Nov 2026, 18:15–19:45 · Hochschule Luzern – Wirtschaft, Walter-von-Moos-Promenade 1, Lucerne · Networking · Not listed. Impulse talks and a panel at HSLU Lucerne on what communication work is still worth when AI writes the first draft, and which skills matter next — apéro afterwards. Organiser: HSLU Institut für Kommunikation und Marketing (IKM) / ZSPR.</description>
+      <category>Networking</category>
+      <category>Applied AI</category>
+      <category>Generative AI</category>
+      <category>Communication</category>
+    </item>
+    <item>
+      <title>AI im Unternehmen: Wo anfangen? (4 Nov 2026, Online (CH))</title>
+      <link>https://swissdataevents.ch/events/netnode-ai-im-unternehmen-wo-anfangen-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/netnode-ai-im-unternehmen-wo-anfangen-2026/</guid>
+      <pubDate>Mon, 26 Oct 2026 06:00:00 GMT</pubDate>
+      <description>4 Nov 2026, 10:00–10:45 · Online · Webinar · Free. Free 45-minute German-language webinar in which NETNODE founder Lukas Fischer shows how to find and score AI use cases by value, effort and risk, with three Swiss examples and Q&amp;A. Organiser: NETNODE AG.</description>
+      <category>Webinar</category>
+      <category>Enterprise AI</category>
+      <category>AI strategy</category>
+      <category>Use-case prioritisation</category>
+    </item>
+    <item>
+      <title>Agentic AI: Wie agentische KI Prozesse übernimmt (4 Nov 2026, Online (CH))</title>
+      <link>https://swissdataevents.ch/events/netnode-agentic-ai-prozesse-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/netnode-agentic-ai-prozesse-2026/</guid>
+      <pubDate>Mon, 26 Oct 2026 06:00:00 GMT</pubDate>
+      <description>4 Nov 2026, 11:00–11:45 · Online · Webinar · Free. Free German-language webinar with live demos on production systems showing what AI agents can really do today, where they fail, and how to run a safe pilot. Organiser: NETNODE AG.</description>
+      <category>Webinar</category>
+      <category>AI agents</category>
+      <category>Enterprise AI</category>
+      <category>Automation</category>
+    </item>
+    <item>
+      <title>Rethinking Architecture Through Residuality and AI (10 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/software-architecture-residuality-ai-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/software-architecture-residuality-ai-zurich-2026/</guid>
+      <pubDate>Mon, 26 Oct 2026 06:00:00 GMT</pubDate>
+      <description>10 Nov 2026, 18:00 · ERNI Schweiz AG, Löwenstrasse 11, Zurich · Meetup · Free. Barry O’Reilly’s Residuality Theory applied to the age of AI-generated code: what architects should still decide themselves when machines write the implementation. Live stream plus a few on-site seats at ERNI. Organiser: Software Architecture and Project Design Zurich.</description>
+      <category>Meetup</category>
+      <category>AI-assisted engineering</category>
+      <category>Software architecture</category>
+      <category>Applied AI</category>
+    </item>
+    <item>
+      <title>IKM Impuls: Vom Trigger zum Agenten (11 Nov 2026, Online (CH))</title>
+      <link>https://swissdataevents.ch/events/ikm-impuls-vom-trigger-zum-agenten-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/ikm-impuls-vom-trigger-zum-agenten-2026/</guid>
+      <pubDate>Mon, 26 Oct 2026 06:00:00 GMT</pubDate>
+      <description>11 Nov 2026, 12:30–13:30 · Online · Webinar · Not listed. Lunchtime session from HSLU on what changes when marketing automation stops following rules and starts deciding, and what companies need in data, technology and organisation to run AI agents in customer dialogue. Organiser: HSLU Institut für Kommunikation und Marketing (IKM).</description>
+      <category>Webinar</category>
+      <category>AI agents</category>
+      <category>Marketing automation</category>
+      <category>Data and organisation</category>
+    </item>
+    <item>
+      <title>SC71: Meetup Database / PostgreSQL (12 Nov 2026, Gland)</title>
+      <link>https://swissdataevents.ch/events/silicon-chalet-sc71-database-postgresql-gland-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/silicon-chalet-sc71-database-postgresql-gland-2026/</guid>
+      <pubDate>Mon, 26 Oct 2026 06:00:00 GMT</pubDate>
+      <description>12 Nov 2026, 17:45–21:00 · Swissquote Bank SA, Chemin de la Crétaux 33, Gland · Meetup · Free. Two database talks hosted by Swissquote in Gland — PostgreSQL on Kubernetes with Laurent Parodi and multi-version concurrency control with Louis Tochon — followed by a quiz and apéro. Organiser: Silicon Chalet.</description>
+      <category>Meetup</category>
+      <category>PostgreSQL</category>
+      <category>Data platform</category>
+      <category>Kubernetes</category>
+    </item>
+    <item>
+      <title>AI Risks in CyberSecurity (19 Nov 2026, Geneva)</title>
+      <link>https://swissdataevents.ch/events/scs-ai-risks-in-cybersecurity-geneva-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/scs-ai-risks-in-cybersecurity-geneva-2026/</guid>
+      <pubDate>Mon, 26 Oct 2026 06:00:00 GMT</pubDate>
+      <description>19 Nov 2026, 16:30–19:30 · Novotel Genève Centre, Rue de Zurich 19, Geneva · Conference · CHF 25. Afternoon session in Geneva on how organisations can keep using AI internally without taking on unmanaged risk, with presentations followed by a networking reception; CPE credits available via ISC2 and ISACA. Organiser: Swiss CyberSecurity (SCS).</description>
+      <category>Conference</category>
+      <category>AI governance</category>
+      <category>AI risk</category>
+      <category>Security</category>
+    </item>
+    <item>
+      <title>Mindstone Geneva November AI Meetup (25 Nov 2026, Geneva)</title>
+      <link>https://swissdataevents.ch/events/mindstone-geneva-ai-meetup-november-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/mindstone-geneva-ai-meetup-november-2026/</guid>
+      <pubDate>Mon, 26 Oct 2026 06:00:00 GMT</pubDate>
+      <description>25 Nov 2026, 18:00–21:00 · L’Annexe by Rentes Genevoises, Rue du Port 3, Geneva · Meetup · Free. Monthly Geneva AI evening with three practical talks — building with LLMs, working faster with AI and where it is all heading — then pizza and networking. Forty places. Organiser: Mindstone Geneva AI Meetup.</description>
+      <category>Meetup</category>
+      <category>Applied AI</category>
+      <category>LLMs</category>
+      <category>AI productivity</category>
+    </item>
+    <item>
+      <title>Reshaping Information Research with AI (1 Dec 2026, Lausanne)</title>
+      <link>https://swissdataevents.ch/events/epfl-reshaping-information-research-with-ai-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/epfl-reshaping-information-research-with-ai-2026/</guid>
+      <pubDate>Mon, 26 Oct 2026 06:00:00 GMT</pubDate>
+      <description>1 Dec 2026, 14:30–16:30 · EPFL, room MED 0 1618, Lausanne · Workshop · Not listed. Two-hour on-site workshop from the EPFL Library comparing four AI-powered research assistants, how they work and where they differ from traditional information retrieval. Open to the public, registration required. Organiser: EPFL Library.</description>
+      <category>Workshop</category>
+      <category>Applied AI</category>
+      <category>AI research assistants</category>
+      <category>Information retrieval</category>
+    </item>
+    <item>
+      <title>Christmas Special Hackathon — Operation Silent Night (7 Dec 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/databricks-christmas-hackathon-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/databricks-christmas-hackathon-zurich-2026/</guid>
+      <pubDate>Mon, 26 Oct 2026 06:00:00 GMT</pubDate>
+      <description>7 Dec 2026, 17:30–20:00 · Headsquarter – The Artistic, Stockerstrasse 33, Zurich · Workshop · Free. Festive team hackathon where the Zurich Databricks User Group turns a sabotage mystery into hands-on practice with Genie, Lakebase and Databricks Apps. Organiser: Zurich Databricks User Group.</description>
+      <category>Workshop</category>
+      <category>Databricks</category>
+      <category>Genie</category>
+      <category>Lakebase</category>
+    </item>
+    <item>
+      <title>AI Days 2027 — Geneva (17 Feb 2027, Geneva)</title>
+      <link>https://swissdataevents.ch/events/ai-days-2027-geneva/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/ai-days-2027-geneva/</guid>
+      <pubDate>Mon, 26 Oct 2026 06:00:00 GMT</pubDate>
+      <description>17 Feb 2027 · Geneva · Conference · Not announced. Geneva leg of the fifth AI Days, the Swiss AI Center’s applied-AI conference for SMEs, with workshops, talks, research and demos. Registration not yet open. Organiser: HES-SO / Swiss AI Center.</description>
+      <category>Conference</category>
+      <category>Applied AI</category>
+      <category>AI for SMEs</category>
+      <category>Workshops</category>
+    </item>
+    <item>
+      <title>AI Days 2027 — Yverdon-les-Bains (18 Feb 2027, Yverdon-les-Bains)</title>
+      <link>https://swissdataevents.ch/events/ai-days-2027-yverdon-les-bains/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/ai-days-2027-yverdon-les-bains/</guid>
+      <pubDate>Mon, 26 Oct 2026 06:00:00 GMT</pubDate>
+      <description>18 Feb 2027 · Yverdon-les-Bains · Conference · Not announced. Yverdon-les-Bains leg of AI Days 2027, the Swiss AI Center’s applied-AI conference for SMEs, with workshops, talks and demos. Registration not yet open. Organiser: HES-SO / Swiss AI Center.</description>
+      <category>Conference</category>
+      <category>Applied AI</category>
+      <category>AI for SMEs</category>
+      <category>Workshops</category>
+    </item>
+    <item>
+      <title>AI Days 2027 — Fribourg (19 Feb 2027, Fribourg)</title>
+      <link>https://swissdataevents.ch/events/ai-days-2027-fribourg/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/ai-days-2027-fribourg/</guid>
+      <pubDate>Mon, 26 Oct 2026 06:00:00 GMT</pubDate>
+      <description>19 Feb 2027 · Fribourg · Conference · Not announced. Fribourg leg of AI Days 2027, the Swiss AI Center’s applied-AI conference for SMEs, closing the three-city edition with workshops, talks and demos. Registration not yet open. Organiser: HES-SO / Swiss AI Center.</description>
+      <category>Conference</category>
+      <category>Applied AI</category>
+      <category>AI for SMEs</category>
+      <category>Workshops</category>
+    </item>
+    <item>
+      <title>EQS Connect Zurich 2026 — From Compliance Activity to Compliance Impact (5 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/eqs-connect-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/eqs-connect-zurich-2026/</guid>
+      <pubDate>Fri, 23 Oct 2026 06:00:00 GMT</pubDate>
+      <description>5 Nov 2026, 13:30–18:00 (networking dinner from 18:00) · Rooftopevents, Talacker 50, Zurich · Conference · Not listed (register interest; places strictly limited). An English-language afternoon for compliance, legal and data leaders built entirely around AI: an opening keynote on what AI is doing to judgement, a keynote on Swiss exposure to international AI governance expectations, panels on shadow AI and defensible decisions, and a workshop on where the human–AI boundary should sit. Organiser: EQS Group.</description>
+      <category>Conference</category>
+      <category>AI governance</category>
+      <category>Data governance</category>
+      <category>Responsible AI</category>
+    </item>
+    <item>
+      <title>Zürich — 88th Fabric User Group (online) (5 Nov 2026, Online (CH))</title>
+      <link>https://swissdataevents.ch/events/fabric-user-group-switzerland-88th-online-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/fabric-user-group-switzerland-88th-online-2026/</guid>
+      <pubDate>Fri, 23 Oct 2026 06:00:00 GMT</pubDate>
+      <description>5 Nov 2026, 17:00 · Online · Webinar · Free. The Swiss Fabric user group’s monthly online session: the latest Fabric news, then Franco on automating semantic model health checks with a Fabric notebook, the Best Practice Analyzer, Memory Analyzer and DAX INFO views, writing results to a Lakehouse to track model quality and memory over time. Organiser: Microsoft Fabric User Group Switzerland.</description>
+      <category>Webinar</category>
+      <category>Microsoft Fabric</category>
+      <category>Power BI</category>
+      <category>Data platform</category>
+    </item>
+    <item>
+      <title>Artificial Intelligence in Biomedicine Forum 2026 (6 Nov 2026, Lugano)</title>
+      <link>https://swissdataevents.ch/events/ai-in-biomedicine-forum-lugano-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/ai-in-biomedicine-forum-lugano-2026/</guid>
+      <pubDate>Fri, 23 Oct 2026 06:00:00 GMT</pubDate>
+      <description>6 Nov 2026, 09:00–19:30 · Aula Polivalente, Campus Est USI-SUPSI, Lugano · Conference · Free (registration requested). A free day in Lugano on AI from basic research through to the clinic: one session on digital twins and personalised medicine, one on protein and compound design, plus abstract talks, posters and a closing conversation on global AI governance ahead of the Geneva AI Summit 2027. Organiser: IBSA Foundation / IDSIA USI-SUPSI.</description>
+      <category>Conference</category>
+      <category>Applied AI</category>
+      <category>Machine learning</category>
+      <category>AI governance</category>
+    </item>
+    <item>
+      <title>Inside ETH Zurich’s Data Stack: Analytics for Universities (11 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/analytics-roundtable-zurich-eth-data-stack-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/analytics-roundtable-zurich-eth-data-stack-2026/</guid>
+      <pubDate>Fri, 23 Oct 2026 06:00:00 GMT</pubDate>
+      <description>11 Nov 2026, 17:30–19:30 · Advance Metrics, Heinrichstrasse 267A, Zurich · Meetup · Free. A walk through a real analytics stack built with ETH Zurich — the original setup and why, what got bolted on later, how individual departments were brought up to speed with the data, and where it goes next — then open discussion over drinks. Organiser: Analytics Roundtable Zurich.</description>
+      <category>Meetup</category>
+      <category>Data platform</category>
+      <category>Analytics</category>
+      <category>Data strategy</category>
+    </item>
+    <item>
+      <title>Hype vs. Shipped: What AI Really Changes in Product Work (16 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/product-academy-hype-vs-shipped-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/product-academy-hype-vs-shipped-zurich-2026/</guid>
+      <pubDate>Fri, 23 Oct 2026 06:00:00 GMT</pubDate>
+      <description>16 Nov 2026, 18:00–21:00 · SMG Swiss Marketplace Group, Thurgauerstrasse 36, Zurich · Meetup · Free. Two talks on what AI has actually changed in building products: Coople on a year spent replacing squads, sprints and story points with AI-first workflows and smaller teams, including the experiments that failed, and Brack.Alltron on where AI earned its place and why plain analytics sometimes still beats machine learning. Organiser: Product Academy Switzerland.</description>
+      <category>Meetup</category>
+      <category>Applied AI</category>
+      <category>AI adoption</category>
+      <category>Product management</category>
+    </item>
+    <item>
+      <title>Coffee &amp; Prompt #009 (Halloween edition) (31 Oct 2026, Geneva)</title>
+      <link>https://swissdataevents.ch/events/coffee-and-prompt-009-geneva-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/coffee-and-prompt-009-geneva-2026/</guid>
+      <pubDate>Wed, 21 Oct 2026 06:00:00 GMT</pubDate>
+      <description>31 Oct 2026, 09:30 · Central Geneva (venue to be confirmed), Geneva · Networking · Not listed. A Halloween edition of the weekly Geneva builders’ coworking morning: bring your own AI project or side hustle, optionally show a feature or a lesson learned, and get feedback from the room. Organiser: Switzerland AI Community.</description>
+      <category>Networking</category>
+      <category>Applied AI</category>
+      <category>Building with AI</category>
+    </item>
+    <item>
+      <title>MUG Zürich — How to Truly Stop AI Hallucinations (10 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/mongodb-user-group-zurich-hallucinations-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/mongodb-user-group-zurich-hallucinations-2026/</guid>
+      <pubDate>Wed, 21 Oct 2026 06:00:00 GMT</pubDate>
+      <description>10 Nov 2026, 18:00–21:00 · Zurich (venue to be announced), Zurich · Meetup · Not listed. Two talks from Helvetia Insurance engineers: why factual errors in generative AI apps usually come from weak retrieval design rather than the model — covering semantic chunking, metadata filtering, hybrid search, reranking and output guardrails — and a second session on the benefits and risks of AI-assisted development. Organiser: Zürich MongoDB User Group.</description>
+      <category>Meetup</category>
+      <category>RAG</category>
+      <category>Data modelling</category>
+      <category>Applied AI</category>
+    </item>
+    <item>
+      <title>Business Leaders' Evening: Your AI, your data, under your roof (12 Nov 2026, Thônex (Geneva))</title>
+      <link>https://swissdataevents.ch/events/business-leaders-evening-your-ai-your-data-geneva-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/business-leaders-evening-your-ai-your-data-geneva-2026/</guid>
+      <pubDate>Wed, 21 Oct 2026 06:00:00 GMT</pubDate>
+      <description>12 Nov 2026, 17:30–21:00 · LeBooster Genève, Route de Jussy 35 (2nd floor), Thônex (Geneva) · Networking · CHF 69. A French-language evening for SME leaders on getting value from AI without giving up control of the data: three levels of sovereign AI, a live demo of a fully offline model answering on a sample company’s documents with per-employee permissions, what the revised Swiss data protection act expects of management, and a networking apéro. Organiser: ABAXINFO / AXION / Keeping Life Simple, hosted by CCI France Suisse.</description>
+      <category>Networking</category>
+      <category>Sovereign AI</category>
+      <category>Data protection</category>
+      <category>AI adoption</category>
+    </item>
+    <item>
+      <title>Satellite Event: From Data to Decisions — AI in Asset Management (17 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/swiss-ai-summit-satellite-asset-management-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/swiss-ai-summit-satellite-asset-management-2026/</guid>
+      <pubDate>Wed, 21 Oct 2026 06:00:00 GMT</pubDate>
+      <description>17 Nov 2026, 14:00–16:00 · Beethovenstrasse 48, Zurich · Networking · Not listed (registration required). A Swiss AI Summit satellite session on how asset managers turn increasingly complex data into usable investment insight, and where AI makes a genuine difference rather than noise. Organiser: Swiss AI Summit.</description>
+      <category>Networking</category>
+      <category>Applied AI</category>
+      <category>Data strategy</category>
+      <category>Financial services</category>
+    </item>
+    <item>
+      <title>Satellite Event: From Smart AI to Better Work (17 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/swiss-ai-summit-satellite-better-work-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/swiss-ai-summit-satellite-better-work-2026/</guid>
+      <pubDate>Wed, 21 Oct 2026 06:00:00 GMT</pubDate>
+      <description>17 Nov 2026, 16:00–18:00 · Beethovenstrasse 48, Zurich · Workshop · Not listed (registration required). An interactive executive lab run with Zeix on redesigning work around AI: deciding what the machine should actually do, and marking out where human judgement, responsibility and control have to stay. Organiser: Swiss AI Summit / Zeix.</description>
+      <category>Workshop</category>
+      <category>AI adoption</category>
+      <category>Responsible AI</category>
+      <category>Work design</category>
+    </item>
+    <item>
+      <title>Ein Team, ein Plan und viele Agenten (2 Dec 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/agile-breakfast-zurich-viele-agenten-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/agile-breakfast-zurich-viele-agenten-2026/</guid>
+      <pubDate>Wed, 21 Oct 2026 06:00:00 GMT</pubDate>
+      <description>2 Dec 2026, 08:15–10:15 · Freiraum, Zürcher Kantonalbank, Bahnhofstrasse 9, Zurich · Meetup · Not listed. A German-language breakfast session with Quatico CEO Jan Wloka on why adding more AI agents tends to produce more review work than finished work, and the three changes that fixed it for his team: a written decision before any agent starts coding, work split into packages that run in parallel, and one daily overview of what needs a human. Aimed at product owners and delivery leads, with a real work package run live. Organiser: Agile Breakfast Zürich (swissICT).</description>
+      <category>Meetup</category>
+      <category>Agentic AI</category>
+      <category>AI-assisted development</category>
+      <category>Delivery practice</category>
+    </item>
+    <item>
+      <title>AI &amp; Quantum Course: From Foundations to Scalable Intelligence (5 Feb 2027, Zurich)</title>
+      <link>https://swissdataevents.ch/events/swiss-ai-summit-ai-quantum-course-zurich-2027/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/swiss-ai-summit-ai-quantum-course-zurich-2027/</guid>
+      <pubDate>Wed, 21 Oct 2026 06:00:00 GMT</pubDate>
+      <description>5 Feb 2027, 13:00–18:00 · Headsquarter – The Artistic, Stockerstrasse 33, Zurich · Workshop · Not listed (registration required). An afternoon course run with Quantum Basel, led by its CTO Jan Mikolon, bridging current AI practice and quantum technologies — from the foundations through to what it takes to scale. Organiser: Swiss AI Summit / Quantum Basel.</description>
+      <category>Workshop</category>
+      <category>Applied AI</category>
+      <category>Quantum computing</category>
+      <category>Compute infrastructure</category>
+    </item>
+    <item>
+      <title>Architecting for Trust: Resilience &amp; Sovereignty on AWS (3 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/containers-aws-trust-sovereignty-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/containers-aws-trust-sovereignty-zurich-2026/</guid>
+      <pubDate>Mon, 19 Oct 2026 06:00:00 GMT</pubDate>
+      <description>3 Nov 2026, 15:45–20:30 · Bluelion, Josefstrasse 219, Zurich · Meetup · Free. An afternoon hands-on lab on AWS resilience with the Karpenter autoscaler, then an evening of talks from AWS and copebit on designing resilient workloads, running enterprise Claude Code on AWS, and digital sovereignty — closing with pizza and beer. Organiser: Containers and AWS Meetup Group / copebit.</description>
+      <category>Meetup</category>
+      <category>Cloud</category>
+      <category>Digital sovereignty</category>
+      <category>AI-assisted development</category>
+    </item>
+    <item>
+      <title>Mindstone Zurich November AI Meetup (4 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/mindstone-zurich-ai-meetup-november-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/mindstone-zurich-ai-meetup-november-2026/</guid>
+      <pubDate>Mon, 19 Oct 2026 06:00:00 GMT</pubDate>
+      <description>4 Nov 2026, 18:00–21:00 · Unit8, Beethovenstrasse 49 (entrance on Gartenstrasse), Zurich · Meetup · Not listed. The Zurich edition of the Mindstone AI evenings, hosted at Unit8: a technical demo of what one team learned building a product with LLMs, a practical session on closing the AI skills gap for non-technical students, and a talk on where AI takes work and society next, then pizza and networking. Organiser: Mindstone Zürich AI Meetup.</description>
+      <category>Meetup</category>
+      <category>Applied AI</category>
+      <category>LLMs</category>
+      <category>AI tools</category>
+    </item>
+    <item>
+      <title>Swiss Data &amp; AI — AI Enabled Workflows (11 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/swiss-data-ai-group-ai-enabled-workflows-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/swiss-data-ai-group-ai-enabled-workflows-2026/</guid>
+      <pubDate>Mon, 19 Oct 2026 06:00:00 GMT</pubDate>
+      <description>11 Nov 2026, 18:00–21:00 · Zurich (venue to be announced), Zurich · Meetup · Not listed. The first Zurich gathering of the Swiss Data &amp; AI group, on automating data work with AI-enabled workflows. Topics, speakers and the venue are still to be announced, and the group is open to offers to speak. Organiser: Swiss Data and AI Group (Databricks User Group).</description>
+      <category>Meetup</category>
+      <category>Databricks</category>
+      <category>AI workflows</category>
+      <category>Data platform</category>
+    </item>
+    <item>
+      <title>KI-Agenten &amp; -Work: Skills und Anbindungen für konkrete Entlastung im Alltag (24 Nov 2026, Immensee)</title>
+      <link>https://swissdataevents.ch/events/schwyz-next-ki-agenten-work-immensee-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/schwyz-next-ki-agenten-work-immensee-2026/</guid>
+      <pubDate>Mon, 19 Oct 2026 06:00:00 GMT</pubDate>
+      <description>24 Nov 2026, 09:00–16:00 · Hohle Gasse AG, Coworking «Connect», Artherstrasse 60, Immensee · Workshop · CHF 400 members / CHF 500 non-members. A full German-language day with Michael Kyburz on getting AI to take over recurring work: three base skills, how to build your own, and wiring assistants into calendar, mail and project tools so multi-step workflows run with clear checkpoints for human review. Fifteen places, and a paid ChatGPT or Claude subscription is required. Organiser: Schwyz Next.</description>
+      <category>Workshop</category>
+      <category>AI agents</category>
+      <category>AI automation</category>
+      <category>Applied AI</category>
+    </item>
+    <item>
+      <title>KI-Strategie und -Governance für KMUs (1 Dec 2026, Immensee)</title>
+      <link>https://swissdataevents.ch/events/schwyz-next-ki-strategie-governance-immensee-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/schwyz-next-ki-strategie-governance-immensee-2026/</guid>
+      <pubDate>Mon, 19 Oct 2026 06:00:00 GMT</pubDate>
+      <description>1 Dec 2026, 17:00–18:30 · Hohle Gasse AG, Coworking «Connect», Artherstrasse 60, Immensee · Workshop · CHF 150 members / CHF 200 non-members. A 90-minute German-language session for SME decision-makers on steering generative AI use rather than letting it spread: setting a strategic frame, drafting an internal AI policy, weighing data-protection, liability and wrong-output risks, and planning a safe rollout under Swiss data protection law and the EU AI Act. Fifteen places. Organiser: Schwyz Next.</description>
+      <category>Workshop</category>
+      <category>AI governance</category>
+      <category>AI strategy</category>
+      <category>Regulation</category>
+    </item>
+    <item>
+      <title>Digital Lounge @ Davos — Enterprise Data, AI &amp; Robotics (21 Jan 2027, Davos)</title>
+      <link>https://swissdataevents.ch/events/digital-lounge-davos-2027/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/digital-lounge-davos-2027/</guid>
+      <pubDate>Mon, 19 Oct 2026 06:00:00 GMT</pubDate>
+      <description>21 Jan 2027, 09:15–late · Davos (venue shared with invitees), Davos · Conference · Not listed (invitation only, limited seating). An invitation-only forum during Davos week for CxOs and transformation leaders on enterprise data, AI and robotics — morning and afternoon keynotes and panels, a live technology showcase, entrepreneur talks and parallel workshops, closing with an awards ceremony and dinner. Organiser: JiVS / Data Migration International.</description>
+      <category>Conference</category>
+      <category>Data leadership</category>
+      <category>Enterprise AI</category>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title>From Lab to Market: How Can Switzerland Turn World-Class AI Research into World-Class Companies? (30 Oct 2026, Geneva)</title>
+      <link>https://swissdataevents.ch/events/from-lab-to-market-geneva-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/from-lab-to-market-geneva-2026/</guid>
+      <pubDate>Fri, 16 Oct 2026 06:00:00 GMT</pubDate>
+      <description>30 Oct 2026, 18:00–21:00 · Société de Lecture, Grand-Rue 11, Geneva · Networking · Not listed (registration required). A panel with the presidents and vice-presidents of EPFL and ETH Zurich, GESDA and Proton on the three things Switzerland needs to turn its AI research into companies — compute, capital and data governance — and why the economic value has so far gone elsewhere. Organiser: Geneva Center for Neutrality.</description>
+      <category>Networking</category>
+      <category>AI strategy</category>
+      <category>Data governance</category>
+      <category>Digital sovereignty</category>
+    </item>
+    <item>
+      <title>GFN AI Day (3 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/gfn-ai-day-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/gfn-ai-day-zurich-2026/</guid>
+      <pubDate>Fri, 16 Oct 2026 06:00:00 GMT</pubDate>
+      <description>3 Nov 2026, 08:30–18:30 · GFN Hub, ORBIZ Josef, Josefstrasse 214a, Zurich · Workshop · CHF 15 members / CHF 70 external (lunch and apéro included). A working day rather than a talking one: a morning of practitioner talks from SSF, ZHAW, Correntics and Resilens on what AI can actually do for sustainable finance, then small groups spend the afternoon on real challenges submitted by GFN startups and demo what they built. Thirty places. Organiser: Green FinTech Network.</description>
+      <category>Workshop</category>
+      <category>Applied AI</category>
+      <category>AI adoption</category>
+      <category>Sustainable finance</category>
+    </item>
+    <item>
+      <title>Machine Intelligence Summit (10 Nov 2026, Dübendorf)</title>
+      <link>https://swissdataevents.ch/events/machine-intelligence-summit-dubendorf-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/machine-intelligence-summit-dubendorf-2026/</guid>
+      <pubDate>Fri, 16 Oct 2026 06:00:00 GMT</pubDate>
+      <description>10 Nov 2026, 09:00–20:00 · Stiftung Innovationspark Zürich, Wangenstrasse 68, Dübendorf · Conference · Not listed (curated attendance, host approval required). Three hundred people who build frontier AI in Europe, across four 80-minute blocks — infrastructure, learning, agents and the physical world — each pairing academia, a frontier lab and a startup, plus founder lightning talks and fifty students presenting posters. Nothing is recorded. Organiser: ellipsis Venture.</description>
+      <category>Conference</category>
+      <category>AI research</category>
+      <category>AI agents</category>
+      <category>Embodied AI</category>
+    </item>
+    <item>
+      <title>AI Safety: Building Trustworthy AI in the Real World (24 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/ai-safety-trustworthy-ai-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/ai-safety-trustworthy-ai-zurich-2026/</guid>
+      <pubDate>Fri, 16 Oct 2026 06:00:00 GMT</pubDate>
+      <description>24 Nov 2026, 17:30–21:00 · Zalando, Prime Tower, Hardstrasse 201, Zurich · Meetup · Not listed (registration required). Four speakers from Google, AWS, Unique and Systematic-X on keeping AI systems trustworthy once they act on their own — how to evaluate and monitor before and after deployment, where guardrails, human oversight and red-teaming fit, and how to ship fast without losing accountability. Organiser: Elevate Tech: Women and Minorities in AI, Tech, and Science.</description>
+      <category>Meetup</category>
+      <category>AI safety</category>
+      <category>AI governance</category>
+      <category>Responsible AI</category>
+    </item>
+    <item>
+      <title>KubeVirt in Practice &amp; AI in QA: What Works, What Doesn't (8 Dec 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/devops-zurich-kubevirt-ai-in-qa-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/devops-zurich-kubevirt-ai-in-qa-2026/</guid>
+      <pubDate>Fri, 16 Oct 2026 06:00:00 GMT</pubDate>
+      <description>8 Dec 2026, 17:30–20:30 · Digicomp Academy AG, Limmatstrasse 50, Zurich · Meetup · Not listed. Two talks in Zurich: Red Hat's Simon Krenger on running virtual machines next to containers with KubeVirt, including live demos and when it is the wrong tool, and Basia Karaagac on where AI genuinely helps in QA and where exploratory testing and human risk judgement still win. Organiser: DevOps Meetup Zürich.</description>
+      <category>Meetup</category>
+      <category>Applied AI</category>
+      <category>Platform engineering</category>
+      <category>Software engineering</category>
+    </item>
+    <item>
+      <title>IA : meetup « Generative AI Genève » #5 (12 Nov 2026, Geneva)</title>
+      <link>https://swissdataevents.ch/events/generative-ai-geneve-5-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/generative-ai-geneve-5-2026/</guid>
+      <pubDate>Wed, 14 Oct 2026 06:00:00 GMT</pubDate>
+      <description>12 Nov 2026, 18:30–20:30 · Foound, Rue Jean-Dassier 7, Geneva · Meetup · Not listed. Your data, your models, your infrastructure: ELCA and EPFL spin-off Anyway Systems on running LLMs locally or in a private cloud, and on the trade-offs between performance, sovereignty and cost when a company wants generative AI without handing over its data. Organiser: Generative AI Genève.</description>
+      <category>Meetup</category>
+      <category>LLMs</category>
+      <category>Digital sovereignty</category>
+      <category>Enterprise AI</category>
+    </item>
+    <item>
+      <title>digitalswitzerland @ Davos (19 Jan 2027, Davos)</title>
+      <link>https://swissdataevents.ch/events/digitalswitzerland-davos-2027/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/digitalswitzerland-davos-2027/</guid>
+      <pubDate>Wed, 14 Oct 2026 06:00:00 GMT</pubDate>
+      <description>19 Jan 2027, 09:00–18:00 · Davos · Networking · Not listed. A full day in Davos on Switzerland's digital future, with speakers from business, government and research building on the national AI Action Plan and looking ahead to the Geneva AI Summit 2027. Programme details still to be published. Organiser: digitalswitzerland.</description>
+      <category>Networking</category>
+      <category>AI strategy</category>
+      <category>Data leadership</category>
+      <category>Technology policy</category>
+    </item>
+    <item>
+      <title>SDSC-Connect: Connecting Digital Environmental Sciences (3 Feb 2027, Bern)</title>
+      <link>https://swissdataevents.ch/events/sdsc-connect-environmental-sciences-bern-2027/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/sdsc-connect-environmental-sciences-bern-2027/</guid>
+      <pubDate>Wed, 14 Oct 2026 06:00:00 GMT</pubDate>
+      <description>3 Feb 2027, 09:00–16:30 · Central Bern venue to be announced, Bern · Conference · CHF 50 (meals included). A day in Bern on making environmental data usable across disciplines and institutions — data access and sharing, data infrastructure, and the role of machine learning and AI across climate, ecology, hydrology, the cryosphere, natural hazards and agriculture, with keynotes, invited talks, break-outs and a poster fair. Seats are limited and the venue is still to be announced. Organiser: Swiss Data Science Center.</description>
+      <category>Conference</category>
+      <category>Data governance</category>
+      <category>Research data</category>
+      <category>Data platform</category>
+    </item>
+    <item>
+      <title>ISA Lunch &amp; Learn: AI Tools at Work (3 Nov 2026, Online (CH))</title>
+      <link>https://swissdataevents.ch/events/isa-lunch-learn-ai-tools-at-work-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/isa-lunch-learn-ai-tools-at-work-2026/</guid>
+      <pubDate>Mon, 12 Oct 2026 06:00:00 GMT</pubDate>
+      <description>3 Nov 2026, 12:00–13:00 · Online · Webinar · Free. A 45-minute English-language lunch session on where AI tools genuinely lift productivity at work, built around real use cases and what has changed recently, closing with open Q&amp;A. Organiser: Innovationsverband Schweizer Arbeitsmarkt (ISA).</description>
+      <category>Webinar</category>
+      <category>Applied AI</category>
+      <category>AI tools</category>
+      <category>AI adoption</category>
+    </item>
+    <item>
+      <title>GDG Cloud Zürich: Tech Talks #38 (5 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/gdg-cloud-zurich-tech-talks-38-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/gdg-cloud-zurich-tech-talks-38-2026/</guid>
+      <pubDate>Mon, 12 Oct 2026 06:00:00 GMT</pubDate>
+      <description>5 Nov 2026, 17:25–21:00 · Google Switzerland, Zurich (address on registration), Zurich · Meetup · Free (host approval required). Two evening talks on Google Cloud and Google DeepMind at Google’s Zurich office, followed by a sponsored apéro — note that doors close at 17:55 and late entry is not possible. Organiser: GDG Cloud Zürich.</description>
+      <category>Meetup</category>
+      <category>Google Cloud</category>
+      <category>Applied AI</category>
+      <category>Data platform</category>
+    </item>
+    <item>
+      <title>Swiss IT Minds 2026 — IT, AI &amp; Cyber Security (2 Dec 2026 – 3 Dec 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/swiss-it-minds-2026-zurich/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/swiss-it-minds-2026-zurich/</guid>
+      <pubDate>Mon, 12 Oct 2026 06:00:00 GMT</pubDate>
+      <description>2 Dec 2026 – 3 Dec 2026, Wed 08:00 – Thu 16:00 · The Dolder Grand, Kurhausstrasse 65, Zurich · Conference · Not listed (complimentary participation for qualified attendees). Two days for Swiss IT and data leaders at the Dolder Grand on enterprise AI as a strategic capability, centralised versus decentralised AI governance in large organisations, securing AI agents as a hybrid workforce, and the governance basics behind all of it. Organiser: business factors Deutschland GmbH.</description>
+      <category>Conference</category>
+      <category>AI governance</category>
+      <category>Enterprise AI</category>
+      <category>Data leadership</category>
+    </item>
+    <item>
+      <title>KustoCon 2026 (30 Oct 2026, Zurich-Flughafen)</title>
+      <link>https://swissdataevents.ch/events/kustocon-2026-zurich/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/kustocon-2026-zurich/</guid>
+      <pubDate>Fri, 09 Oct 2026 06:00:00 GMT</pubDate>
+      <description>30 Oct 2026, 08:15–19:25 · Microsoft Switzerland, The Circle 02, Zurich-Flughafen · Conference · EUR 85 in person (workshop, lunch and drinks included) / free online. A full day on Kusto Query Language at Microsoft’s Zurich Airport campus: a hands-on morning workshop dissecting a real investigation, then an afternoon of practitioner talks on detection engineering and threat hunting, also livestreamed. Organiser: KQL Café community.</description>
+      <category>Conference</category>
+      <category>KQL</category>
+      <category>Azure data platform</category>
+      <category>Security analytics</category>
+    </item>
+    <item>
+      <title>STEM4Health Hackathon (21 Nov 2026 – 22 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/stem4health-hackathon-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/stem4health-hackathon-zurich-2026/</guid>
+      <pubDate>Fri, 09 Oct 2026 06:00:00 GMT</pubDate>
+      <description>21 Nov 2026 – 22 Nov 2026, Sat 08:30–22:00, Sun 08:30–17:00 · ETH Zürich Campus Hönggerberg, HPH building, Zurich · Workshop · Free. A hundred students and early-career researchers spend a weekend on real pharmaceutical manufacturing problems, combining manufacturing data, mechanistic modelling and machine learning with industry and academic mentors before pitching to a jury. Organiser: Johnson &amp; Johnson Switzerland / Swiss Data Science Center.</description>
+      <category>Workshop</category>
+      <category>Hackathon</category>
+      <category>Applied AI</category>
+      <category>Machine learning</category>
+    </item>
+    <item>
+      <title>Hack Apertus — Onsite Hackathon Basel (4 Dec 2026 – 5 Dec 2026, Basel)</title>
+      <link>https://swissdataevents.ch/events/hack-apertus-onsite-basel-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/hack-apertus-onsite-basel-2026/</guid>
+      <pubDate>Fri, 09 Oct 2026 06:00:00 GMT</pubDate>
+      <description>4 Dec 2026 – 5 Dec 2026 · Basel · Workshop · Not listed. The Basel leg of the national Apertus hackathon series, building applications and multilingual improvements on Switzerland’s open Apertus model, with everything produced released for reuse. Venue still to be announced. Organiser: aiLights Association.</description>
+      <category>Workshop</category>
+      <category>Open-source LLMs</category>
+      <category>Hackathon</category>
+      <category>Applied AI</category>
+    </item>
+    <item>
+      <title>AI for Decision Makers — Executive Course at ETH Zurich (22 Jan 2027 – 5 Feb 2027, Zurich)</title>
+      <link>https://swissdataevents.ch/events/sdsc-ai-for-decision-makers-eth-2027/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/sdsc-ai-for-decision-makers-eth-2027/</guid>
+      <pubDate>Fri, 09 Oct 2026 06:00:00 GMT</pubDate>
+      <description>22 Jan 2027 – 5 Feb 2027, 09:00–17:00 on 22, 28 and 29 January and 4 and 5 February · Swiss AI Tower (Andreasturm), Andreasstrasse 5, Oerlikon, Zurich · Workshop · CHF 4,000 (10% off for ETH staff and alumni and SDSC partners). A five-day English-language executive course for leaders who need to challenge assumptions on AI projects without becoming data scientists — data science foundations, MLOps, AI governance and ethics, generative AI and a first agent, with an ETH Zurich certificate. Registration closes 15 January 2027. Organiser: Swiss Data Science Center / ETH Zürich School for Continuing Education.</description>
+      <category>Workshop</category>
+      <category>Data leadership</category>
+      <category>AI strategy</category>
+      <category>AI governance</category>
+    </item>
+    <item>
+      <title>AI in Food — State of Play (10 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/ai-in-food-state-of-play-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/ai-in-food-state-of-play-zurich-2026/</guid>
+      <pubDate>Wed, 07 Oct 2026 06:00:00 GMT</pubDate>
+      <description>10 Nov 2026, 08:30–18:00 · Helbling, Hohlstrasse 614, Zurich · Conference · CHF 0–250 (free for SFNV partners). A full day of keynotes and workshops for food-industry professionals past the AI hype stage, on what it actually takes to implement AI against real problems inside their own organisations. Organiser: Swiss Food &amp; Nutrition Valley / Porsche Consulting.</description>
+      <category>Conference</category>
+      <category>Enterprise AI</category>
+      <category>AI adoption</category>
+      <category>Applied AI</category>
+    </item>
+    <item>
+      <title>Growing Together Conference GTC26 (17 Nov 2026, Zurich-Flughafen)</title>
+      <link>https://swissdataevents.ch/events/growing-together-conference-gtc26-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/growing-together-conference-gtc26-2026/</guid>
+      <pubDate>Wed, 07 Oct 2026 06:00:00 GMT</pubDate>
+      <description>17 Nov 2026, 09:00–18:00 · The Circle Convention Center, The Circle 27, Zurich-Flughafen · Conference · Not listed. A full day for business and data leaders on getting AI past isolated use cases and into scalable capability — keynotes from Benedict Evans and Google Cloud’s Alon Halevy, leader tracks with Helvetia, Axpo and Emmi, plus tech talks and workshops. Organiser: D ONE.</description>
+      <category>Conference</category>
+      <category>Data leadership</category>
+      <category>Enterprise AI</category>
+      <category>Data strategy</category>
+    </item>
+    <item>
+      <title>AI in azienda: AI sotto controllo (17 Nov 2026, Lugano)</title>
+      <link>https://swissdataevents.ch/events/ai-in-azienda-ai-sotto-controllo-lugano-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/ai-in-azienda-ai-sotto-controllo-lugano-2026/</guid>
+      <pubDate>Wed, 07 Oct 2026 06:00:00 GMT</pubDate>
+      <description>17 Nov 2026, 17:00–20:00 · Campus Est USI-SUPSI, Blocco C, Aula C1.02, Via la Santa 1, Viganello, Lugano · Workshop · Free (registration required). Closing evening of the Ticino series on conscious AI use in business, this one on data, responsibility, rules and governance — content, a hands-on workshop and networking, capped at thirty participants. Organiser: Fondazione AGIRE / SUPSI DTI.</description>
+      <category>Workshop</category>
+      <category>AI governance</category>
+      <category>Data governance</category>
+      <category>Enterprise AI</category>
+    </item>
+    <item>
+      <title>DINAcon 2026 (18 Nov 2026, Bern)</title>
+      <link>https://swissdataevents.ch/events/dinacon-2026-bern/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/dinacon-2026-bern/</guid>
+      <pubDate>Wed, 07 Oct 2026 06:00:00 GMT</pubDate>
+      <description>18 Nov 2026, 09:00–17:00 · Kongresszentrum Bern, Zeughausgasse 41, Bern · Conference · Ticketed (via eventfrog.ch). Switzerland’s conference on digital sustainability — 36 sessions on open source, open data, digital sovereignty, data protection and copyright, with 250+ attendees and a closing Hacknight. Organiser: Verein CH Open.</description>
+      <category>Conference</category>
+      <category>Open data</category>
+      <category>Digital sovereignty</category>
+      <category>Data protection</category>
+    </item>
+    <item>
+      <title>Generative AI &amp; Agentische Systeme (28 Jan 2027 – 29 Jan 2027, Rapperswil-Jona)</title>
+      <link>https://swissdataevents.ch/events/ost-generative-ai-agentic-systems-rapperswil-2027/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/ost-generative-ai-agentic-systems-rapperswil-2027/</guid>
+      <pubDate>Wed, 07 Oct 2026 06:00:00 GMT</pubDate>
+      <description>28 Jan 2027 – 29 Jan 2027, 09:00–18:00 · OST – Ostschweizer Fachhochschule, Campus Rapperswil, Rapperswil-Jona · Workshop · Not listed. Two-day German-language course for developers, architects, data scientists and ML engineers on building agentic LLM systems that survive production: function calling, hybrid-search RAG, LangGraph topologies, security hardening and systematic evaluation. Places are limited. Organiser: OST – Ostschweizer Fachhochschule (Institut für Computational Engineering).</description>
+      <category>Workshop</category>
+      <category>Agentic AI</category>
+      <category>LLMs</category>
+      <category>Enterprise AI</category>
+    </item>
+    <item>
+      <title>SWAT4HCLS 2027 (1 Feb 2027 – 4 Feb 2027, Basel)</title>
+      <link>https://swissdataevents.ch/events/swat4hcls-basel-2027/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/swat4hcls-basel-2027/</guid>
+      <pubDate>Wed, 07 Oct 2026 06:00:00 GMT</pubDate>
+      <description>1 Feb 2027 – 4 Feb 2027, 09:00–17:00 · University of Basel, Petersplatz 1, Basel · Conference · Not listed. The 15th edition of the long-running international conference on semantics in healthcare and life sciences — ontologies, knowledge graphs and AI — with keynotes, tutorials and a dedicated biohackathon day in Basel. Organiser: SWAT4HCLS / University of Basel.</description>
+      <category>Conference</category>
+      <category>Knowledge graphs</category>
+      <category>Ontologies</category>
+      <category>Data governance</category>
+    </item>
+    <item>
+      <title>Build Your Own Assistant: What Did I Even Get Done This Week? (1 Nov 2026, Geneva)</title>
+      <link>https://swissdataevents.ch/events/build-your-own-assistant-recaps-geneva-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/build-your-own-assistant-recaps-geneva-2026/</guid>
+      <pubDate>Fri, 02 Oct 2026 06:00:00 GMT</pubDate>
+      <description>1 Nov 2026, 09:30–12:30 · Voisins de Saint-Gervais, Bd James-Fazy 8, Geneva · Workshop · CHF 85. Build an agent that produces daily and weekly recaps of your own or your team's work, alongside the industry and regulatory news that actually affects you. Organiser: AI Ready Professionals.</description>
+      <category>Workshop</category>
+      <category>AI agents</category>
+      <category>Applied AI</category>
+      <category>AI automation</category>
+    </item>
+    <item>
+      <title>Build Your Own Assistant: Time to Stop AI Slop (8 Nov 2026, Geneva)</title>
+      <link>https://swissdataevents.ch/events/build-your-own-assistant-writing-geneva-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/build-your-own-assistant-writing-geneva-2026/</guid>
+      <pubDate>Fri, 02 Oct 2026 06:00:00 GMT</pubDate>
+      <description>8 Nov 2026, 09:30–12:30 · Voisins de Saint-Gervais, Bd James-Fazy 8, Geneva · Workshop · CHF 85. A session on getting an assistant to write in your own voice rather than generic model output, then turning the week's news into a post and a newsletter worth reading. Organiser: AI Ready Professionals.</description>
+      <category>Workshop</category>
+      <category>AI agents</category>
+      <category>Applied AI</category>
+      <category>AI tools</category>
+    </item>
+    <item>
+      <title>AI Startup Center Community Meetup — November Edition (12 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/ai-startup-center-community-meetup-november-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/ai-startup-center-community-meetup-november-2026/</guid>
+      <pubDate>Wed, 30 Sep 2026 06:00:00 GMT</pubDate>
+      <description>12 Nov 2026, 09:00–10:30 · AI Startup Center, Technopark Zürich, Zurich · Networking · Not listed. A deliberately informal morning meetup over coffee for the centre’s AI startups and corporate partners — no agenda and no presentations, just conversations about partnerships, where AI is heading and what is actually hard right now. Organiser: AI Startup Center.</description>
+      <category>Networking</category>
+      <category>AI community</category>
+      <category>AI startups</category>
+      <category>Applied AI</category>
+    </item>
+    <item>
+      <title>Kickstart AI Workflows with Databricks (10 Feb 2027, Zurich)</title>
+      <link>https://swissdataevents.ch/events/databricks-kickstart-ai-workflows-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/databricks-kickstart-ai-workflows-zurich-2026/</guid>
+      <pubDate>Wed, 30 Sep 2026 06:00:00 GMT</pubDate>
+      <description>10 Feb 2027, 18:00–21:00 · Zurich (address on registration), Zurich · Meetup · Not listed. Hybrid Databricks user-group evening in Zurich on automating data work with AI-enabled workflows, including a session on Databricks Apps and Lakebase applied to clinical cancer research cohorts. Rescheduled from November 2026 to February 2027. Organiser: Swiss Data &amp; AI Group (Databricks User Group).</description>
+      <category>Meetup</category>
+      <category>Databricks</category>
+      <category>AI workflows</category>
+      <category>Data platform</category>
+    </item>
+    <item>
+      <title>AI and Responsible Business Conduct (2 Nov 2026, Bern)</title>
+      <link>https://swissdataevents.ch/events/ai-responsible-business-conduct-bern-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/ai-responsible-business-conduct-bern-2026/</guid>
+      <pubDate>Mon, 28 Sep 2026 06:00:00 GMT</pubDate>
+      <description>2 Nov 2026, from 10:05 · Kursaal Bern, Kornhausstrasse 3, Bern · Conference · Free. A plenary session at the Swiss Forum on Business and Human Rights on applying the UN Guiding Principles and OECD Guidelines to AI systems in practice, with UN representatives, technology companies and civil society. Interpretation in German, French and English. Organiser: SECO / Federal Department of Foreign Affairs.</description>
+      <category>Conference</category>
+      <category>AI governance</category>
+      <category>Responsible AI</category>
+      <category>Regulation</category>
+    </item>
+    <item>
+      <title>HerImpact 2026: Who Decides — You or AI? (6 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/herimpact-who-decides-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/herimpact-who-decides-zurich-2026/</guid>
+      <pubDate>Mon, 28 Sep 2026 06:00:00 GMT</pubDate>
+      <description>6 Nov 2026, 18:00 · Im Viadukt, Zurich · Networking · CHF 50. Talks and a panel on who stays accountable when AI shapes an organisational decision — who can question it, correct it or stop it — drawing on current Swiss and Japanese research and real cases, closing with questions the group puts forward for the 2027 Geneva summit. Organiser: SOTRAI (Source of Trust in AI).</description>
+      <category>Networking</category>
+      <category>AI governance</category>
+      <category>Responsible AI</category>
+      <category>Data leadership</category>
+    </item>
+    <item>
+      <title>C4DT Conference on AI Sovereignty: Charting Switzerland’s Path (10 Nov 2026, Saint-Sulpice (Lausanne))</title>
+      <link>https://swissdataevents.ch/events/c4dt-ai-sovereignty-conference-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/c4dt-ai-sovereignty-conference-2026/</guid>
+      <pubDate>Mon, 28 Sep 2026 06:00:00 GMT</pubDate>
+      <description>10 Nov 2026, 09:30–18:00 · Starling Hotel, 1025 Saint-Sulpice, Saint-Sulpice (Lausanne) · Conference · Not listed. A full day on how Switzerland builds strategic independence in AI between US and Chinese dominance — lessons from other middle powers, Swiss research including the Apertus foundation model, industry deployment realities, and concrete recommendations for national strategy. Organiser: Center for Digital Trust (C4DT), EPFL.</description>
+      <category>Conference</category>
+      <category>AI strategy</category>
+      <category>Digital sovereignty</category>
+      <category>AI governance</category>
+    </item>
+    <item>
+      <title>IBM Bob Coding Watch Party Zürich — Final Edition (1 Dec 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/ibm-bob-coding-watch-party-zurich-december-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/ibm-bob-coding-watch-party-zurich-december-2026/</guid>
+      <pubDate>Fri, 25 Sep 2026 06:00:00 GMT</pubDate>
+      <description>1 Dec 2026, 16:00–20:00 · IBM Switzerland AG, Vulkanstrasse 106 (+ online), Zurich · Meetup · Free (limited on-site places). The closing session of IBM's 2026 hybrid series on IBM Bob, its AI development assistant — coding live alongside other European cities, with beginner, intermediate and expert tracks covering everything from first idea to modernising legacy applications. Organiser: IBM Switzerland.</description>
+      <category>Meetup</category>
+      <category>AI-assisted development</category>
+      <category>Enterprise AI</category>
+      <category>Applied AI</category>
+    </item>
+    <item>
+      <title>Navigating Data Protection and Transfer Impact Assessments for AI Startups (10 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/data-protection-tia-ai-startups-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/data-protection-tia-ai-startups-zurich-2026/</guid>
+      <pubDate>Mon, 21 Sep 2026 06:00:00 GMT</pubDate>
+      <description>10 Nov 2026, 09:00 · AI Startup Center, Technopark Zürich, Zurich · Networking · Not listed. Breakfast session with lawyers from Wenger Vieli on when a Transfer Impact Assessment is actually required for cross-border data transfers, and how to keep them manageable as an AI company. Organiser: AI Startup Center / Wenger Vieli.</description>
+      <category>Networking</category>
+      <category>Data governance</category>
+      <category>Privacy</category>
+      <category>AI governance</category>
+    </item>
+    <item>
+      <title>Swiss Robotics Day 2026 (13 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/swiss-robotics-day-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/swiss-robotics-day-2026/</guid>
+      <pubDate>Mon, 21 Sep 2026 06:00:00 GMT</pubDate>
+      <description>13 Nov 2026, 08:00–18:00 · StageOne Event &amp; Convention Hall, Elias-Canetti-Strasse 146, Zurich · Conference · Not listed. The national robotics meeting point: keynotes, panels and workshops alongside an exhibition floor with 60+ exhibitors and live demos, bringing together labs, industry, policymakers and spin-offs. Organiser: ETH Zurich RobotX / Swiss Robotics Association.</description>
+      <category>Conference</category>
+      <category>Robotics</category>
+      <category>Embodied AI</category>
+      <category>Academia–industry</category>
+    </item>
+    <item>
+      <title>Agentic Engineering Days Zurich 2026 (20 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/agentic-engineering-days-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/agentic-engineering-days-zurich-2026/</guid>
+      <pubDate>Mon, 21 Sep 2026 06:00:00 GMT</pubDate>
+      <description>20 Nov 2026 · Zurich Marriott Hotel, Neumühlequai 42, Zurich · Conference · CHF 442 (group discount for 3+). A one-day engineering conference on AI coding and agent systems: 38+ sessions across four tracks — using AI tools, building AI-powered systems, sponsor spotlights and hands-on workshops — with speakers from OpenAI, Hugging Face, NVIDIA, Google and AWS. Organiser: letsboot.ch (felixideas GmbH).</description>
+      <category>Conference</category>
+      <category>Agentic AI</category>
+      <category>AI-assisted development</category>
+      <category>Applied AI</category>
+    </item>
+    <item>
+      <title>Hack Apertus — Onsite Hackathon Zurich (27 Nov 2026 – 28 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/hack-apertus-onsite-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/hack-apertus-onsite-zurich-2026/</guid>
+      <pubDate>Mon, 21 Sep 2026 06:00:00 GMT</pubDate>
+      <description>27 Nov 2026 – 28 Nov 2026 · AI Startup Center, Technopark Zürich, Zurich · Workshop · Not listed. The on-site leg of the national Apertus hackathon: build on the open Apertus 8B model, strengthen its multilingual abilities and ship applications for private- and public-sector problems, with everything released as Open Commons. Organiser: AI Startup Center.</description>
+      <category>Workshop</category>
+      <category>Open-source LLMs</category>
+      <category>Hackathon</category>
+      <category>Applied AI</category>
+    </item>
+    <item>
+      <title>BaselHack 2026 (30 Oct 2026 – 1 Nov 2026, Basel)</title>
+      <link>https://swissdataevents.ch/events/baselhack-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/baselhack-2026/</guid>
+      <pubDate>Wed, 16 Sep 2026 06:00:00 GMT</pubDate>
+      <description>30 Oct 2026 – 1 Nov 2026, Fri 17:00 – Sun 17:00 · Memox Basel SBB, Peter Merian-Strasse 80, Basel · Workshop · Free. Free 48-hour hackathon for the Basel region with open and sponsored challenges, for developers, designers and anyone wanting to turn an idea into a working prototype. Organiser: Verein BaselHack.</description>
+      <category>Workshop</category>
+      <category>Hackathon</category>
+      <category>Applied AI</category>
+    </item>
+    <item>
+      <title>Agentic Trio (10 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/agentic-trio-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/agentic-trio-zurich-2026/</guid>
+      <pubDate>Wed, 16 Sep 2026 06:00:00 GMT</pubDate>
+      <description>10 Nov 2026, 17:30–19:30 · Hardturmstrasse 253, Zurich · Meetup · Free. INNOQ’s Fabian Walther reframes Teresa Torres’ Product Trio as an &quot;Agentic Trio&quot;, arguing that AI should change how software teams split responsibility — not just how fast they ship. Organiser: Zürich Agentic Coding and Architectures.</description>
+      <category>Meetup</category>
+      <category>Agentic AI</category>
+      <category>Software delivery</category>
+      <category>Applied AI</category>
+    </item>
+    <item>
+      <title>AI Breakfast #55 Luzern (30 Oct 2026, Lucerne)</title>
+      <link>https://swissdataevents.ch/events/ai-breakfast-luzern-55/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/ai-breakfast-luzern-55/</guid>
+      <pubDate>Tue, 15 Sep 2026 06:00:00 GMT</pubDate>
+      <description>30 Oct 2026, 07:30–09:00 · Universität Luzern, Frohburgstrasse 3, Lucerne · Networking · Not listed. Louis Hermann, co-founder of DocPier, on how accurate document processing actually has to be before it can run in production, why a generic model on its own is not enough, and what trustees, insurers and banks can take from that for their own AI projects. Organiser: Digital &amp; AI Community.</description>
+      <category>Networking</category>
+      <category>AI in business</category>
+    </item>
+    <item>
+      <title>Ticino Data Conference 2026 (30 Oct 2026, Bioggio (Lugano))</title>
+      <link>https://swissdataevents.ch/events/ticino-data-conference-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/ticino-data-conference-2026/</guid>
+      <pubDate>Tue, 15 Sep 2026 06:00:00 GMT</pubDate>
+      <description>30 Oct 2026, 09:30–17:45 · Acer EMEA Regional Headquarters, Via della Posta 28, Bioggio (Lugano) · Conference · Free (lunch included). Free one-day community summit in Ticino with three tracks on Power BI, Microsoft Fabric, AI-assisted tooling and data governance, in English and Italian. Organiser: Power BI User Group Italy.</description>
+      <category>Conference</category>
+      <category>Power BI</category>
+      <category>Microsoft Fabric</category>
+      <category>Data governance</category>
+    </item>
+    <item>
+      <title>DevOps for Fabric — Git &amp; Deployment Pipelines (10 Nov 2026, Online (CH))</title>
+      <link>https://swissdataevents.ch/events/devops-for-fabric-git-deployment-pipelines-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/devops-for-fabric-git-deployment-pipelines-2026/</guid>
+      <pubDate>Tue, 15 Sep 2026 06:00:00 GMT</pubDate>
+      <description>10 Nov 2026, 18:30–20:00 · Online · Webinar · Free. Bringing proper CI/CD to Microsoft Fabric: Git integration, deployment pipelines, variable libraries and sensitivity labels for enterprise-ready BI. Organiser: Data and AI for Intelligent Cloud.</description>
+      <category>Webinar</category>
+      <category>Microsoft Fabric</category>
+      <category>Data platform</category>
+      <category>Microsoft ecosystem</category>
+    </item>
+    <item>
+      <title>AI in Production: Introduction to MLOps — Training at EPFL (17 Nov 2026, Lausanne)</title>
+      <link>https://swissdataevents.ch/events/sdsc-mlops-introduction-epfl-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/sdsc-mlops-introduction-epfl-2026/</guid>
+      <pubDate>Tue, 15 Sep 2026 06:00:00 GMT</pubDate>
+      <description>17 Nov 2026, 09:00–17:00 · EPFL, Lausanne · Workshop · CHF 1,000 (10% off for EPFL alumni and SDSC partners). One-day SDSC training on designing, deploying and operating ML systems at scale — version control, CI/CD, experiment tracking, monitoring, drift detection and automated retraining. Registration closes 24 September. Organiser: Swiss Data Science Center.</description>
+      <category>Workshop</category>
+      <category>MLOps</category>
+      <category>Data platform</category>
+      <category>Applied AI</category>
+    </item>
+    <item>
+      <title>AI Breakfast #56 Luzern (20 Nov 2026, Lucerne)</title>
+      <link>https://swissdataevents.ch/events/ai-breakfast-luzern-56/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/ai-breakfast-luzern-56/</guid>
+      <pubDate>Tue, 15 Sep 2026 06:00:00 GMT</pubDate>
+      <description>20 Nov 2026, 07:30–09:00 · Universität Luzern, Frohburgstrasse 3, Lucerne · Networking · Not listed. Merun Gugelmann of Aeberli Treuhand on how an 80-year-old trust company got from Microsoft Teams to building its own Azure applications — the steps of that digitisation journey, concrete examples, and the setup on Azure App Services. Organiser: Digital &amp; AI Community.</description>
+      <category>Networking</category>
+      <category>AI in business</category>
+    </item>
+    <item>
+      <title>AI Insights for Chief Executives (27 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/sdsc-ai-insights-chief-executives-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/sdsc-ai-insights-chief-executives-2026/</guid>
+      <pubDate>Tue, 15 Sep 2026 06:00:00 GMT</pubDate>
+      <description>27 Nov 2026, 10:00–17:00 · Swiss AI Tower, ETH Zürich, Andreasstrasse 5, Zurich · Workshop · 50 CHF. Executive workshop for CEOs, CFOs, CDOs and CTOs on turning data and AI into measurable business value, with case studies from EKZ, Merck and Richemont. Limited seats. Organiser: Swiss Data Science Center / FBXperts.</description>
+      <category>Workshop</category>
+      <category>AI strategy</category>
+      <category>Data leadership</category>
+      <category>Enterprise AI</category>
+    </item>
+    <item>
+      <title>Fabric Year in Review 2026 — Highlights &amp; Outlook (8 Dec 2026, Online (CH))</title>
+      <link>https://swissdataevents.ch/events/fabric-year-in-review-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/fabric-year-in-review-2026/</guid>
+      <pubDate>Tue, 15 Sep 2026 06:00:00 GMT</pubDate>
+      <description>8 Dec 2026, 18:30–20:00 · Online · Webinar · Free. Year-end session from the Zurich Microsoft data-platform group on what actually shipped in Fabric during 2026 and what is worth planning for next. Organiser: Data and AI for Intelligent Cloud.</description>
+      <category>Webinar</category>
+      <category>Microsoft Fabric</category>
+      <category>Data platform</category>
+      <category>Microsoft ecosystem</category>
+    </item>
+    <item>
+      <title>The Night of Data Talents: Startup Edition (17 Dec 2026, Lausanne)</title>
+      <link>https://swissdataevents.ch/events/night-of-data-talents-lausanne-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/night-of-data-talents-lausanne-2026/</guid>
+      <pubDate>Sat, 05 Sep 2026 06:00:00 GMT</pubDate>
+      <description>17 Dec 2026, 17:30–23:30 · Cercle des Bains, Lausanne · Networking · 150 CHF. Swiss data startups pitch to an investor panel with community voting, capping the year for the Suisse Romande data scene. Organiser: DatAfterwork Suisse.</description>
+      <category>Networking</category>
+      <category>Data startups</category>
+      <category>Innovation</category>
+      <category>Networking</category>
+    </item>
+    <item>
+      <title>ETH AI Center Researchers Community Meetup (24 Sept 2026 – 25 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/eth-ai-center-researchers-meetup-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/eth-ai-center-researchers-meetup-2026/</guid>
+      <pubDate>Thu, 03 Sep 2026 06:00:00 GMT</pubDate>
+      <description>24 Sept 2026 – 25 Nov 2026, 17:30–19:00 · ETH AI Center, OAT X 11, Oerlikon, Zurich · Meetup · Free. Recurring meetup series for the AI research community at ETH Zurich. Organiser: ETH AI Center.</description>
+      <category>Meetup</category>
+      <category>AI research</category>
+    </item>
+    <item>
+      <title>Destination AI – Verpasse den Zug nicht! (3 Nov 2026, Dietlikon)</title>
+      <link>https://swissdataevents.ch/events/td-synnex-destination-ai-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/td-synnex-destination-ai-2026/</guid>
+      <pubDate>Thu, 03 Sep 2026 06:00:00 GMT</pubDate>
+      <description>3 Nov 2026, 09:30–20:00 · Pathé Dietlikon, Dietlikon · Conference · Not listed. Full-day German-language AI conference for the Swiss partner and reseller ecosystem, with a keynote by futurist Gerd Leonhard, vendor breakout sessions and business meetings. Organiser: TD SYNNEX.</description>
+      <category>Conference</category>
+      <category>Enterprise AI</category>
+      <category>Microsoft ecosystem</category>
+    </item>
+    <item>
+      <title>Snowflake Forum Zurich 2026 (5 Nov 2026, Zurich-Flughafen)</title>
+      <link>https://swissdataevents.ch/events/snowflake-forum-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/snowflake-forum-zurich-2026/</guid>
+      <pubDate>Thu, 03 Sep 2026 06:00:00 GMT</pubDate>
+      <description>5 Nov 2026, 09:00–19:00 · The Circle Convention Center, The Circle 27, Zurich-Flughafen · Conference · Free. Free data-platform conference bringing together Swiss data teams and partners. Organiser: Snowflake.</description>
+      <category>Conference</category>
+      <category>Data platform</category>
+      <category>Governance</category>
+    </item>
+    <item>
+      <title>Swiss AI Safety Days 2026 (7 Nov 2026 – 8 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/swiss-ai-safety-days-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/swiss-ai-safety-days-2026/</guid>
+      <pubDate>Thu, 03 Sep 2026 06:00:00 GMT</pubDate>
+      <description>7 Nov 2026 – 8 Nov 2026 · ETH main building, Zurich · Conference · Free–CHF 320 (trust-based). Two days at ETH Zurich on AI safety research, governance and careers, with trust-based pricing from free upwards. Attendance is by application; the deadline is 17 October. Organiser: Zurich AI Safety.</description>
+      <category>Conference</category>
+      <category>AI safety</category>
+      <category>Governance</category>
+      <category>Careers</category>
+    </item>
+    <item>
+      <title>UNIGE – Recherche documentaire et IA (9 Nov 2026, Geneva)</title>
+      <link>https://swissdataevents.ch/events/unige-recherche-documentaire-ia-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/unige-recherche-documentaire-ia-2026/</guid>
+      <pubDate>Thu, 03 Sep 2026 06:00:00 GMT</pubDate>
+      <description>9 Nov 2026, 10:15–11:45 · Uni Mail 2220, Geneva · Workshop · Not specified. University of Geneva workshop on using AI tools for academic research. Organiser: Université de Genève.</description>
+      <category>Workshop</category>
+      <category>AI tools</category>
+      <category>Academic research</category>
+    </item>
+    <item>
+      <title>Swiss AI Summit 2026 (16 Nov 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/swiss-ai-summit-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/swiss-ai-summit-2026/</guid>
+      <pubDate>Thu, 03 Sep 2026 06:00:00 GMT</pubDate>
+      <description>16 Nov 2026, 07:00–20:00 · Kunsthaus Zürich, Zurich · Conference · CHF 790 Executive Pass / CHF 950 standard (excl. VAT). Full-day summit at the Kunsthaus for senior business, technology and government leaders, spanning finance and insurance, government and defence, manufacturing, cybersecurity, quantum and healthcare — with speakers from Microsoft Switzerland, IBM, Nestlé, ABB, HSBC and the Canton of Zurich, plus workshops, demos and a one-to-one meeting platform. Organiser: Swiss AI Summit.</description>
+      <category>Conference</category>
+      <category>Enterprise AI strategy</category>
+    </item>
+    <item>
+      <title>The Geneva AI Conference 2026 (25 Nov 2026, Geneva)</title>
+      <link>https://swissdataevents.ch/events/geneva-ai-conference-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/geneva-ai-conference-2026/</guid>
+      <pubDate>Thu, 03 Sep 2026 06:00:00 GMT</pubDate>
+      <description>25 Nov 2026, 18:00–21:00 · Venue to be confirmed, Geneva · Networking · Ticketed (Eventbrite). An evening on enterprise AI strategy and returns, opened by Geneva city executive councillor Joëlle Bertossa and built around a panel with IBM, SAP, Hostelworld and Executive AI. The venue is still to be confirmed. Organiser: Startup Network Europe.</description>
+      <category>Networking</category>
+      <category>Enterprise AI</category>
+      <category>AI strategy</category>
+    </item>
+    <item>
+      <title>Databricks Data + AI World Tour Zurich 2026 (1 Dec 2026, Zurich)</title>
+      <link>https://swissdataevents.ch/events/databricks-data-ai-world-tour-zurich-2026/</link>
+      <guid isPermaLink="true">https://swissdataevents.ch/events/databricks-data-ai-world-tour-zurich-2026/</guid>
+      <pubDate>Thu, 03 Sep 2026 06:00:00 GMT</pubDate>
+      <description>1 Dec 2026, 08:00–18:30 · StageOne Event &amp; Convention Hall, Oerlikon, Zurich · Conference · Free (apply to attend). Databricks' flagship Swiss stop on the Data + AI World Tour: keynotes, breakout sessions and hands-on training on Genie and Lakebase, plus an expo, with speakers from Databricks and Zurich Insurance. Organiser: Databricks.</description>
+      <category>Conference</category>
+      <category>Databricks</category>
+      <category>Lakehouse</category>
+      <category>Unity Catalog</category>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,99 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Lausanne – Workshop
+X-WR-CALDESC:Upcoming data\, AI and IT events in Switzerland\, from swissda
+ taevents.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:apertus-for-ngos-workshop-lausanne-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261110T093000
+DTEND;TZID=Europe/Zurich:20261110T123000
+SUMMARY:Apertus for NGOs: Running and Deploying Switzerland’s Open-source
+  LLM
+LOCATION:EPFL AI Center Lounge\, Lausanne
+DESCRIPTION:Hands-on morning for non-profit staff and researchers on deploy
+ ing Apertus\, Switzerland’s fully open large language model\, on their o
+ wn infrastructure or via a provider — with a Swiss non-profit case study
+  and group exercises.\n\nOrganiser: Swiss AI Initiative (ETH Zurich\, EPFL
+  & CSCS)\n\nDetails and registration: https://swissdataevents.ch/events/ap
+ ertus-for-ngos-workshop-lausanne-2026/
+URL:https://swissdataevents.ch/events/apertus-for-ngos-workshop-lausanne-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:opentech-connect-build-lausanne-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:OpenTech Connect 2026 — Day 2: BUILD
+LOCATION:EPFL Innovation Park I\, Lausanne
+DESCRIPTION:Hands-on second day of OpenTech Connect: workshops\, technical 
+ deep dives and practical labs with speakers from LlamaIndex\, Skilder\, Sy
+ nergix and IBM Research. Registration is separate from day one.\n\nOrganis
+ er: Data\, Cloud and AI in Switzerland (with Big Data University and IBM R
+ esearch)\n\nDetails and registration: https://swissdataevents.ch/events/op
+ entech-connect-build-lausanne-2026/
+URL:https://swissdataevents.ch/events/opentech-connect-build-lausanne-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sdsc-mlops-introduction-epfl-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261117T090000
+DTEND;TZID=Europe/Zurich:20261117T170000
+SUMMARY:AI in Production: Introduction to MLOps — Training at EPFL
+LOCATION:EPFL\, Lausanne
+DESCRIPTION:One-day SDSC training on designing\, deploying and operating ML
+  systems at scale — version control\, CI/CD\, experiment tracking\, moni
+ toring\, drift detection and automated retraining. Registration closes 24 
+ September.\n\nOrganiser: Swiss Data Science Center\n\nDetails and registra
+ tion: https://swissdataevents.ch/events/sdsc-mlops-introduction-epfl-2026/
+URL:https://swissdataevents.ch/events/sdsc-mlops-introduction-epfl-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:epfl-reshaping-information-research-with-ai-2026@swissdataevents.ch
+DTSTAMP:20261030T164555Z
+DTSTART;TZID=Europe/Zurich:20261201T143000
+DTEND;TZID=Europe/Zurich:20261201T163000
+SUMMARY:Reshaping Information Research with AI
+LOCATION:EPFL\, room MED 0 1618\, Lausanne
+DESCRIPTION:Two-hour on-site workshop from the EPFL Library comparing four 
+ AI-powered research assistants\, how they work and where they differ from 
+ traditional information retrieval. Open to the public\, registration requi
+ red.\n\nOrganiser: EPFL Library\n\nDetails and registration: https://swiss
+ dataevents.ch/events/epfl-reshaping-information-research-with-ai-2026/
+URL:https://swissdataevents.ch/events/epfl-reshaping-information-research-w
+ ith-ai-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
