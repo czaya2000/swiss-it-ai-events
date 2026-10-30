@@ -48,9 +48,9 @@ const id = (s: string) => `sub-${placement}-${s}`;
 			<button class="btn accent" type="submit" data-umami-event="Digest signup" data-umami-event-placement={placement}>Subscribe</button>
 		</div>
 		<details class="subscribe-choices">
-			<summary>Choose cities and event types (optional)</summary>
+			<summary>Choose cities and event types</summary>
 			<fieldset>
-				<legend>Cities</legend>
+				<legend class="sr-only">Cities</legend>
 				<div class="choices">
 					{NEWSLETTER_CITIES.map((c) => (
 						<label class="choice" for={id(cityTag(c.slug))}>
@@ -71,7 +71,6 @@ const id = (s: string) => `sub-${placement}-${s}`;
 					))}
 				</div>
 			</fieldset>
-			<p class="choices-note">Smaller places count as the nearest city, e.g. Winterthur as Zurich.</p>
 		</details>
 	</form>
 </section>
@@ -182,11 +181,6 @@ const id = (s: string) => `sub-${placement}-${s}`;
 	.choice:has(input:focus-visible) {
 		outline: 2px solid var(--accent);
 		outline-offset: 2px;
-	}
-	.choices-note {
-		margin: 10px 0 0;
-		font-size: 0.78rem;
-		color: var(--muted);
 	}
 	@media (max-width: 720px) {
 		.subscribe {
