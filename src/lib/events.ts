@@ -1,4 +1,5 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
+import { NEWSLETTER_CITIES, newsletterCity } from './newsletter.mjs';
 
 export const NEW_WINDOW_DAYS = 5;
 export const SITE_URL = 'https://swissdataevents.ch';
@@ -94,32 +95,20 @@ export async function getAllEvents(): Promise<EventEntry[]> {
 	return [...live, ...(archived as unknown as EventEntry[])];
 }
 
-// Suburbs and nearby towns that the homepage City filter folds into a main
-// city. Only the filter uses this; event pages, cards and the social feed
-// keep the exact place.
-const CITY_GROUPS: Record<string, string> = {
-	'Zurich-Flughafen': 'Zurich',
-	Schlieren: 'Zurich',
-	Dietlikon: 'Zurich',
-	Dübendorf: 'Zurich',
-	Fahrweid: 'Zurich',
-	Oerlikon: 'Zurich',
-	Rotkreuz: 'Zug',
-	Versoix: 'Geneva',
-	Thônex: 'Geneva',
-	Prilly: 'Lausanne',
-	'Saint-Sulpice': 'Lausanne',
-	Bioggio: 'Lugano',
-};
+// The City filter, calendar feeds and "Upcoming in …" use the newsletter's
+// nine cities (src/lib/newsletter.mjs), so every list on the site matches the
+// signup form. Event pages, cards and the social feed keep the exact place.
 
-/** Main city for the City filter, e.g. "Prilly (Lausanne)" → "Lausanne". */
+/** Main city for the City filter, e.g. "Prilly (Lausanne)" → "Lausanne", "Davos" → "Zurich". */
 export function cityGroup(city: string): string {
-	// "Online (CH)" is its own option, not a city called "CH".
+	// "Online (CH)" stays as written, so its calendar feed keeps its address.
 	if (/^online\b/i.test(city)) return city;
-	// The refresh writes nearby places as "Place (City)"; trust the bracket.
+	const slug = newsletterCity(city);
+	const hit = NEWSLETTER_CITIES.find((c) => c.slug === slug);
+	if (hit) return hit.label;
+	// "Nationwide", or a place not mapped yet (npm run validate warns about those).
 	const bracket = city.match(/\(([^)]+)\)\s*$/);
-	if (bracket) return CITY_GROUPS[bracket[1].trim()] ?? bracket[1].trim();
-	return CITY_GROUPS[city.trim()] ?? city.trim();
+	return (bracket ? bracket[1] : city).trim();
 }
 
 const WEEKDAY = new Intl.DateTimeFormat('en-US', { weekday: 'short' });

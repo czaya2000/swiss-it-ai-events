@@ -82,8 +82,9 @@ build actually works first.
   Basel, Bern, Lucerne, Lugano, Neuchâtel, Online) and maps every smaller place to
   the nearest one. Never rename a tag: subscribers already hold it. There is no
   "Other" city by design. `npm run validate` warns about unmapped places; add them
-  to `PLACE_TO_CITY`. This grouping is newsletter-only — the homepage filter and
-  calendar feeds keep `cityGroup()`.
+  to `PLACE_TO_CITY`. The homepage City filter, calendar feeds and "Upcoming in …"
+  use the same nine cities (`cityGroup()` in `src/lib/events.ts` reads this list);
+  only "Online (CH)" keeps its own label so its feed stays `online-ch.ics`.
 - Matching: city AND format; no city chosen = all cities, no format = all formats.
   "Nationwide" and unmapped places go to everyone.
 - `scripts/build-digest.mjs` (`npm run digest -- --dry-run`) builds ONE email for

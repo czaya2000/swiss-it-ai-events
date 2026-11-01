@@ -6,8 +6,8 @@
 // picking no format means every format.
 //
 // This is a fixed list on purpose: Buttondown tags must stay stable, so smaller
-// places go to the nearest big city here. The homepage filter and calendar feeds
-// keep their own grouping (cityGroup in events.ts) and are not affected.
+// places go to the nearest big city here. The homepage City filter, calendar
+// feeds and "Upcoming in …" use the same list (cityGroup in events.ts).
 //
 // Plain .mjs so both Astro and the Node scripts (validator, digest) can import it.
 
@@ -67,6 +67,7 @@ const PLACE_TO_CITY = {
 	'yverdon-les-bains': 'lausanne',
 	martigny: 'lausanne',
 	sierre: 'lausanne',
+	sion: 'lausanne',
 	// Bern
 	bern: 'bern',
 	liebefeld: 'bern',
