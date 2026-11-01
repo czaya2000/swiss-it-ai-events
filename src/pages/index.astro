@@ -9,6 +9,7 @@ import {
 	dateSpine,
 	isFree,
 	cityGroup,
+	compareCities,
 	eventUrl,
 	formatLastScan,
 	weekStart,
@@ -26,7 +27,7 @@ const lastScan = formatLastScan(meta.lastScan);
 const entries = await getUpcomingEvents();
 const events = entries.map((e) => ({ id: e.id, ...e.data }));
 
-const cities = [...new Set(events.map((e) => cityGroup(e.city)))].sort();
+const cities = [...new Set(events.map((e) => cityGroup(e.city)))].sort(compareCities);
 const formats = [...new Set(events.map((e) => e.format))].sort();
 
 // Events arrive sorted by date, so grouping is a single pass. Each group is

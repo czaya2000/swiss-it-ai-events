@@ -1,4 +1,4 @@
-import { SITE_NAME, SITE_URL, cityGroup, eventUrl, type EventEntry } from './events';
+import { SITE_NAME, SITE_URL, cityGroup, compareCities, eventUrl, type EventEntry } from './events';
 import type { IcsEvent } from './ics';
 
 /* One calendar feed per filter combination: all events, each city, each
@@ -56,13 +56,13 @@ export function toIcsEvent(e: EventEntry): IcsEvent {
 	};
 }
 
-function options(values: string[]): FeedOption[] {
-	return [...new Set(values)].sort().map((label) => ({ slug: slugify(label), label }));
+function options(values: string[], compare?: (a: string, b: string) => number): FeedOption[] {
+	return [...new Set(values)].sort(compare).map((label) => ({ slug: slugify(label), label }));
 }
 
 export function feedOptions(events: EventEntry[]) {
 	return {
-		cities: options(events.map((e) => cityGroup(e.data.city))),
+		cities: options(events.map((e) => cityGroup(e.data.city)), compareCities),
 		formats: options(events.map((e) => e.data.format)),
 	};
 }

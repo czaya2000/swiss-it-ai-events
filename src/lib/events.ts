@@ -111,6 +111,12 @@ export function cityGroup(city: string): string {
 	return (bracket ? bracket[1] : city).trim();
 }
 
+/** City list order: Online first, then cities A–Z. */
+export function compareCities(a: string, b: string): number {
+	const online = (s: string) => (/^online\b/i.test(s) ? 0 : 1);
+	return online(a) - online(b) || a.localeCompare(b);
+}
+
 const WEEKDAY = new Intl.DateTimeFormat('en-US', { weekday: 'short' });
 const MONTH = new Intl.DateTimeFormat('en-US', { month: 'short' });
 const DATE_RANGE_OPTS: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'short', year: 'numeric' };
