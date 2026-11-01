@@ -51,6 +51,8 @@ const PLACE_TO_CITY = {
 	zug: 'zurich',
 	chur: 'zurich',
 	davos: 'zurich',
+	'st-gallen': 'zurich',
+	gebenstorf: 'zurich',
 	// Geneva
 	geneva: 'geneva',
 	versoix: 'geneva',
