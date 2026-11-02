@@ -30,6 +30,7 @@ adding a source here means "check this for leads," not "trust it blindly."
 - meetup.com/daizurich — Swiss Data and AI Meetup
 - meetup.com/zurich-data-sciece-odsc — ODSC AI Zurich
 - meetup.com/mindstone-geneva-ai-meetup
+- meetup.com/data-tgif — Data TGIF (Zurich Microsoft data platform group; monthly online Friday session, Fabric / Power BI)
 - meetup.com/find keyword search — run for both Zürich and Genève on each of: "AI", "Power BI",
   "Fabric", "Snowflake", "data governance" (e.g. meetup.com/find/?keywords=AI&location=ch--Zürich).
   Named groups above cover the regulars; this catches new/one-off events and groups not yet named
