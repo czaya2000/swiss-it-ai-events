@@ -25,6 +25,7 @@ export default defineConfig({
 			// social pipeline, not pages anyone should land on.
 			filter: (page) =>
 				!page.includes('/thanks/') &&
+				!page.includes('/subscribe/confirmed/') &&
 				!page.includes('/card/') &&
 				!page.includes('/calendar/') &&
 				!page.endsWith('social-feed.json') &&

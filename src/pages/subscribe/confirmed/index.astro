@@ -1,0 +1,43 @@
+---
+/* Buttondown sends people here after they click the confirmation link
+   (newsletter setting `subscription_confirmation_redirect_url`, set with
+   scripts/buttondown-redirects.mjs). Keep the path stable. */
+import Base from '../../../layouts/Base.astro';
+import SiteNav from '../../../components/SiteNav.astro';
+import SiteFooter from '../../../components/SiteFooter.astro';
+import { SITE_NAME } from '../../../lib/events';
+
+const title = `You're subscribed — ${SITE_NAME}`;
+const description = 'Your weekly digest subscription is confirmed.';
+---
+
+<Base title={title} description={description} path="/subscribe/confirmed/" noindex>
+	<SiteNav />
+
+	<main class="wrap confirmed">
+		<h1>You're on the list.</h1>
+		<p>
+			Your first digest arrives on Monday morning: the next two weeks of events, plus new additions.
+			Every email has a link to change your cities and event types.
+		</p>
+		<a class="btn accent" href="/">See all events →</a>
+	</main>
+
+	<SiteFooter />
+
+	<style>
+		.confirmed {
+			padding: 60px 32px;
+			text-align: center;
+		}
+		h1 {
+			font-size: clamp(1.5rem, 3vw, 2rem);
+			margin: 0 0 8px;
+		}
+		p {
+			color: var(--muted);
+			margin: 0 auto 28px;
+			max-width: 48ch;
+		}
+	</style>
+</Base>
