@@ -140,13 +140,33 @@ const structuredData = [
 						<button type="button" class="multi-clear" id="city-clear">Clear</button>
 					</div>
 				</div>
-				<label>
-					<span class="sr-only">Format</span>
-					<select id="filter-format">
-						<option value="">Format</option>
-						{formats.map((f) => <option value={f}>{f}</option>)}
-					</select>
-				</label>
+				<div class="multi" id="format-filter">
+					<button
+						type="button"
+						class="multi-toggle"
+						id="format-toggle"
+						aria-expanded="false"
+						aria-controls="format-panel"
+					>
+						<span id="format-label">Format</span>
+						<svg viewBox="0 0 10 6" width="10" height="6" aria-hidden="true">
+							<path fill="none" stroke="currentColor" stroke-width="1.5" d="M1 1l4 4 4-4"></path>
+						</svg>
+					</button>
+					<div class="multi-panel" id="format-panel" role="group" aria-label="Formats" hidden>
+						<div class="multi-options">
+							{
+								formats.map((f) => (
+									<label class="multi-option">
+										<input type="checkbox" name="format" value={f} />
+										<span>{f}</span>
+									</label>
+								))
+							}
+						</div>
+						<button type="button" class="multi-clear" id="format-clear">Clear</button>
+					</div>
+				</div>
 				<button type="button" class="cal-cta" data-cal-open data-umami-event="Calendar: open" data-umami-event-from="list">
 					<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
 						<rect x="3" y="5" width="18" height="16"></rect>
@@ -239,13 +259,6 @@ const structuredData = [
 			var searchInput = document.getElementById('filter-search');
 			var searchWrap = document.querySelector('.search-wrap');
 			var searchToggle = document.getElementById('search-toggle');
-			var cityFilter = document.getElementById('city-filter');
-			var cityToggle = document.getElementById('city-toggle');
-			var cityLabel = document.getElementById('city-label');
-			var cityPanel = document.getElementById('city-panel');
-			var cityClear = document.getElementById('city-clear');
-			var cityBoxes = Array.prototype.slice.call(cityPanel.querySelectorAll('input[type="checkbox"]'));
-			var formatSelect = document.getElementById('filter-format');
 			var whenTabs = Array.prototype.slice.call(document.querySelectorAll('.when-tab'));
 			var rows = Array.prototype.slice.call(document.querySelectorAll('.row'));
 			var bands = Array.prototype.slice.call(document.querySelectorAll('.band'));
@@ -255,44 +268,89 @@ const structuredData = [
 			var params = new URLSearchParams(location.search);
 			var state = {
 				q: params.get('q') || '',
-				// Repeated params (?city=Zurich&city=Geneva), so old single-city
+				// Repeated params (?city=Zurich&city=Geneva), so old single-value
 				// links keep working unchanged.
 				cities: params.getAll('city').filter(Boolean),
-				format: params.get('format') || '',
+				formats: params.getAll('format').filter(Boolean),
 				when: params.get('when') || 'all',
 			};
 
 			searchInput.value = state.q;
-			formatSelect.value = state.format;
-			cityBoxes.forEach(function (box) {
-				box.checked = state.cities.indexOf(box.value) !== -1;
-			});
-			// Drop cities from the URL that no longer have any events.
-			state.cities = cityBoxes
-				.filter(function (box) {
-					return box.checked;
-				})
-				.map(function (box) {
-					return box.value;
+
+			// One tick-box dropdown (City, Format). onChange gets the ticked
+			// values in list order, not click order.
+			function multiSelect(key, placeholder, initial, onChange) {
+				var root = document.getElementById(key + '-filter');
+				var toggle = document.getElementById(key + '-toggle');
+				var label = document.getElementById(key + '-label');
+				var panel = document.getElementById(key + '-panel');
+				var clear = document.getElementById(key + '-clear');
+				var boxes = Array.prototype.slice.call(panel.querySelectorAll('input[type="checkbox"]'));
+
+				function selected() {
+					return boxes
+						.filter(function (b) {
+							return b.checked;
+						})
+						.map(function (b) {
+							return b.value;
+						});
+				}
+				function render() {
+					var v = selected();
+					var n = v.length;
+					label.textContent = n === 0 ? placeholder : n === 1 ? v[0] : v[0] + ' +' + (n - 1);
+					toggle.classList.toggle('has-value', n > 0);
+					clear.hidden = n === 0;
+				}
+				function setOpen(open) {
+					panel.hidden = !open;
+					toggle.setAttribute('aria-expanded', String(open));
+				}
+
+				boxes.forEach(function (box) {
+					box.checked = initial.indexOf(box.value) !== -1;
+					box.addEventListener('change', function () {
+						render();
+						onChange(selected());
+					});
 				});
+				render();
 
-			function markHasValue(select) {
-				select.classList.toggle('has-value', !!select.value);
+				toggle.addEventListener('click', function () {
+					setOpen(panel.hidden);
+				});
+				clear.addEventListener('click', function () {
+					boxes.forEach(function (b) {
+						b.checked = false;
+					});
+					render();
+					onChange([]);
+					toggle.focus();
+				});
+				document.addEventListener('click', function (ev) {
+					if (!panel.hidden && !root.contains(ev.target)) setOpen(false);
+				});
+				document.addEventListener('keydown', function (ev) {
+					if (ev.key === 'Escape' && !panel.hidden) {
+						setOpen(false);
+						toggle.focus();
+					}
+				});
+				// Values from the URL that no longer have any events are dropped.
+				return selected();
 			}
-			markHasValue(formatSelect);
 
-			function renderCityLabel() {
-				var n = state.cities.length;
-				cityLabel.textContent = n === 0 ? 'City' : n === 1 ? state.cities[0] : state.cities[0] + ' +' + (n - 1);
-				cityToggle.classList.toggle('has-value', n > 0);
-				cityClear.hidden = n === 0;
-			}
-			renderCityLabel();
-
-			function setCityOpen(open) {
-				cityPanel.hidden = !open;
-				cityToggle.setAttribute('aria-expanded', String(open));
-			}
+			state.cities = multiSelect('city', 'City', state.cities, function (v) {
+				state.cities = v;
+				updateUrl();
+				applyFilters();
+			});
+			state.formats = multiSelect('format', 'Format', state.formats, function (v) {
+				state.formats = v;
+				updateUrl();
+				applyFilters();
+			});
 
 			function setSearchOpen(open, focus) {
 				searchWrap.classList.toggle('open', open);
@@ -331,7 +389,9 @@ const structuredData = [
 				state.cities.forEach(function (c) {
 					p.append('city', c);
 				});
-				if (state.format) p.set('format', state.format);
+				state.formats.forEach(function (f) {
+					p.append('format', f);
+				});
 				if (state.when && state.when !== 'all') p.set('when', state.when);
 				var qs = p.toString();
 				history.replaceState(null, '', qs ? '?' + qs : location.pathname);
@@ -348,7 +408,7 @@ const structuredData = [
 					var matches =
 						(!query || (d.search || '').indexOf(query) !== -1) &&
 						(state.cities.length === 0 || state.cities.indexOf(d.city) !== -1) &&
-						(!state.format || d.format === state.format) &&
+						(state.formats.length === 0 || state.formats.indexOf(d.format) !== -1) &&
 						(!bounds || (d.date <= bounds.end && d.endDate >= bounds.start));
 					row.hidden = !matches;
 					if (matches) {
@@ -384,49 +444,6 @@ const structuredData = [
 			});
 			searchInput.addEventListener('blur', function () {
 				if (!searchInput.value) setSearchOpen(false, false);
-			});
-			cityToggle.addEventListener('click', function () {
-				setCityOpen(cityPanel.hidden);
-			});
-			cityBoxes.forEach(function (box) {
-				box.addEventListener('change', function () {
-					// Keep the alphabetical order of the list, not the click order.
-					state.cities = cityBoxes
-						.filter(function (b) {
-							return b.checked;
-						})
-						.map(function (b) {
-							return b.value;
-						});
-					renderCityLabel();
-					updateUrl();
-					applyFilters();
-				});
-			});
-			cityClear.addEventListener('click', function () {
-				cityBoxes.forEach(function (b) {
-					b.checked = false;
-				});
-				state.cities = [];
-				renderCityLabel();
-				updateUrl();
-				applyFilters();
-				cityToggle.focus();
-			});
-			document.addEventListener('click', function (ev) {
-				if (!cityPanel.hidden && !cityFilter.contains(ev.target)) setCityOpen(false);
-			});
-			document.addEventListener('keydown', function (ev) {
-				if (ev.key === 'Escape' && !cityPanel.hidden) {
-					setCityOpen(false);
-					cityToggle.focus();
-				}
-			});
-			formatSelect.addEventListener('change', function () {
-				state.format = formatSelect.value;
-				markHasValue(formatSelect);
-				updateUrl();
-				applyFilters();
 			});
 			whenTabs.forEach(function (btn) {
 				btn.addEventListener('click', function () {
@@ -532,8 +549,8 @@ const structuredData = [
 			color: var(--ink);
 			font-weight: 600;
 		}
-		/* City multi-select: a button styled exactly like the Format select,
-		   opening a panel of tick boxes. */
+		/* City and Format multi-selects: a button with an underline, like the
+		   search field, opening a panel of tick boxes. */
 		.multi {
 			position: relative;
 		}
