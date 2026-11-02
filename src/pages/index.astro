@@ -19,6 +19,7 @@ import {
 	SITE_NAME,
 	SITE_TAGLINE,
 	SITE_HEADLINE,
+	SITE_SUBHEADLINE,
 	INSTAGRAM_URL,
 } from '../lib/events';
 import meta from '../data/meta.json';
@@ -105,6 +106,7 @@ const structuredData = [
 	<div class="hero">
 		<header class="statement wrap">
 			<h1>{SITE_HEADLINE}</h1>
+			<p class="statement-sub">{SITE_SUBHEADLINE}</p>
 		</header>
 
 		<div class="wrap subscribe-slot">
@@ -473,6 +475,13 @@ const structuredData = [
 			margin: 0;
 			max-width: 32ch;
 			text-wrap: pretty;
+		}
+		.statement-sub {
+			margin: 12px 0 0;
+			font-size: 1.05rem;
+			line-height: 1.45;
+			color: var(--muted);
+			max-width: 60ch;
 		}
 
 		main {

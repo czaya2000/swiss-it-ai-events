@@ -14,18 +14,18 @@ if the repo is renamed or the custom domain changes.
 
 One scheduled GitHub Actions job does everything: researches new/changed events,
 updates `src/data/events.json` and `src/data/meta.json`, validates, pushes to `main`,
-builds, and force-pushes `dist/` to the `gh-pages` branch. It runs **Mon/Wed/Fri** at
+builds, and force-pushes `dist/` to the `gh-pages` branch. It runs **every day** at
 05:00 UTC (07:00 Zurich in summer, 06:00 in winter — GitHub cron has no DST) and can be
 run on demand via **workflow_dispatch**. Nothing about it depends on a personal machine.
 
-- The file is still named `daily-refresh.yml` and the workflow "Daily refresh" although
-  it now runs three times a week; renaming would orphan its run history for a cosmetic
-  gain. The cron is the source of truth.
+- Daily since 2026-11-02 (Mon/Wed/Fri before). The homepage subline says "checked
+  daily" (`SITE_SUBHEADLINE` in `src/lib/events.ts`), so if the cron goes back to fewer
+  days, change that wording too.
 - The timing is deliberate: it lands before the n8n social workflow's 08:00 run, so the
   morning post draws on a feed refreshed that same morning.
-- Three runs a week rather than seven is a cost decision — each pass is roughly $4.60
-  equivalent on Opus 5, charged to the Claude subscription. If it needs trimming
-  further, cut `SOURCES.md`; most of the ~96 turns per run are per-source checks.
+- Cost: each pass is roughly $4.60–5.60 equivalent on Opus 5 (30 Oct run: $5.64, 142
+  turns), charged to the Claude subscription, so daily is ~$35–40/week equivalent. If
+  it needs trimming, cut `SOURCES.md`; most turns are per-source checks.
 - **Use Opus 5.** Sonnet 5 managed one proper pass in three attempts; the others gave up
   after ~1 minute and 10 turns having checked almost nothing and declared no changes.
 

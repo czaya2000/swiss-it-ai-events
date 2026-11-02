@@ -162,7 +162,8 @@ export function formatLastScan(iso: string): string {
    band is always labelled by its date range; the current week is picked out
    with the accent color instead of a "This week" text label. */
 
-export const SITE_HEADLINE = 'Every IT and AI event in Switzerland, checked by hand.';
+export const SITE_HEADLINE = 'Discover AI & Data Events Across Switzerland';
+export const SITE_SUBHEADLINE = 'Conferences, meetups and workshops in one place, checked daily.';
 
 const BAND_DAY = new Intl.DateTimeFormat('en-GB', { day: 'numeric' });
 const BAND_DAY_MONTH = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long' });
