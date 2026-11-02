@@ -20,11 +20,7 @@ const id = (s: string) => `sub-${placement}-${s}`;
 
 <section class={`subscribe ${compact ? 'compact' : ''}`} id="subscribe">
 	<div class="subscribe-copy">
-		<p class="subscribe-title">The weekly digest</p>
-		<p class="subscribe-note">
-			Every Monday: events for the next two weeks, plus new additions. Pick cities and event types,
-			or leave them blank to get all.
-		</p>
+		<p class="subscribe-title">Every Monday, the next two weeks of events in your inbox.</p>
 	</div>
 	<!-- Posts straight to Buttondown (no backend). Buttondown sends the double
 	     opt-in email and creates any tag it doesn't know yet. Each ticked box
@@ -45,7 +41,7 @@ const id = (s: string) => `sub-${placement}-${s}`;
 					autocomplete="email"
 				/>
 			</label>
-			<button class="btn accent" type="submit" data-umami-event="Digest signup" data-umami-event-placement={placement}>Subscribe</button>
+			<button class="btn accent" type="submit" data-umami-event="Digest signup" data-umami-event-placement={placement}>Get weekly digest</button>
 		</div>
 		<details class="subscribe-choices">
 			<summary>Choose cities and event types</summary>
@@ -94,13 +90,13 @@ const id = (s: string) => `sub-${placement}-${s}`;
 		margin: 0;
 		font-size: 0.95rem;
 		font-weight: 600;
+		line-height: 1.45;
+		max-width: 52ch;
+		/* Sit level with the email field's text, not its top border. */
+		padding-top: 10px;
 	}
-	.subscribe-note {
-		margin: 6px 0 0;
-		font-size: 0.85rem;
-		color: var(--muted);
-		line-height: 1.55;
-		max-width: 44ch;
+	.subscribe.compact .subscribe-title {
+		padding-top: 0;
 	}
 	.subscribe-form {
 		display: flex;
@@ -187,6 +183,9 @@ const id = (s: string) => `sub-${placement}-${s}`;
 			grid-template-columns: 1fr;
 			gap: 14px;
 			padding: 22px 0;
+		}
+		.subscribe-title {
+			padding-top: 0;
 		}
 	}
 	@media (max-width: 420px) {
