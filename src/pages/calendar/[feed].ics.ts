@@ -4,7 +4,7 @@ import { listFeeds, toIcsEvent, type Feed } from '../../lib/calendar-feeds';
 import { buildCalendar } from '../../lib/ics';
 
 /* Static calendar subscription feeds, regenerated on every build — so the
-   Mon/Wed/Fri refresh keeps them current with no workflow changes. Same
+   daily refresh keeps them current with no workflow changes. Same
    date window as the homepage (getUpcomingEvents). */
 
 export const getStaticPaths = (async () => {

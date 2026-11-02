@@ -34,7 +34,7 @@ export const GET: APIRoute = async () => {
 		'<?xml version="1.0" encoding="UTF-8"?>',
 		'<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">',
 		'  <channel>',
-		`    <title>${esc(SITE_NAME)}: upcoming IT, data and AI events in Switzerland</title>`,
+		`    <title>${esc(SITE_NAME)}: upcoming AI and data events in Switzerland</title>`,
 		`    <link>${SITE_URL}/</link>`,
 		`    <atom:link href="${SITE_URL}/rss.xml" rel="self" type="application/rss+xml" />`,
 		`    <description>${esc(SITE_SCOPE)}</description>`,

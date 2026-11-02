@@ -6,7 +6,7 @@ export const SITE_URL = 'https://swissdataevents.ch';
 export const SITE_NAME = 'Swiss Data Events';
 export const INSTAGRAM_URL = 'https://www.instagram.com/swissdataevents/';
 export const SITE_TAGLINE =
-	"A curated, hand-verified list of upcoming data, AI, and IT events across Switzerland. No noise, no expired listings — just what's worth your time.";
+	"Upcoming AI and data events across Switzerland: conferences, meetups and workshops in one place, each checked daily against the organiser's page.";
 
 /* Contact, digest-signup and event-submission forms all post to FormSubmit
    (no backend), which forwards to this inbox. The `_subject` field on each

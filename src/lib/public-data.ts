@@ -9,11 +9,11 @@ import { feedHttpsUrl, feedSlug, slugify } from './calendar-feeds';
 export const DATA_VERSION = 1;
 
 export const SITE_SCOPE =
-	'Swiss Data Events (swissdataevents.ch) is a hand-curated list of upcoming IT, data and AI events in Switzerland: ' +
+	'Swiss Data Events (swissdataevents.ch) is a curated list of upcoming AI and data events in Switzerland: ' +
 	'meetups, conferences, workshops, networking evenings and webinars about Databricks, Microsoft Fabric, Power BI, ' +
 	'the Azure data platform, AI strategy and governance, data governance, data leadership and applied AI. ' +
 	'Every listing is checked against the organiser\'s own page before it is published, and the list is refreshed ' +
-	'on Mondays, Wednesdays and Fridays. Registration always happens on the organiser\'s site.';
+	'every day. Registration always happens on the organiser\'s site.';
 
 export function publicEvent(entry: EventEntry) {
 	const d = entry.data;

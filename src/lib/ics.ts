@@ -224,7 +224,7 @@ export function buildCalendar(name: string, events: IcsEvent[], now = new Date()
 		'CALSCALE:GREGORIAN',
 		'METHOD:PUBLISH',
 		`X-WR-CALNAME:${escapeText(name)}`,
-		`X-WR-CALDESC:${escapeText('Upcoming data, AI and IT events in Switzerland, from swissdataevents.ch')}`,
+		`X-WR-CALDESC:${escapeText('Upcoming AI and data events in Switzerland, from swissdataevents.ch')}`,
 		`X-WR-TIMEZONE:${TZID}`,
 		'X-PUBLISHED-TTL:PT12H',
 		'REFRESH-INTERVAL;VALUE=DURATION:PT12H',
