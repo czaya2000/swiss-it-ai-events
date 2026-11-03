@@ -3112,5 +3112,87 @@
     "source": "startupticker.ch",
     "blurb": "A deliberately small afternoon — roughly 100 to 150 people — on where AI, energy and robotics meet, with keynotes, panels on energy-and-AI and AI-and-robotics, and structured one-to-one sessions for founders, operators and executives. Attendance is by request.",
     "firstSeen": "2026-10-16"
+  },
+  {
+    "id": "ai-breakfast-luzern-55",
+    "title": "AI Breakfast #55 Luzern",
+    "date": "2026-10-30",
+    "endDate": "2026-10-30",
+    "time": "07:30–09:00",
+    "city": "Lucerne",
+    "venue": "Universität Luzern, Frohburgstrasse 3",
+    "format": "Networking",
+    "topics": [
+      "AI in business"
+    ],
+    "organiser": "Digital & AI Community",
+    "cost": "Not listed",
+    "url": "https://luma.com/1yxxa7d6",
+    "source": "ai-community.ch",
+    "blurb": "Louis Hermann, co-founder of DocPier, on how accurate document processing actually has to be before it can run in production, why a generic model on its own is not enough, and what trustees, insurers and banks can take from that for their own AI projects.",
+    "firstSeen": "2026-09-15"
+  },
+  {
+    "id": "from-lab-to-market-geneva-2026",
+    "title": "From Lab to Market: How Can Switzerland Turn World-Class AI Research into World-Class Companies?",
+    "date": "2026-10-30",
+    "endDate": "2026-10-30",
+    "time": "18:00–21:00",
+    "city": "Geneva",
+    "venue": "Société de Lecture, Grand-Rue 11",
+    "format": "Networking",
+    "topics": [
+      "AI strategy",
+      "Data governance",
+      "Digital sovereignty"
+    ],
+    "organiser": "Geneva Center for Neutrality",
+    "cost": "Not listed (registration required)",
+    "url": "https://genevaneutrality.ch/en/event/conference-fromlabtomarket-howcanswitzerlandturnworld-classairesearchintoworld-classcompanies",
+    "source": "startupticker.ch",
+    "blurb": "A panel with the presidents and vice-presidents of EPFL and ETH Zurich, GESDA and Proton on the three things Switzerland needs to turn its AI research into companies — compute, capital and data governance — and why the economic value has so far gone elsewhere.",
+    "firstSeen": "2026-10-16"
+  },
+  {
+    "id": "kustocon-2026-zurich",
+    "title": "KustoCon 2026",
+    "date": "2026-10-30",
+    "endDate": "2026-10-30",
+    "time": "08:15–19:25",
+    "city": "Zurich-Flughafen",
+    "venue": "Microsoft Switzerland, The Circle 02",
+    "format": "Conference",
+    "topics": [
+      "KQL",
+      "Azure data platform",
+      "Security analytics"
+    ],
+    "organiser": "KQL Café community",
+    "cost": "EUR 85 in person (workshop, lunch and drinks included) / free online",
+    "url": "https://kustocon.com/",
+    "source": "kustocon.com",
+    "blurb": "A full day on Kusto Query Language at Microsoft’s Zurich Airport campus: a hands-on morning workshop dissecting a real investigation, then an afternoon of practitioner talks on detection engineering and threat hunting, also livestreamed.",
+    "firstSeen": "2026-10-09"
+  },
+  {
+    "id": "ticino-data-conference-2026",
+    "title": "Ticino Data Conference 2026",
+    "date": "2026-10-30",
+    "endDate": "2026-10-30",
+    "city": "Bioggio (Lugano)",
+    "venue": "Acer EMEA Regional Headquarters, Via della Posta 28",
+    "format": "Conference",
+    "topics": [
+      "Power BI",
+      "Microsoft Fabric",
+      "Data governance"
+    ],
+    "organiser": "Power BI User Group Italy",
+    "cost": "Free (lunch included)",
+    "url": "https://tconf.ch/en/",
+    "source": "tconf.ch",
+    "blurb": "Free one-day community summit in Ticino with three tracks on Power BI, Microsoft Fabric, AI-assisted tooling and data governance, in English and Italian.",
+    "firstSeen": "2026-09-15",
+    "time": "09:30–17:45"
   }
 ]
