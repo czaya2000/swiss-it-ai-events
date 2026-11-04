@@ -39,26 +39,6 @@
     "firstSeen": "2026-09-16"
   },
   {
-    "id": "coffee-and-prompt-009-geneva-2026",
-    "title": "Coffee & Prompt #009 (Halloween edition)",
-    "date": "2026-10-31",
-    "endDate": "2026-10-31",
-    "time": "09:30",
-    "city": "Geneva",
-    "venue": "Central Geneva (venue to be confirmed)",
-    "format": "Networking",
-    "topics": [
-      "Applied AI",
-      "Building with AI"
-    ],
-    "organiser": "Switzerland AI Community",
-    "cost": "Not listed",
-    "url": "https://luma.com/92xtwltf",
-    "source": "switzerland-ai.com",
-    "blurb": "A Halloween edition of the weekly Geneva builders’ coworking morning: bring your own AI project or side hustle, optionally show a feature or a lesson learned, and get feedback from the room.",
-    "firstSeen": "2026-10-21"
-  },
-  {
     "id": "build-your-own-assistant-recaps-geneva-2026",
     "title": "Build Your Own Assistant: What Did I Even Get Done This Week?",
     "date": "2026-11-01",
@@ -498,6 +478,27 @@
     "firstSeen": "2026-11-03"
   },
   {
+    "id": "ai-work-bern-meetup-4-2026",
+    "title": "AI@Work Meetup #4 — SIMAP-Screening und eine Firma aus KI-Agenten",
+    "date": "2026-11-05",
+    "endDate": "2026-11-05",
+    "time": "17:45–20:00",
+    "city": "Bern",
+    "venue": "bespinian, Kramgasse 68",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI agents",
+      "AI adoption"
+    ],
+    "organiser": "AI@Work",
+    "cost": "Free",
+    "url": "https://www.meetup.com/ai-work/events/317007377/",
+    "source": "Meetup",
+    "blurb": "Bern's practitioner meetup for AI in everyday work, with a talk on intelligent screening of SIMAP public-procurement notices and a second on running a company built largely out of AI agents (in German).",
+    "firstSeen": "2026-11-04"
+  },
+  {
     "id": "ai-in-biomedicine-forum-lugano-2026",
     "title": "Artificial Intelligence in Biomedicine Forum 2026",
     "date": "2026-11-06",
@@ -600,6 +601,27 @@
     "source": "luma.com",
     "blurb": "A morning panel on the trade-offs teams actually face when shipping AI products, with product leaders from Google DeepMind, Unique AI, Benetics AI and Product People, opened by Google’s Karin Hennessey.",
     "firstSeen": "2026-11-03"
+  },
+  {
+    "id": "ai-society-coffee-chats-zurich-2026-11-06",
+    "title": "AI Society — AI Coffee Chats Zurich (6 November)",
+    "date": "2026-11-06",
+    "endDate": "2026-11-06",
+    "time": "09:00–10:00",
+    "city": "Zurich",
+    "venue": "BRIDGE, Eisgasse 20 / Europaallee 22",
+    "format": "Networking",
+    "topics": [
+      "Applied AI",
+      "AI community",
+      "AI safety"
+    ],
+    "organiser": "AI Society",
+    "cost": "Free",
+    "url": "https://luma.com/4fo00td5",
+    "source": "luma.com",
+    "blurb": "A drop-in morning coffee hour with no slides: bring a question, show a workflow you have built, or talk through new models, AI at work and AI safety with others doing the same.",
+    "firstSeen": "2026-11-04"
   },
   {
     "id": "coffee-and-prompt-010-geneva-2026",
@@ -1664,6 +1686,27 @@
     "firstSeen": "2026-11-03"
   },
   {
+    "id": "applied-ai-journal-club-bern-10-2026",
+    "title": "Applied AI Journal Club Bern #10",
+    "date": "2026-11-17",
+    "endDate": "2026-11-17",
+    "time": "17:30–18:30",
+    "city": "Bern",
+    "venue": "inpeek AG, Bogenschützenstrasse 9",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI research",
+      "AI community"
+    ],
+    "organiser": "Applied AI Journal Club Bern (inpeek)",
+    "cost": "Free",
+    "url": "https://www.meetup.com/applied-ai-journal-club-bern/events/317253979/",
+    "source": "Meetup",
+    "blurb": "Monthly reading group in Bern where the group works through one applied-AI article together, with time afterwards for open exchange; the paper is shared in advance.",
+    "firstSeen": "2026-11-04"
+  },
+  {
     "id": "dinacon-2026-bern",
     "title": "DINAcon 2026",
     "date": "2026-11-18",
@@ -1745,6 +1788,48 @@
     "firstSeen": "2026-09-15"
   },
   {
+    "id": "ai-society-coffee-chats-zurich-2026-11-20",
+    "title": "AI Society — AI Coffee Chats Zurich (20 November)",
+    "date": "2026-11-20",
+    "endDate": "2026-11-20",
+    "time": "09:00–10:00",
+    "city": "Zurich",
+    "venue": "BRIDGE, Eisgasse 20 / Europaallee 22",
+    "format": "Networking",
+    "topics": [
+      "Applied AI",
+      "AI community",
+      "AI safety"
+    ],
+    "organiser": "AI Society",
+    "cost": "Free",
+    "url": "https://luma.com/xyl0neci",
+    "source": "luma.com",
+    "blurb": "Fortnightly drop-in coffee hour for anyone working with AI in Zurich: no presentations, just questions, demos and shop talk over an hour.",
+    "firstSeen": "2026-11-04"
+  },
+  {
+    "id": "constructor-nexademy-data-science-presentations-zurich-2026",
+    "title": "Data Science Final Project Presentations",
+    "date": "2026-11-20",
+    "endDate": "2026-11-20",
+    "time": "18:00–20:00",
+    "city": "Zurich",
+    "venue": "Constructor Nexademy Zürich, Förrlibuckstrasse 150",
+    "format": "Meetup",
+    "topics": [
+      "Data science",
+      "Machine learning",
+      "Analytics"
+    ],
+    "organiser": "Constructor Nexademy Switzerland",
+    "cost": "Free",
+    "url": "https://www.meetup.com/constructor-nexademy-switzerland/events/317189008/",
+    "source": "Meetup",
+    "blurb": "Open evening where data science students present their end-to-end projects, from data collection and analysis through modelling to visualisation, followed by questions and networking.",
+    "firstSeen": "2026-11-04"
+  },
+  {
     "id": "stem4health-hackathon-zurich-2026",
     "title": "STEM4Health Hackathon",
     "date": "2026-11-21",
@@ -1764,6 +1849,48 @@
     "source": "datascience.ch",
     "blurb": "A hundred students and early-career researchers spend a weekend on real pharmaceutical manufacturing problems, combining manufacturing data, mechanistic modelling and machine learning with industry and academic mentors before pitching to a jury.",
     "firstSeen": "2026-10-09"
+  },
+  {
+    "id": "basel-ai-vibe-coding-club-first-meetup-2026",
+    "title": "Basel AI & Vibe Coding Club — First Meetup",
+    "date": "2026-11-21",
+    "endDate": "2026-11-21",
+    "time": "14:00",
+    "city": "Basel",
+    "venue": "Basel (venue to be announced)",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI coding",
+      "AI community"
+    ],
+    "organiser": "Basel AI & Vibe Coding Club",
+    "cost": "Free",
+    "url": "https://www.meetup.com/basel-ai-vibe-coding-club/events/317204925/",
+    "source": "Meetup",
+    "blurb": "Kick-off meetup for a new Basel group around AI-assisted coding: short intros, side-project show-and-tell, and an open round on what people want to build next.",
+    "firstSeen": "2026-11-04"
+  },
+  {
+    "id": "basel-data-science-ai-meetup-november-2026",
+    "title": "Basel Data Science & AI Meetup — November 2026",
+    "date": "2026-11-23",
+    "endDate": "2026-11-23",
+    "time": "18:30–21:00",
+    "city": "Basel",
+    "venue": "Ascent, Güterstrasse 144",
+    "format": "Meetup",
+    "topics": [
+      "Data science",
+      "MLOps",
+      "Applied AI"
+    ],
+    "organiser": "Basel Data Science & AI",
+    "cost": "CHF 5",
+    "url": "https://www.meetup.com/basel-data-scientists/events/317093429/",
+    "source": "Meetup",
+    "blurb": "Three practical talks on getting machine learning and AI models deployed and running in production, followed by networking with the Basel data community.",
+    "firstSeen": "2026-11-04"
   },
   {
     "id": "ai-safety-trustworthy-ai-zurich-2026",
@@ -1954,6 +2081,27 @@
     "firstSeen": "2026-11-02"
   },
   {
+    "id": "ai-native-org-lab-living-organization-basel-2026",
+    "title": "Writing The Living Organization — What AI Is Doing to How We Organize",
+    "date": "2026-11-26",
+    "endDate": "2026-11-26",
+    "time": "17:30",
+    "city": "Basel",
+    "venue": "tibits Basel Gundeli, Meret Oppenheim-Strasse 1",
+    "format": "Meetup",
+    "topics": [
+      "AI adoption",
+      "AI agents",
+      "Data leadership"
+    ],
+    "organiser": "AI-Native Org Lab",
+    "cost": "Free",
+    "url": "https://www.meetup.com/ai-native-org-lab/events/317129607/",
+    "source": "Meetup",
+    "blurb": "Breeze Dong on the operating model behind her book The Living Organization, and an open discussion of what happens to teams, roles and decision-making when AI agents join the work.",
+    "firstSeen": "2026-11-04"
+  },
+  {
     "id": "after-microsoft-ignite-special-zurich-2026",
     "title": "After Microsoft Ignite Special 2026",
     "date": "2026-11-27",
@@ -2141,6 +2289,27 @@
     "firstSeen": "2026-11-02"
   },
   {
+    "id": "aws-swiss-user-group-bern-december-2026",
+    "title": "AWS Swiss User Group Bern — December Meetup",
+    "date": "2026-12-01",
+    "endDate": "2026-12-01",
+    "time": "17:30",
+    "city": "Bern",
+    "venue": "Axians Amanox AG, Dammweg 9",
+    "format": "Meetup",
+    "topics": [
+      "Cloud",
+      "Data engineering",
+      "Applied AI"
+    ],
+    "organiser": "AWS Swiss User Group – Bern",
+    "cost": "Free",
+    "url": "https://www.meetup.com/aws-swiss-user-group-bern/events/316959686/",
+    "source": "Meetup",
+    "blurb": "Final Bern meetup of the year for the Swiss AWS community: a mix of community talks plus discussion and networking, with the agenda announced closer to the date.",
+    "firstSeen": "2026-11-04"
+  },
+  {
     "id": "agile-breakfast-zurich-viele-agenten-2026",
     "title": "Ein Team, ein Plan und viele Agenten",
     "date": "2026-12-02",
@@ -2201,6 +2370,27 @@
     "source": "businessfactors.de",
     "blurb": "Two days for Swiss IT and data leaders at the Dolder Grand on enterprise AI as a strategic capability, centralised versus decentralised AI governance in large organisations, securing AI agents as a hybrid workforce, and the governance basics behind all of it.",
     "firstSeen": "2026-10-12"
+  },
+  {
+    "id": "robotics-garage-night-zurich-2026",
+    "title": "Robotics Garage Night",
+    "date": "2026-12-02",
+    "endDate": "2026-12-02",
+    "time": "19:00–21:30",
+    "city": "Zurich",
+    "venue": "Zurich (address on registration)",
+    "format": "Meetup",
+    "topics": [
+      "Robotics",
+      "Embodied AI",
+      "Applied AI"
+    ],
+    "organiser": "Dream Machines",
+    "cost": "Free (host approval required)",
+    "url": "https://luma.com/93erzptn",
+    "source": "luma.com",
+    "blurb": "Show-and-tell evening for people building robots: short demos of works in progress, honest accounts of what broke, then food and conversation.",
+    "firstSeen": "2026-11-04"
   },
   {
     "id": "dbt-meetup-zurich-december-2026",
@@ -2283,6 +2473,27 @@
     "source": "hackapertus.ch",
     "blurb": "The Basel leg of the national Apertus hackathon series, building applications and multilingual improvements on Switzerland’s open Apertus model, with everything produced released for reuse. Venue still to be announced.",
     "firstSeen": "2026-10-09"
+  },
+  {
+    "id": "ai-society-coffee-chats-zurich-2026-12-04",
+    "title": "AI Society — AI Coffee Chats Zurich (4 December)",
+    "date": "2026-12-04",
+    "endDate": "2026-12-04",
+    "time": "09:00–10:00",
+    "city": "Zurich",
+    "venue": "BRIDGE, Eisgasse 20 / Europaallee 22",
+    "format": "Networking",
+    "topics": [
+      "Applied AI",
+      "AI community",
+      "AI safety"
+    ],
+    "organiser": "AI Society",
+    "cost": "Free",
+    "url": "https://luma.com/pgbd1nwi",
+    "source": "luma.com",
+    "blurb": "Fortnightly drop-in coffee hour for Zurich's AI practitioners: bring a question or a workflow to show, stay for as much of the hour as you like.",
+    "firstSeen": "2026-11-04"
   },
   {
     "id": "databricks-christmas-hackathon-zurich-2026",
@@ -2389,6 +2600,27 @@
     "firstSeen": "2026-11-03"
   },
   {
+    "id": "ai-lunch-basel-brown-bag-december-2026",
+    "title": "AI-Lunch Basel: Brown Bag",
+    "date": "2026-12-09",
+    "endDate": "2026-12-09",
+    "time": "12:00–13:00",
+    "city": "Basel",
+    "venue": "iRIX, Gundeldinger Feld, Bau 5, Dornacherstrasse 192",
+    "format": "Networking",
+    "topics": [
+      "Applied AI",
+      "AI adoption",
+      "AI community"
+    ],
+    "organiser": "AI@iRIX",
+    "cost": "Free",
+    "url": "https://www.meetup.com/basel-ai-stammtisch/events/316165291/",
+    "source": "Meetup",
+    "blurb": "Deliberately low-key lunch break for Basel's AI crowd: no slides and no preparation, just an open exchange of learnings and use cases across industries.",
+    "firstSeen": "2026-11-04"
+  },
+  {
     "id": "eth-ai-center-parallel-token-prediction-zurich-2026",
     "title": "From Parallel Token Prediction to Scalable Language Models",
     "date": "2026-12-15",
@@ -2469,6 +2701,27 @@
     "source": "digitalswitzerland.com",
     "blurb": "A full day in Davos on Switzerland's digital future, with speakers from business, government and research building on the national AI Action Plan and looking ahead to the Geneva AI Summit 2027. Programme details still to be published.",
     "firstSeen": "2026-10-14"
+  },
+  {
+    "id": "ai-stammtisch-basel-january-2027",
+    "title": "AI-Stammtisch Basel: Input und Diskussion am Abend",
+    "date": "2027-01-19",
+    "endDate": "2027-01-19",
+    "time": "17:30",
+    "city": "Basel",
+    "venue": "iRIX Software Engineering AG, Gundeldinger Feld, Bau 5, Dornacherstrasse 192",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI adoption",
+      "AI community"
+    ],
+    "organiser": "AI@iRIX",
+    "cost": "Free",
+    "url": "https://www.meetup.com/basel-ai-stammtisch/events/317256113/",
+    "source": "Meetup",
+    "blurb": "The Basel AI Stammtisch returns for the new year with a guest talk or an in-house topic, followed by open discussion over drinks at the iRIX bistro.",
+    "firstSeen": "2026-11-04"
   },
   {
     "id": "digital-lounge-davos-2027",

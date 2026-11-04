@@ -3194,5 +3194,25 @@
     "blurb": "Free one-day community summit in Ticino with three tracks on Power BI, Microsoft Fabric, AI-assisted tooling and data governance, in English and Italian.",
     "firstSeen": "2026-09-15",
     "time": "09:30–17:45"
+  },
+  {
+    "id": "coffee-and-prompt-009-geneva-2026",
+    "title": "Coffee & Prompt #009 (Halloween edition)",
+    "date": "2026-10-31",
+    "endDate": "2026-10-31",
+    "time": "09:30",
+    "city": "Geneva",
+    "venue": "Central Geneva (venue to be confirmed)",
+    "format": "Networking",
+    "topics": [
+      "Applied AI",
+      "Building with AI"
+    ],
+    "organiser": "Switzerland AI Community",
+    "cost": "Not listed",
+    "url": "https://luma.com/92xtwltf",
+    "source": "switzerland-ai.com",
+    "blurb": "A Halloween edition of the weekly Geneva builders’ coworking morning: bring your own AI project or side hustle, optionally show a feature or a lesson learned, and get feedback from the room.",
+    "firstSeen": "2026-10-21"
   }
 ]
