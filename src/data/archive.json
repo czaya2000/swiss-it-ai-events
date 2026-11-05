@@ -3133,6 +3133,26 @@
     "firstSeen": "2026-09-15"
   },
   {
+    "id": "baselhack-2026",
+    "title": "BaselHack 2026",
+    "date": "2026-10-30",
+    "endDate": "2026-11-01",
+    "time": "Fri 17:00 – Sun 17:00",
+    "city": "Basel",
+    "venue": "Memox Basel SBB, Peter Merian-Strasse 80",
+    "format": "Workshop",
+    "topics": [
+      "Hackathon",
+      "Applied AI"
+    ],
+    "organiser": "Verein BaselHack",
+    "cost": "Free",
+    "url": "https://www.baselhack.ch/",
+    "source": "ai-weeks.ch",
+    "blurb": "Free 48-hour hackathon for the Basel region with open and sponsored challenges, for developers, designers and anyone wanting to turn an idea into a working prototype.",
+    "firstSeen": "2026-09-16"
+  },
+  {
     "id": "from-lab-to-market-geneva-2026",
     "title": "From Lab to Market: How Can Switzerland Turn World-Class AI Research into World-Class Companies?",
     "date": "2026-10-30",
@@ -3214,5 +3234,26 @@
     "source": "switzerland-ai.com",
     "blurb": "A Halloween edition of the weekly Geneva builders’ coworking morning: bring your own AI project or side hustle, optionally show a feature or a lesson learned, and get feedback from the room.",
     "firstSeen": "2026-10-21"
+  },
+  {
+    "id": "build-your-own-assistant-recaps-geneva-2026",
+    "title": "Build Your Own Assistant: What Did I Even Get Done This Week?",
+    "date": "2026-11-01",
+    "endDate": "2026-11-01",
+    "time": "09:30–12:30",
+    "city": "Geneva",
+    "venue": "Voisins de Saint-Gervais, Bd James-Fazy 8",
+    "format": "Workshop",
+    "topics": [
+      "AI agents",
+      "Applied AI",
+      "AI automation"
+    ],
+    "organiser": "AI Ready Professionals",
+    "cost": "CHF 85",
+    "url": "https://www.meetup.com/ai-ready-professionals/events/316608120/",
+    "source": "Meetup",
+    "blurb": "Build an agent that produces daily and weekly recaps of your own or your team's work, alongside the industry and regulatory news that actually affects you.",
+    "firstSeen": "2026-10-02"
   }
 ]

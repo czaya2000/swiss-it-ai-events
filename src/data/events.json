@@ -19,47 +19,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "baselhack-2026",
-    "title": "BaselHack 2026",
-    "date": "2026-10-30",
-    "endDate": "2026-11-01",
-    "time": "Fri 17:00 – Sun 17:00",
-    "city": "Basel",
-    "venue": "Memox Basel SBB, Peter Merian-Strasse 80",
-    "format": "Workshop",
-    "topics": [
-      "Hackathon",
-      "Applied AI"
-    ],
-    "organiser": "Verein BaselHack",
-    "cost": "Free",
-    "url": "https://www.baselhack.ch/",
-    "source": "ai-weeks.ch",
-    "blurb": "Free 48-hour hackathon for the Basel region with open and sponsored challenges, for developers, designers and anyone wanting to turn an idea into a working prototype.",
-    "firstSeen": "2026-09-16"
-  },
-  {
-    "id": "build-your-own-assistant-recaps-geneva-2026",
-    "title": "Build Your Own Assistant: What Did I Even Get Done This Week?",
-    "date": "2026-11-01",
-    "endDate": "2026-11-01",
-    "time": "09:30–12:30",
-    "city": "Geneva",
-    "venue": "Voisins de Saint-Gervais, Bd James-Fazy 8",
-    "format": "Workshop",
-    "topics": [
-      "AI agents",
-      "Applied AI",
-      "AI automation"
-    ],
-    "organiser": "AI Ready Professionals",
-    "cost": "CHF 85",
-    "url": "https://www.meetup.com/ai-ready-professionals/events/316608120/",
-    "source": "Meetup",
-    "blurb": "Build an agent that produces daily and weekly recaps of your own or your team's work, alongside the industry and regulatory news that actually affects you.",
-    "firstSeen": "2026-10-02"
-  },
-  {
     "id": "ai-responsible-business-conduct-bern-2026",
     "title": "AI and Responsible Business Conduct",
     "date": "2026-11-02",
@@ -836,7 +795,7 @@
     "title": "AI in Food — State of Play",
     "date": "2026-11-10",
     "endDate": "2026-11-10",
-    "time": "08:30–18:00",
+    "time": "09:00–15:30",
     "city": "Zurich",
     "venue": "Helbling, Hohlstrasse 614",
     "format": "Conference",
@@ -846,7 +805,7 @@
       "Applied AI"
     ],
     "organiser": "Swiss Food & Nutrition Valley / Porsche Consulting",
-    "cost": "CHF 0–250 (free for SFNV partners)",
+    "cost": "Free",
     "url": "https://swissfoodnutritionvalley.com/event-listing/ai-in-food-state-of-play/",
     "source": "ai-weeks.ch",
     "blurb": "A full day of keynotes and workshops for food-industry professionals past the AI hype stage, on what it actually takes to implement AI against real problems inside their own organisations.",
@@ -1707,6 +1666,27 @@
     "firstSeen": "2026-11-04"
   },
   {
+    "id": "digital-series-13-automatisation-ia-sion-2026",
+    "title": "Digital Series #13 — Moins d’administratif grâce à l’IA",
+    "date": "2026-11-17",
+    "endDate": "2026-11-17",
+    "time": "16:30–18:00",
+    "city": "Sion",
+    "venue": "Co-working La Bergerie, Place du Midi 50",
+    "format": "Workshop",
+    "topics": [
+      "Applied AI",
+      "AI agents",
+      "SME AI adoption"
+    ],
+    "organiser": "Swiss Digital Center / Fondation The Ark (with CCI Valais)",
+    "cost": "Not listed",
+    "url": "https://swissdigitalcenter.ch/fr/digital-series-digitalisation-dans-les-pme-exemples-concrets-et-retours-dexperiences/",
+    "source": "alpict.ch",
+    "blurb": "Valais SMEs see how AI agents can take over routine admin — client requests, bookings, contracts and follow-up — with a live tool demo and a local case study from the Sion coworking space.",
+    "firstSeen": "2026-11-05"
+  },
+  {
     "id": "dinacon-2026-bern",
     "title": "DINAcon 2026",
     "date": "2026-11-18",
@@ -1726,6 +1706,27 @@
     "source": "ai-weeks.ch",
     "blurb": "Switzerland’s conference on digital sustainability — 36 sessions on open source, open data, digital sovereignty, data protection and copyright, with 250+ attendees and a closing Hacknight.",
     "firstSeen": "2026-10-07"
+  },
+  {
+    "id": "global-ai-zurich-agentic-nights-1-2026",
+    "title": "Agentic Nights #1 — Identity, Software Factories & Agent Memory",
+    "date": "2026-11-18",
+    "endDate": "2026-11-18",
+    "time": "17:00–20:00",
+    "city": "Zurich",
+    "venue": "isolutions AG, The Circle 38",
+    "format": "Meetup",
+    "topics": [
+      "AI agents",
+      "Agent memory",
+      "Enterprise AI"
+    ],
+    "organiser": "Global AI Zürich",
+    "cost": "Free",
+    "url": "https://www.meetup.com/global-ai-zurich/events/317285634/",
+    "source": "meetup.com",
+    "blurb": "First evening of Global AI Zürich’s new agentic series, with three talks on real agent implementations covering identity, software factories and agent memory.",
+    "firstSeen": "2026-11-05"
   },
   {
     "id": "scs-ai-risks-in-cybersecurity-geneva-2026",
@@ -2060,6 +2061,27 @@
     "firstSeen": "2026-11-03"
   },
   {
+    "id": "datavis-zurich-peace-indicators-2026",
+    "title": "Visualizing Peace Indicators by Interactive Things",
+    "date": "2026-11-25",
+    "endDate": "2026-11-25",
+    "time": "17:00–19:00",
+    "city": "Zurich",
+    "venue": "Interactive Things, Brauerstrasse 37",
+    "format": "Meetup",
+    "topics": [
+      "Data visualization",
+      "Analytics",
+      "Data storytelling"
+    ],
+    "organiser": "Data Visualization Zurich",
+    "cost": "Free",
+    "url": "https://www.meetup.com/datavis-zurich/events/316007234/",
+    "source": "meetup.com",
+    "blurb": "Designers and developers from Interactive Things walk through how they turned qualitative peace indicators from around the world into a comparable visual dataset.",
+    "firstSeen": "2026-11-05"
+  },
+  {
     "id": "robot-learning-paper-club-world-models-zurich-2026",
     "title": "Robot Learning Paper Club — The World Model Edition",
     "date": "2026-11-26",
@@ -2162,6 +2184,27 @@
     "source": "datascience.ch",
     "blurb": "Executive workshop for CEOs, CFOs, CDOs and CTOs on turning data and AI into measurable business value, with case studies from EKZ, Merck and Richemont. Limited seats.",
     "firstSeen": "2026-09-15"
+  },
+  {
+    "id": "azure-zurich-ai-infrastructure-night-2026",
+    "title": "Azure Zurich AI Infrastructure Night",
+    "date": "2026-11-30",
+    "endDate": "2026-11-30",
+    "time": "18:00–20:30",
+    "city": "Zurich",
+    "venue": "Digicomp Academy AG, Limmatstrasse 50",
+    "format": "Meetup",
+    "topics": [
+      "Azure",
+      "AI infrastructure",
+      "Microsoft Cloud"
+    ],
+    "organiser": "Microsoft Azure Zürich User Group",
+    "cost": "Free",
+    "url": "https://www.meetup.com/microsoft-azure-zurich-user-group/events/317195691/",
+    "source": "meetup.com",
+    "blurb": "In-person evening at Digicomp on the infrastructure side of running AI workloads on Azure.",
+    "firstSeen": "2026-11-05"
   },
   {
     "id": "airistoteles-4-hslu-lucerne-2026",
@@ -2621,6 +2664,27 @@
     "firstSeen": "2026-11-04"
   },
   {
+    "id": "night-of-data-talents-lausanne-2026",
+    "title": "The Night of Data Talents: Startup Edition",
+    "date": "2026-12-10",
+    "endDate": "2026-12-10",
+    "time": "17:30–23:30",
+    "city": "Lausanne",
+    "venue": "Base Bar, Av. de Sévelin 46",
+    "format": "Networking",
+    "topics": [
+      "Data startups",
+      "Innovation",
+      "Networking"
+    ],
+    "organiser": "DatAfterwork Suisse",
+    "cost": "150 CHF",
+    "url": "https://www.datafterwork.com/en/event/the-night-of-data-talents-swiss-edition-20/register",
+    "source": "DatAfterwork",
+    "blurb": "Swiss data startups pitch to an investor panel with community voting, capping the year for the Suisse Romande data scene.",
+    "firstSeen": "2026-09-05"
+  },
+  {
     "id": "eth-ai-center-parallel-token-prediction-zurich-2026",
     "title": "From Parallel Token Prediction to Scalable Language Models",
     "date": "2026-12-15",
@@ -2640,27 +2704,6 @@
     "source": "ai.ethz.ch",
     "blurb": "Prof. Stephan Mandt (UC Irvine) on generating several mutually consistent tokens in one forward pass — models pretrained to 3 billion parameters that approach autoregressive quality with inference up to 5.7× faster. Hosted by Prof. Julia Vogt.",
     "firstSeen": "2026-11-03"
-  },
-  {
-    "id": "night-of-data-talents-lausanne-2026",
-    "title": "The Night of Data Talents: Startup Edition",
-    "date": "2026-12-17",
-    "endDate": "2026-12-17",
-    "time": "17:30–23:30",
-    "city": "Lausanne",
-    "venue": "Cercle des Bains",
-    "format": "Networking",
-    "topics": [
-      "Data startups",
-      "Innovation",
-      "Networking"
-    ],
-    "organiser": "DatAfterwork Suisse",
-    "cost": "150 CHF",
-    "url": "https://www.datafterwork.com/en/event/the-night-of-data-talents-swiss-edition-20/register",
-    "source": "DatAfterwork",
-    "blurb": "Swiss data startups pitch to an investor panel with community voting, capping the year for the Suisse Romande data scene.",
-    "firstSeen": "2026-09-05"
   },
   {
     "id": "davos-catalyst-ai-summit-2027",
