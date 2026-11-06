@@ -3255,5 +3255,26 @@
     "source": "Meetup",
     "blurb": "Build an agent that produces daily and weekly recaps of your own or your team's work, alongside the industry and regulatory news that actually affects you.",
     "firstSeen": "2026-10-02"
+  },
+  {
+    "id": "ai-responsible-business-conduct-bern-2026",
+    "title": "AI and Responsible Business Conduct",
+    "date": "2026-11-02",
+    "endDate": "2026-11-02",
+    "time": "from 10:05",
+    "city": "Bern",
+    "venue": "Kursaal Bern, Kornhausstrasse 3",
+    "format": "Conference",
+    "topics": [
+      "AI governance",
+      "Responsible AI",
+      "Regulation"
+    ],
+    "organiser": "SECO / Federal Department of Foreign Affairs",
+    "cost": "Free",
+    "url": "https://www.seco.admin.ch/en/swiss-forum-business-and-human-rights",
+    "source": "genevaaisummit.swiss",
+    "blurb": "A plenary session at the Swiss Forum on Business and Human Rights on applying the UN Guiding Principles and OECD Guidelines to AI systems in practice, with UN representatives, technology companies and civil society. Interpretation in German, French and English.",
+    "firstSeen": "2026-09-28"
   }
 ]
