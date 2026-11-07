@@ -1,0 +1,68 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Lugano
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ai-in-azienda-ai-sotto-controllo-lugano-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261117T170000
+DTEND;TZID=Europe/Zurich:20261117T200000
+SUMMARY:AI in azienda: AI sotto controllo
+LOCATION:Campus Est USI-SUPSI\, Blocco C\, Aula C1.02\, Via la Santa 1\, Vi
+ ganello\, Lugano
+DESCRIPTION:Closing evening of the Ticino series on conscious AI use in bus
+ iness\, this one on data\, responsibility\, rules and governance — conte
+ nt\, a hands-on workshop and networking\, capped at thirty participants.\n
+ \nOrganiser: Fondazione AGIRE / SUPSI DTI\n\nDetails and registration: htt
+ ps://swissdataevents.ch/events/ai-in-azienda-ai-sotto-controllo-lugano-202
+ 6/
+URL:https://swissdataevents.ch/events/ai-in-azienda-ai-sotto-controllo-luga
+ no-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:impresa-potenziata-con-ai-chiasso-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261125T133000
+DTEND;TZID=Europe/Zurich:20261125T183000
+SUMMARY:L’impresa potenziata con AI
+LOCATION:Lifestyle Innovation Hub (Dagorà)\, Piazza Indipendenza 5\, Chias
+ so (Lugano)
+DESCRIPTION:An Italian-language afternoon in Chiasso built on real cases an
+ d measured numbers rather than promises: AI agents in the business\, sover
+ eign data\, and what institutions are for — closing with a networking ap
+ éro.\n\nOrganiser: Datamoney.ch for Swiss {ai} Weeks\n\nDetails and regis
+ tration: https://swissdataevents.ch/events/impresa-potenziata-con-ai-chias
+ so-2026/
+URL:https://swissdataevents.ch/events/impresa-potenziata-con-ai-chiasso-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

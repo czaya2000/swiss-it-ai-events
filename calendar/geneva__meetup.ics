@@ -1,0 +1,135 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Geneva – Meetup
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:generative-ai-geneve-5-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261112T183000
+DTEND;TZID=Europe/Zurich:20261112T203000
+SUMMARY:IA : meetup « Generative AI Genève » #5
+LOCATION:Foound\, Rue Jean-Dassier 7\, Geneva
+DESCRIPTION:Your data\, your models\, your infrastructure: ELCA and EPFL sp
+ in-off Anyway Systems on running LLMs locally or in a private cloud\, and 
+ on the trade-offs between performance\, sovereignty and cost when a compan
+ y wants generative AI without handing over its data.\n\nOrganiser: Generat
+ ive AI Genève\n\nDetails and registration: https://swissdataevents.ch/eve
+ nts/generative-ai-geneve-5-2026/
+URL:https://swissdataevents.ch/events/generative-ai-geneve-5-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:silicon-chalet-sc71-database-postgresql-gland-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261112T174500
+DTEND;TZID=Europe/Zurich:20261112T210000
+SUMMARY:SC71: Meetup Database / PostgreSQL
+LOCATION:Swissquote Bank SA\, Chemin de la Crétaux 33\, Gland
+DESCRIPTION:Two database talks hosted by Swissquote in Gland — PostgreSQL
+  on Kubernetes with Laurent Parodi and multi-version concurrency control w
+ ith Louis Tochon — followed by a quiz and apéro.\n\nOrganiser: Silicon 
+ Chalet\n\nDetails and registration: https://swissdataevents.ch/events/sili
+ con-chalet-sc71-database-postgresql-gland-2026/
+URL:https://swissdataevents.ch/events/silicon-chalet-sc71-database-postgres
+ ql-gland-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aws-swiss-user-group-geneva-kiro-nights-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261117T180000
+DTEND;TZID=Europe/Zurich:20261117T213000
+SUMMARY:AWS Swiss User Group Geneva #30: Kiro Nights
+LOCATION:Sonar\, Chemin de Blandonnet 10\, Vernier (Geneva)
+DESCRIPTION:A beginner-friendly hands-on evening building a working web app
+  from scratch with Kiro\, AWS's agentic IDE\, with the organisers on hand 
+ to help — bring a laptop\, pizza and apéro included.\n\nOrganiser: AWS 
+ Swiss User Group – Geneva\n\nDetails and registration: https://swissdata
+ events.ch/events/aws-swiss-user-group-geneva-kiro-nights-2026/
+URL:https://swissdataevents.ch/events/aws-swiss-user-group-geneva-kiro-nigh
+ ts-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:saic-041-ai-healthcare-pharma-geneva-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261117T183000
+DTEND;TZID=Europe/Zurich:20261117T213000
+SUMMARY:SAIC #041: AI in Healthcare & Pharma — From Breakthrough Technolo
+ gy to Better Patient Outcomes
+LOCATION:Maison Internationale des Associations\, Rue des Savoises 15\, Gen
+ eva
+DESCRIPTION:Dr Stamen Popov on where AI already adds value from drug discov
+ ery to patient support\, and where trust\, ethics\, regulation and adoptio
+ n still get in the way of better outcomes.\n\nOrganiser: Switzerland AI Co
+ mmunity\n\nDetails and registration: https://swissdataevents.ch/events/sai
+ c-041-ai-healthcare-pharma-geneva-2026/
+URL:https://swissdataevents.ch/events/saic-041-ai-healthcare-pharma-geneva-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mindstone-geneva-ai-meetup-november-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261125T180000
+DTEND;TZID=Europe/Zurich:20261125T210000
+SUMMARY:Mindstone Geneva November AI Meetup
+LOCATION:L’Annexe by Rentes Genevoises\, Rue du Port 3\, Geneva
+DESCRIPTION:Monthly Geneva AI evening with three practical talks — buildi
+ ng with LLMs\, working faster with AI and where it is all heading — then
+  pizza and networking. Forty places.\n\nOrganiser: Mindstone Geneva AI Mee
+ tup\n\nDetails and registration: https://swissdataevents.ch/events/mindsto
+ ne-geneva-ai-meetup-november-2026/
+URL:https://swissdataevents.ch/events/mindstone-geneva-ai-meetup-november-2
+ 026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:chalet-azure-romandie-car17-geneva-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261126T180000
+DTEND;TZID=Europe/Zurich:20261126T210000
+SUMMARY:Chalet Azure Romandie #17 — Talents Microsoft & Azure Local
+LOCATION:EPAM Systems CH\, Rue Le-Royer 13\, Geneva
+DESCRIPTION:A French-language Azure evening in Geneva: what AI has really c
+ hanged about Microsoft recruitment and how candidates stay visible\, then 
+ Azure Local for running Azure services inside a sovereign private cloud\, 
+ with a live Foundry Local demo — quiz and networking afterwards.\n\nOrga
+ niser: Chalet Azure Romandie\n\nDetails and registration: https://swissdat
+ aevents.ch/events/chalet-azure-romandie-car17-geneva-2026/
+URL:https://swissdataevents.ch/events/chalet-azure-romandie-car17-geneva-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

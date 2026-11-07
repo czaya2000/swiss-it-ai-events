@@ -1,0 +1,67 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Bern – Workshop
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:glue-smart-energy-ki-workshop-bern-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261112T170000
+DTEND;TZID=Europe/Zurich:20261112T200000
+SUMMARY:Smart-Energy App mit KI entwickeln
+LOCATION:Glue AG\, Schwarztorstrasse 31\, Bern
+DESCRIPTION:A hands-on German-language evening building your own smart-mete
+ r app with opencode.ai or Claude Code: pulling Swiss spot prices from the 
+ BKW API\, logging feed-in readings hourly and writing monthly compensation
+  out to CSV. Bring a laptop\, a gPlug and Docker.\n\nOrganiser: Glue AG\n\
+ nDetails and registration: https://swissdataevents.ch/events/glue-smart-en
+ ergy-ki-workshop-bern-2026/
+URL:https://swissdataevents.ch/events/glue-smart-energy-ki-workshop-bern-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:epi-winterschool-generative-ai-wengen-2027@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270124
+SUMMARY:Generative AI for Epidemiology Researchers: Practical Skills and Re
+ sponsible Use
+LOCATION:Wengen\, Bernese Oberland\, Wengen (Bern)
+DESCRIPTION:A three-day course in Wengen on using generative AI responsibly
+  in research\, pairing lectures with computer practicals on analysis\, lit
+ erature searching\, scientific writing\, study websites and agentic AI —
+  and on where error\, bias and reproducibility break down.\n\nOrganiser: S
+ wiss Epidemiology Winter School\n\nDetails and registration: https://swiss
+ dataevents.ch/events/epi-winterschool-generative-ai-wengen-2027/
+URL:https://swissdataevents.ch/events/epi-winterschool-generative-ai-wengen
+ -2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

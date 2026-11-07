@@ -1,0 +1,253 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Lausanne
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ai-swiss-groupe-mutuel-base-sion-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:AI Swiss x Groupe Mutuel : d’une discussion d’équipe à une IA
+  façonnée pour elle\, avec BASE
+LOCATION:Groupe Mutuel Assurances\, Sion
+DESCRIPTION:Second stop of AI Swiss’s roadshow on BASE\, its free open st
+ andard for responsible AI adoption\, with a live demonstration turning a t
+ ranscribed team interview into an agreed usage framework\, plus a Q&A on l
+ imits and oversight.\n\nOrganiser: AI Swiss / Groupe Mutuel\n\nDetails and
+  registration: https://swissdataevents.ch/events/ai-swiss-groupe-mutuel-ba
+ se-sion-2026/
+URL:https://swissdataevents.ch/events/ai-swiss-groupe-mutuel-base-sion-2026
+ /
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:apertus-for-ngos-workshop-lausanne-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261110T093000
+DTEND;TZID=Europe/Zurich:20261110T123000
+SUMMARY:Apertus for NGOs: Running and Deploying Switzerland’s Open-source
+  LLM
+LOCATION:EPFL AI Center Lounge\, Lausanne
+DESCRIPTION:Hands-on morning for non-profit staff and researchers on deploy
+ ing Apertus\, Switzerland’s fully open large language model\, on their o
+ wn infrastructure or via a provider — with a Swiss non-profit case study
+  and group exercises.\n\nOrganiser: Swiss AI Initiative (ETH Zurich\, EPFL
+  & CSCS)\n\nDetails and registration: https://swissdataevents.ch/events/ap
+ ertus-for-ngos-workshop-lausanne-2026/
+URL:https://swissdataevents.ch/events/apertus-for-ngos-workshop-lausanne-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c4dt-ai-sovereignty-conference-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261110T093000
+DTEND;TZID=Europe/Zurich:20261110T180000
+SUMMARY:C4DT Conference on AI Sovereignty: Charting Switzerland’s Path
+LOCATION:Starling Hotel\, 1025 Saint-Sulpice\, Saint-Sulpice (Lausanne)
+DESCRIPTION:A full day on how Switzerland builds strategic independence in 
+ AI between US and Chinese dominance — lessons from other middle powers\,
+  Swiss research including the Apertus foundation model\, industry deployme
+ nt realities\, and concrete recommendations for national strategy.\n\nOrga
+ niser: Center for Digital Trust (C4DT)\, EPFL\n\nDetails and registration:
+  https://swissdataevents.ch/events/c4dt-ai-sovereignty-conference-2026/
+URL:https://swissdataevents.ch/events/c4dt-ai-sovereignty-conference-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:opentech-connect-inspire-lausanne-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261111T090000
+DTEND;TZID=Europe/Zurich:20261111T173000
+SUMMARY:OpenTech Connect 2026 — Day 1: INSPIRE
+LOCATION:EPFL Innovation Park I\, Lausanne
+DESCRIPTION:First day of a two-day open-technology gathering at EPFL Innova
+ tion Park\, with talks\, demos\, lightning sessions and panel discussions 
+ on data\, AI and open technology for researchers\, students\, developers a
+ nd industry.\n\nOrganiser: Data\, Cloud and AI in Switzerland (with Big Da
+ ta University and IBM Research)\n\nDetails and registration: https://swiss
+ dataevents.ch/events/opentech-connect-inspire-lausanne-2026/
+URL:https://swissdataevents.ch/events/opentech-connect-inspire-lausanne-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:opentech-connect-build-lausanne-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:OpenTech Connect 2026 — Day 2: BUILD
+LOCATION:EPFL Innovation Park I\, Lausanne
+DESCRIPTION:Hands-on second day of OpenTech Connect: workshops\, technical 
+ deep dives and practical labs with speakers from LlamaIndex\, Skilder\, Sy
+ nergix and IBM Research. Registration is separate from day one.\n\nOrganis
+ er: Data\, Cloud and AI in Switzerland (with Big Data University and IBM R
+ esearch)\n\nDetails and registration: https://swissdataevents.ch/events/op
+ entech-connect-build-lausanne-2026/
+URL:https://swissdataevents.ch/events/opentech-connect-build-lausanne-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:digital-series-13-automatisation-ia-sion-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261117T163000
+DTEND;TZID=Europe/Zurich:20261117T180000
+SUMMARY:Digital Series #13 — Moins d’administratif grâce à l’IA
+LOCATION:Co-working La Bergerie\, Place du Midi 50\, Sion
+DESCRIPTION:Valais SMEs see how AI agents can take over routine admin — c
+ lient requests\, bookings\, contracts and follow-up — with a live tool d
+ emo and a local case study from the Sion coworking space.\n\nOrganiser: Sw
+ iss Digital Center / Fondation The Ark (with CCI Valais)\n\nDetails and re
+ gistration: https://swissdataevents.ch/events/digital-series-13-automatisa
+ tion-ia-sion-2026/
+URL:https://swissdataevents.ch/events/digital-series-13-automatisation-ia-s
+ ion-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sdsc-mlops-introduction-epfl-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261117T090000
+DTEND;TZID=Europe/Zurich:20261117T170000
+SUMMARY:AI in Production: Introduction to MLOps — Training at EPFL
+LOCATION:EPFL\, Lausanne
+DESCRIPTION:One-day SDSC training on designing\, deploying and operating ML
+  systems at scale — version control\, CI/CD\, experiment tracking\, moni
+ toring\, drift detection and automated retraining. Registration closes 24 
+ September.\n\nOrganiser: Swiss Data Science Center\n\nDetails and registra
+ tion: https://swissdataevents.ch/events/sdsc-mlops-introduction-epfl-2026/
+URL:https://swissdataevents.ch/events/sdsc-mlops-introduction-epfl-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sovereign-ai-night-giotto-lausanne-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261117T183000
+DTEND;TZID=Europe/Zurich:20261117T220000
+SUMMARY:Sovereign AI Night by Giotto
+LOCATION:Lausanne (address on registration)
+DESCRIPTION:Launch evening for Giotto Alto and Solo: meet the team\, try th
+ e models\, watch a Giotto Workstation demo and argue about what sovereignt
+ y in AI actually requires — with pizza\, drinks and live music.\n\nOrgan
+ iser: Giotto\n\nDetails and registration: https://swissdataevents.ch/event
+ s/sovereign-ai-night-giotto-lausanne-2026/
+URL:https://swissdataevents.ch/events/sovereign-ai-night-giotto-lausanne-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:built-with-lovable-lausanne-2-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261124T180000
+DTEND;TZID=Europe/Zurich:20261124T213000
+SUMMARY:Built with Lovable · Lausanne #2
+LOCATION:Lausanne (address on registration)
+DESCRIPTION:A 90-minute hands-on build where everyone ships a working web a
+ pp with AI features using Lovable’s built-in models — no API keys or s
+ eparate accounts — with mentors on hand\, then demos and drinks. Bring a
+  laptop and an idea.\n\nOrganiser: Lovable Lausanne (Maxime Dumont)\n\nDet
+ ails and registration: https://swissdataevents.ch/events/built-with-lovabl
+ e-lausanne-2-2026/
+URL:https://swissdataevents.ch/events/built-with-lovable-lausanne-2-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:demystifai-01-homebrewed-lausanne-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261125T180000
+DTEND;TZID=Europe/Zurich:20261125T210000
+SUMMARY:DemystifAI 01 — Homebrewed
+LOCATION:Maison de la Femme\, Avenue de l’Eglantine 6\, Lausanne
+DESCRIPTION:Kouros\, who is not a developer and has a full-time job\, expla
+ ins how he used AI to build a custom ERP for the La Nébuleuse brewery\, f
+ ollowed by guided discussion\, audience questions and an apéro.\n\nOrgani
+ ser: DemystifAI (Christophe Pian)\n\nDetails and registration: https://swi
+ ssdataevents.ch/events/demystifai-01-homebrewed-lausanne-2026/
+URL:https://swissdataevents.ch/events/demystifai-01-homebrewed-lausanne-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:epfl-reshaping-information-research-with-ai-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261201T143000
+DTEND;TZID=Europe/Zurich:20261201T163000
+SUMMARY:Reshaping Information Research with AI
+LOCATION:EPFL\, room MED 0 1618\, Lausanne
+DESCRIPTION:Two-hour on-site workshop from the EPFL Library comparing four 
+ AI-powered research assistants\, how they work and where they differ from 
+ traditional information retrieval. Open to the public\, registration requi
+ red.\n\nOrganiser: EPFL Library\n\nDetails and registration: https://swiss
+ dataevents.ch/events/epfl-reshaping-information-research-with-ai-2026/
+URL:https://swissdataevents.ch/events/epfl-reshaping-information-research-w
+ ith-ai-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:night-of-data-talents-lausanne-2026@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;TZID=Europe/Zurich:20261210T173000
+DTEND;TZID=Europe/Zurich:20261210T233000
+SUMMARY:The Night of Data Talents: Startup Edition
+LOCATION:Base Bar\, Av. de Sévelin 46\, Lausanne
+DESCRIPTION:Swiss data startups pitch to an investor panel with community v
+ oting\, capping the year for the Suisse Romande data scene.\n\nOrganiser: 
+ DatAfterwork Suisse\n\nDetails and registration: https://swissdataevents.c
+ h/events/night-of-data-talents-lausanne-2026/
+URL:https://swissdataevents.ch/events/night-of-data-talents-lausanne-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-days-2027-yverdon-les-bains@swissdataevents.ch
+DTSTAMP:20261107T114104Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:AI Days 2027 — Yverdon-les-Bains
+LOCATION:Yverdon-les-Bains
+DESCRIPTION:Yverdon-les-Bains leg of AI Days 2027\, the Swiss AI Center’s
+  applied-AI conference for SMEs\, with workshops\, talks and demos. Regist
+ ration not yet open.\n\nOrganiser: HES-SO / Swiss AI Center\n\nDetails and
+  registration: https://swissdataevents.ch/events/ai-days-2027-yverdon-les-
+ bains/
+URL:https://swissdataevents.ch/events/ai-days-2027-yverdon-les-bains/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
