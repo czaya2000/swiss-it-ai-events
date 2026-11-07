@@ -3276,5 +3276,130 @@
     "source": "genevaaisummit.swiss",
     "blurb": "A plenary session at the Swiss Forum on Business and Human Rights on applying the UN Guiding Principles and OECD Guidelines to AI systems in practice, with UN representatives, technology companies and civil society. Interpretation in German, French and English.",
     "firstSeen": "2026-09-28"
+  },
+  {
+    "id": "containers-aws-trust-sovereignty-zurich-2026",
+    "title": "Architecting for Trust: Resilience & Sovereignty on AWS",
+    "date": "2026-11-03",
+    "endDate": "2026-11-03",
+    "time": "15:45–20:30",
+    "city": "Zurich",
+    "venue": "Bluelion, Josefstrasse 219",
+    "format": "Meetup",
+    "topics": [
+      "Cloud",
+      "Digital sovereignty",
+      "AI-assisted development"
+    ],
+    "organiser": "Containers and AWS Meetup Group / copebit",
+    "cost": "Free",
+    "url": "https://www.meetup.com/containers-and-aws-meetup-group/events/313663968/",
+    "source": "Meetup",
+    "blurb": "An afternoon hands-on lab on AWS resilience with the Karpenter autoscaler, then an evening of talks from AWS and copebit on designing resilient workloads, running enterprise Claude Code on AWS, and digital sovereignty — closing with pizza and beer.",
+    "firstSeen": "2026-10-19"
+  },
+  {
+    "id": "gfn-ai-day-zurich-2026",
+    "title": "GFN AI Day",
+    "date": "2026-11-03",
+    "endDate": "2026-11-03",
+    "time": "08:30–18:30",
+    "city": "Zurich",
+    "venue": "GFN Hub, ORBIZ Josef, Josefstrasse 214a",
+    "format": "Workshop",
+    "topics": [
+      "Applied AI",
+      "AI adoption",
+      "Sustainable finance"
+    ],
+    "organiser": "Green FinTech Network",
+    "cost": "CHF 15 members / CHF 70 external (lunch and apéro included)",
+    "url": "https://www.startupticker.ch/en/events/gfn-ai-day",
+    "source": "startupticker.ch",
+    "blurb": "A working day rather than a talking one: a morning of practitioner talks from SSF, ZHAW, Correntics and Resilens on what AI can actually do for sustainable finance, then small groups spend the afternoon on real challenges submitted by GFN startups and demo what they built. Thirty places.",
+    "firstSeen": "2026-10-16"
+  },
+  {
+    "id": "isa-lunch-learn-ai-tools-at-work-2026",
+    "title": "ISA Lunch & Learn: AI Tools at Work",
+    "date": "2026-11-03",
+    "endDate": "2026-11-03",
+    "time": "12:00–13:00",
+    "city": "Online (CH)",
+    "venue": "Online (Zoom)",
+    "format": "Webinar",
+    "topics": [
+      "Applied AI",
+      "AI tools",
+      "AI adoption"
+    ],
+    "organiser": "Innovationsverband Schweizer Arbeitsmarkt (ISA)",
+    "cost": "Free",
+    "url": "https://luma.com/3hgjyh8a",
+    "source": "ai-community.ch",
+    "blurb": "A 45-minute English-language lunch session on where AI tools genuinely lift productivity at work, built around real use cases and what has changed recently, closing with open Q&A.",
+    "firstSeen": "2026-10-12"
+  },
+  {
+    "id": "td-synnex-destination-ai-2026",
+    "title": "Destination AI – Verpasse den Zug nicht!",
+    "date": "2026-11-03",
+    "endDate": "2026-11-03",
+    "time": "09:30–20:00",
+    "city": "Dietlikon",
+    "venue": "Pathé Dietlikon",
+    "format": "Conference",
+    "topics": [
+      "Enterprise AI",
+      "Microsoft ecosystem"
+    ],
+    "organiser": "TD SYNNEX",
+    "cost": "Not listed",
+    "url": "https://events-dach.tdsynnex.com/event/destination-ai-verpasse-den-zug-nicht/",
+    "source": "tdsynnex.com",
+    "blurb": "Full-day German-language AI conference for the Swiss partner and reseller ecosystem, with a keynote by futurist Gerd Leonhard, vendor breakout sessions and business meetings.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "tufa-talks-5-dream-machines-zurich-2026",
+    "title": "Tufa Talks #5 — Dominique Paul (Dream Machines)",
+    "date": "2026-11-03",
+    "endDate": "2026-11-03",
+    "time": "17:45–20:00",
+    "city": "Zurich",
+    "venue": "Tufa Labs",
+    "format": "Meetup",
+    "topics": [
+      "Robotics",
+      "Embodied AI",
+      "Machine learning"
+    ],
+    "organiser": "Tufa Labs",
+    "cost": "Free",
+    "url": "https://luma.com/5ljaqlf0",
+    "source": "luma.com",
+    "blurb": "Dream Machines founder Dominique Paul on teaching robots by demonstration so that non-roboticists can automate variable, repetitive manufacturing work in small and medium-sized businesses, followed by Q&A and pizza.",
+    "firstSeen": "2026-10-28"
+  },
+  {
+    "id": "zwischen-prompt-und-urteilskraft-lucerne-2026",
+    "title": "Zwischen Prompt und Urteilskraft",
+    "date": "2026-11-03",
+    "endDate": "2026-11-03",
+    "time": "18:15–19:45",
+    "city": "Lucerne",
+    "venue": "Hochschule Luzern – Wirtschaft, Walter-von-Moos-Promenade 1",
+    "format": "Networking",
+    "topics": [
+      "Applied AI",
+      "Generative AI",
+      "Communication"
+    ],
+    "organiser": "HSLU Institut für Kommunikation und Marketing (IKM) / ZSPR",
+    "cost": "Not listed",
+    "url": "https://www.hslu.ch/de-ch/wirtschaft/agenda/veranstaltungen/2026/11/03/ikm-event-zspr-2026/",
+    "source": "ai-community.ch",
+    "blurb": "Impulse talks and a panel at HSLU Lucerne on what communication work is still worth when AI writes the first draft, and which skills matter next — apéro afterwards.",
+    "firstSeen": "2026-10-26"
   }
 ]

@@ -19,131 +19,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "containers-aws-trust-sovereignty-zurich-2026",
-    "title": "Architecting for Trust: Resilience & Sovereignty on AWS",
-    "date": "2026-11-03",
-    "endDate": "2026-11-03",
-    "time": "15:45–20:30",
-    "city": "Zurich",
-    "venue": "Bluelion, Josefstrasse 219",
-    "format": "Meetup",
-    "topics": [
-      "Cloud",
-      "Digital sovereignty",
-      "AI-assisted development"
-    ],
-    "organiser": "Containers and AWS Meetup Group / copebit",
-    "cost": "Free",
-    "url": "https://www.meetup.com/containers-and-aws-meetup-group/events/313663968/",
-    "source": "Meetup",
-    "blurb": "An afternoon hands-on lab on AWS resilience with the Karpenter autoscaler, then an evening of talks from AWS and copebit on designing resilient workloads, running enterprise Claude Code on AWS, and digital sovereignty — closing with pizza and beer.",
-    "firstSeen": "2026-10-19"
-  },
-  {
-    "id": "gfn-ai-day-zurich-2026",
-    "title": "GFN AI Day",
-    "date": "2026-11-03",
-    "endDate": "2026-11-03",
-    "time": "08:30–18:30",
-    "city": "Zurich",
-    "venue": "GFN Hub, ORBIZ Josef, Josefstrasse 214a",
-    "format": "Workshop",
-    "topics": [
-      "Applied AI",
-      "AI adoption",
-      "Sustainable finance"
-    ],
-    "organiser": "Green FinTech Network",
-    "cost": "CHF 15 members / CHF 70 external (lunch and apéro included)",
-    "url": "https://www.startupticker.ch/en/events/gfn-ai-day",
-    "source": "startupticker.ch",
-    "blurb": "A working day rather than a talking one: a morning of practitioner talks from SSF, ZHAW, Correntics and Resilens on what AI can actually do for sustainable finance, then small groups spend the afternoon on real challenges submitted by GFN startups and demo what they built. Thirty places.",
-    "firstSeen": "2026-10-16"
-  },
-  {
-    "id": "isa-lunch-learn-ai-tools-at-work-2026",
-    "title": "ISA Lunch & Learn: AI Tools at Work",
-    "date": "2026-11-03",
-    "endDate": "2026-11-03",
-    "time": "12:00–13:00",
-    "city": "Online (CH)",
-    "venue": "Online (Zoom)",
-    "format": "Webinar",
-    "topics": [
-      "Applied AI",
-      "AI tools",
-      "AI adoption"
-    ],
-    "organiser": "Innovationsverband Schweizer Arbeitsmarkt (ISA)",
-    "cost": "Free",
-    "url": "https://luma.com/3hgjyh8a",
-    "source": "ai-community.ch",
-    "blurb": "A 45-minute English-language lunch session on where AI tools genuinely lift productivity at work, built around real use cases and what has changed recently, closing with open Q&A.",
-    "firstSeen": "2026-10-12"
-  },
-  {
-    "id": "td-synnex-destination-ai-2026",
-    "title": "Destination AI – Verpasse den Zug nicht!",
-    "date": "2026-11-03",
-    "endDate": "2026-11-03",
-    "time": "09:30–20:00",
-    "city": "Dietlikon",
-    "venue": "Pathé Dietlikon",
-    "format": "Conference",
-    "topics": [
-      "Enterprise AI",
-      "Microsoft ecosystem"
-    ],
-    "organiser": "TD SYNNEX",
-    "cost": "Not listed",
-    "url": "https://events-dach.tdsynnex.com/event/destination-ai-verpasse-den-zug-nicht/",
-    "source": "tdsynnex.com",
-    "blurb": "Full-day German-language AI conference for the Swiss partner and reseller ecosystem, with a keynote by futurist Gerd Leonhard, vendor breakout sessions and business meetings.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "tufa-talks-5-dream-machines-zurich-2026",
-    "title": "Tufa Talks #5 — Dominique Paul (Dream Machines)",
-    "date": "2026-11-03",
-    "endDate": "2026-11-03",
-    "time": "17:45–20:00",
-    "city": "Zurich",
-    "venue": "Tufa Labs",
-    "format": "Meetup",
-    "topics": [
-      "Robotics",
-      "Embodied AI",
-      "Machine learning"
-    ],
-    "organiser": "Tufa Labs",
-    "cost": "Free",
-    "url": "https://luma.com/5ljaqlf0",
-    "source": "luma.com",
-    "blurb": "Dream Machines founder Dominique Paul on teaching robots by demonstration so that non-roboticists can automate variable, repetitive manufacturing work in small and medium-sized businesses, followed by Q&A and pizza.",
-    "firstSeen": "2026-10-28"
-  },
-  {
-    "id": "zwischen-prompt-und-urteilskraft-lucerne-2026",
-    "title": "Zwischen Prompt und Urteilskraft",
-    "date": "2026-11-03",
-    "endDate": "2026-11-03",
-    "time": "18:15–19:45",
-    "city": "Lucerne",
-    "venue": "Hochschule Luzern – Wirtschaft, Walter-von-Moos-Promenade 1",
-    "format": "Networking",
-    "topics": [
-      "Applied AI",
-      "Generative AI",
-      "Communication"
-    ],
-    "organiser": "HSLU Institut für Kommunikation und Marketing (IKM) / ZSPR",
-    "cost": "Not listed",
-    "url": "https://www.hslu.ch/de-ch/wirtschaft/agenda/veranstaltungen/2026/11/03/ikm-event-zspr-2026/",
-    "source": "ai-community.ch",
-    "blurb": "Impulse talks and a panel at HSLU Lucerne on what communication work is still worth when AI writes the first draft, and which skills matter next — apéro afterwards.",
-    "firstSeen": "2026-10-26"
-  },
-  {
     "id": "mindstone-zurich-ai-meetup-november-2026",
     "title": "Mindstone Zurich November AI Meetup",
     "date": "2026-11-04",
@@ -1729,6 +1604,27 @@
     "firstSeen": "2026-11-06"
   },
   {
+    "id": "aws-swiss-user-group-geneva-kiro-nights-2026",
+    "title": "AWS Swiss User Group Geneva #30: Kiro Nights",
+    "date": "2026-11-17",
+    "endDate": "2026-11-17",
+    "time": "18:00–21:30",
+    "city": "Vernier (Geneva)",
+    "venue": "Sonar, Chemin de Blandonnet 10",
+    "format": "Meetup",
+    "topics": [
+      "AWS",
+      "AI coding agents",
+      "Cloud"
+    ],
+    "organiser": "AWS Swiss User Group – Geneva",
+    "cost": "Not listed (food and drinks provided)",
+    "url": "https://www.meetup.com/aws-swiss-user-group-geneva/events/317311504/",
+    "source": "Meetup",
+    "blurb": "A beginner-friendly hands-on evening building a working web app from scratch with Kiro, AWS's agentic IDE, with the organisers on hand to help — bring a laptop, pizza and apéro included.",
+    "firstSeen": "2026-11-07"
+  },
+  {
     "id": "dinacon-2026-bern",
     "title": "DINAcon 2026",
     "date": "2026-11-18",
@@ -2166,6 +2062,27 @@
     "firstSeen": "2026-11-06"
   },
   {
+    "id": "saic-real-or-generated-geneva-2026",
+    "title": "Real or Generated? | SAIC x The Founders Club",
+    "date": "2026-11-25",
+    "endDate": "2026-11-25",
+    "time": "19:00–22:00",
+    "city": "Geneva",
+    "venue": "Foound, Rue Jean-Dassier 7",
+    "format": "Networking",
+    "topics": [
+      "Generative AI",
+      "AI literacy",
+      "AI community"
+    ],
+    "organiser": "Switzerland AI Community with The Founders Club",
+    "cost": "CHF 50 (food and drinks included)",
+    "url": "https://luma.com/cl058lnx",
+    "source": "switzerland-ai.com",
+    "blurb": "Playful challenges to tell real images, sounds and text apart from AI-generated ones, with curated visuals, music and networking across Geneva's tech, creative and founder communities.",
+    "firstSeen": "2026-11-07"
+  },
+  {
     "id": "robot-learning-paper-club-world-models-zurich-2026",
     "title": "Robot Learning Paper Club — The World Model Edition",
     "date": "2026-11-26",
@@ -2289,6 +2206,27 @@
     "source": "datascience.ch",
     "blurb": "Executive workshop for CEOs, CFOs, CDOs and CTOs on turning data and AI into measurable business value, with case studies from EKZ, Merck and Richemont. Limited seats.",
     "firstSeen": "2026-09-15"
+  },
+  {
+    "id": "coffee-ai-agents-sandbox-zurich-2026",
+    "title": "AI Agent Sandbox: Bring Your Ideas, Let's Explore Together!",
+    "date": "2026-11-27",
+    "endDate": "2026-11-27",
+    "time": "18:15–20:15",
+    "city": "Zurich",
+    "venue": "Kraftwerk, Selnaustrasse 25",
+    "format": "Meetup",
+    "topics": [
+      "AI agents",
+      "Applied AI",
+      "Design thinking"
+    ],
+    "organiser": "Coffee & AI Agents",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/zurich-ai-agents-meetup-group/events/317313346/",
+    "source": "Meetup",
+    "blurb": "An in-person working session where the group picks one AI agent idea from the room and explores it together with sticky notes, sketches and a timer — open to beginners and active builders alike.",
+    "firstSeen": "2026-11-07"
   },
   {
     "id": "azure-zurich-ai-infrastructure-night-2026",
@@ -2854,6 +2792,27 @@
     "firstSeen": "2026-11-03"
   },
   {
+    "id": "ai-for-business-network-learn-grow-zurich-2026-12-28",
+    "title": "AI for Business: Network, Learn & Grow in Zurich",
+    "date": "2026-12-28",
+    "endDate": "2026-12-28",
+    "time": "19:00–22:00",
+    "city": "Zurich",
+    "venue": "ibis Styles Zurich City Center, Stampfenbachstrasse 60",
+    "format": "Networking",
+    "topics": [
+      "AI adoption",
+      "Applied AI",
+      "AI community"
+    ],
+    "organiser": "Financial Network Zurich",
+    "cost": "Ticket required via Eventfrog (some early-bird tickets free; drinks not included)",
+    "url": "https://www.meetup.com/financialnetworkzurich/events/316740112/",
+    "source": "Meetup",
+    "blurb": "December edition of the small-room series where founders and executives compare how they actually use AI: an invited talk, group conversations on what worked and what failed, then open networking.",
+    "firstSeen": "2026-11-07"
+  },
+  {
     "id": "davos-catalyst-ai-summit-2027",
     "title": "Davos Catalyst: AI Summit 2027",
     "date": "2027-01-12",
@@ -2872,6 +2831,27 @@
     "source": "davoscatalyst.com",
     "blurb": "Invitation-only summit running alongside Davos week for around 200 founders, investors, corporate leaders and researchers, with roundtables and closed-door sessions on AI infrastructure, investment, enterprise deployment and governance.",
     "firstSeen": "2026-10-30"
+  },
+  {
+    "id": "ai-house-davos-2027",
+    "title": "AI House Davos 2027",
+    "date": "2027-01-18",
+    "endDate": "2027-01-22",
+    "city": "Davos",
+    "venue": "AI House, Davos Promenade",
+    "format": "Conference",
+    "topics": [
+      "AI policy",
+      "AI governance",
+      "Applied AI",
+      "AI research"
+    ],
+    "organiser": "AI House Association",
+    "cost": "Not listed (badge application required)",
+    "url": "https://www.aihousedavos.com/",
+    "source": "aihousedavos.com",
+    "blurb": "Five days of AI programming on the Davos Promenade alongside the World Economic Forum, bringing research, industry, policy and civil society together under the 2027 theme \"Citizens of an expanding world\".",
+    "firstSeen": "2026-11-07"
   },
   {
     "id": "digitalswitzerland-davos-2027",
@@ -3157,5 +3137,47 @@
     "source": "genaizurich.ch",
     "blurb": "A two-day European summit on applied generative AI at the Volkshaus: keynotes, panels, workshops, roundtables, a hackathon, startup pitches and the GenAI Zürich Award, focused on what works in production.",
     "firstSeen": "2026-11-03"
+  },
+  {
+    "id": "imd-ki-update-2027",
+    "title": "IMD KI-Update 2027",
+    "date": "2027-03-02",
+    "endDate": "2027-03-02",
+    "time": "09:00–17:30",
+    "city": "Dübendorf",
+    "venue": "THE HALL, Hoffnigstrasse 1",
+    "format": "Conference",
+    "topics": [
+      "AI strategy",
+      "Data leadership",
+      "AI governance"
+    ],
+    "organiser": "echo originals AG (with IMD as knowledge partner)",
+    "cost": "CHF 890 (early bird CHF 712 until 15 November 2026; CHF 623 per person for teams of five or more)",
+    "url": "https://ki-update.ch/",
+    "source": "ki-update.ch",
+    "blurb": "A one-day German-language management congress on leading in the AI era: executive cases, keynotes on efficiency, growth, trust and responsibility, and a closing keynote by Richard David Precht.",
+    "firstSeen": "2026-11-07"
+  },
+  {
+    "id": "swiss-legal-tech-conference-2027",
+    "title": "Swiss Legal Tech Conference 2027",
+    "date": "2027-03-02",
+    "endDate": "2027-03-02",
+    "city": "Zurich",
+    "venue": "SIX ConventionPoint, Pfingstweidstrasse 110",
+    "format": "Conference",
+    "topics": [
+      "Legal tech",
+      "AI agents",
+      "Data management",
+      "AI governance"
+    ],
+    "organiser": "Swiss Legal Technology GmbH",
+    "cost": "Not announced",
+    "url": "https://swisslegal.tech/",
+    "source": "swisslegal.tech",
+    "blurb": "A day of sessions on legal technology and AI in practice: comprehensive data management and whether data lakes break down silos, risk and exit management for legal tech, courts in the age of AI, and what role AI agents play today.",
+    "firstSeen": "2026-11-07"
   }
 ]
