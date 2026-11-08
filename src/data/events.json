@@ -19,132 +19,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "mindstone-zurich-ai-meetup-november-2026",
-    "title": "Mindstone Zurich November AI Meetup",
-    "date": "2026-11-04",
-    "endDate": "2026-11-04",
-    "time": "18:00–21:00",
-    "city": "Zurich",
-    "venue": "Unit8, Beethovenstrasse 49 (entrance on Gartenstrasse)",
-    "format": "Meetup",
-    "topics": [
-      "Applied AI",
-      "LLMs",
-      "AI tools"
-    ],
-    "organiser": "Mindstone Zürich AI Meetup",
-    "cost": "Not listed",
-    "url": "https://www.meetup.com/mindstone-zurich-ai-meetup/events/317044916/",
-    "source": "Meetup",
-    "blurb": "The Zurich edition of the Mindstone AI evenings, hosted at Unit8: a technical demo of what one team learned building a product with LLMs, a practical session on closing the AI skills gap for non-technical students, and a talk on where AI takes work and society next, then pizza and networking.",
-    "firstSeen": "2026-10-19"
-  },
-  {
-    "id": "netnode-agentic-ai-prozesse-2026",
-    "title": "Agentic AI: Wie agentische KI Prozesse übernimmt",
-    "date": "2026-11-04",
-    "endDate": "2026-11-04",
-    "time": "11:00–11:45",
-    "city": "Online (CH)",
-    "venue": "Online",
-    "format": "Webinar",
-    "topics": [
-      "AI agents",
-      "Enterprise AI",
-      "Automation"
-    ],
-    "organiser": "NETNODE AG",
-    "cost": "Free",
-    "url": "https://netnode.ch/de/webinare/agentic-ai",
-    "source": "ai-community.ch",
-    "blurb": "Free German-language webinar with live demos on production systems showing what AI agents can really do today, where they fail, and how to run a safe pilot.",
-    "firstSeen": "2026-10-26"
-  },
-  {
-    "id": "netnode-ai-im-unternehmen-wo-anfangen-2026",
-    "title": "AI im Unternehmen: Wo anfangen?",
-    "date": "2026-11-04",
-    "endDate": "2026-11-04",
-    "time": "10:00–10:45",
-    "city": "Online (CH)",
-    "venue": "Online",
-    "format": "Webinar",
-    "topics": [
-      "Enterprise AI",
-      "AI strategy",
-      "Use-case prioritisation"
-    ],
-    "organiser": "NETNODE AG",
-    "cost": "Free",
-    "url": "https://netnode.ch/de/webinare/ai-im-unternehmen-wo-anfangen?datum=2026-11-04",
-    "source": "ai-community.ch",
-    "blurb": "Free 45-minute German-language webinar in which NETNODE founder Lukas Fischer shows how to find and score AI use cases by value, effort and risk, with three Swiss examples and Q&A.",
-    "firstSeen": "2026-10-26"
-  },
-  {
-    "id": "claude-code-financial-services-zurich-2026",
-    "title": "Claude Code for the Financial Services Industry",
-    "date": "2026-11-04",
-    "endDate": "2026-11-04",
-    "time": "18:30–20:30",
-    "city": "Zurich",
-    "venue": "Spaces Bleicherweg, Bleicherweg 10",
-    "format": "Meetup",
-    "topics": [
-      "AI-assisted development",
-      "Enterprise AI",
-      "Financial services"
-    ],
-    "organiser": "Claude Community Zurich with Gerevest.AI",
-    "cost": "Free (event full, waitlist)",
-    "url": "https://luma.com/claude-ccgp",
-    "source": "luma.com",
-    "blurb": "Live demos rather than theory: practitioners from MFM Mirante Fund Management, AtonRâ Partners and Moody’s Analytics show what they have actually built with Claude Code in quant workflows, investment research and credit risk analytics.",
-    "firstSeen": "2026-11-03"
-  },
-  {
-    "id": "economics-of-ai-ship26-zurich-2026",
-    "title": "Economics of AI: Capabilities, Trends, Price-Wars (Part 1 of 2)",
-    "date": "2026-11-04",
-    "endDate": "2026-11-04",
-    "time": "17:30–18:30",
-    "city": "Zurich",
-    "venue": "Ship26, Schifflände 26",
-    "format": "Meetup",
-    "topics": [
-      "AI strategy",
-      "Applied AI",
-      "AI economics"
-    ],
-    "organiser": "Ship26",
-    "cost": "Free (event full, waitlist)",
-    "url": "https://luma.com/qeu29ob1",
-    "source": "luma.com",
-    "blurb": "First of two sessions on the economics of AI: how models are trained, what makes them economically unusual, and how that plays out in moats, price wars and distillation strategies across the hardware supply chain.",
-    "firstSeen": "2026-11-03"
-  },
-  {
-    "id": "vision-ai-business-circle-wollerau-2026",
-    "title": "Vision AI Business Circle",
-    "date": "2026-11-04",
-    "endDate": "2026-11-04",
-    "time": "18:00–20:30",
-    "city": "Wollerau (Zurich)",
-    "venue": "Allen’s Table at Pyramide, Samstagernstrasse 41",
-    "format": "Networking",
-    "topics": [
-      "Applied AI",
-      "AI adoption",
-      "AI strategy"
-    ],
-    "organiser": "Allen’s Table at Pyramide with Gewerbe Plus and HGVF",
-    "cost": "CHF 45 / CHF 35 members (apéro and snacks included)",
-    "url": "https://luma.com/owprewmt",
-    "source": "luma.com",
-    "blurb": "A moderated panel on where AI is actually useful in business, with Revylr, Optohive, Bailey AI Consulting and the AI Business School, followed by an apéro and networking south of Lake Zurich.",
-    "firstSeen": "2026-11-03"
-  },
-  {
     "id": "eqs-connect-zurich-2026",
     "title": "EQS Connect Zurich 2026 — From Compliance Activity to Compliance Impact",
     "date": "2026-11-05",
@@ -872,6 +746,27 @@
     "source": "fhnw.ch",
     "blurb": "A two-morning boutique conference bringing clinicians, industry and academics together across three sessions — AI for diagnostics, AI for therapeutics and AI in citizen health.",
     "firstSeen": "2026-11-03"
+  },
+  {
+    "id": "learning-lunch-alternatives-numeriques-neuchatel-2026",
+    "title": "Learning Lunch : alternatives numériques — quelles options et quels impacts pour les PME ?",
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "time": "12:00–14:00",
+    "city": "Neuchâtel",
+    "venue": "La Petite Rochette",
+    "format": "Meetup",
+    "topics": [
+      "Digital sovereignty",
+      "Open source",
+      "Data protection"
+    ],
+    "organiser": "platinn with Alp ICT",
+    "cost": "Not listed (reserved for companies based in the canton of Neuchâtel; registration by email)",
+    "url": "https://alpict.ch/evenements/learning-lunch-alternatives-numeriques-quelles-options-quels-impacts-pour-les-pme/",
+    "source": "alpict.ch",
+    "blurb": "A French-language lunch session on alternatives to the large technology providers — digital commons, open-source platforms and decentralised infrastructure — with Lionel Jeannerat on the open-source sales platform be-BOP and Fabio Bonfiglio of NEDAO on decentralised identity and AI.",
+    "firstSeen": "2026-11-08"
   },
   {
     "id": "analytics-roundtable-zurich-eth-data-stack-2026",
@@ -1832,6 +1727,27 @@
     "firstSeen": "2026-11-04"
   },
   {
+    "id": "ai-tinkerers-lausanne-november-2026",
+    "title": "AI Tinkerers Lausanne — November 2026 Meetup",
+    "date": "2026-11-23",
+    "endDate": "2026-11-23",
+    "time": "18:00–21:00",
+    "city": "Prilly (Lausanne)",
+    "venue": "Unlimitrust Campus, Route des Flumeaux 42",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "Building with AI",
+      "AI community"
+    ],
+    "organiser": "AI Tinkerers Lausanne, hosted at the Unlimitrust Campus",
+    "cost": "Free (registration subject to approval)",
+    "url": "https://lausanne.aitinkerers.org/p/ai-tinkerers-lausanne-november-2026-meetup",
+    "source": "lausanne.aitinkerers.org",
+    "blurb": "A demo-first evening for people actually building with AI: around half a dozen five-minute demos of work in progress, each followed by questions — slides and pitch decks are explicitly not allowed — then pizza and networking.",
+    "firstSeen": "2026-11-08"
+  },
+  {
     "id": "ai-safety-trustworthy-ai-zurich-2026",
     "title": "AI Safety: Building Trustworthy AI in the Real World",
     "date": "2026-11-24",
@@ -2561,6 +2477,48 @@
     "source": "Meetup",
     "blurb": "Full day of community sessions on Microsoft endpoint, identity and security work, including securing agent identities, privileged-access strategy with Entra and Intune, secure low-code on the Power Platform, and label engineering.",
     "firstSeen": "2026-11-02"
+  },
+  {
+    "id": "ai-made-in-europe-founders-story-zurich-2026",
+    "title": "AI Made in Europe: Built Here. Scaled Everywhere.",
+    "date": "2026-12-03",
+    "endDate": "2026-12-03",
+    "time": "17:30–21:00",
+    "city": "Zurich",
+    "venue": "Google Zurich — Europaallee 36",
+    "format": "Meetup",
+    "topics": [
+      "AI strategy",
+      "Sovereign AI",
+      "Open-source LLMs"
+    ],
+    "organiser": "The Founder's Story, a Google Cloud series",
+    "cost": "Not listed (registration required)",
+    "url": "https://luma.com/q6o56k21",
+    "source": "luma.com",
+    "blurb": "The season finale of Google Cloud's Founder's Story series: a panel on whether Europe can build its own global AI companies or will mostly buy AI from elsewhere, covering research, open models, compute, sovereignty and capital, followed by a networking apéro at Google's Europaallee office.",
+    "firstSeen": "2026-11-08"
+  },
+  {
+    "id": "geneva-3d-switzerland-ai-community-2026",
+    "title": "Geneva 3D — Building a Living 3D Model of a Canton with AI Agents and Open Data",
+    "date": "2026-12-03",
+    "endDate": "2026-12-03",
+    "time": "18:30–21:30",
+    "city": "Geneva",
+    "venue": "Tesla showroom, Rue de la Confédération 8",
+    "format": "Meetup",
+    "topics": [
+      "AI agents",
+      "Open data",
+      "Applied AI"
+    ],
+    "organiser": "Switzerland AI Community with Romandy CTO, hosted by Tesla",
+    "cost": "Free (60 places, registration required)",
+    "url": "https://luma.com/bkugncd1",
+    "source": "switzerland-ai.com",
+    "blurb": "Arnaud Ricci on how he built Genève 3D, a browser-based 3D model of the whole canton, using AI agents and open data — with a live demonstration, questions from the room and a non-alcoholic apéro. The talk is in French with English subtitles.",
+    "firstSeen": "2026-11-08"
   },
   {
     "id": "hack-apertus-onsite-basel-2026",

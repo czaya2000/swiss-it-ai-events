@@ -3401,5 +3401,131 @@
     "source": "ai-community.ch",
     "blurb": "Impulse talks and a panel at HSLU Lucerne on what communication work is still worth when AI writes the first draft, and which skills matter next — apéro afterwards.",
     "firstSeen": "2026-10-26"
+  },
+  {
+    "id": "claude-code-financial-services-zurich-2026",
+    "title": "Claude Code for the Financial Services Industry",
+    "date": "2026-11-04",
+    "endDate": "2026-11-04",
+    "time": "18:30–20:30",
+    "city": "Zurich",
+    "venue": "Spaces Bleicherweg, Bleicherweg 10",
+    "format": "Meetup",
+    "topics": [
+      "AI-assisted development",
+      "Enterprise AI",
+      "Financial services"
+    ],
+    "organiser": "Claude Community Zurich with Gerevest.AI",
+    "cost": "Free (event full, waitlist)",
+    "url": "https://luma.com/claude-ccgp",
+    "source": "luma.com",
+    "blurb": "Live demos rather than theory: practitioners from MFM Mirante Fund Management, AtonRâ Partners and Moody’s Analytics show what they have actually built with Claude Code in quant workflows, investment research and credit risk analytics.",
+    "firstSeen": "2026-11-03"
+  },
+  {
+    "id": "economics-of-ai-ship26-zurich-2026",
+    "title": "Economics of AI: Capabilities, Trends, Price-Wars (Part 1 of 2)",
+    "date": "2026-11-04",
+    "endDate": "2026-11-04",
+    "time": "17:30–18:30",
+    "city": "Zurich",
+    "venue": "Ship26, Schifflände 26",
+    "format": "Meetup",
+    "topics": [
+      "AI strategy",
+      "Applied AI",
+      "AI economics"
+    ],
+    "organiser": "Ship26",
+    "cost": "Free (event full, waitlist)",
+    "url": "https://luma.com/qeu29ob1",
+    "source": "luma.com",
+    "blurb": "First of two sessions on the economics of AI: how models are trained, what makes them economically unusual, and how that plays out in moats, price wars and distillation strategies across the hardware supply chain.",
+    "firstSeen": "2026-11-03"
+  },
+  {
+    "id": "mindstone-zurich-ai-meetup-november-2026",
+    "title": "Mindstone Zurich November AI Meetup",
+    "date": "2026-11-04",
+    "endDate": "2026-11-04",
+    "time": "18:00–21:00",
+    "city": "Zurich",
+    "venue": "Unit8, Beethovenstrasse 49 (entrance on Gartenstrasse)",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "LLMs",
+      "AI tools"
+    ],
+    "organiser": "Mindstone Zürich AI Meetup",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/mindstone-zurich-ai-meetup/events/317044916/",
+    "source": "Meetup",
+    "blurb": "The Zurich edition of the Mindstone AI evenings, hosted at Unit8: a technical demo of what one team learned building a product with LLMs, a practical session on closing the AI skills gap for non-technical students, and a talk on where AI takes work and society next, then pizza and networking.",
+    "firstSeen": "2026-10-19"
+  },
+  {
+    "id": "netnode-agentic-ai-prozesse-2026",
+    "title": "Agentic AI: Wie agentische KI Prozesse übernimmt",
+    "date": "2026-11-04",
+    "endDate": "2026-11-04",
+    "time": "11:00–11:45",
+    "city": "Online (CH)",
+    "venue": "Online",
+    "format": "Webinar",
+    "topics": [
+      "AI agents",
+      "Enterprise AI",
+      "Automation"
+    ],
+    "organiser": "NETNODE AG",
+    "cost": "Free",
+    "url": "https://netnode.ch/de/webinare/agentic-ai",
+    "source": "ai-community.ch",
+    "blurb": "Free German-language webinar with live demos on production systems showing what AI agents can really do today, where they fail, and how to run a safe pilot.",
+    "firstSeen": "2026-10-26"
+  },
+  {
+    "id": "netnode-ai-im-unternehmen-wo-anfangen-2026",
+    "title": "AI im Unternehmen: Wo anfangen?",
+    "date": "2026-11-04",
+    "endDate": "2026-11-04",
+    "time": "10:00–10:45",
+    "city": "Online (CH)",
+    "venue": "Online",
+    "format": "Webinar",
+    "topics": [
+      "Enterprise AI",
+      "AI strategy",
+      "Use-case prioritisation"
+    ],
+    "organiser": "NETNODE AG",
+    "cost": "Free",
+    "url": "https://netnode.ch/de/webinare/ai-im-unternehmen-wo-anfangen?datum=2026-11-04",
+    "source": "ai-community.ch",
+    "blurb": "Free 45-minute German-language webinar in which NETNODE founder Lukas Fischer shows how to find and score AI use cases by value, effort and risk, with three Swiss examples and Q&A.",
+    "firstSeen": "2026-10-26"
+  },
+  {
+    "id": "vision-ai-business-circle-wollerau-2026",
+    "title": "Vision AI Business Circle",
+    "date": "2026-11-04",
+    "endDate": "2026-11-04",
+    "time": "18:00–20:30",
+    "city": "Wollerau (Zurich)",
+    "venue": "Allen’s Table at Pyramide, Samstagernstrasse 41",
+    "format": "Networking",
+    "topics": [
+      "Applied AI",
+      "AI adoption",
+      "AI strategy"
+    ],
+    "organiser": "Allen’s Table at Pyramide with Gewerbe Plus and HGVF",
+    "cost": "CHF 45 / CHF 35 members (apéro and snacks included)",
+    "url": "https://luma.com/owprewmt",
+    "source": "luma.com",
+    "blurb": "A moderated panel on where AI is actually useful in business, with Revylr, Optohive, Bailey AI Consulting and the AI Business School, followed by an apéro and networking south of Lake Zurich.",
+    "firstSeen": "2026-11-03"
   }
 ]
