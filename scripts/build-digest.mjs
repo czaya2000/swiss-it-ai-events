@@ -13,6 +13,7 @@
 //   --days=N        "new" means firstSeen within the last N days (default 7)
 //   --ahead=N       the first section covers the next N days (default 14)
 //   --today=YYYY-MM-DD   pretend today is this date (for testing)
+//   --from=YYYY-MM-DD    leave out events already over by this date (default today)
 //   --replace       if this week's email is still a draft, overwrite its body
 //
 // Safe to re-run: if an email with this week's subject already exists in
@@ -64,13 +65,16 @@ function isoWeek(iso) {
 // and get the site's red "new" dot there.
 const since = addDays(today, -days); // exclusive
 const horizon = addDays(today, ahead - 1); // inclusive
+// --from drops events already over by then (e.g. --from=2026-11-10 when the
+// draft goes out on Tuesday). It doesn't change the week or the "new" window.
+const from = args.from ?? today;
 const upcoming = JSON.parse(readFileSync('src/data/events.json', 'utf8'))
-	.filter((e) => (e.endDate ?? e.date) >= today)
+	.filter((e) => (e.endDate ?? e.date) >= from)
 	.sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title));
 const isNew = (e) => e.firstSeen > since && e.firstSeen <= today;
 // Already running counts only for short events (a conference's last day), not
 // long series that started weeks ago.
-const startsSoon = (e) => e.date >= today || addDays(e.date, 7) >= (e.endDate ?? e.date);
+const startsSoon = (e) => e.date >= from || addDays(e.date, 7) >= (e.endDate ?? e.date);
 const soon = upcoming.filter((e) => e.date <= horizon && startsSoon(e));
 const fresh = upcoming.filter((e) => e.date > horizon && isNew(e));
 
@@ -129,7 +133,7 @@ const T = {
 	muted: '#6b6b70',
 	border: '#dededa',
 	accent: '#e30613',
-	font: "Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+	font: 'Archivo,Helvetica,Arial,sans-serif',
 };
 const UTM = 'utm_source=newsletter&utm_medium=email&utm_campaign=digest';
 const HOME = `${SITE_URL}/?${UTM}`;
@@ -147,33 +151,52 @@ const spine = (iso) => ({
 
 // One homepage row: the date spine on the left, then title, place, blurb and
 // the format / cost labels (the site's mobile layout, which suits a 600px email).
+// Kept lean on purpose: Gmail clips emails over ~102 KB, and a reader with no
+// filters gets every row. Colour and line-height come from the wrapper and the
+// table; font-family stays on each cell because Outlook doesn't inherit it.
 function renderEvent(e, { dot = false } = {}) {
 	const s = spine(e.date);
 	const newDot = dot
 		? `<span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${T.accent};vertical-align:middle;margin:0 8px 3px 0;"></span>`
 		: '';
 	const end = e.endDate && e.endDate !== e.date ? spine(e.endDate) : null;
-	const through = end
-		? `<div style="font-size:12px;color:${T.muted};white-space:nowrap;">to ${end.day} ${end.month}</div>`
-		: '';
+	const through = end ? `<br>to ${end.day} ${end.month}` : '';
 	const free = /\bfree\b/i.test(e.cost);
 	const cost = /not listed/i.test(e.cost)
 		? ''
-		: `<span style="color:${free ? T.ink : T.muted};${free ? 'font-weight:600;' : ''}">${esc(e.cost)}</span>`;
+		: free
+			? `<b>${esc(e.cost)}</b>`
+			: `<span style="color:${T.muted};">${esc(e.cost)}</span>`;
 	const format = `<span style="border:1px solid ${T.border};padding:2px 8px;color:${T.ink2};">${esc(e.format)}</span>`;
 	const meta = [e.city, e.venue, e.time].filter(Boolean).map(esc).join(', ');
-	return `<tr>
-<td valign="top" width="64" style="width:64px;padding:18px 16px 18px 0;border-bottom:1px solid ${T.border};font-family:${T.font};">
-<div style="font-size:28px;font-weight:600;line-height:1;color:${T.ink};">${s.day}</div>
-<div style="font-size:12px;color:${T.muted};margin-top:5px;white-space:nowrap;">${s.weekday}, ${s.month}</div>${through}
-</td>
-<td valign="top" style="padding:18px 0;border-bottom:1px solid ${T.border};font-family:${T.font};">
+	const td = `border-bottom:1px solid ${T.border};font-family:${T.font};`;
+	return `<tr><td valign="top" width="64" style="padding:18px 16px 18px 0;${td}">
+<div style="font-size:28px;font-weight:600;line-height:1;">${s.day}</div>
+<div style="font-size:12px;color:${T.muted};margin-top:5px;white-space:nowrap;">${s.weekday}, ${s.month}${through}</div>
+</td><td valign="top" style="padding:18px 0;${td}">
 ${newDot}<a href="${link(e)}" style="font-size:18px;font-weight:500;line-height:1.28;letter-spacing:-0.01em;color:${T.ink};text-decoration:none;">${esc(e.title)}</a>
-<div style="font-size:14px;color:${T.ink2};margin-top:6px;line-height:1.5;">${meta}</div>
-<div style="font-size:13px;color:${T.muted};margin-top:3px;line-height:1.5;">${esc(e.blurb)}</div>
-<div style="font-size:13px;margin-top:10px;line-height:1.5;">${[format, cost].filter(Boolean).join('&nbsp;&nbsp;')}</div>
-</td>
-</tr>`;
+<div style="font-size:14px;color:${T.ink2};margin-top:6px;">${meta}</div>
+<div style="font-size:13px;color:${T.muted};margin-top:3px;">${esc(shortBlurb(e.blurb))}</div>
+<div style="font-size:13px;margin-top:10px;">${[format, cost].filter(Boolean).join('&nbsp;&nbsp;')}</div>
+</td></tr>`;
+}
+
+// The later section uses one line per event: date · title, then place · type.
+// These are weeks away, so the blurb lives on the event page.
+function renderCompact(e) {
+	const s = spine(e.date);
+	const city = e.city.replace(/\s*\(.*\)$/, '');
+	return `<tr><td style="padding:10px 0;border-bottom:1px solid ${T.border};font-family:${T.font};font-size:15px;">
+<span style="color:${T.muted};white-space:nowrap;">${s.weekday} ${s.day} ${s.month}</span>&nbsp; <a href="${link(e)}" style="color:${T.ink};font-weight:500;text-decoration:none;">${esc(e.title)}</a>
+<div style="font-size:13px;color:${T.muted};">${esc(city)} · ${esc(e.format)}</div>
+</td></tr>`;
+}
+
+// Keeps the top section's blurbs to about two lines.
+function shortBlurb(text, max = 140) {
+	if (text.length <= max) return text;
+	const cut = text.slice(0, max);
+	return cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:\s]+$/, '') + '…';
 }
 
 const { week, year } = isoWeek(today);
@@ -207,11 +230,12 @@ function section(title, note, events, empty, opts = {}) {
 ${p(note, `font-size:14px;color:${T.muted};`)}
 </div>`;
 	const fallback = `<tr><td colspan="2" style="padding:18px 0;border-bottom:1px solid ${T.border};">${p(empty, `color:${T.ink2};`)}</td></tr>`;
-	const list = events.map((e) => wrap(e, renderEvent(e, opts.dot ? { dot: isNew(e) } : {}))).join('\n');
+	const row = (e) => (opts.compact ? renderCompact(e) : renderEvent(e, { dot: Boolean(opts.dot) && isNew(e) }));
+	const list = events.map((e) => wrap(e, row(e))).join('\n');
 	const any = anyMatchCondition(events);
 	const rows = events.length === 0 ? fallback : `{% if ${any} %}\n${list}\n{% else %}\n${fallback}\n{% endif %}`;
 	return `${head}
-<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-top:1px solid ${T.ink};">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-top:1px solid ${T.ink};line-height:1.5;color:${T.ink};">
 ${rows}
 </table>`;
 }
@@ -219,7 +243,7 @@ ${rows}
 const sections = [
 	section(
 		'Next two weeks',
-		`${datePart(today, { day: 'numeric', month: 'short' })} – ${datePart(horizon, { day: 'numeric', month: 'short' })}. <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${T.accent};vertical-align:middle;margin:0 2px 2px 4px;"></span> new this week.`,
+		`${datePart(from, { day: 'numeric', month: 'short' })} – ${datePart(horizon, { day: 'numeric', month: 'short' })}. <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${T.accent};vertical-align:middle;margin:0 2px 2px 4px;"></span> new this week.`,
 		soon,
 		'Nothing in your cities and event types in the next two weeks.',
 		{ dot: true },
@@ -229,6 +253,7 @@ const sections = [
 		'Added since last Monday, happening after the next two weeks.',
 		fresh,
 		'Nothing new for your cities and event types this week.',
+		{ compact: true },
 	),
 ].join('\n');
 
@@ -252,10 +277,16 @@ ${outro}
 console.log(`Subject: ${subject}`);
 const show = (e) =>
 	console.log(`  - ${e.date} ${e.city} → ${newsletterCity(e.city) ?? 'everyone'} | ${e.format} | ${e.title}${isNew(e) ? ' (new)' : ''}`);
-console.log(`Next two weeks (${today} to ${horizon}): ${soon.length}`);
+console.log(`Next two weeks (${from} to ${horizon}): ${soon.length}`);
 soon.forEach(show);
 console.log(`New this week, later (firstSeen after ${since}): ${fresh.length}`);
 fresh.forEach(show);
+
+// Worst case is a reader with no filters, who sees every row. Template tags
+// vanish when Buttondown renders, so leave them out of the count.
+const fullKb = Math.round(Buffer.byteLength(body.replace(/^\{%.*%\}$/gm, '')) / 1024);
+console.log(`Size for a reader with no filters: ~${fullKb} KB (Gmail clips above ~102 KB)`);
+if (fullKb > 90) console.log('WARNING: close to or over Gmail\'s clipping limit. Trim before sending.');
 
 if (dryRun) {
 	console.log('\n----- body -----\n' + body);
