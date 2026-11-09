@@ -3527,5 +3527,172 @@
     "source": "luma.com",
     "blurb": "A moderated panel on where AI is actually useful in business, with Revylr, Optohive, Bailey AI Consulting and the AI Business School, followed by an apéro and networking south of Lake Zurich.",
     "firstSeen": "2026-11-03"
+  },
+  {
+    "id": "ai-safety-meetup-geneva-2026",
+    "title": "AI Safety Meetup Geneva — First Session",
+    "date": "2026-11-05",
+    "endDate": "2026-11-05",
+    "time": "18:30",
+    "city": "Geneva",
+    "venue": "Impact Hub Geneva, Rue Fendt 1",
+    "format": "Meetup",
+    "topics": [
+      "AI safety",
+      "AI governance",
+      "AI community"
+    ],
+    "organiser": "AI Safety Meetup Geneva",
+    "cost": "Free (event full, waitlist)",
+    "url": "https://luma.com/bb1gvqbb",
+    "source": "luma.com",
+    "blurb": "The opening session of a new Geneva AI safety group, deliberately mixing technical, governance and UN/NGO people: short introductions, flash talks and a round table, with paper clubs planned for later meetings.",
+    "firstSeen": "2026-11-03"
+  },
+  {
+    "id": "ai-work-bern-meetup-4-2026",
+    "title": "AI@Work Meetup #4 — SIMAP-Screening und eine Firma aus KI-Agenten",
+    "date": "2026-11-05",
+    "endDate": "2026-11-05",
+    "time": "17:45–20:00",
+    "city": "Bern",
+    "venue": "bespinian, Kramgasse 68",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI agents",
+      "AI adoption"
+    ],
+    "organiser": "AI@Work",
+    "cost": "Free",
+    "url": "https://www.meetup.com/ai-work/events/317007377/",
+    "source": "Meetup",
+    "blurb": "Bern's practitioner meetup for AI in everyday work, with a talk on intelligent screening of SIMAP public-procurement notices and a second on running a company built largely out of AI agents (in German).",
+    "firstSeen": "2026-11-04"
+  },
+  {
+    "id": "eqs-connect-zurich-2026",
+    "title": "EQS Connect Zurich 2026 — From Compliance Activity to Compliance Impact",
+    "date": "2026-11-05",
+    "endDate": "2026-11-05",
+    "time": "13:30–18:00 (networking dinner from 18:00)",
+    "city": "Zurich",
+    "venue": "Rooftopevents, Talacker 50",
+    "format": "Conference",
+    "topics": [
+      "AI governance",
+      "Data governance",
+      "Responsible AI"
+    ],
+    "organiser": "EQS Group",
+    "cost": "Not listed (register interest; places strictly limited)",
+    "url": "https://www.eqs.com/compliance-events/connect-zrh-2026/",
+    "source": "eqs.com",
+    "blurb": "An English-language afternoon for compliance, legal and data leaders built entirely around AI: an opening keynote on what AI is doing to judgement, a keynote on Swiss exposure to international AI governance expectations, panels on shadow AI and defensible decisions, and a workshop on where the human–AI boundary should sit.",
+    "firstSeen": "2026-10-23"
+  },
+  {
+    "id": "fabric-user-group-switzerland-88th-online-2026",
+    "title": "Zürich — 88th Fabric User Group (online)",
+    "date": "2026-11-05",
+    "endDate": "2026-11-05",
+    "time": "17:00",
+    "city": "Online (CH)",
+    "venue": "Online",
+    "format": "Webinar",
+    "topics": [
+      "Microsoft Fabric",
+      "Power BI",
+      "Data platform"
+    ],
+    "organiser": "Microsoft Fabric User Group Switzerland",
+    "cost": "Free",
+    "url": "https://www.meetup.com/microsoft-fabric-user-group-switzerland/events/317100946/",
+    "source": "Meetup",
+    "blurb": "The Swiss Fabric user group’s monthly online session: the latest Fabric news, then Franco on automating semantic model health checks with a Fabric notebook, the Best Practice Analyzer, Memory Analyzer and DAX INFO views, writing results to a Lakehouse to track model quality and memory over time.",
+    "firstSeen": "2026-10-23"
+  },
+  {
+    "id": "gdg-cloud-zurich-tech-talks-38-2026",
+    "title": "GDG Cloud Zürich: Tech Talks #38",
+    "date": "2026-11-05",
+    "endDate": "2026-11-05",
+    "time": "17:25–21:00",
+    "city": "Zurich",
+    "venue": "Google Switzerland, Zurich (address on registration)",
+    "format": "Meetup",
+    "topics": [
+      "Google Cloud",
+      "Applied AI",
+      "Data platform"
+    ],
+    "organiser": "GDG Cloud Zürich",
+    "cost": "Free (host approval required)",
+    "url": "https://luma.com/mq18d987",
+    "source": "luma.com",
+    "blurb": "Two evening talks on Google Cloud and Google DeepMind at Google’s Zurich office, followed by a sponsored apéro — note that doors close at 17:55 and late entry is not possible.",
+    "firstSeen": "2026-10-12"
+  },
+  {
+    "id": "physical-ai-meetup-zurich-2026",
+    "title": "Physical AI Meetup — Zurich Edition",
+    "date": "2026-11-05",
+    "endDate": "2026-11-05",
+    "time": "18:00–21:00",
+    "city": "Zurich",
+    "venue": "J floor, Josefstrasse 206",
+    "format": "Meetup",
+    "topics": [
+      "Embodied AI",
+      "Robotics",
+      "Applied AI"
+    ],
+    "organiser": "{Tech: Europe} with Modal",
+    "cost": "Free (host approval required)",
+    "url": "https://luma.com/physical-ai-zur",
+    "source": "luma.com",
+    "blurb": "An evening of 15-minute lightning talks and live demos on what it takes to move robots out of demo videos and into factories and warehouses, with speakers from rerun, Cerrion, Sereact and Modal.",
+    "firstSeen": "2026-10-30"
+  },
+  {
+    "id": "saic-040-ai-agent-ready-geneva-2026",
+    "title": "SAIC #040: From Prototype to Production — Knowing When Your AI Agent Is Ready",
+    "date": "2026-11-05",
+    "endDate": "2026-11-05",
+    "time": "18:30–22:00",
+    "city": "Geneva",
+    "venue": "Tesla, Centre Confédération",
+    "format": "Meetup",
+    "topics": [
+      "AI agents",
+      "Applied AI",
+      "LLMs"
+    ],
+    "organiser": "Switzerland AI Community",
+    "cost": "Free (registration required)",
+    "url": "https://luma.com/6mvdze8i",
+    "source": "switzerland-ai.com",
+    "blurb": "How to tell whether an AI agent is ready for real users: evaluation with golden datasets, comparing models and prompts, end-to-end production tracing and tying agent performance to business metrics, worked through a multilingual support agent built with LangGraph, MCP tools and RAG.",
+    "firstSeen": "2026-10-30"
+  },
+  {
+    "id": "snowflake-forum-zurich-2026",
+    "title": "Snowflake Forum Zurich 2026",
+    "date": "2026-11-05",
+    "endDate": "2026-11-05",
+    "time": "09:00–19:00",
+    "city": "Zurich-Flughafen",
+    "venue": "The Circle Convention Center, The Circle 27",
+    "format": "Conference",
+    "topics": [
+      "Data platform",
+      "Governance"
+    ],
+    "organiser": "Snowflake",
+    "cost": "Free",
+    "url": "https://www.snowflake.com/events/snowflake-forum-zurich-2026/",
+    "source": "snowflake.com",
+    "blurb": "Free data-platform conference bringing together Swiss data teams and partners.",
+    "firstSeen": "2026-09-03"
   }
 ]

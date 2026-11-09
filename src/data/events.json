@@ -19,173 +19,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "eqs-connect-zurich-2026",
-    "title": "EQS Connect Zurich 2026 — From Compliance Activity to Compliance Impact",
-    "date": "2026-11-05",
-    "endDate": "2026-11-05",
-    "time": "13:30–18:00 (networking dinner from 18:00)",
-    "city": "Zurich",
-    "venue": "Rooftopevents, Talacker 50",
-    "format": "Conference",
-    "topics": [
-      "AI governance",
-      "Data governance",
-      "Responsible AI"
-    ],
-    "organiser": "EQS Group",
-    "cost": "Not listed (register interest; places strictly limited)",
-    "url": "https://www.eqs.com/compliance-events/connect-zrh-2026/",
-    "source": "eqs.com",
-    "blurb": "An English-language afternoon for compliance, legal and data leaders built entirely around AI: an opening keynote on what AI is doing to judgement, a keynote on Swiss exposure to international AI governance expectations, panels on shadow AI and defensible decisions, and a workshop on where the human–AI boundary should sit.",
-    "firstSeen": "2026-10-23"
-  },
-  {
-    "id": "fabric-user-group-switzerland-88th-online-2026",
-    "title": "Zürich — 88th Fabric User Group (online)",
-    "date": "2026-11-05",
-    "endDate": "2026-11-05",
-    "time": "17:00",
-    "city": "Online (CH)",
-    "venue": "Online",
-    "format": "Webinar",
-    "topics": [
-      "Microsoft Fabric",
-      "Power BI",
-      "Data platform"
-    ],
-    "organiser": "Microsoft Fabric User Group Switzerland",
-    "cost": "Free",
-    "url": "https://www.meetup.com/microsoft-fabric-user-group-switzerland/events/317100946/",
-    "source": "Meetup",
-    "blurb": "The Swiss Fabric user group’s monthly online session: the latest Fabric news, then Franco on automating semantic model health checks with a Fabric notebook, the Best Practice Analyzer, Memory Analyzer and DAX INFO views, writing results to a Lakehouse to track model quality and memory over time.",
-    "firstSeen": "2026-10-23"
-  },
-  {
-    "id": "gdg-cloud-zurich-tech-talks-38-2026",
-    "title": "GDG Cloud Zürich: Tech Talks #38",
-    "date": "2026-11-05",
-    "endDate": "2026-11-05",
-    "time": "17:25–21:00",
-    "city": "Zurich",
-    "venue": "Google Switzerland, Zurich (address on registration)",
-    "format": "Meetup",
-    "topics": [
-      "Google Cloud",
-      "Applied AI",
-      "Data platform"
-    ],
-    "organiser": "GDG Cloud Zürich",
-    "cost": "Free (host approval required)",
-    "url": "https://luma.com/mq18d987",
-    "source": "luma.com",
-    "blurb": "Two evening talks on Google Cloud and Google DeepMind at Google’s Zurich office, followed by a sponsored apéro — note that doors close at 17:55 and late entry is not possible.",
-    "firstSeen": "2026-10-12"
-  },
-  {
-    "id": "physical-ai-meetup-zurich-2026",
-    "title": "Physical AI Meetup — Zurich Edition",
-    "date": "2026-11-05",
-    "endDate": "2026-11-05",
-    "time": "18:00–21:00",
-    "city": "Zurich",
-    "venue": "J floor, Josefstrasse 206",
-    "format": "Meetup",
-    "topics": [
-      "Embodied AI",
-      "Robotics",
-      "Applied AI"
-    ],
-    "organiser": "{Tech: Europe} with Modal",
-    "cost": "Free (host approval required)",
-    "url": "https://luma.com/physical-ai-zur",
-    "source": "luma.com",
-    "blurb": "An evening of 15-minute lightning talks and live demos on what it takes to move robots out of demo videos and into factories and warehouses, with speakers from rerun, Cerrion, Sereact and Modal.",
-    "firstSeen": "2026-10-30"
-  },
-  {
-    "id": "saic-040-ai-agent-ready-geneva-2026",
-    "title": "SAIC #040: From Prototype to Production — Knowing When Your AI Agent Is Ready",
-    "date": "2026-11-05",
-    "endDate": "2026-11-05",
-    "time": "18:30–22:00",
-    "city": "Geneva",
-    "venue": "Tesla, Centre Confédération",
-    "format": "Meetup",
-    "topics": [
-      "AI agents",
-      "Applied AI",
-      "LLMs"
-    ],
-    "organiser": "Switzerland AI Community",
-    "cost": "Free (registration required)",
-    "url": "https://luma.com/6mvdze8i",
-    "source": "switzerland-ai.com",
-    "blurb": "How to tell whether an AI agent is ready for real users: evaluation with golden datasets, comparing models and prompts, end-to-end production tracing and tying agent performance to business metrics, worked through a multilingual support agent built with LangGraph, MCP tools and RAG.",
-    "firstSeen": "2026-10-30"
-  },
-  {
-    "id": "snowflake-forum-zurich-2026",
-    "title": "Snowflake Forum Zurich 2026",
-    "date": "2026-11-05",
-    "endDate": "2026-11-05",
-    "time": "09:00–19:00",
-    "city": "Zurich-Flughafen",
-    "venue": "The Circle Convention Center, The Circle 27",
-    "format": "Conference",
-    "topics": [
-      "Data platform",
-      "Governance"
-    ],
-    "organiser": "Snowflake",
-    "cost": "Free",
-    "url": "https://www.snowflake.com/events/snowflake-forum-zurich-2026/",
-    "source": "snowflake.com",
-    "blurb": "Free data-platform conference bringing together Swiss data teams and partners.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "ai-safety-meetup-geneva-2026",
-    "title": "AI Safety Meetup Geneva — First Session",
-    "date": "2026-11-05",
-    "endDate": "2026-11-05",
-    "time": "18:30",
-    "city": "Geneva",
-    "venue": "Impact Hub Geneva, Rue Fendt 1",
-    "format": "Meetup",
-    "topics": [
-      "AI safety",
-      "AI governance",
-      "AI community"
-    ],
-    "organiser": "AI Safety Meetup Geneva",
-    "cost": "Free (event full, waitlist)",
-    "url": "https://luma.com/bb1gvqbb",
-    "source": "luma.com",
-    "blurb": "The opening session of a new Geneva AI safety group, deliberately mixing technical, governance and UN/NGO people: short introductions, flash talks and a round table, with paper clubs planned for later meetings.",
-    "firstSeen": "2026-11-03"
-  },
-  {
-    "id": "ai-work-bern-meetup-4-2026",
-    "title": "AI@Work Meetup #4 — SIMAP-Screening und eine Firma aus KI-Agenten",
-    "date": "2026-11-05",
-    "endDate": "2026-11-05",
-    "time": "17:45–20:00",
-    "city": "Bern",
-    "venue": "bespinian, Kramgasse 68",
-    "format": "Meetup",
-    "topics": [
-      "Applied AI",
-      "AI agents",
-      "AI adoption"
-    ],
-    "organiser": "AI@Work",
-    "cost": "Free",
-    "url": "https://www.meetup.com/ai-work/events/317007377/",
-    "source": "Meetup",
-    "blurb": "Bern's practitioner meetup for AI in everyday work, with a talk on intelligent screening of SIMAP public-procurement notices and a second on running a company built largely out of AI agents (in German).",
-    "firstSeen": "2026-11-04"
-  },
-  {
     "id": "ai-in-biomedicine-forum-lugano-2026",
     "title": "Artificial Intelligence in Biomedicine Forum 2026",
     "date": "2026-11-06",
@@ -769,6 +602,27 @@
     "firstSeen": "2026-11-08"
   },
   {
+    "id": "zurich-ai-safety-steering-vectors-2026",
+    "title": "AI Safety Weekly: Steering Vectors & Input Optimisation",
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "time": "18:30–20:00",
+    "city": "Zurich",
+    "venue": "ETH Zurich Main Building, Rämistrasse 101, room HG D3.3",
+    "format": "Meetup",
+    "topics": [
+      "AI safety",
+      "Interpretability",
+      "AI research"
+    ],
+    "organiser": "Zurich AI Safety",
+    "cost": "Free (registration required)",
+    "url": "https://luma.com/zais-42em",
+    "source": "luma.com",
+    "blurb": "A bachelor’s thesis presentation on automatically optimising a prompt to reproduce the effect of a steering vector, and whether such an input still works on models you cannot inspect from the inside — followed by wider interpretability discussion and food.",
+    "firstSeen": "2026-11-09"
+  },
+  {
     "id": "analytics-roundtable-zurich-eth-data-stack-2026",
     "title": "Inside ETH Zurich’s Data Stack: Analytics for Universities",
     "date": "2026-11-11",
@@ -1104,6 +958,48 @@
     "firstSeen": "2026-11-06"
   },
   {
+    "id": "eth-ai-club-demo-night-2-zurich-2026",
+    "title": "ETH AI Club DEMO NIGHT #2",
+    "date": "2026-11-12",
+    "endDate": "2026-11-12",
+    "time": "18:00–21:00",
+    "city": "Zurich",
+    "venue": "Swisscom Ventures, Zurich (address on registration)",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI community",
+      "Building with AI"
+    ],
+    "organiser": "ETH AI Club",
+    "cost": "Free (approx. 50 places, host approval required)",
+    "url": "https://luma.com/gbol9hih",
+    "source": "luma.com",
+    "blurb": "Five minutes live, no slides: ETH AI Club members demo AI side projects they built for fun or to fix a real problem, then take questions and keep talking over apéro at Swisscom Ventures.",
+    "firstSeen": "2026-11-09"
+  },
+  {
+    "id": "staatslabor-prompting-public-administration-zurich-2026",
+    "title": "Effizienter Arbeiten mit KI-Tools wie ChatGPT: Prompting für die öffentliche Verwaltung",
+    "date": "2026-11-12",
+    "endDate": "2026-11-12",
+    "time": "09:15–17:00",
+    "city": "Zurich",
+    "venue": "Technopark Zürich, Technoparkstrasse 1",
+    "format": "Workshop",
+    "topics": [
+      "Applied AI",
+      "Public sector",
+      "AI adoption"
+    ],
+    "organiser": "staatslabor with AI Bridge",
+    "cost": "CHF 650 excl. VAT (sold out)",
+    "url": "https://luma.com/11wswtwu",
+    "source": "luma.com",
+    "blurb": "A German-language day course for public-administration staff on getting useful work out of tools like ChatGPT — prompting technique, where the tools fail, and what to watch for with official data. Currently sold out.",
+    "firstSeen": "2026-11-09"
+  },
+  {
     "id": "swiss-robotics-day-2026",
     "title": "Swiss Robotics Day 2026",
     "date": "2026-11-13",
@@ -1144,6 +1040,26 @@
     "source": "luma.com",
     "blurb": "A four-hour German-language workshop for non-programmers in management roles: build your own tool with Claude Code, then cover Skills and Projects for reuse plus data protection and model choice. Five to ten participants.",
     "firstSeen": "2026-11-03"
+  },
+  {
+    "id": "coffee-and-prompt-011-geneva-2026",
+    "title": "Coffee & Prompt #011",
+    "date": "2026-11-15",
+    "endDate": "2026-11-15",
+    "city": "Geneva",
+    "venue": "Exponent, Geneva",
+    "format": "Networking",
+    "topics": [
+      "Applied AI",
+      "Building with AI",
+      "AI community"
+    ],
+    "organiser": "Switzerland AI Community",
+    "cost": "Not listed (registration required)",
+    "url": "https://luma.com/ulkv8sh8",
+    "source": "switzerland-ai.com",
+    "blurb": "The Geneva builders’ weekend coworking morning: bring an AI project or side hustle, work alongside others, and optionally show a feature or a lesson learned for feedback from the room.",
+    "firstSeen": "2026-11-09"
   },
   {
     "id": "product-academy-hype-vs-shipped-zurich-2026",
@@ -1583,6 +1499,47 @@
     "firstSeen": "2026-10-26"
   },
   {
+    "id": "digital-economy-award-2026-zurich",
+    "title": "Digital Economy Award 2026",
+    "date": "2026-11-19",
+    "endDate": "2026-11-19",
+    "city": "Zurich",
+    "venue": "Hallenstadion, Wallisellenstrasse 45",
+    "format": "Conference",
+    "topics": [
+      "Digital economy",
+      "AI adoption",
+      "Data leadership"
+    ],
+    "organiser": "Swiss Digital Economy Award AG with digitalswitzerland",
+    "cost": "Not listed (tickets by request)",
+    "url": "https://www.digitaleconomyaward.ch/en/",
+    "source": "digitalswitzerland.com",
+    "blurb": "Switzerland’s digital-economy awards at the Hallenstadion: an Executive Afternoon of nine partner-hosted sessions on AI, customer relationships, skills and stablecoins, followed by the Award Night for categories from Pioneer of the Year to NextGen Hero.",
+    "firstSeen": "2026-11-09"
+  },
+  {
+    "id": "conference-next-design-x-ia-bussigny-2026",
+    "title": "Conférence Next — Design x IA",
+    "date": "2026-11-19",
+    "endDate": "2026-11-19",
+    "time": "14:00–17:30",
+    "city": "Bussigny (Lausanne)",
+    "venue": "QG Center, Route de la Chaux 4 (QoQa)",
+    "format": "Conference",
+    "topics": [
+      "Applied AI",
+      "AI agents",
+      "Design systems"
+    ],
+    "organiser": "Labster.io",
+    "cost": "CHF 65 (sold out, waitlist)",
+    "url": "https://luma.com/yl9vohy8",
+    "source": "luma.com",
+    "blurb": "An afternoon on what AI has actually changed in design work: a study of how 100 designers use it, prototyping with AI agents directly against a codebase, and how Swissquote rebuilt its design system with AI — then networking drinks.",
+    "firstSeen": "2026-11-09"
+  },
+  {
     "id": "agentic-engineering-days-zurich-2026",
     "title": "Agentic Engineering Days Zurich 2026",
     "date": "2026-11-20",
@@ -1832,6 +1789,27 @@
     "firstSeen": "2026-11-06"
   },
   {
+    "id": "zurich-ai-safety-finding-your-way-2026",
+    "title": "AI Safety Weekly: Finding Your Way Into AI Safety",
+    "date": "2026-11-24",
+    "endDate": "2026-11-24",
+    "time": "18:30–20:00",
+    "city": "Zurich",
+    "venue": "ETH Zurich Main Building, Rämistrasse 101, room HG D3.3",
+    "format": "Meetup",
+    "topics": [
+      "AI safety",
+      "AI governance",
+      "Careers"
+    ],
+    "organiser": "Zurich AI Safety",
+    "cost": "Free (host approval required)",
+    "url": "https://luma.com/zais-nh4g",
+    "source": "luma.com",
+    "blurb": "A map of the routes into AI safety and governance work — fellowships, research programmes, who is eligible, when they open and how they are funded — with people who have been through them answering questions. No particular background needed.",
+    "firstSeen": "2026-11-09"
+  },
+  {
     "id": "geneva-ai-conference-2026",
     "title": "The Geneva AI Conference 2026",
     "date": "2026-11-25",
@@ -1999,6 +1977,27 @@
     "firstSeen": "2026-11-07"
   },
   {
+    "id": "staatslabor-advanced-prompting-lucerne-2026",
+    "title": "Bessere Ergebnisse mit generativer KI: Advanced Prompting für die öffentliche Verwaltung",
+    "date": "2026-11-25",
+    "endDate": "2026-11-25",
+    "time": "09:15–17:00",
+    "city": "Lucerne",
+    "venue": "Hochschule Luzern, Walter-von-Moos-Promenade 1",
+    "format": "Workshop",
+    "topics": [
+      "Applied AI",
+      "Public sector",
+      "AI adoption"
+    ],
+    "organiser": "staatslabor with AI Bridge",
+    "cost": "CHF 690 excl. VAT",
+    "url": "https://luma.com/0npsqf6h",
+    "source": "luma.com",
+    "blurb": "A German-language follow-on course for public-sector staff who already use generative AI daily: controlling output more precisely, building reusable prompt templates, and setting up your own CustomGPT or Copilot agent against your own use cases.",
+    "firstSeen": "2026-11-09"
+  },
+  {
     "id": "robot-learning-paper-club-world-models-zurich-2026",
     "title": "Robot Learning Paper Club — The World Model Edition",
     "date": "2026-11-26",
@@ -2060,6 +2059,27 @@
     "source": "Meetup",
     "blurb": "A French-language Azure evening in Geneva: what AI has really changed about Microsoft recruitment and how candidates stay visible, then Azure Local for running Azure services inside a sovereign private cloud, with a live Foundry Local demo — quiz and networking afterwards.",
     "firstSeen": "2026-11-06"
+  },
+  {
+    "id": "hsg-fintech-summit-2026-zurich",
+    "title": "HSG Fintech Summit 2026",
+    "date": "2026-11-26",
+    "endDate": "2026-11-26",
+    "time": "09:00–20:30",
+    "city": "Zurich",
+    "venue": "UBS Konferenzgebäude Grünenhof, Nüschelerstrasse 9",
+    "format": "Conference",
+    "topics": [
+      "Applied AI",
+      "Financial services",
+      "AI research"
+    ],
+    "organiser": "University of St.Gallen (HSG)",
+    "cost": "Not listed (separate ticket categories for HSG alumni, faculty and students)",
+    "url": "https://luma.com/widzr06p",
+    "source": "luma.com",
+    "blurb": "The University of St.Gallen’s fintech day, themed this year on what AI does to finance: keynotes on AI in financial intermediation and asset management, research talks on model collapse, AI errors and moral hazard, a panel on AI’s effect on markets, and a closing apéro.",
+    "firstSeen": "2026-11-09"
   },
   {
     "id": "after-microsoft-ignite-special-zurich-2026",
@@ -2185,6 +2205,26 @@
     "source": "Meetup",
     "blurb": "A deliberately small room of founders and executives comparing how they actually use AI: an invited talk, then group conversations on what worked, what failed and what they are trying next, followed by open networking.",
     "firstSeen": "2026-11-06"
+  },
+  {
+    "id": "databricks-executive-roundtable-zurich-2026",
+    "title": "Databricks Executive Roundtable — Data + AI World Tour Zurich",
+    "date": "2026-11-30",
+    "endDate": "2026-11-30",
+    "city": "Zurich",
+    "venue": "Restaurant Haute, Talstrasse 65",
+    "format": "Networking",
+    "topics": [
+      "Databricks",
+      "Data leadership",
+      "AI strategy"
+    ],
+    "organiser": "Databricks",
+    "cost": "Not listed (Executive Program pass, apply to attend)",
+    "url": "https://dataaisummit.databricks.com/flow/db/wt26zrh/regexecforum/page/landing",
+    "source": "databricks.com",
+    "blurb": "An invitation-based dinner and discussion for data and technology executives the evening before the Data + AI World Tour, with a welcome from Databricks leadership and a Swiss customer segment; sessions and speakers are still to be announced.",
+    "firstSeen": "2026-11-09"
   },
   {
     "id": "airistoteles-4-hslu-lucerne-2026",
