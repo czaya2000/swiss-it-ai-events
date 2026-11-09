@@ -96,6 +96,11 @@ build actually works first.
   create a second email with the same week subject (`--replace` overwrites a
   draft). The workflow runs it on Mondays after the deploy, with the
   `BUTTONDOWN_API_KEY` secret (skips if the secret is missing).
+- Size: Gmail clips emails over ~102 KB, and a reader with no filters gets every
+  row. "New this week" is always one-line rows; the top section uses the fullest
+  layout (blurbs → no blurbs → one-line) that keeps that reader under 90 KB, and
+  the dry run prints which one and the size. `--from=YYYY-MM-DD` skips events
+  already over when a draft goes out late. Keep row markup lean.
 - The email is raw HTML with inline styles copied from `src/styles/theme.css`;
   keep the `buttondown-editor-mode: plaintext` marker, or Buttondown's visual
   editor strips the styling. Buttondown's email accent colour must stay black:
