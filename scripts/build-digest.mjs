@@ -154,11 +154,11 @@ const spine = (iso) => ({
 // Kept lean on purpose: Gmail clips emails over ~102 KB, and a reader with no
 // filters gets every row. Colour and line-height come from the wrapper and the
 // table; font-family stays on each cell because Outlook doesn't inherit it.
-function renderEvent(e, { dot = false } = {}) {
+const NEW_DOT = `<span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${T.accent};vertical-align:middle;margin:0 8px 3px 0;"></span>`;
+
+function renderEvent(e, { dot = false, blurb = true } = {}) {
 	const s = spine(e.date);
-	const newDot = dot
-		? `<span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${T.accent};vertical-align:middle;margin:0 8px 3px 0;"></span>`
-		: '';
+	const newDot = dot ? NEW_DOT : '';
 	const end = e.endDate && e.endDate !== e.date ? spine(e.endDate) : null;
 	const through = end ? `<br>to ${end.day} ${end.month}` : '';
 	const free = /\bfree\b/i.test(e.cost);
@@ -176,18 +176,17 @@ function renderEvent(e, { dot = false } = {}) {
 </td><td valign="top" style="padding:18px 0;${td}">
 ${newDot}<a href="${link(e)}" style="font-size:18px;font-weight:500;line-height:1.28;letter-spacing:-0.01em;color:${T.ink};text-decoration:none;">${esc(e.title)}</a>
 <div style="font-size:14px;color:${T.ink2};margin-top:6px;">${meta}</div>
-<div style="font-size:13px;color:${T.muted};margin-top:3px;">${esc(shortBlurb(e.blurb))}</div>
-<div style="font-size:13px;margin-top:10px;">${[format, cost].filter(Boolean).join('&nbsp;&nbsp;')}</div>
+${blurb ? `<div style="font-size:13px;color:${T.muted};margin-top:3px;">${esc(shortBlurb(e.blurb))}</div>\n` : ''}<div style="font-size:13px;margin-top:10px;">${[format, cost].filter(Boolean).join('&nbsp;&nbsp;')}</div>
 </td></tr>`;
 }
 
 // The later section uses one line per event: date · title, then place · type.
 // These are weeks away, so the blurb lives on the event page.
-function renderCompact(e) {
+function renderCompact(e, { dot = false } = {}) {
 	const s = spine(e.date);
 	const city = e.city.replace(/\s*\(.*\)$/, '');
 	return `<tr><td style="padding:10px 0;border-bottom:1px solid ${T.border};font-family:${T.font};font-size:15px;">
-<span style="color:${T.muted};white-space:nowrap;">${s.weekday} ${s.day} ${s.month}</span>&nbsp; <a href="${link(e)}" style="color:${T.ink};font-weight:500;text-decoration:none;">${esc(e.title)}</a>
+<span style="color:${T.muted};white-space:nowrap;">${s.weekday} ${s.day} ${s.month}</span>&nbsp; ${dot ? NEW_DOT : ''}<a href="${link(e)}" style="color:${T.ink};font-weight:500;text-decoration:none;">${esc(e.title)}</a>
 <div style="font-size:13px;color:${T.muted};">${esc(city)} · ${esc(e.format)}</div>
 </td></tr>`;
 }
@@ -230,7 +229,8 @@ function section(title, note, events, empty, opts = {}) {
 ${p(note, `font-size:14px;color:${T.muted};`)}
 </div>`;
 	const fallback = `<tr><td colspan="2" style="padding:18px 0;border-bottom:1px solid ${T.border};">${p(empty, `color:${T.ink2};`)}</td></tr>`;
-	const row = (e) => (opts.compact ? renderCompact(e) : renderEvent(e, { dot: Boolean(opts.dot) && isNew(e) }));
+	const look = (e) => ({ dot: Boolean(opts.dot) && isNew(e), blurb: opts.blurb !== false });
+	const row = (e) => (opts.compact ? renderCompact(e, look(e)) : renderEvent(e, look(e)));
 	const list = events.map((e) => wrap(e, row(e))).join('\n');
 	const any = anyMatchCondition(events);
 	const rows = events.length === 0 ? fallback : `{% if ${any} %}\n${list}\n{% else %}\n${fallback}\n{% endif %}`;
@@ -240,31 +240,36 @@ ${rows}
 </table>`;
 }
 
-const sections = [
-	section(
-		'Next two weeks',
-		`${datePart(from, { day: 'numeric', month: 'short' })} – ${datePart(horizon, { day: 'numeric', month: 'short' })}. <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${T.accent};vertical-align:middle;margin:0 2px 2px 4px;"></span> new this week.`,
-		soon,
-		'Nothing in your cities and event types in the next two weeks.',
-		{ dot: true },
-	),
-	section(
-		'New this week',
-		'Added since last Monday, happening after the next two weeks.',
-		fresh,
-		'Nothing new for your cities and event types this week.',
-		{ compact: true },
-	),
-].join('\n');
-
 const outro = `<div style="padding:28px 0 8px;">
 ${p(a(HOME, 'See all upcoming events'), 'font-weight:500;')}
 ${p(a('{{ manage_subscription_url }}', 'Change your cities and event types', T.muted), `margin-top:10px;font-size:13px;color:${T.muted};`)}
 </div>`;
 
-// The marker keeps the draft in Buttondown's plain (markdown) editor, which
-// passes raw HTML through. Its visual editor drops unsupported attributes.
-const body = `<!-- buttondown-editor-mode: plaintext -->
+// The top section comes in three sizes, from full rows with blurbs down to
+// one-line rows. The fullest one that fits the budget wins.
+const TOP_LOOKS = [{ blurb: true }, { blurb: false }, { compact: true }];
+const BUDGET_KB = 90;
+
+function buildBody(top) {
+	const sections = [
+		section(
+			'Next two weeks',
+			`${datePart(from, { day: 'numeric', month: 'short' })} – ${datePart(horizon, { day: 'numeric', month: 'short' })}. <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${T.accent};vertical-align:middle;margin:0 2px 2px 4px;"></span> new this week.`,
+			soon,
+			'Nothing in your cities and event types in the next two weeks.',
+			{ dot: true, ...top },
+		),
+		section(
+			'New this week',
+			'Added since last Monday, happening after the next two weeks.',
+			fresh,
+			'Nothing new for your cities and event types this week.',
+			{ compact: true },
+		),
+	].join('\n');
+	// The marker keeps the draft in Buttondown's plain (markdown) editor, which
+	// passes raw HTML through. Its visual editor drops unsupported attributes.
+	return `<!-- buttondown-editor-mode: plaintext -->
 <div style="background:${T.bg};padding:0 20px 24px;">
 <div style="max-width:600px;margin:0 auto;font-family:${T.font};color:${T.ink};">
 ${masthead}
@@ -273,6 +278,15 @@ ${sections}
 ${outro}
 </div>
 </div>`;
+}
+
+// Worst case is a reader with no filters, who sees every row. Template tags
+// vanish when Buttondown renders, so leave them out of the count.
+const sizeKb = (html) => Math.round(Buffer.byteLength(html.replace(/^\{%.*%\}$/gm, '')) / 1024);
+let level = 0;
+let body = buildBody(TOP_LOOKS[0]);
+while (sizeKb(body) > BUDGET_KB && level < TOP_LOOKS.length - 1) body = buildBody(TOP_LOOKS[++level]);
+const fullKb = sizeKb(body);
 
 console.log(`Subject: ${subject}`);
 const show = (e) =>
@@ -282,11 +296,9 @@ soon.forEach(show);
 console.log(`New this week, later (firstSeen after ${since}): ${fresh.length}`);
 fresh.forEach(show);
 
-// Worst case is a reader with no filters, who sees every row. Template tags
-// vanish when Buttondown renders, so leave them out of the count.
-const fullKb = Math.round(Buffer.byteLength(body.replace(/^\{%.*%\}$/gm, '')) / 1024);
-console.log(`Size for a reader with no filters: ~${fullKb} KB (Gmail clips above ~102 KB)`);
-if (fullKb > 90) console.log('WARNING: close to or over Gmail\'s clipping limit. Trim before sending.');
+const lookName = ['full rows with blurbs', 'full rows, no blurbs', 'one-line rows'][level];
+console.log(`Top section: ${lookName}. Size for a reader with no filters: ~${fullKb} KB (Gmail clips above ~102 KB)`);
+if (fullKb > BUDGET_KB) console.log("WARNING: still over budget with one-line rows. Gmail may clip it for readers with no filters.");
 
 if (dryRun) {
 	console.log('\n----- body -----\n' + body);
