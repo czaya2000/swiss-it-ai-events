@@ -21,8 +21,10 @@ run on demand via **workflow_dispatch**. Nothing about it depends on a personal 
 - Daily since 2026-11-02 (Mon/Wed/Fri before). The homepage subline says "checked
   daily" (`SITE_SUBHEADLINE` in `src/lib/events.ts`), so if the cron goes back to fewer
   days, change that wording too.
-- The timing is deliberate: it lands before the n8n social workflow's 08:00 run, so the
-  morning post draws on a feed refreshed that same morning.
+- The 05:00 cron was meant to land before the n8n social workflow's 08:00 run, but in
+  practice GitHub starts scheduled runs 4–8 hours late (09:30–13:30 UTC). Accepted as is
+  (2026-11-10): n8n was an experiment and is not running. If it comes back, start the
+  refresh from outside (e.g. a Cloudflare Worker cron calling workflow_dispatch).
 - Cost: each pass is roughly $4.60–5.60 equivalent on Opus 5 (30 Oct run: $5.64, 142
   turns), charged to the Claude subscription, so daily is ~$35–40/week equivalent. If
   it needs trimming, cut `SOURCES.md`; most turns are per-source checks.
@@ -115,6 +117,8 @@ build actually works first.
   a new tag needs a line there. Paste the whole file back after editing.
 
 ## Social pipeline (do not break these two contracts)
+n**Status (2026-11-10): n8n is paused; it was an experiment and is not running.** Keep the
+contracts below intact anyway so it can be switched back on.
 
 `src/pages/social-feed.json.ts` -> `/social-feed.json` and
 `src/pages/card/[format]/[slug].astro` -> `/card/{wide,square,story}/<slug>/`
