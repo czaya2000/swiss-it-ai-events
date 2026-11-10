@@ -117,7 +117,8 @@ build actually works first.
   a new tag needs a line there. Paste the whole file back after editing.
 
 ## Social pipeline (do not break these two contracts)
-n**Status (2026-11-10): n8n is paused; it was an experiment and is not running.** Keep the
+
+**Status (2026-11-10): n8n is paused; it was an experiment and is not running.** Keep the
 contracts below intact anyway so it can be switched back on.
 
 `src/pages/social-feed.json.ts` -> `/social-feed.json` and
