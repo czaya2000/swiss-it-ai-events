@@ -14,7 +14,7 @@ if the repo is renamed or the custom domain changes.
 
 One scheduled GitHub Actions job does everything: researches new/changed events,
 updates `src/data/events.json` and `src/data/meta.json`, validates, pushes to `main`,
-builds, and force-pushes `dist/` to the `gh-pages` branch. It runs **every day** at
+builds, and publishes `dist/` to Pages via a separate `deploy` job (`actions/deploy-pages`). It runs **every day** at
 05:00 UTC (07:00 Zurich in summer, 06:00 in winter — GitHub cron has no DST) and can be
 run on demand via **workflow_dispatch**. Nothing about it depends on a personal machine.
 
@@ -29,11 +29,15 @@ run on demand via **workflow_dispatch**. Nothing about it depends on a personal 
 - **Use Opus 5.** Sonnet 5 managed one proper pass in three attempts; the others gave up
   after ~1 minute and 10 turns having checked almost nothing and declared no changes.
 
-- Research, build and deploy are deliberately **one job**. GitHub does not trigger
-  workflows from commits made with the default `GITHUB_TOKEN`, so a split
-  refresh-then-deploy pair would never fire the second half.
-- Pages serves from the **`gh-pages` branch** (legacy branch source), not from Actions.
-  `public/CNAME` and `public/.nojekyll` are copied into `dist/` by the build.
+- Research, build and deploy are deliberately **one workflow run** (the `deploy` job
+  just waits on `refresh` via `needs`). GitHub does not trigger workflows from commits
+  made with the default `GITHUB_TOKEN`, so a separate deploy workflow would never fire.
+- Pages publishes from **GitHub Actions** (Settings → Pages → Source), since 2026-11-10:
+  the branch-based publish hung at "syncing_files" three runs in a row. The `deploy` job
+  needs the `github-pages` environment, which allows `main` and `gh-pages`. The job still
+  force-pushes `dist/` to `gh-pages` as a rollback: switch the source back to that branch.
+  Manual runs take a `deploy_only` input to rebuild and publish without researching.
+  `public/CNAME` is copied into `dist/` by the build (used by the `gh-pages` rollback).
 - Node is pinned to **22** (`engines: >=22.12.0`). The previous workflow was deleted in
   `e8109ba` because it defaulted to Node 20 and failed on every push.
 - `scripts/validate-events.mjs` (`npm run validate`) gates the push — it catches what
