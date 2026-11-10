@@ -20,10 +20,16 @@ on:
     # draws on a feed refreshed the same morning rather than the previous run's.
     - cron: "0 5 * * *"
   workflow_dispatch:
+    inputs:
+      deploy_only:
+        description: "Skip research; just build and deploy what's on main"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
   id-token: write
+  pages: write
 
 concurrency:
   group: daily-refresh
@@ -50,9 +56,11 @@ jobs:
         run: npm ci
 
       - name: Install Chromium for the Meetup scraper
+        if: ${{ !inputs.deploy_only }}
         run: npx playwright install --with-deps chromium
 
       - name: Research and update event data
+        if: ${{ !inputs.deploy_only }}
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
@@ -168,7 +176,7 @@ jobs:
         # --require-fresh fails the run when lastScan wasn't bumped: a refresh that
         # quietly did nothing must not deploy and go green. That silent staleness is
         # exactly what this workflow replaced.
-        run: node scripts/validate-events.mjs --require-fresh
+        run: node scripts/validate-events.mjs ${{ !inputs.deploy_only && '--require-fresh' || '' }}
 
       - name: Commit and push data changes
         id: push
@@ -202,11 +210,19 @@ jobs:
       - name: Build site
         run: npm run build
 
-      - name: Deploy to gh-pages
+      - name: Package site for Pages
+        # Pages now publishes from GitHub Actions (Settings → Pages → Source), via
+        # the deploy job below. Switched 2026-11-10 after the branch-based publish
+        # hung at "syncing_files" three runs in a row.
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+      - name: Update gh-pages branch (backup)
+        # No longer what Pages serves, but kept up to date so switching the Pages
+        # source back to "Deploy from a branch" (gh-pages) is a one-click rollback.
         run: |
           set -euo pipefail
-          # Pages serves this repo from the gh-pages branch (legacy branch source), so
-          # deploy by replacing that branch wholesale — same as the manual procedure.
           # public/CNAME and public/.nojekyll are copied into dist/ by the build.
           git checkout --orphan gh-pages-tmp
           git reset --mixed
@@ -224,8 +240,21 @@ jobs:
         env:
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
         run: |
-          if [ "$(date -u +%u)" != "1" ]; then
-            echo "Not Monday, so no digest."
+          if [ "$(date -u +%u)" != "1" ] || [ "${{ inputs.deploy_only }}" = "true" ]; then
+            echo "Not Monday (or deploy-only run), so no digest."
             exit 0
           fi
           node scripts/build-digest.mjs
+
+  deploy:
+    # Separate job because only jobs in the github-pages environment can publish.
+    needs: refresh
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
