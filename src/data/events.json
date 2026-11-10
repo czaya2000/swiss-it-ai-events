@@ -19,131 +19,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "ai-in-biomedicine-forum-lugano-2026",
-    "title": "Artificial Intelligence in Biomedicine Forum 2026",
-    "date": "2026-11-06",
-    "endDate": "2026-11-06",
-    "time": "09:00–19:30",
-    "city": "Lugano",
-    "venue": "Aula Polivalente, Campus Est USI-SUPSI",
-    "format": "Conference",
-    "topics": [
-      "Applied AI",
-      "Machine learning",
-      "AI governance"
-    ],
-    "organiser": "IBSA Foundation / IDSIA USI-SUPSI",
-    "cost": "Free (registration requested)",
-    "url": "https://www.ibsafoundation.org/en/artificial-intelligence-in-biomedicine-2026",
-    "source": "swissaijob.ch",
-    "blurb": "A free day in Lugano on AI from basic research through to the clinic: one session on digital twins and personalised medicine, one on protein and compound design, plus abstract talks, posters and a closing conversation on global AI governance ahead of the Geneva AI Summit 2027.",
-    "firstSeen": "2026-10-23"
-  },
-  {
-    "id": "herimpact-who-decides-zurich-2026",
-    "title": "HerImpact 2026: Who Decides — You or AI?",
-    "date": "2026-11-06",
-    "endDate": "2026-11-06",
-    "time": "18:00",
-    "city": "Zurich",
-    "venue": "Im Viadukt",
-    "format": "Networking",
-    "topics": [
-      "AI governance",
-      "Responsible AI",
-      "Data leadership"
-    ],
-    "organiser": "SOTRAI (Source of Trust in AI)",
-    "cost": "CHF 50",
-    "url": "https://sotrai.ch/herimpact",
-    "source": "genevaaisummit.swiss",
-    "blurb": "Talks and a panel on who stays accountable when AI shapes an organisational decision — who can question it, correct it or stop it — drawing on current Swiss and Japanese research and real cases, closing with questions the group puts forward for the 2027 Geneva summit.",
-    "firstSeen": "2026-09-28"
-  },
-  {
-    "id": "ai-x-finance-hackathon-brevan-howard-epfl-2026",
-    "title": "AI x Finance Hackathon with Brevan Howard",
-    "date": "2026-11-06",
-    "endDate": "2026-11-06",
-    "time": "10:00–20:00",
-    "city": "Ecublens (Lausanne)",
-    "venue": "EPFL, BC Building, Chemin Alan Turing (rooms BC05/BC06)",
-    "format": "Workshop",
-    "topics": [
-      "Applied AI",
-      "Data science",
-      "Financial services"
-    ],
-    "organiser": "AI Team (EPFL) with Brevan Howard",
-    "cost": "Free (approx. 80 places, registration by approval; CHF 500–1,000 prizes)",
-    "url": "https://luma.com/jhbiush5",
-    "source": "luma.com",
-    "blurb": "An eight-hour hackathon on a finance challenge set by macro investment firm Brevan Howard, open to anyone comfortable with Python who wants to work on real market data problems at EPFL.",
-    "firstSeen": "2026-11-03"
-  },
-  {
-    "id": "autoresearch-log-002-zurich-2026",
-    "title": "Autoresearch Log 002",
-    "date": "2026-11-06",
-    "endDate": "2026-11-06",
-    "time": "18:00",
-    "city": "Zurich",
-    "venue": "J floor, Josefstrasse 206",
-    "format": "Meetup",
-    "topics": [
-      "AI agents",
-      "AI research",
-      "Applied AI"
-    ],
-    "organiser": "Inventionistas with ETH AI Club",
-    "cost": "Free (host approval required)",
-    "url": "https://luma.com/e3moxuxa",
-    "source": "luma.com",
-    "blurb": "A paper club for people building AI systems that run their own research loops, with a talk on swarm intelligence from Junpeng Lao (rekursiv.ai) and breakouts on current challenges, including negative results.",
-    "firstSeen": "2026-11-03"
-  },
-  {
-    "id": "move-faster-or-break-trust-zurich-2026",
-    "title": "Move Faster or Break Trust? Key Trade-off Moments in AI Product Development",
-    "date": "2026-11-06",
-    "endDate": "2026-11-06",
-    "time": "09:30–12:00",
-    "city": "Zurich",
-    "format": "Meetup",
-    "topics": [
-      "AI product management",
-      "Applied AI",
-      "Trustworthy AI"
-    ],
-    "organiser": "Product People with Google",
-    "cost": "Free (registration subject to approval)",
-    "url": "https://luma.com/uwt8vo83",
-    "source": "luma.com",
-    "blurb": "A morning panel on the trade-offs teams actually face when shipping AI products, with product leaders from Google DeepMind, Unique AI, Benetics AI and Product People, opened by Google’s Karin Hennessey.",
-    "firstSeen": "2026-11-03"
-  },
-  {
-    "id": "ai-society-coffee-chats-zurich-2026-11-06",
-    "title": "AI Society — AI Coffee Chats Zurich (6 November)",
-    "date": "2026-11-06",
-    "endDate": "2026-11-06",
-    "time": "09:00–10:00",
-    "city": "Zurich",
-    "venue": "BRIDGE, Eisgasse 20 / Europaallee 22",
-    "format": "Networking",
-    "topics": [
-      "Applied AI",
-      "AI community",
-      "AI safety"
-    ],
-    "organiser": "AI Society",
-    "cost": "Free",
-    "url": "https://luma.com/4fo00td5",
-    "source": "luma.com",
-    "blurb": "A drop-in morning coffee hour with no slides: bring a question, show a workflow you have built, or talk through new models, AI at work and AI safety with others doing the same.",
-    "firstSeen": "2026-11-04"
-  },
-  {
     "id": "coffee-and-prompt-010-geneva-2026",
     "title": "Coffee & Prompt #010",
     "date": "2026-11-07",
@@ -623,6 +498,27 @@
     "firstSeen": "2026-11-09"
   },
   {
+    "id": "ai-stammtisch-stgallen-november-2026",
+    "title": "AI-Stammtisch | St.Gallen",
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "time": "17:30–18:30",
+    "city": "St. Gallen",
+    "venue": "OST Campus St.Gallen, Raum FZ.0132 (FHZ), Rosenbergstrasse 59",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI-assisted engineering",
+      "AI research"
+    ],
+    "organiser": "OST – Ostschweizer Fachhochschule (Institut für Informations- und Prozessmanagement)",
+    "cost": "Free",
+    "url": "https://www.ost.ch/de/event/ai-stammtisch-stgallen-30",
+    "source": "ost.ch",
+    "blurb": "The monthly Eastern Switzerland AI round table, this time on whether a model may write the tests for safety-critical software — how far generated results can be trusted and how quality is kept — drawing on the Innosuisse project “Functional Safety Agent”. Followed by an apéro; the talk can also be followed online.",
+    "firstSeen": "2026-11-10"
+  },
+  {
     "id": "analytics-roundtable-zurich-eth-data-stack-2026",
     "title": "Inside ETH Zurich’s Data Stack: Analytics for Universities",
     "date": "2026-11-11",
@@ -1040,6 +936,27 @@
     "source": "luma.com",
     "blurb": "A four-hour German-language workshop for non-programmers in management roles: build your own tool with Claude Code, then cover Skills and Projects for reuse plus data protection and model choice. Five to ten participants.",
     "firstSeen": "2026-11-03"
+  },
+  {
+    "id": "ost-mein-erster-finance-agent-stgallen-2026",
+    "title": "Seminar «Mein erster Finance Agent – Praxisworkshop für KMU»",
+    "date": "2026-11-13",
+    "endDate": "2026-11-13",
+    "time": "09:00–16:30",
+    "city": "St. Gallen",
+    "venue": "OST, Bahnhof St.Gallen",
+    "format": "Workshop",
+    "topics": [
+      "AI agents",
+      "Applied AI",
+      "AI for SMEs"
+    ],
+    "organiser": "OST – Ostschweizer Fachhochschule (IFL Institut für Finance und Law)",
+    "cost": "CHF 980 (lunch, materials and certificate included)",
+    "url": "https://www.ost.ch/de/forschung-und-dienstleistungen/wirtschaft/ifl-institut-fuer-finance-und-law/accounting-und-corporate-finance/weiterbildung-accounting-und-corporate-finance/seminar-mein-erster-finance-agent-praxisworkshop-fuer-kmu",
+    "source": "ost.ch",
+    "blurb": "A German-language day for SME finance leads with no programming background: each participant builds an agent on their own laptop that prepares a monthly close from Excel data, summarises liquidity trends and works through debtor lists, with output to PDF or Excel.",
+    "firstSeen": "2026-11-10"
   },
   {
     "id": "coffee-and-prompt-011-geneva-2026",
@@ -1478,6 +1395,27 @@
     "firstSeen": "2026-11-05"
   },
   {
+    "id": "brown-bag-copilot-ki-power-altdorf-2026",
+    "title": "Brown Bag: Copilot erfolgreich einführen — KI-Power im Büroalltag",
+    "date": "2026-11-18",
+    "endDate": "2026-11-18",
+    "time": "12:00–13:00",
+    "city": "Altdorf (Lucerne)",
+    "venue": "Innovations-Biotop Uri, 3. OG, Bahnhofplatz 1",
+    "format": "Meetup",
+    "topics": [
+      "AI adoption",
+      "Microsoft ecosystem",
+      "Applied AI"
+    ],
+    "organiser": "InnovationsBiotop Uri with Business Help Point",
+    "cost": "Free (optional lunch CHF 9; registration by 16 November)",
+    "url": "https://ibt-uri.ch/2026/10/19/brown-bag-am-18112026/",
+    "source": "ai-community.ch",
+    "blurb": "A German-language lunch hour on the organisational side of Microsoft 365 Copilot rather than prompt tricks: Roman Schön on why AI initiatives stall, why structure and context beat perfectly worded prompts, and what it takes to make the tool stick in day-to-day office work.",
+    "firstSeen": "2026-11-10"
+  },
+  {
     "id": "scs-ai-risks-in-cybersecurity-geneva-2026",
     "title": "AI Risks in CyberSecurity",
     "date": "2026-11-19",
@@ -1538,6 +1476,27 @@
     "source": "luma.com",
     "blurb": "An afternoon on what AI has actually changed in design work: a study of how 100 designers use it, prototyping with AI agents directly against a codebase, and how Swissquote rebuilt its design system with AI — then networking drinks.",
     "firstSeen": "2026-11-09"
+  },
+  {
+    "id": "zurich-ai-safety-open-meetup-2026-11-19",
+    "title": "AI Safety: Open Meet Up",
+    "date": "2026-11-19",
+    "endDate": "2026-11-19",
+    "time": "18:30–20:00",
+    "city": "Zurich",
+    "venue": "PEAKS (ZAIS coworking space), Zeughausstrasse 31",
+    "format": "Meetup",
+    "topics": [
+      "AI safety",
+      "AI community",
+      "AI research"
+    ],
+    "organiser": "Zurich AI Safety",
+    "cost": "Free (registration required, food and drinks provided)",
+    "url": "https://luma.com/zais-iikz",
+    "source": "luma.com",
+    "blurb": "An evening with no fixed programme in place of the usual weekly session: meet the organisers, ask how the AI safety field is put together, or pick up a thread from an earlier talk — newcomers as welcome as people already working on it.",
+    "firstSeen": "2026-11-10"
   },
   {
     "id": "agentic-engineering-days-zurich-2026",
@@ -2080,6 +2039,27 @@
     "source": "luma.com",
     "blurb": "The University of St.Gallen’s fintech day, themed this year on what AI does to finance: keynotes on AI in financial intermediation and asset management, research talks on model collapse, AI errors and moral hazard, a panel on AI’s effect on markets, and a closing apéro.",
     "firstSeen": "2026-11-09"
+  },
+  {
+    "id": "zurich-ai-safety-ai-futures-whats-the-plan-2026",
+    "title": "AI Futures: What's the Plan?",
+    "date": "2026-11-26",
+    "endDate": "2026-11-26",
+    "time": "18:30–20:00",
+    "city": "Zurich",
+    "venue": "ETH Zurich Main Building, Rämistrasse 101, Room F 26.5",
+    "format": "Meetup",
+    "topics": [
+      "AI safety",
+      "AI governance",
+      "AI strategy"
+    ],
+    "organiser": "Zurich AI Safety",
+    "cost": "Free (registration required)",
+    "url": "https://luma.com/w5hehw7v",
+    "source": "luma.com",
+    "blurb": "Fourth session of the AI Futures series, turning from the risks to the responses: technical safety work such as alignment, control, interpretability and evaluations; governance and policy including compute rules and treaties; and socio-structural preparedness — with the organisers’ own read on what looks most promising.",
+    "firstSeen": "2026-11-10"
   },
   {
     "id": "after-microsoft-ignite-special-zurich-2026",
@@ -2685,6 +2665,27 @@
     "firstSeen": "2026-09-15"
   },
   {
+    "id": "ai-stammtisch-buchs-december-2026",
+    "title": "AI-Stammtisch | Buchs",
+    "date": "2026-12-08",
+    "endDate": "2026-12-08",
+    "time": "17:30–19:00",
+    "city": "Buchs (St. Gallen)",
+    "venue": "OST Campus Buchs, Gebäude 1, Raum 1414 (CREALAB), Werdenbergstrasse 4",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI community",
+      "AI adoption"
+    ],
+    "organiser": "OST – Ostschweizer Fachhochschule (ICE Institut für Computational Engineering)",
+    "cost": "Free",
+    "url": "https://www.ost.ch/de/event/ai-stammtisch-buchs-26",
+    "source": "ost.ch",
+    "blurb": "The Rhine valley edition of OST’s monthly AI round table: an informal evening in the Buchs CREALAB where university experts talk through how the technology actually works and how to point it at a problem you already have.",
+    "firstSeen": "2026-11-10"
+  },
+  {
     "id": "robots-agents-future-of-work-fribourg-2026",
     "title": "Robots, Agents and the Future of Work",
     "date": "2026-12-09",
@@ -2767,6 +2768,27 @@
     "source": "Meetup",
     "blurb": "The Swiss Viz Awards ceremony at the Lucerne School of Design, Film and Art: a keynote from data-visualisation designer Moritz Stefaner, the awards themselves with entrants and jury in the room, then an apéro — joined by the Data Visualization Zurich community as a field trip.",
     "firstSeen": "2026-11-06"
+  },
+  {
+    "id": "zurich-ai-safety-ai-futures-navigating-the-future-2026",
+    "title": "AI Futures: Navigating the Future",
+    "date": "2026-12-10",
+    "endDate": "2026-12-10",
+    "time": "18:30–20:00",
+    "city": "Zurich",
+    "venue": "ETH Zurich Main Building, Rämistrasse 101, Room F 26.5",
+    "format": "Meetup",
+    "topics": [
+      "AI safety",
+      "Careers",
+      "AI & society"
+    ],
+    "organiser": "Zurich AI Safety",
+    "cost": "Free (registration required)",
+    "url": "https://luma.com/6cl83535",
+    "source": "luma.com",
+    "blurb": "Closing session of the AI Futures series, moving from grand plans to personal ones: how people actually get into AI safety work, what to do about personal finances under uncertainty, and how to handle information overload and keep your footing.",
+    "firstSeen": "2026-11-10"
   },
   {
     "id": "eth-ai-center-parallel-token-prediction-zurich-2026",
