@@ -3819,5 +3819,47 @@
     "source": "luma.com",
     "blurb": "A morning panel on the trade-offs teams actually face when shipping AI products, with product leaders from Google DeepMind, Unique AI, Benetics AI and Product People, opened by Google’s Karin Hennessey.",
     "firstSeen": "2026-11-03"
+  },
+  {
+    "id": "coffee-ai-lab-first-automation-zurich-2026",
+    "title": "Saturday coffee+AI lab: build your first automation",
+    "date": "2026-11-07",
+    "endDate": "2026-11-07",
+    "time": "14:00–16:00",
+    "city": "Zurich",
+    "venue": "Café Baci Baci, Maneggplatz 48",
+    "format": "Workshop",
+    "topics": [
+      "Applied AI",
+      "AI agents",
+      "AI adoption"
+    ],
+    "organiser": "Women in Business Zurich with European Women in AI (EWAI)",
+    "cost": "CHF 39 (drinks and snacks included)",
+    "url": "https://www.meetup.com/zurich-women-in-business-marketing/events/316607396/",
+    "source": "Meetup",
+    "blurb": "A beginners’ session where each participant picks one recurring weekly task and leaves with a working AI automation wired to their own inbox and calendar. Bring a laptop.",
+    "firstSeen": "2026-11-03"
+  },
+  {
+    "id": "coffee-and-prompt-010-geneva-2026",
+    "title": "Coffee & Prompt #010",
+    "date": "2026-11-07",
+    "endDate": "2026-11-07",
+    "time": "09:30",
+    "city": "Geneva",
+    "venue": "Central Geneva (address on registration)",
+    "format": "Networking",
+    "topics": [
+      "Applied AI",
+      "Building with AI",
+      "AI community"
+    ],
+    "organiser": "Switzerland AI Community",
+    "cost": "Not listed",
+    "url": "https://luma.com/bqv0te4v",
+    "source": "switzerland-ai.com",
+    "blurb": "The Geneva builders’ Saturday morning coworking session: bring an AI project or side hustle, show a feature or a lesson learned, and get feedback from the room over coffee.",
+    "firstSeen": "2026-11-02"
   }
 ]
