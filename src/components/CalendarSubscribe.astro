@@ -127,12 +127,18 @@ const feeds = Object.fromEntries(
 		select.value = Array.from(select.options).some((o) => o.value === value) ? value : '';
 	}
 
-	// Pre-fill from the homepage filters in the URL: one ticked city, one format.
+	// Pre-fill from the filters in the URL: one ticked city, one format. A hub
+	// page (/geneva/, /conferences/) supplies its own city or format through
+	// [data-cal-preset] for whichever one the URL does not set.
 	function prefill() {
 		const params = new URLSearchParams(location.search);
+		const preset = document.querySelector<HTMLElement>('[data-cal-preset]')?.dataset;
 		const cities = params.getAll('city').filter(Boolean);
-		setIfPresent(city, cities.length === 1 ? slugify(cities[0]) : '');
-		setIfPresent(format, slugify(params.get('format') || ''));
+		setIfPresent(
+			city,
+			cities.length === 1 ? slugify(cities[0]) : cities.length === 0 ? preset?.calCity || '' : '',
+		);
+		setIfPresent(format, slugify(params.get('format') || '') || preset?.calFormat || '');
 	}
 
 	document.querySelectorAll<HTMLElement>('[data-cal-open]').forEach((btn) => {

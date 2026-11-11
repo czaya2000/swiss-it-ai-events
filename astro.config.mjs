@@ -2,6 +2,7 @@
 import { readFileSync } from 'node:fs';
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { HUBS, isHubLive } from './src/lib/hubs.mjs';
 
 const readJson = (path) => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'));
 
@@ -14,6 +15,12 @@ const endedPaths = new Set(
 		.map((e) => `/events/${e.id}/`),
 );
 const lastScan = readJson('./src/data/meta.json').lastScan;
+
+// City and type pages (/geneva/, /conferences/): those with too few upcoming
+// events are noindex, so they stay out of the sitemap as well.
+const upcoming = readJson('./src/data/events.json').filter((e) => (e.endDate ?? e.date) >= today);
+const hubPaths = new Set(HUBS.map((h) => h.path));
+const thinHubPaths = new Set(HUBS.filter((h) => !isHubLive(h, upcoming)).map((h) => h.path));
 
 // https://astro.build/config
 export default defineConfig({
@@ -29,10 +36,13 @@ export default defineConfig({
 				!page.includes('/card/') &&
 				!page.includes('/calendar/') &&
 				!page.endsWith('social-feed.json') &&
-				!endedPaths.has(new URL(page).pathname),
-			// The homepage changes on every refresh; tell crawlers when.
-			serialize: (item) =>
-				new URL(item.url).pathname === '/' ? { ...item, lastmod: lastScan } : item,
+				!endedPaths.has(new URL(page).pathname) &&
+				!thinHubPaths.has(new URL(page).pathname),
+			// The homepage and the city/type pages change on every refresh; tell crawlers when.
+			serialize: (item) => {
+				const path = new URL(item.url).pathname;
+				return path === '/' || hubPaths.has(path) ? { ...item, lastmod: lastScan } : item;
+			},
 		}),
 	],
 });

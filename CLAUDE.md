@@ -79,6 +79,21 @@ Astro pinned to `^6.4.8` — Astro 7.3.0 fails to build on this machine (Vite/ro
 `_internal/logger` export error). Don't upgrade past 6.x without confirming the
 build actually works first.
 
+## City and type pages ("hubs")
+
+- `/zurich/`, `/geneva/`, … (the newsletter's nine cities) and `/meetups/`,
+  `/conferences/`, `/workshops/`, `/networking/`, `/webinars/`. Defined in
+  `src/lib/hubs.mjs`, built by `src/pages/[hub]/index.astro`.
+- They and the homepage render the same `src/components/Listing.astro` (filters,
+  rows, script, styles). Change the listing there, not in `index.astro`.
+- A hub with fewer than `HUB_MIN_EVENTS` (5) upcoming events still has a page, but
+  it is `noindex`, left out of the sitemap (`astro.config.mjs`) and not linked from
+  anywhere. It comes back on its own when the count recovers.
+- Never rename a hub slug once it is live: Google will have indexed the URL.
+- A hub pre-ticks its own tag in the digest dialog and its own feed in "Save to my
+  calendar". Signups from hubs carry `placement: hub` in Buttondown.
+- No topic pages: `topics` is free text with 100+ values, most with 1–5 events.
+
 ## Weekly digest (Buttondown, newsletter `swissdataevents`)
 
 - `src/components/Subscribe.astro` posts straight to Buttondown's embed endpoint

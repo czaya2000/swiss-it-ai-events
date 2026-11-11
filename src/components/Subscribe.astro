@@ -10,14 +10,18 @@ import {
 interface Props {
 	/** Where the form was shown. Stored as Buttondown metadata so signups can be
 	    attributed to a placement (home vs. event page). */
-	placement: 'home' | 'event';
+	placement: 'home' | 'event' | 'hub';
 	compact?: boolean;
+	/** Tags ticked from the start (a hub page ticks its own city or type). */
+	preset?: string[];
+	/** Replaces the default line under the form. */
+	note?: string;
 }
 
-const { placement, compact = false } = Astro.props;
+const { placement, compact = false, preset = [], note } = Astro.props;
 const id = (s: string) => `sub-${placement}-${s}`;
 // Homepage: form with this line at the bottom. Event pages (compact): line above.
-const NOTE = 'Every Monday, the next two weeks of events in your inbox.';
+const NOTE = note ?? 'Every Monday, the next two weeks of events in your inbox.';
 ---
 
 <section class={`subscribe ${compact ? 'compact' : ''}`} id="subscribe">
@@ -67,7 +71,7 @@ const NOTE = 'Every Monday, the next two weeks of events in your inbox.';
 				<div class="choices">
 					{NEWSLETTER_CITIES.map((c) => (
 						<label class="choice" for={id(cityTag(c.slug))}>
-							<input type="checkbox" name="tag" value={cityTag(c.slug)} id={id(cityTag(c.slug))} />
+							<input type="checkbox" name="tag" value={cityTag(c.slug)} id={id(cityTag(c.slug))} checked={preset.includes(cityTag(c.slug))} />
 							{c.label}
 						</label>
 					))}
@@ -78,7 +82,7 @@ const NOTE = 'Every Monday, the next two weeks of events in your inbox.';
 				<div class="choices">
 					{NEWSLETTER_FORMATS.map((f) => (
 						<label class="choice" for={id(formatTag(f.label))}>
-							<input type="checkbox" name="tag" value={formatTag(f.label)} id={id(formatTag(f.label))} />
+							<input type="checkbox" name="tag" value={formatTag(f.label)} id={id(formatTag(f.label))} checked={preset.includes(formatTag(f.label))} />
 							{f.label}
 						</label>
 					))}

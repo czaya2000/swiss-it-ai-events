@@ -17,6 +17,7 @@ import {
 	SITE_NAME,
 } from '../../lib/events';
 import { eventDateTimes } from '../../lib/ics';
+import { cityHubFor, isHubLive } from '../../lib/hubs.mjs';
 
 export async function getStaticPaths() {
 	const entries = await getAllEvents();
@@ -36,7 +37,13 @@ const when = eventDateTimes(e);
 
 // An ended event's page stays up for old links but points people onward:
 // the next events in the same city, topped up with the next ones anywhere.
-const upcoming = ended ? await getUpcomingEvents() : [];
+const allUpcoming = await getUpcomingEvents();
+const upcoming = ended ? allUpcoming : [];
+
+// Link up to the city page (/geneva/), when that page has enough events to be live.
+const cityHubMatch = cityHubFor(e);
+const cityHub =
+	cityHubMatch && isHubLive(cityHubMatch, allUpcoming.map((u) => u.data)) ? cityHubMatch : undefined;
 const sameCity = upcoming.filter((u) => cityGroup(u.data.city) === cityGroup(e.city));
 const onward = [...sameCity, ...upcoming.filter((u) => !sameCity.includes(u))].slice(0, 3);
 const onwardLabel = sameCity.length >= 3 ? `Upcoming in ${cityGroup(e.city)}` : 'Upcoming events';
@@ -79,7 +86,10 @@ const structuredData: Record<string, unknown>[] = ended ? [] : [
 		'@type': 'BreadcrumbList',
 		itemListElement: [
 			{ '@type': 'ListItem', position: 1, name: SITE_NAME, item: SITE_URL },
-			{ '@type': 'ListItem', position: 2, name: e.title, item: eventUrl(entry.id) },
+			...(cityHub
+				? [{ '@type': 'ListItem', position: 2, name: cityHub.h1, item: `${SITE_URL}${cityHub.path}` }]
+				: []),
+			{ '@type': 'ListItem', position: cityHub ? 3 : 2, name: e.title, item: eventUrl(entry.id) },
 		],
 	},
 ];
@@ -94,7 +104,10 @@ const structuredData: Record<string, unknown>[] = ended ? [] : [
 >
 	<SiteNav />
 	<main class="wrap detail">
-		<a class="back" href="/">← All events</a>
+		<nav class="crumbs" aria-label="Breadcrumb">
+			<a class="back" href="/">← All events</a>
+			{cityHub && <a class="back" href={cityHub.path}>{cityHub.slug === 'online' ? 'Online events' : `Events in ${cityHub.label}`}</a>}
+		</nav>
 
 		{
 			ended && (
@@ -221,6 +234,11 @@ const structuredData: Record<string, unknown>[] = ended ? [] : [
 	<style>
 		.detail {
 			padding-top: 28px;
+		}
+		.crumbs {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 4px 20px;
 		}
 		.back {
 			color: var(--muted);

@@ -1,0 +1,83 @@
+---
+/* City and event-type pages: /geneva/, /conferences/ and so on. One page per
+   hub in src/lib/hubs.mjs, each a pre-filtered copy of the homepage listing
+   with its own headline and text. A hub with too few events stays reachable
+   but is noindex (and astro.config.mjs keeps it out of the sitemap). */
+import Base from '../../layouts/Base.astro';
+import Listing from '../../components/Listing.astro';
+import {
+	getUpcomingEvents,
+	eventUrl,
+	SITE_URL,
+	SITE_NAME,
+} from '../../lib/events';
+import { HUBS, HUB_MIN_EVENTS } from '../../lib/hubs.mjs';
+
+export function getStaticPaths() {
+	return HUBS.map((hub) => ({ params: { hub: hub.slug } }));
+}
+
+const hub = HUBS.find((h) => h.slug === Astro.params.hub)!;
+const entries = (await getUpcomingEvents()).filter((e) => hub.matches(e.data));
+const n = entries.length;
+
+// Headline count line. Cities name the kinds of event; types name the country.
+const noun = n === 1 ? hub.one : hub.many;
+const subheadline =
+	n === 0
+		? `No upcoming ${hub.many} ${hub.where} right now.`
+		: hub.kind === 'city'
+			? `${n} upcoming ${noun} ${hub.where}: conferences, meetups and workshops, checked daily.`
+			: `${n} upcoming ${noun} ${hub.where}, checked daily.`;
+
+// Second line: fixed text only (which nearby places a city page covers).
+// Nothing here is generated from the events, so it reads the same every day.
+const intro = hub.kind === 'city' && hub.nearby ? `This page also covers ${hub.nearby}.` : undefined;
+
+const title = `${hub.h1} | ${SITE_NAME}`;
+const description =
+	hub.kind === 'city'
+		? `Upcoming AI and data events ${hub.where}: conferences, meetups and workshops, each checked daily against the organiser's page.`
+		: `Upcoming AI and data ${hub.many} across Switzerland, each checked daily against the organiser's page.`;
+
+const pageUrl = `${SITE_URL}${hub.path}`;
+const structuredData = [
+	{
+		'@context': 'https://schema.org',
+		'@type': 'CollectionPage',
+		name: hub.h1,
+		url: pageUrl,
+		description,
+		inLanguage: 'en',
+		isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: SITE_NAME, item: SITE_URL },
+			{ '@type': 'ListItem', position: 2, name: hub.h1, item: pageUrl },
+		],
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'ItemList',
+		itemListElement: entries.map((e, i) => ({
+			'@type': 'ListItem',
+			position: i + 1,
+			url: eventUrl(e.id),
+			name: e.data.title,
+		})),
+	},
+];
+---
+
+<Base
+	title={title}
+	description={description}
+	path={hub.path}
+	structuredData={structuredData}
+	noindex={n < HUB_MIN_EVENTS}
+>
+	<Listing entries={entries} headline={hub.h1} subheadline={subheadline} intro={intro} hub={hub} />
+</Base>

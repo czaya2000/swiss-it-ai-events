@@ -1,0 +1,943 @@
+---
+/* The event listing: masthead, headline, digest signup, filters and the
+   date-spine rows. The homepage shows every upcoming event; a hub page
+   (src/pages/[hub]/index.astro) passes one city's or one type's events plus
+   its `hub`, which removes the filter the page already answers and pre-ticks
+   that city or type in the digest and calendar dialogs. */
+import SiteNav from './SiteNav.astro';
+import SiteFooter from './SiteFooter.astro';
+import Subscribe from './Subscribe.astro';
+import {
+	getUpcomingEvents,
+	isNew,
+	dateSpine,
+	isFree,
+	cityGroup,
+	compareCities,
+	formatLastScan,
+	weekStart,
+	weekBand,
+	today,
+	type EventEntry,
+} from '../lib/events';
+import { HUBS, isHubLive } from '../lib/hubs.mjs';
+import meta from '../data/meta.json';
+
+interface Props {
+	entries: EventEntry[];
+	headline: string;
+	subheadline: string;
+	/** Second, smaller paragraph under the subheadline (hub pages). */
+	intro?: string;
+	hub?: (typeof HUBS)[number];
+}
+
+const { entries, headline, subheadline, intro, hub } = Astro.props;
+const lastScan = formatLastScan(meta.lastScan);
+const events = entries.map((e) => ({ id: e.id, ...e.data }));
+
+const showCity = hub?.kind !== 'city';
+const showFormat = hub?.kind !== 'format';
+
+// Links to the other hubs: only those with enough events to be worth a visit.
+const allUpcoming = (await getUpcomingEvents()).map((e) => e.data);
+const liveHubs = HUBS.filter((h) => h !== hub && isHubLive(h, allUpcoming));
+const cityLinks = liveHubs.filter((h) => h.kind === 'city');
+const formatLinks = liveHubs.filter((h) => h.kind === 'format');
+
+const digestNote = hub
+	? hub.kind === 'city'
+		? hub.slug === 'online'
+			? 'Every Monday, the next two weeks of online events in your inbox.'
+			: `Every Monday, the next two weeks of ${hub.label} events in your inbox.`
+		: `Every Monday, the next two weeks of ${hub.many} in your inbox.`
+	: undefined;
+const emptyText =
+	events.length === 0 && hub
+		? `No upcoming ${hub.many} ${hub.where} right now. The weekly digest will tell you when one is added.`
+		: 'No events match those filters.';
+
+const cities = [...new Set(events.map((e) => cityGroup(e.city)))].sort(compareCities);
+const formats = [...new Set(events.map((e) => e.format))].sort();
+
+// Events arrive sorted by date, so grouping is a single pass. Each group is
+// the week the event STARTS in; a multi-day event sits in its start week,
+// except one that is already running (e.g. a two-month series), which sits
+// in the current week rather than under a week that is long gone.
+const todayIso = today();
+type Row = (typeof events)[number];
+const groups: { band: ReturnType<typeof weekBand>; rows: Row[] }[] = [];
+for (const e of events) {
+	const key = weekStart(e.date < todayIso ? todayIso : e.date);
+	const last = groups[groups.length - 1];
+	if (last && last.band.key === key) last.rows.push(e);
+	else groups.push({ band: weekBand(key), rows: [e] });
+}
+
+---
+	<SiteNav>
+		<div class="search-wrap">
+			<button type="button" id="search-toggle" class="search-toggle" aria-expanded="false">
+				<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+					<path
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						d="M15.5 15.5 21 21M17 10.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z"
+					></path>
+				</svg>
+				<span class="sr-only">Search</span>
+			</button>
+			<label class="search-label">
+				<span class="sr-only">Search</span>
+				<input type="search" id="filter-search" placeholder="Search title, organiser, topic…" />
+			</label>
+		</div>
+	</SiteNav>
+
+	<div class="hero" data-cal-preset data-cal-city={hub?.calCity ?? ''} data-cal-format={hub?.calFormat ?? ''}>
+		<header class="statement wrap">
+			{
+				hub && (
+					<nav class="crumb" aria-label="Breadcrumb">
+						<a href="/">All events</a>
+						<span aria-hidden="true">›</span>
+						<span>{hub.linkLabel}</span>
+					</nav>
+				)
+			}
+			<h1>{headline}</h1>
+			<p class="statement-sub">{subheadline}</p>
+			{intro && <p class="statement-intro">{intro}</p>}
+		</header>
+
+		<div class="wrap subscribe-slot">
+			<Subscribe placement={hub ? 'hub' : 'home'} preset={hub ? [hub.tag] : []} note={digestNote} />
+		</div>
+
+		<div class="controls wrap">
+			<div class="filter-row">
+				{showCity && (
+				<div class="multi" id="city-filter">
+					<button
+						type="button"
+						class="multi-toggle"
+						id="city-toggle"
+						aria-expanded="false"
+						aria-controls="city-panel"
+					>
+						<span id="city-label">City</span>
+						<svg viewBox="0 0 10 6" width="10" height="6" aria-hidden="true">
+							<path fill="none" stroke="currentColor" stroke-width="1.5" d="M1 1l4 4 4-4"></path>
+						</svg>
+					</button>
+					<div class="multi-panel" id="city-panel" role="group" aria-label="Cities" hidden>
+						<div class="multi-options">
+							{
+								cities.map((c) => (
+									<label class="multi-option">
+										<input type="checkbox" name="city" value={c} />
+										<span>{c}</span>
+									</label>
+								))
+							}
+						</div>
+						<button type="button" class="multi-clear" id="city-clear">Clear</button>
+					</div>
+				</div>
+				)}
+				{showFormat && (
+				<div class="multi" id="format-filter">
+					<button
+						type="button"
+						class="multi-toggle"
+						id="format-toggle"
+						aria-expanded="false"
+						aria-controls="format-panel"
+					>
+						<span id="format-label">Format</span>
+						<svg viewBox="0 0 10 6" width="10" height="6" aria-hidden="true">
+							<path fill="none" stroke="currentColor" stroke-width="1.5" d="M1 1l4 4 4-4"></path>
+						</svg>
+					</button>
+					<div class="multi-panel" id="format-panel" role="group" aria-label="Formats" hidden>
+						<div class="multi-options">
+							{
+								formats.map((f) => (
+									<label class="multi-option">
+										<input type="checkbox" name="format" value={f} />
+										<span>{f}</span>
+									</label>
+								))
+							}
+						</div>
+						<button type="button" class="multi-clear" id="format-clear">Clear</button>
+					</div>
+				</div>
+				)}
+				<button type="button" class="cal-cta" data-cal-open data-umami-event="Calendar: open" data-umami-event-from="list">
+					<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+						<rect x="3" y="5" width="18" height="16"></rect>
+						<path d="M3 10h18M8 3v4M16 3v4"></path>
+					</svg>
+					Save to my calendar
+				</button>
+			</div>
+
+			<div class="when-tabs" role="tablist" aria-label="Time range">
+				<button class="when-tab" data-when="all" type="button">All</button>
+				<button class="when-tab" data-when="week" type="button">This week</button>
+				<button class="when-tab" data-when="month" type="button">This month</button>
+			</div>
+		</div>
+	</div>
+
+	<main class="wrap">
+		<ul class="events" id="event-list">
+			{
+				groups.map((g) => (
+					<>
+						<li class={`band ${g.band.current ? 'current' : ''}`} data-band={g.band.key}>
+							<div class="band-label">
+								<span class="band-primary num">{g.band.primary}</span>
+							</div>
+						</li>
+						{g.rows.map((e) => {
+							const spine = dateSpine(e.date);
+							const isMultiDay = !!e.endDate && e.endDate !== e.date;
+							const endSpine = isMultiDay ? dateSpine(e.endDate) : null;
+							const eNew = isNew(e.firstSeen);
+							const free = isFree(e.cost);
+							// Built as one string: separate JSX expressions would each be
+							// wrapped in whitespace, producing "Zurich , ETH UNO building".
+							const metaLine = [e.city, e.venue, e.time].filter(Boolean).join(', ');
+							return (
+								<li
+									class="row"
+									data-band={g.band.key}
+									data-city={cityGroup(e.city)}
+									data-format={e.format}
+									data-date={e.date}
+									data-end-date={e.endDate ?? e.date}
+									data-search={[e.title, e.organiser, e.city, e.venue, ...e.topics]
+										.join(' ')
+										.toLowerCase()}
+								>
+									<a class="row-link" href={`/events/${e.id}/`}>
+										<time class="spine" datetime={e.date}>
+											<span class="day num">{spine.day}</span>
+											<span class="dm">
+												{spine.weekday}, {spine.month}
+											</span>
+											{isMultiDay && endSpine && (
+												<span class="through num">
+													to {endSpine.day} {endSpine.month}
+												</span>
+											)}
+										</time>
+										<div class="content">
+											<h2 class="title">
+												{eNew && <span class="new-dot" aria-hidden="true" />}
+												{e.title}
+												{eNew && <span class="sr-only">(new)</span>}
+											</h2>
+											<p class="meta">{metaLine}</p>
+											<p class="blurb">{e.blurb}</p>
+										</div>
+										<div class="aside">
+											<span class="format">{e.format}</span>
+											<span class={`cost ${free ? 'free' : ''}`}>{e.cost}</span>
+										</div>
+									</a>
+								</li>
+							);
+						})}
+					</>
+				))
+			}
+		</ul>
+
+		<p id="empty-state" class="empty-state" hidden>{emptyText}</p>
+	</main>
+
+	{
+		(cityLinks.length > 0 || formatLinks.length > 0) && (
+			<nav class="hubs wrap" aria-label="Browse events by city and type">
+				{cityLinks.length > 0 && (
+					<p>
+						<span class="hubs-label">{hub?.kind === 'city' ? 'Other cities' : 'By city'}</span>
+						{cityLinks.map((h) => (
+							<a href={h.path}>{h.linkLabel}</a>
+						))}
+					</p>
+				)}
+				{formatLinks.length > 0 && (
+					<p>
+						<span class="hubs-label">{hub?.kind === 'format' ? 'Other types' : 'By type'}</span>
+						{formatLinks.map((h) => (
+							<a href={h.path}>{h.linkLabel}</a>
+						))}
+					</p>
+				)}
+			</nav>
+		)
+	}
+
+	<SiteFooter>
+		<span id="result-count" class="num"></span> shown. Last scanned {lastScan}.
+		{hub && <a href="/">All events</a>}
+	</SiteFooter>
+
+	<script is:inline>
+		(function () {
+			var searchInput = document.getElementById('filter-search');
+			var searchWrap = document.querySelector('.search-wrap');
+			var searchToggle = document.getElementById('search-toggle');
+			var whenTabs = Array.prototype.slice.call(document.querySelectorAll('.when-tab'));
+			var rows = Array.prototype.slice.call(document.querySelectorAll('.row'));
+			var bands = Array.prototype.slice.call(document.querySelectorAll('.band'));
+			var resultCount = document.getElementById('result-count');
+			var emptyState = document.getElementById('empty-state');
+
+			var params = new URLSearchParams(location.search);
+			var state = {
+				q: params.get('q') || '',
+				// Repeated params (?city=Zurich&city=Geneva), so old single-value
+				// links keep working unchanged.
+				cities: params.getAll('city').filter(Boolean),
+				formats: params.getAll('format').filter(Boolean),
+				when: params.get('when') || 'all',
+			};
+
+			searchInput.value = state.q;
+
+			// One tick-box dropdown (City, Format). onChange gets the ticked
+			// values in list order, not click order.
+			function multiSelect(key, placeholder, initial, onChange) {
+				var root = document.getElementById(key + '-filter');
+				// A hub page has no filter for what it already shows (/geneva/ has no City).
+				if (!root) return [];
+				var toggle = document.getElementById(key + '-toggle');
+				var label = document.getElementById(key + '-label');
+				var panel = document.getElementById(key + '-panel');
+				var clear = document.getElementById(key + '-clear');
+				var boxes = Array.prototype.slice.call(panel.querySelectorAll('input[type="checkbox"]'));
+
+				function selected() {
+					return boxes
+						.filter(function (b) {
+							return b.checked;
+						})
+						.map(function (b) {
+							return b.value;
+						});
+				}
+				function render() {
+					var v = selected();
+					var n = v.length;
+					label.textContent = n === 0 ? placeholder : n === 1 ? v[0] : v[0] + ' +' + (n - 1);
+					toggle.classList.toggle('has-value', n > 0);
+					clear.hidden = n === 0;
+				}
+				function setOpen(open) {
+					panel.hidden = !open;
+					toggle.setAttribute('aria-expanded', String(open));
+				}
+
+				boxes.forEach(function (box) {
+					box.checked = initial.indexOf(box.value) !== -1;
+					box.addEventListener('change', function () {
+						render();
+						onChange(selected());
+					});
+				});
+				render();
+
+				toggle.addEventListener('click', function () {
+					setOpen(panel.hidden);
+				});
+				clear.addEventListener('click', function () {
+					boxes.forEach(function (b) {
+						b.checked = false;
+					});
+					render();
+					onChange([]);
+					toggle.focus();
+				});
+				document.addEventListener('click', function (ev) {
+					if (!panel.hidden && !root.contains(ev.target)) setOpen(false);
+				});
+				document.addEventListener('keydown', function (ev) {
+					if (ev.key === 'Escape' && !panel.hidden) {
+						setOpen(false);
+						toggle.focus();
+					}
+				});
+				// Values from the URL that no longer have any events are dropped.
+				return selected();
+			}
+
+			state.cities = multiSelect('city', 'City', state.cities, function (v) {
+				state.cities = v;
+				updateUrl();
+				applyFilters();
+			});
+			state.formats = multiSelect('format', 'Format', state.formats, function (v) {
+				state.formats = v;
+				updateUrl();
+				applyFilters();
+			});
+
+			function setSearchOpen(open, focus) {
+				searchWrap.classList.toggle('open', open);
+				searchToggle.setAttribute('aria-expanded', String(open));
+				searchInput.tabIndex = open ? 0 : -1;
+				if (open && focus) searchInput.focus();
+			}
+			setSearchOpen(!!state.q, false);
+
+			function pad(n) {
+				return String(n).padStart(2, '0');
+			}
+			function toISO(d) {
+				return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+			}
+
+			function whenBounds(when) {
+				var now = new Date();
+				now.setHours(0, 0, 0, 0);
+				var todayStr = toISO(now);
+				if (when === 'week') {
+					var weekEnd = new Date(now);
+					weekEnd.setDate(weekEnd.getDate() + 6);
+					return { start: todayStr, end: toISO(weekEnd) };
+				}
+				if (when === 'month') {
+					var monthEnd = new Date(now.getFullYear(), now.getMonth() + 1, 0);
+					return { start: todayStr, end: toISO(monthEnd) };
+				}
+				return null;
+			}
+
+			function updateUrl() {
+				var p = new URLSearchParams();
+				if (state.q) p.set('q', state.q);
+				state.cities.forEach(function (c) {
+					p.append('city', c);
+				});
+				state.formats.forEach(function (f) {
+					p.append('format', f);
+				});
+				if (state.when && state.when !== 'all') p.set('when', state.when);
+				var qs = p.toString();
+				history.replaceState(null, '', qs ? '?' + qs : location.pathname);
+			}
+
+			function applyFilters() {
+				var query = state.q.trim().toLowerCase();
+				var bounds = whenBounds(state.when);
+				var visible = 0;
+				var perBand = {};
+				for (var i = 0; i < rows.length; i++) {
+					var row = rows[i];
+					var d = row.dataset;
+					var matches =
+						(!query || (d.search || '').indexOf(query) !== -1) &&
+						(state.cities.length === 0 || state.cities.indexOf(d.city) !== -1) &&
+						(state.formats.length === 0 || state.formats.indexOf(d.format) !== -1) &&
+						(!bounds || (d.date <= bounds.end && d.endDate >= bounds.start));
+					row.hidden = !matches;
+					if (matches) {
+						visible++;
+						perBand[d.band] = true;
+					}
+				}
+				// A week heading with every row filtered out is a heading for
+				// nothing — hide it with its rows.
+				for (var b = 0; b < bands.length; b++) {
+					bands[b].hidden = !perBand[bands[b].dataset.band];
+				}
+				resultCount.textContent = visible + ' event' + (visible === 1 ? '' : 's');
+				emptyState.hidden = visible !== 0;
+			}
+
+			function setWhenTab(when) {
+				state.when = when;
+				whenTabs.forEach(function (btn) {
+					var active = btn.dataset.when === when;
+					btn.classList.toggle('active', active);
+					btn.setAttribute('aria-selected', String(active));
+				});
+			}
+
+			searchToggle.addEventListener('click', function () {
+				setSearchOpen(!searchWrap.classList.contains('open'), true);
+			});
+			searchInput.addEventListener('input', function () {
+				state.q = searchInput.value;
+				updateUrl();
+				applyFilters();
+			});
+			searchInput.addEventListener('blur', function () {
+				if (!searchInput.value) setSearchOpen(false, false);
+			});
+			whenTabs.forEach(function (btn) {
+				btn.addEventListener('click', function () {
+					setWhenTab(btn.dataset.when);
+					updateUrl();
+					applyFilters();
+				});
+			});
+
+			setWhenTab(state.when);
+			applyFilters();
+		})();
+	</script>
+
+	<style>
+		.hero {
+			background: #f3f2ee;
+		}
+		.statement {
+			padding-top: 56px;
+		}
+		.statement h1 {
+			font-size: clamp(1.6rem, 3.2vw, 2.15rem);
+			font-weight: 500;
+			line-height: 1.18;
+			letter-spacing: -0.02em;
+			margin: 0;
+			max-width: 32ch;
+			text-wrap: pretty;
+		}
+		.statement-sub {
+			margin: 12px 0 0;
+			font-size: 1.05rem;
+			line-height: 1.45;
+			color: var(--muted);
+			max-width: 60ch;
+		}
+		.statement-intro {
+			margin: 8px 0 0;
+			font-size: 0.9rem;
+			line-height: 1.5;
+			color: var(--muted);
+			max-width: 68ch;
+		}
+		.crumb {
+			display: flex;
+			gap: 8px;
+			margin-bottom: 14px;
+			font-size: 0.875rem;
+			color: var(--muted);
+		}
+		.crumb a {
+			color: inherit;
+			text-decoration: none;
+		}
+		.crumb a:hover {
+			color: var(--ink);
+		}
+		/* Links to the city and type pages, under the list on every listing. */
+		.hubs {
+			padding-top: 36px;
+			display: grid;
+			gap: 8px;
+		}
+		.hubs p {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 4px 18px;
+			margin: 0;
+			font-size: 0.875rem;
+		}
+		.hubs-label {
+			min-width: 92px;
+			color: var(--muted);
+		}
+		.hubs a {
+			color: var(--ink);
+			text-decoration: none;
+			border-bottom: 1px solid var(--border);
+		}
+		.hubs a:hover {
+			border-bottom-color: var(--ink);
+		}
+
+		main {
+			padding-bottom: 8px;
+		}
+		.subscribe-slot {
+			margin-top: 36px;
+		}
+		.controls {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+			padding-top: 32px;
+			padding-bottom: 14px;
+			border-bottom: 1px solid var(--border);
+		}
+		.when-tabs {
+			display: flex;
+			gap: 22px;
+			overflow-x: auto;
+			-webkit-overflow-scrolling: touch;
+			scrollbar-width: none;
+		}
+		.when-tabs::-webkit-scrollbar {
+			display: none;
+		}
+		.when-tab {
+			flex: none;
+			white-space: nowrap;
+			font: inherit;
+			font-size: 0.875rem;
+			background: none;
+			border: none;
+			border-bottom: 2px solid transparent;
+			padding: 0 0 5px;
+			color: var(--muted);
+			cursor: pointer;
+			margin-bottom: -1px;
+		}
+		.when-tab.active {
+			color: var(--ink);
+			font-weight: 600;
+			border-bottom-color: var(--ink);
+		}
+		.filter-row {
+			display: flex;
+			gap: 18px;
+			align-items: flex-end;
+			flex-wrap: wrap;
+		}
+		select,
+		input[type='search'] {
+			font: inherit;
+			font-size: 0.875rem;
+			padding: 0 0 5px;
+			border: none;
+			border-bottom: 1px solid var(--border);
+			border-radius: 0;
+			background: transparent;
+			color: var(--ink);
+		}
+		select:focus,
+		input[type='search']:focus {
+			outline: none;
+			border-bottom-color: var(--ink);
+		}
+		/* Selects start in the same muted, regular weight as an inactive
+		   time-range tab; picking a value promotes them to the active look. */
+		select {
+			width: fit-content;
+			color: var(--muted);
+		}
+		select.has-value {
+			color: var(--ink);
+			font-weight: 600;
+		}
+		/* City and Format multi-selects: a button with an underline, like the
+		   search field, opening a panel of tick boxes. */
+		.multi {
+			position: relative;
+		}
+		.multi-toggle {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			font: inherit;
+			font-size: 0.875rem;
+			padding: 0 0 5px;
+			background: none;
+			border: none;
+			border-bottom: 1px solid var(--border);
+			border-radius: 0;
+			color: var(--muted);
+			cursor: pointer;
+			white-space: nowrap;
+		}
+		.multi-toggle:focus-visible,
+		.multi-toggle[aria-expanded='true'] {
+			outline: none;
+			border-bottom-color: var(--ink);
+		}
+		.multi-toggle.has-value {
+			color: var(--ink);
+			font-weight: 600;
+		}
+		.multi-toggle svg {
+			transition: transform 0.15s ease;
+		}
+		.multi-toggle[aria-expanded='true'] svg {
+			transform: rotate(180deg);
+		}
+		.multi-panel {
+			position: absolute;
+			top: calc(100% + 8px);
+			left: 0;
+			z-index: 20;
+			width: 260px;
+			max-width: calc(100vw - 32px);
+			background: var(--surface);
+			border: 1px solid var(--ink);
+			box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+		}
+		.multi-panel[hidden] {
+			display: none;
+		}
+		.multi-options {
+			max-height: 320px;
+			overflow-y: auto;
+			padding: 6px 0;
+		}
+		.multi-option {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			padding: 6px 14px;
+			font-size: 0.875rem;
+			cursor: pointer;
+		}
+		.multi-option:hover {
+			background: var(--chip-bg);
+		}
+		.multi-option input {
+			margin: 0;
+			width: 15px;
+			height: 15px;
+			accent-color: var(--ink);
+			flex: none;
+		}
+		.multi-clear {
+			display: block;
+			width: 100%;
+			font: inherit;
+			font-size: 0.82rem;
+			text-align: left;
+			padding: 9px 14px;
+			background: none;
+			border: none;
+			border-top: 1px solid var(--border);
+			color: var(--muted);
+			cursor: pointer;
+		}
+		.multi-clear[hidden] {
+			display: none;
+		}
+		.multi-clear:hover {
+			color: var(--ink);
+		}
+		.cal-cta {
+			display: inline-flex;
+			align-items: center;
+			gap: 7px;
+			margin-left: auto;
+			font: inherit;
+			font-size: 0.875rem;
+			padding: 0 0 5px;
+			background: none;
+			border: none;
+			border-bottom: 1px solid transparent;
+			color: var(--muted);
+			cursor: pointer;
+			white-space: nowrap;
+		}
+		.cal-cta:hover {
+			color: var(--ink);
+			border-bottom-color: var(--ink);
+		}
+		.search-wrap {
+			display: flex;
+			align-items: center;
+		}
+		.search-toggle {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 32px;
+			height: 32px;
+			padding: 0;
+			background: none;
+			border: none;
+			color: var(--muted);
+			cursor: pointer;
+			flex: none;
+		}
+		.search-toggle:hover,
+		.search-wrap.open .search-toggle {
+			color: var(--accent);
+		}
+		.search-label {
+			width: 0;
+			overflow: hidden;
+			transition: width 0.18s ease;
+		}
+		.search-wrap.open .search-label {
+			width: 200px;
+		}
+		.search-label input {
+			width: 100%;
+			height: 32px;
+			padding: 0 0 0 2px;
+			border: none;
+			border-bottom: 1px solid var(--border);
+		}
+		.search-label input:focus {
+			border-bottom-color: var(--ink);
+		}
+		.events {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		/* Week band. The date range is the label; week numbers are never shown. */
+		.band {
+			display: grid;
+			padding: 38px 0 12px;
+		}
+		.band[hidden] {
+			display: none;
+		}
+		.band-label {
+			display: flex;
+			gap: 14px;
+			align-items: baseline;
+			white-space: nowrap;
+		}
+		.band-primary {
+			font-size: 0.95rem;
+			font-weight: 600;
+		}
+		/* The accent's second and last appearance: the week we are in. */
+		.band.current .band-primary {
+			color: var(--accent);
+		}
+
+		.row {
+			border-bottom: 1px solid var(--border);
+		}
+		.row-link {
+			display: grid;
+			grid-template-columns: 92px 1fr 176px;
+			gap: 36px;
+			padding: 18px 0;
+			text-decoration: none;
+			color: inherit;
+		}
+		.spine {
+			display: flex;
+			flex-direction: column;
+		}
+		.spine .day {
+			font-size: 1.85rem;
+			font-weight: 600;
+			line-height: 1;
+		}
+		.spine .dm {
+			font-size: 0.75rem;
+			color: var(--muted);
+			margin-top: 5px;
+		}
+		.spine .through {
+			font-size: 0.75rem;
+			color: var(--muted);
+			white-space: nowrap;
+		}
+		.title {
+			margin: 0;
+			font-size: 1.18rem;
+			font-weight: 500;
+			letter-spacing: -0.01em;
+			line-height: 1.28;
+			display: flex;
+			align-items: baseline;
+			gap: 8px;
+			text-wrap: pretty;
+		}
+		.row-link:hover .title {
+			text-decoration: underline;
+			text-underline-offset: 3px;
+		}
+		.meta {
+			margin: 6px 0 0;
+			color: var(--ink-2);
+			font-size: 0.875rem;
+		}
+		.blurb {
+			margin: 3px 0 0;
+			font-size: 0.82rem;
+			color: var(--muted);
+			max-width: 72ch;
+		}
+		.aside {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			text-align: right;
+			gap: 4px;
+		}
+		.aside .format {
+			font-size: 0.875rem;
+		}
+		.aside .cost {
+			font-size: 0.82rem;
+			color: var(--muted);
+		}
+		.aside .cost.free {
+			color: var(--ink);
+			font-weight: 600;
+		}
+		.empty-state {
+			color: var(--muted);
+			padding: 48px 0;
+		}
+
+		@media (max-width: 640px) {
+			.statement {
+				padding-top: 32px;
+			}
+			.statement h1 {
+				max-width: none;
+			}
+			.subscribe-slot {
+				margin-top: 24px;
+			}
+			.controls {
+				padding-top: 24px;
+			}
+			.band {
+				gap: 8px;
+				padding: 28px 0 10px;
+			}
+			.row-link {
+				grid-template-columns: 1fr;
+				gap: 8px;
+				padding: 16px 0;
+			}
+			.spine {
+				flex-direction: row;
+				align-items: baseline;
+				gap: 8px;
+			}
+			.spine .day {
+				font-size: 1.3rem;
+			}
+			.spine .dm,
+			.spine .through {
+				margin-top: 0;
+			}
+			.title {
+				font-size: 1.05rem;
+			}
+			.aside {
+				flex-direction: row;
+				align-items: baseline;
+				justify-content: flex-start;
+				text-align: left;
+				gap: 14px;
+			}
+		}
+	</style>
