@@ -166,9 +166,11 @@ after it is live); Lighthouse; a real screen reader.
 
 ## Not changed, on purpose
 
-- Ended events go `noindex` the day after they end. The two pages with the most
-  impressions (Snowflake Forum, Swiss AI Safety Days) are now ended and will drop out
-  of Google. That is the agreed archive policy; changing it is a decision for Marcin.
+- (Changed later the same day, with Marcin's approval, `59987e2`: ended event pages
+  no longer carry `noindex`. Their title starts with "Past event:" and their
+  description with "This event took place on …". They stay out of the sitemap,
+  listings and feeds. The workflow fix, row 14 above, was also approved and pushed
+  as `da429c2`. To undo the ended-event change alone: `git revert 59987e2`.)
 - No German or French pages, no topic pages, no new hubs: no evidence of demand yet,
   and hubs are one day old.
 - Event `image` is the same site banner for every event. Google's event feature is not
