@@ -70,6 +70,15 @@ run on demand via **workflow_dispatch**. Nothing about it depends on a personal 
   counted; keep it that way. Click events use `data-umami-event` attributes. Opening a
   page with `?notrack` excludes that browser (`?track` undoes it). If a tracker is
   added or removed, update `/privacy/`.
+- The inline script in `Base.astro` removes any email address from the page address
+  before the trackers load (Buttondown adds `?email_address=` to `/subscribe/thanks/`).
+  Keep it above both tracker scripts. What each Umami event really counts is in the
+  table in `SEO_GEO_RUN.md` ("Digest signup" is a button click, not a subscriber).
+- Event markup states only what the data says: `offerFacts()` in `src/lib/events.ts`
+  gives a price for "Free" or one plain amount and "SoldOut" only when the cost says
+  so; `isFree()` is true only when the cost starts with "Free". No assumed end time.
+- `SEO_GEO_RUN.md` (12 Nov 2026) has the SEO/AI-search baseline, the follow-up
+  measurements and what was left alone on purpose.
 - Sources live in `SOURCES.md` and are re-read on every run — edit that file to change
   what gets checked; the workflow prompt does not hardcode a source list.
 
