@@ -3861,5 +3861,46 @@
     "source": "switzerland-ai.com",
     "blurb": "The Geneva builders’ Saturday morning coworking session: bring an AI project or side hustle, show a feature or a lesson learned, and get feedback from the room over coffee.",
     "firstSeen": "2026-11-02"
+  },
+  {
+    "id": "swiss-ai-safety-days-2026",
+    "title": "Swiss AI Safety Days 2026",
+    "date": "2026-11-07",
+    "endDate": "2026-11-08",
+    "city": "Zurich",
+    "venue": "ETH main building",
+    "format": "Conference",
+    "topics": [
+      "AI safety",
+      "Governance",
+      "Careers"
+    ],
+    "organiser": "Zurich AI Safety",
+    "cost": "Free–CHF 320 (trust-based)",
+    "url": "https://swissaisafetydays.ch/",
+    "source": "swissaisafetydays.ch",
+    "blurb": "Two days at ETH Zurich on AI safety research, governance and careers, with trust-based pricing from free upwards. Attendance is by application; the deadline is 17 October.",
+    "firstSeen": "2026-09-03"
+  },
+  {
+    "id": "build-your-own-assistant-writing-geneva-2026",
+    "title": "Build Your Own Assistant: Time to Stop AI Slop",
+    "date": "2026-11-08",
+    "endDate": "2026-11-08",
+    "time": "09:30–12:30",
+    "city": "Geneva",
+    "venue": "Voisins de Saint-Gervais, Bd James-Fazy 8",
+    "format": "Workshop",
+    "topics": [
+      "AI agents",
+      "Applied AI",
+      "AI tools"
+    ],
+    "organiser": "AI Ready Professionals",
+    "cost": "CHF 85",
+    "url": "https://www.meetup.com/ai-ready-professionals/events/316608133/",
+    "source": "Meetup",
+    "blurb": "A session on getting an assistant to write in your own voice rather than generic model output, then turning the week's news into a post and a newsletter worth reading.",
+    "firstSeen": "2026-10-02"
   }
 ]
