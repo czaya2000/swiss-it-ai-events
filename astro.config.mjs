@@ -6,8 +6,8 @@ import { HUBS, isHubLive } from './src/lib/hubs.mjs';
 
 const readJson = (path) => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'));
 
-// Ended events keep their page (noindex) but leave the sitemap, so Google
-// drops them gently instead of hitting a 404.
+// Ended events keep their page, marked "Past event" and still indexable, but
+// leave the sitemap: it lists what is coming up.
 const today = new Date().toISOString().slice(0, 10);
 // A live event wins over an archived one with the same id (a recurring event
 // that reuses its id), exactly as getAllEvents() does for the page itself.

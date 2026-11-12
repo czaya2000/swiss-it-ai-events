@@ -24,7 +24,7 @@ const events = defineCollection({
 });
 
 /* Ended events, moved here by scripts/archive-past.mjs. They keep their
-   page (marked ended, noindex) but never appear in listings or feeds. */
+   page (marked as a past event) but never appear in listings or feeds. */
 const archive = defineCollection({
 	loader: file('src/data/archive.json'),
 	schema: eventSchema,

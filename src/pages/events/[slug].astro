@@ -33,13 +33,17 @@ const dateLabel = formatDateRange(e.date, e.endDate);
 const isOnline = /online/i.test(e.city);
 // Search results cut a title at about 60 characters, so the site name is
 // added only when the event name, date and place leave room for it.
-const coreTitle = `${e.title} — ${formatDateCompact(e.date, e.endDate)}, ${e.city}`;
+// An ended event stays in search results (people look an event up afterwards),
+// so its title and description say first that it is over.
+const coreTitle = `${isEnded(e) ? 'Past event: ' : ''}${e.title} — ${formatDateCompact(e.date, e.endDate)}, ${e.city}`;
 const withSite = `${coreTitle} | ${SITE_NAME}`;
 const title = withSite.length <= 65 ? withSite : coreTitle;
 // The facts come first, so a search snippet shows when, where and what it
 // costs even when the rest is cut off. Same order as the RSS summary.
 const whereLabel = isOnline ? 'Online' : [e.venue, e.city].filter(Boolean).join(', ');
-const description = `${dateLabel}${e.time ? `, ${e.time}` : ''} · ${whereLabel} · ${e.format} · ${e.cost}. ${e.blurb}`;
+const description = isEnded(e)
+	? `This event took place on ${dateLabel} · ${whereLabel} · ${e.format}. ${e.blurb}`
+	: `${dateLabel}${e.time ? `, ${e.time}` : ''} · ${whereLabel} · ${e.format} · ${e.cost}. ${e.blurb}`;
 const free = isFree(e.cost);
 const registerUrl = outboundUrl(e.url);
 const ended = isEnded(e);
@@ -115,7 +119,6 @@ const structuredData: Record<string, unknown>[] = ended ? [] : [
 	description={description}
 	path={`/events/${entry.id}/`}
 	structuredData={structuredData}
-	noindex={ended}
 >
 	<SiteNav />
 	<main class="wrap detail">

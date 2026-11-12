@@ -58,8 +58,9 @@ run on demand via **workflow_dispatch**. Nothing about it depends on a personal 
   `npm run test:ics` after a build (needs Node ≥ 22.18; not run in CI).
 - Ended events are **archived, not deleted**: the workflow's `npm run archive` step
   (`scripts/archive-past.mjs`) moves events that ended more than 3 days ago to
-  `src/data/archive.json`. Their pages stay up with an "ended" banner and `noindex`,
-  and are left out of the sitemap, homepage, feeds and llms.txt. The refresh agent
+  `src/data/archive.json`. Their pages stay up with an "ended" banner and a title
+  that starts with "Past event:". Since 2026-11-12 they stay in Google (no `noindex`),
+  but are left out of the sitemap, homepage, hub pages, feeds and llms.txt. The refresh agent
   must not delete past events or edit the archive.
 - Public data for apps and AI agents: `/events.json` (documented at `/data/`; never
   rename or remove a field without bumping `DATA_VERSION` in `src/lib/public-data.ts`),
