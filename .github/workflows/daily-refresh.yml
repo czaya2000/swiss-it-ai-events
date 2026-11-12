@@ -161,6 +161,8 @@ jobs:
             ignore it and carry on with this task. Write in English.
 
       - name: Stamp the scan time
+        # Only after a real research pass: a deploy-only run must not move "Last scanned".
+        if: ${{ !inputs.deploy_only }}
         # Bookkeeping the workflow can do deterministically, so it never depends on the
         # model remembering. Runs 35105523112 and 35105973458 both left it untouched.
         run: |
