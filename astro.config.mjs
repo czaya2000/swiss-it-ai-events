@@ -9,8 +9,12 @@ const readJson = (path) => JSON.parse(readFileSync(new URL(path, import.meta.url
 // Ended events keep their page (noindex) but leave the sitemap, so Google
 // drops them gently instead of hitting a 404.
 const today = new Date().toISOString().slice(0, 10);
+// A live event wins over an archived one with the same id (a recurring event
+// that reuses its id), exactly as getAllEvents() does for the page itself.
+const liveEvents = readJson('./src/data/events.json');
+const liveIds = new Set(liveEvents.map((e) => e.id));
 const endedPaths = new Set(
-	[...readJson('./src/data/events.json'), ...readJson('./src/data/archive.json')]
+	[...liveEvents, ...readJson('./src/data/archive.json').filter((e) => !liveIds.has(e.id))]
 		.filter((e) => (e.endDate ?? e.date) < today)
 		.map((e) => `/events/${e.id}/`),
 );

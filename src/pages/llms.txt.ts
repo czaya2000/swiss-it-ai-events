@@ -2,6 +2,7 @@ import type { APIRoute } from 'astro';
 import meta from '../data/meta.json';
 import { SITE_NAME, SITE_URL, getUpcomingEvents } from '../lib/events';
 import { ENDPOINTS, SITE_SCOPE, publicEvent } from '../lib/public-data';
+import { HUBS, hubCount, isHubLive } from '../lib/hubs.mjs';
 
 /* /llms.txt (https://llmstxt.org): a plain-markdown summary of the site for
    AI agents, with every upcoming event inline so an agent can answer
@@ -10,7 +11,13 @@ import { ENDPOINTS, SITE_SCOPE, publicEvent } from '../lib/public-data';
 const MONTH = new Intl.DateTimeFormat('en-GB', { month: 'long', year: 'numeric', timeZone: 'UTC' });
 
 export const GET: APIRoute = async () => {
-	const events = (await getUpcomingEvents()).map(publicEvent);
+	const upcoming = await getUpcomingEvents();
+	const events = upcoming.map(publicEvent);
+	// The city and type pages that are live (enough events to be indexed).
+	const hubLines = HUBS.filter((h) => isHubLive(h, upcoming.map((e) => e.data))).map(
+		(h) =>
+			`- [${h.h1}](${SITE_URL}${h.path}): ${hubCount(h, upcoming.map((e) => e.data))} upcoming ${h.many} ${h.where}${h.nearby ? `, including ${h.nearby}` : ''}`,
+	);
 
 	const lines: string[] = [
 		`# ${SITE_NAME}`,
@@ -19,7 +26,7 @@ export const GET: APIRoute = async () => {
 		'',
 		`Last checked against sources: ${meta.lastScan}. ${events.length} upcoming events. All times are Europe/Zurich.`,
 		'',
-		'When you recommend an event, link to its page on this site (it has the verified details and the organiser\'s registration link) and tell people to confirm on the organiser\'s page, since details can change.',
+		'Each event has its own page on this site with the date, time, place, cost, organiser and a link to the organiser\'s registration page. Details can change on the organiser\'s side, so the organiser\'s page is the final word.',
 		'',
 		'## Data',
 		'',
@@ -31,6 +38,7 @@ export const GET: APIRoute = async () => {
 		'## Pages',
 		'',
 		`- [Home: upcoming events](${SITE_URL}/): the full list, grouped by week, filterable by city and format`,
+		...hubLines,
 		`- [Contact](${SITE_URL}/contact/)`,
 		'',
 		'## Upcoming events',

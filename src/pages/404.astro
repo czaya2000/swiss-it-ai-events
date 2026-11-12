@@ -1,0 +1,66 @@
+---
+/* The page GitHub Pages serves for any address that does not exist (it is
+   built as /404.html). It keeps people on the site instead of showing
+   GitHub's own error page. noindex, and the sitemap leaves it out. */
+import Base from '../layouts/Base.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { SITE_NAME } from '../lib/events';
+import { HUBS, isHubLive } from '../lib/hubs.mjs';
+import { getUpcomingEvents } from '../lib/events';
+
+const title = `Page not found — ${SITE_NAME}`;
+const description = 'This page does not exist. See all upcoming AI and data events in Switzerland.';
+const upcoming = (await getUpcomingEvents()).map((e) => e.data);
+const cityLinks = HUBS.filter((h) => h.kind === 'city' && isHubLive(h, upcoming));
+---
+
+<Base title={title} description={description} path="/404.html" noindex>
+	<SiteNav />
+
+	<main class="wrap thanks">
+		<h1>Page not found.</h1>
+		<p>
+			There is nothing at this address. The event may have been renamed, or the link may be
+			mistyped.
+		</p>
+		<a class="btn accent" href="/">See all upcoming events</a>
+		{
+			cityLinks.length > 0 && (
+				<p class="cities">
+					Or go to a city: {cityLinks.map((h, i) => <>{i > 0 ? ', ' : ''}<a href={h.path}>{h.linkLabel}</a></>)}.
+				</p>
+			)
+		}
+	</main>
+
+	<SiteFooter />
+
+	<style>
+		.thanks {
+			padding-top: 72px;
+			padding-bottom: 72px;
+			max-width: 62ch;
+		}
+		h1 {
+			font-size: clamp(1.9rem, 4vw, 2.8rem);
+			font-weight: 600;
+			line-height: 1.08;
+			letter-spacing: -0.03em;
+			margin: 0;
+		}
+		p {
+			font-size: 1.05rem;
+			line-height: 1.55;
+			color: var(--ink-2);
+			margin: 20px 0 28px;
+		}
+		.cities {
+			font-size: 0.95rem;
+			margin: 28px 0 0;
+		}
+		.cities a {
+			color: var(--ink);
+		}
+	</style>
+</Base>

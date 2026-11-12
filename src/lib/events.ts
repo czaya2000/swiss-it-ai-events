@@ -137,8 +137,54 @@ export function formatDateRange(date: string, endDate?: string) {
 	return `${start} – ${end}`;
 }
 
+/** True only when the event as a whole is free: the cost text starts with
+    "Free". "Free for members / CHF 25 guests" and "CHF 5 in person / free
+    livestream" are not free events. */
 export function isFree(cost: string): boolean {
-	return /\bfree\b/i.test(cost);
+	return /^free\b(?! for\b)/i.test(cost.trim());
+}
+
+/** What the cost text lets us state as fact in the Event markup. A price is
+    given only for "Free" or one plain amount ("CHF 450", "150 CHF", "CHF 690
+    excl. VAT", with an optional note in brackets that names no other amount).
+    Tiered, "from", "not listed" and ticket-platform texts give no price.
+    Availability is stated only when the text says "sold out". */
+export function offerFacts(cost: string): {
+	price?: string;
+	priceCurrency?: string;
+	availability?: string;
+} {
+	const text = cost.trim();
+	const out: { price?: string; priceCurrency?: string; availability?: string } = {};
+	if (/\bsold out\b/i.test(text)) out.availability = 'https://schema.org/SoldOut';
+	if (isFree(text)) return { ...out, price: '0', priceCurrency: 'CHF' };
+	const m =
+		text.match(/^(CHF|EUR) ?(\d[\d,']*)(?: excl\. VAT)?(?: \(([^)]*)\))?$/) ??
+		text.match(/^()(\d[\d,']*) (CHF|EUR)$/);
+	if (!m) return out;
+	const currency = m[1] || m[3];
+	const note = m[1] ? (m[3] ?? '') : '';
+	if (/CHF|EUR|\bfree\b/i.test(note)) return out;
+	return { ...out, price: m[2].replace(/[,']/g, ''), priceCurrency: currency };
+}
+
+/** "12 Nov 2026", "12–13 Nov 2026" or "30 Nov – 2 Dec 2026": short enough for a page title. */
+export function formatDateCompact(date: string, endDate?: string): string {
+	const part = (iso: string, opts: Intl.DateTimeFormatOptions) =>
+		new Date(`${iso}T00:00:00Z`).toLocaleDateString('en-GB', { ...opts, timeZone: 'UTC' });
+	const full = part(endDate && endDate !== date ? endDate : date, DATE_RANGE_OPTS);
+	if (!endDate || endDate === date) return full;
+	if (date.slice(0, 7) === endDate.slice(0, 7)) return `${Number(date.slice(8))}–${full}`;
+	const start = part(
+		date,
+		date.slice(0, 4) === endDate.slice(0, 4) ? { day: 'numeric', month: 'short' } : DATE_RANGE_OPTS,
+	);
+	return `${start} – ${full}`;
+}
+
+/** The place without the main city in brackets: "Thônex (Geneva)" → "Thônex". */
+export function placeName(city: string): string {
+	return city.replace(/\s*\([^)]*\)\s*$/, '').trim() || city;
 }
 
 export function eventUrl(slug: string): string {

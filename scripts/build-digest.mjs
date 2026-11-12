@@ -161,7 +161,7 @@ function renderEvent(e, { dot = false, blurb = true } = {}) {
 	const newDot = dot ? NEW_DOT : '';
 	const end = e.endDate && e.endDate !== e.date ? spine(e.endDate) : null;
 	const through = end ? `<br>to ${end.day} ${end.month}` : '';
-	const free = /\bfree\b/i.test(e.cost);
+	const free = /^free\b(?! for\b)/i.test(e.cost.trim());
 	const cost = /not listed/i.test(e.cost)
 		? ''
 		: free

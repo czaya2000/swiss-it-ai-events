@@ -5,6 +5,9 @@ import SiteFooter from '../../components/SiteFooter.astro';
 import Subscribe from '../../components/Subscribe.astro';
 import {
 	formatDateRange,
+	formatDateCompact,
+	offerFacts,
+	placeName,
 	isFree,
 	isEnded,
 	eventUrl,
@@ -16,7 +19,7 @@ import {
 	SITE_URL,
 	SITE_NAME,
 } from '../../lib/events';
-import { eventDateTimes } from '../../lib/ics';
+import { eventDateTimes, parseTime } from '../../lib/ics';
 import { cityHubFor, isHubLive } from '../../lib/hubs.mjs';
 
 export async function getStaticPaths() {
@@ -27,13 +30,26 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const e = entry.data;
 const dateLabel = formatDateRange(e.date, e.endDate);
-const title = `${e.title} — ${dateLabel}, ${e.city} | ${SITE_NAME}`;
-const description = e.blurb;
 const isOnline = /online/i.test(e.city);
+// Search results cut a title at about 60 characters, so the site name is
+// added only when the event name, date and place leave room for it.
+const coreTitle = `${e.title} — ${formatDateCompact(e.date, e.endDate)}, ${e.city}`;
+const withSite = `${coreTitle} | ${SITE_NAME}`;
+const title = withSite.length <= 65 ? withSite : coreTitle;
+// The facts come first, so a search snippet shows when, where and what it
+// costs even when the rest is cut off. Same order as the RSS summary.
+const whereLabel = isOnline ? 'Online' : [e.venue, e.city].filter(Boolean).join(', ');
+const description = `${dateLabel}${e.time ? `, ${e.time}` : ''} · ${whereLabel} · ${e.format} · ${e.cost}. ${e.blurb}`;
 const free = isFree(e.cost);
 const registerUrl = outboundUrl(e.url);
 const ended = isEnded(e);
 const when = eventDateTimes(e);
+// eventDateTimes assumes two hours when only a start time is published (the
+// calendar feeds need an end). The markup states an end only when it is known.
+const multiDay = !!e.endDate && e.endDate !== e.date;
+const parsedTime = multiDay ? null : parseTime(e.time);
+const endKnown = !parsedTime || parsedTime.end !== undefined;
+const offer = offerFacts(e.cost);
 
 // An ended event's page stays up for old links but points people onward:
 // the next events in the same city, topped up with the next ones anywhere.
@@ -54,7 +70,7 @@ const structuredData: Record<string, unknown>[] = ended ? [] : [
 		'@type': 'Event',
 		name: e.title,
 		startDate: when.start,
-		endDate: when.end,
+		...(endKnown ? { endDate: when.end } : {}),
 		image: [`${SITE_URL}/og-image.png`],
 		eventAttendanceMode: isOnline
 			? 'https://schema.org/OnlineEventAttendanceMode'
@@ -65,7 +81,7 @@ const structuredData: Record<string, unknown>[] = ended ? [] : [
 			: {
 					'@type': 'Place',
 					name: e.venue || e.city,
-					address: { '@type': 'PostalAddress', addressLocality: e.city, addressCountry: 'CH' },
+					address: { '@type': 'PostalAddress', addressLocality: placeName(e.city), addressCountry: 'CH' },
 				},
 		description: e.blurb,
 		organizer: {
@@ -77,8 +93,7 @@ const structuredData: Record<string, unknown>[] = ended ? [] : [
 		offers: {
 			'@type': 'Offer',
 			url: e.url,
-			availability: 'https://schema.org/InStock',
-			...(free ? { price: '0', priceCurrency: 'CHF' } : {}),
+			...offer,
 		},
 	},
 	{
