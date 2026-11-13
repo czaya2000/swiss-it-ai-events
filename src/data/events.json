@@ -19,131 +19,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "heg-geneve-de-lia-aux-resultats-2026",
-    "title": "Les Rendez-vous de la HEG-Genève : De l’IA aux résultats",
-    "date": "2026-11-09",
-    "endDate": "2026-11-09",
-    "time": "18:00–19:30",
-    "city": "Carouge (Geneva)",
-    "venue": "HEG-Genève, Campus Battelle, Rue de la Tambourine 17",
-    "format": "Conference",
-    "topics": [
-      "Applied AI",
-      "AI adoption",
-      "Data and organisation"
-    ],
-    "organiser": "HEG-Genève / Observatoire Data & IA (with Oracle and Colombus Consulting)",
-    "cost": "Free (registration required)",
-    "url": "https://heg.hesge.ch/ecole/evenements/2026/l%27ia-aux-resultats-des-organisations-qui-passent-l%27action",
-    "source": "hesge.ch",
-    "blurb": "Round table in which four organisations present AI initiatives that moved past the pilot stage to measurable business impact — the organisers promise fewer speeches and more lived experience — followed by a cocktail.",
-    "firstSeen": "2026-10-30"
-  },
-  {
-    "id": "unige-recherche-documentaire-ia-2026",
-    "title": "UNIGE – Recherche documentaire et IA",
-    "date": "2026-11-09",
-    "endDate": "2026-11-09",
-    "time": "10:15–11:45",
-    "city": "Geneva",
-    "venue": "Uni Mail 2220",
-    "format": "Workshop",
-    "topics": [
-      "AI tools",
-      "Academic research"
-    ],
-    "organiser": "Université de Genève",
-    "cost": "Not specified",
-    "url": "https://agenda.unige.ch/events/view/45097",
-    "source": "agenda.unige.ch",
-    "blurb": "University of Geneva workshop on using AI tools for academic research.",
-    "firstSeen": "2026-09-03"
-  },
-  {
-    "id": "women-and-ai-lead-change-zurich-2026",
-    "title": "Women & AI: How to Lead Change & Build the Future",
-    "date": "2026-11-09",
-    "endDate": "2026-11-09",
-    "time": "18:00–21:00",
-    "city": "Zurich",
-    "venue": "Zentrum Glockenhof, Sihlstrasse 33",
-    "format": "Networking",
-    "topics": [
-      "AI adoption",
-      "AI strategy",
-      "AI community"
-    ],
-    "organiser": "Startup Campus (on behalf of Innosuisse) with Female Founders Initiative Switzerland",
-    "cost": "Free",
-    "url": "https://www.startup-campus.ch/offer/startup-stories-female-founders-edition-in-zurich-3/",
-    "source": "startupticker.ch",
-    "blurb": "Zurich founders and AI practitioners on how they actually use AI inside their companies and lead teams through the change it brings, followed by an open panel and networking.",
-    "firstSeen": "2026-11-02"
-  },
-  {
-    "id": "judgements-you-cannot-outsource-zurich-2026",
-    "title": "The Judgements You Cannot Outsource",
-    "date": "2026-11-09",
-    "endDate": "2026-11-09",
-    "time": "13:00",
-    "city": "Zurich",
-    "venue": "ZHAW, Lagerstrasse 45, room ZL O6.10",
-    "format": "Meetup",
-    "topics": [
-      "AI governance",
-      "Trustworthy AI",
-      "Data leadership"
-    ],
-    "organiser": "Trustworthy AI Circle (Responsible AI Innovation Group, ZHAW)",
-    "cost": "Free (registration required)",
-    "url": "https://luma.com/tlxvfdd1",
-    "source": "luma.com",
-    "blurb": "Short talks and open discussion on which professional judgements should stay human as AI absorbs more decisions, with Chuck Garcia (Columbia Engineering), Pascal Wiscour-Conter and Dr Jacqueline Kucera (IDHEAP, UNIL).",
-    "firstSeen": "2026-11-03"
-  },
-  {
-    "id": "knowledge-transfer-age-of-ai-zurich-2026",
-    "title": "Knowledge Transfer in the Age of AI",
-    "date": "2026-11-09",
-    "endDate": "2026-11-09",
-    "time": "17:00–20:00",
-    "city": "Zurich",
-    "venue": "ETH Student Project House, Clausiusstrasse 16",
-    "format": "Meetup",
-    "topics": [
-      "AI adoption",
-      "Enterprise AI",
-      "Data leadership"
-    ],
-    "organiser": "ETH Student Project House with Prometheus, UZH.ai and Young AI Leaders Zurich",
-    "cost": "Free (50 places, registration required)",
-    "url": "https://luma.com/rgqvxcff",
-    "source": "luma.com",
-    "blurb": "A workshop plus panel on how AI changes knowledge transfer between research, industry and new talent, with ETH Zurich, Artefact and KPMG Switzerland’s head of AI answering questions the room drafts first.",
-    "firstSeen": "2026-11-03"
-  },
-  {
-    "id": "aipero-zurich-2026",
-    "title": "Aipéro",
-    "date": "2026-11-09",
-    "endDate": "2026-11-09",
-    "time": "17:30–21:00",
-    "city": "Zurich",
-    "venue": "Event Space Bogen D, Viaduktstrasse 93–95",
-    "format": "Networking",
-    "topics": [
-      "AI community",
-      "Applied AI",
-      "AI adoption"
-    ],
-    "organiser": "CPLTS GmbH",
-    "cost": "Free",
-    "url": "https://www.aipero.ch/",
-    "source": "ai-weeks.ch",
-    "blurb": "A German-language evening of drinks, snacks and expert interviews in Zurich, built around the launch of the first issue of ZAITUNG — a paper written by AI journalists from the community’s own answers on what a human in the loop needs to know.",
-    "firstSeen": "2026-11-06"
-  },
-  {
     "id": "agentic-trio-zurich-2026",
     "title": "Agentic Trio",
     "date": "2026-11-10",
@@ -2062,6 +1937,27 @@
     "firstSeen": "2026-11-12"
   },
   {
+    "id": "taic-ai-agents-permissions-zurich-2026",
+    "title": "TAIC: AI Agents Need Permissions, Not Forgiveness",
+    "date": "2026-11-26",
+    "endDate": "2026-11-26",
+    "time": "18:00–21:00",
+    "city": "Zurich",
+    "venue": "Nüü, Lagerstrasse 45",
+    "format": "Meetup",
+    "topics": [
+      "AI governance",
+      "AI agents",
+      "Trustworthy AI"
+    ],
+    "organiser": "TAIC – Trustworthy AI Circle (ZHAW Centre for Artificial Intelligence)",
+    "cost": "Free",
+    "url": "https://www.sairop.swiss/events/taic-ai-agents-need-permissions-not-forgiveness",
+    "source": "sairop.swiss",
+    "blurb": "Evening session on how far AI agents should be allowed to act on our behalf, with Maria Fay (SAP, University of Münster) and Matthias Plattner (Julius Bär) on AI governance across industries and whose values an agent should carry.",
+    "firstSeen": "2026-11-13"
+  },
+  {
     "id": "after-microsoft-ignite-special-zurich-2026",
     "title": "After Microsoft Ignite Special 2026",
     "date": "2026-11-27",
@@ -2604,6 +2500,27 @@
     "firstSeen": "2026-11-11"
   },
   {
+    "id": "swiss-insights-training-moderne-ki-modelle-2026",
+    "title": "Swiss Insights TRAINING — Überblick über moderne KI-Modelle",
+    "date": "2026-12-03",
+    "endDate": "2026-12-03",
+    "time": "08:30–10:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Applied AI",
+      "LLMs",
+      "RAG",
+      "AI agents"
+    ],
+    "organiser": "Swiss Insights (Swiss Data Insights Association)",
+    "cost": "CHF 80 for Swiss Insights individual members, CHF 120 for non-members",
+    "url": "https://swiss-insights.ch/event/webinar-moderne-ki-modelle-llms-mllms-rag-und-ai-agents/",
+    "source": "swiss-insights.ch",
+    "blurb": "German-language webinar by Christoph Bräunlich, Head of AI at BSI Software, mapping today's model landscape — LLMs, multimodal models, RAG and AI agents — plus the differences between closed, open-weights and open-source models.",
+    "firstSeen": "2026-11-13"
+  },
+  {
     "id": "hack-apertus-onsite-basel-2026",
     "title": "Hack Apertus — Onsite Hackathon Basel",
     "date": "2026-12-04",
@@ -2896,6 +2813,28 @@
     "firstSeen": "2026-11-03"
   },
   {
+    "id": "swiss-insights-data-fairness-community-zurich-2026",
+    "title": "Data Fairness Community — December 2026",
+    "date": "2026-12-15",
+    "endDate": "2026-12-15",
+    "time": "16:30–18:30",
+    "city": "Zurich",
+    "venue": "UZH Digital Society Initiative (DSI), Rämistrasse 69",
+    "format": "Meetup",
+    "topics": [
+      "Data ethics",
+      "Data quality",
+      "Data governance",
+      "Human-AI teaming"
+    ],
+    "organiser": "Swiss Insights (Swiss Data Insights Association)",
+    "cost": "For Swiss Insights corporate members (registration required)",
+    "url": "https://swiss-insights.ch/event/data-fairness-community-7/",
+    "source": "swiss-insights.ch",
+    "blurb": "Data-ethics community meeting at the UZH Digital Society Initiative: data-quality lessons from the City of Zurich's MeLODy chatbot and the Federal Statistical Office, a study on human-AI teaming in marketing, and the “AI Encyclical” dialogue format, followed by an apéro.",
+    "firstSeen": "2026-11-13"
+  },
+  {
     "id": "ai-for-business-network-learn-grow-zurich-2026-12-28",
     "title": "AI for Business: Network, Learn & Grow in Zurich",
     "date": "2026-12-28",
@@ -3018,6 +2957,26 @@
     "source": "Meetup",
     "blurb": "The Basel AI Stammtisch returns for the new year with a guest talk or an in-house topic, followed by open discussion over drinks at the iRIX bistro.",
     "firstSeen": "2026-11-04"
+  },
+  {
+    "id": "swiss-insights-training-survey-questions-llms-2027",
+    "title": "Swiss Insights TRAINING — Generating Survey Questions with LLMs",
+    "date": "2027-01-19",
+    "endDate": "2027-01-19",
+    "time": "16:00–17:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Applied AI",
+      "LLMs",
+      "Research methods"
+    ],
+    "organiser": "Swiss Insights (Swiss Data Insights Association)",
+    "cost": "Free (registration by 12 January 2027)",
+    "url": "https://swiss-insights.ch/event/swiss-insights-training-generating-survey-questions-with-llms/",
+    "source": "swiss-insights.ch",
+    "blurb": "Anna Fuchs (Social Data Science and AI Lab, LMU Munich) presents a study that benchmarked five large language models and three prompting techniques against the Survey Quality Predictor, and what it says about where LLM-written items still fall short.",
+    "firstSeen": "2026-11-13"
   },
   {
     "id": "digital-lounge-davos-2027",
@@ -3208,6 +3167,27 @@
     "venue": "Zurich (address on registration)"
   },
   {
+    "id": "ki-meetup-graubuenden-10-chur-2027",
+    "title": "KI-Meetup Graubünden Nr. 10 — Voice AI",
+    "date": "2027-02-16",
+    "endDate": "2027-02-16",
+    "time": "17:00–19:00",
+    "city": "Chur",
+    "venue": "Location to be announced",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "Voice AI",
+      "Regional AI community"
+    ],
+    "organiser": "Markenkern AG and Code Crush GmbH, powered by GRdigital",
+    "cost": "Free",
+    "url": "https://ki-meetup-gr.ch/",
+    "source": "ki-meetup-gr.ch",
+    "blurb": "Tenth edition of the Graubünden AI meetup in Chur, with Rico Castelberg on voice AI and digital telephone assistants, followed by open discussion and networking.",
+    "firstSeen": "2026-11-13"
+  },
+  {
     "id": "ai-days-2027-geneva",
     "title": "AI Days 2027 — Geneva",
     "date": "2027-02-17",
@@ -3325,5 +3305,46 @@
     "source": "swisslegal.tech",
     "blurb": "A day of sessions on legal technology and AI in practice: comprehensive data management and whether data lakes break down silos, risk and exit management for legal tech, courts in the age of AI, and what role AI agents play today.",
     "firstSeen": "2026-11-07"
+  },
+  {
+    "id": "swiss-insights-training-ki-betriebliche-marktforschung-2027",
+    "title": "Swiss Insights TRAINING — KI in der betrieblichen Marktforschung",
+    "date": "2027-03-02",
+    "endDate": "2027-03-02",
+    "time": "10:00–12:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Applied AI",
+      "Generative AI",
+      "AI agents"
+    ],
+    "organiser": "Swiss Insights (Swiss Data Insights Association)",
+    "cost": "CHF 80 for Swiss Insights individual members, CHF 120 for non-members (excl. VAT)",
+    "url": "https://swiss-insights.ch/event/swiss-insights-training-ki-in-der-betrieblichen-marktforschung-2/",
+    "source": "swiss-insights.ch",
+    "blurb": "German-language webinar with Karin Hagemann (S-Communication Services) on putting generative AI and agentic workflows to work in in-house research teams, including building small tools yourself and where the limits sit.",
+    "firstSeen": "2026-11-13"
+  },
+  {
+    "id": "voxxed-days-zurich-2027",
+    "title": "Voxxed Days Zürich 2027",
+    "date": "2027-03-09",
+    "endDate": "2027-03-09",
+    "city": "Zurich",
+    "venue": "Arena Cinemas Sihlcity",
+    "format": "Conference",
+    "topics": [
+      "Agentic engineering",
+      "Cloud native",
+      "Data infrastructure",
+      "Software architecture"
+    ],
+    "organiser": "Exteso Sagl",
+    "cost": "CHF 301 early bird, CHF 360 standard, CHF 166 student",
+    "url": "https://vdz27.voxxeddays.ch/",
+    "source": "confs.tech",
+    "blurb": "One-day developer conference at the Sihlcity cinemas with nine tracks, among them agentic engineering and tooling (agents, RAG, evals, LLMOps) and a cloud native, data and infrastructure track covering streaming, vector databases and model serving.",
+    "firstSeen": "2026-11-13"
   }
 ]
