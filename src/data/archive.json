@@ -4027,5 +4027,276 @@
     "source": "startupticker.ch",
     "blurb": "Zurich founders and AI practitioners on how they actually use AI inside their companies and lead teams through the change it brings, followed by an open panel and networking.",
     "firstSeen": "2026-11-02"
+  },
+  {
+    "id": "agentic-trio-zurich-2026",
+    "title": "Agentic Trio",
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "time": "17:30–19:30",
+    "city": "Zurich",
+    "venue": "Hardturmstrasse 253",
+    "format": "Meetup",
+    "topics": [
+      "Agentic AI",
+      "Software delivery",
+      "Applied AI"
+    ],
+    "organiser": "Zürich Agentic Coding and Architectures",
+    "cost": "Free",
+    "url": "https://www.meetup.com/zurich-agentic-coding-and-architectures-meetup-group/events/316414193/",
+    "source": "Meetup",
+    "blurb": "INNOQ’s Fabian Walther reframes Teresa Torres’ Product Trio as an \"Agentic Trio\", arguing that AI should change how software teams split responsibility — not just how fast they ship.",
+    "firstSeen": "2026-09-16"
+  },
+  {
+    "id": "ai-in-food-state-of-play-zurich-2026",
+    "title": "AI in Food — State of Play",
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "time": "09:00–15:30",
+    "city": "Zurich",
+    "venue": "Helbling, Hohlstrasse 614",
+    "format": "Conference",
+    "topics": [
+      "Enterprise AI",
+      "AI adoption",
+      "Applied AI"
+    ],
+    "organiser": "Swiss Food & Nutrition Valley / Porsche Consulting",
+    "cost": "Free",
+    "url": "https://swissfoodnutritionvalley.com/event-listing/ai-in-food-state-of-play/",
+    "source": "ai-weeks.ch",
+    "blurb": "A full day of keynotes and workshops for food-industry professionals past the AI hype stage, on what it actually takes to implement AI against real problems inside their own organisations.",
+    "firstSeen": "2026-10-07"
+  },
+  {
+    "id": "ai-stammtisch-stgallen-november-2026",
+    "title": "AI-Stammtisch | St.Gallen",
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "time": "17:30–18:30",
+    "city": "St. Gallen",
+    "venue": "OST Campus St.Gallen, Raum FZ.0132 (FHZ), Rosenbergstrasse 59",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI-assisted engineering",
+      "AI research"
+    ],
+    "organiser": "OST – Ostschweizer Fachhochschule (Institut für Informations- und Prozessmanagement)",
+    "cost": "Free",
+    "url": "https://www.ost.ch/de/event/ai-stammtisch-stgallen-30",
+    "source": "ost.ch",
+    "blurb": "The monthly Eastern Switzerland AI round table, this time on whether a model may write the tests for safety-critical software — how far generated results can be trusted and how quality is kept — drawing on the Innosuisse project “Functional Safety Agent”. Followed by an apéro; the talk can also be followed online.",
+    "firstSeen": "2026-11-10"
+  },
+  {
+    "id": "ai-swiss-groupe-mutuel-base-sion-2026",
+    "title": "AI Swiss x Groupe Mutuel : d’une discussion d’équipe à une IA façonnée pour elle, avec BASE",
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "city": "Sion",
+    "venue": "Groupe Mutuel Assurances",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI governance",
+      "AI for SMEs"
+    ],
+    "organiser": "AI Swiss / Groupe Mutuel",
+    "cost": "Not listed (registration required)",
+    "url": "https://link.a-i.swiss/events/groupemutuel-aiswiss-base",
+    "source": "alpict.ch",
+    "blurb": "Second stop of AI Swiss’s roadshow on BASE, its free open standard for responsible AI adoption, with a live demonstration turning a transcribed team interview into an agreed usage framework, plus a Q&A on limits and oversight.",
+    "firstSeen": "2026-10-30"
+  },
+  {
+    "id": "apertus-for-ngos-workshop-lausanne-2026",
+    "title": "Apertus for NGOs: Running and Deploying Switzerland’s Open-source LLM",
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "time": "09:30–12:30",
+    "city": "Lausanne",
+    "venue": "EPFL AI Center Lounge",
+    "format": "Workshop",
+    "topics": [
+      "Open-source LLMs",
+      "Sovereign AI",
+      "Applied AI"
+    ],
+    "organiser": "Swiss AI Initiative (ETH Zurich, EPFL & CSCS)",
+    "cost": "Free",
+    "url": "https://luma.com/k910o3e1",
+    "source": "luma.com",
+    "blurb": "Hands-on morning for non-profit staff and researchers on deploying Apertus, Switzerland’s fully open large language model, on their own infrastructure or via a provider — with a Swiss non-profit case study and group exercises.",
+    "firstSeen": "2026-10-28"
+  },
+  {
+    "id": "c4dt-ai-sovereignty-conference-2026",
+    "title": "C4DT Conference on AI Sovereignty: Charting Switzerland’s Path",
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "time": "09:30–18:00",
+    "city": "Saint-Sulpice (Lausanne)",
+    "venue": "Starling Hotel, 1025 Saint-Sulpice",
+    "format": "Conference",
+    "topics": [
+      "AI strategy",
+      "Digital sovereignty",
+      "AI governance"
+    ],
+    "organiser": "Center for Digital Trust (C4DT), EPFL",
+    "cost": "Not listed",
+    "url": "https://c4dt.epfl.ch/c4dt-conference-on-ai-sovereignty/",
+    "source": "c4dt.epfl.ch",
+    "blurb": "A full day on how Switzerland builds strategic independence in AI between US and Chinese dominance — lessons from other middle powers, Swiss research including the Apertus foundation model, industry deployment realities, and concrete recommendations for national strategy.",
+    "firstSeen": "2026-09-28"
+  },
+  {
+    "id": "data-protection-tia-ai-startups-zurich-2026",
+    "title": "Navigating Data Protection and Transfer Impact Assessments for AI Startups",
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "time": "09:00",
+    "city": "Zurich",
+    "venue": "AI Startup Center, Technopark Zürich",
+    "format": "Networking",
+    "topics": [
+      "Data governance",
+      "Privacy",
+      "AI governance"
+    ],
+    "organiser": "AI Startup Center / Wenger Vieli",
+    "cost": "Not listed",
+    "url": "https://ai-startup-center.com/navigating-data-protection-and-transfer-impact-assessments-for-ai-startups/",
+    "source": "ai-startup-center.com",
+    "blurb": "Breakfast session with lawyers from Wenger Vieli on when a Transfer Impact Assessment is actually required for cross-border data transfers, and how to keep them manageable as an AI company.",
+    "firstSeen": "2026-09-21"
+  },
+  {
+    "id": "devops-for-fabric-git-deployment-pipelines-2026",
+    "title": "DevOps for Fabric — Git & Deployment Pipelines",
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "time": "18:30–20:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Microsoft Fabric",
+      "Data platform",
+      "Microsoft ecosystem"
+    ],
+    "organiser": "Data and AI for Intelligent Cloud",
+    "cost": "Free",
+    "url": "https://www.meetup.com/ai-and-intelligent-cloud/events/312635993/",
+    "source": "Meetup",
+    "blurb": "Bringing proper CI/CD to Microsoft Fabric: Git integration, deployment pipelines, variable libraries and sensitivity labels for enterprise-ready BI.",
+    "firstSeen": "2026-09-15"
+  },
+  {
+    "id": "learning-lunch-alternatives-numeriques-neuchatel-2026",
+    "title": "Learning Lunch : alternatives numériques — quelles options et quels impacts pour les PME ?",
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "time": "12:00–14:00",
+    "city": "Neuchâtel",
+    "venue": "La Petite Rochette",
+    "format": "Meetup",
+    "topics": [
+      "Digital sovereignty",
+      "Open source",
+      "Data protection"
+    ],
+    "organiser": "platinn with Alp ICT",
+    "cost": "Not listed (reserved for companies based in the canton of Neuchâtel; registration by email)",
+    "url": "https://alpict.ch/evenements/learning-lunch-alternatives-numeriques-quelles-options-quels-impacts-pour-les-pme/",
+    "source": "alpict.ch",
+    "blurb": "A French-language lunch session on alternatives to the large technology providers — digital commons, open-source platforms and decentralised infrastructure — with Lionel Jeannerat on the open-source sales platform be-BOP and Fabio Bonfiglio of NEDAO on decentralised identity and AI.",
+    "firstSeen": "2026-11-08"
+  },
+  {
+    "id": "machine-intelligence-summit-dubendorf-2026",
+    "title": "Machine Intelligence Summit",
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "time": "09:00–20:00",
+    "city": "Dübendorf",
+    "venue": "Stiftung Innovationspark Zürich, Wangenstrasse 68",
+    "format": "Conference",
+    "topics": [
+      "AI research",
+      "AI agents",
+      "Embodied AI"
+    ],
+    "organiser": "ellipsis Venture",
+    "cost": "Not listed (curated attendance, host approval required)",
+    "url": "https://luma.com/yvcsuunr",
+    "source": "startupticker.ch",
+    "blurb": "Three hundred people who build frontier AI in Europe, across four 80-minute blocks — infrastructure, learning, agents and the physical world — each pairing academia, a frontier lab and a startup, plus founder lightning talks and fifty students presenting posters. Nothing is recorded.",
+    "firstSeen": "2026-10-16"
+  },
+  {
+    "id": "mongodb-user-group-zurich-hallucinations-2026",
+    "title": "MUG Zürich — How to Truly Stop AI Hallucinations",
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "time": "18:00–21:00",
+    "city": "St. Gallen",
+    "venue": "University of St. Gallen, Dufourstrasse 50",
+    "format": "Meetup",
+    "topics": [
+      "RAG",
+      "Data modelling",
+      "Applied AI"
+    ],
+    "organiser": "Zürich MongoDB User Group",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/mongodb-usergroup-zurich/events/316993433/",
+    "source": "Meetup",
+    "blurb": "Two talks from Helvetia Insurance engineers: why factual errors in generative AI apps usually come from weak retrieval design rather than the model — covering semantic chunking, metadata filtering, hybrid search, reranking and output guardrails — and a second session on the benefits and risks of AI-assisted development.",
+    "firstSeen": "2026-10-21"
+  },
+  {
+    "id": "software-architecture-residuality-ai-zurich-2026",
+    "title": "Rethinking Architecture Through Residuality and AI",
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "time": "18:00",
+    "city": "Zurich",
+    "venue": "ERNI Schweiz AG, Löwenstrasse 11",
+    "format": "Meetup",
+    "topics": [
+      "AI-assisted engineering",
+      "Software architecture",
+      "Applied AI"
+    ],
+    "organiser": "Software Architecture and Project Design Zurich",
+    "cost": "Free",
+    "url": "https://www.meetup.com/software-architecture-and-project-design-zurich/events/317100425",
+    "source": "meetup.com",
+    "blurb": "Barry O’Reilly’s Residuality Theory applied to the age of AI-generated code: what architects should still decide themselves when machines write the implementation. Live stream plus a few on-site seats at ERNI.",
+    "firstSeen": "2026-10-26"
+  },
+  {
+    "id": "zurich-ai-safety-steering-vectors-2026",
+    "title": "AI Safety Weekly: Steering Vectors & Input Optimisation",
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "time": "18:30–20:00",
+    "city": "Zurich",
+    "venue": "ETH Zurich Main Building, Rämistrasse 101, room HG D3.3",
+    "format": "Meetup",
+    "topics": [
+      "AI safety",
+      "Interpretability",
+      "AI research"
+    ],
+    "organiser": "Zurich AI Safety",
+    "cost": "Free (registration required)",
+    "url": "https://luma.com/zais-42em",
+    "source": "luma.com",
+    "blurb": "A bachelor’s thesis presentation on automatically optimising a prompt to reproduce the effect of a steering vector, and whether such an input still works on models you cannot inspect from the inside — followed by wider interpretability discussion and food.",
+    "firstSeen": "2026-11-09"
   }
 ]
