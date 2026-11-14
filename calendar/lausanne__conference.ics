@@ -1,0 +1,85 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Lausanne – Conference
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:conference-next-design-x-ia-bussigny-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261119T140000
+DTEND;TZID=Europe/Zurich:20261119T173000
+SUMMARY:Conférence Next — Design x IA
+LOCATION:QG Center\, Route de la Chaux 4 (QoQa)\, Bussigny (Lausanne)
+DESCRIPTION:An afternoon on what AI has actually changed in design work: a 
+ study of how 100 designers use it\, prototyping with AI agents directly ag
+ ainst a codebase\, and how Swissquote rebuilt its design system with AI 
+ — then networking drinks.\n\nOrganiser: Labster.io\n\nDetails and regist
+ ration: https://swissdataevents.ch/events/conference-next-design-x-ia-buss
+ igny-2026/
+URL:https://swissdataevents.ch/events/conference-next-design-x-ia-bussigny-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hesso-valais-erp-a-l-ere-de-l-ia-sierre-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261202T173000
+DTEND;TZID=Europe/Zurich:20261202T200000
+SUMMARY:40 ans d’informatique en Valais — Conférence #3 : l’ERP\, co
+ lonne vertébrale de l’entreprise\, à l’ère de l’IA
+LOCATION:Campus Bellevue\, Rte de la Plaine 2\, Sierre
+DESCRIPTION:Public French-language conference closing the 40th-anniversary 
+ series of the Valais computer-science school: Prof. Sébastien Gard on how
+  SAP\, Odoo and other ERP systems connect business functions and are chang
+ ing with cloud and AI\, plus braintec CEO Philipp Fux on digital transform
+ ation\, followed by an apéritif.\n\nOrganiser: HES-SO Valais-Wallis (Haut
+ e École de Gestion & Tourisme\, filière Informatique de gestion)\n\nDeta
+ ils and registration: https://swissdataevents.ch/events/hesso-valais-erp-a
+ -l-ere-de-l-ia-sierre-2026/
+URL:https://swissdataevents.ch/events/hesso-valais-erp-a-l-ere-de-l-ia-sier
+ re-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-days-2027-yverdon-les-bains@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:AI Days 2027 — Yverdon-les-Bains
+LOCATION:Yverdon-les-Bains
+DESCRIPTION:Yverdon-les-Bains leg of AI Days 2027\, the Swiss AI Center’s
+  applied-AI conference for SMEs\, with workshops\, talks and demos. Regist
+ ration not yet open.\n\nOrganiser: HES-SO / Swiss AI Center\n\nDetails and
+  registration: https://swissdataevents.ch/events/ai-days-2027-yverdon-les-
+ bains/
+URL:https://swissdataevents.ch/events/ai-days-2027-yverdon-les-bains/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

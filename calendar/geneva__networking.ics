@@ -1,0 +1,96 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Geneva – Networking
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:coffee-and-prompt-011-geneva-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Coffee & Prompt #011
+LOCATION:Exponent\, Geneva
+DESCRIPTION:The Geneva builders’ weekend coworking morning: bring an AI p
+ roject or side hustle\, work alongside others\, and optionally show a feat
+ ure or a lesson learned for feedback from the room.\n\nOrganiser: Switzerl
+ and AI Community\n\nDetails and registration: https://swissdataevents.ch/e
+ vents/coffee-and-prompt-011-geneva-2026/
+URL:https://swissdataevents.ch/events/coffee-and-prompt-011-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:geneva-ai-conference-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261125T180000
+DTEND;TZID=Europe/Zurich:20261125T210000
+SUMMARY:The Geneva AI Conference 2026
+LOCATION:Venue to be confirmed\, Geneva
+DESCRIPTION:An evening on enterprise AI strategy and returns\, opened by Ge
+ neva city executive councillor Joëlle Bertossa and built around a panel w
+ ith IBM\, SAP\, Hostelworld and Executive AI. The venue is still to be con
+ firmed.\n\nOrganiser: Startup Network Europe\n\nDetails and registration: 
+ https://swissdataevents.ch/events/geneva-ai-conference-2026/
+URL:https://swissdataevents.ch/events/geneva-ai-conference-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:saic-real-or-generated-geneva-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261125T190000
+DTEND;TZID=Europe/Zurich:20261125T220000
+SUMMARY:Real or Generated? | SAIC x The Founders Club
+LOCATION:Foound\, Rue Jean-Dassier 7\, Geneva
+DESCRIPTION:Playful challenges to tell real images\, sounds and text apart 
+ from AI-generated ones\, with curated visuals\, music and networking acros
+ s Geneva's tech\, creative and founder communities.\n\nOrganiser: Switzerl
+ and AI Community with The Founders Club\n\nDetails and registration: https
+ ://swissdataevents.ch/events/saic-real-or-generated-geneva-2026/
+URL:https://swissdataevents.ch/events/saic-real-or-generated-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ia-puissance-ou-prudence-geneva-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261203T181500
+DTEND;TZID=Europe/Zurich:20261203T203000
+SUMMARY:IA : puissance ou prudence ?
+LOCATION:Maison de l’Avenir\, Rue Fendt 1\, Geneva
+DESCRIPTION:A French-language citizen debate in Oxford style on the opportu
+ nities and risks of artificial intelligence: two teams coached by speciali
+ sts argue before a jury of Geneva politicians\, followed by an open discus
+ sion for SMEs and the public and an apéritif.\n\nOrganiser: Alp ICT\, as 
+ part of the City of Geneva’s Semaine du climat 2026\n\nDetails and regis
+ tration: https://swissdataevents.ch/events/ia-puissance-ou-prudence-geneva
+ -2026/
+URL:https://swissdataevents.ch/events/ia-puissance-ou-prudence-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

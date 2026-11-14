@@ -1,0 +1,81 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Lausanne – Meetup
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:sovereign-ai-night-giotto-lausanne-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261117T183000
+DTEND;TZID=Europe/Zurich:20261117T220000
+SUMMARY:Sovereign AI Night by Giotto
+LOCATION:Lausanne (address on registration)
+DESCRIPTION:Launch evening for Giotto Alto and Solo: meet the team\, try th
+ e models\, watch a Giotto Workstation demo and argue about what sovereignt
+ y in AI actually requires — with pizza\, drinks and live music.\n\nOrgan
+ iser: Giotto\n\nDetails and registration: https://swissdataevents.ch/event
+ s/sovereign-ai-night-giotto-lausanne-2026/
+URL:https://swissdataevents.ch/events/sovereign-ai-night-giotto-lausanne-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-tinkerers-lausanne-november-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261123T180000
+DTEND;TZID=Europe/Zurich:20261123T210000
+SUMMARY:AI Tinkerers Lausanne — November 2026 Meetup
+LOCATION:Unlimitrust Campus\, Route des Flumeaux 42\, Prilly (Lausanne)
+DESCRIPTION:A demo-first evening for people actually building with AI: arou
+ nd half a dozen five-minute demos of work in progress\, each followed by q
+ uestions — slides and pitch decks are explicitly not allowed — then pi
+ zza and networking.\n\nOrganiser: AI Tinkerers Lausanne\, hosted at the Un
+ limitrust Campus\n\nDetails and registration: https://swissdataevents.ch/e
+ vents/ai-tinkerers-lausanne-november-2026/
+URL:https://swissdataevents.ch/events/ai-tinkerers-lausanne-november-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:demystifai-01-homebrewed-lausanne-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261125T180000
+DTEND;TZID=Europe/Zurich:20261125T210000
+SUMMARY:DemystifAI 01 — Homebrewed
+LOCATION:Maison de la Femme\, Avenue de l’Eglantine 6\, Lausanne
+DESCRIPTION:Kouros\, who is not a developer and has a full-time job\, expla
+ ins how he used AI to build a custom ERP for the La Nébuleuse brewery\, f
+ ollowed by guided discussion\, audience questions and an apéro.\n\nOrgani
+ ser: DemystifAI (Christophe Pian)\n\nDetails and registration: https://swi
+ ssdataevents.ch/events/demystifai-01-homebrewed-lausanne-2026/
+URL:https://swissdataevents.ch/events/demystifai-01-homebrewed-lausanne-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

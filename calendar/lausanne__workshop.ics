@@ -1,0 +1,98 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Lausanne – Workshop
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:digital-series-13-automatisation-ia-sion-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261117T163000
+DTEND;TZID=Europe/Zurich:20261117T180000
+SUMMARY:Digital Series #13 — Moins d’administratif grâce à l’IA
+LOCATION:Co-working La Bergerie\, Place du Midi 50\, Sion
+DESCRIPTION:Valais SMEs see how AI agents can take over routine admin — c
+ lient requests\, bookings\, contracts and follow-up — with a live tool d
+ emo and a local case study from the Sion coworking space.\n\nOrganiser: Sw
+ iss Digital Center / Fondation The Ark (with CCI Valais)\n\nDetails and re
+ gistration: https://swissdataevents.ch/events/digital-series-13-automatisa
+ tion-ia-sion-2026/
+URL:https://swissdataevents.ch/events/digital-series-13-automatisation-ia-s
+ ion-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sdsc-mlops-introduction-epfl-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261117T090000
+DTEND;TZID=Europe/Zurich:20261117T170000
+SUMMARY:AI in Production: Introduction to MLOps — Training at EPFL
+LOCATION:EPFL\, Lausanne
+DESCRIPTION:One-day SDSC training on designing\, deploying and operating ML
+  systems at scale — version control\, CI/CD\, experiment tracking\, moni
+ toring\, drift detection and automated retraining. Registration closes 24 
+ September.\n\nOrganiser: Swiss Data Science Center\n\nDetails and registra
+ tion: https://swissdataevents.ch/events/sdsc-mlops-introduction-epfl-2026/
+URL:https://swissdataevents.ch/events/sdsc-mlops-introduction-epfl-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:built-with-lovable-lausanne-2-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261124T180000
+DTEND;TZID=Europe/Zurich:20261124T213000
+SUMMARY:Built with Lovable · Lausanne #2
+LOCATION:Lausanne (address on registration)
+DESCRIPTION:A 90-minute hands-on build where everyone ships a working web a
+ pp with AI features using Lovable’s built-in models — no API keys or s
+ eparate accounts — with mentors on hand\, then demos and drinks. Bring a
+  laptop and an idea.\n\nOrganiser: Lovable Lausanne (Maxime Dumont)\n\nDet
+ ails and registration: https://swissdataevents.ch/events/built-with-lovabl
+ e-lausanne-2-2026/
+URL:https://swissdataevents.ch/events/built-with-lovable-lausanne-2-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:epfl-reshaping-information-research-with-ai-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261201T143000
+DTEND;TZID=Europe/Zurich:20261201T163000
+SUMMARY:Reshaping Information Research with AI
+LOCATION:EPFL\, room MED 0 1618\, Lausanne
+DESCRIPTION:Two-hour on-site workshop from the EPFL Library comparing four 
+ AI-powered research assistants\, how they work and where they differ from 
+ traditional information retrieval. Open to the public\, registration requi
+ red.\n\nOrganiser: EPFL Library\n\nDetails and registration: https://swiss
+ dataevents.ch/events/epfl-reshaping-information-research-with-ai-2026/
+URL:https://swissdataevents.ch/events/epfl-reshaping-information-research-w
+ ith-ai-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

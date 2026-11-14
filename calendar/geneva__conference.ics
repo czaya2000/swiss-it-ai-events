@@ -1,0 +1,100 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Geneva – Conference
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:innovation-debate-4-ai-for-all-geneva-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261118T173000
+DTEND;TZID=Europe/Zurich:20261118T210000
+SUMMARY:The 4th Innovation Debate: AI for All?
+LOCATION:Westhive\, Bâtiment Alto\, Esplanade de Pont-Rouge 9A\, Lancy (Ge
+ neva)
+DESCRIPTION:An Oxford-style debate on the motion “access to AI is worth t
+ he dependency it creates”\, with four debaters\, a jury of Geneva politi
+ cians and an audience vote\, followed by a networking apéritif.\n\nOrgani
+ ser: Geneva Innovation Movement and Geneva Research Lab for Digital Impact
+ \, with UNICEF Digital Impact Division and the University of Geneva\n\nDet
+ ails and registration: https://swissdataevents.ch/events/innovation-debate
+ -4-ai-for-all-geneva-2026/
+URL:https://swissdataevents.ch/events/innovation-debate-4-ai-for-all-geneva
+ -2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:scs-ai-risks-in-cybersecurity-geneva-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261119T163000
+DTEND;TZID=Europe/Zurich:20261119T193000
+SUMMARY:AI Risks in CyberSecurity
+LOCATION:Novotel Genève Centre\, Rue de Zurich 19\, Geneva
+DESCRIPTION:Afternoon session in Geneva on how organisations can keep using
+  AI internally without taking on unmanaged risk\, with presentations follo
+ wed by a networking reception\; CPE credits available via ISC2 and ISACA.\
+ n\nOrganiser: Swiss CyberSecurity (SCS)\n\nDetails and registration: https
+ ://swissdataevents.ch/events/scs-ai-risks-in-cybersecurity-geneva-2026/
+URL:https://swissdataevents.ch/events/scs-ai-risks-in-cybersecurity-geneva-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:energia-conference-geneva-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261201T160000
+DTEND;TZID=Europe/Zurich:20261201T200000
+SUMMARY:energIA 2026 — IA & décarbonation
+LOCATION:L’iceBergues\, Geneva
+DESCRIPTION:Second edition of the Geneva conference on AI and the energy tr
+ ansition\, debating whether AI genuinely helps reach net zero by 2050 or m
+ ostly adds resource consumption and rebound effects\, with public\, privat
+ e and academic participants and the Energ-IACK hackathon projects presenti
+ ng their results.\n\nOrganiser: Energ-IA Transition with MCI\n\nDetails an
+ d registration: https://swissdataevents.ch/events/energia-conference-genev
+ a-2026/
+URL:https://swissdataevents.ch/events/energia-conference-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-days-2027-geneva@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;VALUE=DATE:20270217
+DTEND;VALUE=DATE:20270218
+SUMMARY:AI Days 2027 — Geneva
+LOCATION:Geneva
+DESCRIPTION:Geneva leg of the fifth AI Days\, the Swiss AI Center’s appli
+ ed-AI conference for SMEs\, with workshops\, talks\, research and demos. R
+ egistration not yet open.\n\nOrganiser: HES-SO / Swiss AI Center\n\nDetail
+ s and registration: https://swissdataevents.ch/events/ai-days-2027-geneva/
+URL:https://swissdataevents.ch/events/ai-days-2027-geneva/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

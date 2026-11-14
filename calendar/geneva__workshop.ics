@@ -1,0 +1,65 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Geneva – Workshop
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:energ-iack-hackathon-vernier-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261115
+SUMMARY:Energ-IACK — Hackathon IA & énergie
+LOCATION:ESM\, Vernier\, Vernier (Geneva)
+DESCRIPTION:First edition of Geneva’s two-day AI and energy hackathon on 
+ the theme « Dessine-moi un NetZéro »\, where teams work on energy-trans
+ ition challenges\; the projects then present their results at the energIA 
+ conference on 1 December.\n\nOrganiser: Energ-IA Transition\n\nDetails and
+  registration: https://swissdataevents.ch/events/energ-iack-hackathon-vern
+ ier-2026/
+URL:https://swissdataevents.ch/events/energ-iack-hackathon-vernier-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fongit-boosting-life-sciences-ai-geneva-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261117T120000
+DTEND;TZID=Europe/Zurich:20261117T143000
+SUMMARY:Boosting Life Sciences Innovation with AI
+LOCATION:Campus Biotech\, Chemin des Mines 9\, Geneva
+DESCRIPTION:Lunchtime session with the Wyss Center AI Hub\, SOPHiA GENETICS
+ \, the Swiss Data Science Center and BrainQuant on the data\, infrastructu
+ re\, validation and regulatory groundwork behind AI in research partnershi
+ ps\, precision medicine and digital biomarkers.\n\nOrganiser: FONGIT / Swi
+ ss Data Science Center\n\nDetails and registration: https://swissdataevent
+ s.ch/events/fongit-boosting-life-sciences-ai-geneva-2026/
+URL:https://swissdataevents.ch/events/fongit-boosting-life-sciences-ai-gene
+ va-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

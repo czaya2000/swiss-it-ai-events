@@ -1,0 +1,63 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Basel – Conference
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:hack-apertus-basel-finals-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261205T170000
+DTEND;TZID=Europe/Zurich:20261205T220000
+SUMMARY:Hack Apertus — Basel Finals
+LOCATION:FHNW Campus Dreispitz\, Dornacherstrasse 394\, Basel
+DESCRIPTION:The public closing evening of the Basel leg of Hack Apertus: th
+ e top teams pitch prototypes built on Switzerland’s open Apertus model\,
+  with a fireside chat with Phoeniqs\, partner introductions from BaselTech
+ \, FHNW and ICT Scouts\, and the award ceremony.\n\nOrganiser: aiLights As
+ sociation\n\nDetails and registration: https://swissdataevents.ch/events/h
+ ack-apertus-basel-finals-2026/
+URL:https://swissdataevents.ch/events/hack-apertus-basel-finals-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swat4hcls-basel-2027@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270205
+SUMMARY:SWAT4HCLS 2027
+LOCATION:University of Basel\, Petersplatz 1
+DESCRIPTION:The 15th edition of the long-running international conference o
+ n semantics in healthcare and life sciences — ontologies\, knowledge gra
+ phs and AI — with keynotes\, tutorials and a dedicated biohackathon day 
+ in Basel.\n\nOrganiser: SWAT4HCLS / University of Basel\n\nDetails and reg
+ istration: https://swissdataevents.ch/events/swat4hcls-basel-2027/
+URL:https://swissdataevents.ch/events/swat4hcls-basel-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

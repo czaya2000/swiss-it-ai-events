@@ -1,0 +1,200 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Zurich – Networking
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:glass-box-roadshow-executive-track-zurich-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261117T180000
+DTEND;TZID=Europe/Zurich:20261117T213000
+SUMMARY:The Glass Box Roadshow — Executive Track Zurich
+LOCATION:Zurich
+DESCRIPTION:An evening counterpart to the roadshow for leaders accountable 
+ for AI returns: a keynote from someone who has already rolled AI out in th
+ eir company\, a live demonstration and a closed-door roundtable.\n\nOrgani
+ ser: Make\n\nDetails and registration: https://swissdataevents.ch/events/g
+ lass-box-roadshow-executive-track-zurich-2026/
+URL:https://swissdataevents.ch/events/glass-box-roadshow-executive-track-zu
+ rich-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-ai-summit-satellite-asset-management-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261117T140000
+DTEND;TZID=Europe/Zurich:20261117T160000
+SUMMARY:Satellite Event: From Data to Decisions — AI in Asset Management
+LOCATION:Beethovenstrasse 48\, Zurich
+DESCRIPTION:A Swiss AI Summit satellite session on how asset managers turn 
+ increasingly complex data into usable investment insight\, and where AI ma
+ kes a genuine difference rather than noise.\n\nOrganiser: Swiss AI Summit\
+ n\nDetails and registration: https://swissdataevents.ch/events/swiss-ai-su
+ mmit-satellite-asset-management-2026/
+URL:https://swissdataevents.ch/events/swiss-ai-summit-satellite-asset-manag
+ ement-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-society-coffee-chats-zurich-2026-11-20@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261120T090000
+DTEND;TZID=Europe/Zurich:20261120T100000
+SUMMARY:AI Society — AI Coffee Chats Zurich (20 November)
+LOCATION:BRIDGE\, Eisgasse 20 / Europaallee 22\, Zurich
+DESCRIPTION:Fortnightly drop-in coffee hour for anyone working with AI in Z
+ urich: no presentations\, just questions\, demos and shop talk over an hou
+ r.\n\nOrganiser: AI Society\n\nDetails and registration: https://swissdata
+ events.ch/events/ai-society-coffee-chats-zurich-2026-11-20/
+URL:https://swissdataevents.ch/events/ai-society-coffee-chats-zurich-2026-1
+ 1-20/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:zurich-pre-neurips-poster-session-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261125T160000
+DTEND;TZID=Europe/Zurich:20261125T190000
+SUMMARY:Zurich Pre-NeurIPS 2026 Poster Session
+LOCATION:ETH AI Center\, OAT X 11\, Oerlikon\, Zurich
+DESCRIPTION:Zurich’s official pre-conference poster session ahead of Neur
+ IPS 2026\, where researchers from across the city show accepted papers and
+  other peer-reviewed work and meet the rest of the local AI community.\n\n
+ Organiser: ETH AI Center / Zurich ELLIS Unit\n\nDetails and registration: 
+ https://swissdataevents.ch/events/zurich-pre-neurips-poster-session-2026/
+URL:https://swissdataevents.ch/events/zurich-pre-neurips-poster-session-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-for-business-network-learn-grow-zurich-2026-11-30@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261130T190000
+DTEND;TZID=Europe/Zurich:20261130T220000
+SUMMARY:AI for Business: Network\, Learn & Grow in Zurich
+LOCATION:ibis Styles Zurich City Center\, Stampfenbachstrasse 60
+DESCRIPTION:A deliberately small room of founders and executives comparing 
+ how they actually use AI: an invited talk\, then group conversations on wh
+ at worked\, what failed and what they are trying next\, followed by open n
+ etworking.\n\nOrganiser: Financial Network Zurich\n\nDetails and registrat
+ ion: https://swissdataevents.ch/events/ai-for-business-network-learn-grow-
+ zurich-2026-11-30/
+URL:https://swissdataevents.ch/events/ai-for-business-network-learn-grow-zu
+ rich-2026-11-30/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:databricks-executive-roundtable-zurich-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Databricks Executive Roundtable — Data + AI World Tour Zurich
+LOCATION:Restaurant Haute\, Talstrasse 65\, Zurich
+DESCRIPTION:An invitation-based dinner and discussion for data and technolo
+ gy executives the evening before the Data + AI World Tour\, with a welcome
+  from Databricks leadership and a Swiss customer segment\; sessions and sp
+ eakers are still to be announced.\n\nOrganiser: Databricks\n\nDetails and 
+ registration: https://swissdataevents.ch/events/databricks-executive-round
+ table-zurich-2026/
+URL:https://swissdataevents.ch/events/databricks-executive-roundtable-zuric
+ h-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-society-coffee-chats-zurich-2026-12-04@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261204T090000
+DTEND;TZID=Europe/Zurich:20261204T100000
+SUMMARY:AI Society — AI Coffee Chats Zurich (4 December)
+LOCATION:BRIDGE\, Eisgasse 20 / Europaallee 22\, Zurich
+DESCRIPTION:Fortnightly drop-in coffee hour for Zurich's AI practitioners: 
+ bring a question or a workflow to show\, stay for as much of the hour as y
+ ou like.\n\nOrganiser: AI Society\n\nDetails and registration: https://swi
+ ssdataevents.ch/events/ai-society-coffee-chats-zurich-2026-12-04/
+URL:https://swissdataevents.ch/events/ai-society-coffee-chats-zurich-2026-1
+ 2-04/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:azure-zurich-user-group-xmas-special-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261208T180000
+DTEND;TZID=Europe/Zurich:20261208T220000
+SUMMARY:Azure Zurich User Group X-Mas Special 2026
+LOCATION:Frau Gerolds Garten\, Geroldstrasse 23\, Zurich
+DESCRIPTION:The Azure Zürich User Group closes the year with its Christmas
+  get-together at Frau Gerolds Wintergarten — no agenda\, just food\, gl
+ ühwein and the Swiss Azure community. Places are limited.\n\nOrganiser: M
+ icrosoft Azure Zürich User Group\n\nDetails and registration: https://swi
+ ssdataevents.ch/events/azure-zurich-user-group-xmas-special-2026/
+URL:https://swissdataevents.ch/events/azure-zurich-user-group-xmas-special-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-for-business-network-learn-grow-zurich-2026-12-28@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261228T190000
+DTEND;TZID=Europe/Zurich:20261228T220000
+SUMMARY:AI for Business: Network\, Learn & Grow in Zurich
+LOCATION:ibis Styles Zurich City Center\, Stampfenbachstrasse 60
+DESCRIPTION:December edition of the small-room series where founders and ex
+ ecutives compare how they actually use AI: an invited talk\, group convers
+ ations on what worked and what failed\, then open networking.\n\nOrganiser
+ : Financial Network Zurich\n\nDetails and registration: https://swissdatae
+ vents.ch/events/ai-for-business-network-learn-grow-zurich-2026-12-28/
+URL:https://swissdataevents.ch/events/ai-for-business-network-learn-grow-zu
+ rich-2026-12-28/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:digitalswitzerland-davos-2027@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20270119T090000
+DTEND;TZID=Europe/Zurich:20270119T180000
+SUMMARY:digitalswitzerland @ Davos
+LOCATION:Davos
+DESCRIPTION:A full day in Davos on Switzerland's digital future\, with spea
+ kers from business\, government and research building on the national AI A
+ ction Plan and looking ahead to the Geneva AI Summit 2027. Programme detai
+ ls still to be published.\n\nOrganiser: digitalswitzerland\n\nDetails and 
+ registration: https://swissdataevents.ch/events/digitalswitzerland-davos-2
+ 027/
+URL:https://swissdataevents.ch/events/digitalswitzerland-davos-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

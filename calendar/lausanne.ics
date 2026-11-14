@@ -1,0 +1,219 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Lausanne
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:digital-series-13-automatisation-ia-sion-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261117T163000
+DTEND;TZID=Europe/Zurich:20261117T180000
+SUMMARY:Digital Series #13 — Moins d’administratif grâce à l’IA
+LOCATION:Co-working La Bergerie\, Place du Midi 50\, Sion
+DESCRIPTION:Valais SMEs see how AI agents can take over routine admin — c
+ lient requests\, bookings\, contracts and follow-up — with a live tool d
+ emo and a local case study from the Sion coworking space.\n\nOrganiser: Sw
+ iss Digital Center / Fondation The Ark (with CCI Valais)\n\nDetails and re
+ gistration: https://swissdataevents.ch/events/digital-series-13-automatisa
+ tion-ia-sion-2026/
+URL:https://swissdataevents.ch/events/digital-series-13-automatisation-ia-s
+ ion-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sdsc-mlops-introduction-epfl-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261117T090000
+DTEND;TZID=Europe/Zurich:20261117T170000
+SUMMARY:AI in Production: Introduction to MLOps — Training at EPFL
+LOCATION:EPFL\, Lausanne
+DESCRIPTION:One-day SDSC training on designing\, deploying and operating ML
+  systems at scale — version control\, CI/CD\, experiment tracking\, moni
+ toring\, drift detection and automated retraining. Registration closes 24 
+ September.\n\nOrganiser: Swiss Data Science Center\n\nDetails and registra
+ tion: https://swissdataevents.ch/events/sdsc-mlops-introduction-epfl-2026/
+URL:https://swissdataevents.ch/events/sdsc-mlops-introduction-epfl-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sovereign-ai-night-giotto-lausanne-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261117T183000
+DTEND;TZID=Europe/Zurich:20261117T220000
+SUMMARY:Sovereign AI Night by Giotto
+LOCATION:Lausanne (address on registration)
+DESCRIPTION:Launch evening for Giotto Alto and Solo: meet the team\, try th
+ e models\, watch a Giotto Workstation demo and argue about what sovereignt
+ y in AI actually requires — with pizza\, drinks and live music.\n\nOrgan
+ iser: Giotto\n\nDetails and registration: https://swissdataevents.ch/event
+ s/sovereign-ai-night-giotto-lausanne-2026/
+URL:https://swissdataevents.ch/events/sovereign-ai-night-giotto-lausanne-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:conference-next-design-x-ia-bussigny-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261119T140000
+DTEND;TZID=Europe/Zurich:20261119T173000
+SUMMARY:Conférence Next — Design x IA
+LOCATION:QG Center\, Route de la Chaux 4 (QoQa)\, Bussigny (Lausanne)
+DESCRIPTION:An afternoon on what AI has actually changed in design work: a 
+ study of how 100 designers use it\, prototyping with AI agents directly ag
+ ainst a codebase\, and how Swissquote rebuilt its design system with AI 
+ — then networking drinks.\n\nOrganiser: Labster.io\n\nDetails and regist
+ ration: https://swissdataevents.ch/events/conference-next-design-x-ia-buss
+ igny-2026/
+URL:https://swissdataevents.ch/events/conference-next-design-x-ia-bussigny-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-tinkerers-lausanne-november-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261123T180000
+DTEND;TZID=Europe/Zurich:20261123T210000
+SUMMARY:AI Tinkerers Lausanne — November 2026 Meetup
+LOCATION:Unlimitrust Campus\, Route des Flumeaux 42\, Prilly (Lausanne)
+DESCRIPTION:A demo-first evening for people actually building with AI: arou
+ nd half a dozen five-minute demos of work in progress\, each followed by q
+ uestions — slides and pitch decks are explicitly not allowed — then pi
+ zza and networking.\n\nOrganiser: AI Tinkerers Lausanne\, hosted at the Un
+ limitrust Campus\n\nDetails and registration: https://swissdataevents.ch/e
+ vents/ai-tinkerers-lausanne-november-2026/
+URL:https://swissdataevents.ch/events/ai-tinkerers-lausanne-november-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:built-with-lovable-lausanne-2-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261124T180000
+DTEND;TZID=Europe/Zurich:20261124T213000
+SUMMARY:Built with Lovable · Lausanne #2
+LOCATION:Lausanne (address on registration)
+DESCRIPTION:A 90-minute hands-on build where everyone ships a working web a
+ pp with AI features using Lovable’s built-in models — no API keys or s
+ eparate accounts — with mentors on hand\, then demos and drinks. Bring a
+  laptop and an idea.\n\nOrganiser: Lovable Lausanne (Maxime Dumont)\n\nDet
+ ails and registration: https://swissdataevents.ch/events/built-with-lovabl
+ e-lausanne-2-2026/
+URL:https://swissdataevents.ch/events/built-with-lovable-lausanne-2-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:demystifai-01-homebrewed-lausanne-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261125T180000
+DTEND;TZID=Europe/Zurich:20261125T210000
+SUMMARY:DemystifAI 01 — Homebrewed
+LOCATION:Maison de la Femme\, Avenue de l’Eglantine 6\, Lausanne
+DESCRIPTION:Kouros\, who is not a developer and has a full-time job\, expla
+ ins how he used AI to build a custom ERP for the La Nébuleuse brewery\, f
+ ollowed by guided discussion\, audience questions and an apéro.\n\nOrgani
+ ser: DemystifAI (Christophe Pian)\n\nDetails and registration: https://swi
+ ssdataevents.ch/events/demystifai-01-homebrewed-lausanne-2026/
+URL:https://swissdataevents.ch/events/demystifai-01-homebrewed-lausanne-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:epfl-reshaping-information-research-with-ai-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261201T143000
+DTEND;TZID=Europe/Zurich:20261201T163000
+SUMMARY:Reshaping Information Research with AI
+LOCATION:EPFL\, room MED 0 1618\, Lausanne
+DESCRIPTION:Two-hour on-site workshop from the EPFL Library comparing four 
+ AI-powered research assistants\, how they work and where they differ from 
+ traditional information retrieval. Open to the public\, registration requi
+ red.\n\nOrganiser: EPFL Library\n\nDetails and registration: https://swiss
+ dataevents.ch/events/epfl-reshaping-information-research-with-ai-2026/
+URL:https://swissdataevents.ch/events/epfl-reshaping-information-research-w
+ ith-ai-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hesso-valais-erp-a-l-ere-de-l-ia-sierre-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261202T173000
+DTEND;TZID=Europe/Zurich:20261202T200000
+SUMMARY:40 ans d’informatique en Valais — Conférence #3 : l’ERP\, co
+ lonne vertébrale de l’entreprise\, à l’ère de l’IA
+LOCATION:Campus Bellevue\, Rte de la Plaine 2\, Sierre
+DESCRIPTION:Public French-language conference closing the 40th-anniversary 
+ series of the Valais computer-science school: Prof. Sébastien Gard on how
+  SAP\, Odoo and other ERP systems connect business functions and are chang
+ ing with cloud and AI\, plus braintec CEO Philipp Fux on digital transform
+ ation\, followed by an apéritif.\n\nOrganiser: HES-SO Valais-Wallis (Haut
+ e École de Gestion & Tourisme\, filière Informatique de gestion)\n\nDeta
+ ils and registration: https://swissdataevents.ch/events/hesso-valais-erp-a
+ -l-ere-de-l-ia-sierre-2026/
+URL:https://swissdataevents.ch/events/hesso-valais-erp-a-l-ere-de-l-ia-sier
+ re-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:night-of-data-talents-lausanne-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261210T173000
+DTEND;TZID=Europe/Zurich:20261210T233000
+SUMMARY:The Night of Data Talents: Startup Edition
+LOCATION:Base Bar\, Av. de Sévelin 46\, Lausanne
+DESCRIPTION:Swiss data startups pitch to an investor panel with community v
+ oting\, capping the year for the Suisse Romande data scene.\n\nOrganiser: 
+ DatAfterwork Suisse\n\nDetails and registration: https://swissdataevents.c
+ h/events/night-of-data-talents-lausanne-2026/
+URL:https://swissdataevents.ch/events/night-of-data-talents-lausanne-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-days-2027-yverdon-les-bains@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:AI Days 2027 — Yverdon-les-Bains
+LOCATION:Yverdon-les-Bains
+DESCRIPTION:Yverdon-les-Bains leg of AI Days 2027\, the Swiss AI Center’s
+  applied-AI conference for SMEs\, with workshops\, talks and demos. Regist
+ ration not yet open.\n\nOrganiser: HES-SO / Swiss AI Center\n\nDetails and
+  registration: https://swissdataevents.ch/events/ai-days-2027-yverdon-les-
+ bains/
+URL:https://swissdataevents.ch/events/ai-days-2027-yverdon-les-bains/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

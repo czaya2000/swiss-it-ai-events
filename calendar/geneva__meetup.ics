@@ -1,0 +1,139 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Geneva – Meetup
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:aws-swiss-user-group-geneva-kiro-nights-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261117T180000
+DTEND;TZID=Europe/Zurich:20261117T213000
+SUMMARY:AWS Swiss User Group Geneva #30: Kiro Nights
+LOCATION:Sonar\, Chemin de Blandonnet 10\, Vernier (Geneva)
+DESCRIPTION:A beginner-friendly hands-on evening building a working web app
+  from scratch with Kiro\, AWS's agentic IDE\, with the organisers on hand 
+ to help — bring a laptop\, pizza and apéro included.\n\nOrganiser: AWS 
+ Swiss User Group – Geneva\n\nDetails and registration: https://swissdata
+ events.ch/events/aws-swiss-user-group-geneva-kiro-nights-2026/
+URL:https://swissdataevents.ch/events/aws-swiss-user-group-geneva-kiro-nigh
+ ts-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:saic-041-ai-healthcare-pharma-geneva-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261117T183000
+DTEND;TZID=Europe/Zurich:20261117T213000
+SUMMARY:SAIC #041: AI in Healthcare & Pharma — From Breakthrough Technolo
+ gy to Better Patient Outcomes
+LOCATION:Maison Internationale des Associations\, Rue des Savoises 15\, Gen
+ eva
+DESCRIPTION:Dr Stamen Popov on where AI already adds value from drug discov
+ ery to patient support\, and where trust\, ethics\, regulation and adoptio
+ n still get in the way of better outcomes.\n\nOrganiser: Switzerland AI Co
+ mmunity\n\nDetails and registration: https://swissdataevents.ch/events/sai
+ c-041-ai-healthcare-pharma-geneva-2026/
+URL:https://swissdataevents.ch/events/saic-041-ai-healthcare-pharma-geneva-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mindstone-geneva-ai-meetup-november-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261125T180000
+DTEND;TZID=Europe/Zurich:20261125T210000
+SUMMARY:Mindstone Geneva November AI Meetup
+LOCATION:L’Annexe by Rentes Genevoises\, Rue du Port 3\, Geneva
+DESCRIPTION:Monthly Geneva AI evening with three practical talks — buildi
+ ng with LLMs\, working faster with AI and where it is all heading — then
+  pizza and networking. Forty places.\n\nOrganiser: Mindstone Geneva AI Mee
+ tup\n\nDetails and registration: https://swissdataevents.ch/events/mindsto
+ ne-geneva-ai-meetup-november-2026/
+URL:https://swissdataevents.ch/events/mindstone-geneva-ai-meetup-november-2
+ 026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:chalet-azure-romandie-car17-geneva-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261126T180000
+DTEND;TZID=Europe/Zurich:20261126T210000
+SUMMARY:Chalet Azure Romandie #17 — Talents Microsoft & Azure Local
+LOCATION:EPAM Systems CH\, Rue Le-Royer 13\, Geneva
+DESCRIPTION:A French-language Azure evening in Geneva: what AI has really c
+ hanged about Microsoft recruitment and how candidates stay visible\, then 
+ Azure Local for running Azure services inside a sovereign private cloud\, 
+ with a live Foundry Local demo — quiz and networking afterwards.\n\nOrga
+ niser: Chalet Azure Romandie\n\nDetails and registration: https://swissdat
+ aevents.ch/events/chalet-azure-romandie-car17-geneva-2026/
+URL:https://swissdataevents.ch/events/chalet-azure-romandie-car17-geneva-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:geneva-3d-switzerland-ai-community-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261203T183000
+DTEND;TZID=Europe/Zurich:20261203T213000
+SUMMARY:Geneva 3D — Building a Living 3D Model of a Canton with AI Agents
+  and Open Data
+LOCATION:Tesla showroom\, Rue de la Confédération 8\, Geneva
+DESCRIPTION:Arnaud Ricci on how he built Genève 3D\, a browser-based 3D mo
+ del of the whole canton\, using AI agents and open data — with a live de
+ monstration\, questions from the room and a non-alcoholic apéro. The talk
+  is in French with English subtitles.\n\nOrganiser: Switzerland AI Communi
+ ty with Romandy CTO\, hosted by Tesla\n\nDetails and registration: https:/
+ /swissdataevents.ch/events/geneva-3d-switzerland-ai-community-2026/
+URL:https://swissdataevents.ch/events/geneva-3d-switzerland-ai-community-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mariadb-swiss-unleashing-power-gland-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261203T183000
+DTEND;TZID=Europe/Zurich:20261203T203000
+SUMMARY:Unleashing the Power of MariaDB
+LOCATION:Swissquote Bank SA\, Chem. de la Crétaux 33\, Gland (Geneva)
+DESCRIPTION:An evening for database practitioners hosted by Swissquote: liv
+ e demos and case studies on database modernisation\, high availability wit
+ h MaxScale\, an Oracle-to-Galera migration\, and pairing real-time payment
+  workflows with in-memory caching and vector search for AI.\n\nOrganiser: 
+ MariaDB Swiss Group\, with Swissquote and dbi services\n\nDetails and regi
+ stration: https://swissdataevents.ch/events/mariadb-swiss-unleashing-power
+ -gland-2026/
+URL:https://swissdataevents.ch/events/mariadb-swiss-unleashing-power-gland-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

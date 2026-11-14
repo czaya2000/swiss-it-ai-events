@@ -1,0 +1,51 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Lucerne – Meetup
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:brown-bag-copilot-ki-power-altdorf-2026@swissdataevents.ch
+DTSTAMP:20261114T120410Z
+DTSTART;TZID=Europe/Zurich:20261118T120000
+DTEND;TZID=Europe/Zurich:20261118T130000
+SUMMARY:Brown Bag: Copilot erfolgreich einführen — KI-Power im Büroallt
+ ag
+LOCATION:Innovations-Biotop Uri\, 3. OG\, Bahnhofplatz 1\, Altdorf (Lucerne
+ )
+DESCRIPTION:A German-language lunch hour on the organisational side of Micr
+ osoft 365 Copilot rather than prompt tricks: Roman Schön on why AI initia
+ tives stall\, why structure and context beat perfectly worded prompts\, an
+ d what it takes to make the tool stick in day-to-day office work.\n\nOrgan
+ iser: InnovationsBiotop Uri with Business Help Point\n\nDetails and regist
+ ration: https://swissdataevents.ch/events/brown-bag-copilot-ki-power-altdo
+ rf-2026/
+URL:https://swissdataevents.ch/events/brown-bag-copilot-ki-power-altdorf-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

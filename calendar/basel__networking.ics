@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Basel – Networking
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ai-lunch-basel-brown-bag-december-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261209T120000
+DTEND;TZID=Europe/Zurich:20261209T130000
+SUMMARY:AI-Lunch Basel: Brown Bag
+LOCATION:iRIX\, Gundeldinger Feld\, Bau 5\, Dornacherstrasse 192\, Basel
+DESCRIPTION:Deliberately low-key lunch break for Basel's AI crowd: no slide
+ s and no preparation\, just an open exchange of learnings and use cases ac
+ ross industries.\n\nOrganiser: AI@iRIX\n\nDetails and registration: https:
+ //swissdataevents.ch/events/ai-lunch-basel-brown-bag-december-2026/
+URL:https://swissdataevents.ch/events/ai-lunch-basel-brown-bag-december-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,117 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Bern – Meetup
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:applied-ai-journal-club-bern-10-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261117T173000
+DTEND;TZID=Europe/Zurich:20261117T183000
+SUMMARY:Applied AI Journal Club Bern #10
+LOCATION:inpeek AG\, Bogenschützenstrasse 9\, Bern
+DESCRIPTION:Monthly reading group in Bern where the group works through one
+  applied-AI article together\, with time afterwards for open exchange\; th
+ e paper is shared in advance.\n\nOrganiser: Applied AI Journal Club Bern (
+ inpeek)\n\nDetails and registration: https://swissdataevents.ch/events/app
+ lied-ai-journal-club-bern-10-2026/
+URL:https://swissdataevents.ch/events/applied-ai-journal-club-bern-10-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cloud-native-bern-november-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261126T170000
+DTEND;TZID=Europe/Zurich:20261126T190000
+SUMMARY:Cloud Native Bern Meetup — November 2026
+LOCATION:Puzzle ITC\, Belpstrasse 37\, Bern
+DESCRIPTION:Two talks and an apéro hosted by Puzzle: wiring Amazon RDS to 
+ TimescaleDB with foreign data wrappers for federated Postgres on EKS — a
+ nd where 10 TB starts to break it — then PostFinance on moving cloud and
+  AI cost awareness earlier\, and what AI cost governance takes.\n\nOrganis
+ er: Cloud Native Bern\n\nDetails and registration: https://swissdataevents
+ .ch/events/cloud-native-bern-november-2026/
+URL:https://swissdataevents.ch/events/cloud-native-bern-november-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wordpress-bern-111-kamikaze-ki-keynote-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261126T180000
+DTEND;TZID=Europe/Zurich:20261126T200000
+SUMMARY:Kamikaze-KI-Keynote: KI baut live eine WordPress-Seite
+LOCATION:Impact Hub Bern\, Spitalgasse 28 (hybrid)
+DESCRIPTION:Stefan Gilgen runs a live\, unrehearsed experiment in which sev
+ eral AI models write the text\, generate the images and assemble a complet
+ e website on stage\, with a candid look at which models he uses day to day
+  and what breaks along the way.\n\nOrganiser: WordPress Bern\n\nDetails an
+ d registration: https://swissdataevents.ch/events/wordpress-bern-111-kamik
+ aze-ki-keynote-2026/
+URL:https://swissdataevents.ch/events/wordpress-bern-111-kamikaze-ki-keynot
+ e-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aws-swiss-user-group-bern-december-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261201T173000
+DTEND;TZID=Europe/Zurich:20261201T193000
+SUMMARY:AWS Swiss User Group Bern — December Meetup
+LOCATION:Axians Amanox AG\, Dammweg 9\, Bern
+DESCRIPTION:Final Bern meetup of the year for the Swiss AWS community: a mi
+ x of community talks plus discussion and networking\, with the agenda anno
+ unced closer to the date.\n\nOrganiser: AWS Swiss User Group – Bern\n\nD
+ etails and registration: https://swissdataevents.ch/events/aws-swiss-user-
+ group-bern-december-2026/
+URL:https://swissdataevents.ch/events/aws-swiss-user-group-bern-december-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:robots-agents-future-of-work-fribourg-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261209T163000
+DTEND;TZID=Europe/Zurich:20261209T183000
+SUMMARY:Robots\, Agents and the Future of Work
+LOCATION:Université de Fribourg\, Campus de Pérolles\, PER 21\, Boulevard
+  de Pérolles 90
+DESCRIPTION:A panel with Peter Fankhauser (co-founder and CEO of ANYbotics)
+  and Anne Scherer (co-founder of Delta Labs) on how AI is changing company
+  operations\, from autonomous robots on the plant floor to generative AI i
+ n the boardroom.\n\nOrganiser: University of Fribourg (CSIS)\n\nDetails an
+ d registration: https://swissdataevents.ch/events/robots-agents-future-of-
+ work-fribourg-2026/
+URL:https://swissdataevents.ch/events/robots-agents-future-of-work-fribourg
+ -2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,153 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Online (CH)
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ai-observability-switzerland-webinar-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261117T110000
+DTEND;TZID=Europe/Zurich:20261117T120000
+SUMMARY:AI Observability Switzerland — Giving Your AI Systems the Visibil
+ ity They Deserve
+LOCATION:Online
+DESCRIPTION:An hour for engineering\, platform and data teams on tracking d
+ own rising token costs\, stuck agent chains and slower model responses —
+  monitoring LLM calls without custom instrumentation\, tracing agent chain
+ s with OpenTelemetry\, and setting up continuous evaluation to catch quali
+ ty drops.\n\nOrganiser: Swiss Digital Network (Effective SRE & DevOps Comm
+ unity) with Grafana Labs\n\nDetails and registration: https://swissdataeve
+ nts.ch/events/ai-observability-switzerland-webinar-2026/
+URL:https://swissdataevents.ch/events/ai-observability-switzerland-webinar-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai4all-lunch-learn-prompting-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Lunch & Learn: Chat mit GPT — Prompting für Anfänger und Profis
+LOCATION:Online
+DESCRIPTION:A 45-minute lunchtime session with AI lecturer Christian Sidow 
+ on getting more out of ChatGPT\, Gemini and Claude — the difference betw
+ een chatbots\, assistants and agents\, how to write a prompt that works\, 
+ and how to make a model check its own output.\n\nOrganiser: AI4ALL Switzer
+ land\n\nDetails and registration: https://swissdataevents.ch/events/ai4all
+ -lunch-learn-prompting-2026/
+URL:https://swissdataevents.ch/events/ai4all-lunch-learn-prompting-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai4all-lunch-learn-ki-hype-kmu-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:Lunch & Learn: KI-Hype bei KMU? Erstmal tief durchatmen!
+LOCATION:Online
+DESCRIPTION:Management consultant Janet Dubé on what a small or mid-sized 
+ company actually needs in place before AI pays off — which processes and
+  data basics matter\, where the quick wins are\, and which early mistakes 
+ to skip.\n\nOrganiser: AI4ALL Switzerland\n\nDetails and registration: htt
+ ps://swissdataevents.ch/events/ai4all-lunch-learn-ki-hype-kmu-2026/
+URL:https://swissdataevents.ch/events/ai4all-lunch-learn-ki-hype-kmu-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-insights-training-moderne-ki-modelle-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261203T083000
+DTEND;TZID=Europe/Zurich:20261203T100000
+SUMMARY:Swiss Insights TRAINING — Überblick über moderne KI-Modelle
+LOCATION:Online
+DESCRIPTION:German-language webinar by Christoph Bräunlich\, Head of AI at
+  BSI Software\, mapping today's model landscape — LLMs\, multimodal mode
+ ls\, RAG and AI agents — plus the differences between closed\, open-weig
+ hts and open-source models.\n\nOrganiser: Swiss Insights (Swiss Data Insig
+ hts Association)\n\nDetails and registration: https://swissdataevents.ch/e
+ vents/swiss-insights-training-moderne-ki-modelle-2026/
+URL:https://swissdataevents.ch/events/swiss-insights-training-moderne-ki-mo
+ delle-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fabric-year-in-review-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261208T183000
+DTEND;TZID=Europe/Zurich:20261208T200000
+SUMMARY:Fabric Year in Review 2026 — Highlights & Outlook
+LOCATION:Online
+DESCRIPTION:Year-end session from the Zurich Microsoft data-platform group 
+ on what actually shipped in Fabric during 2026 and what is worth planning 
+ for next.\n\nOrganiser: Data and AI for Intelligent Cloud\n\nDetails and r
+ egistration: https://swissdataevents.ch/events/fabric-year-in-review-2026/
+URL:https://swissdataevents.ch/events/fabric-year-in-review-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-insights-training-survey-questions-llms-2027@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20270119T160000
+DTEND;TZID=Europe/Zurich:20270119T170000
+SUMMARY:Swiss Insights TRAINING — Generating Survey Questions with LLMs
+LOCATION:Online
+DESCRIPTION:Anna Fuchs (Social Data Science and AI Lab\, LMU Munich) presen
+ ts a study that benchmarked five large language models and three prompting
+  techniques against the Survey Quality Predictor\, and what it says about 
+ where LLM-written items still fall short.\n\nOrganiser: Swiss Insights (Sw
+ iss Data Insights Association)\n\nDetails and registration: https://swissd
+ ataevents.ch/events/swiss-insights-training-survey-questions-llms-2027/
+URL:https://swissdataevents.ch/events/swiss-insights-training-survey-questi
+ ons-llms-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-insights-training-ki-betriebliche-marktforschung-2027@swissdataev
+ ents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20270302T100000
+DTEND;TZID=Europe/Zurich:20270302T120000
+SUMMARY:Swiss Insights TRAINING — KI in der betrieblichen Marktforschung
+LOCATION:Online
+DESCRIPTION:German-language webinar with Karin Hagemann (S-Communication Se
+ rvices) on putting generative AI and agentic workflows to work in in-house
+  research teams\, including building small tools yourself and where the li
+ mits sit.\n\nOrganiser: Swiss Insights (Swiss Data Insights Association)\n
+ \nDetails and registration: https://swissdataevents.ch/events/swiss-insigh
+ ts-training-ki-betriebliche-marktforschung-2027/
+URL:https://swissdataevents.ch/events/swiss-insights-training-ki-betrieblic
+ he-marktforschung-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

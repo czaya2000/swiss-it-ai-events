@@ -1,0 +1,584 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Conference
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:swiss-ai-summit-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261116T070000
+DTEND;TZID=Europe/Zurich:20261116T200000
+SUMMARY:Swiss AI Summit 2026
+LOCATION:Kunsthaus Zürich\, Zurich
+DESCRIPTION:Full-day summit at the Kunsthaus for senior business\, technolo
+ gy and government leaders\, spanning finance and insurance\, government an
+ d defence\, manufacturing\, cybersecurity\, quantum and healthcare — wit
+ h speakers from Microsoft Switzerland\, IBM\, Nestlé\, ABB\, HSBC and the
+  Canton of Zurich\, plus workshops\, demos and a one-to-one meeting platfo
+ rm.\n\nOrganiser: Swiss AI Summit\n\nDetails and registration: https://swi
+ ssdataevents.ch/events/swiss-ai-summit-2026/
+URL:https://swissdataevents.ch/events/swiss-ai-summit-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:glass-box-roadshow-zurich-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261117T090000
+DTEND;TZID=Europe/Zurich:20261117T123000
+SUMMARY:The Glass Box Roadshow — Zurich
+LOCATION:Zurich
+DESCRIPTION:Make’s Zurich stop on where AI automation already works and w
+ here it does not: live demos\, a product roadmap session\, an open panel a
+ nd lunch\, aimed at operations\, IT and transformation leads scaling autom
+ ation across teams.\n\nOrganiser: Make\n\nDetails and registration: https:
+ //swissdataevents.ch/events/glass-box-roadshow-zurich-2026/
+URL:https://swissdataevents.ch/events/glass-box-roadshow-zurich-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:growing-together-conference-gtc26-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261117T090000
+DTEND;TZID=Europe/Zurich:20261117T180000
+SUMMARY:Growing Together Conference GTC26
+LOCATION:The Circle Convention Center\, The Circle 27\, Zurich-Flughafen
+DESCRIPTION:A full day for business and data leaders on getting AI past iso
+ lated use cases and into scalable capability — keynotes from Benedict Ev
+ ans and Google Cloud’s Alon Halevy\, leader tracks with Helvetia\, Axpo 
+ and Emmi\, plus tech talks and workshops.\n\nOrganiser: D ONE\n\nDetails a
+ nd registration: https://swissdataevents.ch/events/growing-together-confer
+ ence-gtc26-2026/
+URL:https://swissdataevents.ch/events/growing-together-conference-gtc26-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dinacon-2026-bern@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261118T090000
+DTEND;TZID=Europe/Zurich:20261118T170000
+SUMMARY:DINAcon 2026
+LOCATION:Kongresszentrum Bern\, Zeughausgasse 41
+DESCRIPTION:Switzerland’s conference on digital sustainability — 36 ses
+ sions on open source\, open data\, digital sovereignty\, data protection a
+ nd copyright\, with 250+ attendees and a closing Hacknight.\n\nOrganiser: 
+ Verein CH Open\n\nDetails and registration: https://swissdataevents.ch/eve
+ nts/dinacon-2026-bern/
+URL:https://swissdataevents.ch/events/dinacon-2026-bern/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:innovation-debate-4-ai-for-all-geneva-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261118T173000
+DTEND;TZID=Europe/Zurich:20261118T210000
+SUMMARY:The 4th Innovation Debate: AI for All?
+LOCATION:Westhive\, Bâtiment Alto\, Esplanade de Pont-Rouge 9A\, Lancy (Ge
+ neva)
+DESCRIPTION:An Oxford-style debate on the motion “access to AI is worth t
+ he dependency it creates”\, with four debaters\, a jury of Geneva politi
+ cians and an audience vote\, followed by a networking apéritif.\n\nOrgani
+ ser: Geneva Innovation Movement and Geneva Research Lab for Digital Impact
+ \, with UNICEF Digital Impact Division and the University of Geneva\n\nDet
+ ails and registration: https://swissdataevents.ch/events/innovation-debate
+ -4-ai-for-all-geneva-2026/
+URL:https://swissdataevents.ch/events/innovation-debate-4-ai-for-all-geneva
+ -2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:conference-next-design-x-ia-bussigny-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261119T140000
+DTEND;TZID=Europe/Zurich:20261119T173000
+SUMMARY:Conférence Next — Design x IA
+LOCATION:QG Center\, Route de la Chaux 4 (QoQa)\, Bussigny (Lausanne)
+DESCRIPTION:An afternoon on what AI has actually changed in design work: a 
+ study of how 100 designers use it\, prototyping with AI agents directly ag
+ ainst a codebase\, and how Swissquote rebuilt its design system with AI 
+ — then networking drinks.\n\nOrganiser: Labster.io\n\nDetails and regist
+ ration: https://swissdataevents.ch/events/conference-next-design-x-ia-buss
+ igny-2026/
+URL:https://swissdataevents.ch/events/conference-next-design-x-ia-bussigny-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:digital-economy-award-2026-zurich@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Digital Economy Award 2026
+LOCATION:Hallenstadion\, Wallisellenstrasse 45\, Zurich
+DESCRIPTION:Switzerland’s digital-economy awards at the Hallenstadion: an
+  Executive Afternoon of nine partner-hosted sessions on AI\, customer rela
+ tionships\, skills and stablecoins\, followed by the Award Night for categ
+ ories from Pioneer of the Year to NextGen Hero.\n\nOrganiser: Swiss Digita
+ l Economy Award AG with digitalswitzerland\n\nDetails and registration: ht
+ tps://swissdataevents.ch/events/digital-economy-award-2026-zurich/
+URL:https://swissdataevents.ch/events/digital-economy-award-2026-zurich/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:scs-ai-risks-in-cybersecurity-geneva-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261119T163000
+DTEND;TZID=Europe/Zurich:20261119T193000
+SUMMARY:AI Risks in CyberSecurity
+LOCATION:Novotel Genève Centre\, Rue de Zurich 19\, Geneva
+DESCRIPTION:Afternoon session in Geneva on how organisations can keep using
+  AI internally without taking on unmanaged risk\, with presentations follo
+ wed by a networking reception\; CPE credits available via ISC2 and ISACA.\
+ n\nOrganiser: Swiss CyberSecurity (SCS)\n\nDetails and registration: https
+ ://swissdataevents.ch/events/scs-ai-risks-in-cybersecurity-geneva-2026/
+URL:https://swissdataevents.ch/events/scs-ai-risks-in-cybersecurity-geneva-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:agentic-engineering-days-zurich-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Agentic Engineering Days Zurich 2026
+LOCATION:Zurich Marriott Hotel\, Neumühlequai 42
+DESCRIPTION:A one-day engineering conference on AI coding and agent systems
+ : 38+ sessions across four tracks — using AI tools\, building AI-powered
+  systems\, sponsor spotlights and hands-on workshops — with speakers fro
+ m OpenAI\, Hugging Face\, NVIDIA\, Google and AWS.\n\nOrganiser: letsboot.
+ ch (felixideas GmbH)\n\nDetails and registration: https://swissdataevents.
+ ch/events/agentic-engineering-days-zurich-2026/
+URL:https://swissdataevents.ch/events/agentic-engineering-days-zurich-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:impresa-potenziata-con-ai-chiasso-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261125T133000
+DTEND;TZID=Europe/Zurich:20261125T183000
+SUMMARY:L’impresa potenziata con AI
+LOCATION:Lifestyle Innovation Hub (Dagorà)\, Piazza Indipendenza 5\, Chias
+ so (Lugano)
+DESCRIPTION:An Italian-language afternoon in Chiasso built on real cases an
+ d measured numbers rather than promises: AI agents in the business\, sover
+ eign data\, and what institutions are for — closing with a networking ap
+ éro.\n\nOrganiser: Datamoney.ch for Swiss {ai} Weeks\n\nDetails and regis
+ tration: https://swissdataevents.ch/events/impresa-potenziata-con-ai-chias
+ so-2026/
+URL:https://swissdataevents.ch/events/impresa-potenziata-con-ai-chiasso-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kongress-ki-im-energiesektor-bern-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261125T090000
+DTEND;TZID=Europe/Zurich:20261125T173000
+SUMMARY:Kongress «KI im Energiesektor»
+LOCATION:Kursaal Bern
+DESCRIPTION:Day-long congress bringing around 150 specialists from energy\,
+  technology and policy together on where AI and data create real value in 
+ grids\, buildings and districts\, with a keynote by Gerard Reid of Alexa C
+ apital.\n\nOrganiser: energie-cluster.ch\n\nDetails and registration: http
+ s://swissdataevents.ch/events/kongress-ki-im-energiesektor-bern-2026/
+URL:https://swissdataevents.ch/events/kongress-ki-im-energiesektor-bern-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hsg-fintech-summit-2026-zurich@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261126T090000
+DTEND;TZID=Europe/Zurich:20261126T203000
+SUMMARY:HSG Fintech Summit 2026
+LOCATION:UBS Konferenzgebäude Grünenhof\, Nüschelerstrasse 9\, Zurich
+DESCRIPTION:The University of St.Gallen’s fintech day\, themed this year 
+ on what AI does to finance: keynotes on AI in financial intermediation and
+  asset management\, research talks on model collapse\, AI errors and moral
+  hazard\, a panel on AI’s effect on markets\, and a closing apéro.\n\nO
+ rganiser: University of St.Gallen (HSG)\n\nDetails and registration: https
+ ://swissdataevents.ch/events/hsg-fintech-summit-2026-zurich/
+URL:https://swissdataevents.ch/events/hsg-fintech-summit-2026-zurich/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hack-apertus-zurich-finals-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261128T170000
+DTEND;TZID=Europe/Zurich:20261128T213000
+SUMMARY:Hack Apertus — Zurich Finals
+LOCATION:AI Startup Center\, Technopark Zürich\, Technoparkstrasse 1\, Zur
+ ich
+DESCRIPTION:The public closing evening of the Zurich leg of Hack Apertus: t
+ he six best teams pitch prototypes built on Switzerland’s open Apertus m
+ odel\, with a fireside chat with Phoeniqs\, local partner introductions an
+ d an award ceremony.\n\nOrganiser: aiLights Association\n\nDetails and reg
+ istration: https://swissdataevents.ch/events/hack-apertus-zurich-finals-20
+ 26/
+URL:https://swissdataevents.ch/events/hack-apertus-zurich-finals-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:databricks-data-ai-world-tour-zurich-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261201T080000
+DTEND;TZID=Europe/Zurich:20261201T183000
+SUMMARY:Databricks Data + AI World Tour Zurich 2026
+LOCATION:StageOne Event & Convention Hall\, Oerlikon\, Zurich
+DESCRIPTION:Databricks' flagship Swiss stop on the Data + AI World Tour: ke
+ ynotes\, breakout sessions and hands-on training on Genie and Lakebase\, p
+ lus an expo\, with speakers from Databricks and Zurich Insurance.\n\nOrgan
+ iser: Databricks\n\nDetails and registration: https://swissdataevents.ch/e
+ vents/databricks-data-ai-world-tour-zurich-2026/
+URL:https://swissdataevents.ch/events/databricks-data-ai-world-tour-zurich-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:energia-conference-geneva-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261201T160000
+DTEND;TZID=Europe/Zurich:20261201T200000
+SUMMARY:energIA 2026 — IA & décarbonation
+LOCATION:L’iceBergues\, Geneva
+DESCRIPTION:Second edition of the Geneva conference on AI and the energy tr
+ ansition\, debating whether AI genuinely helps reach net zero by 2050 or m
+ ostly adds resource consumption and rebound effects\, with public\, privat
+ e and academic participants and the Energ-IACK hackathon projects presenti
+ ng their results.\n\nOrganiser: Energ-IA Transition with MCI\n\nDetails an
+ d registration: https://swissdataevents.ch/events/energia-conference-genev
+ a-2026/
+URL:https://swissdataevents.ch/events/energia-conference-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hesso-valais-erp-a-l-ere-de-l-ia-sierre-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261202T173000
+DTEND;TZID=Europe/Zurich:20261202T200000
+SUMMARY:40 ans d’informatique en Valais — Conférence #3 : l’ERP\, co
+ lonne vertébrale de l’entreprise\, à l’ère de l’IA
+LOCATION:Campus Bellevue\, Rte de la Plaine 2\, Sierre
+DESCRIPTION:Public French-language conference closing the 40th-anniversary 
+ series of the Valais computer-science school: Prof. Sébastien Gard on how
+  SAP\, Odoo and other ERP systems connect business functions and are chang
+ ing with cloud and AI\, plus braintec CEO Philipp Fux on digital transform
+ ation\, followed by an apéritif.\n\nOrganiser: HES-SO Valais-Wallis (Haut
+ e École de Gestion & Tourisme\, filière Informatique de gestion)\n\nDeta
+ ils and registration: https://swissdataevents.ch/events/hesso-valais-erp-a
+ -l-ere-de-l-ia-sierre-2026/
+URL:https://swissdataevents.ch/events/hesso-valais-erp-a-l-ere-de-l-ia-sier
+ re-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-it-minds-2026-zurich@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261204
+SUMMARY:Swiss IT Minds 2026 — IT\, AI & Cyber Security
+LOCATION:The Dolder Grand\, Kurhausstrasse 65\, Zurich
+DESCRIPTION:Two days for Swiss IT and data leaders at the Dolder Grand on e
+ nterprise AI as a strategic capability\, centralised versus decentralised 
+ AI governance in large organisations\, securing AI agents as a hybrid work
+ force\, and the governance basics behind all of it.\n\nOrganiser: business
+  factors Deutschland GmbH\n\nDetails and registration: https://swissdataev
+ ents.ch/events/swiss-it-minds-2026-zurich/
+URL:https://swissdataevents.ch/events/swiss-it-minds-2026-zurich/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wpninjas-workplace-security-ninja-ug-switzerland-2612@swissdataevents.c
+ h
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261203T090000
+DTEND;TZID=Europe/Zurich:20261203T170000
+SUMMARY:Workplace & Security Ninja User Group Switzerland 2612
+LOCATION:Klubschule Migros Zürich-Oerlikon\, Hofwiesenstrasse 350\, Zurich
+DESCRIPTION:Full day of community sessions on Microsoft endpoint\, identity
+  and security work\, including securing agent identities\, privileged-acce
+ ss strategy with Entra and Intune\, secure low-code on the Power Platform\
+ , and label engineering.\n\nOrganiser: Workplace & Security Ninja User Gro
+ up Switzerland\n\nDetails and registration: https://swissdataevents.ch/eve
+ nts/wpninjas-workplace-security-ninja-ug-switzerland-2612/
+URL:https://swissdataevents.ch/events/wpninjas-workplace-security-ninja-ug-
+ switzerland-2612/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hack-apertus-basel-finals-2026@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20261205T170000
+DTEND;TZID=Europe/Zurich:20261205T220000
+SUMMARY:Hack Apertus — Basel Finals
+LOCATION:FHNW Campus Dreispitz\, Dornacherstrasse 394\, Basel
+DESCRIPTION:The public closing evening of the Basel leg of Hack Apertus: th
+ e top teams pitch prototypes built on Switzerland’s open Apertus model\,
+  with a fireside chat with Phoeniqs\, partner introductions from BaselTech
+ \, FHNW and ICT Scouts\, and the award ceremony.\n\nOrganiser: aiLights As
+ sociation\n\nDetails and registration: https://swissdataevents.ch/events/h
+ ack-apertus-basel-finals-2026/
+URL:https://swissdataevents.ch/events/hack-apertus-basel-finals-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:davos-catalyst-ai-summit-2027@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270116
+SUMMARY:Davos Catalyst: AI Summit 2027
+LOCATION:Davos Event Lounge\, Rätia Center\, Promenade 40
+DESCRIPTION:Invitation-only summit running alongside Davos week for around 
+ 200 founders\, investors\, corporate leaders and researchers\, with roundt
+ ables and closed-door sessions on AI infrastructure\, investment\, enterpr
+ ise deployment and governance.\n\nOrganiser: Davos Catalyst\n\nDetails and
+  registration: https://swissdataevents.ch/events/davos-catalyst-ai-summit-
+ 2027/
+URL:https://swissdataevents.ch/events/davos-catalyst-ai-summit-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-house-davos-2027@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270123
+SUMMARY:AI House Davos 2027
+LOCATION:AI House\, Davos Promenade
+DESCRIPTION:Five days of AI programming on the Davos Promenade alongside th
+ e World Economic Forum\, bringing research\, industry\, policy and civil s
+ ociety together under the 2027 theme "Citizens of an expanding world".\n\n
+ Organiser: AI House Association\n\nDetails and registration: https://swiss
+ dataevents.ch/events/ai-house-davos-2027/
+URL:https://swissdataevents.ch/events/ai-house-davos-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:digital-lounge-davos-2027@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20270121T091500
+DTEND;TZID=Europe/Zurich:20270121T111500
+SUMMARY:Digital Lounge @ Davos — Enterprise Data\, AI & Robotics
+LOCATION:Davos (venue shared with invitees)
+DESCRIPTION:An invitation-only forum during Davos week for CxOs and transfo
+ rmation leaders on enterprise data\, AI and robotics — morning and after
+ noon keynotes and panels\, a live technology showcase\, entrepreneur talks
+  and parallel workshops\, closing with an awards ceremony and dinner.\n\nO
+ rganiser: JiVS / Data Migration International\n\nDetails and registration:
+  https://swissdataevents.ch/events/digital-lounge-davos-2027/
+URL:https://swissdataevents.ch/events/digital-lounge-davos-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swat4hcls-basel-2027@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270205
+SUMMARY:SWAT4HCLS 2027
+LOCATION:University of Basel\, Petersplatz 1
+DESCRIPTION:The 15th edition of the long-running international conference o
+ n semantics in healthcare and life sciences — ontologies\, knowledge gra
+ phs and AI — with keynotes\, tutorials and a dedicated biohackathon day 
+ in Basel.\n\nOrganiser: SWAT4HCLS / University of Basel\n\nDetails and reg
+ istration: https://swissdataevents.ch/events/swat4hcls-basel-2027/
+URL:https://swissdataevents.ch/events/swat4hcls-basel-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sdsc-connect-environmental-sciences-bern-2027@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20270203T090000
+DTEND;TZID=Europe/Zurich:20270203T163000
+SUMMARY:SDSC-Connect: Connecting Digital Environmental Sciences
+LOCATION:Central Bern venue to be announced
+DESCRIPTION:A day in Bern on making environmental data usable across discip
+ lines and institutions — data access and sharing\, data infrastructure\,
+  and the role of machine learning and AI across climate\, ecology\, hydrol
+ ogy\, the cryosphere\, natural hazards and agriculture\, with keynotes\, i
+ nvited talks\, break-outs and a poster fair. Seats are limited and the ven
+ ue is still to be announced.\n\nOrganiser: Swiss Data Science Center\n\nDe
+ tails and registration: https://swissdataevents.ch/events/sdsc-connect-env
+ ironmental-sciences-bern-2027/
+URL:https://swissdataevents.ch/events/sdsc-connect-environmental-sciences-b
+ ern-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hack-apertus-midway-zurich-2027@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20270209T150000
+DTEND;TZID=Europe/Zurich:20270209T190000
+SUMMARY:Hack Apertus — Midway
+LOCATION:Novu Campus @ The Circle\, The Circle 60\, Zurich-Flughafen
+DESCRIPTION:The mid-series afternoon of the national Hack Apertus initiativ
+ e: Imanol Schlag (ETH)\, Thomas Taroni (Phoeniqs) and David Gugelmann (Exe
+ on Analytics) on the model\, the infrastructure and the security\, three h
+ ackathon projects showing what they built\, then parallel Q&A tables and a
+  closing reception.\n\nOrganiser: aiLights Association with Novu Campus\n\
+ nDetails and registration: https://swissdataevents.ch/events/hack-apertus-
+ midway-zurich-2027/
+URL:https://swissdataevents.ch/events/hack-apertus-midway-zurich-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-days-2027-geneva@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;VALUE=DATE:20270217
+DTEND;VALUE=DATE:20270218
+SUMMARY:AI Days 2027 — Geneva
+LOCATION:Geneva
+DESCRIPTION:Geneva leg of the fifth AI Days\, the Swiss AI Center’s appli
+ ed-AI conference for SMEs\, with workshops\, talks\, research and demos. R
+ egistration not yet open.\n\nOrganiser: HES-SO / Swiss AI Center\n\nDetail
+ s and registration: https://swissdataevents.ch/events/ai-days-2027-geneva/
+URL:https://swissdataevents.ch/events/ai-days-2027-geneva/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-days-2027-yverdon-les-bains@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:AI Days 2027 — Yverdon-les-Bains
+LOCATION:Yverdon-les-Bains
+DESCRIPTION:Yverdon-les-Bains leg of AI Days 2027\, the Swiss AI Center’s
+  applied-AI conference for SMEs\, with workshops\, talks and demos. Regist
+ ration not yet open.\n\nOrganiser: HES-SO / Swiss AI Center\n\nDetails and
+  registration: https://swissdataevents.ch/events/ai-days-2027-yverdon-les-
+ bains/
+URL:https://swissdataevents.ch/events/ai-days-2027-yverdon-les-bains/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-days-2027-fribourg@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;VALUE=DATE:20270219
+DTEND;VALUE=DATE:20270220
+SUMMARY:AI Days 2027 — Fribourg
+LOCATION:Fribourg
+DESCRIPTION:Fribourg leg of AI Days 2027\, the Swiss AI Center’s applied-
+ AI conference for SMEs\, closing the three-city edition with workshops\, t
+ alks and demos. Registration not yet open.\n\nOrganiser: HES-SO / Swiss AI
+  Center\n\nDetails and registration: https://swissdataevents.ch/events/ai-
+ days-2027-fribourg/
+URL:https://swissdataevents.ch/events/ai-days-2027-fribourg/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:genai-zurich-2027@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;VALUE=DATE:20270224
+DTEND;VALUE=DATE:20270226
+SUMMARY:GenAI Zürich 2027
+LOCATION:Volkshaus Zürich\, Zurich
+DESCRIPTION:A two-day European summit on applied generative AI at the Volks
+ haus: keynotes\, panels\, workshops\, roundtables\, a hackathon\, startup 
+ pitches and the GenAI Zürich Award\, focused on what works in production.
+ \n\nOrganiser: GenAI Zürich\n\nDetails and registration: https://swissdat
+ aevents.ch/events/genai-zurich-2027/
+URL:https://swissdataevents.ch/events/genai-zurich-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:imd-ki-update-2027@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;TZID=Europe/Zurich:20270302T090000
+DTEND;TZID=Europe/Zurich:20270302T173000
+SUMMARY:IMD KI-Update 2027
+LOCATION:THE HALL\, Hoffnigstrasse 1\, Dübendorf
+DESCRIPTION:A one-day German-language management congress on leading in the
+  AI era: executive cases\, keynotes on efficiency\, growth\, trust and res
+ ponsibility\, and a closing keynote by Richard David Precht.\n\nOrganiser:
+  echo originals AG (with IMD as knowledge partner)\n\nDetails and registra
+ tion: https://swissdataevents.ch/events/imd-ki-update-2027/
+URL:https://swissdataevents.ch/events/imd-ki-update-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-legal-tech-conference-2027@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270303
+SUMMARY:Swiss Legal Tech Conference 2027
+LOCATION:SIX ConventionPoint\, Pfingstweidstrasse 110\, Zurich
+DESCRIPTION:A day of sessions on legal technology and AI in practice: compr
+ ehensive data management and whether data lakes break down silos\, risk an
+ d exit management for legal tech\, courts in the age of AI\, and what role
+  AI agents play today.\n\nOrganiser: Swiss Legal Technology GmbH\n\nDetail
+ s and registration: https://swissdataevents.ch/events/swiss-legal-tech-con
+ ference-2027/
+URL:https://swissdataevents.ch/events/swiss-legal-tech-conference-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:voxxed-days-zurich-2027@swissdataevents.ch
+DTSTAMP:20261114T120409Z
+DTSTART;VALUE=DATE:20270309
+DTEND;VALUE=DATE:20270310
+SUMMARY:Voxxed Days Zürich 2027
+LOCATION:Arena Cinemas Sihlcity\, Zurich
+DESCRIPTION:One-day developer conference at the Sihlcity cinemas with nine 
+ tracks\, among them agentic engineering and tooling (agents\, RAG\, evals\
+ , LLMOps) and a cloud native\, data and infrastructure track covering stre
+ aming\, vector databases and model serving.\n\nOrganiser: Exteso Sagl\n\nD
+ etails and registration: https://swissdataevents.ch/events/voxxed-days-zur
+ ich-2027/
+URL:https://swissdataevents.ch/events/voxxed-days-zurich-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
