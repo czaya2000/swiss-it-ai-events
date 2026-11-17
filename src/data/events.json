@@ -19,69 +19,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "swiss-robotics-day-2026",
-    "title": "Swiss Robotics Day 2026",
-    "date": "2026-11-13",
-    "endDate": "2026-11-13",
-    "time": "08:00–18:00",
-    "city": "Zurich",
-    "venue": "StageOne Event & Convention Hall, Elias-Canetti-Strasse 146",
-    "format": "Conference",
-    "topics": [
-      "Robotics",
-      "Embodied AI",
-      "Academia–industry"
-    ],
-    "organiser": "ETH Zurich RobotX / Swiss Robotics Association",
-    "cost": "Not listed",
-    "url": "https://swissroboticsday.ch/",
-    "source": "swissroboticsday.ch",
-    "blurb": "The national robotics meeting point: keynotes, panels and workshops alongside an exhibition floor with 60+ exhibitors and live demos, bringing together labs, industry, policymakers and spin-offs.",
-    "firstSeen": "2026-09-21"
-  },
-  {
-    "id": "mit-claude-in-die-agentic-economy-zurich-2026",
-    "title": "Mit Claude in die Agentic Economy",
-    "date": "2026-11-13",
-    "endDate": "2026-11-13",
-    "time": "08:30–12:30",
-    "city": "Zurich",
-    "venue": "FFHS Campus Gleisarena, Zollstrasse 17",
-    "format": "Workshop",
-    "topics": [
-      "AI agents",
-      "Applied AI",
-      "AI adoption"
-    ],
-    "organiser": "SPEKTRUM (Andreas Rupf)",
-    "cost": "CHF 450 (coffee and pastries included)",
-    "url": "https://luma.com/hygw8gps",
-    "source": "luma.com",
-    "blurb": "A four-hour German-language workshop for non-programmers in management roles: build your own tool with Claude Code, then cover Skills and Projects for reuse plus data protection and model choice. Five to ten participants.",
-    "firstSeen": "2026-11-03"
-  },
-  {
-    "id": "ost-mein-erster-finance-agent-stgallen-2026",
-    "title": "Seminar «Mein erster Finance Agent – Praxisworkshop für KMU»",
-    "date": "2026-11-13",
-    "endDate": "2026-11-13",
-    "time": "09:00–16:30",
-    "city": "St. Gallen",
-    "venue": "OST, Bahnhof St.Gallen",
-    "format": "Workshop",
-    "topics": [
-      "AI agents",
-      "Applied AI",
-      "AI for SMEs"
-    ],
-    "organiser": "OST – Ostschweizer Fachhochschule (IFL Institut für Finance und Law)",
-    "cost": "CHF 980 (lunch, materials and certificate included)",
-    "url": "https://www.ost.ch/de/forschung-und-dienstleistungen/wirtschaft/ifl-institut-fuer-finance-und-law/accounting-und-corporate-finance/weiterbildung-accounting-und-corporate-finance/seminar-mein-erster-finance-agent-praxisworkshop-fuer-kmu",
-    "source": "ost.ch",
-    "blurb": "A German-language day for SME finance leads with no programming background: each participant builds an agent on their own laptop that prepares a monthly close from Excel data, summarises liquidity trends and works through debtor lists, with output to PDF or Excel.",
-    "firstSeen": "2026-11-10"
-  },
-  {
     "id": "energ-iack-hackathon-vernier-2026",
     "title": "Energ-IACK — Hackathon IA & énergie",
     "date": "2026-11-13",
@@ -3172,5 +3109,111 @@
     "source": "swissdevjobs.ch",
     "blurb": "A one-day developer conference held at the CERN Science Gateway, with tracks on AI and agentic engineering, cloud native data and infrastructure, software architecture and modernisation, and an optional tour of CERN’s underground facilities.",
     "firstSeen": "2026-11-16"
+  },
+  {
+    "id": "swiss-ai-sme-circle-5-lugano-2026",
+    "title": "Swiss AI SME Circle #5",
+    "date": "2026-11-26",
+    "endDate": "2026-11-26",
+    "time": "12:00–16:00",
+    "city": "Lugano",
+    "venue": "SUPSI Campus Est, Via la Santa 1",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "SMEs",
+      "Apertus",
+      "Swiss AI Initiative"
+    ],
+    "organiser": "Swiss AI Initiative (ETH Zurich, EPFL and CSCS) with SUPSI",
+    "cost": "Free (registration by approval)",
+    "url": "https://luma.com/9atdlga7",
+    "source": "ai-weeks.ch",
+    "blurb": "Updates from the Swiss AI Initiative and the Apertus engineering team, talks by LLM practitioners, live demos and four interactive breakout sessions for SMEs putting AI to work, starting with a networking lunch.",
+    "firstSeen": "2026-11-17"
+  },
+  {
+    "id": "smartfeld-webinar-ki-zwischen-hilfe-oder-huerde-2026",
+    "title": "Webinar: KI zwischen Hilfe oder Hürde?",
+    "date": "2026-11-18",
+    "endDate": "2026-11-18",
+    "time": "17:30–18:30",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Generative AI",
+      "AI literacy",
+      "Education"
+    ],
+    "organiser": "Verein Smartfeld, St. Gallen",
+    "cost": "Free (sold out)",
+    "url": "https://www.smartfeld.ch/events/ki-hilfe-huerde/",
+    "source": "ai-weeks.ch",
+    "blurb": "A German-language online session with Prof. Dr. Doris Weßels on how generative AI grew from the first chatbots into today's systems, and where it supports teaching rather than quietly solving the work meant for learners.",
+    "firstSeen": "2026-11-17"
+  },
+  {
+    "id": "kcd-suisse-romande-2026-meyrin",
+    "title": "KCD Suisse Romande 2026",
+    "date": "2026-12-09",
+    "endDate": "2026-12-10",
+    "time": "09:00–21:00",
+    "city": "Meyrin (Geneva)",
+    "venue": "CERN Science Gateway, 1 Esplanade des Particules",
+    "format": "Conference",
+    "topics": [
+      "Kubernetes",
+      "Cloud native",
+      "Platform engineering"
+    ],
+    "organiser": "Association Cloud Native Suisse Romande (CNCF)",
+    "cost": "Ticket required (student and job-seeker tickets CHF 49)",
+    "url": "https://cloud-native-romandy.ch/kcd2026/",
+    "source": "cloud-native-romandy.ch",
+    "blurb": "The second Kubernetes Community Days for French-speaking Switzerland: a warm-up day of parallel workshops with optional CERN and LHC tours, then a main day at the Science Gateway with keynotes and three tracks of talks in French and English.",
+    "firstSeen": "2026-11-17"
+  },
+  {
+    "id": "cloud-native-computing-switzerland-january-2027",
+    "title": "Cloud Native Computing Meetup — January 2027",
+    "date": "2027-01-27",
+    "endDate": "2027-01-27",
+    "time": "15:00–18:00",
+    "city": "Zurich",
+    "format": "Meetup",
+    "topics": [
+      "Kubernetes",
+      "Cloud native",
+      "Observability",
+      "AI agents"
+    ],
+    "organiser": "Cloud Native Computing Switzerland",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/cloud-native-computing-switzerland/events/317296484/",
+    "source": "meetup.com",
+    "blurb": "The community's first afternoon meetup of 2027, opening with runtime agent control using OpenTelemetry and OpenFeature, followed by further talks and an apéro; the Zurich venue is still to be announced.",
+    "firstSeen": "2026-11-17"
+  },
+  {
+    "id": "red-hat-summit-connect-switzerland-2027",
+    "title": "Red Hat Summit: Connect Switzerland 2027",
+    "date": "2027-02-03",
+    "endDate": "2027-02-03",
+    "time": "09:30–18:00",
+    "city": "Dübendorf",
+    "venue": "The Hall, Hoffnigstrasse 1",
+    "format": "Conference",
+    "topics": [
+      "Enterprise AI",
+      "Platform engineering",
+      "AIOps",
+      "Open source"
+    ],
+    "organiser": "Red Hat",
+    "cost": "Not listed (registration required)",
+    "url": "https://www.redhat.com/en/summit/connect/emea/zurich-2027",
+    "source": "vshn.ch",
+    "blurb": "Red Hat's Swiss edition brings keynotes on AI, security and infrastructure choices together with four tracks on platform, AIOps and automation, security and virtualisation, plus hands-on labs, an exhibition floor and a networking apéro.",
+    "firstSeen": "2026-11-17"
   }
 ]

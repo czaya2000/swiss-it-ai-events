@@ -4696,5 +4696,68 @@
     "source": "luma.com",
     "blurb": "Part of a discussion series on where AI development leads: expert forecasts for transformative AI, the economic effects of AGI, possible civilisational paths and what to do about them, mixing short explainers with group discussion.",
     "firstSeen": "2026-10-28"
+  },
+  {
+    "id": "mit-claude-in-die-agentic-economy-zurich-2026",
+    "title": "Mit Claude in die Agentic Economy",
+    "date": "2026-11-13",
+    "endDate": "2026-11-13",
+    "time": "08:30–12:30",
+    "city": "Zurich",
+    "venue": "FFHS Campus Gleisarena, Zollstrasse 17",
+    "format": "Workshop",
+    "topics": [
+      "AI agents",
+      "Applied AI",
+      "AI adoption"
+    ],
+    "organiser": "SPEKTRUM (Andreas Rupf)",
+    "cost": "CHF 450 (coffee and pastries included)",
+    "url": "https://luma.com/hygw8gps",
+    "source": "luma.com",
+    "blurb": "A four-hour German-language workshop for non-programmers in management roles: build your own tool with Claude Code, then cover Skills and Projects for reuse plus data protection and model choice. Five to ten participants.",
+    "firstSeen": "2026-11-03"
+  },
+  {
+    "id": "ost-mein-erster-finance-agent-stgallen-2026",
+    "title": "Seminar «Mein erster Finance Agent – Praxisworkshop für KMU»",
+    "date": "2026-11-13",
+    "endDate": "2026-11-13",
+    "time": "09:00–16:30",
+    "city": "St. Gallen",
+    "venue": "OST, Bahnhof St.Gallen",
+    "format": "Workshop",
+    "topics": [
+      "AI agents",
+      "Applied AI",
+      "AI for SMEs"
+    ],
+    "organiser": "OST – Ostschweizer Fachhochschule (IFL Institut für Finance und Law)",
+    "cost": "CHF 980 (lunch, materials and certificate included)",
+    "url": "https://www.ost.ch/de/forschung-und-dienstleistungen/wirtschaft/ifl-institut-fuer-finance-und-law/accounting-und-corporate-finance/weiterbildung-accounting-und-corporate-finance/seminar-mein-erster-finance-agent-praxisworkshop-fuer-kmu",
+    "source": "ost.ch",
+    "blurb": "A German-language day for SME finance leads with no programming background: each participant builds an agent on their own laptop that prepares a monthly close from Excel data, summarises liquidity trends and works through debtor lists, with output to PDF or Excel.",
+    "firstSeen": "2026-11-10"
+  },
+  {
+    "id": "swiss-robotics-day-2026",
+    "title": "Swiss Robotics Day 2026",
+    "date": "2026-11-13",
+    "endDate": "2026-11-13",
+    "time": "08:00–18:00",
+    "city": "Zurich",
+    "venue": "StageOne Event & Convention Hall, Elias-Canetti-Strasse 146",
+    "format": "Conference",
+    "topics": [
+      "Robotics",
+      "Embodied AI",
+      "Academia–industry"
+    ],
+    "organiser": "ETH Zurich RobotX / Swiss Robotics Association",
+    "cost": "Not listed",
+    "url": "https://swissroboticsday.ch/",
+    "source": "swissroboticsday.ch",
+    "blurb": "The national robotics meeting point: keynotes, panels and workshops alongside an exhibition floor with 60+ exhibitors and live demos, bringing together labs, industry, policymakers and spin-offs.",
+    "firstSeen": "2026-09-21"
   }
 ]
