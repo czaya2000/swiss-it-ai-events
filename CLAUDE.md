@@ -66,6 +66,14 @@ run on demand via **workflow_dispatch**. Nothing about it depends on a personal 
   rename or remove a field without bumping `DATA_VERSION` in `src/lib/public-data.ts`),
   `/rss.xml`, `/llms.txt`. All built from upcoming events only. `robots.txt` welcomes
   AI crawlers explicitly.
+- Markdown for AI agents (since 2026-11-17): `/llms.txt` is a short map with no events
+  in it; `/llms-full.txt` has every upcoming event; `/zurich.md`, `/conferences.md` …
+  (`src/pages/[hub].md.ts`) are the markdown copies of the city and type pages. All
+  are written from `publicEvent()` by the helpers in `src/lib/public-data.ts`. Keep
+  `/llms.txt` short and each `.md` list under ~40,000 characters: assistants' fetch
+  tools cut pages off there. A list over `MD_LIST_BUDGET` drops its descriptions.
+  Check with `npm run test:agent` after a build (not run in CI). No per-event
+  markdown pages and no MCP server, on purpose.
 - Analytics: Umami Cloud (EU, cookieless) plus Cloudflare Web Analytics, both in
   `src/layouts/Base.astro`. Card pages don't use Base, so the n8n screenshots aren't
   counted; keep it that way. Click events use `data-umami-event` attributes. Opening a

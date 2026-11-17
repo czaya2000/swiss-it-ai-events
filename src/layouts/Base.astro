@@ -9,9 +9,11 @@ interface Props {
 	structuredData?: Record<string, unknown>[];
 	/** Keep the page reachable but out of search results (e.g. ended events). */
 	noindex?: boolean;
+	/** Path of this page's markdown copy for AI agents (city and type pages). */
+	markdown?: string;
 }
 
-const { title, description, path, structuredData = [], noindex = false } = Astro.props;
+const { title, description, path, structuredData = [], noindex = false, markdown } = Astro.props;
 const canonical = new URL(path, SITE_URL).toString();
 const ogImage = new URL('/og-image.png', SITE_URL).toString();
 ---
@@ -40,7 +42,8 @@ const ogImage = new URL('/og-image.png', SITE_URL).toString();
 		<!-- Machine-readable versions of the event list, for feed readers and AI agents -->
 		<link rel="alternate" type="application/rss+xml" title={`${SITE_NAME} — upcoming events`} href="/rss.xml" />
 		<link rel="alternate" type="application/json" title={`${SITE_NAME} — events (JSON)`} href="/events.json" />
-		<link rel="alternate" type="text/markdown" title={`${SITE_NAME} — llms.txt`} href="/llms.txt" />
+		<link rel="alternate" type="text/plain" title={`${SITE_NAME} — llms.txt`} href="/llms.txt" />
+		{markdown && <link rel="alternate" type="text/markdown" href={markdown} />}
 
 		<meta property="og:type" content="website" />
 		<meta property="og:locale" content="en_CH" />

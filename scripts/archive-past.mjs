@@ -1,8 +1,8 @@
 // Moves ended events from src/data/events.json to src/data/archive.json.
 //
 // An event is moved once its endDate (or date) is more than GRACE_DAYS in the
-// past. Archived events keep their page at /events/<id>/ (marked "ended",
-// noindex) so old links from search, social posts and calendars still land
+// past. Archived events keep their page at /events/<id>/ (marked as a
+// past event) so old links from search, social posts and calendars still land
 // somewhere useful, but they never appear in listings, feeds or the sitemap.
 //
 // Deterministic on purpose: the refresh agent used to delete past entries

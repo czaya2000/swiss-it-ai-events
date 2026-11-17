@@ -4,14 +4,17 @@ import SiteNav from '../../components/SiteNav.astro';
 import SiteFooter from '../../components/SiteFooter.astro';
 import { SITE_NAME, getUpcomingEvents } from '../../lib/events';
 import { feedHttpsUrl, listFeeds } from '../../lib/calendar-feeds';
-import { ENDPOINTS } from '../../lib/public-data';
+import { ENDPOINTS, hubMarkdownPath } from '../../lib/public-data';
+import { HUBS, isHubLive } from '../../lib/hubs.mjs';
 
 const upcoming = await getUpcomingEvents();
+// The city and type lists that /llms.txt links (enough events to be worth it).
+const mdLists = HUBS.filter((h) => isHubLive(h, upcoming.map((e) => e.data)));
 // Single-dimension feeds only (all, each city, each format); the pairs are in the calendar modal.
 const feeds = listFeeds(upcoming).filter((f) => !(f.city && f.format));
 
 const title = `Data & feeds — ${SITE_NAME}`;
-const description = `The ${SITE_NAME} event list as JSON, RSS, iCalendar and llms.txt, for apps, feed readers and AI agents.`;
+const description = `The ${SITE_NAME} event list as JSON, RSS, iCalendar and plain markdown (llms.txt), for apps, feed readers and AI agents.`;
 
 const fields: [string, string][] = [
 	['id', 'Stable identifier. Never changes, even if the title or date is corrected.'],
@@ -42,15 +45,22 @@ const fields: [string, string][] = [
 		<h1>Data &amp; feeds</h1>
 		<p class="intro">
 			The event list is free to use in apps, newsletters, calendars and AI assistants. Everything
-			below is rebuilt every Monday, Wednesday and Friday morning with the site. Only upcoming
-			events are included. Please link to the event's page on {SITE_NAME} when you reuse a listing.
+			below is rebuilt every day with the site, from the same data. Only upcoming events are
+			included: an event leaves the list the day after it ends. Please link to the event's page on {SITE_NAME} when you reuse a listing.
 		</p>
 
 		<h2>Endpoints</h2>
 		<ul>
 			<li><a href={ENDPOINTS.json}><code>/events.json</code></a>: every upcoming event as JSON.</li>
 			<li><a href={ENDPOINTS.rss}><code>/rss.xml</code></a>: RSS feed, newest listings first.</li>
-			<li><a href={ENDPOINTS.llms}><code>/llms.txt</code></a>: a markdown summary for AI agents, with every upcoming event.</li>
+			<li><a href={ENDPOINTS.llms}><code>/llms.txt</code></a>: a short markdown guide for AI agents, with links to the lists below.</li>
+			<li><a href={ENDPOINTS.llmsFull}><code>/llms-full.txt</code></a>: every upcoming event as markdown, one line each.</li>
+			<li>
+				One markdown list per city and event type, at the page's address with <code>.md</code>:
+				{mdLists.map((h, i) => (
+					<>{i > 0 && ', '}<a href={hubMarkdownPath(h)}><code>{hubMarkdownPath(h)}</code></a></>
+				))}.
+			</li>
 			<li><a href={ENDPOINTS.ics}><code>/calendar/all.ics</code></a>: iCalendar feed to subscribe to.</li>
 		</ul>
 
@@ -81,6 +91,15 @@ const fields: [string, string][] = [
 			side, so point people to the organiser's page before they go. Fields may be added over time;
 			existing ones are not renamed or removed without changing <code>version</code>.
 		</p>
+		<p>
+			A series or course that runs on several dates is one entry: <code>start</code> is its first
+			day and <code>end</code> its last, and <code>time</code> applies to each session. The
+			organiser's page has the individual dates.
+		</p>
+		<p>
+			<code>lastScan</code> in <code>/events.json</code>, and the first lines of the markdown files,
+			say when the list was last checked. If that is more than two days ago, you have a cached copy.
+		</p>
 	</main>
 
 	<SiteFooter />
@@ -108,6 +127,9 @@ const fields: [string, string][] = [
 		}
 		p {
 			margin: 0;
+		}
+		p + p {
+			margin-top: 10px;
 		}
 		.intro {
 			color: var(--muted);

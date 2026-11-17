@@ -12,6 +12,7 @@ import {
 	SITE_NAME,
 } from '../../lib/events';
 import { HUBS, HUB_MIN_EVENTS } from '../../lib/hubs.mjs';
+import { hubMarkdownPath } from '../../lib/public-data';
 
 export function getStaticPaths() {
 	return HUBS.map((hub) => ({ params: { hub: hub.slug } }));
@@ -78,6 +79,7 @@ const structuredData = [
 	path={hub.path}
 	structuredData={structuredData}
 	noindex={n < HUB_MIN_EVENTS}
+	markdown={hubMarkdownPath(hub)}
 >
 	<Listing entries={entries} headline={hub.h1} subheadline={subheadline} intro={intro} hub={hub} />
 </Base>

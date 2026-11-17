@@ -1,5 +1,6 @@
 # Search engines and AI agents are welcome. Machine-readable data:
 #   https://swissdataevents.ch/llms.txt
+#   https://swissdataevents.ch/llms-full.txt
 #   https://swissdataevents.ch/events.json
 #   https://swissdataevents.ch/rss.xml
 
