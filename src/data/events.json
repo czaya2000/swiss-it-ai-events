@@ -19,26 +19,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "energ-iack-hackathon-vernier-2026",
-    "title": "Energ-IACK — Hackathon IA & énergie",
-    "date": "2026-11-13",
-    "endDate": "2026-11-14",
-    "city": "Vernier (Geneva)",
-    "venue": "ESM, Vernier",
-    "format": "Workshop",
-    "topics": [
-      "Applied AI",
-      "Energy",
-      "Hackathon"
-    ],
-    "organiser": "Energ-IA Transition",
-    "cost": "Free",
-    "url": "https://www.energ-ia.ch/energ-iack.html",
-    "source": "energ-ia.ch",
-    "blurb": "First edition of Geneva’s two-day AI and energy hackathon on the theme « Dessine-moi un NetZéro », where teams work on energy-transition challenges; the projects then present their results at the energIA conference on 1 December.",
-    "firstSeen": "2026-11-12"
-  },
-  {
     "id": "coffee-and-prompt-011-geneva-2026",
     "title": "Coffee & Prompt #011",
     "date": "2026-11-15",
