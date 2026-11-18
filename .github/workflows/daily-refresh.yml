@@ -39,12 +39,19 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    outputs:
+      indexnow: ${{ steps.indexnow.outputs.payload }}
 
     steps:
       - uses: actions/checkout@v6
         with:
           # Full history: the push step rebases onto main, which n8n also writes to.
           fetch-depth: 0
+
+      - name: Keep a copy of the event list as it was
+        # Compared with the refreshed list after the build, to tell Bing which
+        # pages changed (see "List changed pages for IndexNow").
+        run: cp src/data/events.json "$RUNNER_TEMP/events.before.json"
 
       - uses: actions/setup-node@v4
         with:
@@ -212,6 +219,14 @@ jobs:
       - name: Build site
         run: npm run build
 
+      - name: List changed pages for IndexNow
+        id: indexnow
+        # Only lists them. The deploy job sends the list once the pages are live.
+        # Empty on a deploy-only run or when no event changed. Never fails the run.
+        run: |
+          payload="$(node scripts/indexnow.mjs --before "$RUNNER_TEMP/events.before.json" || true)"
+          echo "payload=$payload" >> "$GITHUB_OUTPUT"
+
       - name: Package site for Pages
         # Pages now publishes from GitHub Actions (Settings → Pages → Source), via
         # the deploy job below. Switched 2026-11-10 after the branch-based publish
@@ -260,3 +275,19 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Tell Bing which pages changed (IndexNow)
+        # Bing, and through it ChatGPT search and Copilot, fetch these pages within
+        # hours. Google ignores IndexNow. A failure here only warns: the site is
+        # already published.
+        if: ${{ needs.refresh.outputs.indexnow != '' }}
+        env:
+          PAYLOAD: ${{ needs.refresh.outputs.indexnow }}
+        run: |
+          code="$(curl -sS -o /dev/null -w '%{http_code}' -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' --data "$PAYLOAD" || true)"
+          echo "IndexNow answered $code"
+          case "$code" in
+            200|202) ;;
+            *) echo "::warning::IndexNow did not accept the list (HTTP $code)." ;;
+          esac

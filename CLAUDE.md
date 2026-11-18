@@ -74,6 +74,14 @@ run on demand via **workflow_dispatch**. Nothing about it depends on a personal 
   tools cut pages off there. A list over `MD_LIST_BUDGET` drops its descriptions.
   Check with `npm run test:agent` after a build (not run in CI). No per-event
   markdown pages and no MCP server, on purpose.
+- IndexNow (Bing, and through it ChatGPT search and Copilot; Google ignores it):
+  `scripts/indexnow.mjs` compares the event list from before the research with the
+  one after it and lists the changed event pages plus the homepage and the city /
+  type pages that show them. The `refresh` job only lists; the `deploy` job sends
+  the list after the pages are live, and a failure there only warns. The key is
+  public and must match `public/<key>.txt`. `npm run indexnow -- --all --submit`
+  after a build sends every sitemap page (for a one-off, e.g. after a redesign).
+  Bing Webmaster Tools: site imported from Search Console on 2026-11-18.
 - Analytics: Umami Cloud (EU, cookieless) plus Cloudflare Web Analytics, both in
   `src/layouts/Base.astro`. Card pages don't use Base, so the n8n screenshots aren't
   counted; keep it that way. Click events use `data-umami-event` attributes. Opening a

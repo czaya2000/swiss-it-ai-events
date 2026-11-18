@@ -15,7 +15,8 @@
     "test:agent": "node scripts/test-agent-files.mjs",
     "scrape:meetup": "node scripts/scrape-meetup.mjs",
     "archive": "node scripts/archive-past.mjs",
-    "digest": "node scripts/build-digest.mjs"
+    "digest": "node scripts/build-digest.mjs",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
