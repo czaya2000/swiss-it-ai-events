@@ -3195,5 +3195,226 @@
     "source": "vshn.ch",
     "blurb": "Red Hat's Swiss edition brings keynotes on AI, security and infrastructure choices together with four tracks on platform, AIOps and automation, security and virtualisation, plus hands-on labs, an exhibition floor and a networking apéro.",
     "firstSeen": "2026-11-17"
+  },
+  {
+    "id": "data-tgif-power-bi-design-ai-2026",
+    "title": "Back in the Driver's Seat: Reclaiming Power BI Design in the Age of AI",
+    "date": "2026-11-20",
+    "endDate": "2026-11-20",
+    "time": "17:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Power BI",
+      "Data visualisation",
+      "Applied AI"
+    ],
+    "organiser": "Data TGIF",
+    "cost": "Free",
+    "url": "https://www.meetup.com/data-tgif/events/317480307/",
+    "source": "Meetup",
+    "blurb": "Data Platform MVP Kay Sauter on why AI-generated DAX, visuals and whole dashboards still need human design judgement, introducing his DEPTH model for deciding what to keep, change or reject.",
+    "firstSeen": "2026-11-18"
+  },
+  {
+    "id": "zentrum-sds-ai-roundtable-bern-2026",
+    "title": "AI-Roundtable — Souveräne KI in Verwaltung und Unternehmen",
+    "date": "2026-12-02",
+    "endDate": "2026-12-02",
+    "time": "13:00–18:00",
+    "city": "Bern",
+    "venue": "BFH Departement Wirtschaft, Raum H051, Brückenstrasse 73",
+    "format": "Workshop",
+    "topics": [
+      "Sovereign AI",
+      "AI governance",
+      "Public sector"
+    ],
+    "organiser": "Zentrum für Schweizerische Digitale Souveränität (Zentrum SDS) at BFH",
+    "cost": "Free for public administrations (registration to be announced)",
+    "url": "https://zentrumsds.ch/table-ronde-ia-dune-demi-journee-reservez-la-date/",
+    "source": "zentrumsds.ch",
+    "blurb": "Half-day working roundtable at the Bern University of Applied Sciences on sovereign AI in public administration and business, including a six-dimension evaluation framework for AI agent harnesses, change management and breakout groups, capped at around 50 places.",
+    "firstSeen": "2026-11-18"
+  },
+  {
+    "id": "invest-neuchatel-afterwork-leadership-ia-2026",
+    "title": "Afterwork Learn & Connect — Repenser le leadership à l'ère de l'intelligence artificielle",
+    "date": "2026-12-08",
+    "endDate": "2026-12-08",
+    "city": "Neuchâtel",
+    "venue": "La Petite Rochette",
+    "format": "Workshop",
+    "topics": [
+      "AI strategy",
+      "Data leadership",
+      "AI adoption"
+    ],
+    "organiser": "Invest Neuchâtel (ARI-SO / platinn)",
+    "cost": "Not listed (for Neuchâtel-based companies, registration by email)",
+    "url": "https://alpict.ch/evenements/afterwork-learn-connect-repenser-le-leadership-a-l-ere-de-l-intelligence-artificielle/",
+    "source": "alpict.ch",
+    "blurb": "A participatory French-language workshop for Neuchâtel business leaders, led by Vincent Nassar of IntoFlow, on how AI shifts management, decision-making and responsibility — each participant leaves with one concrete first step.",
+    "firstSeen": "2026-11-18"
+  },
+  {
+    "id": "bbv-swiss-ai-impact-report-webinar-2026",
+    "title": "Webinar: Swiss AI Impact Report 2026",
+    "date": "2026-12-10",
+    "endDate": "2026-12-10",
+    "time": "17:00–17:45",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "AI strategy",
+      "AI adoption",
+      "Research"
+    ],
+    "organiser": "bbv Software Services with DemoSCOPE and Hochschule Luzern",
+    "cost": "Not listed (registration required)",
+    "url": "https://bbv.ch/anmeldung-webinar-vom-10-dezember-2026-17-00-17-45-uhr/",
+    "source": "ai-community.ch",
+    "blurb": "The headline findings of the third Swiss AI Impact Survey: how far Swiss companies have actually got with AI, which factors decide whether it works, and why managers and employees experience the change differently.",
+    "firstSeen": "2026-11-18"
+  },
+  {
+    "id": "innovaud-ateliers-ia-pme-prilly-2026",
+    "title": "Les ateliers IA — une soirée pratique pour les PME",
+    "date": "2026-12-10",
+    "endDate": "2026-12-10",
+    "time": "16:00–19:00",
+    "city": "Prilly (Lausanne)",
+    "venue": "Campus Unlimitrust, Route des Flumeaux 42",
+    "format": "Workshop",
+    "topics": [
+      "Applied AI",
+      "SMEs",
+      "AI risk"
+    ],
+    "organiser": "Innovaud",
+    "cost": "Not listed (registration required)",
+    "url": "https://ateliersia.innovaud.ch/",
+    "source": "alpict.ch",
+    "blurb": "Four parallel hands-on workshops for small and mid-sized companies — structuring team knowledge so AI tools give useful answers, responsible generative AI, being found in AI-generated answers, and managing AI risk — followed by feedback from the Cohorte IA programme and networking drinks.",
+    "firstSeen": "2026-11-18"
+  },
+  {
+    "id": "ocei-atelier-ia-fondations-geneva-2026",
+    "title": "Atelier IA pour les fondations et associations philanthropiques",
+    "date": "2026-12-11",
+    "endDate": "2026-12-11",
+    "time": "08:15–13:30",
+    "city": "Geneva",
+    "venue": "Société suisse des entrepreneurs (SSE), Rue de Malatrex 14",
+    "format": "Workshop",
+    "topics": [
+      "Applied AI",
+      "Data protection",
+      "Non-profits"
+    ],
+    "organiser": "Office cantonal de l'économie et de l'innovation (OCEI) with SwissFoundations and proFonds",
+    "cost": "Free (registration required)",
+    "url": "https://www.ge.ch/evenement/atelier-ia-fondations-associations-philanthropiques",
+    "source": "alpict.ch",
+    "blurb": "A practical French-language morning for Geneva foundations and philanthropic associations: an introduction to the common AI tools, then guided exercises on admin work, reviewing grant applications and reporting impact, with attention to confidentiality and checking what the model produces.",
+    "firstSeen": "2026-11-18"
+  },
+  {
+    "id": "smartfeld-webinar-quantencomputer-2026",
+    "title": "Webinar: Wie funktioniert ein Quantencomputer?",
+    "date": "2026-12-16",
+    "endDate": "2026-12-16",
+    "time": "17:30–18:30",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Quantum computing",
+      "AI & education"
+    ],
+    "organiser": "Verein Smartfeld, St. Gallen",
+    "cost": "Free",
+    "url": "https://www.smartfeld.ch/events/webinar-quantencomputer/",
+    "source": "ai-weeks.ch",
+    "blurb": "Quantum optics researcher Wolfgang Geist gives a jargon-free introduction to quantum computing — superposition, entanglement and measurement, illustrated by quantum teleportation — and sorts out where it genuinely connects to AI and where that is still research.",
+    "firstSeen": "2026-11-18"
+  },
+  {
+    "id": "smartfeld-webinar-skill-building-2027",
+    "title": "Webinar: Skill Building statt Skill Skipping",
+    "date": "2027-01-26",
+    "endDate": "2027-01-26",
+    "time": "17:30–18:30",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Generative AI",
+      "AI & education"
+    ],
+    "organiser": "Verein Smartfeld, St. Gallen",
+    "cost": "Not listed (registration required)",
+    "url": "https://www.smartfeld.ch/events/skill-building/",
+    "source": "smartfeld.ch",
+    "blurb": "Manuel Garzi of the PH St. Gallen on why people reach for the AI shortcut, what skill skipping, cognitive offloading and deskilling do to learning, and how to keep generative AI useful rather than corrosive in teaching.",
+    "firstSeen": "2026-11-18"
+  },
+  {
+    "id": "smartfeld-webinar-feedback-mit-ki-2027",
+    "title": "Webinar: Mehr Aha, weniger Warten – Feedback mit KI",
+    "date": "2027-03-10",
+    "endDate": "2027-03-10",
+    "time": "17:30–18:30",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Applied AI",
+      "AI & education"
+    ],
+    "organiser": "Verein Smartfeld, St. Gallen",
+    "cost": "Not listed (registration required)",
+    "url": "https://www.smartfeld.ch/events/mehr-aha-weniger-warten/",
+    "source": "smartfeld.ch",
+    "blurb": "Dan Vyleta, Director of Education at Brian, on using AI to give learners fast individual feedback on their work while the teacher keeps oversight of the process, followed by questions from the floor.",
+    "firstSeen": "2026-11-18"
+  },
+  {
+    "id": "smartfeld-webinar-copilot-datenschutz-2027",
+    "title": "Webinar: Copilot und Datenschutz im Schulalltag",
+    "date": "2027-03-17",
+    "endDate": "2027-03-17",
+    "time": "17:30–18:30",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Microsoft Copilot",
+      "Data protection",
+      "AI governance"
+    ],
+    "organiser": "Verein Smartfeld, St. Gallen",
+    "cost": "Not listed (registration required)",
+    "url": "https://www.smartfeld.ch/events/copilot-und-datenschutz/",
+    "source": "smartfeld.ch",
+    "blurb": "Daniel von Büren, Swiss Security Officer and Solution Engineer at Microsoft, on what Copilot does with the data put into it — where it is stored, who can reach it, and how to handle confidential information responsibly.",
+    "firstSeen": "2026-11-18"
+  },
+  {
+    "id": "drupal-mountain-camp-davos-2027",
+    "title": "Drupal Mountain Camp 2027 — Humans with AI in the Loop",
+    "date": "2027-03-02",
+    "endDate": "2027-03-04",
+    "city": "Davos",
+    "venue": "Davos Congress Centre",
+    "format": "Conference",
+    "topics": [
+      "Open source",
+      "Applied AI",
+      "Web platforms",
+      "Data sovereignty"
+    ],
+    "organiser": "Drupal Events Switzerland",
+    "cost": "Not listed (tickets via pretix)",
+    "url": "https://drupalmountaincamp.ch/",
+    "source": "confs.tech",
+    "blurb": "Three days in Davos on open-source web platforms under the theme “Humans with AI in the Loop”, with an AI hackathon, workshops, two session tracks, contribution sprints and a fireside chat with Drupal founder Dries Buytaert.",
+    "firstSeen": "2026-11-18"
   }
 ]
