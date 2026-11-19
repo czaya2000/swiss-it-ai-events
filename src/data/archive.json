@@ -4779,5 +4779,25 @@
     "source": "swissroboticsday.ch",
     "blurb": "The national robotics meeting point: keynotes, panels and workshops alongside an exhibition floor with 60+ exhibitors and live demos, bringing together labs, industry, policymakers and spin-offs.",
     "firstSeen": "2026-09-21"
+  },
+  {
+    "id": "coffee-and-prompt-011-geneva-2026",
+    "title": "Coffee & Prompt #011",
+    "date": "2026-11-15",
+    "endDate": "2026-11-15",
+    "city": "Geneva",
+    "venue": "Exponent, Geneva",
+    "format": "Networking",
+    "topics": [
+      "Applied AI",
+      "Building with AI",
+      "AI community"
+    ],
+    "organiser": "Switzerland AI Community",
+    "cost": "Not listed (registration required)",
+    "url": "https://luma.com/ulkv8sh8",
+    "source": "switzerland-ai.com",
+    "blurb": "The Geneva builders’ weekend coworking morning: bring an AI project or side hustle, work alongside others, and optionally show a feature or a lesson learned for feedback from the room.",
+    "firstSeen": "2026-11-09"
   }
 ]

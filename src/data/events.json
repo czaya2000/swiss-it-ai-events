@@ -19,26 +19,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "coffee-and-prompt-011-geneva-2026",
-    "title": "Coffee & Prompt #011",
-    "date": "2026-11-15",
-    "endDate": "2026-11-15",
-    "city": "Geneva",
-    "venue": "Exponent, Geneva",
-    "format": "Networking",
-    "topics": [
-      "Applied AI",
-      "Building with AI",
-      "AI community"
-    ],
-    "organiser": "Switzerland AI Community",
-    "cost": "Not listed (registration required)",
-    "url": "https://luma.com/ulkv8sh8",
-    "source": "switzerland-ai.com",
-    "blurb": "The Geneva builders’ weekend coworking morning: bring an AI project or side hustle, work alongside others, and optionally show a feature or a lesson learned for feedback from the room.",
-    "firstSeen": "2026-11-09"
-  },
-  {
     "id": "product-academy-hype-vs-shipped-zurich-2026",
     "title": "Hype vs. Shipped: What AI Really Changes in Product Work",
     "date": "2026-11-16",
@@ -3416,5 +3396,110 @@
     "source": "confs.tech",
     "blurb": "Three days in Davos on open-source web platforms under the theme “Humans with AI in the Loop”, with an AI hackathon, workshops, two session tracks, contribution sprints and a fireside chat with Drupal founder Dries Buytaert.",
     "firstSeen": "2026-11-18"
+  },
+  {
+    "id": "open-i-2026-zurich",
+    "title": "Open-i 2026 — Switzerland’s Innovation Facilitator",
+    "date": "2026-11-26",
+    "endDate": "2026-11-26",
+    "time": "08:00–19:00",
+    "city": "Zurich",
+    "venue": "Kongresshaus Zürich, Claridenstrasse 5",
+    "format": "Conference",
+    "topics": [
+      "Applied AI",
+      "Robotics",
+      "Deep tech",
+      "Innovation"
+    ],
+    "organiser": "NZZ Connect",
+    "cost": "CHF 890 (start-up CHF 250, student CHF 99)",
+    "url": "https://open-i.swiss/",
+    "source": "startupticker.ch",
+    "blurb": "A day-long Swiss innovation conference at the Kongresshaus with an AI & Robotics track — intelligent systems, humanoids and physical AI in business — alongside defence & space, energy and health, with speakers including Verity founder Raffaello D’Andrea and ETH Zurich’s Menna El-Assady.",
+    "firstSeen": "2026-11-19"
+  },
+  {
+    "id": "web-zurich-november-2026",
+    "title": "Web Zurich November 2026",
+    "date": "2026-11-27",
+    "endDate": "2026-11-27",
+    "time": "18:30–21:30",
+    "city": "Zurich",
+    "venue": "Impact Hub Zürich – Viadukt, Viaduktstrasse 93",
+    "format": "Meetup",
+    "topics": [
+      "AI agents",
+      "AI-assisted development",
+      "Web platforms"
+    ],
+    "organiser": "Web Zurich",
+    "cost": "Free",
+    "url": "https://www.meetup.com/web-zurich/events/314002539",
+    "source": "meetup.com",
+    "blurb": "Two short talks for the Zurich web community: driving and customising the Omarchy desktop with AI agents and its plugin ecosystem, and a live demo of Gordon, a food app that generates recipes and compares prices across Swiss supermarkets.",
+    "firstSeen": "2026-11-19"
+  },
+  {
+    "id": "bob-tv-episode-4-mainframe-ai-2026",
+    "title": "Bob TV Episode 4: Why Generic AI Fails at Mainframe Scale",
+    "date": "2026-12-01",
+    "endDate": "2026-12-01",
+    "time": "17:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Enterprise AI",
+      "AI-assisted development",
+      "Legacy modernisation"
+    ],
+    "organiser": "IBM Switzerland (Data, Cloud and AI in Switzerland)",
+    "cost": "Free",
+    "url": "https://www.meetup.com/big-data-developers-switzerland/events/317470674",
+    "source": "meetup.com",
+    "blurb": "IBM’s Ethan Mendel explains why general-purpose AI models become unreliable on mainframe-scale codebases, and how static code analysis combined with metadata-enriched models makes AI dependable for modernisation work.",
+    "firstSeen": "2026-11-19"
+  },
+  {
+    "id": "mindstone-zurich-ai-meetup-december-2026",
+    "title": "Mindstone Zurich December AI Meetup",
+    "date": "2026-12-02",
+    "endDate": "2026-12-02",
+    "time": "18:00–21:00",
+    "city": "Zurich",
+    "venue": "Unit8, Beethovenstrasse 49 (entrance on Gartenstrasse)",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "LLMs",
+      "AI productivity"
+    ],
+    "organiser": "Mindstone Zürich AI Meetup",
+    "cost": "Free",
+    "url": "https://www.meetup.com/mindstone-zurich-ai-meetup/events/317482134",
+    "source": "meetup.com",
+    "blurb": "Monthly Zurich AI evening with three practical talks — building products on LLMs, getting more done with AI, and where the technology is taking work and society — followed by pizza, drinks and networking.",
+    "firstSeen": "2026-11-19"
+  },
+  {
+    "id": "geneva-rb-ai-in-practice-december-2026",
+    "title": "AI in Practice: 5 Months of Real-World Experience",
+    "date": "2026-12-02",
+    "endDate": "2026-12-02",
+    "time": "19:00–21:00",
+    "city": "Geneva",
+    "venue": "UOG, The Arcade room, Rue du Cercle 2",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI-assisted development",
+      "Engineering practice"
+    ],
+    "organiser": "Geneva.rb",
+    "cost": "Free",
+    "url": "https://www.meetup.com/geneva-rb/events/317494740",
+    "source": "meetup.com",
+    "blurb": "Hydris Bessa of Gold Avenue reports on five months of rolling out AI across an engineering organisation — coding agents, automated code review and shared workflows, including what went wrong (talk in French).",
+    "firstSeen": "2026-11-19"
   }
 ]
