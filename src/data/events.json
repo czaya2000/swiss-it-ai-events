@@ -19,46 +19,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "product-academy-hype-vs-shipped-zurich-2026",
-    "title": "Hype vs. Shipped: What AI Really Changes in Product Work",
-    "date": "2026-11-16",
-    "endDate": "2026-11-16",
-    "time": "18:00–21:00",
-    "city": "Zurich",
-    "venue": "SMG Swiss Marketplace Group, Thurgauerstrasse 36",
-    "format": "Meetup",
-    "topics": [
-      "Applied AI",
-      "AI adoption",
-      "Product management"
-    ],
-    "organiser": "Product Academy Switzerland",
-    "cost": "Free",
-    "url": "https://www.meetup.com/product-academy-switzerland/events/317035080/",
-    "source": "Meetup",
-    "blurb": "Two talks on what AI has actually changed in building products: Coople on a year spent replacing squads, sprints and story points with AI-first workflows and smaller teams, including the experiments that failed, and Brack.Alltron on where AI earned its place and why plain analytics sometimes still beats machine learning.",
-    "firstSeen": "2026-10-23"
-  },
-  {
-    "id": "swiss-ai-summit-2026",
-    "title": "Swiss AI Summit 2026",
-    "date": "2026-11-16",
-    "endDate": "2026-11-16",
-    "time": "07:00–20:00",
-    "city": "Zurich",
-    "venue": "Kunsthaus Zürich",
-    "format": "Conference",
-    "topics": [
-      "Enterprise AI strategy"
-    ],
-    "organiser": "Swiss AI Summit",
-    "cost": "CHF 790 Executive Pass / CHF 950 standard (excl. VAT)",
-    "url": "https://www.swissaisummit.com/",
-    "source": "swissaisummit.com",
-    "blurb": "Full-day summit at the Kunsthaus for senior business, technology and government leaders, spanning finance and insurance, government and defence, manufacturing, cybersecurity, quantum and healthcare — with speakers from Microsoft Switzerland, IBM, Nestlé, ABB, HSBC and the Canton of Zurich, plus workshops, demos and a one-to-one meeting platform.",
-    "firstSeen": "2026-09-03"
-  },
-  {
     "id": "ai-in-azienda-ai-sotto-controllo-lugano-2026",
     "title": "AI in azienda: AI sotto controllo",
     "date": "2026-11-17",
@@ -3501,5 +3461,110 @@
     "source": "meetup.com",
     "blurb": "Hydris Bessa of Gold Avenue reports on five months of rolling out AI across an engineering organisation — coding agents, automated code review and shared workflows, including what went wrong (talk in French).",
     "firstSeen": "2026-11-19"
+  },
+  {
+    "id": "lausanne-wordpress-plugin-sur-mesure-avec-ia-2026",
+    "title": "Comment créer un plugin sur mesure pour son site WordPress avec l'IA ?",
+    "date": "2026-11-25",
+    "endDate": "2026-11-25",
+    "time": "18:30–20:00",
+    "city": "Lausanne",
+    "venue": "EPSIC, Rue de Genève 63",
+    "format": "Meetup",
+    "topics": [
+      "AI-assisted development",
+      "Applied AI",
+      "AI tooling"
+    ],
+    "organiser": "Lausanne WordPress Meetup",
+    "cost": "Free",
+    "url": "https://www.meetup.com/lausanne-wordpress-meetup/events/317380936",
+    "source": "meetup.com",
+    "blurb": "John builds a custom WordPress plugin live with AI assistance, walks through the steps he used on his own example, then takes feature requests from the room and codes them on the spot (talk in French), followed by drinks at Le Flon.",
+    "firstSeen": "2026-11-20"
+  },
+  {
+    "id": "digital-cluster-uri-mensch-bleiben-ki-altdorf-2026",
+    "title": "Podiumsdiskussion: Mensch bleiben im Zeitalter der Künstlichen Intelligenz",
+    "date": "2026-12-03",
+    "endDate": "2026-12-03",
+    "time": "17:30–21:00",
+    "city": "Altdorf (Lucerne)",
+    "venue": "Berufs- und Weiterbildungszentrum Uri, Attinghauserstrasse 12, Trakt D Aula",
+    "format": "Networking",
+    "topics": [
+      "AI and society",
+      "AI ethics",
+      "AI strategy"
+    ],
+    "organiser": "Verein Digital Cluster Uri",
+    "cost": "Free (registration required)",
+    "url": "https://erp.digital-cluster-uri.ch/event/mensch-bleiben-im-zeitalter-der-kunstlichen-intelligenz-2026-12-03-13/register",
+    "source": "ai-community.ch",
+    "blurb": "A German-language panel on what stays human as AI reshapes daily life, with Bishop Joseph Maria Bonnemain, HSLU philosopher Prof. Dr. Orlando Budelacci and SRF «Club» moderator Barbara Lüthi, followed by open discussion and an apéro.",
+    "firstSeen": "2026-11-20"
+  },
+  {
+    "id": "safe-meetups-ai-native-im-dialog-fishbowl-zurich-2026",
+    "title": "AI-Native im Dialog — Fishbowl mit Nikolaos Kaintantzis",
+    "date": "2026-12-09",
+    "endDate": "2026-12-09",
+    "time": "18:30–20:00",
+    "city": "Zurich",
+    "venue": "Flex Meetingräume Kalkbreite, Raum Flex 1, Kalkbreitestrasse 6 (hybrid)",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI in organisations",
+      "Agentic AI"
+    ],
+    "organiser": "SAFe Meetups auf Deutsch",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/safe-meetups-auf-deutsch/events/317204673",
+    "source": "meetup.com",
+    "blurb": "A German-language fishbowl discussion with SAFe Fellow Niko Kaintantzis (KEGON Schweiz) on what AI-native work means day to day — how agile roles shift, where responsibility and learning sit alongside AI, and how early experiments turn into something useful; 25 seats on site plus a live stream with English subtitles.",
+    "firstSeen": "2026-11-20"
+  },
+  {
+    "id": "agile-breakfast-luzern-shift-values-ai-native-safe-2026",
+    "title": "Von Shift Left nach Shift Values: Qualität unter AI-Native SAFe",
+    "date": "2026-12-18",
+    "endDate": "2026-12-18",
+    "time": "08:15–10:15",
+    "city": "Lucerne",
+    "venue": "ICT Campus Zentralschweiz, Rösslimatt 52",
+    "format": "Meetup",
+    "topics": [
+      "AI-assisted development",
+      "Testing and quality",
+      "Applied AI"
+    ],
+    "organiser": "Agile Breakfast Luzern (swissICT)",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/agile-breakfast-luzern/events/317480657",
+    "source": "meetup.com",
+    "blurb": "A German-language breakfast session with SAFe trainer Thomas Verasani on quality assurance once AI writes code faster than teams can test it: what the ISTQB says about testing AI and AI-generated software, whether builders and testers should use different models, and why coverage numbers do not show value.",
+    "firstSeen": "2026-11-20"
+  },
+  {
+    "id": "digitaltag-zentralschweiz-the-day-after-2027",
+    "title": "Digitaltag Zentralschweiz 2027 — THE DAY AFTER",
+    "date": "2027-01-26",
+    "endDate": "2027-01-26",
+    "time": "13:00–20:00",
+    "city": "Emmenbrücke (Lucerne)",
+    "venue": "SPINNEREI Luzern/Emmenbrücke, Spinnereistrasse 3",
+    "format": "Conference",
+    "topics": [
+      "AI strategy",
+      "AI and society",
+      "Digital transformation"
+    ],
+    "organiser": "digitalswitzerland Zentralschweiz with Digital & AI Community",
+    "cost": "Not listed",
+    "url": "https://digitalzentralschweiz.ch/",
+    "source": "digitalzentralschweiz.ch",
+    "blurb": "Central Switzerland’s digital day asks what remains once the AI euphoria fades — which technologies outlast a market correction, and how they reshape work, value creation, politics and the line between real and generated content, debated with voices from business, research, education and politics.",
+    "firstSeen": "2026-11-20"
   }
 ]
