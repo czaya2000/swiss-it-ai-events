@@ -1,0 +1,98 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Lausanne – Workshop
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:built-with-lovable-lausanne-2-2026@swissdataevents.ch
+DTSTAMP:20261121T132509Z
+DTSTART;TZID=Europe/Zurich:20261124T180000
+DTEND;TZID=Europe/Zurich:20261124T213000
+SUMMARY:Built with Lovable · Lausanne #2
+LOCATION:Lausanne (address on registration)
+DESCRIPTION:A 90-minute hands-on build where everyone ships a working web a
+ pp with AI features using Lovable’s built-in models — no API keys or s
+ eparate accounts — with mentors on hand\, then demos and drinks. Bring a
+  laptop and an idea.\n\nOrganiser: Lovable Lausanne (Maxime Dumont)\n\nDet
+ ails and registration: https://swissdataevents.ch/events/built-with-lovabl
+ e-lausanne-2-2026/
+URL:https://swissdataevents.ch/events/built-with-lovable-lausanne-2-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:epfl-reshaping-information-research-with-ai-2026@swissdataevents.ch
+DTSTAMP:20261121T132509Z
+DTSTART;TZID=Europe/Zurich:20261201T143000
+DTEND;TZID=Europe/Zurich:20261201T163000
+SUMMARY:Reshaping Information Research with AI
+LOCATION:EPFL\, room MED 0 1618\, Lausanne
+DESCRIPTION:Two-hour on-site workshop from the EPFL Library comparing four 
+ AI-powered research assistants\, how they work and where they differ from 
+ traditional information retrieval. Open to the public\, registration requi
+ red.\n\nOrganiser: EPFL Library\n\nDetails and registration: https://swiss
+ dataevents.ch/events/epfl-reshaping-information-research-with-ai-2026/
+URL:https://swissdataevents.ch/events/epfl-reshaping-information-research-w
+ ith-ai-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-ai-weeks-lausanne-hackathon-2026@swissdataevents.ch
+DTSTAMP:20261121T132509Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261206
+SUMMARY:Lausanne Hackathon — Swiss {ai} Weeks
+LOCATION:unlimitrust campus\, Route des Flumeaux 42\, Prilly (Lausanne)
+DESCRIPTION:An in-person hackathon where mixed teams of students\, develope
+ rs\, startups\, public-sector innovators and corporate experts build pract
+ ical AI solutions to challenges set by partner organisations\, open to all
+  skill levels.\n\nOrganiser: Swiss {ai} Weeks\n\nDetails and registration:
+  https://swissdataevents.ch/events/swiss-ai-weeks-lausanne-hackathon-2026/
+URL:https://swissdataevents.ch/events/swiss-ai-weeks-lausanne-hackathon-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:innovaud-ateliers-ia-pme-prilly-2026@swissdataevents.ch
+DTSTAMP:20261121T132509Z
+DTSTART;TZID=Europe/Zurich:20261210T160000
+DTEND;TZID=Europe/Zurich:20261210T190000
+SUMMARY:Les ateliers IA — une soirée pratique pour les PME
+LOCATION:Campus Unlimitrust\, Route des Flumeaux 42\, Prilly (Lausanne)
+DESCRIPTION:Four parallel hands-on workshops for small and mid-sized compan
+ ies — structuring team knowledge so AI tools give useful answers\, respo
+ nsible generative AI\, being found in AI-generated answers\, and managing 
+ AI risk — followed by feedback from the Cohorte IA programme and network
+ ing drinks.\n\nOrganiser: Innovaud\n\nDetails and registration: https://sw
+ issdataevents.ch/events/innovaud-ateliers-ia-pme-prilly-2026/
+URL:https://swissdataevents.ch/events/innovaud-ateliers-ia-pme-prilly-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

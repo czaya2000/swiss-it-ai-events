@@ -1,0 +1,84 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Geneva – Workshop
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:saic-build-your-own-ai-assistant-geneva-2026@swissdataevents.ch
+DTSTAMP:20261121T132509Z
+DTSTART;TZID=Europe/Zurich:20261128T103000
+DTEND;TZID=Europe/Zurich:20261128T143000
+SUMMARY:Build Your Own AI Personal Assistant: No Coding Needed
+LOCATION:Exponent\, Quai du Seujet 12 (1st floor)\, Geneva
+DESCRIPTION:A beginner-friendly Saturday workshop where you set up a person
+ al AI assistant on your own laptop and learn to message it from your phone
+ \, with no coding required.\n\nOrganiser: Switzerland AI Community\n\nDeta
+ ils and registration: https://swissdataevents.ch/events/saic-build-your-ow
+ n-ai-assistant-geneva-2026/
+URL:https://swissdataevents.ch/events/saic-build-your-own-ai-assistant-gene
+ va-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ocei-atelier-ia-fondations-geneva-2026@swissdataevents.ch
+DTSTAMP:20261121T132509Z
+DTSTART;TZID=Europe/Zurich:20261211T081500
+DTEND;TZID=Europe/Zurich:20261211T133000
+SUMMARY:Atelier IA pour les fondations et associations philanthropiques
+LOCATION:Société suisse des entrepreneurs (SSE)\, Rue de Malatrex 14\, Ge
+ neva
+DESCRIPTION:A practical French-language morning for Geneva foundations and 
+ philanthropic associations: an introduction to the common AI tools\, then 
+ guided exercises on admin work\, reviewing grant applications and reportin
+ g impact\, with attention to confidentiality and checking what the model p
+ roduces.\n\nOrganiser: Office cantonal de l'économie et de l'innovation (
+ OCEI) with SwissFoundations and proFonds\n\nDetails and registration: http
+ s://swissdataevents.ch/events/ocei-atelier-ia-fondations-geneva-2026/
+URL:https://swissdataevents.ch/events/ocei-atelier-ia-fondations-geneva-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pictet-hackathon-2027-geneva@swissdataevents.ch
+DTSTAMP:20261121T132509Z
+DTSTART;VALUE=DATE:20270311
+DTEND;VALUE=DATE:20270313
+SUMMARY:Pictet Hackathon 2027 — Agentic AI Meets Investment
+LOCATION:Pictet\, Lab 66\, Geneva
+DESCRIPTION:A two-day hackathon in Geneva\, run as an official side event o
+ f the Applied Machine Learning Days\, where mixed teams of Pictet employee
+ s\, students and external builders turn real financial-services challenges
+  into working agentic-AI prototypes\; applications close on 7 January 2027
+ .\n\nOrganiser: Tenity with the Pictet Group\n\nDetails and registration: 
+ https://swissdataevents.ch/events/pictet-hackathon-2027-geneva/
+URL:https://swissdataevents.ch/events/pictet-hackathon-2027-geneva/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,122 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Lugano
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:impresa-potenziata-con-ai-chiasso-2026@swissdataevents.ch
+DTSTAMP:20261121T132509Z
+DTSTART;TZID=Europe/Zurich:20261125T133000
+DTEND;TZID=Europe/Zurich:20261125T183000
+SUMMARY:L’impresa potenziata con AI
+LOCATION:Lifestyle Innovation Hub (Dagorà)\, Piazza Indipendenza 5\, Chias
+ so (Lugano)
+DESCRIPTION:An Italian-language afternoon in Chiasso built on real cases an
+ d measured numbers rather than promises: AI agents in the business\, sover
+ eign data\, and what institutions are for — closing with a networking ap
+ éro.\n\nOrganiser: Datamoney.ch for Swiss {ai} Weeks\n\nDetails and regis
+ tration: https://swissdataevents.ch/events/impresa-potenziata-con-ai-chias
+ so-2026/
+URL:https://swissdataevents.ch/events/impresa-potenziata-con-ai-chiasso-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-ai-sme-circle-5-lugano-2026@swissdataevents.ch
+DTSTAMP:20261121T132509Z
+DTSTART;TZID=Europe/Zurich:20261126T120000
+DTEND;TZID=Europe/Zurich:20261126T160000
+SUMMARY:Swiss AI SME Circle #5
+LOCATION:SUPSI Campus Est\, Via la Santa 1\, Lugano
+DESCRIPTION:Updates from the Swiss AI Initiative and the Apertus engineerin
+ g team\, talks by LLM practitioners\, live demos and four interactive brea
+ kout sessions for SMEs putting AI to work\, starting with a networking lun
+ ch.\n\nOrganiser: Swiss AI Initiative (ETH Zurich\, EPFL and CSCS) with SU
+ PSI\n\nDetails and registration: https://swissdataevents.ch/events/swiss-a
+ i-sme-circle-5-lugano-2026/
+URL:https://swissdataevents.ch/events/swiss-ai-sme-circle-5-lugano-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-salon-guardie-e-ladri-bioggio-2026@swissdataevents.ch
+DTSTAMP:20261121T132509Z
+DTSTART;TZID=Europe/Zurich:20261130T170000
+DTEND;TZID=Europe/Zurich:20261130T210000
+SUMMARY:AI Salon | Guardie e ladri — Hacker: come attaccano\, come difend
+ erci
+LOCATION:Acer Europe\, Via della Posta 28\, Bioggio (Lugano)
+DESCRIPTION:An Italian- and English-language evening in Ticino on how recen
+ t\, well-known cyberattacks actually worked and how generative AI is shift
+ ing the balance between attackers and defenders\, with a social-engineerin
+ g quiz and a networking aperitif.\n\nOrganiser: AI Salon Ticino\, hosted b
+ y Acer Europe\n\nDetails and registration: https://swissdataevents.ch/even
+ ts/ai-salon-guardie-e-ladri-bioggio-2026/
+URL:https://swissdataevents.ch/events/ai-salon-guardie-e-ladri-bioggio-2026
+ /
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swissrn-computational-reproducibility-hackathon-lugano-2026@swissdataev
+ ents.ch
+DTSTAMP:20261121T132509Z
+DTSTART;TZID=Europe/Zurich:20261209T093000
+DTEND;TZID=Europe/Zurich:20261209T170000
+SUMMARY:Computational Reproducibility Hackathon 2026
+LOCATION:Università della Svizzera italiana\, Aula Polivalente\, Via la Sa
+ nta 1\, Viganello (Lugano)
+DESCRIPTION:A one-day hands-on event where participants try to reproduce on
+ e another’s analyses\, papers and tools\, then compare notes on what mak
+ es computational work hold up\; the SwissRN annual meeting follows the nex
+ t day at the same venue.\n\nOrganiser: Swiss Reproducibility Network (Swis
+ sRN) with USI\, ETH Zurich and FernUni Schweiz\n\nDetails and registration
+ : https://swissdataevents.ch/events/swissrn-computational-reproducibility-
+ hackathon-lugano-2026/
+URL:https://swissdataevents.ch/events/swissrn-computational-reproducibility
+ -hackathon-lugano-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:voxxed-days-ticino-2027@swissdataevents.ch
+DTSTAMP:20261121T132509Z
+DTSTART;VALUE=DATE:20270219
+DTEND;VALUE=DATE:20270220
+SUMMARY:Voxxed Days Ticino 2027
+LOCATION:Palazzo dei Congressi\, Lugano
+DESCRIPTION:A one-day developer conference in Lugano with nine tracks\, inc
+ luding agentic engineering and tooling and a cloud native\, data and infra
+ structure track\, with optional hands-on workshops the day before.\n\nOrga
+ niser: Exteso Sagl\n\nDetails and registration: https://swissdataevents.ch
+ /events/voxxed-days-ticino-2027/
+URL:https://swissdataevents.ch/events/voxxed-days-ticino-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
