@@ -5194,5 +5194,128 @@
     "source": "luma.com",
     "blurb": "V. Moskvoretskii (EPFL) on building an assistant persona into pretraining rather than bolting alignment on afterwards — a technique now part of training Apertus 2, Switzerland’s open model. Moderate technical background assumed.",
     "firstSeen": "2026-11-03"
+  },
+  {
+    "id": "ai4all-lunch-learn-prompting-2026",
+    "title": "Lunch & Learn: Chat mit GPT — Prompting für Anfänger und Profis",
+    "date": "2026-11-18",
+    "endDate": "2026-11-18",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Generative AI",
+      "Prompting",
+      "Applied AI"
+    ],
+    "organiser": "AI4ALL Switzerland",
+    "cost": "Not listed (registration required)",
+    "url": "https://luma.com/7s80xy01",
+    "source": "ai4all-switzerland.ch",
+    "blurb": "A 45-minute lunchtime session with AI lecturer Christian Sidow on getting more out of ChatGPT, Gemini and Claude — the difference between chatbots, assistants and agents, how to write a prompt that works, and how to make a model check its own output.",
+    "firstSeen": "2026-11-14"
+  },
+  {
+    "id": "brown-bag-copilot-ki-power-altdorf-2026",
+    "title": "Brown Bag: Copilot erfolgreich einführen — KI-Power im Büroalltag",
+    "date": "2026-11-18",
+    "endDate": "2026-11-18",
+    "time": "12:00–13:00",
+    "city": "Altdorf (Lucerne)",
+    "venue": "Innovations-Biotop Uri, 3. OG, Bahnhofplatz 1",
+    "format": "Meetup",
+    "topics": [
+      "AI adoption",
+      "Microsoft ecosystem",
+      "Applied AI"
+    ],
+    "organiser": "InnovationsBiotop Uri with Business Help Point",
+    "cost": "Free (optional lunch CHF 9; registration by 16 November)",
+    "url": "https://ibt-uri.ch/2026/10/19/brown-bag-am-18112026/",
+    "source": "ai-community.ch",
+    "blurb": "A German-language lunch hour on the organisational side of Microsoft 365 Copilot rather than prompt tricks: Roman Schön on why AI initiatives stall, why structure and context beat perfectly worded prompts, and what it takes to make the tool stick in day-to-day office work.",
+    "firstSeen": "2026-11-10"
+  },
+  {
+    "id": "dinacon-2026-bern",
+    "title": "DINAcon 2026",
+    "date": "2026-11-18",
+    "endDate": "2026-11-18",
+    "time": "09:00–17:00",
+    "city": "Bern",
+    "venue": "Kongresszentrum Bern, Zeughausgasse 41",
+    "format": "Conference",
+    "topics": [
+      "Open data",
+      "Digital sovereignty",
+      "Data protection"
+    ],
+    "organiser": "Verein CH Open",
+    "cost": "Ticketed (via eventfrog.ch)",
+    "url": "https://dinacon.ch/",
+    "source": "ai-weeks.ch",
+    "blurb": "Switzerland’s conference on digital sustainability — 36 sessions on open source, open data, digital sovereignty, data protection and copyright, with 250+ attendees and a closing Hacknight.",
+    "firstSeen": "2026-10-07"
+  },
+  {
+    "id": "global-ai-zurich-agentic-nights-1-2026",
+    "title": "Agentic Nights #1 — Identity, Software Factories & Agent Memory",
+    "date": "2026-11-18",
+    "endDate": "2026-11-18",
+    "time": "17:00–20:00",
+    "city": "Zurich",
+    "venue": "isolutions AG, The Circle 38",
+    "format": "Meetup",
+    "topics": [
+      "AI agents",
+      "Agent memory",
+      "Enterprise AI"
+    ],
+    "organiser": "Global AI Zürich",
+    "cost": "Free",
+    "url": "https://www.meetup.com/global-ai-zurich/events/317285634/",
+    "source": "meetup.com",
+    "blurb": "First evening of Global AI Zürich’s new agentic series, with three talks on real agent implementations covering identity, software factories and agent memory.",
+    "firstSeen": "2026-11-05"
+  },
+  {
+    "id": "innovation-debate-4-ai-for-all-geneva-2026",
+    "title": "The 4th Innovation Debate: AI for All?",
+    "date": "2026-11-18",
+    "endDate": "2026-11-18",
+    "time": "17:30–21:00",
+    "city": "Lancy (Geneva)",
+    "venue": "Westhive, Bâtiment Alto, Esplanade de Pont-Rouge 9A",
+    "format": "Conference",
+    "topics": [
+      "AI governance",
+      "AI strategy",
+      "Digital sovereignty"
+    ],
+    "organiser": "Geneva Innovation Movement and Geneva Research Lab for Digital Impact, with UNICEF Digital Impact Division and the University of Geneva",
+    "cost": "Free (registration required)",
+    "url": "https://www.eventbrite.ch/e/the-4th-innovation-debate-ai-for-all-tickets-1999391168808",
+    "source": "eventbrite.ch",
+    "blurb": "An Oxford-style debate on the motion “access to AI is worth the dependency it creates”, with four debaters, a jury of Geneva politicians and an audience vote, followed by a networking apéritif.",
+    "firstSeen": "2026-11-11"
+  },
+  {
+    "id": "smartfeld-webinar-ki-zwischen-hilfe-oder-huerde-2026",
+    "title": "Webinar: KI zwischen Hilfe oder Hürde?",
+    "date": "2026-11-18",
+    "endDate": "2026-11-18",
+    "time": "17:30–18:30",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Generative AI",
+      "AI literacy",
+      "Education"
+    ],
+    "organiser": "Verein Smartfeld, St. Gallen",
+    "cost": "Free (sold out)",
+    "url": "https://www.smartfeld.ch/events/ki-hilfe-huerde/",
+    "source": "ai-weeks.ch",
+    "blurb": "A German-language online session with Prof. Dr. Doris Weßels on how generative AI grew from the first chatbots into today's systems, and where it supports teaching rather than quietly solving the work meant for learners.",
+    "firstSeen": "2026-11-17"
   }
 ]
