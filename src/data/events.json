@@ -19,89 +19,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "scs-ai-risks-in-cybersecurity-geneva-2026",
-    "title": "AI Risks in CyberSecurity",
-    "date": "2026-11-19",
-    "endDate": "2026-11-19",
-    "time": "16:30–19:30",
-    "city": "Geneva",
-    "venue": "Novotel Genève Centre, Rue de Zurich 19",
-    "format": "Conference",
-    "topics": [
-      "AI governance",
-      "AI risk",
-      "Security"
-    ],
-    "organiser": "Swiss CyberSecurity (SCS)",
-    "cost": "CHF 25",
-    "url": "https://www.swiss-cybersecurity.ch/event?e=261119",
-    "source": "swiss-cybersecurity.ch",
-    "blurb": "Afternoon session in Geneva on how organisations can keep using AI internally without taking on unmanaged risk, with presentations followed by a networking reception; CPE credits available via ISC2 and ISACA.",
-    "firstSeen": "2026-10-26"
-  },
-  {
-    "id": "digital-economy-award-2026-zurich",
-    "title": "Digital Economy Award 2026",
-    "date": "2026-11-19",
-    "endDate": "2026-11-19",
-    "city": "Zurich",
-    "venue": "Hallenstadion, Wallisellenstrasse 45",
-    "format": "Conference",
-    "topics": [
-      "Digital economy",
-      "AI adoption",
-      "Data leadership"
-    ],
-    "organiser": "Swiss Digital Economy Award AG with digitalswitzerland",
-    "cost": "Not listed (tickets by request)",
-    "url": "https://www.digitaleconomyaward.ch/en/",
-    "source": "digitalswitzerland.com",
-    "blurb": "Switzerland’s digital-economy awards at the Hallenstadion: an Executive Afternoon of nine partner-hosted sessions on AI, customer relationships, skills and stablecoins, followed by the Award Night for categories from Pioneer of the Year to NextGen Hero.",
-    "firstSeen": "2026-11-09"
-  },
-  {
-    "id": "conference-next-design-x-ia-bussigny-2026",
-    "title": "Conférence Next — Design x IA",
-    "date": "2026-11-19",
-    "endDate": "2026-11-19",
-    "time": "14:00–17:30",
-    "city": "Bussigny (Lausanne)",
-    "venue": "QG Center, Route de la Chaux 4 (QoQa)",
-    "format": "Conference",
-    "topics": [
-      "Applied AI",
-      "AI agents",
-      "Design systems"
-    ],
-    "organiser": "Labster.io",
-    "cost": "CHF 65 (sold out, waitlist)",
-    "url": "https://luma.com/yl9vohy8",
-    "source": "luma.com",
-    "blurb": "An afternoon on what AI has actually changed in design work: a study of how 100 designers use it, prototyping with AI agents directly against a codebase, and how Swissquote rebuilt its design system with AI — then networking drinks.",
-    "firstSeen": "2026-11-09"
-  },
-  {
-    "id": "zurich-ai-safety-open-meetup-2026-11-19",
-    "title": "AI Safety: Open Meet Up",
-    "date": "2026-11-19",
-    "endDate": "2026-11-19",
-    "time": "18:30–20:00",
-    "city": "Zurich",
-    "venue": "PEAKS (ZAIS coworking space), Zeughausstrasse 31",
-    "format": "Meetup",
-    "topics": [
-      "AI safety",
-      "AI community",
-      "AI research"
-    ],
-    "organiser": "Zurich AI Safety",
-    "cost": "Free (registration required, food and drinks provided)",
-    "url": "https://luma.com/zais-iikz",
-    "source": "luma.com",
-    "blurb": "An evening with no fixed programme in place of the usual weekly session: meet the organisers, ask how the AI safety field is put together, or pick up a thread from an earlier talk — newcomers as welcome as people already working on it.",
-    "firstSeen": "2026-11-10"
-  },
-  {
     "id": "agentic-engineering-days-zurich-2026",
     "title": "Agentic Engineering Days Zurich 2026",
     "date": "2026-11-20",
@@ -3247,5 +3164,337 @@
     "source": "meetup.com",
     "blurb": "End-of-year evening for the Geneva DevOps community, opening with “Boring Data, Smart Apps: Running Business Software on MariaDB in 2027”, a possible second talk, and a raclette dinner.",
     "firstSeen": "2026-11-22"
+  },
+  {
+    "id": "saic-042-boundaries-of-human-knowledge-geneva-2026",
+    "title": "SAIC #042: AI Is Challenging the Boundaries of Human Knowledge. Is Your Business Ready?",
+    "date": "2026-12-01",
+    "endDate": "2026-12-01",
+    "time": "18:30–21:00",
+    "city": "Geneva",
+    "venue": "Maison Internationale des Associations (MIA), Rue des Savoises 15",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI strategy",
+      "AI community"
+    ],
+    "organiser": "Switzerland AI Community",
+    "cost": "CHF 5 in person (40 places, drinks and snacks included); free online",
+    "url": "https://luma.com/6ssg0bns",
+    "source": "switzerland-ai.com",
+    "blurb": "Pascal Eichenberger uses the Riemann Hypothesis as a lens on how AI is pushing the limits of human knowledge, with practical takeaways for business leaders and networking afterwards.",
+    "firstSeen": "2026-11-23"
+  },
+  {
+    "id": "coffee-and-prompt-013-geneva-2026",
+    "title": "Coffee & Prompt #013",
+    "date": "2026-11-29",
+    "endDate": "2026-11-29",
+    "city": "Geneva",
+    "venue": "Exponent, Quai du Seujet 12",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI community",
+      "Coworking"
+    ],
+    "organiser": "Switzerland AI Community",
+    "cost": "Not listed (registration required)",
+    "url": "https://luma.com/on72npj4",
+    "source": "switzerland-ai.com",
+    "blurb": "Relaxed weekend-morning coworking session where builders and AI-curious newcomers work on their own projects, with optional short talks and feedback rounds.",
+    "firstSeen": "2026-11-23"
+  },
+  {
+    "id": "coffee-and-prompt-014-geneva-2026",
+    "title": "Coffee & Prompt #014",
+    "date": "2026-12-05",
+    "endDate": "2026-12-05",
+    "city": "Geneva",
+    "venue": "Exponent, Quai du Seujet 12",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI community",
+      "Coworking"
+    ],
+    "organiser": "Switzerland AI Community",
+    "cost": "Not listed (registration required)",
+    "url": "https://luma.com/409bah9l",
+    "source": "switzerland-ai.com",
+    "blurb": "Relaxed weekend-morning coworking session where builders and AI-curious newcomers work on their own projects, with optional short talks and feedback rounds.",
+    "firstSeen": "2026-11-23"
+  },
+  {
+    "id": "coffee-and-prompt-015-geneva-2026",
+    "title": "Coffee & Prompt #015",
+    "date": "2026-12-12",
+    "endDate": "2026-12-12",
+    "city": "Geneva",
+    "venue": "Exponent, Quai du Seujet 12",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI community",
+      "Coworking"
+    ],
+    "organiser": "Switzerland AI Community",
+    "cost": "Not listed (registration required)",
+    "url": "https://luma.com/asthbvgm",
+    "source": "switzerland-ai.com",
+    "blurb": "Relaxed weekend-morning coworking session where builders and AI-curious newcomers work on their own projects, with optional short talks and feedback rounds.",
+    "firstSeen": "2026-11-23"
+  },
+  {
+    "id": "votation-2032-young-ai-leaders-geneva-2026",
+    "title": "Votation 2032",
+    "date": "2026-12-08",
+    "endDate": "2026-12-08",
+    "time": "17:00–20:00",
+    "city": "Geneva",
+    "venue": "Maison de l'Avenir, Rue Fendt 1",
+    "format": "Workshop",
+    "topics": [
+      "AI governance",
+      "AI policy",
+      "Generative AI"
+    ],
+    "organiser": "Young AI Leaders — Geneva Hub, with the FNF Human Rights Hub",
+    "cost": "Free (registration subject to approval, 48 places)",
+    "url": "https://luma.com/ysjtj0fp",
+    "source": "gva-ai.ch",
+    "blurb": "Role-play workshop simulating a cantonal referendum campaign on autonomous weapons, with participants using generative AI tools to build their case before a joint debrief and apéro.",
+    "firstSeen": "2026-11-23"
+  },
+  {
+    "id": "gluehwein-workshop-machine-learning-high-energy-physics-cern-2026",
+    "title": "Glühwein Workshop 2026 — Machine Learning in High-Energy Physics",
+    "date": "2026-12-14",
+    "endDate": "2026-12-16",
+    "city": "Meyrin (Geneva)",
+    "venue": "CERN, Salle Marie Skłodowska-Curie (40/S2-C01)",
+    "format": "Workshop",
+    "topics": [
+      "Machine learning",
+      "Research",
+      "High-energy physics"
+    ],
+    "organiser": "Université de Genève (Tobias Golling group), hosted at CERN",
+    "cost": "Not listed (application required)",
+    "url": "https://indico.cern.ch/event/1717867/",
+    "source": "gva-ai.ch",
+    "blurb": "Three-day workshop at CERN on recent machine-learning developments and how they are applied in high-energy physics, with an open call for abstracts and guided tours of the ATLAS cavern.",
+    "firstSeen": "2026-11-23"
+  },
+  {
+    "id": "fer-geneve-comprendre-utiliser-ia-generatives-session-4-2026",
+    "title": "Comprendre et utiliser les intelligences artificielles génératives — Session 4",
+    "date": "2026-11-30",
+    "endDate": "2026-11-30",
+    "time": "09:00–17:00",
+    "city": "Plan-les-Ouates (Geneva)",
+    "venue": "Centre de formation FER Genève – SPARK, Chemin du Champ-des-Filles 4B",
+    "format": "Workshop",
+    "topics": [
+      "Generative AI",
+      "Prompting",
+      "AI literacy"
+    ],
+    "organiser": "FER Genève",
+    "cost": "CHF 500 members / CHF 700 non-members",
+    "url": "https://www.formations.fer-ge.ch/comprendre-et-utiliser-les-intelligences-artificielles-generatives-session-4-2026",
+    "source": "formations.fer-ge.ch",
+    "blurb": "One-day French-language seminar on how generative AI tools work, with hands-on prompting practice for text, image, sound and video models and a look at the ethical questions.",
+    "firstSeen": "2026-11-23"
+  },
+  {
+    "id": "fer-geneve-masterclass-ia-roadmap-2027",
+    "title": "AI Masterclass: 2027 Roadmap",
+    "date": "2026-12-03",
+    "endDate": "2026-12-03",
+    "time": "12:30–13:30",
+    "city": "Plan-les-Ouates (Geneva)",
+    "venue": "Atrium, Campus SPARK, Chemin du Champ-des-Filles 4",
+    "format": "Workshop",
+    "topics": [
+      "AI strategy",
+      "Applied AI",
+      "SMEs"
+    ],
+    "organiser": "FER Genève",
+    "cost": "Free",
+    "url": "https://www.formations.fer-ge.ch/masterclasses-IA-session-2-2026",
+    "source": "formations.fer-ge.ch",
+    "blurb": "Free lunchtime masterclass closing FER Genève's 2026 AI series, setting out a practical 2027 roadmap for companies putting AI to work.",
+    "firstSeen": "2026-11-23"
+  },
+  {
+    "id": "fer-geneve-masterclass-ia-2027-session-1",
+    "title": "AI Masterclass 2027 — Session 1",
+    "date": "2027-01-12",
+    "endDate": "2027-01-12",
+    "time": "12:30–13:30",
+    "city": "Plan-les-Ouates (Geneva)",
+    "venue": "Atrium, Campus SPARK, Chemin du Champ-des-Filles 4",
+    "format": "Workshop",
+    "topics": [
+      "AI strategy",
+      "Applied AI",
+      "SMEs"
+    ],
+    "organiser": "FER Genève",
+    "cost": "Free",
+    "url": "https://www.formations.fer-ge.ch/masterclasses-IA-2027",
+    "source": "formations.fer-ge.ch",
+    "blurb": "First of FER Genève's ten free lunchtime masterclasses of 2027, on how a company can get started with AI, presented by Pascal Eichenberger.",
+    "firstSeen": "2026-11-23"
+  },
+  {
+    "id": "fer-geneve-preparer-deployer-ia-organisation-session-1-2027",
+    "title": "Préparer et déployer l'intelligence artificielle dans son organisation — Session 1",
+    "date": "2027-01-12",
+    "endDate": "2027-01-19",
+    "time": "09:00–17:00",
+    "city": "Plan-les-Ouates (Geneva)",
+    "venue": "Centre de formation FER Genève – SPARK, Chemin du Champ-des-Filles 4B",
+    "format": "Workshop",
+    "topics": [
+      "AI strategy",
+      "Applied AI",
+      "Change management"
+    ],
+    "organiser": "FER Genève",
+    "cost": "CHF 1,050 members / CHF 1,400 non-members",
+    "url": "https://www.formations.fer-ge.ch/preparer-et-deployer-l-intelligence-artificielle-dans-son-organisation-session-1-2027",
+    "source": "formations.fer-ge.ch",
+    "blurb": "Two-day French-language seminar (12 and 19 January) on mapping business processes, using the AI Business Canvas to identify and prioritise AI projects, and leaving with a roadmap for a first deployment.",
+    "firstSeen": "2026-11-23"
+  },
+  {
+    "id": "fer-geneve-comprendre-utiliser-ia-generatives-session-1-2027",
+    "title": "Comprendre et utiliser les intelligences artificielles génératives — Session 1",
+    "date": "2027-01-13",
+    "endDate": "2027-01-13",
+    "time": "09:00–17:00",
+    "city": "Plan-les-Ouates (Geneva)",
+    "venue": "Centre de formation FER Genève – SPARK, Chemin du Champ-des-Filles 4B",
+    "format": "Workshop",
+    "topics": [
+      "Generative AI",
+      "Prompting",
+      "AI literacy"
+    ],
+    "organiser": "FER Genève",
+    "cost": "CHF 520 members / CHF 730 non-members",
+    "url": "https://www.formations.fer-ge.ch/comprendre-et-utiliser-les-intelligences-artificielles-generatives-session-1-2027",
+    "source": "formations.fer-ge.ch",
+    "blurb": "One-day French-language seminar on how generative AI tools work, with hands-on prompting practice for text, image, sound and video models, aimed at communicators, marketers and entrepreneurs.",
+    "firstSeen": "2026-11-23"
+  },
+  {
+    "id": "fer-geneve-anticiper-risques-ia-gouvernance-2027",
+    "title": "Anticiper les risques des IA : exigences réglementaires et gouvernance",
+    "date": "2027-01-27",
+    "endDate": "2027-01-28",
+    "time": "09:00–17:00",
+    "city": "Plan-les-Ouates (Geneva)",
+    "venue": "Centre de formation FER Genève – SPARK, Chemin du Champ-des-Filles 4B",
+    "format": "Workshop",
+    "topics": [
+      "AI governance",
+      "AI regulation",
+      "Risk management",
+      "Data protection"
+    ],
+    "organiser": "FER Genève",
+    "cost": "CHF 1,050 members / CHF 1,400 non-members",
+    "url": "https://www.formations.fer-ge.ch/anticiper-les-risques-des-ia-exigences-reglementaires-et-gouvernance-session-1-2027",
+    "source": "formations.fer-ge.ch",
+    "blurb": "Two-day French-language seminar on assessing the security, governance, compliance and data-protection risks of AI solutions, covering GDPR, the AI Act and the Cyber Resilience Act and how to build a governance approach that fits an SME.",
+    "firstSeen": "2026-11-23"
+  },
+  {
+    "id": "fer-geneve-optimisez-productivite-microsoft-copilot-session-1-2027",
+    "title": "Optimisez votre productivité avec Microsoft Copilot — Session 1",
+    "date": "2027-02-03",
+    "endDate": "2027-02-03",
+    "time": "09:00–17:00",
+    "city": "Plan-les-Ouates (Geneva)",
+    "venue": "Centre de formation FER Genève – SPARK, Chemin du Champ-des-Filles 4B",
+    "format": "Workshop",
+    "topics": [
+      "Microsoft Copilot",
+      "Microsoft 365",
+      "AI productivity"
+    ],
+    "organiser": "FER Genève",
+    "cost": "CHF 520 members / CHF 730 non-members",
+    "url": "https://www.formations.fer-ge.ch/optimisez-votre-productivit%C3%A9-avec-microsoft-copilot-session-1-2027",
+    "source": "formations.fer-ge.ch",
+    "blurb": "Hands-on French-language course on using Microsoft Copilot in everyday work — writing effective prompts and working with it in Word, Excel, PowerPoint and Teams; a Copilot licence and a laptop are required.",
+    "firstSeen": "2026-11-23"
+  },
+  {
+    "id": "fer-geneve-masterclass-ia-2027-session-2",
+    "title": "AI Masterclass 2027 — Session 2",
+    "date": "2027-02-09",
+    "endDate": "2027-02-09",
+    "time": "12:30–13:30",
+    "city": "Plan-les-Ouates (Geneva)",
+    "venue": "Atrium, Campus SPARK, Chemin du Champ-des-Filles 4",
+    "format": "Workshop",
+    "topics": [
+      "AI strategy",
+      "Applied AI",
+      "Future of work"
+    ],
+    "organiser": "FER Genève",
+    "cost": "Free",
+    "url": "https://www.formations.fer-ge.ch/masterclasses-IA-2027",
+    "source": "formations.fer-ge.ch",
+    "blurb": "Second of FER Genève's free 2027 lunchtime masterclasses, on how AI is changing what each job function actually does.",
+    "firstSeen": "2026-11-23"
+  },
+  {
+    "id": "fer-geneve-masterclass-ia-2027-session-3",
+    "title": "AI Masterclass 2027 — Session 3",
+    "date": "2027-03-09",
+    "endDate": "2027-03-09",
+    "time": "12:30–13:30",
+    "city": "Plan-les-Ouates (Geneva)",
+    "venue": "Atrium, Campus SPARK, Chemin du Champ-des-Filles 4",
+    "format": "Workshop",
+    "topics": [
+      "AI strategy",
+      "AI adoption",
+      "Change management"
+    ],
+    "organiser": "FER Genève",
+    "cost": "Free",
+    "url": "https://www.formations.fer-ge.ch/masterclasses-IA-2027",
+    "source": "formations.fer-ge.ch",
+    "blurb": "Third of FER Genève's free 2027 lunchtime masterclasses, on bringing AI into teams and supporting day-to-day adoption.",
+    "firstSeen": "2026-11-23"
+  },
+  {
+    "id": "ey-national-ai-conference-2027-zurich",
+    "title": "EY National AI Conference 2027",
+    "date": "2027-03-23",
+    "endDate": "2027-03-23",
+    "city": "Zurich",
+    "venue": "StageOne, Elias-Canetti-Strasse 146",
+    "format": "Conference",
+    "topics": [
+      "AI strategy",
+      "Trustworthy AI",
+      "AI governance"
+    ],
+    "organiser": "EY AG",
+    "cost": "Not announced",
+    "url": "https://www.ey.com/en_ch/events/2027/03/ey-national-ai-conference-2027",
+    "source": "ey.com",
+    "blurb": "Fourth edition of EY Switzerland's national AI conference, staged as a 'Road to Geneva' event ahead of the Geneva AI Summit; the programme and registration are still to be published.",
+    "firstSeen": "2026-11-23"
   }
 ]

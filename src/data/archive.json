@@ -5317,5 +5317,88 @@
     "source": "ai-weeks.ch",
     "blurb": "A German-language online session with Prof. Dr. Doris Weßels on how generative AI grew from the first chatbots into today's systems, and where it supports teaching rather than quietly solving the work meant for learners.",
     "firstSeen": "2026-11-17"
+  },
+  {
+    "id": "conference-next-design-x-ia-bussigny-2026",
+    "title": "Conférence Next — Design x IA",
+    "date": "2026-11-19",
+    "endDate": "2026-11-19",
+    "time": "14:00–17:30",
+    "city": "Bussigny (Lausanne)",
+    "venue": "QG Center, Route de la Chaux 4 (QoQa)",
+    "format": "Conference",
+    "topics": [
+      "Applied AI",
+      "AI agents",
+      "Design systems"
+    ],
+    "organiser": "Labster.io",
+    "cost": "CHF 65 (sold out, waitlist)",
+    "url": "https://luma.com/yl9vohy8",
+    "source": "luma.com",
+    "blurb": "An afternoon on what AI has actually changed in design work: a study of how 100 designers use it, prototyping with AI agents directly against a codebase, and how Swissquote rebuilt its design system with AI — then networking drinks.",
+    "firstSeen": "2026-11-09"
+  },
+  {
+    "id": "digital-economy-award-2026-zurich",
+    "title": "Digital Economy Award 2026",
+    "date": "2026-11-19",
+    "endDate": "2026-11-19",
+    "city": "Zurich",
+    "venue": "Hallenstadion, Wallisellenstrasse 45",
+    "format": "Conference",
+    "topics": [
+      "Digital economy",
+      "AI adoption",
+      "Data leadership"
+    ],
+    "organiser": "Swiss Digital Economy Award AG with digitalswitzerland",
+    "cost": "Not listed (tickets by request)",
+    "url": "https://www.digitaleconomyaward.ch/en/",
+    "source": "digitalswitzerland.com",
+    "blurb": "Switzerland’s digital-economy awards at the Hallenstadion: an Executive Afternoon of nine partner-hosted sessions on AI, customer relationships, skills and stablecoins, followed by the Award Night for categories from Pioneer of the Year to NextGen Hero.",
+    "firstSeen": "2026-11-09"
+  },
+  {
+    "id": "scs-ai-risks-in-cybersecurity-geneva-2026",
+    "title": "AI Risks in CyberSecurity",
+    "date": "2026-11-19",
+    "endDate": "2026-11-19",
+    "time": "16:30–19:30",
+    "city": "Geneva",
+    "venue": "Novotel Genève Centre, Rue de Zurich 19",
+    "format": "Conference",
+    "topics": [
+      "AI governance",
+      "AI risk",
+      "Security"
+    ],
+    "organiser": "Swiss CyberSecurity (SCS)",
+    "cost": "CHF 25",
+    "url": "https://www.swiss-cybersecurity.ch/event?e=261119",
+    "source": "swiss-cybersecurity.ch",
+    "blurb": "Afternoon session in Geneva on how organisations can keep using AI internally without taking on unmanaged risk, with presentations followed by a networking reception; CPE credits available via ISC2 and ISACA.",
+    "firstSeen": "2026-10-26"
+  },
+  {
+    "id": "zurich-ai-safety-open-meetup-2026-11-19",
+    "title": "AI Safety: Open Meet Up",
+    "date": "2026-11-19",
+    "endDate": "2026-11-19",
+    "time": "18:30–20:00",
+    "city": "Zurich",
+    "venue": "PEAKS (ZAIS coworking space), Zeughausstrasse 31",
+    "format": "Meetup",
+    "topics": [
+      "AI safety",
+      "AI community",
+      "AI research"
+    ],
+    "organiser": "Zurich AI Safety",
+    "cost": "Free (registration required, food and drinks provided)",
+    "url": "https://luma.com/zais-iikz",
+    "source": "luma.com",
+    "blurb": "An evening with no fixed programme in place of the usual weekly session: meet the organisers, ask how the AI safety field is put together, or pick up a thread from an earlier talk — newcomers as welcome as people already working on it.",
+    "firstSeen": "2026-11-10"
   }
 ]
