@@ -5400,5 +5400,106 @@
     "source": "luma.com",
     "blurb": "An evening with no fixed programme in place of the usual weekly session: meet the organisers, ask how the AI safety field is put together, or pick up a thread from an earlier talk — newcomers as welcome as people already working on it.",
     "firstSeen": "2026-11-10"
+  },
+  {
+    "id": "agentic-engineering-days-zurich-2026",
+    "title": "Agentic Engineering Days Zurich 2026",
+    "date": "2026-11-20",
+    "endDate": "2026-11-20",
+    "city": "Zurich",
+    "venue": "Zurich Marriott Hotel, Neumühlequai 42",
+    "format": "Conference",
+    "topics": [
+      "Agentic AI",
+      "AI-assisted development",
+      "Applied AI"
+    ],
+    "organiser": "letsboot.ch (felixideas GmbH)",
+    "cost": "CHF 442 (group discount for 3+)",
+    "url": "https://www.agenticdays.com",
+    "source": "confs.tech",
+    "blurb": "A one-day engineering conference on AI coding and agent systems: 38+ sessions across four tracks — using AI tools, building AI-powered systems, sponsor spotlights and hands-on workshops — with speakers from OpenAI, Hugging Face, NVIDIA, Google and AWS.",
+    "firstSeen": "2026-09-21"
+  },
+  {
+    "id": "ai-breakfast-luzern-56",
+    "title": "AI Breakfast #56 Luzern",
+    "date": "2026-11-20",
+    "endDate": "2026-11-20",
+    "time": "07:30–09:00",
+    "city": "Lucerne",
+    "venue": "Universität Luzern, Frohburgstrasse 3",
+    "format": "Networking",
+    "topics": [
+      "AI in business"
+    ],
+    "organiser": "Digital & AI Community",
+    "cost": "Not listed",
+    "url": "https://luma.com/x7mu87q3",
+    "source": "ai-community.ch",
+    "blurb": "Merun Gugelmann of Aeberli Treuhand on how an 80-year-old trust company got from Microsoft Teams to building its own Azure applications — the steps of that digitisation journey, concrete examples, and the setup on Azure App Services.",
+    "firstSeen": "2026-09-15"
+  },
+  {
+    "id": "ai-society-coffee-chats-zurich-2026-11-20",
+    "title": "AI Society — AI Coffee Chats Zurich (20 November)",
+    "date": "2026-11-20",
+    "endDate": "2026-11-20",
+    "time": "09:00–10:00",
+    "city": "Zurich",
+    "venue": "BRIDGE, Eisgasse 20 / Europaallee 22",
+    "format": "Networking",
+    "topics": [
+      "Applied AI",
+      "AI community",
+      "AI safety"
+    ],
+    "organiser": "AI Society",
+    "cost": "Free",
+    "url": "https://luma.com/xyl0neci",
+    "source": "luma.com",
+    "blurb": "Fortnightly drop-in coffee hour for anyone working with AI in Zurich: no presentations, just questions, demos and shop talk over an hour.",
+    "firstSeen": "2026-11-04"
+  },
+  {
+    "id": "constructor-nexademy-data-science-presentations-zurich-2026",
+    "title": "Data Science Final Project Presentations",
+    "date": "2026-11-20",
+    "endDate": "2026-11-20",
+    "time": "18:00–20:00",
+    "city": "Zurich",
+    "venue": "Constructor Nexademy Zürich, Förrlibuckstrasse 150",
+    "format": "Meetup",
+    "topics": [
+      "Data science",
+      "Machine learning",
+      "Analytics"
+    ],
+    "organiser": "Constructor Nexademy Switzerland",
+    "cost": "Free",
+    "url": "https://www.meetup.com/constructor-nexademy-switzerland/events/317189008/",
+    "source": "Meetup",
+    "blurb": "Open evening where data science students present their end-to-end projects, from data collection and analysis through modelling to visualisation, followed by questions and networking.",
+    "firstSeen": "2026-11-04"
+  },
+  {
+    "id": "data-tgif-power-bi-design-ai-2026",
+    "title": "Back in the Driver's Seat: Reclaiming Power BI Design in the Age of AI",
+    "date": "2026-11-20",
+    "endDate": "2026-11-20",
+    "time": "17:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "Power BI",
+      "Data visualisation",
+      "Applied AI"
+    ],
+    "organiser": "Data TGIF",
+    "cost": "Free",
+    "url": "https://www.meetup.com/data-tgif/events/317480307/",
+    "source": "Meetup",
+    "blurb": "Data Platform MVP Kay Sauter on why AI-generated DAX, visuals and whole dashboards still need human design judgement, introducing his DEPTH model for deciding what to keep, change or reject.",
+    "firstSeen": "2026-11-18"
   }
 ]

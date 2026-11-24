@@ -19,87 +19,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "agentic-engineering-days-zurich-2026",
-    "title": "Agentic Engineering Days Zurich 2026",
-    "date": "2026-11-20",
-    "endDate": "2026-11-20",
-    "city": "Zurich",
-    "venue": "Zurich Marriott Hotel, Neumühlequai 42",
-    "format": "Conference",
-    "topics": [
-      "Agentic AI",
-      "AI-assisted development",
-      "Applied AI"
-    ],
-    "organiser": "letsboot.ch (felixideas GmbH)",
-    "cost": "CHF 442 (group discount for 3+)",
-    "url": "https://www.agenticdays.com",
-    "source": "confs.tech",
-    "blurb": "A one-day engineering conference on AI coding and agent systems: 38+ sessions across four tracks — using AI tools, building AI-powered systems, sponsor spotlights and hands-on workshops — with speakers from OpenAI, Hugging Face, NVIDIA, Google and AWS.",
-    "firstSeen": "2026-09-21"
-  },
-  {
-    "id": "ai-breakfast-luzern-56",
-    "title": "AI Breakfast #56 Luzern",
-    "date": "2026-11-20",
-    "endDate": "2026-11-20",
-    "time": "07:30–09:00",
-    "city": "Lucerne",
-    "venue": "Universität Luzern, Frohburgstrasse 3",
-    "format": "Networking",
-    "topics": [
-      "AI in business"
-    ],
-    "organiser": "Digital & AI Community",
-    "cost": "Not listed",
-    "url": "https://luma.com/x7mu87q3",
-    "source": "ai-community.ch",
-    "blurb": "Merun Gugelmann of Aeberli Treuhand on how an 80-year-old trust company got from Microsoft Teams to building its own Azure applications — the steps of that digitisation journey, concrete examples, and the setup on Azure App Services.",
-    "firstSeen": "2026-09-15"
-  },
-  {
-    "id": "ai-society-coffee-chats-zurich-2026-11-20",
-    "title": "AI Society — AI Coffee Chats Zurich (20 November)",
-    "date": "2026-11-20",
-    "endDate": "2026-11-20",
-    "time": "09:00–10:00",
-    "city": "Zurich",
-    "venue": "BRIDGE, Eisgasse 20 / Europaallee 22",
-    "format": "Networking",
-    "topics": [
-      "Applied AI",
-      "AI community",
-      "AI safety"
-    ],
-    "organiser": "AI Society",
-    "cost": "Free",
-    "url": "https://luma.com/xyl0neci",
-    "source": "luma.com",
-    "blurb": "Fortnightly drop-in coffee hour for anyone working with AI in Zurich: no presentations, just questions, demos and shop talk over an hour.",
-    "firstSeen": "2026-11-04"
-  },
-  {
-    "id": "constructor-nexademy-data-science-presentations-zurich-2026",
-    "title": "Data Science Final Project Presentations",
-    "date": "2026-11-20",
-    "endDate": "2026-11-20",
-    "time": "18:00–20:00",
-    "city": "Zurich",
-    "venue": "Constructor Nexademy Zürich, Förrlibuckstrasse 150",
-    "format": "Meetup",
-    "topics": [
-      "Data science",
-      "Machine learning",
-      "Analytics"
-    ],
-    "organiser": "Constructor Nexademy Switzerland",
-    "cost": "Free",
-    "url": "https://www.meetup.com/constructor-nexademy-switzerland/events/317189008/",
-    "source": "Meetup",
-    "blurb": "Open evening where data science students present their end-to-end projects, from data collection and analysis through modelling to visualisation, followed by questions and networking.",
-    "firstSeen": "2026-11-04"
-  },
-  {
     "id": "stem4health-hackathon-zurich-2026",
     "title": "STEM4Health Hackathon",
     "date": "2026-11-21",
@@ -1524,10 +1443,10 @@
   {
     "id": "davos-catalyst-ai-summit-2027",
     "title": "Davos Catalyst: AI Summit 2027",
-    "date": "2027-01-12",
-    "endDate": "2027-01-15",
+    "date": "2027-01-22",
+    "endDate": "2027-01-22",
     "city": "Davos",
-    "venue": "Davos Event Lounge, Rätia Center, Promenade 40",
+    "venue": "Rätia Center, Promenade 40",
     "format": "Conference",
     "topics": [
       "AI strategy",
@@ -1535,10 +1454,10 @@
       "Compute infrastructure"
     ],
     "organiser": "Davos Catalyst",
-    "cost": "CHF 7,900 delegate pass (CHF 5,900 until 31 October, excl. VAT)",
+    "cost": "By application (fee on request)",
     "url": "https://davoscatalyst.com/",
     "source": "davoscatalyst.com",
-    "blurb": "Invitation-only summit running alongside Davos week for around 200 founders, investors, corporate leaders and researchers, with roundtables and closed-door sessions on AI infrastructure, investment, enterprise deployment and governance.",
+    "blurb": "Invitation-only, application-reviewed one-day summit during Davos week for CEOs, AI founders and investors: keynotes on AI infrastructure, enterprise AI, sovereign AI and AI capital, pre-arranged one-to-one meetings and closing 'Deal Circles', with an optional ski day on the Saturday.",
     "firstSeen": "2026-10-30"
   },
   {
@@ -1945,7 +1864,7 @@
       "AI governance"
     ],
     "organiser": "echo originals AG (with IMD as knowledge partner)",
-    "cost": "CHF 890 (early bird CHF 712 until 15 November 2026; CHF 623 per person for teams of five or more)",
+    "cost": "CHF 890 (CHF 623 per person for teams of five or more)",
     "url": "https://ki-update.ch/",
     "source": "ki-update.ch",
     "blurb": "A one-day German-language management congress on leading in the AI era: executive cases, keynotes on efficiency, growth, trust and responsibility, and a closing keynote by Richard David Precht.",
@@ -2574,26 +2493,6 @@
     "source": "vshn.ch",
     "blurb": "Red Hat's Swiss edition brings keynotes on AI, security and infrastructure choices together with four tracks on platform, AIOps and automation, security and virtualisation, plus hands-on labs, an exhibition floor and a networking apéro.",
     "firstSeen": "2026-11-17"
-  },
-  {
-    "id": "data-tgif-power-bi-design-ai-2026",
-    "title": "Back in the Driver's Seat: Reclaiming Power BI Design in the Age of AI",
-    "date": "2026-11-20",
-    "endDate": "2026-11-20",
-    "time": "17:00",
-    "city": "Online (CH)",
-    "format": "Webinar",
-    "topics": [
-      "Power BI",
-      "Data visualisation",
-      "Applied AI"
-    ],
-    "organiser": "Data TGIF",
-    "cost": "Free",
-    "url": "https://www.meetup.com/data-tgif/events/317480307/",
-    "source": "Meetup",
-    "blurb": "Data Platform MVP Kay Sauter on why AI-generated DAX, visuals and whole dashboards still need human design judgement, introducing his DEPTH model for deciding what to keep, change or reject.",
-    "firstSeen": "2026-11-18"
   },
   {
     "id": "zentrum-sds-ai-roundtable-bern-2026",
@@ -3496,5 +3395,333 @@
     "source": "ey.com",
     "blurb": "Fourth edition of EY Switzerland's national AI conference, staged as a 'Road to Geneva' event ahead of the Geneva AI Summit; the programme and registration are still to be published.",
     "firstSeen": "2026-11-23"
+  },
+  {
+    "id": "ai-swiss-base-brain2brain-neuchatel-2026",
+    "title": "Brain2Brain Labs: BASE, une heure pour façonner votre IA",
+    "date": "2026-12-03",
+    "endDate": "2026-12-03",
+    "time": "18:00–21:00",
+    "city": "Neuchâtel",
+    "venue": "Microcity, Rue de la Pierre-à-Mazel 39, 3rd floor",
+    "format": "Workshop",
+    "topics": [
+      "AI adoption",
+      "AI governance",
+      "SME"
+    ],
+    "organiser": "AI Swiss",
+    "cost": "Free for members / CHF 35 guests",
+    "url": "https://a-i.swiss/fr/evenements/2026-12-03-base-neuchatel",
+    "source": "a-i.swiss",
+    "blurb": "Live demonstration of BASE 2.0, AI Swiss's open standard for teaching an AI tool a team's own knowledge, working methods and rules: an hour of team discussion is transcribed, turned into instructions, sources and rules, then tested on real cases — in French, no technical background needed.",
+    "firstSeen": "2026-11-24"
+  },
+  {
+    "id": "what-if-ai-belonged-to-all-of-us-zurich-2026",
+    "title": "What if AI belonged to all of us?",
+    "date": "2026-12-14",
+    "endDate": "2026-12-14",
+    "time": "19:00–22:00",
+    "city": "Zurich",
+    "venue": "Kraftwerk, Selnaustrasse 25",
+    "format": "Meetup",
+    "topics": [
+      "Public AI",
+      "AI governance",
+      "AI alignment"
+    ],
+    "organiser": "Swiss {ai} Weeks with Kickstart Innovation and Impact Hub",
+    "cost": "CHF 10",
+    "url": "https://luma.com/publicAI-14Dec16",
+    "source": "ai-weeks.ch",
+    "blurb": "Evening at Kraftwerk on whether AI should be a public good: an opening talk arguing that AI alignment cannot be top-down, a fireside chat and public deliberation on how Switzerland should build and govern its own AI, then interactive roundtables — aimed at a general audience, no technical background needed.",
+    "firstSeen": "2026-11-24"
+  },
+  {
+    "id": "zhaw-computational-life-sciences-day-2027",
+    "title": "Computational Life Sciences Day 2027 — AI Agents and Real Life",
+    "date": "2027-01-13",
+    "endDate": "2027-01-13",
+    "time": "12:00–17:00",
+    "city": "Wädenswil (Zurich)",
+    "venue": "ZHAW Campus Grüental, Building GA, Grüentalstrasse 14",
+    "format": "Conference",
+    "topics": [
+      "AI agents",
+      "Applied AI",
+      "Life sciences"
+    ],
+    "organiser": "ZHAW Institute of Computational Life Sciences (ICLS)",
+    "cost": "CHF 50",
+    "url": "https://www.zhaw.ch/en/lsfm/continuing-education/conferences-and-symposia/cls-day",
+    "source": "satw.ch",
+    "blurb": "Afternoon conference on autonomous AI agents moving from demo to production across biotechnology, healthcare, agriculture, food and environmental science, with company keynotes, ICLS research spotlights, a podium discussion and a networking apéro; registration closes 15 December 2026.",
+    "firstSeen": "2026-11-24"
+  },
+  {
+    "id": "swissmem-satw-fe-konferenz-2027-zurich",
+    "title": "12. F&E-Konferenz — Digitalisation, Automation and AI in Industry",
+    "date": "2027-01-28",
+    "endDate": "2027-01-28",
+    "time": "12:00–18:00",
+    "city": "Zurich",
+    "venue": "ETH Zürich, Campus Hönggerberg, HPH building",
+    "format": "Conference",
+    "topics": [
+      "Applied AI",
+      "Industrial AI",
+      "Automation"
+    ],
+    "organiser": "Swissmem with SATW and Swiss Engineering, in collaboration with Innosuisse",
+    "cost": "CHF 180 members / CHF 250 non-members / CHF 60 students (excl. VAT)",
+    "url": "https://www.swissmem.ch/en/news/calendar-of-events/12th-rd-conference.html",
+    "source": "satw.ch",
+    "blurb": "Swiss industry research-and-development conference on digitalisation, automation and artificial intelligence, run as rapid five-minute pitches across three parallel sessions on intelligent connected products, manufacturing processes and resilient value creation.",
+    "firstSeen": "2026-11-24"
+  },
+  {
+    "id": "swissict-innowork-04-digital-trust-zurich-2026",
+    "title": "INNOwork #04: Digital Trust gemeinsam gestalten — von der Konzeption zur Evaluation",
+    "date": "2026-11-26",
+    "endDate": "2026-11-26",
+    "time": "17:00–19:00",
+    "city": "Zurich",
+    "venue": "SATW, St. Annagasse 18",
+    "format": "Workshop",
+    "topics": [
+      "Digital trust",
+      "AI governance",
+      "Research"
+    ],
+    "organiser": "swissICT Fachgruppe Innovation with SATW",
+    "cost": "Free",
+    "url": "https://www.swissict.ch/event/innowork-04-mit-felix-gille-zu-digital-trust/",
+    "source": "swissict.ch",
+    "blurb": "Industry workshop with Dr Felix Gille (University of Zurich) shaping a four-year public research project on digital trust — requirements, use cases and evaluation approaches for trustworthy data and AI use, building on a SATW-backed pilot study.",
+    "firstSeen": "2026-11-24"
+  },
+  {
+    "id": "agile-breakfast-bern-prompt-monkeys-2026",
+    "title": "Agile Breakfast Bern — Prompt Monkeys",
+    "date": "2026-11-25",
+    "endDate": "2026-11-25",
+    "time": "08:30–10:00",
+    "city": "Bern",
+    "format": "Meetup",
+    "topics": [
+      "AI-assisted development",
+      "Skills",
+      "Engineering culture"
+    ],
+    "organiser": "Agile Breakfast Bern (swissICT)",
+    "cost": "Free",
+    "url": "https://www.swissict.ch/event/agile-breakfast-bern-prompt-monkeys/",
+    "source": "swissict.ch",
+    "blurb": "Dominik Berner, software developer and vocational teacher, on whether coding assistants are breeding a generation of prompt monkeys — AI fatigue, AI surrender, and how to use AI as a learning enabler rather than outsourcing your thinking.",
+    "firstSeen": "2026-11-24"
+  },
+  {
+    "id": "swissict-webinar-ki-digital-transformation-2026",
+    "title": "swissICT Webinar: KI & Digital Transformation — Planung, Umsetzung, Steuerung und Wirkungsmessung",
+    "date": "2026-12-01",
+    "endDate": "2026-12-01",
+    "time": "16:00–16:30",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "AI strategy",
+      "Digital transformation",
+      "KPI and OKR"
+    ],
+    "organiser": "swissICT Fachgruppe Digital Transformation Insight",
+    "cost": "Free",
+    "url": "https://www.swissict.ch/event/swissict-webinar-ki-digital-transformation-planung-umsetzung-steuerung-sowie-messung-der-ergebnisse-wirkung/",
+    "source": "swissict.ch",
+    "blurb": "Reiner Petzold on steering AI and digital transformation programmes through KPI- and OKR-based dashboards, and why the human side — culture, roles and decision logic — decides whether the strategy delivers anything.",
+    "firstSeen": "2026-11-24"
+  },
+  {
+    "id": "dasscrumteam-webinar-ki-buchschreiben-outevolve-2026",
+    "title": "Webinar: KI-gestütztes Buchschreiben — die Architektur hinter «Outevolve»",
+    "date": "2026-12-02",
+    "endDate": "2026-12-02",
+    "time": "16:00–17:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "AI agents",
+      "Applied AI",
+      "Knowledge management"
+    ],
+    "organiser": "DasScrumTeam AG, Zug",
+    "cost": "Free",
+    "url": "https://www.dasscrumteam.com/de/fokusthema/ki-enhanced-buchschreiben-der-techstack-hinter-outevolve",
+    "source": "swissict.ch",
+    "blurb": "Peter Beck and Andreas Schliep take their AI agent stack apart layer by layer — Obsidian as the knowledge hub, Claude Code as the engine, 50-plus skills and MCP integrations — the same production setup that wrote every line of their book, including where it falls short.",
+    "firstSeen": "2026-11-24"
+  },
+  {
+    "id": "devops-zurich-cardinality-reliable-software-2027",
+    "title": "Rethinking Cardinality & Secrets to Reliable Software",
+    "date": "2027-01-21",
+    "endDate": "2027-01-21",
+    "time": "17:30–20:30",
+    "city": "Zurich",
+    "venue": "Digicomp Academy AG, Limmatstrasse 50",
+    "format": "Meetup",
+    "topics": [
+      "Observability",
+      "Data engineering",
+      "Software engineering"
+    ],
+    "organiser": "DevOps Meetup Zürich",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/devops-meetup-zurich/events/314474294/",
+    "source": "Meetup",
+    "blurb": "Joel Verezhak of Grafana Labs argues that fear of high-cardinality metrics is a historical habit rather than a hard limit, and shows what Parquet engines, ClickHouse and OTLP pipelines change; Dorota Parad follows on the foundations of reliable software that have nothing to do with your tech stack.",
+    "firstSeen": "2026-11-24"
+  },
+  {
+    "id": "swissict-webinar-ki-strategie-20-minuten-2027-01-12",
+    "title": "swissICT Webinar: KI-Strategie in 20 Minuten — vom Prinzip zur Priorisierung",
+    "date": "2027-01-12",
+    "endDate": "2027-01-12",
+    "time": "16:30–17:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "AI strategy",
+      "AI governance",
+      "Use-case prioritisation"
+    ],
+    "organiser": "swissICT Fachgruppe Digital Transformation Insight",
+    "cost": "Free",
+    "url": "https://www.swissict.ch/event/swissict-webinar-ki-strategie-in-20-minuten-vom-prinzip-zur-priorisierung/",
+    "source": "swissict.ch",
+    "blurb": "Prof. Bramwell Kaltenrieder of BFH compares six proven approaches to AI strategy and hands over a Swiss-focused standard process, from AI ambition through use-case prioritisation to scaling, with the EU AI Act in the background.",
+    "firstSeen": "2026-11-24"
+  },
+  {
+    "id": "agile-breakfast-luzern-agentische-organisation-2027",
+    "title": "Agile Breakfast Luzern — Die agentische Organisation ist bereits Realität",
+    "date": "2027-01-15",
+    "endDate": "2027-01-15",
+    "time": "08:30–10:30",
+    "city": "Lucerne",
+    "format": "Meetup",
+    "topics": [
+      "AI agents",
+      "Agentic organisation",
+      "Engineering culture"
+    ],
+    "organiser": "Agile Breakfast Luzern (swissICT)",
+    "cost": "Free",
+    "url": "https://www.swissict.ch/event/agile-breakfast-luzern-die-agentische-organisation-ist-bereits-realitaet-wo-bleibst-du/",
+    "source": "swissict.ch",
+    "blurb": "Filipe Inacio of Break shows fully agentic development setups already running in Swiss companies, followed by a moderated group discussion on what is left to coach, organise and orchestrate when the agent is a team member.",
+    "firstSeen": "2026-11-24"
+  },
+  {
+    "id": "isource-ki-compliance-zurich-2027",
+    "title": "Was KI morgen kann und heute darf — interaktiver KI & Compliance Event",
+    "date": "2027-01-27",
+    "endDate": "2027-01-27",
+    "time": "08:15–11:00",
+    "city": "Zurich",
+    "venue": "Kinokoni, Lagerstrasse 104, Europaallee",
+    "format": "Meetup",
+    "topics": [
+      "AI governance",
+      "Data governance",
+      "Compliance"
+    ],
+    "organiser": "iSource AG",
+    "cost": "Free",
+    "url": "https://isource.ch/events/ki_compliance/",
+    "source": "swissict.ch",
+    "blurb": "Morning session on using AI to capture the know-how walking out of the door with retiring staff: Prof. Andreas Lorenz (FHNW) on what AI can do for knowledge capture today, and lawyer Markus Näf on which business data may go into which kind of AI under data protection, governance and compliance rules.",
+    "firstSeen": "2026-11-24"
+  },
+  {
+    "id": "swissict-webinar-ki-strategie-20-minuten-2027-01-27",
+    "title": "swissICT Webinar: KI-Strategie in 20 Minuten — vom Prinzip zur Priorisierung (Januar-Wiederholung)",
+    "date": "2027-01-27",
+    "endDate": "2027-01-27",
+    "time": "16:30–17:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "AI strategy",
+      "AI governance",
+      "Use-case prioritisation"
+    ],
+    "organiser": "swissICT Fachgruppe Digital Transformation Insight",
+    "cost": "Free",
+    "url": "https://www.swissict.ch/event/swissict-webinar-ki-strategie-in-20-minuten-vom-prinzip-zur-priorisierung-2/",
+    "source": "swissict.ch",
+    "blurb": "Repeat of the 20-minute AI strategy session with Prof. Bramwell Kaltenrieder of BFH: six proven approaches compared and a Swiss-focused standard process from AI ambition to use-case prioritisation and scaling.",
+    "firstSeen": "2026-11-24"
+  },
+  {
+    "id": "swissict-webinar-ki-tools-effizienz-2027",
+    "title": "swissICT Webinar: KI-Tools für mehr Effizienz — welche passen zu meinem Unternehmen?",
+    "date": "2027-02-09",
+    "endDate": "2027-02-09",
+    "time": "16:00–16:30",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "AI tools",
+      "AI adoption",
+      "Data protection"
+    ],
+    "organiser": "swissICT Fachgruppe Digital Transformation Insight",
+    "cost": "Free",
+    "url": "https://www.swissict.ch/event/swissict-webinar-ki-tools-fuer-mehr-effizienz-welche-passen-zu-meinem-unternehmen/",
+    "source": "swissict.ch",
+    "blurb": "Moritz Maier of BFH gives practical criteria for picking between ChatGPT, Copilot, Gemini, Claude and the long tail of niche tools, sorted by use case, data-protection requirements and team size.",
+    "firstSeen": "2026-11-24"
+  },
+  {
+    "id": "devops-zurich-composable-operators-intent-infrastructure-2027",
+    "title": "Composable Kubernetes Operators & Intent-Based Infrastructure",
+    "date": "2027-02-17",
+    "endDate": "2027-02-17",
+    "time": "17:30–20:30",
+    "city": "Zurich",
+    "venue": "Digicomp Academy AG, Limmatstrasse 50",
+    "format": "Meetup",
+    "topics": [
+      "Platform engineering",
+      "AI agents",
+      "Kubernetes"
+    ],
+    "organiser": "DevOps Meetup Zürich",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/devops-meetup-zurich/events/314540740/",
+    "source": "Meetup",
+    "blurb": "Tristan Smagghe of Infomaniak on designing composable Kubernetes operators that coordinate through contracts behind Infomaniak’s new hosting platform, then Torsten Boettjer on an open-source intent layer that lets operators and AI agents describe desired state and drive autonomous operations.",
+    "firstSeen": "2026-11-24"
+  },
+  {
+    "id": "wordcamp-switzerland-2027-murten",
+    "title": "WordCamp Switzerland 2027",
+    "date": "2027-03-05",
+    "endDate": "2027-03-06",
+    "city": "Murten (Bern)",
+    "venue": "Centre Loewenberg",
+    "format": "Conference",
+    "topics": [
+      "WordPress",
+      "Open source",
+      "Web development"
+    ],
+    "organiser": "WordPress Switzerland community",
+    "cost": "From CHF 35",
+    "url": "https://switzerland.wordcamp.org/2027/",
+    "source": "dev.events",
+    "blurb": "The Swiss WordPress community conference, moved from September 2026 to the Centre Loewenberg campus near Murten: a contributor day on the Friday and a full day of community talks and networking on the Saturday.",
+    "firstSeen": "2026-11-24"
   }
 ]
