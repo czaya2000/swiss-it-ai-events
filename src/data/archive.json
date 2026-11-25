@@ -5501,5 +5501,46 @@
     "source": "Meetup",
     "blurb": "Data Platform MVP Kay Sauter on why AI-generated DAX, visuals and whole dashboards still need human design judgement, introducing his DEPTH model for deciding what to keep, change or reject.",
     "firstSeen": "2026-11-18"
+  },
+  {
+    "id": "basel-ai-vibe-coding-club-first-meetup-2026",
+    "title": "Basel AI & Vibe Coding Club — First Meetup",
+    "date": "2026-11-21",
+    "endDate": "2026-11-21",
+    "time": "14:00",
+    "city": "Basel",
+    "venue": "Basel (venue to be announced)",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "AI coding",
+      "AI community"
+    ],
+    "organiser": "Basel AI & Vibe Coding Club",
+    "cost": "Free",
+    "url": "https://www.meetup.com/basel-ai-vibe-coding-club/events/317204925/",
+    "source": "Meetup",
+    "blurb": "Kick-off meetup for a new Basel group around AI-assisted coding: short intros, side-project show-and-tell, and an open round on what people want to build next.",
+    "firstSeen": "2026-11-04"
+  },
+  {
+    "id": "coffee-and-prompt-012-geneva-2026",
+    "title": "Coffee & Prompt #012",
+    "date": "2026-11-21",
+    "endDate": "2026-11-21",
+    "city": "Geneva",
+    "venue": "Exponent, Quai du Seujet 12",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "Community",
+      "Prompting"
+    ],
+    "organiser": "Switzerland AI Community",
+    "cost": "Not listed (registration required)",
+    "url": "https://luma.com/o1j8zmaj",
+    "source": "switzerland-ai.com",
+    "blurb": "A relaxed Saturday-morning coworking session where builders and AI-curious people work on their own projects and swap prompts, workflows and lessons learned.",
+    "firstSeen": "2026-11-16"
   }
 ]

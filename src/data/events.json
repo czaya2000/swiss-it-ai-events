@@ -40,27 +40,6 @@
     "firstSeen": "2026-10-09"
   },
   {
-    "id": "basel-ai-vibe-coding-club-first-meetup-2026",
-    "title": "Basel AI & Vibe Coding Club — First Meetup",
-    "date": "2026-11-21",
-    "endDate": "2026-11-21",
-    "time": "14:00",
-    "city": "Basel",
-    "venue": "Basel (venue to be announced)",
-    "format": "Meetup",
-    "topics": [
-      "Applied AI",
-      "AI coding",
-      "AI community"
-    ],
-    "organiser": "Basel AI & Vibe Coding Club",
-    "cost": "Free",
-    "url": "https://www.meetup.com/basel-ai-vibe-coding-club/events/317204925/",
-    "source": "Meetup",
-    "blurb": "Kick-off meetup for a new Basel group around AI-assisted coding: short intros, side-project show-and-tell, and an open round on what people want to build next.",
-    "firstSeen": "2026-11-04"
-  },
-  {
     "id": "basel-data-science-ai-meetup-november-2026",
     "title": "Basel Data Science & AI Meetup — November 2026",
     "date": "2026-11-23",
@@ -2222,26 +2201,6 @@
     "firstSeen": "2026-11-15"
   },
   {
-    "id": "coffee-and-prompt-012-geneva-2026",
-    "title": "Coffee & Prompt #012",
-    "date": "2026-11-21",
-    "endDate": "2026-11-21",
-    "city": "Geneva",
-    "venue": "Exponent, Quai du Seujet 12",
-    "format": "Meetup",
-    "topics": [
-      "Applied AI",
-      "Community",
-      "Prompting"
-    ],
-    "organiser": "Switzerland AI Community",
-    "cost": "Not listed (registration required)",
-    "url": "https://luma.com/o1j8zmaj",
-    "source": "switzerland-ai.com",
-    "blurb": "A relaxed Saturday-morning coworking session where builders and AI-curious people work on their own projects and swap prompts, workflows and lessons learned.",
-    "firstSeen": "2026-11-16"
-  },
-  {
     "id": "ai-tinkerers-geneva-december-2026",
     "title": "AI Tinkerers Geneva — December 2026",
     "date": "2026-12-03",
@@ -3627,7 +3586,7 @@
     "title": "Was KI morgen kann und heute darf — interaktiver KI & Compliance Event",
     "date": "2027-01-27",
     "endDate": "2027-01-27",
-    "time": "08:15–11:00",
+    "time": "07:30–11:00 (programme from 08:15)",
     "city": "Zurich",
     "venue": "Kinokoni, Lagerstrasse 104, Europaallee",
     "format": "Meetup",
@@ -3723,5 +3682,279 @@
     "source": "dev.events",
     "blurb": "The Swiss WordPress community conference, moved from September 2026 to the Centre Loewenberg campus near Murten: a contributor day on the Friday and a full day of community talks and networking on the Saturday.",
     "firstSeen": "2026-11-24"
+  },
+  {
+    "id": "algorithmwatch-locked-in-big-tech-basel-2026",
+    "title": "«Locked in Big Tech» — Wie (un)abhängig sind wir?",
+    "date": "2026-11-25",
+    "endDate": "2026-11-25",
+    "time": "18:15–20:00",
+    "city": "Basel",
+    "venue": "kHaus, Kasernenhof 8",
+    "format": "Networking",
+    "topics": [
+      "Digital sovereignty",
+      "AI governance",
+      "Cloud"
+    ],
+    "organiser": "AlgorithmWatch CH with the Responsible Digital Society network, University of Basel",
+    "cost": "Not listed (registration required)",
+    "url": "https://algorithmwatch.ch/de/locked-in-big-tech/",
+    "source": "genevaaisummit.swiss",
+    "blurb": "Opening panel of a new Basel series on how dependent Switzerland is on a handful of global cloud, platform and AI providers, and what that means for democratic decision-making, with AI ethicist Annette Zimmermann, National Councillor Gerhard Andrey, AlgorithmWatch CH’s Angela Müller and Swico’s Daniel Seiler, followed by an apéro.",
+    "firstSeen": "2026-11-25"
+  },
+  {
+    "id": "microsoft-digital-sovereignty-day-lausanne-2026",
+    "title": "Microsoft Digital Sovereignty Day — Lausanne",
+    "date": "2026-11-26",
+    "endDate": "2026-11-26",
+    "time": "09:30–16:30",
+    "city": "Lausanne",
+    "venue": "Plateforme 10, Place de la Gare 16",
+    "format": "Conference",
+    "topics": [
+      "Azure",
+      "Digital sovereignty",
+      "AI governance",
+      "Microsoft 365"
+    ],
+    "organiser": "Microsoft Switzerland",
+    "cost": "Not listed (registration closed)",
+    "url": "https://msevents.microsoft.com/event?id=2508623498",
+    "source": "genevaaisummit.swiss",
+    "blurb": "Technical day for architects, security leads and platform owners on putting digital sovereignty into practice across Azure, Microsoft 365 and Security: sovereign landing zones and policy enforcement, data control, encryption and key ownership, confidential computing, Azure Local and Microsoft 365 Local, and governing AI in regulated environments.",
+    "firstSeen": "2026-11-25"
+  },
+  {
+    "id": "ai-in-clinical-data-honest-conversation-schlieren-2026",
+    "title": "AI in Clinical Data — The Honest Conversation",
+    "date": "2026-11-26",
+    "endDate": "2026-11-26",
+    "time": "17:30–20:00",
+    "city": "Schlieren (Zurich)",
+    "venue": "Superlab Suisse, Zürcherstrasse 39D",
+    "format": "Meetup",
+    "topics": [
+      "Data quality",
+      "Enterprise AI",
+      "Real-world data"
+    ],
+    "organiser": "Fatima Dumicz, in partnership with Superlab Suisse",
+    "cost": "Not listed (tickets via Eventfrog)",
+    "url": "https://eventfrog.ch/en/p/science-technology/digital-ai/ai-in-clinical-data-the-honest-conversation-schlieren-7520446649509886529.html",
+    "source": "innovation.zuerich",
+    "blurb": "Talks and a panel on what AI actually delivers in clinical research: Pamela Dobay (Rivia) on getting real-world data ready for AI and why quality has to come first, and Microsoft’s Artur Zielinski on what happened after enterprise AI went live at large pharma, with networking and apéro.",
+    "firstSeen": "2026-11-25"
+  },
+  {
+    "id": "sequotech-ki-in-der-praxis-kmu-zurich-2026",
+    "title": "KMU Meet-up: KI in der Praxis — Was funktioniert wirklich für Schweizer KMU?",
+    "date": "2026-11-26",
+    "endDate": "2026-11-26",
+    "time": "08:30–13:00",
+    "city": "Zurich",
+    "venue": "Die Cuisine, Geerenweg 23a, Zürich-Altstetten",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "SMEs",
+      "Microsoft Copilot",
+      "Automation"
+    ],
+    "organiser": "Sequotech Group",
+    "cost": "Not listed (sold out)",
+    "url": "https://sequotech.com/de/ki-in-der-praxis-was-funktioniert-wirklich-fuer-schweizer-kmu/",
+    "source": "innovation.zuerich",
+    "blurb": "Morning of concrete SME cases rather than AI theory: how companies around Zurich and Aargau use Copilot, machine-learning invoice processing and their own AI agents, a panel with three SMEs on what worked during rollout, breakout tracks by AI maturity level, and what data protection and AI regulation require.",
+    "firstSeen": "2026-11-25"
+  },
+  {
+    "id": "empa-technology-briefing-innovation-processes-ai-2026",
+    "title": "Technology Briefing: Accelerating Innovation Processes with AI",
+    "date": "2026-12-01",
+    "endDate": "2026-12-01",
+    "time": "14:00–17:45",
+    "city": "Dübendorf",
+    "venue": "Empa Akademie, Überlandstrasse 129",
+    "format": "Conference",
+    "topics": [
+      "Applied AI",
+      "Materials science",
+      "R&D automation"
+    ],
+    "organiser": "Empa Akademie, with CSEM and PSI",
+    "cost": "Free (all tickets taken; waiting list on the event page)",
+    "url": "https://www.empa.ch/web/tb/ai",
+    "source": "innovation.zuerich",
+    "blurb": "Afternoon briefing in English where researchers from Empa, CSEM and PSI and industry experts from ABB and Sulzer show how AI and automation are reshaping R&D — lab-to-fab translation, high-throughput thin-film materials discovery, innovation in expert-driven industries and low-carbon cement design — closing with an apéro.",
+    "firstSeen": "2026-11-25"
+  },
+  {
+    "id": "forgis-research-night-schlieren-2026",
+    "title": "Forgis Research Night — December 2026",
+    "date": "2026-12-02",
+    "endDate": "2026-12-02",
+    "time": "19:00–22:00",
+    "city": "Schlieren (Zurich)",
+    "venue": "DARE Campus, Zürcherstrasse 39D",
+    "format": "Meetup",
+    "topics": [
+      "Physical AI",
+      "Foundation models",
+      "Synthetic data"
+    ],
+    "organiser": "Forgis AG",
+    "cost": "Free (registration subject to host approval)",
+    "url": "https://luma.com/pwta2i8y",
+    "source": "luma.com",
+    "blurb": "Monthly physical-AI evening at Forgis’ headquarters: two lightning talks with Q&A — Shifeng Xie on structured-data foundation models and Forgis CTO Riccardo Maggioni on synthetic data — then an open floor with rooftop drinks.",
+    "firstSeen": "2026-11-25"
+  },
+  {
+    "id": "ai4all-lunch-learn-deepfakes-2027",
+    "title": "Lunch & Learn: Täuschend echt — Deepfakes im Alltag erkennen und einordnen",
+    "date": "2027-01-18",
+    "endDate": "2027-01-18",
+    "time": "12:00–13:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "AI literacy",
+      "Deepfakes",
+      "AI risk"
+    ],
+    "organiser": "AI4ALL Switzerland",
+    "cost": "Not listed (registration required)",
+    "url": "https://luma.com/lka4x35f",
+    "source": "ai4all-switzerland.ch",
+    "blurb": "Lunchtime session with AI consultant Vero Sallenbach on how deepfakes are made, why no single visual or audio tell is reliable, and a step-by-step check for source, context and cross-referencing, with a short checklist to take away.",
+    "firstSeen": "2026-11-25"
+  },
+  {
+    "id": "global-innovation-week-2027-zurich",
+    "title": "Global Innovation Week 2027",
+    "date": "2027-01-18",
+    "endDate": "2027-01-22",
+    "city": "Zurich",
+    "venue": "Hyatt Regency Zurich Airport Convention Center, The Circle 41 (18 Jan) and University of Zurich (22 Jan)",
+    "format": "Conference",
+    "topics": [
+      "AI infrastructure",
+      "Data centres",
+      "Robotics",
+      "AI governance"
+    ],
+    "organiser": "hoi — House of Innovation Switzerland",
+    "cost": "Not announced (single sessions or full days; ticket sales opening soon)",
+    "url": "https://hoi.swiss/en/global-innovation-week",
+    "source": "innovation.zuerich",
+    "blurb": "Independently organised programme in Zurich during WEF week: a Monday on AI-ready data centres with René Raeber (Microsoft Switzerland) and Stefan Berg (Swisscom) plus roundtables on power and storage, connectivity and cooling, and defending against AI-driven attacks; a Thursday on technology and the future of capital; and a Friday dialogue on AI and trust.",
+    "firstSeen": "2026-11-25"
+  },
+  {
+    "id": "alpict-techdemo-x-skilder-2027",
+    "title": "#TechDemo x skilder — l’agentisation des compétences",
+    "date": "2027-01-26",
+    "endDate": "2027-01-26",
+    "time": "12:30–13:00",
+    "city": "Online (CH)",
+    "format": "Webinar",
+    "topics": [
+      "AI agents",
+      "Skills governance",
+      "Applied AI"
+    ],
+    "organiser": "Alp ICT",
+    "cost": "Free (registration required)",
+    "url": "https://alpict.ch/evenements/techdemo-x-skilder/",
+    "source": "alpict.ch",
+    "blurb": "Half-hour live stream on Alp ICT’s channel with Nicolas Corod, founder of the Swiss start-up skilder, on turning business know-how into skills that AI assistants and agents can actually use, and how to share and govern them across an organisation.",
+    "firstSeen": "2026-11-25"
+  },
+  {
+    "id": "ai-village-2027-fribourg",
+    "title": "AI Village 2027",
+    "date": "2027-01-27",
+    "endDate": "2027-01-27",
+    "time": "from 08:30",
+    "city": "Fribourg",
+    "venue": "HEIA-FR, Boulevard de Pérolles 80",
+    "format": "Conference",
+    "topics": [
+      "Applied AI",
+      "AI and cybersecurity",
+      "Hands-on labs"
+    ],
+    "organiser": "AI Village, a spin-off of the Swiss Cyber Storm Association",
+    "cost": "CHF 100 early bird, CHF 50 student",
+    "url": "https://www.aivillage.ch/",
+    "source": "genevaaisummit.swiss",
+    "blurb": "Day-long Swiss Cyber Storm spin-off bringing AI practitioners, students and security professionals together for hands-on workshops, talks, demos and a CTF challenge on where AI and cybersecurity meet.",
+    "firstSeen": "2026-11-25"
+  },
+  {
+    "id": "ki-stammtisch-rheintal-generative-ki-widnau-2027",
+    "title": "KI-Stammtisch Rheintal #1 — Generative KI",
+    "date": "2027-02-15",
+    "endDate": "2027-02-15",
+    "time": "16:30–18:30",
+    "city": "Widnau (St. Gallen)",
+    "venue": "Nowo Coworking Space, Bahnhofstrasse 14",
+    "format": "Meetup",
+    "topics": [
+      "Generative AI",
+      "SMEs",
+      "Applied AI"
+    ],
+    "organiser": "thinking services ag, in partnership with swissAI",
+    "cost": "Not listed (registration requested)",
+    "url": "https://thinking.ch/ki-stammtisch/",
+    "source": "swissai.ch",
+    "blurb": "First of a new after-work round table for the Rheintal SME AI community — no stage talks, just participants swapping what generative AI really does in their day-to-day work, what does not work, and what they plan to try next.",
+    "firstSeen": "2026-11-25"
+  },
+  {
+    "id": "ki-stammtisch-rheintal-agentische-ki-widnau-2027",
+    "title": "KI-Stammtisch Rheintal #2 — Agentische KI",
+    "date": "2027-03-01",
+    "endDate": "2027-03-01",
+    "time": "16:30–18:30",
+    "city": "Widnau (St. Gallen)",
+    "venue": "Nowo Coworking Space, Bahnhofstrasse 14",
+    "format": "Meetup",
+    "topics": [
+      "AI agents",
+      "SMEs",
+      "Applied AI"
+    ],
+    "organiser": "thinking services ag, in partnership with swissAI",
+    "cost": "Not listed (registration requested)",
+    "url": "https://thinking.ch/ki-stammtisch/",
+    "source": "swissai.ch",
+    "blurb": "Second Rheintal KI-Stammtisch, this time on AI agents: what they can already take over in a small or mid-sized company, which questions are still open, and what the people in the room have tried themselves.",
+    "firstSeen": "2026-11-25"
+  },
+  {
+    "id": "digiday-bern-2027",
+    "title": "DigiDay Bern 2027 — Digitale Souveränität",
+    "date": "2027-03-15",
+    "endDate": "2027-03-15",
+    "time": "10:00–18:00",
+    "city": "Bern",
+    "venue": "Kursaal Bern, Kornhausstrasse 3",
+    "format": "Conference",
+    "topics": [
+      "Digital sovereignty",
+      "Data governance",
+      "AI regulation",
+      "E-government"
+    ],
+    "organiser": "ADVANTAGE AUSTRIA Zürich, in cooperation with the Austrian Embassy in Bern",
+    "cost": "Free (registration by 14 February 2027)",
+    "url": "https://www.advantageaustria.org/ch/events/DigiDay_Bern_2027.de.html",
+    "source": "genevaaisummit.swiss",
+    "blurb": "Day on digital sovereignty for the Swiss–Austrian e-government community, covering the government cloud, e-ID, cybersecurity, data governance and how AI is regulated and used across public administration and industry.",
+    "firstSeen": "2026-11-25"
   }
 ]
