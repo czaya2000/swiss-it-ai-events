@@ -5542,5 +5542,26 @@
     "source": "switzerland-ai.com",
     "blurb": "A relaxed Saturday-morning coworking session where builders and AI-curious people work on their own projects and swap prompts, workflows and lessons learned.",
     "firstSeen": "2026-11-16"
+  },
+  {
+    "id": "stem4health-hackathon-zurich-2026",
+    "title": "STEM4Health Hackathon",
+    "date": "2026-11-21",
+    "endDate": "2026-11-22",
+    "time": "Sat 08:30–22:00, Sun 08:30–17:00",
+    "city": "Zurich",
+    "venue": "ETH Zürich Campus Hönggerberg, HPH building",
+    "format": "Workshop",
+    "topics": [
+      "Hackathon",
+      "Applied AI",
+      "Machine learning"
+    ],
+    "organiser": "Johnson & Johnson Switzerland / Swiss Data Science Center",
+    "cost": "Free",
+    "url": "https://www.datascience.ch/event/stem4health-hackathon",
+    "source": "datascience.ch",
+    "blurb": "A hundred students and early-career researchers spend a weekend on real pharmaceutical manufacturing problems, combining manufacturing data, mechanistic modelling and machine learning with industry and academic mentors before pitching to a jury.",
+    "firstSeen": "2026-10-09"
   }
 ]

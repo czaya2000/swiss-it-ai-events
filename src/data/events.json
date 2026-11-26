@@ -19,27 +19,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "stem4health-hackathon-zurich-2026",
-    "title": "STEM4Health Hackathon",
-    "date": "2026-11-21",
-    "endDate": "2026-11-22",
-    "time": "Sat 08:30–22:00, Sun 08:30–17:00",
-    "city": "Zurich",
-    "venue": "ETH Zürich Campus Hönggerberg, HPH building",
-    "format": "Workshop",
-    "topics": [
-      "Hackathon",
-      "Applied AI",
-      "Machine learning"
-    ],
-    "organiser": "Johnson & Johnson Switzerland / Swiss Data Science Center",
-    "cost": "Free",
-    "url": "https://www.datascience.ch/event/stem4health-hackathon",
-    "source": "datascience.ch",
-    "blurb": "A hundred students and early-career researchers spend a weekend on real pharmaceutical manufacturing problems, combining manufacturing data, mechanistic modelling and machine learning with industry and academic mentors before pitching to a jury.",
-    "firstSeen": "2026-10-09"
-  },
-  {
     "id": "basel-data-science-ai-meetup-november-2026",
     "title": "Basel Data Science & AI Meetup — November 2026",
     "date": "2026-11-23",
@@ -3956,5 +3935,68 @@
     "source": "genevaaisummit.swiss",
     "blurb": "Day on digital sovereignty for the Swiss–Austrian e-government community, covering the government cloud, e-ID, cybersecurity, data governance and how AI is regulated and used across public administration and industry.",
     "firstSeen": "2026-11-25"
+  },
+  {
+    "id": "unige-philanthropy-lunch-ai-governance-geneva-2026",
+    "title": "Philanthropy Lunch — AI, Governance and Philanthropy",
+    "date": "2026-12-10",
+    "endDate": "2026-12-10",
+    "time": "12:00–14:00",
+    "city": "Geneva",
+    "venue": "Uni Dufour, Salle 408, Rue du Général-Dufour 24",
+    "format": "Conference",
+    "topics": [
+      "AI governance",
+      "AI policy",
+      "Philanthropy"
+    ],
+    "organiser": "Geneva Centre for Philanthropy, University of Geneva, with GAIGI — Geneva AI Governance Institute",
+    "cost": "Not listed (registration required)",
+    "url": "https://www.unige.ch/philanthropie/en/events/coming-events",
+    "source": "genevaaisummit.swiss",
+    "blurb": "Hybrid lunch session on the part philanthropy can play in coordinating good AI governance across international Geneva, with speakers from the University of Geneva and the Geneva AI Governance Institute.",
+    "firstSeen": "2026-11-26"
+  },
+  {
+    "id": "ccig-ia-education-competences-geneva-2026",
+    "title": "Rencontre avec Anne Hiltpold — IA & éducation : former aujourd’hui les compétences de demain",
+    "date": "2026-12-10",
+    "endDate": "2026-12-10",
+    "time": "12:00–14:00 (reception from 11:30)",
+    "city": "Geneva",
+    "venue": "CCIG, Boulevard du Théâtre 4",
+    "format": "Conference",
+    "topics": [
+      "AI strategy",
+      "AI and education",
+      "Skills"
+    ],
+    "organiser": "CCIG — Chambre de commerce, d’industrie et des services de Genève",
+    "cost": "CHF 45 (CCIG members) / CHF 70",
+    "url": "https://www.ccig.ch/agenda/2026/12/Rencontre-avec-Anne-Hiltpold",
+    "source": "genevaaisummit.swiss",
+    "blurb": "Lunch meeting at the Geneva chamber of commerce where Anne Hiltpold, president of the Geneva Council of State, presents survey results on how Geneva students already use AI, followed by a discussion with businesses on what it changes for skills, jobs and training.",
+    "firstSeen": "2026-11-26"
+  },
+  {
+    "id": "swiss-cyber-security-days-2027-bern",
+    "title": "Swiss Cyber Security Days 2027 — When AI Acts",
+    "date": "2027-02-23",
+    "endDate": "2027-02-24",
+    "city": "Bern",
+    "venue": "BernExpo, Mingerstrasse 6",
+    "format": "Conference",
+    "topics": [
+      "Applied AI",
+      "AI agents",
+      "AI governance",
+      "Digital sovereignty"
+    ],
+    "organiser": "BERNEXPO AG",
+    "cost": "Not announced",
+    "url": "https://scsd.ch/en",
+    "source": "scsd.ch",
+    "blurb": "Two-day conference and exhibition built around AI shifting from a supporting tool to an autonomous actor, with keynotes and panels on the resulting questions of trust, accountability and digital sovereignty.",
+    "firstSeen": "2026-11-26"
   }
 ]
