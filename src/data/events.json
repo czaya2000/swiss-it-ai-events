@@ -19,48 +19,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "basel-data-science-ai-meetup-november-2026",
-    "title": "Basel Data Science & AI Meetup — November 2026",
-    "date": "2026-11-23",
-    "endDate": "2026-11-23",
-    "time": "18:30–21:00",
-    "city": "Basel",
-    "venue": "Ascent, Güterstrasse 144",
-    "format": "Meetup",
-    "topics": [
-      "Data science",
-      "MLOps",
-      "Applied AI"
-    ],
-    "organiser": "Basel Data Science & AI",
-    "cost": "CHF 5",
-    "url": "https://www.meetup.com/basel-data-scientists/events/317093429/",
-    "source": "Meetup",
-    "blurb": "Three practical talks on getting machine learning and AI models deployed and running in production, followed by networking with the Basel data community.",
-    "firstSeen": "2026-11-04"
-  },
-  {
-    "id": "ai-tinkerers-lausanne-november-2026",
-    "title": "AI Tinkerers Lausanne — November 2026 Meetup",
-    "date": "2026-11-23",
-    "endDate": "2026-11-23",
-    "time": "18:00–21:00",
-    "city": "Prilly (Lausanne)",
-    "venue": "Unlimitrust Campus, Route des Flumeaux 42",
-    "format": "Meetup",
-    "topics": [
-      "Applied AI",
-      "Building with AI",
-      "AI community"
-    ],
-    "organiser": "AI Tinkerers Lausanne, hosted at the Unlimitrust Campus",
-    "cost": "Free (registration subject to approval)",
-    "url": "https://lausanne.aitinkerers.org/p/ai-tinkerers-lausanne-november-2026-meetup",
-    "source": "lausanne.aitinkerers.org",
-    "blurb": "A demo-first evening for people actually building with AI: around half a dozen five-minute demos of work in progress, each followed by questions — slides and pitch decks are explicitly not allowed — then pizza and networking.",
-    "firstSeen": "2026-11-08"
-  },
-  {
     "id": "ai-safety-trustworthy-ai-zurich-2026",
     "title": "AI Safety: Building Trustworthy AI in the Real World",
     "date": "2026-11-24",
@@ -3998,5 +3956,129 @@
     "source": "scsd.ch",
     "blurb": "Two-day conference and exhibition built around AI shifting from a supporting tool to an autonomous actor, with keynotes and panels on the resulting questions of trust, accountability and digital sovereignty.",
     "firstSeen": "2026-11-26"
+  },
+  {
+    "id": "education-is-broken-dare-campus-schlieren-2026",
+    "title": "Education is Broken. Now What?",
+    "date": "2026-12-02",
+    "endDate": "2026-12-02",
+    "time": "09:00–17:30",
+    "city": "Schlieren (Zurich)",
+    "venue": "DARE Campus, Schlieren",
+    "format": "Workshop",
+    "topics": [
+      "Applied AI",
+      "Data science",
+      "Open source"
+    ],
+    "organiser": "Systematic-X with CH Open, Women in AI & Robotics, Women in Data Science and the Wikimedia Foundation",
+    "cost": "Free (general registration full; reserved places by application)",
+    "url": "https://humanandaicoexistence.com/event.html",
+    "source": "innovation.zuerich",
+    "blurb": "Day-long co-creation workshop where students, teachers, parents and tech practitioners work out what learning should look like alongside AI, data science, UX and open-source tooling; an official side event on the road to the Geneva AI Summit 2027.",
+    "firstSeen": "2026-11-27"
+  },
+  {
+    "id": "zurich-cpp-meetup-december-2026",
+    "title": "December C++ Meetup — Are We Ready for Agentic Coding Interviews?",
+    "date": "2026-12-10",
+    "endDate": "2026-12-10",
+    "time": "18:30–21:00",
+    "city": "Zurich",
+    "venue": "Google Zurich, Europaallee 36",
+    "format": "Meetup",
+    "topics": [
+      "Agentic AI",
+      "Software engineering",
+      "Developer tooling"
+    ],
+    "organiser": "Zürich C++ Meetup",
+    "cost": "Free",
+    "url": "https://www.meetup.com/zurich-c-meetup/events/317479710/",
+    "source": "meetup.com",
+    "blurb": "Zürich C++ community evening at Google Europaallee, with Pavel Filonov asking whether technical interview formats still make sense now that candidates code alongside AI agents, plus snacks and socialising.",
+    "firstSeen": "2026-11-27"
+  },
+  {
+    "id": "davos-ai-summit-imagination-in-action-2027",
+    "title": "Davos AI Summit 2027 — The Science of New Worlds",
+    "date": "2027-01-20",
+    "endDate": "2027-01-20",
+    "time": "08:30–17:30",
+    "city": "Davos",
+    "venue": "The Dome",
+    "format": "Conference",
+    "topics": [
+      "Frontier AI",
+      "AI strategy",
+      "Applied AI"
+    ],
+    "organiser": "Imagination in Action, in collaboration with MIT CSAIL and Stanford HAI",
+    "cost": "Not listed (RSVP required)",
+    "url": "https://imaginationinaction.co/2701davos/main",
+    "source": "imaginationinaction.co",
+    "blurb": "Tenth edition of Imagination in Action’s Davos AI Summit, running alongside the World Economic Forum, with sessions on frontier intelligence, human and machine agency and the foundations of progress.",
+    "firstSeen": "2026-11-27"
+  },
+  {
+    "id": "insomnihack-2027-lausanne",
+    "title": "Insomni'hack 2027",
+    "date": "2027-02-01",
+    "endDate": "2027-02-05",
+    "city": "Ecublens (Lausanne)",
+    "venue": "SwissTech Convention Center, Route Louis-Favre 2",
+    "format": "Conference",
+    "topics": [
+      "Cybersecurity",
+      "AI security",
+      "CTF"
+    ],
+    "organiser": "Orange Cyberdefense Switzerland",
+    "cost": "Paid (ticket tiers on insomnihack.ch)",
+    "url": "https://insomnihack.ch/",
+    "source": "dev.events",
+    "blurb": "Switzerland’s largest security conference on the EPFL campus: three days of hands-on workshops from 1 to 3 February, then two conference days of talks on 4 and 5 February plus the overnight capture-the-flag contest.",
+    "firstSeen": "2026-11-27"
+  },
+  {
+    "id": "journee-ia-enseignement-2027",
+    "title": "Journée IA & Enseignement #2",
+    "date": "2027-02-16",
+    "endDate": "2027-02-16",
+    "city": "Nationwide",
+    "venue": "HEIA-FR Fribourg, Amphimax UNIL Lausanne, UNINE Neuchâtel and Campus Biotech UNIGE Geneva, plus online",
+    "format": "Conference",
+    "topics": [
+      "Applied AI",
+      "AI in education",
+      "AI literacy"
+    ],
+    "organiser": "HES-SO, UNIFR, UNIGE, UNIL, UNINE and swissuniversities",
+    "cost": "Free (limited places; ticketing opens mid-December 2026)",
+    "url": "https://journee-ia5.ch/",
+    "source": "ai-days.swiss-ai-center.ch",
+    "blurb": "Second edition of the Swiss higher-education day on AI and teaching, running simultaneously on four university campuses with talks broadcast between the sites and online; an official pre-event on the road to the Geneva AI Summit.",
+    "firstSeen": "2026-11-27"
+  },
+  {
+    "id": "switech-founders-innovators-geneva-2026",
+    "title": "Switech — Founders and Innovators, Geneva Edition",
+    "date": "2026-12-02",
+    "endDate": "2026-12-02",
+    "time": "18:30–22:00",
+    "city": "Geneva",
+    "venue": "Les Halles de l’Île (address on registration)",
+    "format": "Networking",
+    "topics": [
+      "Applied AI",
+      "Startups",
+      "Networking"
+    ],
+    "organiser": "Switech",
+    "cost": "From CHF 8 (name your own price; free early-bird tickets gone)",
+    "url": "https://luma.com/vvr2dd0n",
+    "source": "luma.com",
+    "blurb": "Evening for Geneva founders and builders with an introduction to EPFL AI and a talk on how to build with AI without being an engineer, followed by curated introductions and networking.",
+    "firstSeen": "2026-11-27"
   }
 ]

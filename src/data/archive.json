@@ -5563,5 +5563,47 @@
     "source": "datascience.ch",
     "blurb": "A hundred students and early-career researchers spend a weekend on real pharmaceutical manufacturing problems, combining manufacturing data, mechanistic modelling and machine learning with industry and academic mentors before pitching to a jury.",
     "firstSeen": "2026-10-09"
+  },
+  {
+    "id": "ai-tinkerers-lausanne-november-2026",
+    "title": "AI Tinkerers Lausanne — November 2026 Meetup",
+    "date": "2026-11-23",
+    "endDate": "2026-11-23",
+    "time": "18:00–21:00",
+    "city": "Prilly (Lausanne)",
+    "venue": "Unlimitrust Campus, Route des Flumeaux 42",
+    "format": "Meetup",
+    "topics": [
+      "Applied AI",
+      "Building with AI",
+      "AI community"
+    ],
+    "organiser": "AI Tinkerers Lausanne, hosted at the Unlimitrust Campus",
+    "cost": "Free (registration subject to approval)",
+    "url": "https://lausanne.aitinkerers.org/p/ai-tinkerers-lausanne-november-2026-meetup",
+    "source": "lausanne.aitinkerers.org",
+    "blurb": "A demo-first evening for people actually building with AI: around half a dozen five-minute demos of work in progress, each followed by questions — slides and pitch decks are explicitly not allowed — then pizza and networking.",
+    "firstSeen": "2026-11-08"
+  },
+  {
+    "id": "basel-data-science-ai-meetup-november-2026",
+    "title": "Basel Data Science & AI Meetup — November 2026",
+    "date": "2026-11-23",
+    "endDate": "2026-11-23",
+    "time": "18:30–21:00",
+    "city": "Basel",
+    "venue": "Ascent, Güterstrasse 144",
+    "format": "Meetup",
+    "topics": [
+      "Data science",
+      "MLOps",
+      "Applied AI"
+    ],
+    "organiser": "Basel Data Science & AI",
+    "cost": "CHF 5",
+    "url": "https://www.meetup.com/basel-data-scientists/events/317093429/",
+    "source": "Meetup",
+    "blurb": "Three practical talks on getting machine learning and AI models deployed and running in production, followed by networking with the Basel data community.",
+    "firstSeen": "2026-11-04"
   }
 ]
