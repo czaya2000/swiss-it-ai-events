@@ -1,0 +1,191 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Geneva – Conference
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:energia-conference-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261201T160000
+DTEND;TZID=Europe/Zurich:20261201T200000
+SUMMARY:energIA 2026 — IA & décarbonation
+LOCATION:L’iceBergues\, Geneva
+DESCRIPTION:Second edition of the Geneva conference on AI and the energy tr
+ ansition\, debating whether AI genuinely helps reach net zero by 2050 or m
+ ostly adds resource consumption and rebound effects\, with public\, privat
+ e and academic participants and the Energ-IACK hackathon projects presenti
+ ng their results.\n\nOrganiser: Energ-IA Transition with MCI\n\nDetails an
+ d registration: https://swissdataevents.ch/events/energia-conference-genev
+ a-2026/
+URL:https://swissdataevents.ch/events/energia-conference-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gaigi-global-south-ai-leadership-dialogue-geneva-2026@swissdataevents.c
+ h
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Global South AI Leadership Dialogue — From Inclusion to Influence
+LOCATION:Geneva
+DESCRIPTION:A high-level Geneva dialogue on the place of the Global South i
+ n AI governance\, convened for diplomatic missions and international organ
+ isations under the Chatham House Rule\, with a written synthesis afterward
+ s.\n\nOrganiser: GAIGI — Geneva AI Governance Institute\n\nDetails and r
+ egistration: https://swissdataevents.ch/events/gaigi-global-south-ai-leade
+ rship-dialogue-geneva-2026/
+URL:https://swissdataevents.ch/events/gaigi-global-south-ai-leadership-dial
+ ogue-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kcd-suisse-romande-2026-meyrin@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261211
+SUMMARY:KCD Suisse Romande 2026
+LOCATION:CERN Science Gateway\, 1 Esplanade des Particules\, Meyrin (Geneva
+ )
+DESCRIPTION:The second Kubernetes Community Days for French-speaking Switze
+ rland: a warm-up day of parallel workshops with optional CERN and LHC tour
+ s\, then a main day at the Science Gateway with keynotes and three tracks 
+ of talks in French and English.\n\nOrganiser: Association Cloud Native Sui
+ sse Romande (CNCF)\n\nDetails and registration: https://swissdataevents.ch
+ /events/kcd-suisse-romande-2026-meyrin/
+URL:https://swissdataevents.ch/events/kcd-suisse-romande-2026-meyrin/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ccig-ia-education-competences-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261210T120000
+DTEND;TZID=Europe/Zurich:20261210T140000
+SUMMARY:Rencontre avec Anne Hiltpold — IA & éducation : former aujourd
+ ’hui les compétences de demain
+LOCATION:CCIG\, Boulevard du Théâtre 4\, Geneva
+DESCRIPTION:Lunch meeting at the Geneva chamber of commerce where Anne Hilt
+ pold\, president of the Geneva Council of State\, presents survey results 
+ on how Geneva students already use AI\, followed by a discussion with busi
+ nesses on what it changes for skills\, jobs and training.\n\nOrganiser: CC
+ IG — Chambre de commerce\, d’industrie et des services de Genève\n\nD
+ etails and registration: https://swissdataevents.ch/events/ccig-ia-educati
+ on-competences-geneva-2026/
+URL:https://swissdataevents.ch/events/ccig-ia-education-competences-geneva-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:unige-philanthropy-lunch-ai-governance-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261210T120000
+DTEND;TZID=Europe/Zurich:20261210T140000
+SUMMARY:Philanthropy Lunch — AI\, Governance and Philanthropy
+LOCATION:Uni Dufour\, Salle 408\, Rue du Général-Dufour 24\, Geneva
+DESCRIPTION:Hybrid lunch session on the part philanthropy can play in coord
+ inating good AI governance across international Geneva\, with speakers fro
+ m the University of Geneva and the Geneva AI Governance Institute.\n\nOrga
+ niser: Geneva Centre for Philanthropy\, University of Geneva\, with GAIGI 
+ — Geneva AI Governance Institute\n\nDetails and registration: https://sw
+ issdataevents.ch/events/unige-philanthropy-lunch-ai-governance-geneva-2026
+ /
+URL:https://swissdataevents.ch/events/unige-philanthropy-lunch-ai-governanc
+ e-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:geneva-ai-trade-forum-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270203
+DTEND;VALUE=DATE:20270205
+SUMMARY:Geneva AI Trade Forum 2027 (GAITF)
+LOCATION:Geneva
+DESCRIPTION:The second edition of GAIGI’s high-level forum on the regulat
+ ory interoperability of AI — an opening dinner followed by a full day of
+  dialogue for diplomatic missions\, international organisations and indust
+ ry.\n\nOrganiser: GAIGI — Geneva AI Governance Institute\n\nDetails and 
+ registration: https://swissdataevents.ch/events/geneva-ai-trade-forum-2027
+ /
+URL:https://swissdataevents.ch/events/geneva-ai-trade-forum-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cern-pgday-2027-geneva@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:CERN PGDay 2027
+LOCATION:CERN\, Esplanade des Particules 1\, Meyrin (Geneva)
+DESCRIPTION:A single-track\, English-language PostgreSQL conference at CERN
+  with seven sessions on high-performance and big-data workloads\, AI and v
+ ector search with pgvector\, enterprise security and compliance\, and core
+  database development\, followed by a social evening.\n\nOrganiser: Swiss 
+ PostgreSQL Users Group (SwissPUG) with CERN\n\nDetails and registration: h
+ ttps://swissdataevents.ch/events/cern-pgday-2027-geneva/
+URL:https://swissdataevents.ch/events/cern-pgday-2027-geneva/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-days-2027-geneva@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270217
+DTEND;VALUE=DATE:20270218
+SUMMARY:AI Days 2027 — Geneva
+LOCATION:Geneva
+DESCRIPTION:Geneva leg of the fifth AI Days\, the Swiss AI Center’s appli
+ ed-AI conference for SMEs\, with workshops\, talks\, research and demos. R
+ egistration not yet open.\n\nOrganiser: HES-SO / Swiss AI Center\n\nDetail
+ s and registration: https://swissdataevents.ch/events/ai-days-2027-geneva/
+URL:https://swissdataevents.ch/events/ai-days-2027-geneva/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:voxxed-days-cern-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270306
+SUMMARY:Voxxed Days CERN 2027
+LOCATION:CERN Science Gateway\, Esplanade des Particules 1\, Meyrin (Geneva
+ )
+DESCRIPTION:A one-day developer conference held at the CERN Science Gateway
+ \, with tracks on AI and agentic engineering\, cloud native data and infra
+ structure\, software architecture and modernisation\, and an optional tour
+  of CERN’s underground facilities.\n\nOrganiser: Exteso Sagl\, in collab
+ oration with CERN\n\nDetails and registration: https://swissdataevents.ch/
+ events/voxxed-days-cern-2027/
+URL:https://swissdataevents.ch/events/voxxed-days-cern-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

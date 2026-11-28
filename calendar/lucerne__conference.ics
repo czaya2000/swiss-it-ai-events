@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Lucerne – Conference
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:digitaltag-zentralschweiz-the-day-after-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270126T130000
+DTEND;TZID=Europe/Zurich:20270126T200000
+SUMMARY:Digitaltag Zentralschweiz 2027 — THE DAY AFTER
+LOCATION:SPINNEREI Luzern/Emmenbrücke\, Spinnereistrasse 3\, Emmenbrücke 
+ (Lucerne)
+DESCRIPTION:Central Switzerland’s digital day asks what remains once the 
+ AI euphoria fades — which technologies outlast a market correction\, and
+  how they reshape work\, value creation\, politics and the line between re
+ al and generated content\, debated with voices from business\, research\, 
+ education and politics.\n\nOrganiser: digitalswitzerland Zentralschweiz wi
+ th Digital & AI Community\n\nDetails and registration: https://swissdataev
+ ents.ch/events/digitaltag-zentralschweiz-the-day-after-2027/
+URL:https://swissdataevents.ch/events/digitaltag-zentralschweiz-the-day-aft
+ er-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

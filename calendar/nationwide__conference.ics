@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Nationwide – Conference
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:journee-ia-enseignement-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270216
+DTEND;VALUE=DATE:20270217
+SUMMARY:Journée IA & Enseignement #2
+LOCATION:HEIA-FR Fribourg\, Amphimax UNIL Lausanne\, UNINE Neuchâtel and C
+ ampus Biotech UNIGE Geneva\, plus online\, Nationwide
+DESCRIPTION:Second edition of the Swiss higher-education day on AI and teac
+ hing\, running simultaneously on four university campuses with talks broad
+ cast between the sites and online\; an official pre-event on the road to t
+ he Geneva AI Summit.\n\nOrganiser: HES-SO\, UNIFR\, UNIGE\, UNIL\, UNINE a
+ nd swissuniversities\n\nDetails and registration: https://swissdataevents.
+ ch/events/journee-ia-enseignement-2027/
+URL:https://swissdataevents.ch/events/journee-ia-enseignement-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

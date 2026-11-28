@@ -1,0 +1,223 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Bern
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:aws-swiss-user-group-bern-december-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261201T173000
+DTEND;TZID=Europe/Zurich:20261201T193000
+SUMMARY:AWS Swiss User Group Bern — December Meetup
+LOCATION:Axians Amanox AG\, Dammweg 9\, Bern
+DESCRIPTION:Final Bern meetup of the year for the Swiss AWS community: a mi
+ x of community talks plus discussion and networking\, with the agenda anno
+ unced closer to the date.\n\nOrganiser: AWS Swiss User Group – Bern\n\nD
+ etails and registration: https://swissdataevents.ch/events/aws-swiss-user-
+ group-bern-december-2026/
+URL:https://swissdataevents.ch/events/aws-swiss-user-group-bern-december-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:zentrum-sds-ai-roundtable-bern-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261202T130000
+DTEND;TZID=Europe/Zurich:20261202T180000
+SUMMARY:AI-Roundtable — Souveräne KI in Verwaltung und Unternehmen
+LOCATION:BFH Departement Wirtschaft\, Raum H051\, Brückenstrasse 73\, Bern
+DESCRIPTION:Half-day working roundtable at the Bern University of Applied S
+ ciences on sovereign AI in public administration and business\, including 
+ a six-dimension evaluation framework for AI agent harnesses\, change manag
+ ement and breakout groups\, capped at around 50 places.\n\nOrganiser: Zent
+ rum für Schweizerische Digitale Souveränität (Zentrum SDS) at BFH\n\nDe
+ tails and registration: https://swissdataevents.ch/events/zentrum-sds-ai-r
+ oundtable-bern-2026/
+URL:https://swissdataevents.ch/events/zentrum-sds-ai-roundtable-bern-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:robots-agents-future-of-work-fribourg-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261209T163000
+DTEND;TZID=Europe/Zurich:20261209T183000
+SUMMARY:Robots\, Agents and the Future of Work
+LOCATION:Université de Fribourg\, Campus de Pérolles\, PER 21\, Boulevard
+  de Pérolles 90
+DESCRIPTION:A panel with Peter Fankhauser (co-founder and CEO of ANYbotics)
+  and Anne Scherer (co-founder of Delta Labs) on how AI is changing company
+  operations\, from autonomous robots on the plant floor to generative AI i
+ n the boardroom.\n\nOrganiser: University of Fribourg (CSIS)\n\nDetails an
+ d registration: https://swissdataevents.ch/events/robots-agents-future-of-
+ work-fribourg-2026/
+URL:https://swissdataevents.ch/events/robots-agents-future-of-work-fribourg
+ -2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:epi-winterschool-generative-ai-wengen-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270124
+SUMMARY:Generative AI for Epidemiology Researchers: Practical Skills and Re
+ sponsible Use
+LOCATION:Wengen\, Bernese Oberland\, Wengen (Bern)
+DESCRIPTION:A three-day course in Wengen on using generative AI responsibly
+  in research\, pairing lectures with computer practicals on analysis\, lit
+ erature searching\, scientific writing\, study websites and agentic AI —
+  and on where error\, bias and reproducibility break down.\n\nOrganiser: S
+ wiss Epidemiology Winter School\n\nDetails and registration: https://swiss
+ dataevents.ch/events/epi-winterschool-generative-ai-wengen-2027/
+URL:https://swissdataevents.ch/events/epi-winterschool-generative-ai-wengen
+ -2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-village-2027-fribourg@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270127T083000
+DTEND;TZID=Europe/Zurich:20270127T103000
+SUMMARY:AI Village 2027
+LOCATION:HEIA-FR\, Boulevard de Pérolles 80\, Fribourg
+DESCRIPTION:Day-long Swiss Cyber Storm spin-off bringing AI practitioners\,
+  students and security professionals together for hands-on workshops\, tal
+ ks\, demos and a CTF challenge on where AI and cybersecurity meet.\n\nOrga
+ niser: AI Village\, a spin-off of the Swiss Cyber Storm Association\n\nDet
+ ails and registration: https://swissdataevents.ch/events/ai-village-2027-f
+ ribourg/
+URL:https://swissdataevents.ch/events/ai-village-2027-fribourg/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sdsc-connect-environmental-sciences-bern-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270203T090000
+DTEND;TZID=Europe/Zurich:20270203T163000
+SUMMARY:SDSC-Connect: Connecting Digital Environmental Sciences
+LOCATION:Central Bern venue to be announced
+DESCRIPTION:A day in Bern on making environmental data usable across discip
+ lines and institutions — data access and sharing\, data infrastructure\,
+  and the role of machine learning and AI across climate\, ecology\, hydrol
+ ogy\, the cryosphere\, natural hazards and agriculture\, with keynotes\, i
+ nvited talks\, break-outs and a poster fair. Seats are limited and the ven
+ ue is still to be announced.\n\nOrganiser: Swiss Data Science Center\n\nDe
+ tails and registration: https://swissdataevents.ch/events/sdsc-connect-env
+ ironmental-sciences-bern-2027/
+URL:https://swissdataevents.ch/events/sdsc-connect-environmental-sciences-b
+ ern-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-days-2027-fribourg@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270219
+DTEND;VALUE=DATE:20270220
+SUMMARY:AI Days 2027 — Fribourg
+LOCATION:Fribourg
+DESCRIPTION:Fribourg leg of AI Days 2027\, the Swiss AI Center’s applied-
+ AI conference for SMEs\, closing the three-city edition with workshops\, t
+ alks and demos. Registration not yet open.\n\nOrganiser: HES-SO / Swiss AI
+  Center\n\nDetails and registration: https://swissdataevents.ch/events/ai-
+ days-2027-fribourg/
+URL:https://swissdataevents.ch/events/ai-days-2027-fribourg/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-cyber-security-days-2027-bern@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270223
+DTEND;VALUE=DATE:20270225
+SUMMARY:Swiss Cyber Security Days 2027 — When AI Acts
+LOCATION:BernExpo\, Mingerstrasse 6
+DESCRIPTION:Two-day conference and exhibition built around AI shifting from
+  a supporting tool to an autonomous actor\, with keynotes and panels on th
+ e resulting questions of trust\, accountability and digital sovereignty.\n
+ \nOrganiser: BERNEXPO AG\n\nDetails and registration: https://swissdataeve
+ nts.ch/events/swiss-cyber-security-days-2027-bern/
+URL:https://swissdataevents.ch/events/swiss-cyber-security-days-2027-bern/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:international-humanoid-forum-2027-biel@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270227
+SUMMARY:3rd International Humanoid Forum
+LOCATION:Switzerland Innovation Park Biel/Bienne\, Biel/Bienne (Bern)
+DESCRIPTION:Two days on humanoid robots in industry — keynotes\, panels\,
+  live demonstrations\, hands-on sessions and matchmaking\, with speakers f
+ rom ETH Zurich\, Idiap\, Siemens\, NEURA Robotics and AGIBOT.\n\nOrganiser
+ : Switzerland Innovation Park Biel/Bienne (Swiss Smart Factory) with the S
+ wiss Robotics Association\n\nDetails and registration: https://swissdataev
+ ents.ch/events/international-humanoid-forum-2027-biel/
+URL:https://swissdataevents.ch/events/international-humanoid-forum-2027-bie
+ l/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wordcamp-switzerland-2027-murten@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270307
+SUMMARY:WordCamp Switzerland 2027
+LOCATION:Centre Loewenberg\, Murten (Bern)
+DESCRIPTION:The Swiss WordPress community conference\, moved from September
+  2026 to the Centre Loewenberg campus near Murten: a contributor day on th
+ e Friday and a full day of community talks and networking on the Saturday.
+ \n\nOrganiser: WordPress Switzerland community\n\nDetails and registration
+ : https://swissdataevents.ch/events/wordcamp-switzerland-2027-murten/
+URL:https://swissdataevents.ch/events/wordcamp-switzerland-2027-murten/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:digiday-bern-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270315T100000
+DTEND;TZID=Europe/Zurich:20270315T180000
+SUMMARY:DigiDay Bern 2027 — Digitale Souveränität
+LOCATION:Kursaal Bern\, Kornhausstrasse 3
+DESCRIPTION:Day on digital sovereignty for the Swiss–Austrian e-governmen
+ t community\, covering the government cloud\, e-ID\, cybersecurity\, data 
+ governance and how AI is regulated and used across public administration a
+ nd industry.\n\nOrganiser: ADVANTAGE AUSTRIA Zürich\, in cooperation with
+  the Austrian Embassy in Bern\n\nDetails and registration: https://swissda
+ taevents.ch/events/digiday-bern-2027/
+URL:https://swissdataevents.ch/events/digiday-bern-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

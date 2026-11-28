@@ -1,0 +1,67 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Neuchâtel – Workshop
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ai-swiss-base-brain2brain-neuchatel-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261203T180000
+DTEND;TZID=Europe/Zurich:20261203T210000
+SUMMARY:Brain2Brain Labs: BASE\, une heure pour façonner votre IA
+LOCATION:Microcity\, Rue de la Pierre-à-Mazel 39\, 3rd floor\, Neuchâtel
+DESCRIPTION:Live demonstration of BASE 2.0\, AI Swiss's open standard for t
+ eaching an AI tool a team's own knowledge\, working methods and rules: an 
+ hour of team discussion is transcribed\, turned into instructions\, source
+ s and rules\, then tested on real cases — in French\, no technical backg
+ round needed.\n\nOrganiser: AI Swiss\n\nDetails and registration: https://
+ swissdataevents.ch/events/ai-swiss-base-brain2brain-neuchatel-2026/
+URL:https://swissdataevents.ch/events/ai-swiss-base-brain2brain-neuchatel-2
+ 026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:invest-neuchatel-afterwork-leadership-ia-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Afterwork Learn & Connect — Repenser le leadership à l'ère de l
+ 'intelligence artificielle
+LOCATION:La Petite Rochette\, Neuchâtel
+DESCRIPTION:A participatory French-language workshop for Neuchâtel busines
+ s leaders\, led by Vincent Nassar of IntoFlow\, on how AI shifts managemen
+ t\, decision-making and responsibility — each participant leaves with on
+ e concrete first step.\n\nOrganiser: Invest Neuchâtel (ARI-SO / platinn)\
+ n\nDetails and registration: https://swissdataevents.ch/events/invest-neuc
+ hatel-afterwork-leadership-ia-2026/
+URL:https://swissdataevents.ch/events/invest-neuchatel-afterwork-leadership
+ -ia-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

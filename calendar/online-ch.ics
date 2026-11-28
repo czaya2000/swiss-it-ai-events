@@ -1,0 +1,371 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Online (CH)
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bob-tv-episode-4-mainframe-ai-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261201T170000
+DTEND;TZID=Europe/Zurich:20261201T190000
+SUMMARY:Bob TV Episode 4: Why Generic AI Fails at Mainframe Scale
+LOCATION:Online
+DESCRIPTION:IBM’s Ethan Mendel explains why general-purpose AI models bec
+ ome unreliable on mainframe-scale codebases\, and how static code analysis
+  combined with metadata-enriched models makes AI dependable for modernisat
+ ion work.\n\nOrganiser: IBM Switzerland (Data\, Cloud and AI in Switzerlan
+ d)\n\nDetails and registration: https://swissdataevents.ch/events/bob-tv-e
+ pisode-4-mainframe-ai-2026/
+URL:https://swissdataevents.ch/events/bob-tv-episode-4-mainframe-ai-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swissict-webinar-ki-digital-transformation-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261201T160000
+DTEND;TZID=Europe/Zurich:20261201T163000
+SUMMARY:swissICT Webinar: KI & Digital Transformation — Planung\, Umsetzu
+ ng\, Steuerung und Wirkungsmessung
+LOCATION:Online
+DESCRIPTION:Reiner Petzold on steering AI and digital transformation progra
+ mmes through KPI- and OKR-based dashboards\, and why the human side — cu
+ lture\, roles and decision logic — decides whether the strategy delivers
+  anything.\n\nOrganiser: swissICT Fachgruppe Digital Transformation Insigh
+ t\n\nDetails and registration: https://swissdataevents.ch/events/swissict-
+ webinar-ki-digital-transformation-2026/
+URL:https://swissdataevents.ch/events/swissict-webinar-ki-digital-transform
+ ation-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai4all-lunch-learn-ki-hype-kmu-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:Lunch & Learn: KI-Hype bei KMU? Erstmal tief durchatmen!
+LOCATION:Online
+DESCRIPTION:Management consultant Janet Dubé on what a small or mid-sized 
+ company actually needs in place before AI pays off — which processes and
+  data basics matter\, where the quick wins are\, and which early mistakes 
+ to skip.\n\nOrganiser: AI4ALL Switzerland\n\nDetails and registration: htt
+ ps://swissdataevents.ch/events/ai4all-lunch-learn-ki-hype-kmu-2026/
+URL:https://swissdataevents.ch/events/ai4all-lunch-learn-ki-hype-kmu-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dasscrumteam-webinar-ki-buchschreiben-outevolve-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261202T160000
+DTEND;TZID=Europe/Zurich:20261202T170000
+SUMMARY:Webinar: KI-gestütztes Buchschreiben — die Architektur hinter «
+ Outevolve»
+LOCATION:Online
+DESCRIPTION:Peter Beck and Andreas Schliep take their AI agent stack apart 
+ layer by layer — Obsidian as the knowledge hub\, Claude Code as the engi
+ ne\, 50-plus skills and MCP integrations — the same production setup tha
+ t wrote every line of their book\, including where it falls short.\n\nOrga
+ niser: DasScrumTeam AG\, Zug\n\nDetails and registration: https://swissdat
+ aevents.ch/events/dasscrumteam-webinar-ki-buchschreiben-outevolve-2026/
+URL:https://swissdataevents.ch/events/dasscrumteam-webinar-ki-buchschreiben
+ -outevolve-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-insights-training-moderne-ki-modelle-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261203T083000
+DTEND;TZID=Europe/Zurich:20261203T100000
+SUMMARY:Swiss Insights TRAINING — Überblick über moderne KI-Modelle
+LOCATION:Online
+DESCRIPTION:German-language webinar by Christoph Bräunlich\, Head of AI at
+  BSI Software\, mapping today's model landscape — LLMs\, multimodal mode
+ ls\, RAG and AI agents — plus the differences between closed\, open-weig
+ hts and open-source models.\n\nOrganiser: Swiss Insights (Swiss Data Insig
+ hts Association)\n\nDetails and registration: https://swissdataevents.ch/e
+ vents/swiss-insights-training-moderne-ki-modelle-2026/
+URL:https://swissdataevents.ch/events/swiss-insights-training-moderne-ki-mo
+ delle-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fabric-year-in-review-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261208T183000
+DTEND;TZID=Europe/Zurich:20261208T200000
+SUMMARY:Fabric Year in Review 2026 — Highlights & Outlook
+LOCATION:Online
+DESCRIPTION:Year-end session from the Zurich Microsoft data-platform group 
+ on what actually shipped in Fabric during 2026 and what is worth planning 
+ for next.\n\nOrganiser: Data and AI for Intelligent Cloud\n\nDetails and r
+ egistration: https://swissdataevents.ch/events/fabric-year-in-review-2026/
+URL:https://swissdataevents.ch/events/fabric-year-in-review-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:smartfeld-webinar-wie-generative-ki-funktioniert-2026@swissdataevents.c
+ h
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261209T173000
+DTEND;TZID=Europe/Zurich:20261209T183000
+SUMMARY:Webinar: Wie generative KI funktioniert
+LOCATION:Online
+DESCRIPTION:A German-language online session on how generative AI models fi
+ nd patterns in large datasets\, why the training data shapes their answers
+  and why confident-sounding output can still be wrong\, aimed at teachers 
+ and school leaders with no technical background.\n\nOrganiser: Verein Smar
+ tfeld\, St. Gallen\n\nDetails and registration: https://swissdataevents.ch
+ /events/smartfeld-webinar-wie-generative-ki-funktioniert-2026/
+URL:https://swissdataevents.ch/events/smartfeld-webinar-wie-generative-ki-f
+ unktioniert-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bbv-swiss-ai-impact-report-webinar-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261210T170000
+DTEND;TZID=Europe/Zurich:20261210T174500
+SUMMARY:Webinar: Swiss AI Impact Report 2026
+LOCATION:Online
+DESCRIPTION:The headline findings of the third Swiss AI Impact Survey: how 
+ far Swiss companies have actually got with AI\, which factors decide wheth
+ er it works\, and why managers and employees experience the change differe
+ ntly.\n\nOrganiser: bbv Software Services with DemoSCOPE and Hochschule Lu
+ zern\n\nDetails and registration: https://swissdataevents.ch/events/bbv-sw
+ iss-ai-impact-report-webinar-2026/
+URL:https://swissdataevents.ch/events/bbv-swiss-ai-impact-report-webinar-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:smartfeld-webinar-quantencomputer-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261216T173000
+DTEND;TZID=Europe/Zurich:20261216T183000
+SUMMARY:Webinar: Wie funktioniert ein Quantencomputer?
+LOCATION:Online
+DESCRIPTION:Quantum optics researcher Wolfgang Geist gives a jargon-free in
+ troduction to quantum computing — superposition\, entanglement and measu
+ rement\, illustrated by quantum teleportation — and sorts out where it g
+ enuinely connects to AI and where that is still research.\n\nOrganiser: Ve
+ rein Smartfeld\, St. Gallen\n\nDetails and registration: https://swissdata
+ events.ch/events/smartfeld-webinar-quantencomputer-2026/
+URL:https://swissdataevents.ch/events/smartfeld-webinar-quantencomputer-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swissict-webinar-ki-strategie-20-minuten-2027-01-12@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270112T163000
+DTEND;TZID=Europe/Zurich:20270112T170000
+SUMMARY:swissICT Webinar: KI-Strategie in 20 Minuten — vom Prinzip zur Pr
+ iorisierung
+LOCATION:Online
+DESCRIPTION:Prof. Bramwell Kaltenrieder of BFH compares six proven approach
+ es to AI strategy and hands over a Swiss-focused standard process\, from A
+ I ambition through use-case prioritisation to scaling\, with the EU AI Act
+  in the background.\n\nOrganiser: swissICT Fachgruppe Digital Transformati
+ on Insight\n\nDetails and registration: https://swissdataevents.ch/events/
+ swissict-webinar-ki-strategie-20-minuten-2027-01-12/
+URL:https://swissdataevents.ch/events/swissict-webinar-ki-strategie-20-minu
+ ten-2027-01-12/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai4all-lunch-learn-deepfakes-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270118T120000
+DTEND;TZID=Europe/Zurich:20270118T130000
+SUMMARY:Lunch & Learn: Täuschend echt — Deepfakes im Alltag erkennen und
+  einordnen
+LOCATION:Online
+DESCRIPTION:Lunchtime session with AI consultant Vero Sallenbach on how dee
+ pfakes are made\, why no single visual or audio tell is reliable\, and a s
+ tep-by-step check for source\, context and cross-referencing\, with a shor
+ t checklist to take away.\n\nOrganiser: AI4ALL Switzerland\n\nDetails and 
+ registration: https://swissdataevents.ch/events/ai4all-lunch-learn-deepfak
+ es-2027/
+URL:https://swissdataevents.ch/events/ai4all-lunch-learn-deepfakes-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-insights-training-survey-questions-llms-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270119T160000
+DTEND;TZID=Europe/Zurich:20270119T170000
+SUMMARY:Swiss Insights TRAINING — Generating Survey Questions with LLMs
+LOCATION:Online
+DESCRIPTION:Anna Fuchs (Social Data Science and AI Lab\, LMU Munich) presen
+ ts a study that benchmarked five large language models and three prompting
+  techniques against the Survey Quality Predictor\, and what it says about 
+ where LLM-written items still fall short.\n\nOrganiser: Swiss Insights (Sw
+ iss Data Insights Association)\n\nDetails and registration: https://swissd
+ ataevents.ch/events/swiss-insights-training-survey-questions-llms-2027/
+URL:https://swissdataevents.ch/events/swiss-insights-training-survey-questi
+ ons-llms-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:alpict-techdemo-x-skilder-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270126T123000
+DTEND;TZID=Europe/Zurich:20270126T130000
+SUMMARY:#TechDemo x skilder — l’agentisation des compétences
+LOCATION:Online
+DESCRIPTION:Half-hour live stream on Alp ICT’s channel with Nicolas Corod
+ \, founder of the Swiss start-up skilder\, on turning business know-how in
+ to skills that AI assistants and agents can actually use\, and how to shar
+ e and govern them across an organisation.\n\nOrganiser: Alp ICT\n\nDetails
+  and registration: https://swissdataevents.ch/events/alpict-techdemo-x-ski
+ lder-2027/
+URL:https://swissdataevents.ch/events/alpict-techdemo-x-skilder-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:smartfeld-webinar-skill-building-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270126T173000
+DTEND;TZID=Europe/Zurich:20270126T183000
+SUMMARY:Webinar: Skill Building statt Skill Skipping
+LOCATION:Online
+DESCRIPTION:Manuel Garzi of the PH St. Gallen on why people reach for the A
+ I shortcut\, what skill skipping\, cognitive offloading and deskilling do 
+ to learning\, and how to keep generative AI useful rather than corrosive i
+ n teaching.\n\nOrganiser: Verein Smartfeld\, St. Gallen\n\nDetails and reg
+ istration: https://swissdataevents.ch/events/smartfeld-webinar-skill-build
+ ing-2027/
+URL:https://swissdataevents.ch/events/smartfeld-webinar-skill-building-2027
+ /
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swissict-webinar-ki-strategie-20-minuten-2027-01-27@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270127T163000
+DTEND;TZID=Europe/Zurich:20270127T170000
+SUMMARY:swissICT Webinar: KI-Strategie in 20 Minuten — vom Prinzip zur Pr
+ iorisierung (Januar-Wiederholung)
+LOCATION:Online
+DESCRIPTION:Repeat of the 20-minute AI strategy session with Prof. Bramwell
+  Kaltenrieder of BFH: six proven approaches compared and a Swiss-focused s
+ tandard process from AI ambition to use-case prioritisation and scaling.\n
+ \nOrganiser: swissICT Fachgruppe Digital Transformation Insight\n\nDetails
+  and registration: https://swissdataevents.ch/events/swissict-webinar-ki-s
+ trategie-20-minuten-2027-01-27/
+URL:https://swissdataevents.ch/events/swissict-webinar-ki-strategie-20-minu
+ ten-2027-01-27/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swissict-webinar-ki-tools-effizienz-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270209T160000
+DTEND;TZID=Europe/Zurich:20270209T163000
+SUMMARY:swissICT Webinar: KI-Tools für mehr Effizienz — welche passen zu
+  meinem Unternehmen?
+LOCATION:Online
+DESCRIPTION:Moritz Maier of BFH gives practical criteria for picking betwee
+ n ChatGPT\, Copilot\, Gemini\, Claude and the long tail of niche tools\, s
+ orted by use case\, data-protection requirements and team size.\n\nOrganis
+ er: swissICT Fachgruppe Digital Transformation Insight\n\nDetails and regi
+ stration: https://swissdataevents.ch/events/swissict-webinar-ki-tools-effi
+ zienz-2027/
+URL:https://swissdataevents.ch/events/swissict-webinar-ki-tools-effizienz-2
+ 027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-insights-training-ki-betriebliche-marktforschung-2027@swissdataev
+ ents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270302T100000
+DTEND;TZID=Europe/Zurich:20270302T120000
+SUMMARY:Swiss Insights TRAINING — KI in der betrieblichen Marktforschung
+LOCATION:Online
+DESCRIPTION:German-language webinar with Karin Hagemann (S-Communication Se
+ rvices) on putting generative AI and agentic workflows to work in in-house
+  research teams\, including building small tools yourself and where the li
+ mits sit.\n\nOrganiser: Swiss Insights (Swiss Data Insights Association)\n
+ \nDetails and registration: https://swissdataevents.ch/events/swiss-insigh
+ ts-training-ki-betriebliche-marktforschung-2027/
+URL:https://swissdataevents.ch/events/swiss-insights-training-ki-betrieblic
+ he-marktforschung-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:smartfeld-webinar-feedback-mit-ki-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270310T173000
+DTEND;TZID=Europe/Zurich:20270310T183000
+SUMMARY:Webinar: Mehr Aha\, weniger Warten – Feedback mit KI
+LOCATION:Online
+DESCRIPTION:Dan Vyleta\, Director of Education at Brian\, on using AI to gi
+ ve learners fast individual feedback on their work while the teacher keeps
+  oversight of the process\, followed by questions from the floor.\n\nOrgan
+ iser: Verein Smartfeld\, St. Gallen\n\nDetails and registration: https://s
+ wissdataevents.ch/events/smartfeld-webinar-feedback-mit-ki-2027/
+URL:https://swissdataevents.ch/events/smartfeld-webinar-feedback-mit-ki-202
+ 7/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:smartfeld-webinar-copilot-datenschutz-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270317T173000
+DTEND;TZID=Europe/Zurich:20270317T183000
+SUMMARY:Webinar: Copilot und Datenschutz im Schulalltag
+LOCATION:Online
+DESCRIPTION:Daniel von Büren\, Swiss Security Officer and Solution Enginee
+ r at Microsoft\, on what Copilot does with the data put into it — where 
+ it is stored\, who can reach it\, and how to handle confidential informati
+ on responsibly.\n\nOrganiser: Verein Smartfeld\, St. Gallen\n\nDetails and
+  registration: https://swissdataevents.ch/events/smartfeld-webinar-copilot
+ -datenschutz-2027/
+URL:https://swissdataevents.ch/events/smartfeld-webinar-copilot-datenschutz
+ -2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

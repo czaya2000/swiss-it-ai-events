@@ -1,0 +1,290 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Geneva – Workshop
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:saic-build-your-own-ai-assistant-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261128T103000
+DTEND;TZID=Europe/Zurich:20261128T143000
+SUMMARY:Build Your Own AI Personal Assistant: No Coding Needed
+LOCATION:Exponent\, Quai du Seujet 12 (1st floor)\, Geneva
+DESCRIPTION:A beginner-friendly Saturday workshop where you set up a person
+ al AI assistant on your own laptop and learn to message it from your phone
+ \, with no coding required.\n\nOrganiser: Switzerland AI Community\n\nDeta
+ ils and registration: https://swissdataevents.ch/events/saic-build-your-ow
+ n-ai-assistant-geneva-2026/
+URL:https://swissdataevents.ch/events/saic-build-your-own-ai-assistant-gene
+ va-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fer-geneve-comprendre-utiliser-ia-generatives-session-4-2026@swissdatae
+ vents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261130T090000
+DTEND;TZID=Europe/Zurich:20261130T170000
+SUMMARY:Comprendre et utiliser les intelligences artificielles générative
+ s — Session 4
+LOCATION:Centre de formation FER Genève – SPARK\, Chemin du Champ-des-Fi
+ lles 4B\, Plan-les-Ouates (Geneva)
+DESCRIPTION:One-day French-language seminar on how generative AI tools work
+ \, with hands-on prompting practice for text\, image\, sound and video mod
+ els and a look at the ethical questions.\n\nOrganiser: FER Genève\n\nDeta
+ ils and registration: https://swissdataevents.ch/events/fer-geneve-compren
+ dre-utiliser-ia-generatives-session-4-2026/
+URL:https://swissdataevents.ch/events/fer-geneve-comprendre-utiliser-ia-gen
+ eratives-session-4-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fer-geneve-masterclass-ia-roadmap-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261203T123000
+DTEND;TZID=Europe/Zurich:20261203T133000
+SUMMARY:AI Masterclass: 2027 Roadmap
+LOCATION:Atrium\, Campus SPARK\, Chemin du Champ-des-Filles 4\, Plan-les-Ou
+ ates (Geneva)
+DESCRIPTION:Free lunchtime masterclass closing FER Genève's 2026 AI series
+ \, setting out a practical 2027 roadmap for companies putting AI to work.\
+ n\nOrganiser: FER Genève\n\nDetails and registration: https://swissdataev
+ ents.ch/events/fer-geneve-masterclass-ia-roadmap-2027/
+URL:https://swissdataevents.ch/events/fer-geneve-masterclass-ia-roadmap-202
+ 7/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:votation-2032-young-ai-leaders-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261208T170000
+DTEND;TZID=Europe/Zurich:20261208T200000
+SUMMARY:Votation 2032
+LOCATION:Maison de l'Avenir\, Rue Fendt 1\, Geneva
+DESCRIPTION:Role-play workshop simulating a cantonal referendum campaign on
+  autonomous weapons\, with participants using generative AI tools to build
+  their case before a joint debrief and apéro.\n\nOrganiser: Young AI Lead
+ ers — Geneva Hub\, with the FNF Human Rights Hub\n\nDetails and registra
+ tion: https://swissdataevents.ch/events/votation-2032-young-ai-leaders-gen
+ eva-2026/
+URL:https://swissdataevents.ch/events/votation-2032-young-ai-leaders-geneva
+ -2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ocei-atelier-ia-fondations-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261211T081500
+DTEND;TZID=Europe/Zurich:20261211T133000
+SUMMARY:Atelier IA pour les fondations et associations philanthropiques
+LOCATION:Société suisse des entrepreneurs (SSE)\, Rue de Malatrex 14\, Ge
+ neva
+DESCRIPTION:A practical French-language morning for Geneva foundations and 
+ philanthropic associations: an introduction to the common AI tools\, then 
+ guided exercises on admin work\, reviewing grant applications and reportin
+ g impact\, with attention to confidentiality and checking what the model p
+ roduces.\n\nOrganiser: Office cantonal de l'économie et de l'innovation (
+ OCEI) with SwissFoundations and proFonds\n\nDetails and registration: http
+ s://swissdataevents.ch/events/ocei-atelier-ia-fondations-geneva-2026/
+URL:https://swissdataevents.ch/events/ocei-atelier-ia-fondations-geneva-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gluehwein-workshop-machine-learning-high-energy-physics-cern-2026@swiss
+ dataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261217
+SUMMARY:Glühwein Workshop 2026 — Machine Learning in High-Energy Physics
+LOCATION:CERN\, Salle Marie Skłodowska-Curie (40/S2-C01)\, Meyrin (Geneva)
+DESCRIPTION:Three-day workshop at CERN on recent machine-learning developme
+ nts and how they are applied in high-energy physics\, with an open call fo
+ r abstracts and guided tours of the ATLAS cavern.\n\nOrganiser: Universit
+ é de Genève (Tobias Golling group)\, hosted at CERN\n\nDetails and regis
+ tration: https://swissdataevents.ch/events/gluehwein-workshop-machine-lear
+ ning-high-energy-physics-cern-2026/
+URL:https://swissdataevents.ch/events/gluehwein-workshop-machine-learning-h
+ igh-energy-physics-cern-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fer-geneve-masterclass-ia-2027-session-1@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270112T123000
+DTEND;TZID=Europe/Zurich:20270112T133000
+SUMMARY:AI Masterclass 2027 — Session 1
+LOCATION:Atrium\, Campus SPARK\, Chemin du Champ-des-Filles 4\, Plan-les-Ou
+ ates (Geneva)
+DESCRIPTION:First of FER Genève's ten free lunchtime masterclasses of 2027
+ \, on how a company can get started with AI\, presented by Pascal Eichenbe
+ rger.\n\nOrganiser: FER Genève\n\nDetails and registration: https://swiss
+ dataevents.ch/events/fer-geneve-masterclass-ia-2027-session-1/
+URL:https://swissdataevents.ch/events/fer-geneve-masterclass-ia-2027-sessio
+ n-1/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fer-geneve-preparer-deployer-ia-organisation-session-1-2027@swissdataev
+ ents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270112T090000
+DTEND;TZID=Europe/Zurich:20270112T170000
+SUMMARY:Préparer et déployer l'intelligence artificielle dans son organis
+ ation — Session 1
+LOCATION:Centre de formation FER Genève – SPARK\, Chemin du Champ-des-Fi
+ lles 4B\, Plan-les-Ouates (Geneva)
+DESCRIPTION:Two-day French-language seminar (12 and 19 January) on mapping 
+ business processes\, using the AI Business Canvas to identify and prioriti
+ se AI projects\, and leaving with a roadmap for a first deployment.\n\nRun
+ s until 19 Jan — see the event page for session dates.\n\nOrganiser: FER
+  Genève\n\nDetails and registration: https://swissdataevents.ch/events/fe
+ r-geneve-preparer-deployer-ia-organisation-session-1-2027/
+URL:https://swissdataevents.ch/events/fer-geneve-preparer-deployer-ia-organ
+ isation-session-1-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fer-geneve-comprendre-utiliser-ia-generatives-session-1-2027@swissdatae
+ vents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270113T090000
+DTEND;TZID=Europe/Zurich:20270113T170000
+SUMMARY:Comprendre et utiliser les intelligences artificielles générative
+ s — Session 1
+LOCATION:Centre de formation FER Genève – SPARK\, Chemin du Champ-des-Fi
+ lles 4B\, Plan-les-Ouates (Geneva)
+DESCRIPTION:One-day French-language seminar on how generative AI tools work
+ \, with hands-on prompting practice for text\, image\, sound and video mod
+ els\, aimed at communicators\, marketers and entrepreneurs.\n\nOrganiser: 
+ FER Genève\n\nDetails and registration: https://swissdataevents.ch/events
+ /fer-geneve-comprendre-utiliser-ia-generatives-session-1-2027/
+URL:https://swissdataevents.ch/events/fer-geneve-comprendre-utiliser-ia-gen
+ eratives-session-1-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fer-geneve-anticiper-risques-ia-gouvernance-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270127
+DTEND;VALUE=DATE:20270129
+SUMMARY:Anticiper les risques des IA : exigences réglementaires et gouvern
+ ance
+LOCATION:Centre de formation FER Genève – SPARK\, Chemin du Champ-des-Fi
+ lles 4B\, Plan-les-Ouates (Geneva)
+DESCRIPTION:Two-day French-language seminar on assessing the security\, gov
+ ernance\, compliance and data-protection risks of AI solutions\, covering 
+ GDPR\, the AI Act and the Cyber Resilience Act and how to build a governan
+ ce approach that fits an SME.\n\nOrganiser: FER Genève\n\nDetails and reg
+ istration: https://swissdataevents.ch/events/fer-geneve-anticiper-risques-
+ ia-gouvernance-2027/
+URL:https://swissdataevents.ch/events/fer-geneve-anticiper-risques-ia-gouve
+ rnance-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fer-geneve-optimisez-productivite-microsoft-copilot-session-1-2027@swis
+ sdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270203T090000
+DTEND;TZID=Europe/Zurich:20270203T170000
+SUMMARY:Optimisez votre productivité avec Microsoft Copilot — Session 1
+LOCATION:Centre de formation FER Genève – SPARK\, Chemin du Champ-des-Fi
+ lles 4B\, Plan-les-Ouates (Geneva)
+DESCRIPTION:Hands-on French-language course on using Microsoft Copilot in e
+ veryday work — writing effective prompts and working with it in Word\, E
+ xcel\, PowerPoint and Teams\; a Copilot licence and a laptop are required.
+ \n\nOrganiser: FER Genève\n\nDetails and registration: https://swissdatae
+ vents.ch/events/fer-geneve-optimisez-productivite-microsoft-copilot-sessio
+ n-1-2027/
+URL:https://swissdataevents.ch/events/fer-geneve-optimisez-productivite-mic
+ rosoft-copilot-session-1-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fer-geneve-masterclass-ia-2027-session-2@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270209T123000
+DTEND;TZID=Europe/Zurich:20270209T133000
+SUMMARY:AI Masterclass 2027 — Session 2
+LOCATION:Atrium\, Campus SPARK\, Chemin du Champ-des-Filles 4\, Plan-les-Ou
+ ates (Geneva)
+DESCRIPTION:Second of FER Genève's free 2027 lunchtime masterclasses\, on 
+ how AI is changing what each job function actually does.\n\nOrganiser: FER
+  Genève\n\nDetails and registration: https://swissdataevents.ch/events/fe
+ r-geneve-masterclass-ia-2027-session-2/
+URL:https://swissdataevents.ch/events/fer-geneve-masterclass-ia-2027-sessio
+ n-2/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fer-geneve-masterclass-ia-2027-session-3@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270309T123000
+DTEND;TZID=Europe/Zurich:20270309T133000
+SUMMARY:AI Masterclass 2027 — Session 3
+LOCATION:Atrium\, Campus SPARK\, Chemin du Champ-des-Filles 4\, Plan-les-Ou
+ ates (Geneva)
+DESCRIPTION:Third of FER Genève's free 2027 lunchtime masterclasses\, on b
+ ringing AI into teams and supporting day-to-day adoption.\n\nOrganiser: FE
+ R Genève\n\nDetails and registration: https://swissdataevents.ch/events/f
+ er-geneve-masterclass-ia-2027-session-3/
+URL:https://swissdataevents.ch/events/fer-geneve-masterclass-ia-2027-sessio
+ n-3/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pictet-hackathon-2027-geneva@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270311
+DTEND;VALUE=DATE:20270313
+SUMMARY:Pictet Hackathon 2027 — Agentic AI Meets Investment
+LOCATION:Pictet\, Lab 66\, Geneva
+DESCRIPTION:A two-day hackathon in Geneva\, run as an official side event o
+ f the Applied Machine Learning Days\, where mixed teams of Pictet employee
+ s\, students and external builders turn real financial-services challenges
+  into working agentic-AI prototypes\; applications close on 7 January 2027
+ .\n\nOrganiser: Tenity with the Pictet Group\n\nDetails and registration: 
+ https://swissdataevents.ch/events/pictet-hackathon-2027-geneva/
+URL:https://swissdataevents.ch/events/pictet-hackathon-2027-geneva/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

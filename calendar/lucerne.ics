@@ -1,0 +1,185 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Lucerne
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:airistoteles-4-hslu-lucerne-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261201T190000
+DTEND;TZID=Europe/Zurich:20261201T203000
+SUMMARY:AIristoteles 4.0 — Bis dass der Strom uns scheidet
+LOCATION:Hochschule Luzern – Wirtschaft\, Walter-von-Moos-Promenade 1\, L
+ ucerne
+DESCRIPTION:Fourth edition of HSLU’s AIristoteles series: an EPFL evoluti
+ onary psychologist and a psychotherapist discuss what it means when people
+  enter long-term relationships with AI bots\, moderated by Stephan Klappro
+ th and followed by an apéro.\n\nOrganiser: HSLU Institut für Kommunikati
+ on und Marketing (IKM)\n\nDetails and registration: https://swissdataevent
+ s.ch/events/airistoteles-4-hslu-lucerne-2026/
+URL:https://swissdataevents.ch/events/airistoteles-4-hslu-lucerne-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:schwyz-next-ki-strategie-governance-immensee-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261201T170000
+DTEND;TZID=Europe/Zurich:20261201T183000
+SUMMARY:KI-Strategie und -Governance für KMUs
+LOCATION:Hohle Gasse AG\, Coworking «Connect»\, Artherstrasse 60\, Immens
+ ee
+DESCRIPTION:A 90-minute German-language session for SME decision-makers on 
+ steering generative AI use rather than letting it spread: setting a strate
+ gic frame\, drafting an internal AI policy\, weighing data-protection\, li
+ ability and wrong-output risks\, and planning a safe rollout under Swiss d
+ ata protection law and the EU AI Act. Fifteen places.\n\nOrganiser: Schwyz
+  Next\n\nDetails and registration: https://swissdataevents.ch/events/schwy
+ z-next-ki-strategie-governance-immensee-2026/
+URL:https://swissdataevents.ch/events/schwyz-next-ki-strategie-governance-i
+ mmensee-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:digital-cluster-uri-mensch-bleiben-ki-altdorf-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261203T173000
+DTEND;TZID=Europe/Zurich:20261203T210000
+SUMMARY:Podiumsdiskussion: Mensch bleiben im Zeitalter der Künstlichen Int
+ elligenz
+LOCATION:Berufs- und Weiterbildungszentrum Uri\, Attinghauserstrasse 12\, T
+ rakt D Aula\, Altdorf (Lucerne)
+DESCRIPTION:A German-language panel on what stays human as AI reshapes dail
+ y life\, with Bishop Joseph Maria Bonnemain\, HSLU philosopher Prof. Dr. O
+ rlando Budelacci and SRF «Club» moderator Barbara Lüthi\, followed by o
+ pen discussion and an apéro.\n\nOrganiser: Verein Digital Cluster Uri\n\n
+ Details and registration: https://swissdataevents.ch/events/digital-cluste
+ r-uri-mensch-bleiben-ki-altdorf-2026/
+URL:https://swissdataevents.ch/events/digital-cluster-uri-mensch-bleiben-ki
+ -altdorf-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fuehrung-ist-kein-prompt-lucerne-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261203T170000
+DTEND;TZID=Europe/Zurich:20261203T210000
+SUMMARY:Business mit KI. Heute\, nicht 2030. Vol. 02 — Führung ist kein 
+ Prompt
+LOCATION:Schlössli Pop-Up\, Sternmattstrasse 3\, Lucerne
+DESCRIPTION:Second volume of the Lucerne series for entrepreneurs and C-lev
+ el leaders on how AI reshapes teams\, leadership and the job market: two s
+ hort talks\, a moderated panel and an apéro\, capped at 50 guests and hel
+ d in German.\n\nOrganiser: Pixels / Digital & AI Community\n\nDetails and 
+ registration: https://swissdataevents.ch/events/fuehrung-ist-kein-prompt-l
+ ucerne-2026/
+URL:https://swissdataevents.ch/events/fuehrung-ist-kein-prompt-lucerne-2026
+ /
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swiss-viz-awards-2026-emmenbruecke@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261210T180000
+DTEND;TZID=Europe/Zurich:20261210T210000
+SUMMARY:Swiss Viz Awards 2026 — Award Ceremony
+LOCATION:HSLU Design Film Kunst\, Project Space Building 745\, Nylsuissepla
+ tz 1\, Emmenbrücke (Lucerne)
+DESCRIPTION:The Swiss Viz Awards ceremony at the Lucerne School of Design\,
+  Film and Art: a keynote from data-visualisation designer Moritz Stefaner\
+ , the awards themselves with entrants and jury in the room\, then an apér
+ o — joined by the Data Visualization Zurich community as a field trip.\n
+ \nOrganiser: Swiss Viz Awards (Interactive Things) with Data Visualization
+  Zurich\n\nDetails and registration: https://swissdataevents.ch/events/swi
+ ss-viz-awards-2026-emmenbruecke/
+URL:https://swissdataevents.ch/events/swiss-viz-awards-2026-emmenbruecke/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:agile-breakfast-luzern-shift-values-ai-native-safe-2026@swissdataevents
+ .ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261218T081500
+DTEND;TZID=Europe/Zurich:20261218T101500
+SUMMARY:Von Shift Left nach Shift Values: Qualität unter AI-Native SAFe
+LOCATION:ICT Campus Zentralschweiz\, Rösslimatt 52\, Lucerne
+DESCRIPTION:A German-language breakfast session with SAFe trainer Thomas Ve
+ rasani on quality assurance once AI writes code faster than teams can test
+  it: what the ISTQB says about testing AI and AI-generated software\, whet
+ her builders and testers should use different models\, and why coverage nu
+ mbers do not show value.\n\nOrganiser: Agile Breakfast Luzern (swissICT)\n
+ \nDetails and registration: https://swissdataevents.ch/events/agile-breakf
+ ast-luzern-shift-values-ai-native-safe-2026/
+URL:https://swissdataevents.ch/events/agile-breakfast-luzern-shift-values-a
+ i-native-safe-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:agile-breakfast-luzern-agentische-organisation-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270115T083000
+DTEND;TZID=Europe/Zurich:20270115T103000
+SUMMARY:Agile Breakfast Luzern — Die agentische Organisation ist bereits 
+ Realität
+LOCATION:Lucerne
+DESCRIPTION:Filipe Inacio of Break shows fully agentic development setups a
+ lready running in Swiss companies\, followed by a moderated group discussi
+ on on what is left to coach\, organise and orchestrate when the agent is a
+  team member.\n\nOrganiser: Agile Breakfast Luzern (swissICT)\n\nDetails a
+ nd registration: https://swissdataevents.ch/events/agile-breakfast-luzern-
+ agentische-organisation-2027/
+URL:https://swissdataevents.ch/events/agile-breakfast-luzern-agentische-org
+ anisation-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:digitaltag-zentralschweiz-the-day-after-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270126T130000
+DTEND;TZID=Europe/Zurich:20270126T200000
+SUMMARY:Digitaltag Zentralschweiz 2027 — THE DAY AFTER
+LOCATION:SPINNEREI Luzern/Emmenbrücke\, Spinnereistrasse 3\, Emmenbrücke 
+ (Lucerne)
+DESCRIPTION:Central Switzerland’s digital day asks what remains once the 
+ AI euphoria fades — which technologies outlast a market correction\, and
+  how they reshape work\, value creation\, politics and the line between re
+ al and generated content\, debated with voices from business\, research\, 
+ education and politics.\n\nOrganiser: digitalswitzerland Zentralschweiz wi
+ th Digital & AI Community\n\nDetails and registration: https://swissdataev
+ ents.ch/events/digitaltag-zentralschweiz-the-day-after-2027/
+URL:https://swissdataevents.ch/events/digitaltag-zentralschweiz-the-day-aft
+ er-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

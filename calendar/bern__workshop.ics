@@ -1,0 +1,67 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Bern – Workshop
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:zentrum-sds-ai-roundtable-bern-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261202T130000
+DTEND;TZID=Europe/Zurich:20261202T180000
+SUMMARY:AI-Roundtable — Souveräne KI in Verwaltung und Unternehmen
+LOCATION:BFH Departement Wirtschaft\, Raum H051\, Brückenstrasse 73\, Bern
+DESCRIPTION:Half-day working roundtable at the Bern University of Applied S
+ ciences on sovereign AI in public administration and business\, including 
+ a six-dimension evaluation framework for AI agent harnesses\, change manag
+ ement and breakout groups\, capped at around 50 places.\n\nOrganiser: Zent
+ rum für Schweizerische Digitale Souveränität (Zentrum SDS) at BFH\n\nDe
+ tails and registration: https://swissdataevents.ch/events/zentrum-sds-ai-r
+ oundtable-bern-2026/
+URL:https://swissdataevents.ch/events/zentrum-sds-ai-roundtable-bern-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:epi-winterschool-generative-ai-wengen-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270124
+SUMMARY:Generative AI for Epidemiology Researchers: Practical Skills and Re
+ sponsible Use
+LOCATION:Wengen\, Bernese Oberland\, Wengen (Bern)
+DESCRIPTION:A three-day course in Wengen on using generative AI responsibly
+  in research\, pairing lectures with computer practicals on analysis\, lit
+ erature searching\, scientific writing\, study websites and agentic AI —
+  and on where error\, bias and reproducibility break down.\n\nOrganiser: S
+ wiss Epidemiology Winter School\n\nDetails and registration: https://swiss
+ dataevents.ch/events/epi-winterschool-generative-ai-wengen-2027/
+URL:https://swissdataevents.ch/events/epi-winterschool-generative-ai-wengen
+ -2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

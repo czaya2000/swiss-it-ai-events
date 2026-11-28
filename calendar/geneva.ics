@@ -1,0 +1,675 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Geneva
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:saic-build-your-own-ai-assistant-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261128T103000
+DTEND;TZID=Europe/Zurich:20261128T143000
+SUMMARY:Build Your Own AI Personal Assistant: No Coding Needed
+LOCATION:Exponent\, Quai du Seujet 12 (1st floor)\, Geneva
+DESCRIPTION:A beginner-friendly Saturday workshop where you set up a person
+ al AI assistant on your own laptop and learn to message it from your phone
+ \, with no coding required.\n\nOrganiser: Switzerland AI Community\n\nDeta
+ ils and registration: https://swissdataevents.ch/events/saic-build-your-ow
+ n-ai-assistant-geneva-2026/
+URL:https://swissdataevents.ch/events/saic-build-your-own-ai-assistant-gene
+ va-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:coffee-and-prompt-013-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Coffee & Prompt #013
+LOCATION:Exponent\, Quai du Seujet 12\, Geneva
+DESCRIPTION:Relaxed weekend-morning coworking session where builders and AI
+ -curious newcomers work on their own projects\, with optional short talks 
+ and feedback rounds.\n\nOrganiser: Switzerland AI Community\n\nDetails and
+  registration: https://swissdataevents.ch/events/coffee-and-prompt-013-gen
+ eva-2026/
+URL:https://swissdataevents.ch/events/coffee-and-prompt-013-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fer-geneve-comprendre-utiliser-ia-generatives-session-4-2026@swissdatae
+ vents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261130T090000
+DTEND;TZID=Europe/Zurich:20261130T170000
+SUMMARY:Comprendre et utiliser les intelligences artificielles générative
+ s — Session 4
+LOCATION:Centre de formation FER Genève – SPARK\, Chemin du Champ-des-Fi
+ lles 4B\, Plan-les-Ouates (Geneva)
+DESCRIPTION:One-day French-language seminar on how generative AI tools work
+ \, with hands-on prompting practice for text\, image\, sound and video mod
+ els and a look at the ethical questions.\n\nOrganiser: FER Genève\n\nDeta
+ ils and registration: https://swissdataevents.ch/events/fer-geneve-compren
+ dre-utiliser-ia-generatives-session-4-2026/
+URL:https://swissdataevents.ch/events/fer-geneve-comprendre-utiliser-ia-gen
+ eratives-session-4-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:energia-conference-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261201T160000
+DTEND;TZID=Europe/Zurich:20261201T200000
+SUMMARY:energIA 2026 — IA & décarbonation
+LOCATION:L’iceBergues\, Geneva
+DESCRIPTION:Second edition of the Geneva conference on AI and the energy tr
+ ansition\, debating whether AI genuinely helps reach net zero by 2050 or m
+ ostly adds resource consumption and rebound effects\, with public\, privat
+ e and academic participants and the Energ-IACK hackathon projects presenti
+ ng their results.\n\nOrganiser: Energ-IA Transition with MCI\n\nDetails an
+ d registration: https://swissdataevents.ch/events/energia-conference-genev
+ a-2026/
+URL:https://swissdataevents.ch/events/energia-conference-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gaigi-global-south-ai-leadership-dialogue-geneva-2026@swissdataevents.c
+ h
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Global South AI Leadership Dialogue — From Inclusion to Influence
+LOCATION:Geneva
+DESCRIPTION:A high-level Geneva dialogue on the place of the Global South i
+ n AI governance\, convened for diplomatic missions and international organ
+ isations under the Chatham House Rule\, with a written synthesis afterward
+ s.\n\nOrganiser: GAIGI — Geneva AI Governance Institute\n\nDetails and r
+ egistration: https://swissdataevents.ch/events/gaigi-global-south-ai-leade
+ rship-dialogue-geneva-2026/
+URL:https://swissdataevents.ch/events/gaigi-global-south-ai-leadership-dial
+ ogue-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:saic-042-boundaries-of-human-knowledge-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261201T183000
+DTEND;TZID=Europe/Zurich:20261201T210000
+SUMMARY:SAIC #042: AI Is Challenging the Boundaries of Human Knowledge. Is 
+ Your Business Ready?
+LOCATION:Maison Internationale des Associations (MIA)\, Rue des Savoises 15
+ \, Geneva
+DESCRIPTION:Pascal Eichenberger uses the Riemann Hypothesis as a lens on ho
+ w AI is pushing the limits of human knowledge\, with practical takeaways f
+ or business leaders and networking afterwards.\n\nOrganiser: Switzerland A
+ I Community\n\nDetails and registration: https://swissdataevents.ch/events
+ /saic-042-boundaries-of-human-knowledge-geneva-2026/
+URL:https://swissdataevents.ch/events/saic-042-boundaries-of-human-knowledg
+ e-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:geneva-rb-ai-in-practice-december-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261202T190000
+DTEND;TZID=Europe/Zurich:20261202T210000
+SUMMARY:AI in Practice: 5 Months of Real-World Experience
+LOCATION:UOG\, The Arcade room\, Rue du Cercle 2\, Geneva
+DESCRIPTION:Hydris Bessa of Gold Avenue reports on five months of rolling o
+ ut AI across an engineering organisation — coding agents\, automated cod
+ e review and shared workflows\, including what went wrong (talk in French)
+ .\n\nOrganiser: Geneva.rb\n\nDetails and registration: https://swissdataev
+ ents.ch/events/geneva-rb-ai-in-practice-december-2026/
+URL:https://swissdataevents.ch/events/geneva-rb-ai-in-practice-december-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:switech-founders-innovators-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261202T183000
+DTEND;TZID=Europe/Zurich:20261202T220000
+SUMMARY:Switech — Founders and Innovators\, Geneva Edition
+LOCATION:Les Halles de l’Île (address on registration)\, Geneva
+DESCRIPTION:Evening for Geneva founders and builders with an introduction t
+ o EPFL AI and a talk on how to build with AI without being an engineer\, f
+ ollowed by curated introductions and networking.\n\nOrganiser: Switech\n\n
+ Details and registration: https://swissdataevents.ch/events/switech-founde
+ rs-innovators-geneva-2026/
+URL:https://swissdataevents.ch/events/switech-founders-innovators-geneva-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-tinkerers-geneva-december-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261203T180000
+DTEND;TZID=Europe/Zurich:20261203T210000
+SUMMARY:AI Tinkerers Geneva — December 2026
+LOCATION:OBERSON ABELS SA\, Geneva
+DESCRIPTION:Around six five-minute live demos of AI tools\, platforms and w
+ orks in progress — no slides allowed — with a legal-tech slant for thi
+ s edition\, followed by networking and an apéro.\n\nOrganiser: AI Tinkere
+ rs Geneva\n\nDetails and registration: https://swissdataevents.ch/events/a
+ i-tinkerers-geneva-december-2026/
+URL:https://swissdataevents.ch/events/ai-tinkerers-geneva-december-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fer-geneve-masterclass-ia-roadmap-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261203T123000
+DTEND;TZID=Europe/Zurich:20261203T133000
+SUMMARY:AI Masterclass: 2027 Roadmap
+LOCATION:Atrium\, Campus SPARK\, Chemin du Champ-des-Filles 4\, Plan-les-Ou
+ ates (Geneva)
+DESCRIPTION:Free lunchtime masterclass closing FER Genève's 2026 AI series
+ \, setting out a practical 2027 roadmap for companies putting AI to work.\
+ n\nOrganiser: FER Genève\n\nDetails and registration: https://swissdataev
+ ents.ch/events/fer-geneve-masterclass-ia-roadmap-2027/
+URL:https://swissdataevents.ch/events/fer-geneve-masterclass-ia-roadmap-202
+ 7/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:geneva-3d-switzerland-ai-community-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261203T183000
+DTEND;TZID=Europe/Zurich:20261203T213000
+SUMMARY:Geneva 3D — Building a Living 3D Model of a Canton with AI Agents
+  and Open Data
+LOCATION:Tesla showroom\, Rue de la Confédération 8\, Geneva
+DESCRIPTION:Arnaud Ricci on how he built Genève 3D\, a browser-based 3D mo
+ del of the whole canton\, using AI agents and open data — with a live de
+ monstration\, questions from the room and a non-alcoholic apéro. The talk
+  is in French with English subtitles.\n\nOrganiser: Switzerland AI Communi
+ ty with Romandy CTO\, hosted by Tesla\n\nDetails and registration: https:/
+ /swissdataevents.ch/events/geneva-3d-switzerland-ai-community-2026/
+URL:https://swissdataevents.ch/events/geneva-3d-switzerland-ai-community-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ia-puissance-ou-prudence-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261203T181500
+DTEND;TZID=Europe/Zurich:20261203T203000
+SUMMARY:IA : puissance ou prudence ?
+LOCATION:Maison de l’Avenir\, Rue Fendt 1\, Geneva
+DESCRIPTION:A French-language citizen debate in Oxford style on the opportu
+ nities and risks of artificial intelligence: two teams coached by speciali
+ sts argue before a jury of Geneva politicians\, followed by an open discus
+ sion for SMEs and the public and an apéritif.\n\nOrganiser: Alp ICT\, as 
+ part of the City of Geneva’s Semaine du climat 2026\n\nDetails and regis
+ tration: https://swissdataevents.ch/events/ia-puissance-ou-prudence-geneva
+ -2026/
+URL:https://swissdataevents.ch/events/ia-puissance-ou-prudence-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mariadb-swiss-unleashing-power-gland-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261203T183000
+DTEND;TZID=Europe/Zurich:20261203T203000
+SUMMARY:Unleashing the Power of MariaDB
+LOCATION:Swissquote Bank SA\, Chem. de la Crétaux 33\, Gland (Geneva)
+DESCRIPTION:An evening for database practitioners hosted by Swissquote: liv
+ e demos and case studies on database modernisation\, high availability wit
+ h MaxScale\, an Oracle-to-Galera migration\, and pairing real-time payment
+  workflows with in-memory caching and vector search for AI.\n\nOrganiser: 
+ MariaDB Swiss Group\, with Swissquote and dbi services\n\nDetails and regi
+ stration: https://swissdataevents.ch/events/mariadb-swiss-unleashing-power
+ -gland-2026/
+URL:https://swissdataevents.ch/events/mariadb-swiss-unleashing-power-gland-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:coffee-and-prompt-014-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Coffee & Prompt #014
+LOCATION:Exponent\, Quai du Seujet 12\, Geneva
+DESCRIPTION:Relaxed weekend-morning coworking session where builders and AI
+ -curious newcomers work on their own projects\, with optional short talks 
+ and feedback rounds.\n\nOrganiser: Switzerland AI Community\n\nDetails and
+  registration: https://swissdataevents.ch/events/coffee-and-prompt-014-gen
+ eva-2026/
+URL:https://swissdataevents.ch/events/coffee-and-prompt-014-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:votation-2032-young-ai-leaders-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261208T170000
+DTEND;TZID=Europe/Zurich:20261208T200000
+SUMMARY:Votation 2032
+LOCATION:Maison de l'Avenir\, Rue Fendt 1\, Geneva
+DESCRIPTION:Role-play workshop simulating a cantonal referendum campaign on
+  autonomous weapons\, with participants using generative AI tools to build
+  their case before a joint debrief and apéro.\n\nOrganiser: Young AI Lead
+ ers — Geneva Hub\, with the FNF Human Rights Hub\n\nDetails and registra
+ tion: https://swissdataevents.ch/events/votation-2032-young-ai-leaders-gen
+ eva-2026/
+URL:https://swissdataevents.ch/events/votation-2032-young-ai-leaders-geneva
+ -2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kcd-suisse-romande-2026-meyrin@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261211
+SUMMARY:KCD Suisse Romande 2026
+LOCATION:CERN Science Gateway\, 1 Esplanade des Particules\, Meyrin (Geneva
+ )
+DESCRIPTION:The second Kubernetes Community Days for French-speaking Switze
+ rland: a warm-up day of parallel workshops with optional CERN and LHC tour
+ s\, then a main day at the Science Gateway with keynotes and three tracks 
+ of talks in French and English.\n\nOrganiser: Association Cloud Native Sui
+ sse Romande (CNCF)\n\nDetails and registration: https://swissdataevents.ch
+ /events/kcd-suisse-romande-2026-meyrin/
+URL:https://swissdataevents.ch/events/kcd-suisse-romande-2026-meyrin/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ccig-ia-education-competences-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261210T120000
+DTEND;TZID=Europe/Zurich:20261210T140000
+SUMMARY:Rencontre avec Anne Hiltpold — IA & éducation : former aujourd
+ ’hui les compétences de demain
+LOCATION:CCIG\, Boulevard du Théâtre 4\, Geneva
+DESCRIPTION:Lunch meeting at the Geneva chamber of commerce where Anne Hilt
+ pold\, president of the Geneva Council of State\, presents survey results 
+ on how Geneva students already use AI\, followed by a discussion with busi
+ nesses on what it changes for skills\, jobs and training.\n\nOrganiser: CC
+ IG — Chambre de commerce\, d’industrie et des services de Genève\n\nD
+ etails and registration: https://swissdataevents.ch/events/ccig-ia-educati
+ on-competences-geneva-2026/
+URL:https://swissdataevents.ch/events/ccig-ia-education-competences-geneva-
+ 2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:devops-geneve-talks-raclette-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261210T180000
+DTEND;TZID=Europe/Zurich:20261210T230000
+SUMMARY:DevOps Talks plus Raclette
+LOCATION:Techfirm\, Chemin des Aulx 12\, Plan-les-Ouates (Geneva)
+DESCRIPTION:End-of-year evening for the Geneva DevOps community\, opening w
+ ith “Boring Data\, Smart Apps: Running Business Software on MariaDB in 2
+ 027”\, a possible second talk\, and a raclette dinner.\n\nOrganiser: Dev
+ Ops Genève\n\nDetails and registration: https://swissdataevents.ch/events
+ /devops-geneve-talks-raclette-2026/
+URL:https://swissdataevents.ch/events/devops-geneve-talks-raclette-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:unige-philanthropy-lunch-ai-governance-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261210T120000
+DTEND;TZID=Europe/Zurich:20261210T140000
+SUMMARY:Philanthropy Lunch — AI\, Governance and Philanthropy
+LOCATION:Uni Dufour\, Salle 408\, Rue du Général-Dufour 24\, Geneva
+DESCRIPTION:Hybrid lunch session on the part philanthropy can play in coord
+ inating good AI governance across international Geneva\, with speakers fro
+ m the University of Geneva and the Geneva AI Governance Institute.\n\nOrga
+ niser: Geneva Centre for Philanthropy\, University of Geneva\, with GAIGI 
+ — Geneva AI Governance Institute\n\nDetails and registration: https://sw
+ issdataevents.ch/events/unige-philanthropy-lunch-ai-governance-geneva-2026
+ /
+URL:https://swissdataevents.ch/events/unige-philanthropy-lunch-ai-governanc
+ e-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ocei-atelier-ia-fondations-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261211T081500
+DTEND;TZID=Europe/Zurich:20261211T133000
+SUMMARY:Atelier IA pour les fondations et associations philanthropiques
+LOCATION:Société suisse des entrepreneurs (SSE)\, Rue de Malatrex 14\, Ge
+ neva
+DESCRIPTION:A practical French-language morning for Geneva foundations and 
+ philanthropic associations: an introduction to the common AI tools\, then 
+ guided exercises on admin work\, reviewing grant applications and reportin
+ g impact\, with attention to confidentiality and checking what the model p
+ roduces.\n\nOrganiser: Office cantonal de l'économie et de l'innovation (
+ OCEI) with SwissFoundations and proFonds\n\nDetails and registration: http
+ s://swissdataevents.ch/events/ocei-atelier-ia-fondations-geneva-2026/
+URL:https://swissdataevents.ch/events/ocei-atelier-ia-fondations-geneva-202
+ 6/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:coffee-and-prompt-015-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Coffee & Prompt #015
+LOCATION:Exponent\, Quai du Seujet 12\, Geneva
+DESCRIPTION:Relaxed weekend-morning coworking session where builders and AI
+ -curious newcomers work on their own projects\, with optional short talks 
+ and feedback rounds.\n\nOrganiser: Switzerland AI Community\n\nDetails and
+  registration: https://swissdataevents.ch/events/coffee-and-prompt-015-gen
+ eva-2026/
+URL:https://swissdataevents.ch/events/coffee-and-prompt-015-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gluehwein-workshop-machine-learning-high-energy-physics-cern-2026@swiss
+ dataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261217
+SUMMARY:Glühwein Workshop 2026 — Machine Learning in High-Energy Physics
+LOCATION:CERN\, Salle Marie Skłodowska-Curie (40/S2-C01)\, Meyrin (Geneva)
+DESCRIPTION:Three-day workshop at CERN on recent machine-learning developme
+ nts and how they are applied in high-energy physics\, with an open call fo
+ r abstracts and guided tours of the ATLAS cavern.\n\nOrganiser: Universit
+ é de Genève (Tobias Golling group)\, hosted at CERN\n\nDetails and regis
+ tration: https://swissdataevents.ch/events/gluehwein-workshop-machine-lear
+ ning-high-energy-physics-cern-2026/
+URL:https://swissdataevents.ch/events/gluehwein-workshop-machine-learning-h
+ igh-energy-physics-cern-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fer-geneve-masterclass-ia-2027-session-1@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270112T123000
+DTEND;TZID=Europe/Zurich:20270112T133000
+SUMMARY:AI Masterclass 2027 — Session 1
+LOCATION:Atrium\, Campus SPARK\, Chemin du Champ-des-Filles 4\, Plan-les-Ou
+ ates (Geneva)
+DESCRIPTION:First of FER Genève's ten free lunchtime masterclasses of 2027
+ \, on how a company can get started with AI\, presented by Pascal Eichenbe
+ rger.\n\nOrganiser: FER Genève\n\nDetails and registration: https://swiss
+ dataevents.ch/events/fer-geneve-masterclass-ia-2027-session-1/
+URL:https://swissdataevents.ch/events/fer-geneve-masterclass-ia-2027-sessio
+ n-1/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fer-geneve-preparer-deployer-ia-organisation-session-1-2027@swissdataev
+ ents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270112T090000
+DTEND;TZID=Europe/Zurich:20270112T170000
+SUMMARY:Préparer et déployer l'intelligence artificielle dans son organis
+ ation — Session 1
+LOCATION:Centre de formation FER Genève – SPARK\, Chemin du Champ-des-Fi
+ lles 4B\, Plan-les-Ouates (Geneva)
+DESCRIPTION:Two-day French-language seminar (12 and 19 January) on mapping 
+ business processes\, using the AI Business Canvas to identify and prioriti
+ se AI projects\, and leaving with a roadmap for a first deployment.\n\nRun
+ s until 19 Jan — see the event page for session dates.\n\nOrganiser: FER
+  Genève\n\nDetails and registration: https://swissdataevents.ch/events/fe
+ r-geneve-preparer-deployer-ia-organisation-session-1-2027/
+URL:https://swissdataevents.ch/events/fer-geneve-preparer-deployer-ia-organ
+ isation-session-1-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fer-geneve-comprendre-utiliser-ia-generatives-session-1-2027@swissdatae
+ vents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270113T090000
+DTEND;TZID=Europe/Zurich:20270113T170000
+SUMMARY:Comprendre et utiliser les intelligences artificielles générative
+ s — Session 1
+LOCATION:Centre de formation FER Genève – SPARK\, Chemin du Champ-des-Fi
+ lles 4B\, Plan-les-Ouates (Geneva)
+DESCRIPTION:One-day French-language seminar on how generative AI tools work
+ \, with hands-on prompting practice for text\, image\, sound and video mod
+ els\, aimed at communicators\, marketers and entrepreneurs.\n\nOrganiser: 
+ FER Genève\n\nDetails and registration: https://swissdataevents.ch/events
+ /fer-geneve-comprendre-utiliser-ia-generatives-session-1-2027/
+URL:https://swissdataevents.ch/events/fer-geneve-comprendre-utiliser-ia-gen
+ eratives-session-1-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fer-geneve-anticiper-risques-ia-gouvernance-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270127
+DTEND;VALUE=DATE:20270129
+SUMMARY:Anticiper les risques des IA : exigences réglementaires et gouvern
+ ance
+LOCATION:Centre de formation FER Genève – SPARK\, Chemin du Champ-des-Fi
+ lles 4B\, Plan-les-Ouates (Geneva)
+DESCRIPTION:Two-day French-language seminar on assessing the security\, gov
+ ernance\, compliance and data-protection risks of AI solutions\, covering 
+ GDPR\, the AI Act and the Cyber Resilience Act and how to build a governan
+ ce approach that fits an SME.\n\nOrganiser: FER Genève\n\nDetails and reg
+ istration: https://swissdataevents.ch/events/fer-geneve-anticiper-risques-
+ ia-gouvernance-2027/
+URL:https://swissdataevents.ch/events/fer-geneve-anticiper-risques-ia-gouve
+ rnance-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gaigi-afterwork-signals-early-2027-geneva@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270129
+SUMMARY:Reading the Signals of Early 2027 — AI Governance at the Start of
+  the Summit Year
+LOCATION:Geneva
+DESCRIPTION:The fourth afterwork in GAIGI’s Road to Geneva series\, readi
+ ng what the first months of 2027 say about the Summit year\, for diplomati
+ c missions and civil society under the Chatham House Rule.\n\nOrganiser: G
+ AIGI — Geneva AI Governance Institute\n\nDetails and registration: https
+ ://swissdataevents.ch/events/gaigi-afterwork-signals-early-2027-geneva/
+URL:https://swissdataevents.ch/events/gaigi-afterwork-signals-early-2027-ge
+ neva/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fer-geneve-optimisez-productivite-microsoft-copilot-session-1-2027@swis
+ sdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270203T090000
+DTEND;TZID=Europe/Zurich:20270203T170000
+SUMMARY:Optimisez votre productivité avec Microsoft Copilot — Session 1
+LOCATION:Centre de formation FER Genève – SPARK\, Chemin du Champ-des-Fi
+ lles 4B\, Plan-les-Ouates (Geneva)
+DESCRIPTION:Hands-on French-language course on using Microsoft Copilot in e
+ veryday work — writing effective prompts and working with it in Word\, E
+ xcel\, PowerPoint and Teams\; a Copilot licence and a laptop are required.
+ \n\nOrganiser: FER Genève\n\nDetails and registration: https://swissdatae
+ vents.ch/events/fer-geneve-optimisez-productivite-microsoft-copilot-sessio
+ n-1-2027/
+URL:https://swissdataevents.ch/events/fer-geneve-optimisez-productivite-mic
+ rosoft-copilot-session-1-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:geneva-ai-trade-forum-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270203
+DTEND;VALUE=DATE:20270205
+SUMMARY:Geneva AI Trade Forum 2027 (GAITF)
+LOCATION:Geneva
+DESCRIPTION:The second edition of GAIGI’s high-level forum on the regulat
+ ory interoperability of AI — an opening dinner followed by a full day of
+  dialogue for diplomatic missions\, international organisations and indust
+ ry.\n\nOrganiser: GAIGI — Geneva AI Governance Institute\n\nDetails and 
+ registration: https://swissdataevents.ch/events/geneva-ai-trade-forum-2027
+ /
+URL:https://swissdataevents.ch/events/geneva-ai-trade-forum-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fer-geneve-masterclass-ia-2027-session-2@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270209T123000
+DTEND;TZID=Europe/Zurich:20270209T133000
+SUMMARY:AI Masterclass 2027 — Session 2
+LOCATION:Atrium\, Campus SPARK\, Chemin du Champ-des-Filles 4\, Plan-les-Ou
+ ates (Geneva)
+DESCRIPTION:Second of FER Genève's free 2027 lunchtime masterclasses\, on 
+ how AI is changing what each job function actually does.\n\nOrganiser: FER
+  Genève\n\nDetails and registration: https://swissdataevents.ch/events/fe
+ r-geneve-masterclass-ia-2027-session-2/
+URL:https://swissdataevents.ch/events/fer-geneve-masterclass-ia-2027-sessio
+ n-2/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cern-pgday-2027-geneva@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:CERN PGDay 2027
+LOCATION:CERN\, Esplanade des Particules 1\, Meyrin (Geneva)
+DESCRIPTION:A single-track\, English-language PostgreSQL conference at CERN
+  with seven sessions on high-performance and big-data workloads\, AI and v
+ ector search with pgvector\, enterprise security and compliance\, and core
+  database development\, followed by a social evening.\n\nOrganiser: Swiss 
+ PostgreSQL Users Group (SwissPUG) with CERN\n\nDetails and registration: h
+ ttps://swissdataevents.ch/events/cern-pgday-2027-geneva/
+URL:https://swissdataevents.ch/events/cern-pgday-2027-geneva/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-days-2027-geneva@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270217
+DTEND;VALUE=DATE:20270218
+SUMMARY:AI Days 2027 — Geneva
+LOCATION:Geneva
+DESCRIPTION:Geneva leg of the fifth AI Days\, the Swiss AI Center’s appli
+ ed-AI conference for SMEs\, with workshops\, talks\, research and demos. R
+ egistration not yet open.\n\nOrganiser: HES-SO / Swiss AI Center\n\nDetail
+ s and registration: https://swissdataevents.ch/events/ai-days-2027-geneva/
+URL:https://swissdataevents.ch/events/ai-days-2027-geneva/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:voxxed-days-cern-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270306
+SUMMARY:Voxxed Days CERN 2027
+LOCATION:CERN Science Gateway\, Esplanade des Particules 1\, Meyrin (Geneva
+ )
+DESCRIPTION:A one-day developer conference held at the CERN Science Gateway
+ \, with tracks on AI and agentic engineering\, cloud native data and infra
+ structure\, software architecture and modernisation\, and an optional tour
+  of CERN’s underground facilities.\n\nOrganiser: Exteso Sagl\, in collab
+ oration with CERN\n\nDetails and registration: https://swissdataevents.ch/
+ events/voxxed-days-cern-2027/
+URL:https://swissdataevents.ch/events/voxxed-days-cern-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fer-geneve-masterclass-ia-2027-session-3@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20270309T123000
+DTEND;TZID=Europe/Zurich:20270309T133000
+SUMMARY:AI Masterclass 2027 — Session 3
+LOCATION:Atrium\, Campus SPARK\, Chemin du Champ-des-Filles 4\, Plan-les-Ou
+ ates (Geneva)
+DESCRIPTION:Third of FER Genève's free 2027 lunchtime masterclasses\, on b
+ ringing AI into teams and supporting day-to-day adoption.\n\nOrganiser: FE
+ R Genève\n\nDetails and registration: https://swissdataevents.ch/events/f
+ er-geneve-masterclass-ia-2027-session-3/
+URL:https://swissdataevents.ch/events/fer-geneve-masterclass-ia-2027-sessio
+ n-3/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pictet-hackathon-2027-geneva@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270311
+DTEND;VALUE=DATE:20270313
+SUMMARY:Pictet Hackathon 2027 — Agentic AI Meets Investment
+LOCATION:Pictet\, Lab 66\, Geneva
+DESCRIPTION:A two-day hackathon in Geneva\, run as an official side event o
+ f the Applied Machine Learning Days\, where mixed teams of Pictet employee
+ s\, students and external builders turn real financial-services challenges
+  into working agentic-AI prototypes\; applications close on 7 January 2027
+ .\n\nOrganiser: Tenity with the Pictet Group\n\nDetails and registration: 
+ https://swissdataevents.ch/events/pictet-hackathon-2027-geneva/
+URL:https://swissdataevents.ch/events/pictet-hackathon-2027-geneva/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gaigi-afterwork-public-ai-register-geneva-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270318
+DTEND;VALUE=DATE:20270319
+SUMMARY:What Is a Public AI Register\, and What Is It For?
+LOCATION:Geneva
+DESCRIPTION:The fifth Road to Geneva afterwork\, presenting the Geneva Regi
+ ster to permanent missions and asking what a public register of AI systems
+  is actually for.\n\nOrganiser: GAIGI — Geneva AI Governance Institute\n
+ \nDetails and registration: https://swissdataevents.ch/events/gaigi-afterw
+ ork-public-ai-register-geneva-2027/
+URL:https://swissdataevents.ch/events/gaigi-afterwork-public-ai-register-ge
+ neva-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

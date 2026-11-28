@@ -1,0 +1,100 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swiss Data Events//Calendar feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swiss Data Events – Geneva – Networking
+X-WR-CALDESC:Upcoming AI and data events in Switzerland\, from swissdataeve
+ nts.ch
+X-WR-TIMEZONE:Europe/Zurich
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+X-LIC-LOCATION:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:switech-founders-innovators-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261202T183000
+DTEND;TZID=Europe/Zurich:20261202T220000
+SUMMARY:Switech — Founders and Innovators\, Geneva Edition
+LOCATION:Les Halles de l’Île (address on registration)\, Geneva
+DESCRIPTION:Evening for Geneva founders and builders with an introduction t
+ o EPFL AI and a talk on how to build with AI without being an engineer\, f
+ ollowed by curated introductions and networking.\n\nOrganiser: Switech\n\n
+ Details and registration: https://swissdataevents.ch/events/switech-founde
+ rs-innovators-geneva-2026/
+URL:https://swissdataevents.ch/events/switech-founders-innovators-geneva-20
+ 26/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ia-puissance-ou-prudence-geneva-2026@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;TZID=Europe/Zurich:20261203T181500
+DTEND;TZID=Europe/Zurich:20261203T203000
+SUMMARY:IA : puissance ou prudence ?
+LOCATION:Maison de l’Avenir\, Rue Fendt 1\, Geneva
+DESCRIPTION:A French-language citizen debate in Oxford style on the opportu
+ nities and risks of artificial intelligence: two teams coached by speciali
+ sts argue before a jury of Geneva politicians\, followed by an open discus
+ sion for SMEs and the public and an apéritif.\n\nOrganiser: Alp ICT\, as 
+ part of the City of Geneva’s Semaine du climat 2026\n\nDetails and regis
+ tration: https://swissdataevents.ch/events/ia-puissance-ou-prudence-geneva
+ -2026/
+URL:https://swissdataevents.ch/events/ia-puissance-ou-prudence-geneva-2026/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gaigi-afterwork-signals-early-2027-geneva@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270129
+SUMMARY:Reading the Signals of Early 2027 — AI Governance at the Start of
+  the Summit Year
+LOCATION:Geneva
+DESCRIPTION:The fourth afterwork in GAIGI’s Road to Geneva series\, readi
+ ng what the first months of 2027 say about the Summit year\, for diplomati
+ c missions and civil society under the Chatham House Rule.\n\nOrganiser: G
+ AIGI — Geneva AI Governance Institute\n\nDetails and registration: https
+ ://swissdataevents.ch/events/gaigi-afterwork-signals-early-2027-geneva/
+URL:https://swissdataevents.ch/events/gaigi-afterwork-signals-early-2027-ge
+ neva/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gaigi-afterwork-public-ai-register-geneva-2027@swissdataevents.ch
+DTSTAMP:20261128T140412Z
+DTSTART;VALUE=DATE:20270318
+DTEND;VALUE=DATE:20270319
+SUMMARY:What Is a Public AI Register\, and What Is It For?
+LOCATION:Geneva
+DESCRIPTION:The fifth Road to Geneva afterwork\, presenting the Geneva Regi
+ ster to permanent missions and asking what a public register of AI systems
+  is actually for.\n\nOrganiser: GAIGI — Geneva AI Governance Institute\n
+ \nDetails and registration: https://swissdataevents.ch/events/gaigi-afterw
+ ork-public-ai-register-geneva-2027/
+URL:https://swissdataevents.ch/events/gaigi-afterwork-public-ai-register-ge
+ neva-2027/
+SEQUENCE:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

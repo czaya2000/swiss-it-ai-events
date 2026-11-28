@@ -1,0 +1,35 @@
+# Swiss Data Events
+
+> Swiss Data Events (swissdataevents.ch) is a curated list of upcoming AI and data events in Switzerland: meetups, conferences, workshops, networking evenings and webinars about Databricks, Microsoft Fabric, Power BI, the Azure data platform, AI strategy and governance, data governance, data leadership and applied AI. Every listing is checked against the organiser's own page before it is published, and the list is refreshed every day. Registration always happens on the organiser's site.
+
+Last checked against sources: 2026-11-28T14:04:08Z. 163 upcoming events. All times are Europe/Zurich. These lists are rebuilt every day with only the events that had not ended on that date: if the date is more than two days old, you are reading a cached copy, so fetch it again.
+
+Each event has its own page on this site with the date, time, place, cost, organiser and a link to the organiser's registration page. Details can change on the organiser's side, so the organiser's page is the final word.
+
+## Events
+
+- [All upcoming events](https://swissdataevents.ch/llms-full.txt): the complete list by month, one line per event with date, time, place, type, cost, organiser and a one-sentence description
+- [AI & Data Events in Zurich](https://swissdataevents.ch/zurich.md): 70 upcoming events in Zurich, including Winterthur, Zug, St. Gallen and Davos
+- [AI & Data Events in Geneva](https://swissdataevents.ch/geneva.md): 36 upcoming events in Geneva, including Carouge, Versoix, Lancy and Gland
+- [AI & Data Events in Lausanne](https://swissdataevents.ch/lausanne.md): 8 upcoming events in Lausanne, including Prilly, Yverdon-les-Bains and the Valais (Sion, Sierre, Martigny)
+- [AI & Data Events in Basel](https://swissdataevents.ch/basel.md): 5 upcoming events in Basel
+- [AI & Data Events in Bern](https://swissdataevents.ch/bern.md): 11 upcoming events in Bern, including Liebefeld and Fribourg
+- [AI & Data Events in Lucerne](https://swissdataevents.ch/lucerne.md): 8 upcoming events in Lucerne, including Rotkreuz and Immensee
+- [Online AI & Data Events in Switzerland](https://swissdataevents.ch/online.md): 19 upcoming events online
+- [AI & Data Meetups in Switzerland](https://swissdataevents.ch/meetups.md): 47 upcoming meetups across Switzerland
+- [AI & Data Conferences in Switzerland](https://swissdataevents.ch/conferences.md): 48 upcoming conferences across Switzerland
+- [AI & Data Workshops in Switzerland](https://swissdataevents.ch/workshops.md): 33 upcoming workshops across Switzerland
+- [AI & Data Networking Events in Switzerland](https://swissdataevents.ch/networking.md): 16 upcoming networking events across Switzerland
+- [AI & Data Webinars in Switzerland](https://swissdataevents.ch/webinars.md): 19 upcoming webinars across Switzerland
+
+## Data
+
+- [All upcoming events as JSON](https://swissdataevents.ch/events.json): one object per event with ISO 8601 start/end, city, format, topics, cost, organiser and links
+- [RSS feed](https://swissdataevents.ch/rss.xml): upcoming events, newest listings first
+- [Calendar feed (iCalendar)](https://swissdataevents.ch/calendar/all.ics): subscribe in Google, Outlook or Apple Calendar; per-city and per-format feeds are listed on the data page
+- [About the data](https://swissdataevents.ch/data/): field descriptions and usage notes
+
+## Optional
+
+- [Home](https://swissdataevents.ch/): the full list as a web page, grouped by week, filterable by city and format
+- [Contact](https://swissdataevents.ch/contact/)
