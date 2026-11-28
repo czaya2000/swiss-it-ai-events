@@ -19,111 +19,6 @@
     "firstSeen": "2026-09-03"
   },
   {
-    "id": "ai-safety-trustworthy-ai-zurich-2026",
-    "title": "AI Safety: Building Trustworthy AI in the Real World",
-    "date": "2026-11-24",
-    "endDate": "2026-11-24",
-    "time": "17:30–21:00",
-    "city": "Zurich",
-    "venue": "Zalando, Prime Tower, Hardstrasse 201",
-    "format": "Meetup",
-    "topics": [
-      "AI safety",
-      "AI governance",
-      "Responsible AI"
-    ],
-    "organiser": "Elevate Tech: Women and Minorities in AI, Tech, and Science",
-    "cost": "Not listed (registration required)",
-    "url": "https://www.meetup.com/zurich-women-in-tech-and-academia/events/316993363/",
-    "source": "Meetup",
-    "blurb": "Four speakers from Google, AWS, Unique and Systematic-X on keeping AI systems trustworthy once they act on their own — how to evaluate and monitor before and after deployment, where guardrails, human oversight and red-teaming fit, and how to ship fast without losing accountability.",
-    "firstSeen": "2026-10-16"
-  },
-  {
-    "id": "apertus-claritas-eth-ai-center-zurich-2026",
-    "title": "Apertus Claritas: An Inside View of Switzerland’s Open Model",
-    "date": "2026-11-24",
-    "endDate": "2026-11-24",
-    "time": "11:30–12:20",
-    "city": "Zurich",
-    "venue": "ETH AI Center Foyer, OAT X 11, Andreasstrasse 5, Oerlikon",
-    "format": "Meetup",
-    "topics": [
-      "AI safety",
-      "Open-source LLMs",
-      "AI research"
-    ],
-    "organiser": "ETH AI Center",
-    "cost": "Free (registration required)",
-    "url": "https://ai.ethz.ch/news-and-events/eth-ai-center-events/details.apertus-claritas-an-inside-view-of-switzerlands-open-model.79196.html",
-    "source": "ai.ethz.ch",
-    "blurb": "Lightning talks from the interpretability and safety hub built around Apertus, Switzerland’s open multilingual model: shared representations across languages, emergent misalignment from stereotypes that pass moderation, probes that catch repetition loops early, and persona binding formed in pre-training.",
-    "firstSeen": "2026-11-02"
-  },
-  {
-    "id": "schwyz-next-ki-agenten-work-immensee-2026",
-    "title": "KI-Agenten & -Work: Skills und Anbindungen für konkrete Entlastung im Alltag",
-    "date": "2026-11-24",
-    "endDate": "2026-11-24",
-    "time": "09:00–16:00",
-    "city": "Immensee",
-    "venue": "Hohle Gasse AG, Coworking «Connect», Artherstrasse 60",
-    "format": "Workshop",
-    "topics": [
-      "AI agents",
-      "AI automation",
-      "Applied AI"
-    ],
-    "organiser": "Schwyz Next",
-    "cost": "CHF 400 members / CHF 500 non-members",
-    "url": "https://schwyz-next.ch/events/workshop-ki-agenten-work-skills-und-anbindungen-fuer-konkrete-entlastung-im-alltag/",
-    "source": "ai-community.ch",
-    "blurb": "A full German-language day with Michael Kyburz on getting AI to take over recurring work: three base skills, how to build your own, and wiring assistants into calendar, mail and project tools so multi-step workflows run with clear checkpoints for human review. Fifteen places, and a paid ChatGPT or Claude subscription is required.",
-    "firstSeen": "2026-10-19"
-  },
-  {
-    "id": "built-with-lovable-lausanne-2-2026",
-    "title": "Built with Lovable · Lausanne #2",
-    "date": "2026-11-24",
-    "endDate": "2026-11-24",
-    "time": "18:00–21:30",
-    "city": "Lausanne",
-    "venue": "Lausanne (address on registration)",
-    "format": "Workshop",
-    "topics": [
-      "Building with AI",
-      "Applied AI",
-      "AI tools"
-    ],
-    "organiser": "Lovable Lausanne (Maxime Dumont)",
-    "cost": "Free (host approval required; Lovable credits included)",
-    "url": "https://luma.com/iladuipm",
-    "source": "luma.com",
-    "blurb": "A 90-minute hands-on build where everyone ships a working web app with AI features using Lovable’s built-in models — no API keys or separate accounts — with mentors on hand, then demos and drinks. Bring a laptop and an idea.",
-    "firstSeen": "2026-11-06"
-  },
-  {
-    "id": "zurich-ai-safety-finding-your-way-2026",
-    "title": "AI Safety Weekly: Finding Your Way Into AI Safety",
-    "date": "2026-11-24",
-    "endDate": "2026-11-24",
-    "time": "18:30–20:00",
-    "city": "Zurich",
-    "venue": "ETH Zurich Main Building, Rämistrasse 101, room HG D3.3",
-    "format": "Meetup",
-    "topics": [
-      "AI safety",
-      "AI governance",
-      "Careers"
-    ],
-    "organiser": "Zurich AI Safety",
-    "cost": "Free (host approval required)",
-    "url": "https://luma.com/zais-nh4g",
-    "source": "luma.com",
-    "blurb": "A map of the routes into AI safety and governance work — fellowships, research programmes, who is eligible, when they open and how they are funded — with people who have been through them answering questions. No particular background needed.",
-    "firstSeen": "2026-11-09"
-  },
-  {
     "id": "geneva-ai-conference-2026",
     "title": "The Geneva AI Conference 2026",
     "date": "2026-11-25",
@@ -2201,27 +2096,6 @@
     "firstSeen": "2026-11-16"
   },
   {
-    "id": "digitalswitzerland-community-talk-legacy-software-ai-2026",
-    "title": "Community Talk: Trust, Verification & Control — Modernizing Legacy Software with AI",
-    "date": "2026-12-09",
-    "endDate": "2026-12-09",
-    "time": "10:30–11:30",
-    "city": "Online (CH)",
-    "venue": "Online webinar",
-    "format": "Webinar",
-    "topics": [
-      "Enterprise AI",
-      "AI governance",
-      "Legacy modernisation"
-    ],
-    "organiser": "digitalswitzerland",
-    "cost": "Not listed (registration required)",
-    "url": "https://digitalswitzerland.com/events/community-talk-trust-verification-control-modernizing-legacy-software-with-ai/",
-    "source": "digitalswitzerland.com",
-    "blurb": "Two Swiss companies, Createq and Traniva, show auditable ways to take AI projects from pilot to production — turning legacy core-banking code into a traceable knowledge base, and unstructured process knowledge into verified BPMN models with human approval and Swiss data residency.",
-    "firstSeen": "2026-11-16"
-  },
-  {
     "id": "cloud-platforms-switzerland-ai-agents-as-users-2027",
     "title": "Cloud Platforms CH — When AI Agents Become the Platform Users",
     "date": "2027-01-26",
@@ -4080,5 +3954,72 @@
     "source": "luma.com",
     "blurb": "Evening for Geneva founders and builders with an introduction to EPFL AI and a talk on how to build with AI without being an engineer, followed by curated introductions and networking.",
     "firstSeen": "2026-11-27"
+  },
+  {
+    "id": "meet-swiss-infosec-50-zurich-2027",
+    "title": "50. MEET SWISS INFOSEC! — Künstliche Intelligenz zwischen Security, Privacy und Ethik",
+    "date": "2027-01-25",
+    "endDate": "2027-01-25",
+    "time": "13:15–17:15 (doors 12:30, apéro afterwards)",
+    "city": "Zurich-Flughafen",
+    "venue": "Radisson Blu Hotel Zürich Airport",
+    "format": "Conference",
+    "topics": [
+      "AI governance",
+      "Data governance",
+      "AI ethics",
+      "Microsoft Copilot",
+      "Security"
+    ],
+    "organiser": "Swiss Infosec AG",
+    "cost": "Free (registration required, 300 places)",
+    "url": "https://www.infosec.ch/msi",
+    "source": "swissict.ch",
+    "blurb": "Half-day afternoon conference on what AI can, may and should do, with Swiss AI regulation, a session on data governance and running Microsoft Copilot securely, new cyber risks in companies, and a closing ethics keynote by Prof. Peter G. Kirchschläger.",
+    "firstSeen": "2026-11-28"
+  },
+  {
+    "id": "davos-super-intelligence-summit-2027",
+    "title": "Davos Super Intelligence Summit 2027",
+    "date": "2027-01-19",
+    "endDate": "2027-01-19",
+    "time": "16:00–20:00",
+    "city": "Davos",
+    "venue": "Grandhotel Belvedere, Promenade 89",
+    "format": "Conference",
+    "topics": [
+      "AGI",
+      "Agentic AI",
+      "Physical AI",
+      "Robotics",
+      "AI infrastructure"
+    ],
+    "organiser": "Davos Premier",
+    "cost": "Not listed (access by invitation; invitations can be requested)",
+    "url": "https://www.davossummit.ai/",
+    "source": "davossummit.ai",
+    "blurb": "Afternoon summit during WEF week with four keynote-led panels on AGI and agentic AI, physical AI and robotics, AI infrastructure, and social impact through innovation; attendance is by invitation, which can be requested on the site.",
+    "firstSeen": "2026-11-28"
+  },
+  {
+    "id": "winterkongress-2027-zurich",
+    "title": "Winterkongress 2027",
+    "date": "2027-03-05",
+    "endDate": "2027-03-06",
+    "city": "Zurich",
+    "venue": "Rote Fabrik, Seestrasse 395",
+    "format": "Conference",
+    "topics": [
+      "Data protection",
+      "AI policy",
+      "Digital rights",
+      "Security"
+    ],
+    "organiser": "Digitale Gesellschaft with Rote Fabrik",
+    "cost": "CHF 45 (reduced CHF 30)",
+    "url": "https://www.digitale-gesellschaft.ch/2026/10/30/winterkongress-vom-5-und-6-maerz-2027-call-for-participation/",
+    "source": "digitale-gesellschaft.ch",
+    "blurb": "Two-day non-commercial congress of the Digitale Gesellschaft with four tracks — digital self-defence, ethics and society, law and politics, and networks, security, hard- and software — covering data protection and AI policy; presale opens in mid-December.",
+    "firstSeen": "2026-11-28"
   }
 ]
